@@ -35,9 +35,23 @@
             const coverage = await fetchJSON('attack-coverage.json') || {};
             const grid = document.getElementById('heatmap');
 
+            const counts = Object.values(coverage);
+            const max = Math.max(...counts, 1); // Avoid div by zero
+
             for (const [tech, count] of Object.entries(coverage)) {
                 const div = document.createElement('div');
-                div.className = 'mitre-tech active';
+                div.className = 'mitre-tech';
+
+                // Calculate intensity (logarithmic scale better for huge skewed distributions)
+                // Using log10 to dampen the effect of having 29k vs 1
+                const logCount = Math.log10(count + 1);
+                const logMax = Math.log10(max + 1);
+                const intensity = (logCount / logMax);
+
+                // Blue color with variable opacity
+                div.style.backgroundColor = `rgba(88, 166, 255, ${0.1 + (intensity * 0.9)})`;
+                div.style.borderColor = 'var(--accent)';
+
                 div.innerHTML = `<strong>${tech}</strong><br>${count} rules`;
                 grid.appendChild(div);
             }
