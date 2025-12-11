@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Indicators - AutoDetect Hub</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>AutoDetect Hub</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="indicators.html">Indicators</a>
+            <a href="rules.html">Rules</a>
+            <a href="heatmap.html">Heatmap</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Threat Indicators</h2>
+            <input type="text" id="search" placeholder="Search indicators...">
+
+            <table id="ind-table">
+                <thead>
+                    <tr>
+                        <th>Value</th>
+                        <th>Type</th>
+                        <th>Source</th>
+                        <th>Tags</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Populated by JS -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', async () => {
+            const indicators = await fetchJSON('indicators.json') || [];
+            const tbody = document.querySelector('#ind-table tbody');
+            const search = document.getElementById('search');
+
+            function render(list) {
+                tbody.innerHTML = '';
+                list.slice(0, 100).forEach(item => { // Limit to 100 for perf in demo
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${item.indicator}</td>
+                        <td>${item.indicator_type}</td>
+                        <td>${item.source}</td>
+                        <td>${(item.tags || []).join(', ')}</td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+            }
+
+            render(indicators);
+
+            search.addEventListener('input', (e) => {
+                const term = e.target.value.toLowerCase();
+                const filtered = indicators.filter(i =>
+                    i.indicator.toLowerCase().includes(term) ||
+                    (i.tags || []).join(' ').toLowerCase().includes(term)
+                );
+                render(filtered);
+            });
+        });
+    </script>
+</body>
+
+</html>

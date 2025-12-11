@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rules - AutoDetect Hub</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>AutoDetect Hub</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="indicators.html">Indicators</a>
+            <a href="rules.html">Rules</a>
+            <a href="heatmap.html">Heatmap</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Generated Detection Rules</h2>
+            <p>Rules are automatically generated for each indicator.</p>
+
+            <h3>Download Collections</h3>
+            <ul>
+                <li><a href="suricata/emerging-threats.rules">Suricata Rules (emerging-threats.rules)</a></li>
+                <li><a href="kql/dns_queries.kql">KQL Queries (dns_queries.kql)</a></li>
+            </ul>
+
+            <h3>Sigma Rules</h3>
+            <p>Sigma rules are generated as individual YAML files for each indicator.</p>
+            <div id="sigma-list">
+                <!-- JS could list these if we had an index, for now just static info -->
+                <p><em>Check the <a href="https://github.com/ishan3299/autodetect_hub">repository</a> for the full
+                        collection of Sigma rules.</em></p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

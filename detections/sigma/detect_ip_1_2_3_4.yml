@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Indicator - 1.2.3.4
+id: auto-6694f83c9f476da31f5df6bcc520034e7e57d421d247b9d34f49edbfc84a764c
+status: experimental
+description: Detects traffic or activity related to 1.2.3.4 which is a known malicious ip.
+logsource:
+  category: firewall
+detection:
+  selection:
+    dst_ip:
+      - '*1.2.3.4*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.AbuseIPDB

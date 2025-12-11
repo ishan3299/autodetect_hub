@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AutoDetect Hub</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>AutoDetect Hub</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="indicators.html">Indicators</a>
+            <a href="rules.html">Rules</a>
+            <a href="heatmap.html">Heatmap</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>System Status</h2>
+            <div class="stat-grid">
+                <div class="stat-item">
+                    <div class="stat-value" id="total-indicators">-</div>
+                    <div>Indicators Collected</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="covered-techniques">-</div>
+                    <div>ATT&CK Techniques</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">Active</div>
+                    <div>Pipeline Status</div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 1rem;">
+                Last Updated: <span id="last-updated">Loading...</span>
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>About</h2>
+            <p>AutoDetect Hub automatically fetches threat intelligence from public sources, normalizes it, and generates Sigma, Suricata, and KQL detection rules daily.</p>
+        </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', async () => {
+            const indicators = await fetchJSON('indicators.json') || [];
+            const coverage = await fetchJSON('attack-coverage.json') || {};
+            
+            displayStats(indicators, coverage);
+            document.getElementById('last-updated').innerText = new Date().toLocaleString();
+        });
+    </script>
+</body>
+</html>

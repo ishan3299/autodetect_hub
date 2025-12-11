@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Indicator - 192.168.1.100
+id: auto-2a39f1eedcd9f986327b5e4da842426f4f05b8f16f0ef385639dbec0db70eaae
+status: experimental
+description: Detects traffic or activity related to 192.168.1.100 which is a known malicious ip.
+logsource:
+  category: firewall
+detection:
+  selection:
+    dst_ip:
+      - '*192.168.1.100*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.OTX

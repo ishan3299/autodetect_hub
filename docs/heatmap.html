@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MITRE Heatmap - AutoDetect Hub</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>AutoDetect Hub</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="indicators.html">Indicators</a>
+            <a href="rules.html">Rules</a>
+            <a href="heatmap.html">Heatmap</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>MITRE ATT&CK® Coverage</h2>
+            <p>Techniques covered by generated rules.</p>
+            <div class="heatmap-grid" id="heatmap">
+                <!-- JS populated -->
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', async () => {
+            const coverage = await fetchJSON('attack-coverage.json') || {};
+            const grid = document.getElementById('heatmap');
+
+            for (const [tech, count] of Object.entries(coverage)) {
+                const div = document.createElement('div');
+                div.className = 'mitre-tech active';
+                div.innerHTML = `<strong>${tech}</strong><br>${count} rules`;
+                grid.appendChild(div);
+            }
+
+            if (Object.keys(coverage).length === 0) {
+                grid.innerHTML = '<p>No coverage data available.</p>';
+            }
+        });
+    </script>
+</body>
+
+</html>

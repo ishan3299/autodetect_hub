@@ -1,0 +1,286 @@
+AutoDetect Hub — Development Specification for Agent (Plain Text Version)
+
+===========================================================
+1. PROJECT OVERVIEW
+===========================================================
+Build a fully automated detection engineering system that:
+
+- Fetches public threat intelligence (TI) feeds daily.
+- Normalizes all collected indicators into a unified dataset.
+- Auto-generates detection rules:
+    * Sigma rules
+    * Suricata IDS rules
+    * Azure Sentinel KQL rules
+- Maps generated rules to MITRE ATT&CK.
+- Creates MITRE ATT&CK coverage JSON.
+- Builds a static website (GitHub Pages) showing:
+    * Indicators
+    * Rules
+    * MITRE heatmap
+    * Stats
+- Automatically commits updated data and website back to GitHub.
+
+All logic runs inside GitHub Actions using Python scripts.  
+All website files are static (no backend).
+
+===========================================================
+2. HIGH-LEVEL ARCHITECTURE
+===========================================================
+
+GitHub Actions (Scheduled Daily)
+ ├── Fetch CTI feeds
+ ├── Normalize indicators
+ ├── Generate Sigma rules
+ ├── Generate Suricata rules
+ ├── Generate KQL rules
+ ├── Build MITRE coverage JSON
+ ├── Build static website
+ └── Commit and publish to GitHub Pages
+
+Frontend directory: /docs  
+Backend logic: Python scripts run via GitHub Actions.
+
+===========================================================
+3. REQUIRED REPOSITORY STRUCTURE
+===========================================================
+
+AutoDetect-Hub/
+ ├── data/
+ │    ├── raw/
+ │    ├── normalized/
+ │    │     indicators.json
+ │
+ ├── detections/
+ │    ├── sigma/
+ │    ├── suricata/
+ │    └── kql/
+ │
+ ├── scripts/
+ │    ├── fetch_otx.py
+ │    ├── fetch_malwarebazaar.py
+ │    ├── fetch_abuseipdb.py
+ │    ├── normalize.py
+ │    ├── generate_sigma.py
+ │    ├── generate_suricata.py
+ │    ├── generate_kql.py
+ │    └── build_attack_heatmap.py
+ │
+ ├── docs/
+ │    ├── index.html
+ │    ├── indicators.html
+ │    ├── rules.html
+ │    ├── heatmap.html
+ │    ├── attack-coverage.json
+ │    └── assets/
+ │         ├── css/
+ │         ├── js/
+ │         └── img/
+ │
+ ├── .github/
+ │    └── workflows/
+ │          daily-update.yml
+ │
+ ├── requirements.txt
+ └── README.md
+
+===========================================================
+4. COMPONENT SPECIFICATIONS
+===========================================================
+
+----------------------------
+4.1 CTI FETCHERS
+----------------------------
+Python scripts must fetch threat intelligence from public sources such as:
+- AlienVault OTX
+- MalwareBazaar
+- AbuseIPDB
+- Public blocklists
+
+Each script stores raw JSON in /data/raw/ and must output an array of objects like:
+
+{
+  "type": "domain",
+  "value": "malicious-domain.com",
+  "source": "OTX",
+  "tags": ["phishing", "c2"],
+  "first_seen": "2024-01-10"
+}
+
+----------------------------
+4.2 NORMALIZER
+----------------------------
+Script: normalize.py  
+Tasks:
+- Load all JSON files from /data/raw/
+- Deduplicate indicators
+- Normalize into unified schema:
+
+{
+  "indicator": "example.com",
+  "indicator_type": "domain",
+  "source": "OTX",
+  "tags": ["malware"],
+  "first_seen": "2024-01-01"
+}
+
+Output file: /data/normalized/indicators.json
+
+----------------------------
+4.3 DETECTION RULE GENERATORS
+----------------------------
+
+A) Sigma Rule Generator  
+Script: generate_sigma.py  
+Output: /detections/sigma/
+
+Template:
+title: Detect DNS Query to Known Malicious Domain - {{indicator}}
+id: auto-{{sha256}}
+status: experimental
+logsource:
+  category: dns
+detection:
+  selection:
+    query:
+      - "*{{indicator}}*"
+condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.{{source}}
+
+----------------------------------------
+
+B) Suricata Rule Generator  
+Script: generate_suricata.py  
+Output: /detections/suricata/emerging-threats.rules
+
+Rule template:
+alert dns any any -> any any (msg:"Known Malicious Domain {{indicator}}"; dns.query; content:"{{indicator}}"; sid:{{sid}}; rev:1;)
+
+----------------------------------------
+
+C) KQL Rule Generator  
+Script: generate_kql.py  
+Output: /detections/kql/dns_queries.kql
+
+KQL Format:
+DNS
+| where QueryName contains "{{indicator}}"
+| extend ThreatSource = "{{source}}"
+
+----------------------------
+4.4 MITRE ATT&CK COVERAGE BUILDER
+----------------------------
+Script: build_attack_heatmap.py  
+Output: /docs/attack-coverage.json
+
+Example:
+{
+  "T1071": 52,
+  "T1566": 3,
+  "T1059": 0
+}
+
+----------------------------
+4.5 STATIC WEB UI
+----------------------------
+Directory: /docs
+
+Required pages:
+- index.html
+  * Summary, stats, last update time
+
+- indicators.html
+  * Loads indicators.json
+  * Search/filter
+
+- rules.html
+  * Lists Sigma, Suricata, KQL rules
+
+- heatmap.html
+  * Visual MITRE heatmap using attack-coverage.json
+
+JavaScript must dynamically load JSON from /docs.
+
+===========================================================
+5. GITHUB ACTIONS WORKFLOW SPECIFICATION
+===========================================================
+
+File: .github/workflows/daily-update.yml
+
+Trigger:
+- Daily at midnight UTC
+- Manual workflow_dispatch
+
+Steps:
+1. Checkout repository
+2. Setup Python
+3. Install dependencies
+4. Run all CTI fetcher scripts
+5. Normalize data
+6. Generate Sigma rules
+7. Generate Suricata rules
+8. Generate KQL rules
+9. Generate MITRE coverage JSON
+10. Copy outputs to /docs
+11. Commit and push changes
+
+Commit identity:
+user.email = actions@github.com  
+user.name = GitHub Actions
+
+===========================================================
+6. ACCEPTANCE CRITERIA
+===========================================================
+
+The project is complete when:
+
+- Daily GitHub Action runs successfully.
+- Indicators are fetched correctly.
+- indicators.json is generated and deduplicated.
+- Sigma, Suricata, and KQL rules are generated.
+- MITRE coverage JSON is created.
+- GitHub Pages website is updated automatically.
+- All files commit correctly.
+- Repository matches required structure.
+- README.md fully documents the system.
+
+===========================================================
+7. README REQUIREMENTS
+===========================================================
+
+README must include:
+
+- Project purpose and overview
+- Architecture diagram (ASCII allowed)
+- Explanation of pipeline
+- Detection generation details
+- MITRE heatmap details
+- Link to GitHub Pages
+- Instructions for extension
+
+===========================================================
+8. CONSTRAINTS
+===========================================================
+
+- Must work fully on GitHub Free tier.
+- No backend servers.
+- All scripts must fail gracefully.
+- All outputs must be static.
+- JSON schemas must remain stable.
+
+===========================================================
+9. OPTIONAL FUTURE ENHANCEMENTS
+===========================================================
+
+(Not required for MVP)
+
+- YARA rule auto-generation
+- Zeek-based threat matching
+- CVE → ATT&CK mapping
+- RSS-based CTI ingestion
+
+===========================================================
+END OF SPECIFICATION FILE
+===========================================================

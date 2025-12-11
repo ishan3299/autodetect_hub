@@ -1,0 +1,4 @@
+DNS
+| where QueryName contains "malicious-example.com"
+| extend ThreatSource = "OTX"
+// Generated for malicious-example.com
