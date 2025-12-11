@@ -3,7 +3,7 @@ import os
 import hashlib
 
 INPUT_FILE = "data/normalized/indicators.json"
-OUTPUT_DIR = "detections/sigma/"
+OUTPUT_FILE = "detections/sigma/all_rules.yml"
 
 TEMPLATE = """title: Detect Activity to Known Malicious Indicator - {indicator}
 id: {rule_id}
@@ -30,9 +30,10 @@ def generate_sigma():
     with open(INPUT_FILE, "r") as f:
         indicators = json.load(f)
 
-    count = 0
-    # Limit to top 50 to avoid filesystem explosion with 30k+ indicators
-    for item in indicators[:50]:
+    all_rules = []
+    
+    # Process ALL indicators (optimization: single file output prevents inode exhaustion)
+    for item in indicators:
         val = item["indicator"]
         # Basic mapping
         if item["indicator_type"] == "domain":
@@ -61,16 +62,13 @@ def generate_sigma():
             field=field,
             source=item["source"]
         )
-        
-        safe_name = val.replace(':', '_').replace('/', '_').replace('.', '_')
-        if len(safe_name) > 200: safe_name = safe_name[:200] # Truncate if too long
-        
-        filename = f"{OUTPUT_DIR}detect_{item['indicator_type']}_{safe_name}.yml"
-        with open(filename, "w") as f:
-            f.write(rule_content)
-        count += 1
+        all_rules.append(rule_content)
 
-    print(f"Generated {count} Sigma rules.")
+    # Write to single file with YAML document separator
+    with open(OUTPUT_FILE, "w") as f:
+        f.write("---\n".join(all_rules))
+
+    print(f"Generated {len(all_rules)} Sigma rules in {OUTPUT_FILE}.")
 
 if __name__ == "__main__":
     generate_sigma()

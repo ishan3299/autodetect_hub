@@ -55,8 +55,9 @@ jobs:
           cp detections/suricata/emerging-threats.rules docs/suricata/
           cp detections/kql/dns_queries.kql docs/kql/
           
-          # We don't copy all Sigma rules to avoid cluttering docs root, but could zip them if needed
-          # For now, just these.
+          # Copy Sigma bundle
+          mkdir -p docs/sigma
+          cp detections/sigma/all_rules.yml docs/sigma/
 
       - name: Commit and Push
         run: |
