@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Indicator - https://saffron.muddle-oak.ru/hbp9n4at
+id: auto-5ced39c76ebe2b2093ebec49a9b0ed0501d98a088b7bd43f90e03ad9f132e223
+status: experimental
+description: Detects traffic or activity related to https://saffron.muddle-oak.ru/hbp9n4at which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://saffron.muddle-oak.ru/hbp9n4at*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus

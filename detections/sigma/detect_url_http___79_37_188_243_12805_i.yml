@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Indicator - http://79.37.188.243:12805/i
+id: auto-903e0afab87d9610c35426ff9f4f483cd6910102cbcf9429fb90d4d776b36610
+status: experimental
+description: Detects traffic or activity related to http://79.37.188.243:12805/i which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://79.37.188.243:12805/i*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus

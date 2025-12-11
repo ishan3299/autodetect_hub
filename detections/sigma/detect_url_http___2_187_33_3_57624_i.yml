@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Indicator - http://2.187.33.3:57624/i
+id: auto-eb79d12ed36c15d1743c2cc818b91d88450dede85e75360e946c9065e66f0e1e
+status: experimental
+description: Detects traffic or activity related to http://2.187.33.3:57624/i which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://2.187.33.3:57624/i*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus

@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Indicator - http://103.121.42.109:8599/i
+id: auto-4d297166c45071bd40748dab764b092f0e74315cafb3280e57017f307eccb80a
+status: experimental
+description: Detects traffic or activity related to http://103.121.42.109:8599/i which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://103.121.42.109:8599/i*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus

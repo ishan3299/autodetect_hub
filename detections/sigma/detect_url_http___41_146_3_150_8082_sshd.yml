@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Indicator - http://41.146.3.150:8082/sshd
+id: auto-89c4099b5ff913caa2d2ec1a323e74fbe31070a75962217d3fc2745f02c2707a
+status: experimental
+description: Detects traffic or activity related to http://41.146.3.150:8082/sshd which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://41.146.3.150:8082/sshd*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus

@@ -31,7 +31,8 @@ def generate_sigma():
         indicators = json.load(f)
 
     count = 0
-    for item in indicators:
+    # Limit to top 50 to avoid filesystem explosion with 30k+ indicators
+    for item in indicators[:50]:
         val = item["indicator"]
         # Basic mapping
         if item["indicator_type"] == "domain":
@@ -43,6 +44,9 @@ def generate_sigma():
         elif item["indicator_type"] == "hash":
             category = "process_creation"
             field = "hashes"
+        elif item["indicator_type"] == "url":
+            category = "proxy"
+            field = "c-uri"
         else:
             continue
         
@@ -58,7 +62,10 @@ def generate_sigma():
             source=item["source"]
         )
         
-        filename = f"{OUTPUT_DIR}detect_{item['indicator_type']}_{val.replace('.','_')}.yml"
+        safe_name = val.replace(':', '_').replace('/', '_').replace('.', '_')
+        if len(safe_name) > 200: safe_name = safe_name[:200] # Truncate if too long
+        
+        filename = f"{OUTPUT_DIR}detect_{item['indicator_type']}_{safe_name}.yml"
         with open(filename, "w") as f:
             f.write(rule_content)
         count += 1

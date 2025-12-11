@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Indicator - http://180.115.167.206:38473/i
+id: auto-5292a21fcf7509208ee87458351c561c9e779c87eb6edec6fb80f2e46d3e2e2b
+status: experimental
+description: Detects traffic or activity related to http://180.115.167.206:38473/i which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://180.115.167.206:38473/i*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus

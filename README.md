@@ -3,7 +3,7 @@
 **AutoDetect Hub** is a fully automated detection engineering system. It fetches threat intelligence daily, normalizes it, and generates detection rules for Sigma, Suricata, and Azure Sentinel (KQL).
 
 ## Features
-- **Automated Ingestion**: Fetches from OTX, MalwareBazaar, AbuseIPDB.
+- **Automated Ingestion**: Fetches from URLhaus (Public), MalwareBazaar, AbuseIPDB.
 - **Normalization**: Unified JSON schema for all indicators.
 - **Rule Generation**: Automatically creates Sigma, Suricata, and KQL rules.
 - **MITRE Mapping**: Maps coverage to ATT&CK Matrix.

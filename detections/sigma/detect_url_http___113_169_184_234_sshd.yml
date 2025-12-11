@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Indicator - http://113.169.184.234/sshd
+id: auto-2915d711f3ef6986836f9982c236ccf19b8a86238b5d412ea7f82123319e26cd
+status: experimental
+description: Detects traffic or activity related to http://113.169.184.234/sshd which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://113.169.184.234/sshd*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus

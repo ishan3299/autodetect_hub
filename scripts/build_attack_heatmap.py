@@ -19,7 +19,7 @@ def build_heatmap():
     
     for item in indicators:
         # Simple heuristic mapping
-        tags = item.get("tags", [])
+        tags = item.get("tags") or []
         
         # Default
         t_code = "T1071" # Application Layer Protocol

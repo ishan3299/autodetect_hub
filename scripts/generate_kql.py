@@ -25,6 +25,12 @@ def generate_kql():
 // Generated for {val}
 """
             queries.append(query)
+        elif item["indicator_type"] == "url":
+             query = f"""UrlClickEvents
+| where Url contains "{val}"
+| extend ThreatSource = "{item['source']}"
+"""
+             queries.append(query)
             
     with open(OUTPUT_FILE, "w") as f:
         f.write("\n".join(queries))

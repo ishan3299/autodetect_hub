@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Indicator - http://106.38.201.95:8080/02.08.2022.exe
+id: auto-b7a05956b2d60deed71aff700d32441c7e4b9ea7c29abef1b936dd964b279190
+status: experimental
+description: Detects traffic or activity related to http://106.38.201.95:8080/02.08.2022.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://106.38.201.95:8080/02.08.2022.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus

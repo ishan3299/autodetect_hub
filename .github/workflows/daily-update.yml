@@ -27,10 +27,9 @@ jobs:
 
       - name: Fetch CTI Data
         env:
-          OTX_API_KEY: ${{ secrets.OTX_API_KEY }}
           ABUSEIPDB_API_KEY: ${{ secrets.ABUSEIPDB_API_KEY }}
         run: |
-          python scripts/fetch_otx.py
+          python scripts/fetch_urlhaus.py
           python scripts/fetch_malwarebazaar.py
           python scripts/fetch_abuseipdb.py
 

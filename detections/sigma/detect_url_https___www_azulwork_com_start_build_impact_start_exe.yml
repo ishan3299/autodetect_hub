@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Indicator - https://www.azulwork.com/start/build_impact/start.exe
+id: auto-a7a512a925387e3fc501f1db19ce79f94425a3f806edb2946feefb1ece493237
+status: experimental
+description: Detects traffic or activity related to https://www.azulwork.com/start/build_impact/start.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://www.azulwork.com/start/build_impact/start.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus

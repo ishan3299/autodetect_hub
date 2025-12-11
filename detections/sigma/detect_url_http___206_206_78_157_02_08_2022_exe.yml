@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Indicator - http://206.206.78.157/02.08.2022.exe
+id: auto-62f792aee86bcfeb518a2cd58dd156c27eb1e89dd93b4aaced9ddfe47e5a08f1
+status: experimental
+description: Detects traffic or activity related to http://206.206.78.157/02.08.2022.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://206.206.78.157/02.08.2022.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus

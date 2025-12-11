@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Indicator - https://9yd.v0xletrill.ru/s2gb7vu8
+id: auto-d1ad46cce432e80330d10f3c6983989a18d378deb346a87b03dbd76a51b95088
+status: experimental
+description: Detects traffic or activity related to https://9yd.v0xletrill.ru/s2gb7vu8 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://9yd.v0xletrill.ru/s2gb7vu8*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus

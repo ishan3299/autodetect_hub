@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Indicator - http://149.30.232.116/02.08.2022.exe
+id: auto-e5dcae3764c375c3851573659a182df2b94699e6d4cd7f1180cf08ce0ef85ac5
+status: experimental
+description: Detects traffic or activity related to http://149.30.232.116/02.08.2022.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://149.30.232.116/02.08.2022.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus

@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Indicator - http://92.40.112.114:8084/sshd
+id: auto-7c184d7bd1d602a17f6efeae2ad258b619602e8a020c727d9627ca382553f48b
+status: experimental
+description: Detects traffic or activity related to http://92.40.112.114:8084/sshd which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://92.40.112.114:8084/sshd*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus

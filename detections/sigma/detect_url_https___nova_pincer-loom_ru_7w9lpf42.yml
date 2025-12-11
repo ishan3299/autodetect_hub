@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Indicator - https://nova.pincer-loom.ru/7w9lpf42
+id: auto-a0d0e68c5894e487463d1ef2c8b3103490ae6eaf2847f13008bdc827546d0a54
+status: experimental
+description: Detects traffic or activity related to https://nova.pincer-loom.ru/7w9lpf42 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://nova.pincer-loom.ru/7w9lpf42*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus

@@ -25,6 +25,11 @@ def generate_suricata():
         elif item["indicator_type"] == "ip":
             rule = f'alert ip any any -> {val} any (msg:"Known Malicious IP {val}"; sid:{sid}; rev:1;)'
             rules.append(rule)
+        elif item["indicator_type"] == "url":
+            # escape special chars if needed, simplified for demo
+            safe_val = val.replace(":", "\\:").replace(";", "\\;")
+            rule = f'alert http any any -> any any (msg:"Known Malicious URL {safe_val}"; http.uri; content:"{safe_val}"; sid:{sid}; rev:1;)'
+            rules.append(rule)
             
     with open(OUTPUT_FILE, "w") as f:
         f.write("\n".join(rules))

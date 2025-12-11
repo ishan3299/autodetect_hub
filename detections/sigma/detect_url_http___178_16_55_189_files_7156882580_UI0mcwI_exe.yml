@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Indicator - http://178.16.55.189/files/7156882580/UI0mcwI.exe
+id: auto-29622796cb8f2bd9fd7171edf27ded313455d1d38eaa145b1fe721c77145aa57
+status: experimental
+description: Detects traffic or activity related to http://178.16.55.189/files/7156882580/UI0mcwI.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://178.16.55.189/files/7156882580/UI0mcwI.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus
