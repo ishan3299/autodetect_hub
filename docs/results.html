@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pipeline Results - AutoDetect Hub</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>AutoDetect Hub</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="indicators.html">Indicators</a>
+            <a href="rules.html">Rules</a>
+            <a href="heatmap.html">Heatmap</a>
+            <a href="results.html">Results</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Pipeline Execution Results</h2>
+            <p>Summary of the collected data and generated artifacts from the latest pipeline run.</p>
+
+            <h3>Data Statistics</h3>
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                        <th>Source File</th>
+                    </tr>
+                </thead>
+                <tbody id="stats-body">
+                    <!-- Populated by JS -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>Raw Artifacts</h2>
+            <p>Access the collected data and generated rules directly.</p>
+
+            <div class="artifact-links">
+                <div class="link-group">
+                    <h3>collected Data</h3>
+                    <ul>
+                        <li><a href="indicators.json" target="_blank">indicators.json</a> (Normalized Indicators)</li>
+                        <li><a href="attack-coverage.json" target="_blank">attack-coverage.json</a> (Coverage Data)</li>
+                    </ul>
+                </div>
+
+                <div class="link-group">
+                    <h3>Detection Rules</h3>
+                    <ul>
+                        <li><a href="suricata/emerging-threats.rules" target="_blank">emerging-threats.rules</a>
+                            (Suricata)</li>
+                        <li><a href="kql/dns_queries.kql" target="_blank">dns_queries.kql</a> (KQL)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Quick View: Latest Indicators</h2>
+            <p>Most recent 5 indicators fetched.</p>
+            <table id="preview-table">
+                <thead>
+                    <tr>
+                        <th>Value</th>
+                        <th>Type</th>
+                        <th>Source</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <p><a href="indicators.html">View all indicators &rarr;</a></p>
+        </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', async () => {
+            const indicators = await fetchJSON('indicators.json') || [];
+            const coverage = await fetchJSON('attack-coverage.json') || {};
+
+            // Populating Stats
+            const statsBody = document.getElementById('stats-body');
+            statsBody.innerHTML = `
+                <tr>
+                    <td>Total Indicators</td>
+                    <td>${indicators.length}</td>
+                    <td><a href="indicators.json">indicators.json</a></td>
+                </tr>
+                <tr>
+                    <td>ATT&CK Techniques Covered</td>
+                    <td>${Object.keys(coverage).length}</td>
+                    <td><a href="attack-coverage.json">attack-coverage.json</a></td>
+                </tr>
+            `;
+
+            // Populating Preview
+            const previewBody = document.querySelector('#preview-table tbody');
+            indicators.slice(0, 5).forEach(item => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${item.indicator}</td>
+                    <td>${item.indicator_type}</td>
+                    <td>${item.source}</td>
+                `;
+                previewBody.appendChild(tr);
+            });
+        });
+    </script>
+</body>
+
+</html>
