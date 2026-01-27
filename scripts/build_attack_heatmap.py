@@ -28,26 +28,29 @@ def build_heatmap():
 
     coverage = {}
     
+    # Pre-process mappings to lower case just in case
+    mappings_lower = {k.lower(): v for k, v in mappings.items()}
+
     for item in indicators:
         tags = item.get("tags") or []
         
-        # Default
-        t_code = "T1071" # Application Layer Protocol
+        matched_tcode = None
         
         # Dynamic mapping
         for tag in tags:
-            if tag in mappings:
-                t_code = mappings[tag]
-                break # Prioritize first match, or could implement hierarchy
-            
-        coverage[t_code] = coverage.get(t_code, 0) + 1
+            tag_lower = tag.lower()
+            if tag_lower in mappings_lower:
+                matched_tcode = mappings_lower[tag_lower]
+                break # Prioritize first match
+        
+        if matched_tcode:
+            coverage[matched_tcode] = coverage.get(matched_tcode, 0) + 1
         
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     with open(output_file, "w") as f:
         json.dump(coverage, f, indent=2)
     
-    logging.info(f"Generated MITRE coverage map: {coverage}")
+    logging.info(f"Generated MITRE coverage map with {len(coverage)} covered techniques.")
 
 if __name__ == "__main__":
     build_heatmap()
-

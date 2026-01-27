@@ -3,38 +3,81 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rules - AutoDetect Hub</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>AutoDetect Hub</h1>
+    <div class="sidebar">
+        <div class="brand">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                <path
+                    d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z" />
+            </svg>
+            AutoDetect Hub
+        </div>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html">Dashboard</a>
             <a href="indicators.html">Indicators</a>
-            <a href="rules.html">Rules</a>
-            <a href="heatmap.html">Heatmap</a>
+            <a href="rules.html" class="active">Rules</a>
+            <a href="heatmap.html">MITRE Heatmap</a>
             <a href="results.html">Results</a>
         </nav>
-    </header>
+    </div>
 
     <main>
+        <div class="header-bar">
+            <h1>Generated Detection Rules</h1>
+        </div>
+
         <div class="card">
-            <h2>Generated Detection Rules</h2>
-            <p>Rules are automatically generated for each indicator.</p>
+            <h2>Download Collections</h2>
+            <p>Rules are automatically generated and segregated by threat category.</p>
 
-            <h3>Download Collections</h3>
-            <ul>
-                <li><a href="suricata/emerging-threats.rules" download>Suricata Rules (emerging-threats.rules)</a></li>
-                <li><a href="kql/dns_queries.kql" download>KQL Queries (dns_queries.kql)</a></li>
-            </ul>
+            <h3>Sigma Rules (Categorized)</h3>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; margin-bottom: 2rem;">
+                <a href="sigma/all_rules.yml" download class="stat-item"
+                    style="text-decoration: none; border-color: var(--accent); min-width: 150px;">
+                    <div style="font-weight: bold; color: var(--accent); margin-bottom: 0.5rem;">All Rules</div>
+                    <div style="color: var(--text-secondary); font-size: 0.8rem;">Full Bundle</div>
+                </a>
+                <a href="sigma/ransomware.yml" download class="stat-item"
+                    style="text-decoration: none; min-width: 150px;">
+                    <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.5rem;">Ransomware</div>
+                    <div style="color: var(--text-secondary); font-size: 0.8rem;">ransomware.yml</div>
+                </a>
+                <a href="sigma/c2.yml" download class="stat-item" style="text-decoration: none; min-width: 150px;">
+                    <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.5rem;">C2</div>
+                    <div style="color: var(--text-secondary); font-size: 0.8rem;">c2.yml</div>
+                </a>
+                <a href="sigma/stealer.yml" download class="stat-item" style="text-decoration: none; min-width: 150px;">
+                    <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.5rem;">Stealers</div>
+                    <div style="color: var(--text-secondary); font-size: 0.8rem;">stealer.yml</div>
+                </a>
+                <a href="sigma/botnet.yml" download class="stat-item" style="text-decoration: none; min-width: 150px;">
+                    <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.5rem;">Botnets</div>
+                    <div style="color: var(--text-secondary); font-size: 0.8rem;">botnet.yml</div>
+                </a>
+                <a href="sigma/phishing.yml" download class="stat-item"
+                    style="text-decoration: none; min-width: 150px;">
+                    <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.5rem;">Phishing</div>
+                    <div style="color: var(--text-secondary); font-size: 0.8rem;">phishing.yml</div>
+                </a>
+            </div>
 
-            <h3>Sigma Rules</h3>
-            <p>Sigma rules are generated for all indicators in a single bundled file.</p>
-            <ul>
-                <li><a href="sigma/all_rules.yml" download>Sigma Rules Bundle (all_rules.yml)</a></li>
-            </ul>
+            <h3>Other Formats</h3>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="suricata/all_rules.rules" download class="stat-item"
+                    style="text-decoration: none; min-width: 200px;">
+                    <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.5rem;">Suricata</div>
+                    <div style="color: var(--text-secondary); font-size: 0.8rem;">all_rules.rules</div>
+                </a>
+                <a href="kql/all_rules.kql" download class="stat-item" style="text-decoration: none; min-width: 200px;">
+                    <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.5rem;">KQL</div>
+                    <div style="color: var(--text-secondary); font-size: 0.8rem;">all_rules.kql</div>
+                </a>
+            </div>
         </div>
     </main>
 </body>
