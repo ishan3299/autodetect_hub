@@ -3,27 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indicators - AutoDetect Hub</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>AutoDetect Hub</h1>
+    <div class="sidebar">
+        <div class="brand">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                <path
+                    d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z" />
+            </svg>
+            AutoDetect Hub
+        </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="indicators.html">Indicators</a>
+            <a href="index.html">Dashboard</a>
+            <a href="indicators.html" class="active">Indicators</a>
             <a href="rules.html">Rules</a>
-            <a href="heatmap.html">Heatmap</a>
+            <a href="heatmap.html">MITRE Heatmap</a>
             <a href="results.html">Results</a>
         </nav>
-    </header>
+    </div>
 
     <main>
-        <div class="card">
-            <h2>Threat Indicators</h2>
-            <input type="text" id="search" placeholder="Search indicators...">
+        <div class="header-bar">
+            <h1>Threat Indicators</h1>
+            <input type="text" id="search" placeholder="Search indicators..." style="margin-bottom: 0; width: 300px;">
+        </div>
 
+        <div class="card">
             <table id="ind-table">
                 <thead>
                     <tr>
@@ -52,10 +61,10 @@
                 list.slice(0, 100).forEach(item => { // Limit to 100 for perf in demo
                     const tr = document.createElement('tr');
                     tr.innerHTML = `
-                        <td>${item.indicator}</td>
+                        <td><code>${item.indicator}</code></td>
                         <td>${item.indicator_type}</td>
                         <td>${item.source}</td>
-                        <td>${(item.tags || []).join(', ')}</td>
+                        <td>${(item.tags || []).map(t => `<span style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; font-size: 0.85em;">${t}</span>`).join(' ')}</td>
                     `;
                     tbody.appendChild(tr);
                 });

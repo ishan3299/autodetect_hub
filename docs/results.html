@@ -3,28 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Pipeline Results - AutoDetect Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - AutoDetect Hub</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>AutoDetect Hub</h1>
+    <div class="sidebar">
+        <div class="brand">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                <path
+                    d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z" />
+            </svg>
+            AutoDetect Hub
+        </div>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html">Dashboard</a>
             <a href="indicators.html">Indicators</a>
             <a href="rules.html">Rules</a>
-            <a href="heatmap.html">Heatmap</a>
-            <a href="results.html">Results</a>
+            <a href="heatmap.html">MITRE Heatmap</a>
+            <a href="results.html" class="active">Results</a>
         </nav>
-    </header>
+    </div>
 
     <main>
-        <div class="card">
-            <h2>Pipeline Execution Results</h2>
-            <p>Summary of the collected data and generated artifacts from the latest pipeline run.</p>
+        <div class="header-bar">
+            <h1>Pipeline Results</h1>
+        </div>
 
-            <h3>Data Statistics</h3>
+        <div class="card">
+            <h2>Data Statistics</h2>
             <table class="results-table">
                 <thead>
                     <tr>
@@ -41,43 +49,28 @@
 
         <div class="card">
             <h2>Raw Artifacts</h2>
-            <p>Access the collected data and generated rules directly.</p>
-
-            <div class="artifact-links">
-                <div class="link-group">
-                    <h3>collected Data</h3>
-                    <ul>
-                        <li><a href="indicators.json" target="_blank">indicators.json</a> (Normalized Indicators)</li>
-                        <li><a href="attack-coverage.json" target="_blank">attack-coverage.json</a> (Coverage Data)</li>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div>
+                    <h3>Collected Data</h3>
+                    <ul style="color: var(--text-secondary);">
+                        <li><a href="indicators.json" target="_blank" style="color: var(--accent);">indicators.json</a>
+                        </li>
+                        <li><a href="attack-coverage.json" target="_blank"
+                                style="color: var(--accent);">attack-coverage.json</a></li>
                     </ul>
                 </div>
-
-                <div class="link-group">
-                    <h3>Detection Rules</h3>
-                    <ul>
-                        <li><a href="suricata/emerging-threats.rules" target="_blank"
-                                download>emerging-threats.rules</a>
-                            (Suricata)</li>
-                        <li><a href="kql/dns_queries.kql" target="_blank" download>dns_queries.kql</a> (KQL)</li>
+                <div>
+                    <h3>Rules Files</h3>
+                    <ul style="color: var(--text-secondary);">
+                        <li><a href="suricata/all_rules.rules" target="_blank"
+                                style="color: var(--accent);">all_rules.rules</a></li>
+                        <li><a href="kql/all_rules.kql" target="_blank" style="color: var(--accent);">all_rules.kql</a>
+                        </li>
+                        <li><a href="sigma/all_rules.yml" target="_blank"
+                                style="color: var(--accent);">all_rules.yml</a></li>
                     </ul>
                 </div>
             </div>
-        </div>
-
-        <div class="card">
-            <h2>Quick View: Latest Indicators</h2>
-            <p>Most recent 5 indicators fetched.</p>
-            <table id="preview-table">
-                <thead>
-                    <tr>
-                        <th>Value</th>
-                        <th>Type</th>
-                        <th>Source</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-            <p><a href="indicators.html">View all indicators &rarr;</a></p>
         </div>
     </main>
 
@@ -93,26 +86,14 @@
                 <tr>
                     <td>Total Indicators</td>
                     <td>${indicators.length}</td>
-                    <td><a href="indicators.json">indicators.json</a></td>
+                    <td><a href="indicators.json" style="color: var(--accent);">indicators.json</a></td>
                 </tr>
                 <tr>
                     <td>ATT&CK Techniques Covered</td>
                     <td>${Object.keys(coverage).length}</td>
-                    <td><a href="attack-coverage.json">attack-coverage.json</a></td>
+                    <td><a href="attack-coverage.json" style="color: var(--accent);">attack-coverage.json</a></td>
                 </tr>
             `;
-
-            // Populating Preview
-            const previewBody = document.querySelector('#preview-table tbody');
-            indicators.slice(0, 5).forEach(item => {
-                const tr = document.createElement('tr');
-                tr.innerHTML = `
-                    <td>${item.indicator}</td>
-                    <td>${item.indicator_type}</td>
-                    <td>${item.source}</td>
-                `;
-                previewBody.appendChild(tr);
-            });
         });
     </script>
 </body>

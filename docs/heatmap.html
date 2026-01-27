@@ -3,62 +3,88 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MITRE Heatmap - AutoDetect Hub</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>AutoDetect Hub</h1>
+    <div class="sidebar">
+        <div class="brand">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                <path
+                    d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z" />
+            </svg>
+            AutoDetect Hub
+        </div>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html">Dashboard</a>
             <a href="indicators.html">Indicators</a>
             <a href="rules.html">Rules</a>
-            <a href="heatmap.html">Heatmap</a>
+            <a href="heatmap.html" class="active">MITRE Heatmap</a>
             <a href="results.html">Results</a>
         </nav>
-    </header>
+    </div>
 
     <main>
+        <div class="header-bar">
+            <h1>MITRE ATT&CK® Enterprise Matrix Coverage</h1>
+            <div style="color: var(--text-secondary); font-size: 0.9rem;">
+                Techniques Covered: <span id="coverage-count" style="color: var(--accent); font-weight: bold;">0</span>
+            </div>
+        </div>
+
         <div class="card">
-            <h2>MITRE ATT&CK® Coverage</h2>
-            <p>Techniques covered by generated rules.</p>
-            <div class="heatmap-grid" id="heatmap">
-                <!-- JS populated -->
+            <div class="matrix-container">
+                <div class="mitre-matrix" id="matrix-grid">
+                    <!-- Populated by JS -->
+                </div>
             </div>
         </div>
     </main>
 
+    <script src="assets/js/mitre_matrix.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
         window.addEventListener('DOMContentLoaded', async () => {
             const coverage = await fetchJSON('attack-coverage.json') || {};
-            const grid = document.getElementById('heatmap');
+            const grid = document.getElementById('matrix-grid');
+            const countEl = document.getElementById('coverage-count');
 
-            const counts = Object.values(coverage);
-            const max = Math.max(...counts, 1); // Avoid div by zero
+            // Render Matrix Headers
+            const tactics = Object.keys(MITRE_MATRIX);
+            tactics.forEach(tactic => {
+                const col = document.createElement('div');
+                col.className = 'tactic-column';
 
-            for (const [tech, count] of Object.entries(coverage)) {
-                const div = document.createElement('div');
-                div.className = 'mitre-tech';
+                // Header
+                const header = document.createElement('div');
+                header.className = 'tactic-header';
+                header.innerText = tactic;
+                col.appendChild(header);
 
-                // Calculate intensity (logarithmic scale better for huge skewed distributions)
-                // Using log10 to dampen the effect of having 29k vs 1
-                const logCount = Math.log10(count + 1);
-                const logMax = Math.log10(max + 1);
-                const intensity = (logCount / logMax);
+                // Techniques
+                MITRE_MATRIX[tactic].forEach(tech => {
+                    const cell = document.createElement('div');
+                    cell.className = 'technique-cell';
+                    cell.id = tech.id;
 
-                // Blue color with variable opacity
-                div.style.backgroundColor = `rgba(88, 166, 255, ${0.1 + (intensity * 0.9)})`;
-                div.style.borderColor = 'var(--accent)';
+                    if (coverage[tech.id]) {
+                        cell.classList.add('covered');
+                        cell.title = `Covered by ${coverage[tech.id]} rule(s)`;
+                    }
 
-                div.innerHTML = `<strong>${tech}</strong><br>${count} rules`;
-                grid.appendChild(div);
-            }
+                    cell.innerHTML = `
+                        <span class="technique-id">${tech.id}</span>
+                        ${tech.name}
+                    `;
+                    col.appendChild(cell);
+                });
 
-            if (Object.keys(coverage).length === 0) {
-                grid.innerHTML = '<p>No coverage data available.</p>';
-            }
+                grid.appendChild(col);
+            });
+
+            countEl.innerText = Object.keys(coverage).length;
         });
     </script>
 </body>
