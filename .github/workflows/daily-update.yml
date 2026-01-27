@@ -26,12 +26,10 @@ jobs:
           pip install -r requirements.txt
 
       - name: Fetch CTI Data
-        env:
-          ABUSEIPDB_API_KEY: ${{ secrets.ABUSEIPDB_API_KEY }}
         run: |
           python scripts/fetch_urlhaus.py
           python scripts/fetch_malwarebazaar.py
-          python scripts/fetch_abuseipdb.py
+          python scripts/fetch_feodotracker.py
 
       - name: Normalize Data
         run: python scripts/normalize.py
@@ -52,8 +50,8 @@ jobs:
           
           # Copy rules for download
           mkdir -p docs/suricata docs/kql
-          cp detections/suricata/emerging-threats.rules docs/suricata/
-          cp detections/kql/dns_queries.kql docs/kql/
+          cp detections/suricata/all_rules.rules docs/suricata/
+          cp detections/kql/all_rules.kql docs/kql/
           
           # Copy Sigma bundle
           mkdir -p docs/sigma
