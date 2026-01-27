@@ -1,9 +1,14 @@
 import json
 import os
 import hashlib
+import yaml
+import logging
 
-INPUT_FILE = "data/normalized/indicators.json"
-OUTPUT_FILE = "detections/sigma/all_rules.yml"
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+def load_config():
+    with open("config.yaml", "r") as f:
+        return yaml.safe_load(f)
 
 TEMPLATE = """title: Detect Activity to Known Malicious Indicator - {indicator}
 id: {rule_id}
@@ -23,11 +28,15 @@ tags:
 """
 
 def generate_sigma():
-    if not os.path.exists(INPUT_FILE):
-        print("No normalized data found.")
+    config = load_config()
+    input_file = config["paths"]["normalized"]
+    output_file = config["paths"]["sigma_output"]
+
+    if not os.path.exists(input_file):
+        logging.warning("No normalized data found.")
         return
 
-    with open(INPUT_FILE, "r") as f:
+    with open(input_file, "r") as f:
         indicators = json.load(f)
 
     all_rules = []
@@ -64,11 +73,13 @@ def generate_sigma():
         )
         all_rules.append(rule_content)
 
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
     # Write to single file with YAML document separator
-    with open(OUTPUT_FILE, "w") as f:
+    with open(output_file, "w") as f:
         f.write("---\n".join(all_rules))
 
-    print(f"Generated {len(all_rules)} Sigma rules in {OUTPUT_FILE}.")
+    logging.info(f"Generated {len(all_rules)} Sigma rules in {output_file}.")
 
 if __name__ == "__main__":
     generate_sigma()
+

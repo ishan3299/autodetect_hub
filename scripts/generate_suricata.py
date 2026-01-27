@@ -1,15 +1,24 @@
 import json
 import os
+import yaml
+import logging
 
-INPUT_FILE = "data/normalized/indicators.json"
-OUTPUT_FILE = "detections/suricata/emerging-threats.rules"
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+def load_config():
+    with open("config.yaml", "r") as f:
+        return yaml.safe_load(f)
 
 def generate_suricata():
-    if not os.path.exists(INPUT_FILE):
-        print("No normalized data found.")
+    config = load_config()
+    input_file = config["paths"]["normalized"]
+    output_file = config["paths"]["suricata_output"]
+
+    if not os.path.exists(input_file):
+        logging.warning("No normalized data found.")
         return
 
-    with open(INPUT_FILE, "r") as f:
+    with open(input_file, "r") as f:
         indicators = json.load(f)
 
     rules = []
@@ -31,10 +40,12 @@ def generate_suricata():
             rule = f'alert http any any -> any any (msg:"Known Malicious URL {safe_val}"; http.uri; content:"{safe_val}"; sid:{sid}; rev:1;)'
             rules.append(rule)
             
-    with open(OUTPUT_FILE, "w") as f:
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    with open(output_file, "w") as f:
         f.write("\n".join(rules))
     
-    print(f"Generated {len(rules)} Suricata rules.")
+    logging.info(f"Generated {len(rules)} Suricata rules in {output_file}.")
 
 if __name__ == "__main__":
     generate_suricata()
+
