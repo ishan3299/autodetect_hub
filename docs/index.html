@@ -1,47 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>AutoDetect Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - AutoDetect Hub</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>AutoDetect Hub</h1>
+    <div class="sidebar">
+        <div class="brand">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                <path
+                    d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z" />
+            </svg>
+            AutoDetect Hub
+        </div>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Dashboard</a>
             <a href="indicators.html">Indicators</a>
             <a href="rules.html">Rules</a>
-            <a href="heatmap.html">Heatmap</a>
+            <a href="heatmap.html">MITRE Heatmap</a>
             <a href="results.html">Results</a>
         </nav>
-    </header>
+    </div>
 
     <main>
-        <div class="card">
-            <h2>System Status</h2>
-            <div class="stat-grid">
-                <div class="stat-item">
-                    <div class="stat-value" id="total-indicators">-</div>
-                    <div>Indicators Collected</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value" id="covered-techniques">-</div>
-                    <div>ATT&CK Techniques</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value">Active</div>
-                    <div>Pipeline Status</div>
-                </div>
+        <div class="header-bar">
+            <h1>Threat Intel Dashboard</h1>
+            <div style="color: var(--text-secondary); font-size: 0.9rem;">
+                Last Updated: <span id="last-updated" style="color: var(--text-primary);">...</span>
             </div>
-            <p style="text-align: center; margin-top: 1rem;">
-                Last Updated: <span id="last-updated">Loading...</span>
-            </p>
+        </div>
+
+        <div class="stat-grid" style="margin-bottom: 2rem;">
+            <div class="stat-item">
+                <div class="stat-value" id="total-indicators">-</div>
+                <div class="stat-label">Total Indicators</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="covered-techniques">-</div>
+                <div class="stat-label">MITRE Techniques</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" style="color: #2ea043;">ACTIVE</div>
+                <div class="stat-label">Pipeline Status</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">3</div>
+                <div class="stat-label">Data Sources</div>
+            </div>
         </div>
 
         <div class="card">
-            <h2>About</h2>
-            <p>AutoDetect Hub automatically fetches threat intelligence from public sources (URLhaus, MalwareBazaar, Feodo Tracker), normalizes it, and generates Sigma, Suricata, and KQL detection rules daily.</p>
+            <h2>About Platform</h2>
+            <p style="color: var(--text-secondary); max-width: 800px;">
+                AutoDetect Hub acts as a centralized Cyber Threat Intelligence (CTI) engine.
+                It automatically aggregates indicators from open-source feeds (<strong>URLhaus</strong>,
+                <strong>MalwareBazaar</strong>, <strong>Feodo Tracker</strong>), normalizes the data,
+                and generates detection rules for SIEM/IDS platforms.
+            </p>
+            <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+                <code>Sigma</code>
+                <code>Suricata</code>
+                <code>KQL</code>
+                <code>JSON</code>
+            </div>
         </div>
     </main>
 
@@ -50,10 +75,11 @@
         window.addEventListener('DOMContentLoaded', async () => {
             const indicators = await fetchJSON('indicators.json') || [];
             const coverage = await fetchJSON('attack-coverage.json') || {};
-            
+
             displayStats(indicators, coverage);
             document.getElementById('last-updated').innerText = new Date().toLocaleString();
         });
     </script>
 </body>
+
 </html>
