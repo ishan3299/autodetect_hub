@@ -1,42 +1,53 @@
 import json
 import os
+import yaml
+import logging
 
-INPUT_FILE = "data/normalized/indicators.json"
-OUTPUT_FILE = "docs/attack-coverage.json"
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# In a real system, we'd map tags/types to T-codes.
-# For now, we'll hardcode some logical mappings or use random for demo if tags match.
+def load_config():
+    with open("config.yaml", "r") as f:
+        return yaml.safe_load(f)
 
 def build_heatmap():
-    if not os.path.exists(INPUT_FILE):
-        print("No normalized data found.")
+    config = load_config()
+    input_file = config["paths"]["normalized"]
+    output_file = config["paths"]["docs_coverage"]
+    mappings_file = config["paths"]["mappings"]
+
+    if not os.path.exists(input_file):
+        logging.warning("No normalized data found.")
         return
 
-    with open(INPUT_FILE, "r") as f:
+    # Load mappings
+    with open(mappings_file, "r") as f:
+        mappings = json.load(f)
+
+    with open(input_file, "r") as f:
         indicators = json.load(f)
 
     coverage = {}
     
     for item in indicators:
-        # Simple heuristic mapping
         tags = item.get("tags") or []
         
         # Default
         t_code = "T1071" # Application Layer Protocol
         
-        if "phishing" in tags:
-            t_code = "T1566"
-        elif "c2" in tags:
-            t_code = "T1071"
-        elif "ransomware" in tags:
-            t_code = "T1486"
+        # Dynamic mapping
+        for tag in tags:
+            if tag in mappings:
+                t_code = mappings[tag]
+                break # Prioritize first match, or could implement hierarchy
             
         coverage[t_code] = coverage.get(t_code, 0) + 1
         
-    with open(OUTPUT_FILE, "w") as f:
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    with open(output_file, "w") as f:
         json.dump(coverage, f, indent=2)
     
-    print(f"Generated MITRE coverage map: {coverage}")
+    logging.info(f"Generated MITRE coverage map: {coverage}")
 
 if __name__ == "__main__":
     build_heatmap()
+

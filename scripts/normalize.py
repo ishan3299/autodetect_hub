@@ -1,15 +1,24 @@
 import os
 import json
 import glob
+import yaml
+import logging
 
-RAW_DIR = "data/raw/*.json"
-OUTPUT_FILE = "data/normalized/indicators.json"
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+def load_config():
+    with open("config.yaml", "r") as f:
+        return yaml.safe_load(f)
 
 def normalize():
+    config = load_config()
+    raw_dir = config["paths"]["raw_dir"]
+    output_file = config["paths"]["normalized"]
+
     all_indicators = []
     
-    files = glob.glob(RAW_DIR)
-    print(f"Found {len(files)} raw files to process.")
+    files = glob.glob(raw_dir)
+    logging.info(f"Found {len(files)} raw files to process.")
     
     for fpath in files:
         with open(fpath, "r") as f:
@@ -17,7 +26,7 @@ def normalize():
                 data = json.load(f)
                 all_indicators.extend(data)
             except json.JSONDecodeError:
-                print(f"Error reading {fpath}")
+                logging.error(f"Error reading {fpath}")
 
     # Deduplicate based on value
     unique_map = {}
@@ -33,14 +42,27 @@ def normalize():
                     "first_seen": item.get("first_seen")
                 }
             else:
-                # Merge tags if needed, or keep first seen
-                pass
+                # Merge tags
+                existing_tags = set(unique_map[val]["tags"])
+                new_tags = set(item.get("tags", []))
+                unique_map[val]["tags"] = list(existing_tags.union(new_tags))
+
+                # Update timestamp (keep earliest)
+                existing_fs = unique_map[val].get("first_seen")
+                new_fs = item.get("first_seen")
+                if new_fs and existing_fs:
+                    unique_map[val]["first_seen"] = min(existing_fs, new_fs)
+                elif new_fs:
+                    unique_map[val]["first_seen"] = new_fs
+
     
     final_list = list(unique_map.values())
     
-    with open(OUTPUT_FILE, "w") as f:
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    with open(output_file, "w") as f:
         json.dump(final_list, f, indent=2)
-    print(f"Normalized {len(final_list)} unique indicators to {OUTPUT_FILE}")
+    logging.info(f"Normalized {len(final_list)} unique indicators to {output_file}")
 
 if __name__ == "__main__":
     normalize()
+

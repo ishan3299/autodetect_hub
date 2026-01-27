@@ -1,12 +1,20 @@
 import json
 import requests
 import datetime
+import yaml
+import logging
+import os
 
-OUTPUT_FILE = "data/raw/urlhaus.json"
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+def load_config():
+    with open("config.yaml", "r") as f:
+        return yaml.safe_load(f)
+
 URLHAUS_API = "https://urlhaus.abuse.ch/downloads/json_recent/"
 
 def fetch_urlhaus():
-    print("Fetching from URLhaus (Public)...")
+    logging.info("Fetching from URLhaus (Public)...")
     try:
         response = requests.get(URLHAUS_API, timeout=10)
         response.raise_for_status()
@@ -29,11 +37,17 @@ def fetch_urlhaus():
         return normalized_data
         
     except Exception as e:
-        print(f"Error fetching URLhaus: {e}")
+        logging.error(f"Error fetching URLhaus: {e}")
         return []
 
 if __name__ == "__main__":
+    config = load_config()
+    output_file = config["paths"]["raw_urlhaus"]
+    
     data = fetch_urlhaus()
-    with open(OUTPUT_FILE, "w") as f:
+    
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    with open(output_file, "w") as f:
         json.dump(data, f, indent=2)
-    print(f"Saved {len(data)} indicators to {OUTPUT_FILE}")
+    logging.info(f"Saved {len(data)} indicators to {output_file}")
+
