@@ -1,114 +1,130 @@
-title: Detect Activity to Known Malicious Indicator - 192.168.1.100
-id: auto-2a39f1eedcd9f986327b5e4da842426f4f05b8f16f0ef385639dbec0db70eaae
+title: Detect Activity to Known Malicious Indicator - http://222.142.204.233:51785/i
+id: auto-5049074ead173529e25e3d8d8dc49e18e21263c111307f26b812a77572408988
 status: experimental
-description: Detects traffic or activity related to 192.168.1.100 which is a known malicious ip.
+description: Detects traffic or activity related to http://222.142.204.233:51785/i which is a known malicious url.
 logsource:
-  category: firewall
+  category: proxy
 detection:
   selection:
-    dst_ip:
-      - '*192.168.1.100*'
+    c-uri:
+      - '*http://222.142.204.233:51785/i*'
   condition: selection
 level: high
 tags:
-  - attack.t1595
-  - source.OTX
+  - attack.t1059.004
+  - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - 162.243.103.246
-id: auto-ef7f4e9e6551d56eecd382e99ca7a10a59b0389235d54062ed2af68c9e69cff6
+title: Detect Activity to Known Malicious Indicator - http://59.182.220.201:60304/i
+id: auto-ddff4be92b04abc3d950971865c926dcb3772152fbd477714892bca50459e045
 status: experimental
-description: Detects traffic or activity related to 162.243.103.246 which is a known malicious ip.
+description: Detects traffic or activity related to http://59.182.220.201:60304/i which is a known malicious url.
 logsource:
-  category: firewall
+  category: proxy
 detection:
   selection:
-    dst_ip:
-      - '*162.243.103.246*'
+    c-uri:
+      - '*http://59.182.220.201:60304/i*'
   condition: selection
 level: high
 tags:
-  - attack.T1071
-  - source.FeodoTracker
+  - attack.t1059.004
+  - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - 167.86.75.145
-id: auto-fb259990d67fff4d50eeb555e6f7de9714f82d642d377fa2a35a6d33ba26fd23
+title: Detect Activity to Known Malicious Indicator - http://42.7.131.4:39679/bin.sh
+id: auto-e03925d8f8111e05a38f5807cd506c4bb0abeab6840746c66364cab4ba254b8c
 status: experimental
-description: Detects traffic or activity related to 167.86.75.145 which is a known malicious ip.
+description: Detects traffic or activity related to http://42.7.131.4:39679/bin.sh which is a known malicious url.
 logsource:
-  category: firewall
+  category: proxy
 detection:
   selection:
-    dst_ip:
-      - '*167.86.75.145*'
+    c-uri:
+      - '*http://42.7.131.4:39679/bin.sh*'
   condition: selection
 level: high
 tags:
-  - attack.T1071
-  - source.FeodoTracker
+  - attack.t1059.004
+  - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - 137.184.9.29
-id: auto-c1a5590e361bb9109398529fc5c6b38477f0d2c243c333d6e63b7c4a9671aad6
+title: Detect Activity to Known Malicious Indicator - http://182.119.2.172:48241/i
+id: auto-7e50647ece76e1436f9bedd2d515ac394495a9af2c29c4e19142186401a4d325
 status: experimental
-description: Detects traffic or activity related to 137.184.9.29 which is a known malicious ip.
+description: Detects traffic or activity related to http://182.119.2.172:48241/i which is a known malicious url.
 logsource:
-  category: firewall
+  category: proxy
 detection:
   selection:
-    dst_ip:
-      - '*137.184.9.29*'
+    c-uri:
+      - '*http://182.119.2.172:48241/i*'
   condition: selection
 level: high
 tags:
-  - attack.T1071
-  - source.FeodoTracker
+  - attack.t1059.004
+  - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - 50.16.16.211
-id: auto-4653f5ef5d5ec04590dbcefa642beab87152553e18af2ab21e49e81c59b3bef1
+title: Detect Activity to Known Malicious Indicator - http://182.119.63.96:45424/bin.sh
+id: auto-c3a5c8ee63f74fae86c91b1dd97714bf2d597008dc6cf5f295adcc1750234d48
 status: experimental
-description: Detects traffic or activity related to 50.16.16.211 which is a known malicious ip.
+description: Detects traffic or activity related to http://182.119.63.96:45424/bin.sh which is a known malicious url.
 logsource:
-  category: firewall
+  category: proxy
 detection:
   selection:
-    dst_ip:
-      - '*50.16.16.211*'
+    c-uri:
+      - '*http://182.119.63.96:45424/bin.sh*'
   condition: selection
 level: high
 tags:
-  - attack.T1071
-  - source.FeodoTracker
+  - attack.t1059.004
+  - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - 34.204.119.63
-id: auto-aea702d719e6427b2ca12d5dc4f6588183cd16649e190cf12a8f4ab24b03f308
+title: Detect Activity to Known Malicious Indicator - http://59.182.220.201:60304/bin.sh
+id: auto-737ace796828e2a66f2a438faafe8245a54b93503dbea1f853336fef921b6ff0
 status: experimental
-description: Detects traffic or activity related to 34.204.119.63 which is a known malicious ip.
+description: Detects traffic or activity related to http://59.182.220.201:60304/bin.sh which is a known malicious url.
 logsource:
-  category: firewall
+  category: proxy
 detection:
   selection:
-    dst_ip:
-      - '*34.204.119.63*'
+    c-uri:
+      - '*http://59.182.220.201:60304/bin.sh*'
   condition: selection
 level: high
 tags:
-  - attack.T1071
-  - source.FeodoTracker
+  - attack.t1059.004
+  - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - 172.232.59.14
-id: auto-4f14de2c7190570f62f2604c74455a2c37c897d922c676eb9cc02e6cb08d9a16
+title: Detect Activity to Known Malicious Indicator - http://125.41.254.225:49438/i
+id: auto-8b0011a227fff32dc7e68c8453e50752f81fd1ea6276e1ca4ee9a4b8f39be8e6
 status: experimental
-description: Detects traffic or activity related to 172.232.59.14 which is a known malicious ip.
+description: Detects traffic or activity related to http://125.41.254.225:49438/i which is a known malicious url.
 logsource:
-  category: firewall
+  category: proxy
 detection:
   selection:
-    dst_ip:
-      - '*172.232.59.14*'
+    c-uri:
+      - '*http://125.41.254.225:49438/i*'
   condition: selection
 level: high
 tags:
-  - attack.T1071
-  - source.FeodoTracker
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://27.194.22.35:33821/bin.sh
+id: auto-af156124be5f14d09722738885bff1f7515f683775361732c8fe8c3f61567d64
+status: experimental
+description: Detects traffic or activity related to http://27.194.22.35:33821/bin.sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://27.194.22.35:33821/bin.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Indicator - http://123.188.83.156:52279/bin.sh
 id: auto-b273905944690f84686bee473dd99391dd9dbc23fce0b3a4f47a33e59df6f1f8
@@ -270397,3 +270413,115 @@ level: high
 tags:
   - attack.t1110
   - source.AbuseIPDB
+---
+title: Detect Activity to Known Malicious Indicator - 162.243.103.246
+id: auto-ef7f4e9e6551d56eecd382e99ca7a10a59b0389235d54062ed2af68c9e69cff6
+status: experimental
+description: Detects traffic or activity related to 162.243.103.246 which is a known malicious ip.
+logsource:
+  category: firewall
+detection:
+  selection:
+    dst_ip:
+      - '*162.243.103.246*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.FeodoTracker
+---
+title: Detect Activity to Known Malicious Indicator - 167.86.75.145
+id: auto-fb259990d67fff4d50eeb555e6f7de9714f82d642d377fa2a35a6d33ba26fd23
+status: experimental
+description: Detects traffic or activity related to 167.86.75.145 which is a known malicious ip.
+logsource:
+  category: firewall
+detection:
+  selection:
+    dst_ip:
+      - '*167.86.75.145*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.FeodoTracker
+---
+title: Detect Activity to Known Malicious Indicator - 137.184.9.29
+id: auto-c1a5590e361bb9109398529fc5c6b38477f0d2c243c333d6e63b7c4a9671aad6
+status: experimental
+description: Detects traffic or activity related to 137.184.9.29 which is a known malicious ip.
+logsource:
+  category: firewall
+detection:
+  selection:
+    dst_ip:
+      - '*137.184.9.29*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.FeodoTracker
+---
+title: Detect Activity to Known Malicious Indicator - 50.16.16.211
+id: auto-4653f5ef5d5ec04590dbcefa642beab87152553e18af2ab21e49e81c59b3bef1
+status: experimental
+description: Detects traffic or activity related to 50.16.16.211 which is a known malicious ip.
+logsource:
+  category: firewall
+detection:
+  selection:
+    dst_ip:
+      - '*50.16.16.211*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.FeodoTracker
+---
+title: Detect Activity to Known Malicious Indicator - 34.204.119.63
+id: auto-aea702d719e6427b2ca12d5dc4f6588183cd16649e190cf12a8f4ab24b03f308
+status: experimental
+description: Detects traffic or activity related to 34.204.119.63 which is a known malicious ip.
+logsource:
+  category: firewall
+detection:
+  selection:
+    dst_ip:
+      - '*34.204.119.63*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.FeodoTracker
+---
+title: Detect Activity to Known Malicious Indicator - 172.232.59.14
+id: auto-4f14de2c7190570f62f2604c74455a2c37c897d922c676eb9cc02e6cb08d9a16
+status: experimental
+description: Detects traffic or activity related to 172.232.59.14 which is a known malicious ip.
+logsource:
+  category: firewall
+detection:
+  selection:
+    dst_ip:
+      - '*172.232.59.14*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.FeodoTracker
+---
+title: Detect Activity to Known Malicious Indicator - 192.168.1.100
+id: auto-2a39f1eedcd9f986327b5e4da842426f4f05b8f16f0ef385639dbec0db70eaae
+status: experimental
+description: Detects traffic or activity related to 192.168.1.100 which is a known malicious ip.
+logsource:
+  category: firewall
+detection:
+  selection:
+    dst_ip:
+      - '*192.168.1.100*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.OTX
