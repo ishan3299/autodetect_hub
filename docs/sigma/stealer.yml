@@ -1341,19 +1341,3 @@ level: high
 tags:
   - attack.T1071
   - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.159/geter/sincyi.exe
-id: auto-fdbc4ac3e3484fe53338d114694f9ade016a56770c860bc65ff2e4fd4c76db5e
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.159/geter/sincyi.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.159/geter/sincyi.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
-  - source.URLhaus
