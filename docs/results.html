@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results - AutoDetect Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
     <div class="sidebar">
         <div class="brand">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28">
                 <path
                     d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z" />
             </svg>
@@ -53,21 +55,23 @@
                 <div>
                     <h3>Collected Data</h3>
                     <ul style="color: var(--text-secondary);">
-                        <li><a href="indicators.json" target="_blank" style="color: var(--accent);">indicators.json</a>
+                        <li><a href="indicators.json" target="_blank"
+                                style="color: var(--accent-secondary);">indicators.json</a>
                         </li>
                         <li><a href="attack-coverage.json" target="_blank"
-                                style="color: var(--accent);">attack-coverage.json</a></li>
+                                style="color: var(--accent-secondary);">attack-coverage.json</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3>Rules Files</h3>
                     <ul style="color: var(--text-secondary);">
                         <li><a href="suricata/all_rules.rules" target="_blank"
-                                style="color: var(--accent);">all_rules.rules</a></li>
-                        <li><a href="kql/all_rules.kql" target="_blank" style="color: var(--accent);">all_rules.kql</a>
+                                style="color: var(--accent-secondary);">all_rules.rules</a></li>
+                        <li><a href="kql/all_rules.kql" target="_blank"
+                                style="color: var(--accent-secondary);">all_rules.kql</a>
                         </li>
                         <li><a href="sigma/all_rules.yml" target="_blank"
-                                style="color: var(--accent);">all_rules.yml</a></li>
+                                style="color: var(--accent-secondary);">all_rules.yml</a></li>
                     </ul>
                 </div>
             </div>
@@ -86,12 +90,12 @@
                 <tr>
                     <td>Total Indicators</td>
                     <td>${indicators.length}</td>
-                    <td><a href="indicators.json" style="color: var(--accent);">indicators.json</a></td>
+                    <td><a href="indicators.json" style="color: var(--accent-secondary);">indicators.json</a></td>
                 </tr>
                 <tr>
                     <td>ATT&CK Techniques Covered</td>
                     <td>${Object.keys(coverage).length}</td>
-                    <td><a href="attack-coverage.json" style="color: var(--accent);">attack-coverage.json</a></td>
+                    <td><a href="attack-coverage.json" style="color: var(--accent-secondary);">attack-coverage.json</a></td>
                 </tr>
             `;
         });
