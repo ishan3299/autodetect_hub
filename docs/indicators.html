@@ -31,7 +31,24 @@
     <main>
         <div class="header-bar">
             <h1>Threat Indicators</h1>
-            <input type="text" id="search" placeholder="Search indicators..." style="margin-bottom: 0; width: 300px;">
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <select id="filter-type"
+                    style="padding: 0.5rem; border-radius: 6px; background: var(--glass-bg); color: var(--text-primary); border: 1px solid var(--glass-border);">
+                    <option value="">All Types</option>
+                </select>
+                <select id="filter-source"
+                    style="padding: 0.5rem; border-radius: 6px; background: var(--glass-bg); color: var(--text-primary); border: 1px solid var(--glass-border);">
+                    <option value="">All Sources</option>
+                </select>
+                <button id="btn-reset"
+                    style="padding: 0.5rem 1rem; border-radius: 6px; background: var(--glass-border); color: var(--text-primary); border: none; cursor: pointer;">Reset</button>
+                <div style="width: 1px; background: var(--glass-border); margin: 0 0.5rem;"></div>
+                <input type="text" id="search" placeholder="Search..."
+                    style="margin-bottom: 0; padding: 0.5rem; border-radius: 6px; background: var(--glass-bg); border: 1px solid var(--glass-border); color: var(--text-primary);">
+                <button id="btn-export"
+                    style="padding: 0.5rem 1rem; border-radius: 6px; background: var(--accent-glow); color: var(--accent-secondary); border: 1px solid var(--accent-secondary); cursor: pointer;">Export
+                    CSV</button>
+            </div>
         </div>
 
         <div class="card">
@@ -56,11 +73,38 @@
         window.addEventListener('DOMContentLoaded', async () => {
             const indicators = await fetchJSON('indicators.json') || [];
             const tbody = document.querySelector('#ind-table tbody');
-            const search = document.getElementById('search');
+            const searchInput = document.getElementById('search');
+            const typeSelect = document.getElementById('filter-type');
+            const sourceSelect = document.getElementById('filter-source');
+            const resetBtn = document.getElementById('btn-reset');
+            const exportBtn = document.getElementById('btn-export');
+
+            // Populate Filters
+            const distinctTypes = [...new Set(indicators.map(i => i.indicator_type))].sort();
+            const distinctSources = [...new Set(indicators.map(i => i.source))].sort();
+
+            distinctTypes.forEach(t => typeSelect.add(new Option(t, t)));
+            distinctSources.forEach(s => sourceSelect.add(new Option(s, s)));
+
+            function applyFilters() {
+                const term = searchInput.value.toLowerCase();
+                const type = typeSelect.value;
+                const source = sourceSelect.value;
+
+                const filtered = indicators.filter(i => {
+                    const matchTerm = !term || i.indicator.toLowerCase().includes(term) || (i.tags || []).join(' ').toLowerCase().includes(term);
+                    const matchType = !type || i.indicator_type === type;
+                    const matchSource = !source || i.source === source;
+                    return matchTerm && matchType && matchSource;
+                });
+
+                render(filtered);
+                return filtered;
+            }
 
             function render(list) {
                 tbody.innerHTML = '';
-                list.slice(0, 100).forEach(item => { // Limit to 100 for perf in demo
+                list.slice(0, 100).forEach(item => {
                     const tr = document.createElement('tr');
                     tr.innerHTML = `
                         <td><code>${item.indicator}</code></td>
@@ -72,16 +116,24 @@
                 });
             }
 
-            render(indicators);
+            // Event Listeners
+            searchInput.addEventListener('input', applyFilters);
+            typeSelect.addEventListener('change', applyFilters);
+            sourceSelect.addEventListener('change', applyFilters);
 
-            search.addEventListener('input', (e) => {
-                const term = e.target.value.toLowerCase();
-                const filtered = indicators.filter(i =>
-                    i.indicator.toLowerCase().includes(term) ||
-                    (i.tags || []).join(' ').toLowerCase().includes(term)
-                );
-                render(filtered);
+            resetBtn.addEventListener('click', () => {
+                searchInput.value = '';
+                typeSelect.value = '';
+                sourceSelect.value = '';
+                applyFilters();
             });
+
+            exportBtn.addEventListener('click', () => {
+                const currentData = applyFilters();
+                downloadCSV(currentData, 'indicators_export.csv');
+            });
+
+            render(indicators);
         });
     </script>
 </body>
