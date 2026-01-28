@@ -1,3 +1,483 @@
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8541372660/rHpoTiI.exe
+id: auto-3fcd04c032d0f58562d42acba9922d274e4b045d2526464fd457e1dc327dc9f2
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/8541372660/rHpoTiI.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/8541372660/rHpoTiI.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://42.226.68.26:53831/bin.sh
+id: auto-a2c1e26149dffdfc3d304bb3a5ee41c44531e6399344e1c3f0ffea38970b1ada
+status: experimental
+description: Detects traffic or activity related to http://42.226.68.26:53831/bin.sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://42.226.68.26:53831/bin.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://110.39.246.147:59990/bin.sh
+id: auto-a1342bf3ba774120ca7cd17dbbf6e2d5ede2960afcd1b16164728e3454512f27
+status: experimental
+description: Detects traffic or activity related to http://110.39.246.147:59990/bin.sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://110.39.246.147:59990/bin.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8541372660/rHpoTiI.bat
+id: auto-64f33af9afb0529cd7ab6beadf3ec1cf244d8523116bfa62a28096f0e3fa64fb
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/8541372660/rHpoTiI.bat which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/8541372660/rHpoTiI.bat*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://219.155.201.47:52717/i
+id: auto-9a95eadf49dbebbdccd92bd285cd7acc46ceb9babd1da9c3a955610e0de5d4b7
+status: experimental
+description: Detects traffic or activity related to http://219.155.201.47:52717/i which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://219.155.201.47:52717/i*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://219.155.201.47:52717/bin.sh
+id: auto-09f358e14c62f2d515dd3b8c53b06e09881e1a7a2a70b0b4cc98c215d46c7102
+status: experimental
+description: Detects traffic or activity related to http://219.155.201.47:52717/bin.sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://219.155.201.47:52717/bin.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/OneDrivesvc64-Transfer.exe
+id: auto-1054a6cbf3305517e9f0f72e9cf500135c9187d3645ff38fee8d57761aa8127f
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/OneDrivesvc64-Transfer.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/OneDrivesvc64-Transfer.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/OneDrivesvc64-Dumpster.exe
+id: auto-600de2566a55b003c966704307d13f2476bbd11e5ee4747cf673353043ebe691
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/OneDrivesvc64-Dumpster.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/OneDrivesvc64-Dumpster.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/OneDrivesv.exe
+id: auto-96d53f4e72beef2c961d6ad4079b6e1df8869a9db09b0eb2fbbcceddc0dcd107
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/OneDrivesv.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/OneDrivesv.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/B.exe
+id: auto-9695db87eca6eecffadfba4d6a99b224d90798058faf580cae522e9569cdba71
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/B.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/B.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/WEB_RTC_Update.exe
+id: auto-8c4df3a2e4c91fc0c09648c816a3606e76463fe0feeb041a5dcd499db75b87f9
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/WEB_RTC_Update.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/WEB_RTC_Update.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1219
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/RunTimeBroker.exe
+id: auto-99fe66a3f2e389bdacf5729b1c17223fa74a6fdd0ef94dc5c581e6ad098d63ba
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/RunTimeBroker.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/RunTimeBroker.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/ServiceHost_1.exe
+id: auto-782fe5ddca8ab0ec7db14ab3b3bbaa795fc8bb85d59b41a41695229b58d22881
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/ServiceHost_1.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/ServiceHost_1.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/ServiceHost.exe
+id: auto-55a1f87ab7961bcc51e0a2213ff29233d305e3dbde827bfa0ee8fe61ff43d390
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/ServiceHost.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/ServiceHost.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/3.0_X-Lite_Win32_1006e_34025.exe
+id: auto-3f927e2b547410ca0b219bac4944093e2e7d3512a4116823c92cead96399f997
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/3.0_X-Lite_Win32_1006e_34025.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/3.0_X-Lite_Win32_1006e_34025.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/Mesh.exe
+id: auto-259d58d75ce137c15c7088150a0684495b551ebed02a6e4897d06e0bc9e14791
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/Mesh.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/Mesh.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/MAYBE.msi
+id: auto-df6077aa4e70ad949a9a05ec8b794cdc77dd792cfadf530688556666df7ad5ec
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/MAYBE.msi which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/MAYBE.msi*'
+  condition: selection
+level: high
+tags:
+  - attack.t1219
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/auth_cw.exe
+id: auto-70c802fae3e21f617200fd2ec76ec09da46099eda4aaae15dc6b1275f3cfd005
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/auth_cw.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/auth_cw.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1219
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/UniRun.exe
+id: auto-795cd9fe496029f64cef310eae2f0c6e536f7de8506dbef4ae7d79aa150989e6
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/UniRun.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/UniRun.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/updater.exe
+id: auto-e4fd6202dbf42cda900e149af25b776f948bece73bfcc3b9e7a0d60d6db35750
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/updater.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/updater.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/UserOOBE.exe
+id: auto-c4433817ab685b14ec0943fbbd2340b5076754436b2bb79d02021088410b53e9
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/UserOOBE.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/UserOOBE.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/det.exe
+id: auto-e5089ab644c9391664340d049b8f86f54046582d296ebec59d2ae8b1fefecbdd
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/det.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/det.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/ss.exe
+id: auto-825e6e969ce8c3550de27140d9634b03b4d5f163315fd31dcc6ad5ba71783bc4
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/ss.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/ss.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/wxipp.exe
+id: auto-3c9a17da94a85db2545c80076644c2a951ff783329f685d45f15fe6bd412115b
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/wxipp.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/wxipp.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/win.exe
+id: auto-f8234d397fb6339744c874998b77801c4f39181703be23b899f047106e6db811
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/win.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/win.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/wininittt.exe
+id: auto-a7f7afc7afe4c7dba62ae74eca74dd940810acf29b73b66c7c4f41b306e81bf0
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/wininittt.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/wininittt.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/smss.exe
+id: auto-196c2e05909e7a8fa1e43b08becc8b30eff92969da9b34c400f5399881648874
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/smss.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/smss.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/winninitt.exe
+id: auto-f31f503e57325fef421b18f19431d360b7ad2ee5ea3a54de6ca412ffaf8998b4
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/winninitt.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/winninitt.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/onedrivetray.exe
+id: auto-24394613ade22e6a295d73ca3e93dff3444aaac7fcd5e1cb2d39ed1804cc4911
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/onedrivetray.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/onedrivetray.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://45.141.58.219/primary.exe
+id: auto-f65d7656fed7f29070861c6b7104ed938b49884dac82d1d6d8e4b49187b7e9a5
+status: experimental
+description: Detects traffic or activity related to http://45.141.58.219/primary.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.141.58.219/primary.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://93.157.253.209:41123/bin.sh
 id: auto-14401927d4df2a90c41d245ec5fdd6b2672753101625eb9aa0f0d50c3424e1ac
 status: experimental
@@ -27,7 +507,7 @@ detection:
   condition: selection
 level: high
 tags:
-  - attack.t1059.004
+  - attack.t1583
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Indicator - http://109.104.155.24/massload
@@ -43,7 +523,7 @@ detection:
   condition: selection
 level: high
 tags:
-  - attack.t1059.004
+  - attack.t1583
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Indicator - http://109.104.155.24/arm5
@@ -123,7 +603,7 @@ detection:
   condition: selection
 level: high
 tags:
-  - attack.t1059.004
+  - attack.t1583
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Indicator - http://109.104.155.24/lilin.sh
@@ -139,7 +619,7 @@ detection:
   condition: selection
 level: high
 tags:
-  - attack.t1059.004
+  - attack.t1583
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Indicator - http://109.104.155.24/uni
@@ -155,7 +635,7 @@ detection:
   condition: selection
 level: high
 tags:
-  - attack.t1059.004
+  - attack.t1583
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Indicator - http://109.104.155.24/arm4
