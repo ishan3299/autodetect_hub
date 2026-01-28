@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDetect Hub - Analytics Dashboard</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --primary: #4f46e5;
+            --accent: #10b981;
+            --danger: #ef4444;
+            --text: #f3f4f6;
+            --text-secondary: #9ca3af;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: radial-gradient(circle at top left, #1e1b4b, #0f172a, #000);
+            color: var(--text);
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            background: linear-gradient(to right, #818cf8, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: white;
+        }
+
+        /* Glass Cards */
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Grid Layout */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .metric-value {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+
+        .metric-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: var(--text-secondary);
+        }
+
+        th {
+            text-align: left;
+            padding: 1rem;
+            border-bottom: 1px solid var(--glass-border);
+            color: var(--text);
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 99px;
+            font-size: 0.75rem;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>Threat Analytics</h1>
+                <p style="color: var(--text-secondary);">Real-time Intelligence Overview</p>
+            </div>
+            <nav>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="indicators.html" class="nav-link">Indicators</a>
+                <a href="dashboard.html" class="nav-link" style="color: var(--accent);">Dashboard</a>
+            </nav>
+        </header>
+
+        <!-- Key Metrics -->
+        <div class="metrics-grid">
+            <div class="glass-card">
+                <div class="metric-label">Total Indicators</div>
+                <div class="metric-value" id="totalIocs">-</div>
+            </div>
+            <div class="glass-card">
+                <div class="metric-label">New (24h)</div>
+                <div class="metric-value" style="color: var(--accent);" id="newIocs">-</div>
+            </div>
+            <div class="glass-card">
+                <div class="metric-label">Top Threat Type</div>
+                <div class="metric-value" style="color: #f472b6;" id="topType">-</div>
+            </div>
+            <div class="glass-card">
+                <div class="metric-label">MITRE Techniques Mapped</div>
+                <div class="metric-value" style="color: #60a5fa;" id="mitreCount">-</div>
+            </div>
+        </div>
+
+        <!-- Charts -->
+        <div class="charts-grid">
+            <div class="glass-card">
+                <h3>Top Malware Families</h3>
+                <canvas id="tagsChart"></canvas>
+            </div>
+            <div class="glass-card">
+                <h3>Indicator Types</h3>
+                <canvas id="typesChart"></canvas>
+            </div>
+        </div>
+
+        <!-- MITRE Coverage -->
+        <div class="glass-card">
+            <h3>MITRE ATT&CK Coverage (Top 20)</h3>
+            <div style="height: 300px;">
+                <canvas id="mitreChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Recent Table -->
+        <div class="glass-card">
+            <h3>Recent Indicators (Last 24h)</h3>
+            <div style="overflow-x: auto;">
+                <table id="recentTable">
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Type</th>
+                            <th>Tags</th>
+                            <th>First Seen</th>
+                            <th>Source</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        fetch('analytics.json')
+            .then(response => response.json())
+            .then(data => {
+                // Update Metrics
+                document.getElementById('totalIocs').innerText = data.total_iocs.toLocaleString();
+                document.getElementById('newIocs').innerText = "+" + data.new_iocs_24h.toLocaleString();
+                
+                // Top Type
+                const topType = Object.keys(data.top_types)[0];
+                document.getElementById('topType').innerText = topType.toUpperCase();
+
+                // MITRE Count - Sum of all mapped
+                let totalMitre = Object.values(data.mitre_coverage).reduce((a, b) => a + b, 0);
+                document.getElementById('mitreCount').innerText = totalMitre.toLocaleString();
+
+                // Charts Config
+                const commonOptions = {
+                    plugins: { legend: { labels: { color: '#9ca3af' } } },
+                    scales: {
+                        y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#9ca3af' } },
+                        x: { grid: { display: false }, ticks: { color: '#9ca3af' } }
+                    }
+                };
+
+                // Tags Chart
+                new Chart(document.getElementById('tagsChart'), {
+                    type: 'bar',
+                    data: {
+                        labels: Object.keys(data.top_tags),
+                        datasets: [{
+                            label: 'Count',
+                            data: Object.values(data.top_tags),
+                            backgroundColor: 'rgba(52, 211, 153, 0.7)',
+                            borderColor: '#34d399',
+                            borderWidth: 1,
+                            borderRadius: 4
+                        }]
+                    },
+                    options: commonOptions
+                });
+
+                // Types Chart
+                new Chart(document.getElementById('typesChart'), {
+                    type: 'doughnut',
+                    data: {
+                        labels: Object.keys(data.top_types),
+                        datasets: [{
+                            data: Object.values(data.top_types),
+                            backgroundColor: [
+                                '#818cf8', '#f472b6', '#34d399', '#facc15', '#ef4444'
+                            ],
+                            borderWidth: 0
+                        }]
+                    },
+                    options: {
+                        plugins: { legend: { position: 'right', labels: { color: '#9ca3af' } } }
+                    }
+                });
+
+                // MITRE Chart
+                new Chart(document.getElementById('mitreChart'), {
+                    type: 'bar',
+                    data: {
+                        labels: Object.keys(data.mitre_coverage),
+                        datasets: [{
+                            label: 'Technique Hits',
+                            data: Object.values(data.mitre_coverage),
+                            backgroundColor: 'rgba(96, 165, 250, 0.7)',
+                            borderWidth: 0,
+                            borderRadius: 4
+                        }]
+                    },
+                    options: commonOptions
+                });
+
+                // Table Population
+                const tbody = document.querySelector('#recentTable tbody');
+                data.recent_iocs.slice(0, 10).forEach(item => {
+                    const row = document.createElement('tr');
+                    
+                    const tagsHtml = item.tags.map(t => `<span class="badge">${t}</span>`).join(" ");
+                    
+                    row.innerHTML = `
+                        <td style="font-family: monospace; color: #818cf8;">${item.value.substring(0, 50)}${item.value.length > 50 ? '...' : ''}</td>
+                        <td style="text-transform: uppercase; font-size: 0.8rem; font-weight: 600;">${item.indicator_type}</td>
+                        <td>${tagsHtml}</td>
+                        <td>${item.first_seen}</td>
+                        <td>${item.source}</td>
+                    `;
+                    tbody.appendChild(row);
+                });
+            });
+    </script>
+</body>
+</html>
