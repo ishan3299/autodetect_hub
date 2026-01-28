@@ -14,9 +14,19 @@ def load_config():
 FEODO_API = "https://feodotracker.abuse.ch/downloads/ipblocklist.json"
 
 def fetch_feodo():
+    from requests.adapters import HTTPAdapter
+    from requests.packages.urllib3.util.retry import Retry
+
+    def get_session():
+        session = requests.Session()
+        retry = Retry(total=3, backoff_factor=0.5, status_forcelist=[500, 502, 503, 504])
+        adapter = HTTPAdapter(max_retries=retry)
+        session.mount('https://', adapter)
+        return session
+
     logging.info("Fetching from Feodo Tracker...")
     try:
-        response = requests.get(FEODO_API, timeout=10)
+        response = get_session().get(FEODO_API, timeout=15)
         response.raise_for_status()
         data = response.json()
         

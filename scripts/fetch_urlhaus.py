@@ -14,9 +14,19 @@ def load_config():
 URLHAUS_API = "https://urlhaus.abuse.ch/downloads/json_recent/"
 
 def fetch_urlhaus():
+    from requests.adapters import HTTPAdapter
+    from requests.packages.urllib3.util.retry import Retry
+
+    def get_session():
+        session = requests.Session()
+        retry = Retry(total=3, backoff_factor=0.5, status_forcelist=[500, 502, 503, 504])
+        adapter = HTTPAdapter(max_retries=retry)
+        session.mount('https://', adapter)
+        return session
+
     logging.info("Fetching from URLhaus (Public)...")
     try:
-        response = requests.get(URLHAUS_API, timeout=10)
+        response = get_session().get(URLHAUS_API, timeout=15)
         response.raise_for_status()
         data = response.json()
         
