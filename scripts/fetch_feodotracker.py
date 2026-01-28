@@ -1,15 +1,11 @@
 import json
 import requests
 import datetime
-import yaml
 import logging
 import os
+from common import load_config, setup_logging
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
-def load_config():
-    with open("config.yaml", "r") as f:
-        return yaml.safe_load(f)
+setup_logging()
 
 FEODO_API = "https://feodotracker.abuse.ch/downloads/ipblocklist.json"
 

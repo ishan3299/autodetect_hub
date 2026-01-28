@@ -1,14 +1,11 @@
+import argparse
 import os
 import json
 import glob
-import yaml
 import logging
+from common import load_config, setup_logging
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
-def load_config():
-    with open("config.yaml", "r") as f:
-        return yaml.safe_load(f)
+setup_logging()
 
 def normalize():
     config = load_config()
