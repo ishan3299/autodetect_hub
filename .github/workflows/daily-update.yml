@@ -40,6 +40,9 @@ jobs:
           python scripts/generate_suricata.py
           python scripts/generate_kql.py
 
+      - name: Generate Analytics
+        run: python scripts/generate_analytics.py
+
       - name: Generate Heatmap
         run: python scripts/build_attack_heatmap.py
 
