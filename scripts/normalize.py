@@ -24,7 +24,16 @@ def normalize():
         with open(fpath, "r") as f:
             try:
                 data = json.load(f)
-                all_indicators.extend(data)
+                
+                # Validation: Filter out invalid items
+                valid_data = []
+                for item in data:
+                    if not item.get("value") or not item.get("type"):
+                        logging.warning(f"Skipping invalid item in {fpath}: {item}")
+                        continue
+                    valid_data.append(item)
+                
+                all_indicators.extend(valid_data)
             except json.JSONDecodeError:
                 logging.error(f"Error reading {fpath}")
 
@@ -39,7 +48,9 @@ def normalize():
                     "indicator_type": item.get("type"),
                     "source": item.get("source"),
                     "tags": item.get("tags", []),
-                    "first_seen": item.get("first_seen")
+                    "first_seen": item.get("first_seen"),
+                    "last_seen": item.get("first_seen"),
+                    "sightings": 1
                 }
             else:
                 # Merge tags
@@ -47,13 +58,21 @@ def normalize():
                 new_tags = set(item.get("tags", []))
                 unique_map[val]["tags"] = list(existing_tags.union(new_tags))
 
-                # Update timestamp (keep earliest)
-                existing_fs = unique_map[val].get("first_seen")
-                new_fs = item.get("first_seen")
-                if new_fs and existing_fs:
-                    unique_map[val]["first_seen"] = min(existing_fs, new_fs)
-                elif new_fs:
-                    unique_map[val]["first_seen"] = new_fs
+                current_date = item.get("first_seen", None)
+                if not current_date:
+                     import datetime
+                     current_date = datetime.date.today().isoformat()
+
+                # Update First Seen (Keep Earliest)
+                existing_fs = unique_map[val].get("first_seen", current_date)
+                unique_map[val]["first_seen"] = min(existing_fs, current_date)
+
+                # Update Last Seen (Keep Latest)
+                existing_ls = unique_map[val].get("last_seen", current_date)
+                unique_map[val]["last_seen"] = max(existing_ls, current_date)
+
+                # Increment Sightings
+                unique_map[val]["sightings"] = unique_map[val].get("sightings", 1) + 1
 
     
     final_list = list(unique_map.values())
