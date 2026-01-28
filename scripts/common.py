@@ -11,9 +11,12 @@ def setup_logging(level=logging.INFO):
 
 def load_config(config_path="config.yaml"):
     if not os.path.exists(config_path):
-        # unexpected, but fallback or error
-        logging.error(f"Config file not found at {config_path}")
-        return {}
+        # search in parent if not found (for running from scripts/)
+        if os.path.exists(os.path.join("..", config_path)):
+             config_path = os.path.join("..", config_path)
+        else:
+             logging.error(f"Config file not found at {config_path}")
+             return {}
         
     with open(config_path, "r") as f:
         return yaml.safe_load(f)
