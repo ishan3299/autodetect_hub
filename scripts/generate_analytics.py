@@ -1,15 +1,11 @@
+import logging
 import os
 import json
-import yaml
-import logging
 from datetime import datetime, timedelta
 from collections import Counter
+from common import load_config, setup_logging
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
-def load_config():
-    with open("config.yaml", "r") as f:
-        return yaml.safe_load(f)
+setup_logging()
 
 def generate():
     config = load_config()
