@@ -1,3 +1,51 @@
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/drum/monk.exe
+id: auto-916f0e63102c459833cdf2351b74b0f4f66d909a106eda6d62dca6407a6832c7
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/drum/monk.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/drum/monk.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/6691015685/bEKVmef.exe
+id: auto-49ce2eb58ca14005e29f1ebdcf3a23bf11cdf2d29e29efb245b7e43cbae5d165
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/6691015685/bEKVmef.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/6691015685/bEKVmef.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8170069107/CINNwZk.exe
+id: auto-f48f0a794d68d51674a52a31b194a4b7d0cf2ac758e58a444dda9c0958fef6ec
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/8170069107/CINNwZk.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/8170069107/CINNwZk.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://45.93.20.55/Public-key_73.18.9_INSTALL.exe
 id: auto-0c2307b423018b2a80e420f84f040f52507aeba78f645cbde3cfc17479251465
 status: experimental
