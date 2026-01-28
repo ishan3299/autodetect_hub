@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - http://93.157.253.209:41123/i
+id: auto-cca72fd01568348e3663a33d208505d6ec010ffc67c298bdc3a3961e6b53d6e4
+status: experimental
+description: Detects traffic or activity related to http://93.157.253.209:41123/i which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://93.157.253.209:41123/i*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8541372660/rHpoTiI.exe
 id: auto-3fcd04c032d0f58562d42acba9922d274e4b045d2526464fd457e1dc327dc9f2
 status: experimental

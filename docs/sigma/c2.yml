@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7309295924/83OpFoG.msi
+id: auto-4dcc210fff627491402f636fb0f5d15397ec0b25fbd48e681b54a2b6bedb0f32
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/7309295924/83OpFoG.msi which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/7309295924/83OpFoG.msi*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/drum/monk.exe
 id: auto-916f0e63102c459833cdf2351b74b0f4f66d909a106eda6d62dca6407a6832c7
 status: experimental
