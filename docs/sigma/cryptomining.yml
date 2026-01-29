@@ -13518,21 +13518,37 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - https://raw.githubusercontent.com/ml8xu4vh/pizza/master/setup.sh
-id: auto-912e04789a257edafda1f726c90ba59254891e694b34075d2fc164f11fe1e70e
+title: Detect Activity to Known Malicious Indicator -  "3959c2dac290fdcf6dbe84a8571fcbdb9c2527cb6e894c873cc2279f0690856f"
+id: auto-272b953b3a28b3f3cf8ba2c70a6b641af407cf77f2e10b7fba2a689317bc23ec
 status: experimental
-description: Detects traffic or activity related to https://raw.githubusercontent.com/ml8xu4vh/pizza/master/setup.sh which is a known malicious url.
+description: Detects traffic or activity related to  "3959c2dac290fdcf6dbe84a8571fcbdb9c2527cb6e894c873cc2279f0690856f" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://raw.githubusercontent.com/ml8xu4vh/pizza/master/setup.sh*'
+    hashes:
+      - '* "3959c2dac290fdcf6dbe84a8571fcbdb9c2527cb6e894c873cc2279f0690856f"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "fcd89fa42d24b330d8661064a5d40660b95deff7a741663ff11e8be65cf91af1"
+id: auto-44affcb10c0c08eec315ddd7322736ecdc083fe076e82999ce8f30058b86a65d
+status: experimental
+description: Detects traffic or activity related to  "fcd89fa42d24b330d8661064a5d40660b95deff7a741663ff11e8be65cf91af1" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "fcd89fa42d24b330d8661064a5d40660b95deff7a741663ff11e8be65cf91af1"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "53f471d2c3d01cd2edbc7ed12979f4011037613bc4521bd8c605eb895fb4d88f"
 id: auto-f88ad0dd426c27632a0b7f589fa97debe42e63e220839cc13b2be7b93aaa90ee
@@ -13624,54 +13640,6 @@ detection:
   selection:
     hashes:
       - '* "9c4ee3ef00ab40af6b276f559d5773528f79c369c97e25d692a2e5b1ee293371"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "c1a9cd75c588d225f8f51d3639e39c9936b13bebde1e640423d9868169597177"
-id: auto-d9519e38b4da33b2772dae450a994ef0da42c74ccb96852e5d019d86672aa0ae
-status: experimental
-description: Detects traffic or activity related to  "c1a9cd75c588d225f8f51d3639e39c9936b13bebde1e640423d9868169597177" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "c1a9cd75c588d225f8f51d3639e39c9936b13bebde1e640423d9868169597177"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "d93fe293369dc5b1071060ca8558b93a41f477d889592b6f0ff2bbeef31b0431"
-id: auto-56883a3d9b8e9d2b4e95c89b96a5e0755bb9438898531fb0775ca790a81b8dce
-status: experimental
-description: Detects traffic or activity related to  "d93fe293369dc5b1071060ca8558b93a41f477d889592b6f0ff2bbeef31b0431" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "d93fe293369dc5b1071060ca8558b93a41f477d889592b6f0ff2bbeef31b0431"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "b8a9fef88b09310f03ac652bff1450b9ae3a05111b9567dab8b839de07c979b9"
-id: auto-e0cfa9f469d54eb2f3dd49f5a36e8ff3a245b56a60016001aac7de5079b8341e
-status: experimental
-description: Detects traffic or activity related to  "b8a9fef88b09310f03ac652bff1450b9ae3a05111b9567dab8b839de07c979b9" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "b8a9fef88b09310f03ac652bff1450b9ae3a05111b9567dab8b839de07c979b9"*'
   condition: selection
 level: high
 tags:
