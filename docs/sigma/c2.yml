@@ -1,3 +1,83 @@
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8428202012/j2qDXX0.exe
+id: auto-22a8ee7f55780ed47a774aad2101db60144676fd119da3007eb54cc0bd991255
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/8428202012/j2qDXX0.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/8428202012/j2qDXX0.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/5089917904/d9U5lID.exe
+id: auto-144a2d903ba55501f6dce712fccb53e9902569a507e607d65ff28c4b43976683
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/5089917904/d9U5lID.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/5089917904/d9U5lID.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8510658350/yA3vS8H.msi
+id: auto-43d15bf150f6db3b25d8d9deb89408423ddd731f32b51a6765eb82801ffa062c
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/8510658350/yA3vS8H.msi which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/8510658350/yA3vS8H.msi*'
+  condition: selection
+level: high
+tags:
+  - attack.t1219
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8079848160/dRunjy8.exe
+id: auto-4f258441f33214bad733e1a120f4f39e88969ddd88a5d97b26882b6e7cb1bcc8
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/8079848160/dRunjy8.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/8079848160/dRunjy8.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8079234796/bLyHWAR.exe
+id: auto-3810de4bc404b11a2afc465d4331526fce0c953a4e101b916eb5fa38a701174b
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/8079234796/bLyHWAR.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/8079234796/bLyHWAR.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8536096438/FnkjqrY.exe
 id: auto-35b071a4a330ea497b9f84a6445f08af4cd15e624e0f33bdcfa7bad9ee28068f
 status: experimental
@@ -3752,134 +3832,6 @@ detection:
   selection:
     c-uri:
       - '*http://130.12.180.43/files/5765596543/Eire7m9.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7044575709/WDmzMjc.exe
-id: auto-e08ad73a271ca69e5f505ff85b8784d391d4a8b3462f3d3c96584898a07de7ff
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/7044575709/WDmzMjc.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/7044575709/WDmzMjc.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://abrababa.xyz/epstein.exe
-id: auto-a6fc02a34005bc7c03588ad6d2d093983c2ce743312ef8ba1b974b2123140e92
-status: experimental
-description: Detects traffic or activity related to https://abrababa.xyz/epstein.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://abrababa.xyz/epstein.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8455847319/xbE6N2L.exe
-id: auto-8f0f31aab8ccc5c7a76d1c26fddf1034c7f3186ad69e81c95b34dec5f150c056
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/8455847319/xbE6N2L.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/8455847319/xbE6N2L.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/6749237131/zF0xG5x.ps1
-id: auto-0936645534753bde96238e2f8cec95cb0461dc60ee29b0ae5c0a231d72f5f485
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/6749237131/zF0xG5x.ps1 which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/6749237131/zF0xG5x.ps1*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://abrababa.xyz/oip2.exe
-id: auto-bb56fa579e9e3364cbbde273199108e344ebe475b1d9a9e797b4c4eac79e43d5
-status: experimental
-description: Detects traffic or activity related to https://abrababa.xyz/oip2.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://abrababa.xyz/oip2.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/6749237131/zF0xG5x.exe
-id: auto-1bcfbada9ed5160307e64bfe02228e80e0f8228cf1d998b24efdafaf155bd43f
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/6749237131/zF0xG5x.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/6749237131/zF0xG5x.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8278288380/cmklP8o.exe
-id: auto-81b8afb943a89c0f134ee24092dbfdff5d09bfc00891a6017dccb24cc97095c0
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/8278288380/cmklP8o.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/8278288380/cmklP8o.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/6137477328/jhNAnZF.exe
-id: auto-ab4345edcc13dd2079b45a4cd8adcb3eaf39274b99d79be651b24b21b27565ac
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/6137477328/jhNAnZF.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/6137477328/jhNAnZF.exe*'
   condition: selection
 level: high
 tags:
