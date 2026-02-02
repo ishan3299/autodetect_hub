@@ -9726,53 +9726,37 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - http://87.121.84.44/x
-id: auto-d7c65b37decf5504165444ea136c757d8f786b80880e965a00ef8785147b7a8c
+title: Detect Activity to Known Malicious Indicator -  "b1af6df3a2e2a25a0d37e445ef91b9ac536183b4383247857493d47ca53a500f"
+id: auto-41af8df5f36c50dcb425394910fb696cc926427a65df6234e42fe96064ce7ad7
 status: experimental
-description: Detects traffic or activity related to http://87.121.84.44/x which is a known malicious url.
+description: Detects traffic or activity related to  "b1af6df3a2e2a25a0d37e445ef91b9ac536183b4383247857493d47ca53a500f" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://87.121.84.44/x*'
+    hashes:
+      - '* "b1af6df3a2e2a25a0d37e445ef91b9ac536183b4383247857493d47ca53a500f"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - http://87.121.84.181/x
-id: auto-f76d6cc66b0b384f8f8f8c57c7ffc64a4f74f425e64f6c3139fa6ee27cea4aef
+title: Detect Activity to Known Malicious Indicator -  "e462b4cd9a58c4cd538e4d87406fa8659661d260c1eb83f157ba2dd891a3972e"
+id: auto-c652a14bfe344eaec052e9c2aac58d371b73b28cc488e79106d39d97fed12aae
 status: experimental
-description: Detects traffic or activity related to http://87.121.84.181/x which is a known malicious url.
+description: Detects traffic or activity related to  "e462b4cd9a58c4cd538e4d87406fa8659661d260c1eb83f157ba2dd891a3972e" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://87.121.84.181/x*'
+    hashes:
+      - '* "e462b4cd9a58c4cd538e4d87406fa8659661d260c1eb83f157ba2dd891a3972e"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://195.24.237.218/1.sh
-id: auto-2e1f11520630df8a2ca4afe08b90b635c2053bfa026e92a1d0d05c4de0f49dff
-status: experimental
-description: Detects traffic or activity related to http://195.24.237.218/1.sh which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://195.24.237.218/1.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "f0eff94e8ed95c8ccb19decb14f7edcf036830502745ec47fd64152e8b6e42b9"
 id: auto-07a687a6e6db84cbbd1e7bbc6765ad64f51bad4586c218336df8fffc5226114f
@@ -9784,38 +9768,6 @@ detection:
   selection:
     hashes:
       - '* "f0eff94e8ed95c8ccb19decb14f7edcf036830502745ec47fd64152e8b6e42b9"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "0fa1e90f8239d75c0f3ad65d7e55708a4498bc4b91ae1167c2f0f06dc00970ef"
-id: auto-3e580b980f7dc68b3157446bca6dbb73420a2813ddad90f127ae176222f1ab59
-status: experimental
-description: Detects traffic or activity related to  "0fa1e90f8239d75c0f3ad65d7e55708a4498bc4b91ae1167c2f0f06dc00970ef" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "0fa1e90f8239d75c0f3ad65d7e55708a4498bc4b91ae1167c2f0f06dc00970ef"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "0a80ed40bc8a30d1c1604969f950d5a24117d5cb75d96d011ce26fd3ba5bc638"
-id: auto-594df665eba8a4823cc6687d458f2055b38158999f31728a659066e8f9931f39
-status: experimental
-description: Detects traffic or activity related to  "0a80ed40bc8a30d1c1604969f950d5a24117d5cb75d96d011ce26fd3ba5bc638" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "0a80ed40bc8a30d1c1604969f950d5a24117d5cb75d96d011ce26fd3ba5bc638"*'
   condition: selection
 level: high
 tags:
