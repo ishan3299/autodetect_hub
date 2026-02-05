@@ -3741,19 +3741,3 @@ level: high
 tags:
   - attack.t1543
   - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://77.12.150.109:8080/sshd
-id: auto-d6888e5a30c61d1d6737f128e784a644b11a9238d6a646b2f692a25c1df6c306
-status: experimental
-description: Detects traffic or activity related to http://77.12.150.109:8080/sshd which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://77.12.150.109:8080/sshd*'
-  condition: selection
-level: high
-tags:
-  - attack.t1543
-  - source.URLhaus
