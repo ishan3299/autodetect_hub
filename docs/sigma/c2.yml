@@ -1,3 +1,51 @@
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/5908119101/I9tRpKv.exe
+id: auto-9878215b6aa18a2709043713ec75cec5322b691f1dec8eaa36b97b1e9fdf73f5
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/5908119101/I9tRpKv.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/5908119101/I9tRpKv.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7103746036/ZI8wjWI.exe
+id: auto-09c4599275087db03ee918ddf11de34b29c64f62003e9ffa5b841b2c82b6942a
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/7103746036/ZI8wjWI.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/7103746036/ZI8wjWI.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7103746036/K3qLlt0.exe
+id: auto-17be3e7de48e00b841e06aca88191919819f46219ec7078198429b330cf49103
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/7103746036/K3qLlt0.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/7103746036/K3qLlt0.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/504463127/BU3o4QJ.exe
 id: auto-7adc098bf662d438f0f26a7d5df4caa879624e4bdf6d9dc87378c5f028560701
 status: experimental
