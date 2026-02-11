@@ -1,3 +1,51 @@
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7782139129/LdlY2ri.exe
+id: auto-d8a2b12881386db64cd7d36f01651f507e61c9e9cc179dc2cfa8c25de067143d
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/7782139129/LdlY2ri.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/7782139129/LdlY2ri.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8428202012/kRHhLlh.exe
+id: auto-0b4b08928d382a89a9b554dfa9219149b82bee2f074e6009354139a50a031b73
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/8428202012/kRHhLlh.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/8428202012/kRHhLlh.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7972786482/Cia2O5x.exe
+id: auto-727501f75429d44c226b4b3aade73bc2188d695cd1b4a4c7efff656cb130a506
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/7972786482/Cia2O5x.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/7972786482/Cia2O5x.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/5908119101/I9tRpKv.exe
 id: auto-9878215b6aa18a2709043713ec75cec5322b691f1dec8eaa36b97b1e9fdf73f5
 status: experimental
