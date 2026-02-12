@@ -1,3 +1,51 @@
+title: Detect Activity to Known Malicious Indicator - https://gitlab.com/lxxx1h/r1vl/-/raw/main/U7Q7R23U7669.exe
+id: auto-358242bd49c4a890c663bb7dbb71d7bef5ae379b6b858358a2b8b70d04291f7e
+status: experimental
+description: Detects traffic or activity related to https://gitlab.com/lxxx1h/r1vl/-/raw/main/U7Q7R23U7669.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://gitlab.com/lxxx1h/r1vl/-/raw/main/U7Q7R23U7669.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://gitlab.com/bland3h/d3d9/-/raw/main/U7Q7R23U7669.exe
+id: auto-5d4fe15c444a11a1a7ea111813e86d318582a280584ce6adbbe8f2ece899b2ee
+status: experimental
+description: Detects traffic or activity related to https://gitlab.com/bland3h/d3d9/-/raw/main/U7Q7R23U7669.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://gitlab.com/bland3h/d3d9/-/raw/main/U7Q7R23U7669.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://gitlab.com/lxxx1h/r1vl/-/raw/main/ZUV9745L7374.exe
+id: auto-03221948fefc05537ec347a5317ea3cba22f4764211e79de47c3ae0d13304a78
+status: experimental
+description: Detects traffic or activity related to https://gitlab.com/lxxx1h/r1vl/-/raw/main/ZUV9745L7374.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://gitlab.com/lxxx1h/r1vl/-/raw/main/ZUV9745L7374.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8408827406/0n0ox5f.exe
 id: auto-56db47317b820ab778ad4c10fd8f807576081c8ef2934eb5def37443755ee464
 status: experimental
@@ -8238,69 +8286,69 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - http://91.92.241.10/xmrig_config.json
-id: auto-44a3950a9e99331736a683321c8bb15da129cdef45ac0099ec0d18e88f4393ab
+title: Detect Activity to Known Malicious Indicator -  "7c570f984ba898964c9ac70e11474ce3a0161472566d1961fcbacfe3d24e1dd3"
+id: auto-51b9b82b140cc1349557b50a910870d98465daca789f77441f45229d3f831b2f
 status: experimental
-description: Detects traffic or activity related to http://91.92.241.10/xmrig_config.json which is a known malicious url.
+description: Detects traffic or activity related to  "7c570f984ba898964c9ac70e11474ce3a0161472566d1961fcbacfe3d24e1dd3" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://91.92.241.10/xmrig_config.json*'
+    hashes:
+      - '* "7c570f984ba898964c9ac70e11474ce3a0161472566d1961fcbacfe3d24e1dd3"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - http://91.92.241.10/xmrig
-id: auto-565db46d5c3c0a941c03ac10468f096b1ed8aed1eca780f363508b9eda4ecaba
+title: Detect Activity to Known Malicious Indicator -  "16477487dcabd96bfe805d0e98378516cba21e75158908cb9d61c8d7a2037a9f"
+id: auto-75fb47f506cdd1f6dea11e2257d3cc674c7769772b172179dfc94dee50a82e55
 status: experimental
-description: Detects traffic or activity related to http://91.92.241.10/xmrig which is a known malicious url.
+description: Detects traffic or activity related to  "16477487dcabd96bfe805d0e98378516cba21e75158908cb9d61c8d7a2037a9f" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://91.92.241.10/xmrig*'
+    hashes:
+      - '* "16477487dcabd96bfe805d0e98378516cba21e75158908cb9d61c8d7a2037a9f"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - http://91.92.241.10/wow.sh
-id: auto-2d41d8448380a9b1d35be7c4278d214042eaee4706ad9325193291207b65d574
+title: Detect Activity to Known Malicious Indicator -  "2ddc60e198968b3b6a2c900fa225cec6ff3340e67972ebf3b94938423f3dd347"
+id: auto-103649fda3fb196d80d0db8ef13cbb30fd41d8883fc16e5917b234cacfb08722
 status: experimental
-description: Detects traffic or activity related to http://91.92.241.10/wow.sh which is a known malicious url.
+description: Detects traffic or activity related to  "2ddc60e198968b3b6a2c900fa225cec6ff3340e67972ebf3b94938423f3dd347" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://91.92.241.10/wow.sh*'
+    hashes:
+      - '* "2ddc60e198968b3b6a2c900fa225cec6ff3340e67972ebf3b94938423f3dd347"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - http://87.121.84.49/x
-id: auto-02cf14e1b774db4ca01bcd120262f43cfb2b97df4ff63ccc2b590a25b6b88e5a
+title: Detect Activity to Known Malicious Indicator -  "c290ed8fbc2d5e378e4cf17edbf901898d35acc1c414ccfb49fe137e9d9532b9"
+id: auto-43408eeb30051df01837f070e3e72496f03dc6498fcf6d17b72bcedd81fb2f19
 status: experimental
-description: Detects traffic or activity related to http://87.121.84.49/x which is a known malicious url.
+description: Detects traffic or activity related to  "c290ed8fbc2d5e378e4cf17edbf901898d35acc1c414ccfb49fe137e9d9532b9" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://87.121.84.49/x*'
+    hashes:
+      - '* "c290ed8fbc2d5e378e4cf17edbf901898d35acc1c414ccfb49fe137e9d9532b9"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "e2cc856a84dd0a5da86e44cca6c207d76180f21e71e6669ac3dab19fc49b11ad"
 id: auto-ddd7b53f149641a1977dd8acb2ff8b70dea83a1c08c2b3afe3afa3177dad50b1
