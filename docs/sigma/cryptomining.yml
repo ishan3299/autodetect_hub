@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8408827406/WlN2F1E.exe
+id: auto-0c10d8b1b9f18d564e1ea97aa53b5424b849e09ce8a5f6da69380ef11170b389
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/8408827406/WlN2F1E.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/8408827406/WlN2F1E.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - https://gitlab.com/lxxx1h/r1vl/-/raw/main/U7Q7R23U7669.exe
 id: auto-358242bd49c4a890c663bb7dbb71d7bef5ae379b6b858358a2b8b70d04291f7e
 status: experimental
@@ -8126,165 +8142,37 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - https://194.223.59.102:8443/sda1/AV.scr
-id: auto-6b33ee8203d70e205a2b4f1e71daf9f096945ec0d17abc5169cec15fca6f5539
+title: Detect Activity to Known Malicious Indicator -  "587ea69283a5e2863add67c8d8ad0382910bdb57d1fd52882ad6df7531dc6a5e"
+id: auto-f7187d1d9b2e22951eb164d74fffaec13e57b361f15ecf1d0ee033e95d6bdf65
 status: experimental
-description: Detects traffic or activity related to https://194.223.59.102:8443/sda1/AV.scr which is a known malicious url.
+description: Detects traffic or activity related to  "587ea69283a5e2863add67c8d8ad0382910bdb57d1fd52882ad6df7531dc6a5e" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://194.223.59.102:8443/sda1/AV.scr*'
+    hashes:
+      - '* "587ea69283a5e2863add67c8d8ad0382910bdb57d1fd52882ad6df7531dc6a5e"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://194.223.59.102:8443/sda1/Video.scr
-id: auto-b35d42a1d4f983cd75bf01f119bbd7a4e08a7394eb0b3d7e2fe1e142addaa729
+title: Detect Activity to Known Malicious Indicator -  "fde6dc8a8d086c22dc4a06f8162c2bcddc9727c1898916bf0b6f303027ffe547"
+id: auto-59cb7c5d2016c95f4ec4da842bcb0c961c3910c407e0669d58cec90fee2a2277
 status: experimental
-description: Detects traffic or activity related to https://194.223.59.102:8443/sda1/Video.scr which is a known malicious url.
+description: Detects traffic or activity related to  "fde6dc8a8d086c22dc4a06f8162c2bcddc9727c1898916bf0b6f303027ffe547" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://194.223.59.102:8443/sda1/Video.scr*'
+    hashes:
+      - '* "fde6dc8a8d086c22dc4a06f8162c2bcddc9727c1898916bf0b6f303027ffe547"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://194.223.59.102:8443/sda1/Photo.scr
-id: auto-fe2eb7bc4267f2b2f7769bd0f22df280671cb0ff3436aba2a80cd73b9d8d1bd8
-status: experimental
-description: Detects traffic or activity related to https://194.223.59.102:8443/sda1/Photo.scr which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://194.223.59.102:8443/sda1/Photo.scr*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://151.15.237.247:8443/sda1/Photo.scr
-id: auto-2bed30416c9be56b435920c20d8b0fd52ece62266c30172ab63658800d30374d
-status: experimental
-description: Detects traffic or activity related to https://151.15.237.247:8443/sda1/Photo.scr which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://151.15.237.247:8443/sda1/Photo.scr*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://151.15.237.247:8443/sda1/Video.scr
-id: auto-a3577a7a68321ae27d2ef8afc862e8d69bc76a748a71c7f3a47b4049b08294a4
-status: experimental
-description: Detects traffic or activity related to https://151.15.237.247:8443/sda1/Video.scr which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://151.15.237.247:8443/sda1/Video.scr*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://151.15.237.247:8443/sda1/AV.scr
-id: auto-0af72759184f00bbb19d58c3e9f8f75c787b0c4554e5289a60ce8d61a7e2ea68
-status: experimental
-description: Detects traffic or activity related to https://151.15.237.247:8443/sda1/AV.scr which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://151.15.237.247:8443/sda1/AV.scr*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://151.16.62.179:8443/sda1/Video.scr
-id: auto-6dc5ee6e69fa42d7839daa4fae2475e273d9fdfe3262565f57f0a423ed03e126
-status: experimental
-description: Detects traffic or activity related to https://151.16.62.179:8443/sda1/Video.scr which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://151.16.62.179:8443/sda1/Video.scr*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://151.16.62.179:8443/sda1/AV.scr
-id: auto-6092140214308b77033bbbf1c54b231e09dc5bca5039608efb3c7e4bc051d285
-status: experimental
-description: Detects traffic or activity related to https://151.16.62.179:8443/sda1/AV.scr which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://151.16.62.179:8443/sda1/AV.scr*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://151.16.62.179:8443/sda1/Photo.scr
-id: auto-fd4a72dc1bbed5032ba3922d9abe9b9ab4af5adea3d991624b6915ba4bd5a5aa
-status: experimental
-description: Detects traffic or activity related to https://151.16.62.179:8443/sda1/Photo.scr which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://151.16.62.179:8443/sda1/Photo.scr*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://93.177.77.204/d/xmrig_g
-id: auto-ce5db604746ae19ea08cdd3b869c2db614eb826fdc4e39045099c3d485f0267f
-status: experimental
-description: Detects traffic or activity related to http://93.177.77.204/d/xmrig_g which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://93.177.77.204/d/xmrig_g*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "7c570f984ba898964c9ac70e11474ce3a0161472566d1961fcbacfe3d24e1dd3"
 id: auto-51b9b82b140cc1349557b50a910870d98465daca789f77441f45229d3f831b2f
@@ -8296,22 +8184,6 @@ detection:
   selection:
     hashes:
       - '* "7c570f984ba898964c9ac70e11474ce3a0161472566d1961fcbacfe3d24e1dd3"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "16477487dcabd96bfe805d0e98378516cba21e75158908cb9d61c8d7a2037a9f"
-id: auto-75fb47f506cdd1f6dea11e2257d3cc674c7769772b172179dfc94dee50a82e55
-status: experimental
-description: Detects traffic or activity related to  "16477487dcabd96bfe805d0e98378516cba21e75158908cb9d61c8d7a2037a9f" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "16477487dcabd96bfe805d0e98378516cba21e75158908cb9d61c8d7a2037a9f"*'
   condition: selection
 level: high
 tags:
@@ -8344,22 +8216,6 @@ detection:
   selection:
     hashes:
       - '* "c290ed8fbc2d5e378e4cf17edbf901898d35acc1c414ccfb49fe137e9d9532b9"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "e2cc856a84dd0a5da86e44cca6c207d76180f21e71e6669ac3dab19fc49b11ad"
-id: auto-ddd7b53f149641a1977dd8acb2ff8b70dea83a1c08c2b3afe3afa3177dad50b1
-status: experimental
-description: Detects traffic or activity related to  "e2cc856a84dd0a5da86e44cca6c207d76180f21e71e6669ac3dab19fc49b11ad" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "e2cc856a84dd0a5da86e44cca6c207d76180f21e71e6669ac3dab19fc49b11ad"*'
   condition: selection
 level: high
 tags:

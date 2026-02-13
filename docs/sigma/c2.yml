@@ -1,3 +1,83 @@
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8408827406/o72zWKv.exe
+id: auto-828a3a5d83e0d6512fd673cb45cfd8eab3032298af65655c95ecc6e32e02aa84
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/8408827406/o72zWKv.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/8408827406/o72zWKv.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8546791173/zjYlcRN.exe
+id: auto-d9e62d7bc8443a9d12b79cb5f0c2f473dd375fce2db4ed52133f76a7edfa8cc8
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/8546791173/zjYlcRN.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/8546791173/zjYlcRN.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8273370267/7N0B228.exe
+id: auto-d5f3f1a074cf69f9a982b10f9394ff36e966ec9985ad31212774f15b4426a3f2
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/8273370267/7N0B228.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/8273370267/7N0B228.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/748049926/f12BhQB.exe
+id: auto-dcdb4f4da6b7de7c44469c7922ea089d28cc1172653b948745b6b697c5cc044a
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/748049926/f12BhQB.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/748049926/f12BhQB.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/6832239903/NdOdNjs.ps1
+id: auto-e0c109d58a59a17db0fadff9471497cebff04b54e3ef7899f4d9f24c1d8b5da6
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/6832239903/NdOdNjs.ps1 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/6832239903/NdOdNjs.ps1*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7782139129/LdlY2ri.exe
 id: auto-d8a2b12881386db64cd7d36f01651f507e61c9e9cc179dc2cfa8c25de067143d
 status: experimental
