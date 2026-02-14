@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/6832239903/rYN7hvs.ps1
+id: auto-c6061ff41abd45cdc3712a9a619cfef4d772a7db5f24b97fe0e10b4b03e90187
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/6832239903/rYN7hvs.ps1 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/6832239903/rYN7hvs.ps1*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8408827406/o72zWKv.exe
 id: auto-828a3a5d83e0d6512fd673cb45cfd8eab3032298af65655c95ecc6e32e02aa84
 status: experimental
