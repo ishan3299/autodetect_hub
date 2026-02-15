@@ -1,3 +1,115 @@
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/5347973496/lNNDJUc.bat
+id: auto-630f81f040142d0f84dab0aee55c66c5a6fc2cecf7e8b374c656b253f5369d2c
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/5347973496/lNNDJUc.bat which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/5347973496/lNNDJUc.bat*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/hil/random.exe
+id: auto-696a1f8710c2ad9cf5179cdec29d41d496bca39702abe01fa25fe68e78c158c8
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/hil/random.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/hil/random.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8294657075/w4PZ9hn.exe
+id: auto-1c19121102c64d4b6adc1e43d526e8ac036a92f031d152a7ade94243529b8a81
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/8294657075/w4PZ9hn.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/8294657075/w4PZ9hn.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/748049926/qMKWsxs.exe
+id: auto-325fbfc44c67dc91f3a714a45f24538f11e8af06ef04fd0a9f284de58d223855
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/748049926/qMKWsxs.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/748049926/qMKWsxs.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8408827406/6jrtKpb.exe
+id: auto-6755b8888fba801ec986c11fe404208f46fac84c3f0ae12845779796b1fcb352
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/8408827406/6jrtKpb.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/8408827406/6jrtKpb.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7103746036/aL65tuq.exe
+id: auto-b4091f210ac50beb01bdfbd45e53240cddf54a14bc8df6a3d8f12e0b86f7bde1
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/7103746036/aL65tuq.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/7103746036/aL65tuq.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/5023688490/auz7wwz.exe
+id: auto-e10c84408e0970519fa9bef5db8a67cf2442c8f5866fb5d9ddb825f60c68ba78
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/5023688490/auz7wwz.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/5023688490/auz7wwz.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/6832239903/rYN7hvs.ps1
 id: auto-c6061ff41abd45cdc3712a9a619cfef4d772a7db5f24b97fe0e10b4b03e90187
 status: experimental
@@ -3000,22 +3112,6 @@ detection:
   selection:
     c-uri:
       - '*https://osn.lunxe.live/zap.zip*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://microsoft-telemetry.at/ozo/vilta.exe
-id: auto-8f0f0e75659e225c67a6bdf649d0d66c5df11ee70af440de77b5796e7a92b6a8
-status: experimental
-description: Detects traffic or activity related to http://microsoft-telemetry.at/ozo/vilta.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://microsoft-telemetry.at/ozo/vilta.exe*'
   condition: selection
 level: high
 tags:
