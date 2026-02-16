@@ -7550,69 +7550,37 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - http://182.143.113.177:81/modules/AV.scr
-id: auto-efa0f3e9a0f61e18abe3929b10f2f64385b86fc04cf6b17368073a6a9ed77cdf
+title: Detect Activity to Known Malicious Indicator -  "661c4da0df6414e3cf7855d47a142cc9858c1174cc992f29423e48ce420585e0"
+id: auto-f64a7289883e193073e4c6137d1af4823d9e06f5a5e5e5935c7abec2b426cf80
 status: experimental
-description: Detects traffic or activity related to http://182.143.113.177:81/modules/AV.scr which is a known malicious url.
+description: Detects traffic or activity related to  "661c4da0df6414e3cf7855d47a142cc9858c1174cc992f29423e48ce420585e0" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://182.143.113.177:81/modules/AV.scr*'
+    hashes:
+      - '* "661c4da0df6414e3cf7855d47a142cc9858c1174cc992f29423e48ce420585e0"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - http://182.143.113.177:81/AV.scr
-id: auto-119a84f77c43dda23f8ca0671e0e6a937f2d71683ffe801a776a155338d729d7
+title: Detect Activity to Known Malicious Indicator -  "ba43e447e63611d365300bf2e8e43ccb02ea112778d0d555ef9a9ccf6169808b"
+id: auto-86877f0cdbbf1a7828ce2db9a1ab26742fd7f9e6c93d126bf1287e1fbba642a1
 status: experimental
-description: Detects traffic or activity related to http://182.143.113.177:81/AV.scr which is a known malicious url.
+description: Detects traffic or activity related to  "ba43e447e63611d365300bf2e8e43ccb02ea112778d0d555ef9a9ccf6169808b" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://182.143.113.177:81/AV.scr*'
+    hashes:
+      - '* "ba43e447e63611d365300bf2e8e43ccb02ea112778d0d555ef9a9ccf6169808b"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://182.143.113.177:81/assets/AV.scr
-id: auto-a318b75b77780a313ce9d03fdde5df4390e4b40bf2234cdf495ef1f5df8b444a
-status: experimental
-description: Detects traffic or activity related to http://182.143.113.177:81/assets/AV.scr which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://182.143.113.177:81/assets/AV.scr*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://182.143.113.177:81/images/AV.scr
-id: auto-d1756d60b795254cb807a8a3d88436bf0544af1768cd42bb1995bcaa75de2140
-status: experimental
-description: Detects traffic or activity related to http://182.143.113.177:81/images/AV.scr which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://182.143.113.177:81/images/AV.scr*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "b291b864abd5de39810dde3f77b9027d1aa3c63107c97841a003103822414f1c"
 id: auto-673f1a85185fa0216211cd12c58ab89da20578362bd898e0b5836d2e214a8cf4
@@ -7624,22 +7592,6 @@ detection:
   selection:
     hashes:
       - '* "b291b864abd5de39810dde3f77b9027d1aa3c63107c97841a003103822414f1c"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "a19efdcdb1497c680ecf90e1ec57778224fd5612e827fd88972915b047344464"
-id: auto-2842d2c13666ba317afdbde9fe0c667ad5980b92bf59ccaba91a65a91579302d
-status: experimental
-description: Detects traffic or activity related to  "a19efdcdb1497c680ecf90e1ec57778224fd5612e827fd88972915b047344464" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "a19efdcdb1497c680ecf90e1ec57778224fd5612e827fd88972915b047344464"*'
   condition: selection
 level: high
 tags:
