@@ -1,15 +1,15 @@
-title: Detect Activity to Known Malicious Indicator -  "05294c9970f365c92e0b0f1250db678dc356dbf418dba27bdd5eeb68487a7199"
-id: auto-45929491eb4bf9ff1fe622eeff1050c6dc2ea212a4f953774986589bb2f47967
+title: Detect Activity to Known Malicious Indicator - http://62.182.81.38/
+id: auto-b622b648599b9853ebe923dfe7dc288bfb01ac98b380bd28d8685c4b1d956b2a
 status: experimental
-description: Detects traffic or activity related to  "05294c9970f365c92e0b0f1250db678dc356dbf418dba27bdd5eeb68487a7199" which is a known malicious hash.
+description: Detects traffic or activity related to http://62.182.81.38/ which is a known malicious url.
 logsource:
-  category: process_creation
+  category: proxy
 detection:
   selection:
-    hashes:
-      - '* "05294c9970f365c92e0b0f1250db678dc356dbf418dba27bdd5eeb68487a7199"*'
+    c-uri:
+      - '*http://62.182.81.38/*'
   condition: selection
 level: high
 tags:
-  - attack.T1071
-  - source.MalwareBazaar
+  - attack.t1486
+  - source.URLhaus
