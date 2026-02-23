@@ -1,3 +1,819 @@
+title: Detect Activity to Known Malicious Indicator - http://down.1756520.xyz/mips
+id: auto-5b33a274910f9bbb998215a76fd5f88f43543250a20baa93ef30f04e7ceb5d38
+status: experimental
+description: Detects traffic or activity related to http://down.1756520.xyz/mips which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://down.1756520.xyz/mips*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://down.1756520.xyz/client
+id: auto-0a49204052c21dfe36f25080bf7474f57d93a640ffea842167aa75d63eddf262
+status: experimental
+description: Detects traffic or activity related to http://down.1756520.xyz/client which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://down.1756520.xyz/client*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://down.1756520.xyz/run.sh
+id: auto-d97cefbb53d865f8b061266bbb26ce1a6bdcdb4bd8ed793c7382bf539b0cffd1
+status: experimental
+description: Detects traffic or activity related to http://down.1756520.xyz/run.sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://down.1756520.xyz/run.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://down.1756520.xyz/armv7l
+id: auto-be815edef7ede6461b67913e24bd9c8e5980b4b61da3af5a2846abfa84579e78
+status: experimental
+description: Detects traffic or activity related to http://down.1756520.xyz/armv7l which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://down.1756520.xyz/armv7l*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://down.1756520.xyz/x86
+id: auto-009dde49d3dd8b7952eca99e4275791d55bb08bf5aded0549a04bcaa3442ab64
+status: experimental
+description: Detects traffic or activity related to http://down.1756520.xyz/x86 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://down.1756520.xyz/x86*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://down.1756520.xyz/run.sh
+id: auto-0fd1625e65fbe60d07cdb71f994090ad4f54f322c19b2b27ca59e2b180f97317
+status: experimental
+description: Detects traffic or activity related to https://down.1756520.xyz/run.sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://down.1756520.xyz/run.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://down.1756520.xyz/client
+id: auto-578f8d417f0ae95908e7afbdd416ead1a1ac22f0b846b37b3245137c9b60dee7
+status: experimental
+description: Detects traffic or activity related to https://down.1756520.xyz/client which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://down.1756520.xyz/client*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://10cricofficial.com/389242390482/3atoNational.mips
+id: auto-94316e93fb2476eb093e11c63e4b86ec170bafeb57cd81f015db6b1a7832c2f0
+status: experimental
+description: Detects traffic or activity related to http://10cricofficial.com/389242390482/3atoNational.mips which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://10cricofficial.com/389242390482/3atoNational.mips*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://justwatch.life/389242390482/3atoNational.spc
+id: auto-6694efbf79df8a6a8fefba52db200521fddc3e6d4f2a112dbc24eadfdd1723d3
+status: experimental
+description: Detects traffic or activity related to http://justwatch.life/389242390482/3atoNational.spc which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://justwatch.life/389242390482/3atoNational.spc*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://justwatch.life/389242390482/3atoNational.arm
+id: auto-e965fe4a188f864328cd8956c218d484e3b7762ea72a767e6dff74de5712f492
+status: experimental
+description: Detects traffic or activity related to http://justwatch.life/389242390482/3atoNational.arm which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://justwatch.life/389242390482/3atoNational.arm*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://justwatch.life/389242390482/3atoNational.arm6
+id: auto-732be726a63ce4f4f2a7218fb4c99efcc9f9c2d87c8c1e22768f4be71080d895
+status: experimental
+description: Detects traffic or activity related to http://justwatch.life/389242390482/3atoNational.arm6 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://justwatch.life/389242390482/3atoNational.arm6*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://justwatch.life/389242390482/3atoNational.mips
+id: auto-71b8f4f83a1866fc4f76e8570dc53b1bf73dcbb49e48dcb289403b43ec4594cc
+status: experimental
+description: Detects traffic or activity related to http://justwatch.life/389242390482/3atoNational.mips which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://justwatch.life/389242390482/3atoNational.mips*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://10cricofficial.com/389242390482/3atoNational.x86
+id: auto-27fc057f3ba202840b185d9e6dbfde7817a253135d27e5c6f9b702797b9a6e3e
+status: experimental
+description: Detects traffic or activity related to http://10cricofficial.com/389242390482/3atoNational.x86 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://10cricofficial.com/389242390482/3atoNational.x86*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://10cricofficial.com/389242390482/3atoNational.arm5
+id: auto-b8820f4072afd8a6ef713add251c35ae2c1d5c3b04274a70476e40133790a777
+status: experimental
+description: Detects traffic or activity related to http://10cricofficial.com/389242390482/3atoNational.arm5 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://10cricofficial.com/389242390482/3atoNational.arm5*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://justwatch.life/389242390482/3atoNational.m68k
+id: auto-b547f0df3a161757325d9d2bee3d9cf2b2c7e37c461adaf75caeb087ffbc73cf
+status: experimental
+description: Detects traffic or activity related to http://justwatch.life/389242390482/3atoNational.m68k which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://justwatch.life/389242390482/3atoNational.m68k*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://justwatch.life/389242390482/3atoNational.arm5
+id: auto-f32970de1753bc1cc4b7dcc2c81dfee6e59a590ebd984c056ef43128ecb5a4bc
+status: experimental
+description: Detects traffic or activity related to http://justwatch.life/389242390482/3atoNational.arm5 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://justwatch.life/389242390482/3atoNational.arm5*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://justwatch.life/389242390482/3atoNational.mpsl
+id: auto-febd35dbb7a17ae01d84d741ceed5dc55bab7f5822aad66e347a243026dc9220
+status: experimental
+description: Detects traffic or activity related to http://justwatch.life/389242390482/3atoNational.mpsl which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://justwatch.life/389242390482/3atoNational.mpsl*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://10cricofficial.com/389242390482/3atoNational.sh4
+id: auto-2aa58719c0880e4e38fe6f6ca43d5720e1980d1bd47f94f3b8dfb314b5d1de81
+status: experimental
+description: Detects traffic or activity related to http://10cricofficial.com/389242390482/3atoNational.sh4 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://10cricofficial.com/389242390482/3atoNational.sh4*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://justwatch.life/389242390482/3atoNational.x86
+id: auto-25f18761dd4c148009f9d5f825d2c2021ca99b93a126ccacb9a788df26f64560
+status: experimental
+description: Detects traffic or activity related to http://justwatch.life/389242390482/3atoNational.x86 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://justwatch.life/389242390482/3atoNational.x86*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://10cricofficial.com/389242390482/3atoNational.arm6
+id: auto-50840dcbeece4fed5f2c0a2adabbb146766cbeae3686d76c7cd710424ac85416
+status: experimental
+description: Detects traffic or activity related to http://10cricofficial.com/389242390482/3atoNational.arm6 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://10cricofficial.com/389242390482/3atoNational.arm6*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://10cricofficial.com/389242390482/3atoNational.arm7
+id: auto-a10e43ace39267d7188e6a8a479aa3f1025bf1ee6566ecbac4f50b6ecbd8a1b2
+status: experimental
+description: Detects traffic or activity related to http://10cricofficial.com/389242390482/3atoNational.arm7 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://10cricofficial.com/389242390482/3atoNational.arm7*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://justwatch.life/zatoempire.sh
+id: auto-47aedcad4d6731908bdcfad5d66241827506a08ca5b1be5050054e66ab6b24d7
+status: experimental
+description: Detects traffic or activity related to http://justwatch.life/zatoempire.sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://justwatch.life/zatoempire.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://10cricofficial.com/389242390482/3atoNational.ppc
+id: auto-944e742b015c20928bda7c433805af5482f92d6e86a3180358370cc5572c3e9f
+status: experimental
+description: Detects traffic or activity related to http://10cricofficial.com/389242390482/3atoNational.ppc which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://10cricofficial.com/389242390482/3atoNational.ppc*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://10cricofficial.com/zatoempire.sh
+id: auto-7edc324db91d1d83a6c19298d42ce08e35cb508c5682bd74718823b3e35e459d
+status: experimental
+description: Detects traffic or activity related to http://10cricofficial.com/zatoempire.sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://10cricofficial.com/zatoempire.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://10cricofficial.com/389242390482/3atoNational.spc
+id: auto-f4ba65409e68859364f290ee943735ff21758de8bc9b57178563df660de79018
+status: experimental
+description: Detects traffic or activity related to http://10cricofficial.com/389242390482/3atoNational.spc which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://10cricofficial.com/389242390482/3atoNational.spc*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://justwatch.life/389242390482/3atoNational.arm7
+id: auto-510ba414f4177caa3f5051edfcf332420f014666758981d5a51aadefb90d39d2
+status: experimental
+description: Detects traffic or activity related to http://justwatch.life/389242390482/3atoNational.arm7 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://justwatch.life/389242390482/3atoNational.arm7*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://10cricofficial.com/389242390482/3atoNational.arm
+id: auto-6e3da35be2cae2b03264e61c2f1c76d9825604b296569019a3072e3106fee41b
+status: experimental
+description: Detects traffic or activity related to http://10cricofficial.com/389242390482/3atoNational.arm which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://10cricofficial.com/389242390482/3atoNational.arm*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://justwatch.life/389242390482/3atoNational.ppc
+id: auto-67a7b592d827740ebea8b52c6625defe23df8b2495b133699e5bef22979449f1
+status: experimental
+description: Detects traffic or activity related to http://justwatch.life/389242390482/3atoNational.ppc which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://justwatch.life/389242390482/3atoNational.ppc*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://justwatch.life/389242390482/3atoNational.sh4
+id: auto-1cf7eabbaa33981949826675cb78705ca2723575db19f0a4b0a9275b80544796
+status: experimental
+description: Detects traffic or activity related to http://justwatch.life/389242390482/3atoNational.sh4 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://justwatch.life/389242390482/3atoNational.sh4*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://10cricofficial.com/389242390482/3atoNational.m68k
+id: auto-9ac769ef2d868f20222571a89769443a6d3758df8aa68fac6b8ef430a10c6366
+status: experimental
+description: Detects traffic or activity related to http://10cricofficial.com/389242390482/3atoNational.m68k which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://10cricofficial.com/389242390482/3atoNational.m68k*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://10cricofficial.com/389242390482/3atoNational.mpsl
+id: auto-5a7c5040a1d20e7e7bde42e8e87217e29525608648bd7aa1345683c075d28a68
+status: experimental
+description: Detects traffic or activity related to http://10cricofficial.com/389242390482/3atoNational.mpsl which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://10cricofficial.com/389242390482/3atoNational.mpsl*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://ic.hopto.org/download/botseo.exe
+id: auto-c57babc450485d43204a0325d14d7644997680eae5c52300ce29e7f9aaa8d501
+status: experimental
+description: Detects traffic or activity related to http://ic.hopto.org/download/botseo.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://ic.hopto.org/download/botseo.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://ic.hopto.org/download/UpdaterServices1.exe
+id: auto-6d39351d0ab6da4f6e5970d2a95f72577f7b99b395525b140add0e8f1112cb7b
+status: experimental
+description: Detects traffic or activity related to http://ic.hopto.org/download/UpdaterServices1.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://ic.hopto.org/download/UpdaterServices1.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://ic.hopto.org/download/UpdaterServices4.exe
+id: auto-917f129a33c411564fb31fc112b0aad586368e63d6dddc177b12a2f857ca55ec
+status: experimental
+description: Detects traffic or activity related to http://ic.hopto.org/download/UpdaterServices4.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://ic.hopto.org/download/UpdaterServices4.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://ic.hopto.org/download/UpdaterServices.exe
+id: auto-4908c0929a29d3d08c46b07fd7275cee4a8491185a6845ec0ab8547c7d77e749
+status: experimental
+description: Detects traffic or activity related to http://ic.hopto.org/download/UpdaterServices.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://ic.hopto.org/download/UpdaterServices.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://ic.hopto.org/download/UpdaterServices2.exe
+id: auto-5dac2efdf9a07ac92eaea15945344ede47359a0f27be3e0406326ed6d0744bbc
+status: experimental
+description: Detects traffic or activity related to http://ic.hopto.org/download/UpdaterServices2.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://ic.hopto.org/download/UpdaterServices2.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://ic.hopto.org/download/UpdaterServices3.exe
+id: auto-62f720ba1e517a2b5f60e24642998279d47e84efc4bff12062dcca7202a706d8
+status: experimental
+description: Detects traffic or activity related to http://ic.hopto.org/download/UpdaterServices3.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://ic.hopto.org/download/UpdaterServices3.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://ic.hopto.org/download/drivev11.rar
+id: auto-9a61722cb071795c0ae12e92165c81e89721f6ef7f242ee522d52c3b9d7401ad
+status: experimental
+description: Detects traffic or activity related to http://ic.hopto.org/download/drivev11.rar which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://ic.hopto.org/download/drivev11.rar*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://ic.hopto.org/download/drivev1.rar
+id: auto-8ce5fde2042814e1ae71d0307769531d04d63597bf841afa4a8d13f7c431177c
+status: experimental
+description: Detects traffic or activity related to http://ic.hopto.org/download/drivev1.rar which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://ic.hopto.org/download/drivev1.rar*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://ic.hopto.org/download/upbot.exe
+id: auto-3057062763f7d2558e8ebabc38bdae570520efbc2b6cb1bce0ddf9a60f17ab7e
+status: experimental
+description: Detects traffic or activity related to http://ic.hopto.org/download/upbot.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://ic.hopto.org/download/upbot.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://ic.hopto.org/download/beedv1.rar
+id: auto-efcdff230e60931df75879afa4b87578b3d5cd8ba27d93e1786e718c85d7131d
+status: experimental
+description: Detects traffic or activity related to http://ic.hopto.org/download/beedv1.rar which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://ic.hopto.org/download/beedv1.rar*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://idk.mangovn.xyz/csk_ppc
+id: auto-64bf5322587f225f86cdcbaf3e9b51c996f5234237d589c4d49993fe86650017
+status: experimental
+description: Detects traffic or activity related to http://idk.mangovn.xyz/csk_ppc which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://idk.mangovn.xyz/csk_ppc*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://idk.mangovn.xyz/csk_arm
+id: auto-d133414d46648a724017eab345110abcbf3ce4db4bb13011d9f76bab8e8dd785
+status: experimental
+description: Detects traffic or activity related to http://idk.mangovn.xyz/csk_arm which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://idk.mangovn.xyz/csk_arm*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://idk.mangovn.xyz/csk_mips
+id: auto-6b3f510150bc6902387a11b4332803b69c9570780ba82097537e408c8bc95071
+status: experimental
+description: Detects traffic or activity related to http://idk.mangovn.xyz/csk_mips which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://idk.mangovn.xyz/csk_mips*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://idk.mangovn.xyz/csk_x86_64
+id: auto-ba5120a2fa80718cb0299395939a6a315575f64b803f1b0a1cc8b932094c1b31
+status: experimental
+description: Detects traffic or activity related to http://idk.mangovn.xyz/csk_x86_64 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://idk.mangovn.xyz/csk_x86_64*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://idk.mangovn.xyz/csk_arm6
+id: auto-7769e77d0799d8b273e32f2656537d2d2e83c23d4ba32c1c2aed57422345c9c5
+status: experimental
+description: Detects traffic or activity related to http://idk.mangovn.xyz/csk_arm6 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://idk.mangovn.xyz/csk_arm6*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://idk.mangovn.xyz/csk_m68k
+id: auto-d4cad86b87003a6e9114a688586b9ce5604e151f252864ac1b30a8370dc4ea6a
+status: experimental
+description: Detects traffic or activity related to http://idk.mangovn.xyz/csk_m68k which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://idk.mangovn.xyz/csk_m68k*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://idk.mangovn.xyz/csk_mpsl
+id: auto-519cc0575e07fc3bc700a1823df6c895cfcd503c581ca4b7da8bdc7925de7880
+status: experimental
+description: Detects traffic or activity related to http://idk.mangovn.xyz/csk_mpsl which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://idk.mangovn.xyz/csk_mpsl*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://idk.mangovn.xyz/csk_arm5
+id: auto-d30fb116f4de6f5ea723b4019a1491cdf77c0c3b7034913b332c4cefbd07d35a
+status: experimental
+description: Detects traffic or activity related to http://idk.mangovn.xyz/csk_arm5 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://idk.mangovn.xyz/csk_arm5*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://idk.mangovn.xyz/csk_arm7
+id: auto-838662a0abfb2d7b1eeb6cd4b471e2c321bb4f0de7934a9d4d8652365400d206
+status: experimental
+description: Detects traffic or activity related to http://idk.mangovn.xyz/csk_arm7 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://idk.mangovn.xyz/csk_arm7*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://idk.mangovn.xyz/csk_x86
+id: auto-ce5fd515272a1517da012562d7e6b1e0f046c0c89aed78c4d76ec0afef6d54bb
+status: experimental
+description: Detects traffic or activity related to http://idk.mangovn.xyz/csk_x86 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://idk.mangovn.xyz/csk_x86*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://arilprivate.storexyz.web.id/1.sh
 id: auto-e4cc507595104c91f503336b9ef99f46318e54cfa1c066f5341cb7a9522df36f
 status: experimental

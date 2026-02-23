@@ -1,3 +1,83 @@
+title: Detect Activity to Known Malicious Indicator - http://14.236.84.25/sshd
+id: auto-0199eda8a6c99e7bc43d70e7f11261ef44017649181d0103fd470167d709db62
+status: experimental
+description: Detects traffic or activity related to http://14.236.84.25/sshd which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://14.236.84.25/sshd*'
+  condition: selection
+level: high
+tags:
+  - attack.t1543
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://86.150.68.134:82/sshd
+id: auto-d5c5b31d789d2117227d520a0885a248cfb448a18ee4e1f0863fb86388554c87
+status: experimental
+description: Detects traffic or activity related to http://86.150.68.134:82/sshd which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://86.150.68.134:82/sshd*'
+  condition: selection
+level: high
+tags:
+  - attack.t1543
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://88.8.16.9:1078/sshd
+id: auto-c79a99a1da6de1382846818ce41d55296681bd9c02745d8d055fcb6aeccb3a42
+status: experimental
+description: Detects traffic or activity related to http://88.8.16.9:1078/sshd which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://88.8.16.9:1078/sshd*'
+  condition: selection
+level: high
+tags:
+  - attack.t1543
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://101.168.56.102:85/sshd
+id: auto-05390acedcb1657b59f9b5936db37b7f3d8841a57a0b0592b329c93ad10d6912
+status: experimental
+description: Detects traffic or activity related to http://101.168.56.102:85/sshd which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://101.168.56.102:85/sshd*'
+  condition: selection
+level: high
+tags:
+  - attack.t1543
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://116.105.48.197:8585/sshd
+id: auto-f9542701b26274b6c2c1f1d0b7c2e2161c3b38437776275f87971a69d55a0b15
+status: experimental
+description: Detects traffic or activity related to http://116.105.48.197:8585/sshd which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://116.105.48.197:8585/sshd*'
+  condition: selection
+level: high
+tags:
+  - attack.t1543
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://14.236.182.73/sshd
 id: auto-f196fc4c5e5215097eb7a14dadc7a580134630c39a5becbd4c1d26e653bf7382
 status: experimental
@@ -3400,150 +3480,6 @@ detection:
   selection:
     c-uri:
       - '*http://91.80.143.84/sshd*'
-  condition: selection
-level: high
-tags:
-  - attack.t1543
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://83.224.166.130/sshd
-id: auto-8d7de8b807ff74f6e2c83452b9fceb5a148fbe5fb4dfdf54992edbfc102e7384
-status: experimental
-description: Detects traffic or activity related to http://83.224.166.130/sshd which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://83.224.166.130/sshd*'
-  condition: selection
-level: high
-tags:
-  - attack.t1543
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://14.233.148.188/sshd
-id: auto-6d860767f44c117e5e63248e7c12622aa32f76ea1dc53083387dfb28e7d71219
-status: experimental
-description: Detects traffic or activity related to http://14.233.148.188/sshd which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://14.233.148.188/sshd*'
-  condition: selection
-level: high
-tags:
-  - attack.t1543
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://102.23.89.5:8082/sshd
-id: auto-2a4517b8078e33c9e60d1fa6fa129b530704c57b2d5ec745459dbb49c643dd65
-status: experimental
-description: Detects traffic or activity related to http://102.23.89.5:8082/sshd which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://102.23.89.5:8082/sshd*'
-  condition: selection
-level: high
-tags:
-  - attack.t1543
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://120.157.246.149:85/sshd
-id: auto-5524a7e97d8d2e483aba632476c25a2563b1df17b3e9ea1ca753984a1f42ad50
-status: experimental
-description: Detects traffic or activity related to http://120.157.246.149:85/sshd which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://120.157.246.149:85/sshd*'
-  condition: selection
-level: high
-tags:
-  - attack.t1543
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://42.119.154.173:8080/sshd
-id: auto-b54cac9f1afcea707d305e32252a8a36e8c8400d077b7723fd911058a20c4fb4
-status: experimental
-description: Detects traffic or activity related to http://42.119.154.173:8080/sshd which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://42.119.154.173:8080/sshd*'
-  condition: selection
-level: high
-tags:
-  - attack.t1543
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://91.80.140.251/sshd
-id: auto-4c24bbef93adb71110bf16f2197948886346cb0983f48623912b304a551dd1c5
-status: experimental
-description: Detects traffic or activity related to http://91.80.140.251/sshd which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://91.80.140.251/sshd*'
-  condition: selection
-level: high
-tags:
-  - attack.t1543
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://88.24.74.0:10072/sshd
-id: auto-796d6c94de0c8fa2b8d1e27d8c19e14f4729c6bcbefe778414759e30bf5d935b
-status: experimental
-description: Detects traffic or activity related to http://88.24.74.0:10072/sshd which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://88.24.74.0:10072/sshd*'
-  condition: selection
-level: high
-tags:
-  - attack.t1543
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://77.181.240.244:8080/sshd
-id: auto-8ceafafddcc131608d77eac97f070877ac5a7193b4a5ee21798b4eaffe043915
-status: experimental
-description: Detects traffic or activity related to http://77.181.240.244:8080/sshd which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://77.181.240.244:8080/sshd*'
-  condition: selection
-level: high
-tags:
-  - attack.t1543
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://88.18.155.134:91/sshd
-id: auto-e4ba6c2e87d87db7898bbcec067c8baa77a81887b857d85d321eaea8ddb84284
-status: experimental
-description: Detects traffic or activity related to http://88.18.155.134:91/sshd which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://88.18.155.134:91/sshd*'
   condition: selection
 level: high
 tags:

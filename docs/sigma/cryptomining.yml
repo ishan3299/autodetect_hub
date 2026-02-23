@@ -1,3 +1,35 @@
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/1781548144/3BXsQpC.exe
+id: auto-bfaad536b45a39ec6bcfcef4c4d302e29e572598bd6e44201cb41d54d89646be
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/1781548144/3BXsQpC.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/1781548144/3BXsQpC.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://31.59.129.233/nuts/poop
+id: auto-ec494bdc07f7f8702353727c961306bd01331e161a5e8e84a7defd9b213e5f45
+status: experimental
+description: Detects traffic or activity related to http://31.59.129.233/nuts/poop which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://31.59.129.233/nuts/poop*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://104.194.152.180/download/install.exe
 id: auto-ea3c60502d3146fb4c7121d23f788ca3be365a01a1f4a696b8a6f5943a3e2b99
 status: experimental
@@ -8078,53 +8110,37 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - http://217.60.1.217/nuts/bolts
-id: auto-c1f25bd97496dadcd86d65db83ca10c141b4159b35b31e411c54696139e8e2a9
+title: Detect Activity to Known Malicious Indicator -  "48c88582ea582d1a57a786a5d76ca82fe6ac03950f652e65f28926b3b03ed1d0"
+id: auto-0baad9c41b52df47939ae5f39face6234ccc4fa054f661ac7a9c539944c32580
 status: experimental
-description: Detects traffic or activity related to http://217.60.1.217/nuts/bolts which is a known malicious url.
+description: Detects traffic or activity related to  "48c88582ea582d1a57a786a5d76ca82fe6ac03950f652e65f28926b3b03ed1d0" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://217.60.1.217/nuts/bolts*'
+    hashes:
+      - '* "48c88582ea582d1a57a786a5d76ca82fe6ac03950f652e65f28926b3b03ed1d0"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - http://87.121.84.24/nuts/poop
-id: auto-11e3983a024d6c3d97d637a8a1f306312c1c09c332b0562f5e7bf5ef95d455d3
+title: Detect Activity to Known Malicious Indicator -  "f03f175facb93c6f2056578e337b86a2baf41492892eac97b0535ebbf9698866"
+id: auto-0d0f378cc423382e1963b33d0be5e1aeb1af39608ee143cee4852fca06752ea3
 status: experimental
-description: Detects traffic or activity related to http://87.121.84.24/nuts/poop which is a known malicious url.
+description: Detects traffic or activity related to  "f03f175facb93c6f2056578e337b86a2baf41492892eac97b0535ebbf9698866" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://87.121.84.24/nuts/poop*'
+    hashes:
+      - '* "f03f175facb93c6f2056578e337b86a2baf41492892eac97b0535ebbf9698866"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://87.121.84.24/nuts/bolts
-id: auto-80032d2fe9d061d8d41f5888880631d349130e295b0fffe400e19b26091a326f
-status: experimental
-description: Detects traffic or activity related to http://87.121.84.24/nuts/bolts which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://87.121.84.24/nuts/bolts*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "4aced9a213a250581b513534a9fb1e8a81bc85f55b6a8b7ccbabe8a56a668c4e"
 id: auto-cab383ebe96271e0991a85b79f968849aa51ebb80aea5d62a1d5a5c38ce259cc
@@ -8184,54 +8200,6 @@ detection:
   selection:
     hashes:
       - '* "43b9cfbfd524d138da3312b47fcee8c4c9ab9343d89fe7b4b730f73c940fbfef"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "0754558540a5a31208b400a0b23f40a6b3aa7c60a7e696a3795dad982b5b4970"
-id: auto-61275047a4ff453234cd9caa82c2b2566b7d86613c09227aed26f1e24f364404
-status: experimental
-description: Detects traffic or activity related to  "0754558540a5a31208b400a0b23f40a6b3aa7c60a7e696a3795dad982b5b4970" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "0754558540a5a31208b400a0b23f40a6b3aa7c60a7e696a3795dad982b5b4970"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "825519b4b90f70d6272166110f7e7cdc2318ed090fcd3cb63597189cb0a639f2"
-id: auto-e9fc016305d6af7edc6d545c207d36639e7ce227c71fb0a003e906cca4cde130
-status: experimental
-description: Detects traffic or activity related to  "825519b4b90f70d6272166110f7e7cdc2318ed090fcd3cb63597189cb0a639f2" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "825519b4b90f70d6272166110f7e7cdc2318ed090fcd3cb63597189cb0a639f2"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "08be3260b1569540aa2ea8c55d4b1f099e735fced9917e5e058b06a16c674fe1"
-id: auto-3785afdd9f0cb1e7ac2f1cd8367ef28a17ad679924cf8021f1037a80f6b9dd6c
-status: experimental
-description: Detects traffic or activity related to  "08be3260b1569540aa2ea8c55d4b1f099e735fced9917e5e058b06a16c674fe1" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "08be3260b1569540aa2ea8c55d4b1f099e735fced9917e5e058b06a16c674fe1"*'
   condition: selection
 level: high
 tags:
