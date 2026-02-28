@@ -8254,21 +8254,37 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - https://mgtms.cc/direct/Printer_Driver_SSL_support_v43.22.209.99.exe
-id: auto-eedf8267b9ea5a08e5580e4b052924effc29dc1db44fff3b70cd58baba462068
+title: Detect Activity to Known Malicious Indicator -  "e10b18f10b4d07128d965e6d7ec0d6568f3c0fd64d87f48998aaa41ecf63e91d"
+id: auto-52594f5aea783b8c948b0a98afb88818fd0361748d55fa1cfd524271d656f9c1
 status: experimental
-description: Detects traffic or activity related to https://mgtms.cc/direct/Printer_Driver_SSL_support_v43.22.209.99.exe which is a known malicious url.
+description: Detects traffic or activity related to  "e10b18f10b4d07128d965e6d7ec0d6568f3c0fd64d87f48998aaa41ecf63e91d" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://mgtms.cc/direct/Printer_Driver_SSL_support_v43.22.209.99.exe*'
+    hashes:
+      - '* "e10b18f10b4d07128d965e6d7ec0d6568f3c0fd64d87f48998aaa41ecf63e91d"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "5e2ba475902c8d15ff0d0cb360a71951eb6a3b95d2737dfebfe55a4c6980d8d1"
+id: auto-a0fca107c414df7887e0ebeb2397e4a567fee9ee153610780d9db4ecb40f422e
+status: experimental
+description: Detects traffic or activity related to  "5e2ba475902c8d15ff0d0cb360a71951eb6a3b95d2737dfebfe55a4c6980d8d1" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "5e2ba475902c8d15ff0d0cb360a71951eb6a3b95d2737dfebfe55a4c6980d8d1"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "3d3a49ebbfeb9467d72b94448c8709d4eb616ec9bab5647122f0f98aa983f67f"
 id: auto-bf18470027646dd437a6add9a1a629ed35132c5e20662f74e22aec602a320ddd
