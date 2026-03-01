@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - https://bafybeidp7zdy2lu6yxvbgoev4b6xokuaa6jljr34vkflxzel2ya2gc3plm.ipfs.dweb.link/?filename=xxwConvertedFile.txt
+id: auto-4794b25814b3130540c5d4fb877c81d1e0e07a279ac51d7e4105c2ce6b3d15d6
+status: experimental
+description: Detects traffic or activity related to https://bafybeidp7zdy2lu6yxvbgoev4b6xokuaa6jljr34vkflxzel2ya2gc3plm.ipfs.dweb.link/?filename=xxwConvertedFile.txt which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://bafybeidp7zdy2lu6yxvbgoev4b6xokuaa6jljr34vkflxzel2ya2gc3plm.ipfs.dweb.link/?filename=xxwConvertedFile.txt*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://64.120.95.129/Error84
 id: auto-fcaa5f35896727a6bfb8c25b4abf118d28aa6878b8933bc3e9515535bed4de7b
 status: experimental
@@ -8206,53 +8222,21 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/1781548144/y3GbU2Z.exe
-id: auto-070c7966a54fe177b505d90dbf4696646470366cfbcb7964c35b90874f876989
+title: Detect Activity to Known Malicious Indicator -  "b4ae0aa38f19cf8c917061bcd03ee501ec97faac1582d0b8ca488f8c97c00a53"
+id: auto-6e65f041ca6ec7efaa997d0ecf789be2d2faf2dbb6679b943d929033f8373694
 status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/1781548144/y3GbU2Z.exe which is a known malicious url.
+description: Detects traffic or activity related to  "b4ae0aa38f19cf8c917061bcd03ee501ec97faac1582d0b8ca488f8c97c00a53" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://130.12.180.43/files/1781548144/y3GbU2Z.exe*'
+    hashes:
+      - '* "b4ae0aa38f19cf8c917061bcd03ee501ec97faac1582d0b8ca488f8c97c00a53"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://104.194.152.180/download/update.exe
-id: auto-be1a904b9d6049cd561b7874f0135e8df1b8be9d81ccbbae369044507c7165b2
-status: experimental
-description: Detects traffic or activity related to http://104.194.152.180/download/update.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://104.194.152.180/download/update.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/6382108206/SIiNvbX.exe
-id: auto-5e383c5a90ad1eb1072a9cc9840affda101c34b781d8de1f5f4b74c2418ff301
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/6382108206/SIiNvbX.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/6382108206/SIiNvbX.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "e10b18f10b4d07128d965e6d7ec0d6568f3c0fd64d87f48998aaa41ecf63e91d"
 id: auto-52594f5aea783b8c948b0a98afb88818fd0361748d55fa1cfd524271d656f9c1
@@ -8280,22 +8264,6 @@ detection:
   selection:
     hashes:
       - '* "5e2ba475902c8d15ff0d0cb360a71951eb6a3b95d2737dfebfe55a4c6980d8d1"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "3d3a49ebbfeb9467d72b94448c8709d4eb616ec9bab5647122f0f98aa983f67f"
-id: auto-bf18470027646dd437a6add9a1a629ed35132c5e20662f74e22aec602a320ddd
-status: experimental
-description: Detects traffic or activity related to  "3d3a49ebbfeb9467d72b94448c8709d4eb616ec9bab5647122f0f98aa983f67f" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "3d3a49ebbfeb9467d72b94448c8709d4eb616ec9bab5647122f0f98aa983f67f"*'
   condition: selection
 level: high
 tags:
