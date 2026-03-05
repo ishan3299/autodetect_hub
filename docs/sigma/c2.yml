@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7309295924/tNRQGUL.exe
+id: auto-ad326c8a8d5be82cea1802c004a7412a140bc28d637a2c30a08c6262b0cde8d4
+status: experimental
+description: Detects traffic or activity related to http://130.12.180.43/files/7309295924/tNRQGUL.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://130.12.180.43/files/7309295924/tNRQGUL.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/5431781362/DJrIZMA.exe
 id: auto-a204c3668dd1d772b526a90048a40df74824033e23d241b1df241d82526f17bd
 status: experimental
@@ -1869,99 +1885,3 @@ level: high
 tags:
   - attack.T1071
   - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7720249373/Pfh7XQi.exe
-id: auto-5aa5bf82d736531657f415b7456766028cfa5fd53271240da1e85b0ada736f97
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/7720249373/Pfh7XQi.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/7720249373/Pfh7XQi.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/sm/random.exe
-id: auto-ea4cfbd732a86de5a4e3387999099498a8a197eddaea0b913a72a235156f91b0
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/sm/random.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/sm/random.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7362035837/qpqWtnc.exe
-id: auto-d50ef306292ea633a02bb2590f7df7aae5b3c4165ff585fa82cd830962ec91ec
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/7362035837/qpqWtnc.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/7362035837/qpqWtnc.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7326438334/3ysJloC.exe
-id: auto-61ce4c9b93ab932861f8691eb7e12dfefd8c8e349e7346386aabd84d80bb144a
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/7326438334/3ysJloC.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/7326438334/3ysJloC.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8429623103/0PCyVok.exe
-id: auto-faa7fde8260cd572f943f461807fd5640e303724baeb9ac031d201e735235c3b
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/8429623103/0PCyVok.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/8429623103/0PCyVok.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator -  "8e7049f09985c7138137cbe83ee1bcdd639805527a7969e5a4cd0b87094a7028"
-id: auto-e9f2048b8df13452c6da501118178bf84ba189ab99fd42ae74b305241b1129cb
-status: experimental
-description: Detects traffic or activity related to  "8e7049f09985c7138137cbe83ee1bcdd639805527a7969e5a4cd0b87094a7028" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "8e7049f09985c7138137cbe83ee1bcdd639805527a7969e5a4cd0b87094a7028"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
