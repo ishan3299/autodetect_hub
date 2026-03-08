@@ -1,3 +1,83 @@
+title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/heine/random.exe
+id: auto-ff46b9c853e464296693731d7b72e040807940d270da3eda06208966e08f4773
+status: experimental
+description: Detects traffic or activity related to http://158.94.211.222/files/heine/random.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.211.222/files/heine/random.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/8468794285/iBC1OE9.exe
+id: auto-ab0fb5819d42888f87093f857d2b21b6bff776a2402a4862821d6fecf04e3f81
+status: experimental
+description: Detects traffic or activity related to http://158.94.211.222/files/8468794285/iBC1OE9.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.211.222/files/8468794285/iBC1OE9.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/unique2/random.exe
+id: auto-42709c4c60fa1a4c8b18ace656de7edf17e9586e08ed8e623f1803823e7df62a
+status: experimental
+description: Detects traffic or activity related to http://158.94.211.222/files/unique2/random.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.211.222/files/unique2/random.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/8548282130/trP9KGI.bat
+id: auto-574d14838d5042c293d47d6bd8b7a2ad1ce6de5d7a3e8d8a82b2c0618548ef21
+status: experimental
+description: Detects traffic or activity related to http://158.94.211.222/files/8548282130/trP9KGI.bat which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.211.222/files/8548282130/trP9KGI.bat*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/8468794285/5vroDFE.exe
+id: auto-4c6a91e76faff00c2385fb24160a597332067782eaa9f2b84d3cdfc10ecac92d
+status: experimental
+description: Detects traffic or activity related to http://158.94.211.222/files/8468794285/5vroDFE.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.211.222/files/8468794285/5vroDFE.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/8733674968/jLZuxmu.exe
 id: auto-b0943f6a46866313645deb463c202bef8f3b6fa4c62a5160d76f72460c693909
 status: experimental
@@ -1976,134 +2056,6 @@ detection:
   selection:
     c-uri:
       - '*http://130.12.180.43/files/8068616748/4L2OGu0.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/748049926/3LyATKu.exe
-id: auto-d9ed356adc416a187bcc40af405fb0e2beed0ddaf9265619257c3950200212c7
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/748049926/3LyATKu.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/748049926/3LyATKu.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7598745812/ACWEBaQ.exe
-id: auto-55ec05e333e0b5ba18e47e0fc3fe84ed434928fde96fdafea50041a9532d3e18
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/7598745812/ACWEBaQ.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/7598745812/ACWEBaQ.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/6951863039/XcnPbsV.exe
-id: auto-834fe0a4665bb51912a590040c88e5c48fec0ed52341a1900bc8148498d1d24e
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/6951863039/XcnPbsV.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/6951863039/XcnPbsV.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7103746036/o9hkwIZ.exe
-id: auto-5103fb36ea280e31ad227d445fb769e7965288db4c9469bfee68363e7e3818a6
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/7103746036/o9hkwIZ.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/7103746036/o9hkwIZ.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7103746036/ssivTBS.exe
-id: auto-90b61cf5febb191d19cd8b0481fa91af7a4aabdc709e57217382a3012760f6db
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/7103746036/ssivTBS.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/7103746036/ssivTBS.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/6832239903/lrulllw.msi
-id: auto-1a4e8fd287874058aa5d6421725041c9a35ee00e0a31b76e84aea488af6b82a5
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/6832239903/lrulllw.msi which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/6832239903/lrulllw.msi*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/642848461/w8DMu38.ps1
-id: auto-17beb172093e6d21e2739e49b1feb9c738719e766a61cdce62a9dd1277daed2b
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/642848461/w8DMu38.ps1 which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/642848461/w8DMu38.ps1*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8468434805/fKDnWbX.exe
-id: auto-df42e3c02b760b7f20718b36dd577ce88b19d47441094e4ba6b1a73b35026762
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/8468434805/fKDnWbX.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/8468434805/fKDnWbX.exe*'
   condition: selection
 level: high
 tags:
