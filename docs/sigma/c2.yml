@@ -1,3 +1,51 @@
+title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/8538310255/Ouxs217.exe
+id: auto-fda3b868502eb561e93553574feefc760221a189e579e1bfa935603307c40f31
+status: experimental
+description: Detects traffic or activity related to http://158.94.211.222/files/8538310255/Ouxs217.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.211.222/files/8538310255/Ouxs217.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/8290342669/SBD1ils.bat
+id: auto-717a15a898c72816e9655d31609e7c252649de4d6483530cc65dd7560679881c
+status: experimental
+description: Detects traffic or activity related to http://158.94.211.222/files/8290342669/SBD1ils.bat which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.211.222/files/8290342669/SBD1ils.bat*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/7903503838/kUpExhy.exe
+id: auto-917b30d4f5ba65f940f19309a6ced89637dec7bcf56a730556f0f543449adb83
+status: experimental
+description: Detects traffic or activity related to http://158.94.211.222/files/7903503838/kUpExhy.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.211.222/files/7903503838/kUpExhy.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/7824924311/u0J9Mv7.msi
 id: auto-d1fdc30f3b183ec6e5c7d7ee04a3702fcefd0f35dc4cf1efab64d4d2e26e6547
 status: experimental
@@ -1964,36 +2012,4 @@ detection:
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8428202012/2ES6RO8.exe
-id: auto-ceb5a36fdddfbaed039d4c9ce7015a9a00438fd44808ce88abdc3a367048525b
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/8428202012/2ES6RO8.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/8428202012/2ES6RO8.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7302144605/SYuwNKs.exe
-id: auto-b13563a2730dd8c02f8d488b526c66e72448ce70d4a315b179c71848918c731e
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/7302144605/SYuwNKs.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/7302144605/SYuwNKs.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
   - source.URLhaus
