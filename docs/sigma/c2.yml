@@ -1,3 +1,51 @@
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/8012574236/4aMmUA4.exe
+id: auto-c160bdd4e351cf1b30dfe9bff0c902d7aa3131d9dafeea029423b40c3bc75fd3
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.7/files/8012574236/4aMmUA4.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.7/files/8012574236/4aMmUA4.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/7769977063/H7DC3me.bat
+id: auto-c8d43775ba05951792e375d1b4ca741abdfb2c7269d443ab6e225c98c0564995
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.7/files/7769977063/H7DC3me.bat which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.7/files/7769977063/H7DC3me.bat*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://s3.g.s4.mega.io/aileqac3yep7oqdhygjpberqqnk2zrnhck2lx/busket/2/03x12x26/01/OHKSFJCE.exe
+id: auto-1d2ec9f3c195fdf12e4cec50837cc297e5a0588594a596f5576999f2ee9cb920
+status: experimental
+description: Detects traffic or activity related to https://s3.g.s4.mega.io/aileqac3yep7oqdhygjpberqqnk2zrnhck2lx/busket/2/03x12x26/01/OHKSFJCE.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://s3.g.s4.mega.io/aileqac3yep7oqdhygjpberqqnk2zrnhck2lx/busket/2/03x12x26/01/OHKSFJCE.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/6902778688/AcjqUEy.exe
 id: auto-02dd11d19ffbfcbc0381e6427ae7aa8211c06e64ac4047a0da2e6b9a2d53c72d
 status: experimental
@@ -27,7 +75,7 @@ detection:
   condition: selection
 level: high
 tags:
-  - attack.T1071
+  - attack.t1496
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/8425384370/mnVpX0P.exe

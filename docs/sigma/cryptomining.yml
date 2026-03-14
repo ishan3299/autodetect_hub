@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - https://pastebin.com/raw/1YAn6rSV
+id: auto-53d4a3c0784b906162e8c2b00c45263935ce3f543de758426797cb3e299cdef7
+status: experimental
+description: Detects traffic or activity related to https://pastebin.com/raw/1YAn6rSV which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://pastebin.com/raw/1YAn6rSV*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://130.12.181.60/iat.exe
 id: auto-d1d8ea456002e0dba185624d35ba2f7f5bc997ec93fd7ec9436c29a32ebe0091
 status: experimental
@@ -1918,53 +1934,37 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - https://gitlab.com/lxxx1h/r1vl/-/raw/main/U7Q7R23U7669.exe
-id: auto-358242bd49c4a890c663bb7dbb71d7bef5ae379b6b858358a2b8b70d04291f7e
+title: Detect Activity to Known Malicious Indicator -  "cd1251e2b55848eb45f6ae8edc1ef7b74b2721e8a8db7c6d95e67619cdca0572"
+id: auto-4728d5d2f4d4d3913b9b6ceb6b6d5af7fdadff427075540c5eb6256ed749f877
 status: experimental
-description: Detects traffic or activity related to https://gitlab.com/lxxx1h/r1vl/-/raw/main/U7Q7R23U7669.exe which is a known malicious url.
+description: Detects traffic or activity related to  "cd1251e2b55848eb45f6ae8edc1ef7b74b2721e8a8db7c6d95e67619cdca0572" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://gitlab.com/lxxx1h/r1vl/-/raw/main/U7Q7R23U7669.exe*'
+    hashes:
+      - '* "cd1251e2b55848eb45f6ae8edc1ef7b74b2721e8a8db7c6d95e67619cdca0572"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://gitlab.com/bland3h/d3d9/-/raw/main/U7Q7R23U7669.exe
-id: auto-5d4fe15c444a11a1a7ea111813e86d318582a280584ce6adbbe8f2ece899b2ee
+title: Detect Activity to Known Malicious Indicator -  "2f480c7c373f82f813bd2fa70e5b537934b67c340bee700f532aecc0641f887d"
+id: auto-3fea152830acc4d39a51fe9f332f26e11d82f8fe84c3d2b3506a79ec5b87bde1
 status: experimental
-description: Detects traffic or activity related to https://gitlab.com/bland3h/d3d9/-/raw/main/U7Q7R23U7669.exe which is a known malicious url.
+description: Detects traffic or activity related to  "2f480c7c373f82f813bd2fa70e5b537934b67c340bee700f532aecc0641f887d" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://gitlab.com/bland3h/d3d9/-/raw/main/U7Q7R23U7669.exe*'
+    hashes:
+      - '* "2f480c7c373f82f813bd2fa70e5b537934b67c340bee700f532aecc0641f887d"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://gitlab.com/lxxx1h/r1vl/-/raw/main/ZUV9745L7374.exe
-id: auto-03221948fefc05537ec347a5317ea3cba22f4764211e79de47c3ae0d13304a78
-status: experimental
-description: Detects traffic or activity related to https://gitlab.com/lxxx1h/r1vl/-/raw/main/ZUV9745L7374.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://gitlab.com/lxxx1h/r1vl/-/raw/main/ZUV9745L7374.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "e7f1b916f407e2715a5b23c4582478524d72fb2eaa30ead178d0111db1efd9bb"
 id: auto-a41303c39dcff0650ef401f58af366baff7ca76e89b2e1e487d2c3aea298cb9d
@@ -1992,38 +1992,6 @@ detection:
   selection:
     hashes:
       - '* "4a33851bcbc114c5bb20ebf2b4afbb40a93767d4b89cb8503bac34f03c278ca6"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "c7b93b6facfc23f49e35e81dc9c30cc69401b8245eeb7c032fc13656cd7e101f"
-id: auto-1fa0005d899f704ed810f301c651616d29addd0afc4cdb49ad2eea2fcf9b6abb
-status: experimental
-description: Detects traffic or activity related to  "c7b93b6facfc23f49e35e81dc9c30cc69401b8245eeb7c032fc13656cd7e101f" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "c7b93b6facfc23f49e35e81dc9c30cc69401b8245eeb7c032fc13656cd7e101f"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "ba491b6fe34b2ff748e152a6595f08b1c811070c5d95e4116b6774fbd3fa4bf4"
-id: auto-72e0045305b9f0bd926edc49621f739901d7eedd635bfbb41e39d4cd4fe08d19
-status: experimental
-description: Detects traffic or activity related to  "ba491b6fe34b2ff748e152a6595f08b1c811070c5d95e4116b6774fbd3fa4bf4" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "ba491b6fe34b2ff748e152a6595f08b1c811070c5d95e4116b6774fbd3fa4bf4"*'
   condition: selection
 level: high
 tags:
