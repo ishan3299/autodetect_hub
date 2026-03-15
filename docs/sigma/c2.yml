@@ -1,3 +1,67 @@
+title: Detect Activity to Known Malicious Indicator - https://touchskins.io/download?=touchskins.exe
+id: auto-de1d18041809ee08a0e0af728710da51c3da8d6d16c5f09be425f73791474b53
+status: experimental
+description: Detects traffic or activity related to https://touchskins.io/download?=touchskins.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://touchskins.io/download?=touchskins.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/8530419136/wt3Pima.exe
+id: auto-f92ca20a0872fd5172b3c522b443c67ca6bb0bb6b27a8a903ba60b021760c254
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.7/files/8530419136/wt3Pima.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.7/files/8530419136/wt3Pima.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/8520831842/DEpKvYR.exe
+id: auto-c3a52153cae2dde9e0eb6d38719fb4003c1879b1e6ab006e41955f62fb0f2181
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.7/files/8520831842/DEpKvYR.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.7/files/8520831842/DEpKvYR.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/8167064937/Ypu2UPL.exe
+id: auto-a3830aea68f8af4f733e1ff902d7029207355b23e690713fa6dea2421b19dd31
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.7/files/8167064937/Ypu2UPL.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.7/files/8167064937/Ypu2UPL.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/8012574236/4aMmUA4.exe
 id: auto-c160bdd4e351cf1b30dfe9bff0c902d7aa3131d9dafeea029423b40c3bc75fd3
 status: experimental
@@ -27,7 +91,7 @@ detection:
   condition: selection
 level: high
 tags:
-  - attack.T1071
+  - attack.t1219
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Indicator - https://s3.g.s4.mega.io/aileqac3yep7oqdhygjpberqqnk2zrnhck2lx/busket/2/03x12x26/01/OHKSFJCE.exe
@@ -2174,66 +2238,18 @@ tags:
   - attack.T1071
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8546791173/zjYlcRN.exe
-id: auto-d9e62d7bc8443a9d12b79cb5f0c2f473dd375fce2db4ed52133f76a7edfa8cc8
+title: Detect Activity to Known Malicious Indicator -  "606da9e8d627a1c95a90f876fcc465a741a1750a2c15cf4700f307f4ae108fe9"
+id: auto-50df145848c777107843bf5862ade2acb38de9fbbde5433fa2b0e3e7be05f5cb
 status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/8546791173/zjYlcRN.exe which is a known malicious url.
+description: Detects traffic or activity related to  "606da9e8d627a1c95a90f876fcc465a741a1750a2c15cf4700f307f4ae108fe9" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://130.12.180.43/files/8546791173/zjYlcRN.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1583
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8273370267/7N0B228.exe
-id: auto-d5f3f1a074cf69f9a982b10f9394ff36e966ec9985ad31212774f15b4426a3f2
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/8273370267/7N0B228.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/8273370267/7N0B228.exe*'
+    hashes:
+      - '* "606da9e8d627a1c95a90f876fcc465a741a1750a2c15cf4700f307f4ae108fe9"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/748049926/f12BhQB.exe
-id: auto-dcdb4f4da6b7de7c44469c7922ea089d28cc1172653b948745b6b697c5cc044a
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/748049926/f12BhQB.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/748049926/f12BhQB.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/6832239903/NdOdNjs.ps1
-id: auto-e0c109d58a59a17db0fadff9471497cebff04b54e3ef7899f4d9f24c1d8b5da6
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/6832239903/NdOdNjs.ps1 which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/6832239903/NdOdNjs.ps1*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
