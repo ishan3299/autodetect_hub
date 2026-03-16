@@ -1,3 +1,83 @@
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/7782139129/Y9lcbSi.exe
+id: auto-af4c775e25192d54a6e5620db5ccd196fc2460a9218701f538f80f27a6c61a95
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.7/files/7782139129/Y9lcbSi.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.7/files/7782139129/Y9lcbSi.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/7460962853/qZGuNez.exe
+id: auto-46ae73c201661e1602c6b6cbb612be9d1ea045574e5df13298d3b77e4fc3281f
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.7/files/7460962853/qZGuNez.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.7/files/7460962853/qZGuNez.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://api.wewpwsw.su/gate.exe
+id: auto-8f599d53285aaf378c8a556a0c2d161080efe81674a55bc082a3a3add25adb3d
+status: experimental
+description: Detects traffic or activity related to https://api.wewpwsw.su/gate.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://api.wewpwsw.su/gate.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/7782139129/7GKCAjW.exe
+id: auto-cd41323f12a308189fde6aa8ad374f6dda86183c6c2c7d395e09bd032c32c5d4
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.7/files/7782139129/7GKCAjW.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.7/files/7782139129/7GKCAjW.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://api.touchskins.io/download?=touchskins.exe
+id: auto-ec80cb3bfbf184baabe8a3d9d0264eb9111aaa357d4c9c7384802a85e2417763
+status: experimental
+description: Detects traffic or activity related to https://api.touchskins.io/download?=touchskins.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://api.touchskins.io/download?=touchskins.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - https://touchskins.io/download?=touchskins.exe
 id: auto-de1d18041809ee08a0e0af728710da51c3da8d6d16c5f09be425f73791474b53
 status: experimental
@@ -2200,38 +2280,6 @@ detection:
   selection:
     c-uri:
       - '*http://130.12.180.43/files/5023688490/auz7wwz.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/6832239903/rYN7hvs.ps1
-id: auto-c6061ff41abd45cdc3712a9a619cfef4d772a7db5f24b97fe0e10b4b03e90187
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/6832239903/rYN7hvs.ps1 which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/6832239903/rYN7hvs.ps1*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8408827406/o72zWKv.exe
-id: auto-828a3a5d83e0d6512fd673cb45cfd8eab3032298af65655c95ecc6e32e02aa84
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/8408827406/o72zWKv.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/8408827406/o72zWKv.exe*'
   condition: selection
 level: high
 tags:

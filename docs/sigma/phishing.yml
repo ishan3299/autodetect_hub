@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - https://mytaxclientcopy.com/xlab22.hta
+id: auto-bdd927056b6fb7785ad629bf2b565fb7508fa6125691deae1972ab977584b63a
+status: experimental
+description: Detects traffic or activity related to https://mytaxclientcopy.com/xlab22.hta which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://mytaxclientcopy.com/xlab22.hta*'
+  condition: selection
+level: high
+tags:
+  - attack.t1218.005
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://62.133.62.176/firep.img
 id: auto-77a0d0bd5f69cae58480dd75be0c33526e298638324a7f35bc23139f65912df1
 status: experimental
