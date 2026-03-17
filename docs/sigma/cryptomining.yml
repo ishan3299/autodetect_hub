@@ -1918,22 +1918,6 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - http://192.3.118.16/nuts/poop
-id: auto-08b57bb8cdee557055e7ccfc6523338684181e569dc3f977eb897c336398efbc
-status: experimental
-description: Detects traffic or activity related to http://192.3.118.16/nuts/poop which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://192.3.118.16/nuts/poop*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
 title: Detect Activity to Known Malicious Indicator -  "1e10f4ef73bf8bc6f44fc4a8d9fff8ee5cca834049e46e79c0c524a5e371cb9e"
 id: auto-e5fbe1a91fc42f460d49069147e8c0d39eaacddbd6bc001a780c8b46b6875f39
 status: experimental
