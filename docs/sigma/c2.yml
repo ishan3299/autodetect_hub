@@ -1,3 +1,51 @@
+title: Detect Activity to Known Malicious Indicator - http://188.137.230.88/1.exe
+id: auto-bde1adb496a4fc038ac40aa176cba088c095dda40419fb3caccc7b510de8163b
+status: experimental
+description: Detects traffic or activity related to http://188.137.230.88/1.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://188.137.230.88/1.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/8574065846/HPlEReH.exe
+id: auto-3697c79bca20e93fdddb276b0d08cffa427cc065325738432d3ca4e4f932a0c1
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.7/files/8574065846/HPlEReH.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.7/files/8574065846/HPlEReH.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://nelark.icu/xftaswx/res/get-command.php
+id: auto-ab6f865a3b0e7e6cc07ce1a99b0eab277089d8309df688c8a90dbb32d7216c7a
+status: experimental
+description: Detects traffic or activity related to https://nelark.icu/xftaswx/res/get-command.php which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://nelark.icu/xftaswx/res/get-command.php*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/7782139129/VGAGvKd.msi
 id: auto-16fdfe6e63c516e99b5308f7dd02a5850da63e532f3d3f72e6004798914e755f
 status: experimental
@@ -8,22 +56,6 @@ detection:
   selection:
     c-uri:
       - '*http://158.94.208.7/files/7782139129/VGAGvKd.msi*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://74.0.32.149/gate.exe
-id: auto-5f572b347674d6be6fdeaf66ba34f843d5b49763b916fcbcf4e4cb1baf40edc0
-status: experimental
-description: Detects traffic or activity related to http://74.0.32.149/gate.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://74.0.32.149/gate.exe*'
   condition: selection
 level: high
 tags:
@@ -120,38 +152,6 @@ detection:
   selection:
     c-uri:
       - '*http://158.94.208.7/files/7782139129/7GKCAjW.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://api.touchskins.io/download?=touchskins.exe
-id: auto-ec80cb3bfbf184baabe8a3d9d0264eb9111aaa357d4c9c7384802a85e2417763
-status: experimental
-description: Detects traffic or activity related to https://api.touchskins.io/download?=touchskins.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://api.touchskins.io/download?=touchskins.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://touchskins.io/download?=touchskins.exe
-id: auto-de1d18041809ee08a0e0af728710da51c3da8d6d16c5f09be425f73791474b53
-status: experimental
-description: Detects traffic or activity related to https://touchskins.io/download?=touchskins.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://touchskins.io/download?=touchskins.exe*'
   condition: selection
 level: high
 tags:
@@ -2136,102 +2136,6 @@ detection:
   selection:
     c-uri:
       - '*http://130.12.180.43/files/7103746036/qvfjiKH.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/6498132466/368wwrW.bat
-id: auto-b48705b07a8c725f1caac25a32bf230727a0722ea06618627c1e4dd0cece6f18
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/6498132466/368wwrW.bat which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/6498132466/368wwrW.bat*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://196.251.107.130/nk.exe
-id: auto-73723d6e012f61080c4eed81ee5f20330dbd220b237acdb1e7bd3df7eebc27cf
-status: experimental
-description: Detects traffic or activity related to http://196.251.107.130/nk.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://196.251.107.130/nk.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://196.251.107.130/buildx_x64.exe
-id: auto-78184b7f07ea47731d73c06da8b79ab74025abe5bc0f3d45f3bcf7846612e9fa
-status: experimental
-description: Detects traffic or activity related to http://196.251.107.130/buildx_x64.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://196.251.107.130/buildx_x64.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/acid/random.exe
-id: auto-a69a2888c0a66f5c004bb4b128b523328c4b1567b4968dfd7d9e419ef41df210
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/acid/random.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/acid/random.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://www.directfiles.link/U6730J7SU/cherry387.exe
-id: auto-0cf624fc623c3ee78b5632a878fb5da9da3c20f4b2633dd774d5391c2734b66e
-status: experimental
-description: Detects traffic or activity related to https://www.directfiles.link/U6730J7SU/cherry387.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://www.directfiles.link/U6730J7SU/cherry387.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7719759462/Yd6HwRw.exe
-id: auto-5932e67cc8a529b059688f8be4f54955962850050336818cbe6cf548f4f925b5
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/7719759462/Yd6HwRw.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/7719759462/Yd6HwRw.exe*'
   condition: selection
 level: high
 tags:

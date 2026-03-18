@@ -1902,48 +1902,32 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/6723359323/ZNY48if.exe
-id: auto-88956cce41b7922cfbf8d9553415d819062742b38ac2bc1817b426454d70c8bc
+title: Detect Activity to Known Malicious Indicator -  "a61cfdb1585ebd47d4046b62ed7ad8a756234f54b24ee0755385c39fb12dbd40"
+id: auto-428c02874f118a35b8e220880dc634d1bfa72ca81defda3516fa066d8b933663
 status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/6723359323/ZNY48if.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/6723359323/ZNY48if.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator -  "1e10f4ef73bf8bc6f44fc4a8d9fff8ee5cca834049e46e79c0c524a5e371cb9e"
-id: auto-e5fbe1a91fc42f460d49069147e8c0d39eaacddbd6bc001a780c8b46b6875f39
-status: experimental
-description: Detects traffic or activity related to  "1e10f4ef73bf8bc6f44fc4a8d9fff8ee5cca834049e46e79c0c524a5e371cb9e" which is a known malicious hash.
+description: Detects traffic or activity related to  "a61cfdb1585ebd47d4046b62ed7ad8a756234f54b24ee0755385c39fb12dbd40" which is a known malicious hash.
 logsource:
   category: process_creation
 detection:
   selection:
     hashes:
-      - '* "1e10f4ef73bf8bc6f44fc4a8d9fff8ee5cca834049e46e79c0c524a5e371cb9e"*'
+      - '* "a61cfdb1585ebd47d4046b62ed7ad8a756234f54b24ee0755385c39fb12dbd40"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
   - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator -  "0628ad6d1fd836b13b22e75fa169502d8ce78b7ad20f0261eb5151da98437bca"
-id: auto-6c769b396c9c5fac6464342501f245002a35a6246f3e424a19823b28da8ea28c
+title: Detect Activity to Known Malicious Indicator -  "9cd9b2800309a07bce3f559d5fc75a649c52d08de7b2b2734b481807f8c5d87a"
+id: auto-7f406439b55430ade8300ccf403f6ba3dc4eb1d3abaae4efcfbc1e65bf7cbd0a
 status: experimental
-description: Detects traffic or activity related to  "0628ad6d1fd836b13b22e75fa169502d8ce78b7ad20f0261eb5151da98437bca" which is a known malicious hash.
+description: Detects traffic or activity related to  "9cd9b2800309a07bce3f559d5fc75a649c52d08de7b2b2734b481807f8c5d87a" which is a known malicious hash.
 logsource:
   category: process_creation
 detection:
   selection:
     hashes:
-      - '* "0628ad6d1fd836b13b22e75fa169502d8ce78b7ad20f0261eb5151da98437bca"*'
+      - '* "9cd9b2800309a07bce3f559d5fc75a649c52d08de7b2b2734b481807f8c5d87a"*'
   condition: selection
 level: high
 tags:
