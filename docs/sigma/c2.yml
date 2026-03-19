@@ -1,3 +1,51 @@
+title: Detect Activity to Known Malicious Indicator - http://188.137.232.95/1.exe
+id: auto-65a9b5b1cf2a241bbcc1dcf83ee0c938de33347965a6d604b7c794b789623c77
+status: experimental
+description: Detects traffic or activity related to http://188.137.232.95/1.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://188.137.232.95/1.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/5657278942/wTC5hgy.msi
+id: auto-e0fb2b7bd4dc5ae9e294043472df4242c68c4cef9fb2a20aa68f747f6c84e6f1
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.7/files/5657278942/wTC5hgy.msi which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.7/files/5657278942/wTC5hgy.msi*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/7845402472/eL1aVtT.exe
+id: auto-ed3cd7a3f0345d30a8d1ef72d41b87c3b515f0f02e5b18ad717837da42216de1
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.7/files/7845402472/eL1aVtT.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.7/files/7845402472/eL1aVtT.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://188.137.230.88/1.exe
 id: auto-bde1adb496a4fc038ac40aa176cba088c095dda40419fb3caccc7b510de8163b
 status: experimental
@@ -2040,102 +2088,6 @@ detection:
   selection:
     c-uri:
       - '*http://130.12.180.43/files/5926060486/MKktCIh.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.159/qrjqtxdcxn.exe
-id: auto-30e3b21ef05eb0a7150624ee5e069414fa8d311ce8862b7f5079ba58f539df2e
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.159/qrjqtxdcxn.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.159/qrjqtxdcxn.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/748049926/ka0OL2S.exe
-id: auto-9810325383974e33e6ddcaa50697ce2b4ae474e4938432e957247c6a5b76bee3
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/748049926/ka0OL2S.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/748049926/ka0OL2S.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8366207456/jtauUdV.exe
-id: auto-dc0830d542078d2fa2348b0d56f59464fc51690b2a78055f7c8298145b29c5e9
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/8366207456/jtauUdV.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/8366207456/jtauUdV.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7974514863/UmtscnX.exe
-id: auto-698eef7a5e00ed5ab74a23200086f284efb55da42ddbaf2476707acd9496065b
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/7974514863/UmtscnX.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/7974514863/UmtscnX.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7782139129/gco3Wtk.exe
-id: auto-10441cac1c59e9fe123804c664a68bb7127faa196f87ad2b6e9a3a2aef8e3831
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/7782139129/gco3Wtk.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/7782139129/gco3Wtk.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7103746036/qvfjiKH.exe
-id: auto-28e215537a9a18646a193cb57baa21c42ea8e2b1f1e73f0e73b80ecd8084723a
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/7103746036/qvfjiKH.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/7103746036/qvfjiKH.exe*'
   condition: selection
 level: high
 tags:
