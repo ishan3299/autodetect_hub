@@ -1,3 +1,35 @@
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/7850695435/gpaMBVQ.msi
+id: auto-4fb3823a872c59103e7f878d3d75c9be129b93b512f1779d624080ebb60f28a5
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.7/files/7850695435/gpaMBVQ.msi which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.7/files/7850695435/gpaMBVQ.msi*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/8705834433/8njNDcy.exe
+id: auto-b4a394276ca7fc00f58278753f7b26845e12a1919fdf1b188976e510a675e35d
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.7/files/8705834433/8njNDcy.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.7/files/8705834433/8njNDcy.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://188.137.232.95/1.exe
 id: auto-65a9b5b1cf2a241bbcc1dcf83ee0c938de33347965a6d604b7c794b789623c77
 status: experimental
@@ -2024,70 +2056,6 @@ detection:
   selection:
     c-uri:
       - '*http://91.92.243.47/v3441.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.159/Launcher.exe
-id: auto-c4910d55ed2b30eff2469b6522e6002edb900d77022db02623bfdf4680501fca
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.159/Launcher.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.159/Launcher.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.159/Luncher.exe
-id: auto-42292089f21076a7729b2ce62d416fc0a2beb9998e100853c0c600621853ed9e
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.159/Luncher.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.159/Luncher.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/6691015685/KoC0dj3.exe
-id: auto-6b5ad696ec6dd289f90471a96b89deade1366dd8557c493d63c111a774b1cb39
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/6691015685/KoC0dj3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/6691015685/KoC0dj3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/5926060486/MKktCIh.exe
-id: auto-9c421f4cc98f6a6d9c0ae6b58b80b3b4b3a67eba620c206d8c4d973738f38c06
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/5926060486/MKktCIh.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/5926060486/MKktCIh.exe*'
   condition: selection
 level: high
 tags:
