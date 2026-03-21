@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/7776573655/uVFeyUy.exe
+id: auto-5a85048ac4439f6ce62ecb3557cb7c74fd8eb9db1869804991ff75baaf5a581a
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.7/files/7776573655/uVFeyUy.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.7/files/7776573655/uVFeyUy.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/7850695435/gpaMBVQ.msi
 id: auto-4fb3823a872c59103e7f878d3d75c9be129b93b512f1779d624080ebb60f28a5
 status: experimental
@@ -2008,54 +2024,6 @@ detection:
   selection:
     c-uri:
       - '*http://130.12.180.43/files/7044575709/Bst08Vq.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/6075866260/44NoKFh.exe
-id: auto-38b681da69e6cb935a7c3121d88da884d39f4c00ac5c2c1c1d6e4cc8f3e3bded
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/6075866260/44NoKFh.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/6075866260/44NoKFh.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.159/kunabpfhu.exe
-id: auto-6731c73ac45f0eb7236b614b64c5a9150d0a2f3235fbbe2bd3eb313f69e1358e
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.159/kunabpfhu.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.159/kunabpfhu.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://91.92.243.47/v3441.exe
-id: auto-b37fbfd3cce4d06d301bc91efef97e9b68850190c9c177833bf44ab53dfb7f19
-status: experimental
-description: Detects traffic or activity related to http://91.92.243.47/v3441.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://91.92.243.47/v3441.exe*'
   condition: selection
 level: high
 tags:
