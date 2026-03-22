@@ -958,21 +958,21 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - http://167.172.154.218/check.sh
-id: auto-f510e1ef4524faf51da848415b656b1e539163fe749eb0524c1ebd394ebe71ba
+title: Detect Activity to Known Malicious Indicator -  "2c8f75ed14bb05f12525aea5eed7006ffdc11410c4509d634f093dd138436307"
+id: auto-6fd220761fbccc2977c705e3b40f68a7a924d27bd24256ee092a8803289227e9
 status: experimental
-description: Detects traffic or activity related to http://167.172.154.218/check.sh which is a known malicious url.
+description: Detects traffic or activity related to  "2c8f75ed14bb05f12525aea5eed7006ffdc11410c4509d634f093dd138436307" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://167.172.154.218/check.sh*'
+    hashes:
+      - '* "2c8f75ed14bb05f12525aea5eed7006ffdc11410c4509d634f093dd138436307"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "6d5359da2ccc35100a8dc1b873551246d6234aee95c36471f103dd1a1eea99ea"
 id: auto-471f88068dcf00575c7fd0e30cbe7e8170a5a005bf6fc534063c2b8a5bcbb144
