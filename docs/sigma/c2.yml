@@ -1,3 +1,67 @@
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.168/files/7782139129/ADgr3iT.exe
+id: auto-994f8442c9bd268770d51ea537e4ddcde5deb41823fd34392795aafc500f79fa
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.168/files/7782139129/ADgr3iT.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.168/files/7782139129/ADgr3iT.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.168/files/1781548144/QlQgCVH.exe
+id: auto-8521558a3bac25b7a4274a9e97a6d7f69c1e8383fa9afc4fd676306d1982ce0f
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.168/files/1781548144/QlQgCVH.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.168/files/1781548144/QlQgCVH.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.168/files/8468794285/ZuVvCYO.exe
+id: auto-c357be5fce33adbbb214daa4822c60b8702ba37aaa0abf9c4636843d83aefc5c
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.168/files/8468794285/ZuVvCYO.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.168/files/8468794285/ZuVvCYO.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.168/files/1032264266/l8iybfv.exe
+id: auto-08c789478b9b140539f922282587a38cbbee5f8e77c695d5f17ad7ef978957b0
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.168/files/1032264266/l8iybfv.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.168/files/1032264266/l8iybfv.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://158.94.208.168/files/1103068177/8WTjrO1.exe
 id: auto-25745e1df600d08bc0d19457cd5d345bf8489696cbf877bf3f1dc89a05929f36
 status: experimental
@@ -2956,36 +3020,4 @@ detection:
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/736581456/zd0Oesp.msi
-id: auto-0a8d4ff9190d0ffd4fac752e1ee4a602fdf8247abc4bb9cc41ba07b4b018b337
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/736581456/zd0Oesp.msi which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/736581456/zd0Oesp.msi*'
-  condition: selection
-level: high
-tags:
-  - attack.t1219
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/5411854720/JyOpiNX.exe
-id: auto-cd87d74a5d00123f04931d8dfeb48c25ae6874ff0f32854297c3accf7c13cf20
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/5411854720/JyOpiNX.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/5411854720/JyOpiNX.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
   - source.URLhaus
