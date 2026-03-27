@@ -1,3 +1,35 @@
+title: Detect Activity to Known Malicious Indicator - http://192.177.26.196/files/1032264266/qvQb5og.exe
+id: auto-979bbfc0320dcfacec694cf71fb4573b1f6dfb7b1e80e4c94cd5ea6c56ac5572
+status: experimental
+description: Detects traffic or activity related to http://192.177.26.196/files/1032264266/qvQb5og.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://192.177.26.196/files/1032264266/qvQb5og.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://158.94.208.168/files/1032264266/qvQb5og.exe
+id: auto-a692a3d5e8266d44c7ce35333802ec7b174087a21cc1f168a10bc87f572578c9
+status: experimental
+description: Detects traffic or activity related to http://158.94.208.168/files/1032264266/qvQb5og.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://158.94.208.168/files/1032264266/qvQb5og.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://158.94.208.168/files/1032264266/OG0pxz6.exe
 id: auto-b829fce64524d1a7859f4a9c1116d71ca855dc976a0770a860052ddf4ecdc8cb
 status: experimental
@@ -749,6 +781,38 @@ level: high
 tags:
   - attack.t1059.004
   - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator -  "b08425cb2c55211de8673f684335e74c93c35d10e616816b54e55edf3b979902"
+id: auto-19e701e89e456e9fe74853f9589afad5a5a3ec894731fde126e34db6e4df757c
+status: experimental
+description: Detects traffic or activity related to  "b08425cb2c55211de8673f684335e74c93c35d10e616816b54e55edf3b979902" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "b08425cb2c55211de8673f684335e74c93c35d10e616816b54e55edf3b979902"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "251cd9370d29267d554aede7ddb3be295175644b59e2dbb7244186943ddea79c"
+id: auto-5070b7c85ec2a996b6fc58c9b5efcd01cbfa4b225b1d62a0b26898b36e3c372a
+status: experimental
+description: Detects traffic or activity related to  "251cd9370d29267d554aede7ddb3be295175644b59e2dbb7244186943ddea79c" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "251cd9370d29267d554aede7ddb3be295175644b59e2dbb7244186943ddea79c"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "d205aefd3e17420c2c3d3e6a102c0de354ffb749a0d607b9f6cd7ef56c2b0546"
 id: auto-190d76b03ea2972a732e21b35224ac0d4fe38c974dccc464d5cfabcd069383ec
