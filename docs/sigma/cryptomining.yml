@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator -  "f2ce62363ca63ecb004d4b764566ebb10653b9b16b26b4a5d7a2c50e60a6f0a1"
+id: auto-afa2bd6ad226a30131f2ccb1216a403dc99905fa1890e9716018f6d985fa7c3d
+status: experimental
+description: Detects traffic or activity related to  "f2ce62363ca63ecb004d4b764566ebb10653b9b16b26b4a5d7a2c50e60a6f0a1" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "f2ce62363ca63ecb004d4b764566ebb10653b9b16b26b4a5d7a2c50e60a6f0a1"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
 title: Detect Activity to Known Malicious Indicator -  "d4452ab74ca7c05fa736f681a266c46b48a581138b60058170763861e55f45ae"
 id: auto-4b136dd7f9a54f7e89f4d0604c85c347d3c5e473bc7326db58562549b99b3e91
 status: experimental
@@ -14,37 +30,21 @@ tags:
   - attack.T1071
   - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator -  "b08425cb2c55211de8673f684335e74c93c35d10e616816b54e55edf3b979902"
-id: auto-19e701e89e456e9fe74853f9589afad5a5a3ec894731fde126e34db6e4df757c
+title: Detect Activity to Known Malicious Indicator - http://87.121.84.56/nuts/poop
+id: auto-d0e991d9d6b69088a359f406aa073f075a567c98e78920856425a4659ad7a5fe
 status: experimental
-description: Detects traffic or activity related to  "b08425cb2c55211de8673f684335e74c93c35d10e616816b54e55edf3b979902" which is a known malicious hash.
+description: Detects traffic or activity related to http://87.121.84.56/nuts/poop which is a known malicious url.
 logsource:
-  category: process_creation
+  category: proxy
 detection:
   selection:
-    hashes:
-      - '* "b08425cb2c55211de8673f684335e74c93c35d10e616816b54e55edf3b979902"*'
+    c-uri:
+      - '*http://87.121.84.56/nuts/poop*'
   condition: selection
 level: high
 tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "0be8c6c869b77867a6a08b8eeac42e8f08be90e99314e6eb078eb5d580a9332f"
-id: auto-f6d84f3fea23f07eabbbd4425f43b2156f62780a45907d6d65611c76c1471464
-status: experimental
-description: Detects traffic or activity related to  "0be8c6c869b77867a6a08b8eeac42e8f08be90e99314e6eb078eb5d580a9332f" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "0be8c6c869b77867a6a08b8eeac42e8f08be90e99314e6eb078eb5d580a9332f"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
+  - attack.t1496
+  - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Indicator - https://mainly-trim-lizard.cloudpub.ru/test1.exe
 id: auto-c50be3adf30d31716e35fbc1a3fc5e70bc024a220abc3e110f19a936cf77605b
@@ -780,100 +780,4 @@ detection:
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://64.120.95.129/Error84
-id: auto-fcaa5f35896727a6bfb8c25b4abf118d28aa6878b8933bc3e9515535bed4de7b
-status: experimental
-description: Detects traffic or activity related to http://64.120.95.129/Error84 which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://64.120.95.129/Error84*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://64.120.95.129/syst3md
-id: auto-7aa4f78c44f6c33166a2063b8c034ef0c70a540f8a6a23a49cce34f4ab6f66b9
-status: experimental
-description: Detects traffic or activity related to http://64.120.95.129/syst3md which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://64.120.95.129/syst3md*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://64.120.95.129/log
-id: auto-bf3d5135ca71ff8ba03f216a575dd3c6f270e03c38aa5758e010fb673ed74d7e
-status: experimental
-description: Detects traffic or activity related to http://64.120.95.129/log which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://64.120.95.129/log*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://185.208.159.67/syst3md
-id: auto-cdcb11a11cf65fae9e6c0a4afa7376947670c4cdc2355694916f545c6f8c6365
-status: experimental
-description: Detects traffic or activity related to http://185.208.159.67/syst3md which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://185.208.159.67/syst3md*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://185.208.159.67/log
-id: auto-1e172260da91368b60b48fcef16e921970d70e85173b1fd0f434d8ed1ded53f0
-status: experimental
-description: Detects traffic or activity related to http://185.208.159.67/log which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://185.208.159.67/log*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://185.208.159.67/Error84
-id: auto-38cc58081951d7c797392dd11c471b01d6c6f8c3e39b540c8017168d0c2d66e0
-status: experimental
-description: Detects traffic or activity related to http://185.208.159.67/Error84 which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://185.208.159.67/Error84*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
   - source.URLhaus
