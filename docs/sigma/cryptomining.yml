@@ -1,3 +1,35 @@
+title: Detect Activity to Known Malicious Indicator -  "80ee95aaf9d4791c2bcbed88ade8043924ae6d64e8371eef421a69de760c6468"
+id: auto-1fa6a87e1fd706e157d83e08adcb75b078907c375b780579b1d0ad86910382a3
+status: experimental
+description: Detects traffic or activity related to  "80ee95aaf9d4791c2bcbed88ade8043924ae6d64e8371eef421a69de760c6468" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "80ee95aaf9d4791c2bcbed88ade8043924ae6d64e8371eef421a69de760c6468"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "d29e268b1d568e942e5b16e020398a8a888d2a693f725478bdf4e9865463b79f"
+id: auto-4fb2349f197c762cdc3ed114ccd2746e963975099ad0475d1ae1ab9a5b4760d9
+status: experimental
+description: Detects traffic or activity related to  "d29e268b1d568e942e5b16e020398a8a888d2a693f725478bdf4e9865463b79f" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "d29e268b1d568e942e5b16e020398a8a888d2a693f725478bdf4e9865463b79f"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
 title: Detect Activity to Known Malicious Indicator -  "f2ce62363ca63ecb004d4b764566ebb10653b9b16b26b4a5d7a2c50e60a6f0a1"
 id: auto-afa2bd6ad226a30131f2ccb1216a403dc99905fa1890e9716018f6d985fa7c3d
 status: experimental
@@ -14,21 +46,21 @@ tags:
   - attack.T1071
   - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator -  "d4452ab74ca7c05fa736f681a266c46b48a581138b60058170763861e55f45ae"
-id: auto-4b136dd7f9a54f7e89f4d0604c85c347d3c5e473bc7326db58562549b99b3e91
+title: Detect Activity to Known Malicious Indicator - http://45.205.1.19/nuts/poop
+id: auto-331b7591eeed69c3b053a1332bfd759b68accdde21ad1305fb6a935dab5107f6
 status: experimental
-description: Detects traffic or activity related to  "d4452ab74ca7c05fa736f681a266c46b48a581138b60058170763861e55f45ae" which is a known malicious hash.
+description: Detects traffic or activity related to http://45.205.1.19/nuts/poop which is a known malicious url.
 logsource:
-  category: process_creation
+  category: proxy
 detection:
   selection:
-    hashes:
-      - '* "d4452ab74ca7c05fa736f681a266c46b48a581138b60058170763861e55f45ae"*'
+    c-uri:
+      - '*http://45.205.1.19/nuts/poop*'
   condition: selection
 level: high
 tags:
-  - attack.T1071
-  - source.MalwareBazaar
+  - attack.t1496
+  - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Indicator - http://87.121.84.56/nuts/poop
 id: auto-d0e991d9d6b69088a359f406aa073f075a567c98e78920856425a4659ad7a5fe

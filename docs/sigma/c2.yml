@@ -1,3 +1,35 @@
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/1781548144/ebJvLxF.exe
+id: auto-3255253aace3b4529586090a21f40ad5f5c91d6711a6723a7db05e8ac92ff080
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/1781548144/ebJvLxF.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/1781548144/ebJvLxF.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/6849343518/kYApj4E.exe
+id: auto-13407b4adecaed28730e91f484c07f49cfa8ab5ddb99dda12e1f4facebefca87
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/6849343518/kYApj4E.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/6849343518/kYApj4E.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/1781548144/3UFJ4Lc.exe
 id: auto-74a5fd291b6058a79534e3d3e7bfe7f37df66b1d23a899a20f0e1baa6e518233
 status: experimental
@@ -3928,22 +3960,6 @@ detection:
   selection:
     c-uri:
       - '*http://130.12.180.43/files/748049926/k9I9JOM.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://id8654.cfd/Loader.exe
-id: auto-f9fce86eca7b95c64d505e6e0f069dec0b56466cdb992ca6c998a3f40778241a
-status: experimental
-description: Detects traffic or activity related to http://id8654.cfd/Loader.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://id8654.cfd/Loader.exe*'
   condition: selection
 level: high
 tags:
