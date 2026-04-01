@@ -1,3 +1,51 @@
+title: Detect Activity to Known Malicious Indicator -  "b7af70e86b3b63c467582b41944c380bb6c16ffc98c26be4651539b9b274f5eb"
+id: auto-18ee8099913485595d5d1877df6fbe02bc35b0671da0d3e51fce60c30b4511b6
+status: experimental
+description: Detects traffic or activity related to  "b7af70e86b3b63c467582b41944c380bb6c16ffc98c26be4651539b9b274f5eb" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "b7af70e86b3b63c467582b41944c380bb6c16ffc98c26be4651539b9b274f5eb"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "50b6228ae0e40409c436ce6bdaf6153365a26183bc8e030d433f1ac4250b2e43"
+id: auto-16ec6ac27903fc126b294753378e8e1936d022450b6b79855e23ced5dc067627
+status: experimental
+description: Detects traffic or activity related to  "50b6228ae0e40409c436ce6bdaf6153365a26183bc8e030d433f1ac4250b2e43" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "50b6228ae0e40409c436ce6bdaf6153365a26183bc8e030d433f1ac4250b2e43"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "7b316fc790e70e41b0c4a84021aaf6616826e0f9d8e1b114290ae9c797653999"
+id: auto-f300a5f17edb29b69cd97350a71b7ae2838dd56cbec178d92c50e10895057465
+status: experimental
+description: Detects traffic or activity related to  "7b316fc790e70e41b0c4a84021aaf6616826e0f9d8e1b114290ae9c797653999" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "7b316fc790e70e41b0c4a84021aaf6616826e0f9d8e1b114290ae9c797653999"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
 title: Detect Activity to Known Malicious Indicator -  "fc21a103ecc58048bb6d431cbd4ba89f2c69f97f45ba2c1b0810d657f50c29b8"
 id: auto-ffda2adda5d3a6918f7284fb967d0eada670d8836e5390b8f9a859ce667a9376
 status: experimental
@@ -8,6 +56,22 @@ detection:
   selection:
     hashes:
       - '* "fc21a103ecc58048bb6d431cbd4ba89f2c69f97f45ba2c1b0810d657f50c29b8"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "74aea14bcdd934fdc17eca1f8572ca3b2c22bde5c322ad0f64706cbf91862b41"
+id: auto-404b67014e478e3251521d3dc92bb1623688de25489fe3cce04de0c8bb8cdb2e
+status: experimental
+description: Detects traffic or activity related to  "74aea14bcdd934fdc17eca1f8572ca3b2c22bde5c322ad0f64706cbf91862b41" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "74aea14bcdd934fdc17eca1f8572ca3b2c22bde5c322ad0f64706cbf91862b41"*'
   condition: selection
 level: high
 tags:
@@ -56,22 +120,6 @@ detection:
   selection:
     hashes:
       - '* "d9bdd75c2f3bdc67d6d44f211b170e3a5a9487719afe7430857178e60b988c2d"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "80ee95aaf9d4791c2bcbed88ade8043924ae6d64e8371eef421a69de760c6468"
-id: auto-1fa6a87e1fd706e157d83e08adcb75b078907c375b780579b1d0ad86910382a3
-status: experimental
-description: Detects traffic or activity related to  "80ee95aaf9d4791c2bcbed88ade8043924ae6d64e8371eef421a69de760c6468" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "80ee95aaf9d4791c2bcbed88ade8043924ae6d64e8371eef421a69de760c6468"*'
   condition: selection
 level: high
 tags:
@@ -792,22 +840,6 @@ detection:
   selection:
     c-uri:
       - '*http://130.12.180.43/files/7725193537/BTCWtnO.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7471363698/ldyZQxj.exe
-id: auto-60781add70bdb2e52faa69b290bd15e8849255759f3cd451b3552686dd67578f
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/7471363698/ldyZQxj.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/7471363698/ldyZQxj.exe*'
   condition: selection
 level: high
 tags:

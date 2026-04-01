@@ -1,13 +1,13 @@
-title: Detect Activity to Known Malicious Indicator - http://62.182.81.38/
-id: auto-b622b648599b9853ebe923dfe7dc288bfb01ac98b380bd28d8685c4b1d956b2a
+title: Detect Activity to Known Malicious Indicator - http://179.43.186.246:14888/download/0e23d66b-d075-445a-bc56-e0d05a633724
+id: auto-bcfe59d7bcfaf5dd82f36f4ff907fe444e533be32e55e8dba4d4f467cb447538
 status: experimental
-description: Detects traffic or activity related to http://62.182.81.38/ which is a known malicious url.
+description: Detects traffic or activity related to http://179.43.186.246:14888/download/0e23d66b-d075-445a-bc56-e0d05a633724 which is a known malicious url.
 logsource:
   category: proxy
 detection:
   selection:
     c-uri:
-      - '*http://62.182.81.38/*'
+      - '*http://179.43.186.246:14888/download/0e23d66b-d075-445a-bc56-e0d05a633724*'
   condition: selection
 level: high
 tags:
