@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator -  "7c806f73aaca52b4030b6b996ae0b71452e545d08b38543d8885210037cfd02b"
+id: auto-51038093552a8b5654c7e5497e50fd4a71b0428bf15e8f74cd5a59efee22b914
+status: experimental
+description: Detects traffic or activity related to  "7c806f73aaca52b4030b6b996ae0b71452e545d08b38543d8885210037cfd02b" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "7c806f73aaca52b4030b6b996ae0b71452e545d08b38543d8885210037cfd02b"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
 title: Detect Activity to Known Malicious Indicator -  "b7af70e86b3b63c467582b41944c380bb6c16ffc98c26be4651539b9b274f5eb"
 id: auto-18ee8099913485595d5d1877df6fbe02bc35b0671da0d3e51fce60c30b4511b6
 status: experimental
@@ -30,101 +46,21 @@ tags:
   - attack.T1071
   - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator -  "7b316fc790e70e41b0c4a84021aaf6616826e0f9d8e1b114290ae9c797653999"
-id: auto-f300a5f17edb29b69cd97350a71b7ae2838dd56cbec178d92c50e10895057465
+title: Detect Activity to Known Malicious Indicator - https://gitlab.com/khannely/derrxt/-/raw/main/U7Q7R23U7669.exe
+id: auto-c99f68e404716b14c9a9077395a2e77b132c38962111af5302e31b2c2f2f8605
 status: experimental
-description: Detects traffic or activity related to  "7b316fc790e70e41b0c4a84021aaf6616826e0f9d8e1b114290ae9c797653999" which is a known malicious hash.
+description: Detects traffic or activity related to https://gitlab.com/khannely/derrxt/-/raw/main/U7Q7R23U7669.exe which is a known malicious url.
 logsource:
-  category: process_creation
+  category: proxy
 detection:
   selection:
-    hashes:
-      - '* "7b316fc790e70e41b0c4a84021aaf6616826e0f9d8e1b114290ae9c797653999"*'
+    c-uri:
+      - '*https://gitlab.com/khannely/derrxt/-/raw/main/U7Q7R23U7669.exe*'
   condition: selection
 level: high
 tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "fc21a103ecc58048bb6d431cbd4ba89f2c69f97f45ba2c1b0810d657f50c29b8"
-id: auto-ffda2adda5d3a6918f7284fb967d0eada670d8836e5390b8f9a859ce667a9376
-status: experimental
-description: Detects traffic or activity related to  "fc21a103ecc58048bb6d431cbd4ba89f2c69f97f45ba2c1b0810d657f50c29b8" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "fc21a103ecc58048bb6d431cbd4ba89f2c69f97f45ba2c1b0810d657f50c29b8"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "74aea14bcdd934fdc17eca1f8572ca3b2c22bde5c322ad0f64706cbf91862b41"
-id: auto-404b67014e478e3251521d3dc92bb1623688de25489fe3cce04de0c8bb8cdb2e
-status: experimental
-description: Detects traffic or activity related to  "74aea14bcdd934fdc17eca1f8572ca3b2c22bde5c322ad0f64706cbf91862b41" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "74aea14bcdd934fdc17eca1f8572ca3b2c22bde5c322ad0f64706cbf91862b41"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "a14c14f00c09d47c7d8d74d6c3f718c4fd74d0812ca39cd10860d402885a61e4"
-id: auto-75d1d5c7b26d123cde6ed49d4cdf0000f496b432da4c7abeaa21d929bc4c34cb
-status: experimental
-description: Detects traffic or activity related to  "a14c14f00c09d47c7d8d74d6c3f718c4fd74d0812ca39cd10860d402885a61e4" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "a14c14f00c09d47c7d8d74d6c3f718c4fd74d0812ca39cd10860d402885a61e4"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "5af51f2ec97c8d378b521046ff7fa2af47e24a0d2e517060783f4ce04846f1ce"
-id: auto-842233f16e8fc797e4093a6adc85ee5ae657c14317fa8e236748fc09032e0551
-status: experimental
-description: Detects traffic or activity related to  "5af51f2ec97c8d378b521046ff7fa2af47e24a0d2e517060783f4ce04846f1ce" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "5af51f2ec97c8d378b521046ff7fa2af47e24a0d2e517060783f4ce04846f1ce"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "d9bdd75c2f3bdc67d6d44f211b170e3a5a9487719afe7430857178e60b988c2d"
-id: auto-ae3643cf47af47c807b69ba0880754f50340a367f084cd7145b2dc8e1a274d42
-status: experimental
-description: Detects traffic or activity related to  "d9bdd75c2f3bdc67d6d44f211b170e3a5a9487719afe7430857178e60b988c2d" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "d9bdd75c2f3bdc67d6d44f211b170e3a5a9487719afe7430857178e60b988c2d"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
+  - attack.t1496
+  - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Indicator - http://45.205.1.19/nuts/poop
 id: auto-331b7591eeed69c3b053a1332bfd759b68accdde21ad1305fb6a935dab5107f6
@@ -824,22 +760,6 @@ detection:
   selection:
     c-uri:
       - '*https://mgtms.cc/force/Printer_Driver_SSL_support_v43.22.209.99.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7725193537/BTCWtnO.exe
-id: auto-1343fda6dfe022f8ff9b6e95712e910343fef5b53e9d2d28d5efea79eb4a6b5b
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/7725193537/BTCWtnO.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/7725193537/BTCWtnO.exe*'
   condition: selection
 level: high
 tags:
