@@ -1,34 +1,34 @@
-title: Detect Activity to Known Malicious Indicator -  "485952ba5347aa83f00537a4be0bebb274021f773a0203b65142f1b86dfda34d"
-id: auto-67aa74a0d3ea3179d07f83867dd618b312d618a06e99ab8eb9ddcecf04d27e30
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/Leetootoo/random.exe
+id: auto-36a020a2e840c3fdf42e969fd06a07dd3128eac83ba3db61ca34c815f1f15e50
 status: experimental
-description: Detects traffic or activity related to  "485952ba5347aa83f00537a4be0bebb274021f773a0203b65142f1b86dfda34d" which is a known malicious hash.
+description: Detects traffic or activity related to http://85.239.147.6/files/Leetootoo/random.exe which is a known malicious url.
 logsource:
-  category: process_creation
+  category: proxy
 detection:
   selection:
-    hashes:
-      - '* "485952ba5347aa83f00537a4be0bebb274021f773a0203b65142f1b86dfda34d"*'
+    c-uri:
+      - '*http://85.239.147.6/files/Leetootoo/random.exe*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.MalwareBazaar
+  - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator -  "a985b3fab403ad6fbb5cc15a44912224aead9518ac6b970c0a6c303989e61556"
-id: auto-f88d31b0baa334a2e3ae5264b9160ac99cc7a8ad75ac4b1c8ae9ff46d0c363a8
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/8405865752/bThXxmv.exe
+id: auto-66be472b36f70e982d26430d0f578d4f0dae934c59172507943630e32828af7c
 status: experimental
-description: Detects traffic or activity related to  "a985b3fab403ad6fbb5cc15a44912224aead9518ac6b970c0a6c303989e61556" which is a known malicious hash.
+description: Detects traffic or activity related to http://85.239.147.6/files/8405865752/bThXxmv.exe which is a known malicious url.
 logsource:
-  category: process_creation
+  category: proxy
 detection:
   selection:
-    hashes:
-      - '* "a985b3fab403ad6fbb5cc15a44912224aead9518ac6b970c0a6c303989e61556"*'
+    c-uri:
+      - '*http://85.239.147.6/files/8405865752/bThXxmv.exe*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.MalwareBazaar
+  - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/8514679081/S5M3ryz.exe
 id: auto-0d84df4d723b4a907c95c8de29eca9bf9ea270ae7cbc46c214271513de4ecd57
@@ -3944,22 +3944,6 @@ detection:
   selection:
     c-uri:
       - '*http://130.12.180.43/files/8566018414/TN7p2PQ.ps1*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7309295924/tNRQGUL.exe
-id: auto-ad326c8a8d5be82cea1802c004a7412a140bc28d637a2c30a08c6262b0cde8d4
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/7309295924/tNRQGUL.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/7309295924/tNRQGUL.exe*'
   condition: selection
 level: high
 tags:
