@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/encr/random.exe
+id: auto-2046844ea22eded51b65d07fc39de7cf390673a74669edd23f75e388b545b0fe
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/encr/random.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/encr/random.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/Leetootoo/random.exe
 id: auto-36a020a2e840c3fdf42e969fd06a07dd3128eac83ba3db61ca34c815f1f15e50
 status: experimental
@@ -40,22 +56,6 @@ detection:
   selection:
     c-uri:
       - '*http://85.239.147.6/files/8514679081/S5M3ryz.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://securrty.cfd/files/EventVPcard_PU1KQZvw_installer.msi
-id: auto-491e22c380f941e3e6d28e7ac2960bf870208dd72b850b444121ab7f2b04e81b
-status: experimental
-description: Detects traffic or activity related to https://securrty.cfd/files/EventVPcard_PU1KQZvw_installer.msi which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://securrty.cfd/files/EventVPcard_PU1KQZvw_installer.msi*'
   condition: selection
 level: high
 tags:
@@ -3836,116 +3836,4 @@ detection:
 level: high
 tags:
   - attack.t1219
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/7362035837/FTWxQSW.exe
-id: auto-4434cddfd2e164bd68cf6259c8350b7850dba0743e6422678078dbfb281bf443
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/7362035837/FTWxQSW.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/7362035837/FTWxQSW.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://188.137.245.221/1.exe
-id: auto-928e0ec263fc4051a57b7b1eebe10268cd972ae7578db4c5588fbded076fb142
-status: experimental
-description: Detects traffic or activity related to http://188.137.245.221/1.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://188.137.245.221/1.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/6608710704/1r6sQRc.exe
-id: auto-1cb8a2ec1ae057f91e17a5469395ffb1ff9d99e92859365cfe6e613ee4d7f1f4
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/6608710704/1r6sQRc.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/6608710704/1r6sQRc.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://45.155.69.85/1.exe
-id: auto-4709837a178e09fd4e4725ca315c7208b37fa5ce5ddc935ecf11131ec89933b3
-status: experimental
-description: Detects traffic or activity related to http://45.155.69.85/1.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://45.155.69.85/1.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/6608710704/LNY9PLO.exe
-id: auto-510fcfc7edd98a1dc46ff9f49ba790fcd200592e5c6126ac467d56cf09b1d4d4
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/6608710704/LNY9PLO.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/6608710704/LNY9PLO.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8733674968/kKH6773.exe
-id: auto-b8b3c61e5e14cb648b2c429af8152683a81ad844a4e9fe2cf9fc452537e103ab
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/8733674968/kKH6773.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/8733674968/kKH6773.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://130.12.180.43/files/8566018414/TN7p2PQ.ps1
-id: auto-6811036564c44e608183a608eaa952a8e6a0fa4a87d789f24043d47eec3edd20
-status: experimental
-description: Detects traffic or activity related to http://130.12.180.43/files/8566018414/TN7p2PQ.ps1 which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://130.12.180.43/files/8566018414/TN7p2PQ.ps1*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
   - source.URLhaus

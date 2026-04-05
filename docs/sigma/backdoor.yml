@@ -1,47 +1,31 @@
-title: Detect Activity to Known Malicious Indicator - http://123.28.175.23/sshd
-id: auto-cc2d362356e54e32f6b901733f5f0a4e7aaf8d8e8b11c1d81bfca5e2e83395a1
+title: Detect Activity to Known Malicious Indicator -  "15c7d386f2324dc0c0ddf58ead72f8b2c268ba994d1bd1b0b94f071c462ff4b1"
+id: auto-6801bd9f8993e68cd251064a8f2c76a61f8af7d0fc12741729325740d379f3e9
 status: experimental
-description: Detects traffic or activity related to http://123.28.175.23/sshd which is a known malicious url.
+description: Detects traffic or activity related to  "15c7d386f2324dc0c0ddf58ead72f8b2c268ba994d1bd1b0b94f071c462ff4b1" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://123.28.175.23/sshd*'
+    hashes:
+      - '* "15c7d386f2324dc0c0ddf58ead72f8b2c268ba994d1bd1b0b94f071c462ff4b1"*'
   condition: selection
 level: high
 tags:
-  - attack.t1543
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - http://120.61.247.2:2000/sshd
-id: auto-084f99396c1880e2674161f2bcf19874a3f0f35959b93bbc2773ae45181a2cd3
+title: Detect Activity to Known Malicious Indicator -  "201cf8213fddeeb683d886fd79172325fb43d5879f46b974595e15481bf0b5d1"
+id: auto-89c870271bd7c885c7e01c4fe2efb0e8425c48a4539be7bc2ff0302b923faea2
 status: experimental
-description: Detects traffic or activity related to http://120.61.247.2:2000/sshd which is a known malicious url.
+description: Detects traffic or activity related to  "201cf8213fddeeb683d886fd79172325fb43d5879f46b974595e15481bf0b5d1" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://120.61.247.2:2000/sshd*'
+    hashes:
+      - '* "201cf8213fddeeb683d886fd79172325fb43d5879f46b974595e15481bf0b5d1"*'
   condition: selection
 level: high
 tags:
-  - attack.t1543
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://178.50.166.61:9301/sshd
-id: auto-d1cc8f138fc57b979cd12ad2762653a2a8b487ae0e43754cff319f3b760c97c5
-status: experimental
-description: Detects traffic or activity related to http://178.50.166.61:9301/sshd which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://178.50.166.61:9301/sshd*'
-  condition: selection
-level: high
-tags:
-  - attack.t1543
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
