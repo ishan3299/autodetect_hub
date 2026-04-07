@@ -1,3 +1,35 @@
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/7362035837/LalmHOj.exe
+id: auto-2ceb2be29b9d8252204a2b4df14aa9ef04550c31327e8e2788505ca082707048
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/7362035837/LalmHOj.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/7362035837/LalmHOj.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/8301037712/W2hGvST.exe
+id: auto-bb73996cccc08b9d7d984973ebcfeb1e0e942dea8be27a158ecc829e4cad1b13
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/8301037712/W2hGvST.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/8301037712/W2hGvST.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/8301037712/JSmJXqG.exe
 id: auto-51b20498395be0d07e83104474370435bff627cb34bfb11e7c928b1fa590d16c
 status: experimental
@@ -3464,86 +3496,6 @@ detection:
   selection:
     c-uri:
       - '*http://158.94.211.222/files/7903503838/isxodFn.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/heine/random.exe
-id: auto-ff46b9c853e464296693731d7b72e040807940d270da3eda06208966e08f4773
-status: experimental
-description: Detects traffic or activity related to http://158.94.211.222/files/heine/random.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.211.222/files/heine/random.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/8468794285/iBC1OE9.exe
-id: auto-ab0fb5819d42888f87093f857d2b21b6bff776a2402a4862821d6fecf04e3f81
-status: experimental
-description: Detects traffic or activity related to http://158.94.211.222/files/8468794285/iBC1OE9.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.211.222/files/8468794285/iBC1OE9.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/unique2/random.exe
-id: auto-42709c4c60fa1a4c8b18ace656de7edf17e9586e08ed8e623f1803823e7df62a
-status: experimental
-description: Detects traffic or activity related to http://158.94.211.222/files/unique2/random.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.211.222/files/unique2/random.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/8548282130/trP9KGI.bat
-id: auto-574d14838d5042c293d47d6bd8b7a2ad1ce6de5d7a3e8d8a82b2c0618548ef21
-status: experimental
-description: Detects traffic or activity related to http://158.94.211.222/files/8548282130/trP9KGI.bat which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.211.222/files/8548282130/trP9KGI.bat*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/8468794285/5vroDFE.exe
-id: auto-4c6a91e76faff00c2385fb24160a597332067782eaa9f2b84d3cdfc10ecac92d
-status: experimental
-description: Detects traffic or activity related to http://158.94.211.222/files/8468794285/5vroDFE.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.211.222/files/8468794285/5vroDFE.exe*'
   condition: selection
 level: high
 tags:
