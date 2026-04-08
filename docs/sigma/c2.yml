@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/7655527200/PocBtoN.exe
+id: auto-82e7061d12e37f6d90d17cfbf1d623f2f0424c1860852a0ba40c85af5527b5f3
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/7655527200/PocBtoN.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/7655527200/PocBtoN.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/7362035837/LalmHOj.exe
 id: auto-2ceb2be29b9d8252204a2b4df14aa9ef04550c31327e8e2788505ca082707048
 status: experimental
@@ -3464,38 +3480,6 @@ detection:
   selection:
     c-uri:
       - '*http://158.94.211.222/files/7903503838/kUpExhy.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/7824924311/u0J9Mv7.msi
-id: auto-d1fdc30f3b183ec6e5c7d7ee04a3702fcefd0f35dc4cf1efab64d4d2e26e6547
-status: experimental
-description: Detects traffic or activity related to http://158.94.211.222/files/7824924311/u0J9Mv7.msi which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.211.222/files/7824924311/u0J9Mv7.msi*'
-  condition: selection
-level: high
-tags:
-  - attack.t1219
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/7903503838/isxodFn.exe
-id: auto-ca8afb4dc61b91075a8c9563bce1c8779e1dce1f826c69be934e2f44a59712f7
-status: experimental
-description: Detects traffic or activity related to http://158.94.211.222/files/7903503838/isxodFn.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.211.222/files/7903503838/isxodFn.exe*'
   condition: selection
 level: high
 tags:
