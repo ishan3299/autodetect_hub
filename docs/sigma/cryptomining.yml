@@ -14,16 +14,16 @@ tags:
   - attack.T1071
   - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator -  "2e354b69276617989d1b001094fc0d63473fa0d05900cd73d25e17779f82b5f1"
-id: auto-d6732cba300c2ece8dead4c4f8cb03035f167308bb799dfdf5ac75b69e0cac43
+title: Detect Activity to Known Malicious Indicator -  "0c2f8bcfed50f3962964d84ad5a40e0e9bdc3cafaad9f26d090cd04bf3027f63"
+id: auto-06ec5462f23ea43a06232c61f1fa0456337a97e60acfbbec5f9c7c15f5d68fea
 status: experimental
-description: Detects traffic or activity related to  "2e354b69276617989d1b001094fc0d63473fa0d05900cd73d25e17779f82b5f1" which is a known malicious hash.
+description: Detects traffic or activity related to  "0c2f8bcfed50f3962964d84ad5a40e0e9bdc3cafaad9f26d090cd04bf3027f63" which is a known malicious hash.
 logsource:
   category: process_creation
 detection:
   selection:
     hashes:
-      - '* "2e354b69276617989d1b001094fc0d63473fa0d05900cd73d25e17779f82b5f1"*'
+      - '* "0c2f8bcfed50f3962964d84ad5a40e0e9bdc3cafaad9f26d090cd04bf3027f63"*'
   condition: selection
 level: high
 tags:
@@ -43,7 +43,7 @@ detection:
   condition: selection
 level: high
 tags:
-  - attack.t1059.004
+  - attack.t1496
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Indicator - http://176.65.139.42:8080/per.go
@@ -536,22 +536,6 @@ detection:
   selection:
     c-uri:
       - '*http://85.137.253.58:9000/Test.apk*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://transfer.weepee.io/139H8d/ldx
-id: auto-6d1e44d8d9400edd0e6a1e83bb1f27c42902789a89d7c31fc0cbf7c6a52f0b84
-status: experimental
-description: Detects traffic or activity related to https://transfer.weepee.io/139H8d/ldx which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://transfer.weepee.io/139H8d/ldx*'
   condition: selection
 level: high
 tags:
