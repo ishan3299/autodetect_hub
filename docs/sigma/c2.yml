@@ -1,3 +1,51 @@
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/6749237131/WjRZCsK.msi
+id: auto-564ba371ea993789451e5100f66613c71d0f66c5dc940499dd220bacde41916b
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/6749237131/WjRZCsK.msi which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/6749237131/WjRZCsK.msi*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/1202156955/jagqzHE.exe
+id: auto-b1b64c55d881fe620f231da25e24dadf049a598ef5c7d15972bb46770f58a52f
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/1202156955/jagqzHE.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/1202156955/jagqzHE.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/1980571880/t6u2Tbq.exe
+id: auto-882bcf9698eee1ae2874cbb689ce980804ba66e35f2e04d242671fe98ef05d7e
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/1980571880/t6u2Tbq.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/1980571880/t6u2Tbq.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - https://mhatuminerals.africa/wp-admin/js/scc.msi
 id: auto-055b02f96d23dcbb91dd0f2de51a47ac358cd6bd221a22d5a4dc4b42996b12c4
 status: experimental
@@ -3432,38 +3480,6 @@ detection:
   selection:
     c-uri:
       - '*http://158.94.211.222/files/8317147124/Kr7cPTQ.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/7782139129/4Qrxrgo.exe
-id: auto-f6a702a1937051a5f44d3692d8fd54559b8a97e64cc54b84513ea2bd2dd6c442
-status: experimental
-description: Detects traffic or activity related to http://158.94.211.222/files/7782139129/4Qrxrgo.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.211.222/files/7782139129/4Qrxrgo.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/oblivora/random.exe
-id: auto-14b5c5595342e6e1761f116300cd4962892f80632c40eca7738614969794fdaf
-status: experimental
-description: Detects traffic or activity related to http://158.94.211.222/files/oblivora/random.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.211.222/files/oblivora/random.exe*'
   condition: selection
 level: high
 tags:
