@@ -1,3 +1,67 @@
+title: Detect Activity to Known Malicious Indicator - http://77.110.96.200/xmr.gz
+id: auto-096b82d0c359937f1f56964e6d492d6d1ab8641b36fda438b829a9f0029f0234
+status: experimental
+description: Detects traffic or activity related to http://77.110.96.200/xmr.gz which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://77.110.96.200/xmr.gz*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://77.110.96.200/lmm.gz
+id: auto-81f6033289bb49f79ae3940032f30274b219f0d509301483bc711d9e2c82db0f
+status: experimental
+description: Detects traffic or activity related to http://77.110.96.200/lmm.gz which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://77.110.96.200/lmm.gz*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://77.110.96.200/min1.sh
+id: auto-7175e6230ba3d2dbd7483aa4ac6ca36c825ec61a8c3ba1a0bc02557b24df9754
+status: experimental
+description: Detects traffic or activity related to http://77.110.96.200/min1.sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://77.110.96.200/min1.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://77.110.96.200/ghost.sh
+id: auto-66ad6feeb063a5244ea82018a7cfb01247e1c6c3e43880a9c44a2c28fa77d5e4
+status: experimental
+description: Detects traffic or activity related to http://77.110.96.200/ghost.sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://77.110.96.200/ghost.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://176.65.139.42/who.sh
 id: auto-4cb0ff854c36cb11e77ca03084c47f873143021559f897d715f83050c134c77a
 status: experimental

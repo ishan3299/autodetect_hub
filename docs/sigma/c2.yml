@@ -1,3 +1,67 @@
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/8115679349/5jhRKXx.msi
+id: auto-b13885a650ff1d08da87795caecbabf9d48c96074923442061a486b488ec3a3b
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/8115679349/5jhRKXx.msi which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/8115679349/5jhRKXx.msi*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/8366134864/z69rt8Z.exe
+id: auto-76e8a4af8440697897f0cd1b9671ed18e40a20eac7b3a818e59730c6f90f3eba
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/8366134864/z69rt8Z.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/8366134864/z69rt8Z.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/7742504508/3nUJ75T.exe
+id: auto-09a5ab14f47f96a4c1da5e5fb56c91a3801598a38dfedfae6bcf137f3b23afaa
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/7742504508/3nUJ75T.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/7742504508/3nUJ75T.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/7640890992/DHiKU6L.exe
+id: auto-cfc1a15256d23807f6b5b22683535653ed61fad443a535b3614d88ee27857b8e
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/7640890992/DHiKU6L.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/7640890992/DHiKU6L.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/6749237131/WjRZCsK.msi
 id: auto-564ba371ea993789451e5100f66613c71d0f66c5dc940499dd220bacde41916b
 status: experimental
@@ -3432,54 +3496,6 @@ detection:
   selection:
     c-uri:
       - '*http://158.94.211.222/files/8425384370/xo3ti4X.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/7903503838/PGy75Fu.exe
-id: auto-76f629493b6be71d52eb190d4f1d9872cac6ccd2814ef02687c139eb1ab7044c
-status: experimental
-description: Detects traffic or activity related to http://158.94.211.222/files/7903503838/PGy75Fu.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.211.222/files/7903503838/PGy75Fu.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/8317147124/Ugy77D4.exe
-id: auto-7afbed6a4b752340bed45ea726436089e5a24c1bcf4773e3ecf0ff03180d1a39
-status: experimental
-description: Detects traffic or activity related to http://158.94.211.222/files/8317147124/Ugy77D4.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.211.222/files/8317147124/Ugy77D4.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.211.222/files/8317147124/Kr7cPTQ.exe
-id: auto-91b83a81d65180deabffcee7b88f7770ae64544ed4ca8c9cf6f19c6619c9d278
-status: experimental
-description: Detects traffic or activity related to http://158.94.211.222/files/8317147124/Kr7cPTQ.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.211.222/files/8317147124/Kr7cPTQ.exe*'
   condition: selection
 level: high
 tags:
