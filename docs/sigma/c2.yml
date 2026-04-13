@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/7782139129/nM8PZXp.exe
+id: auto-13c7c417d7d356fc5f75f1c18fdb23809965526ea6f2eaa5aded20294ce27ad5
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/7782139129/nM8PZXp.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/7782139129/nM8PZXp.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/8042875554/RvsamEB.exe
 id: auto-f3bfa60ca69b0ae4e9a9b26763e5cbaff89599d5ace92a558e629da5cc70d8b7
 status: experimental
@@ -3292,84 +3308,4 @@ detection:
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/8012574236/4aMmUA4.exe
-id: auto-c160bdd4e351cf1b30dfe9bff0c902d7aa3131d9dafeea029423b40c3bc75fd3
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.7/files/8012574236/4aMmUA4.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.7/files/8012574236/4aMmUA4.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/7769977063/H7DC3me.bat
-id: auto-c8d43775ba05951792e375d1b4ca741abdfb2c7269d443ab6e225c98c0564995
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.7/files/7769977063/H7DC3me.bat which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.7/files/7769977063/H7DC3me.bat*'
-  condition: selection
-level: high
-tags:
-  - attack.t1219
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://s3.g.s4.mega.io/aileqac3yep7oqdhygjpberqqnk2zrnhck2lx/busket/2/03x12x26/01/OHKSFJCE.exe
-id: auto-1d2ec9f3c195fdf12e4cec50837cc297e5a0588594a596f5576999f2ee9cb920
-status: experimental
-description: Detects traffic or activity related to https://s3.g.s4.mega.io/aileqac3yep7oqdhygjpberqqnk2zrnhck2lx/busket/2/03x12x26/01/OHKSFJCE.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://s3.g.s4.mega.io/aileqac3yep7oqdhygjpberqqnk2zrnhck2lx/busket/2/03x12x26/01/OHKSFJCE.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/6902778688/AcjqUEy.exe
-id: auto-02dd11d19ffbfcbc0381e6427ae7aa8211c06e64ac4047a0da2e6b9a2d53c72d
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.7/files/6902778688/AcjqUEy.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.7/files/6902778688/AcjqUEy.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/8441193572/Na8U4Fe.exe
-id: auto-3028d8e9ed1afcb8473cb14edf25556b268d6032bdadc62123fb7e72fdfe2e83
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.7/files/8441193572/Na8U4Fe.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.7/files/8441193572/Na8U4Fe.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
   - source.URLhaus
