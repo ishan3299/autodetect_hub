@@ -1,3 +1,67 @@
+title: Detect Activity to Known Malicious Indicator - https://mypanel.vip/a9a4wp/hbgfred.txt
+id: auto-d1f99137b7e0dd6a47893d9205066bfc9ee16ef2f29cf9c0f2e188e59880c669
+status: experimental
+description: Detects traffic or activity related to https://mypanel.vip/a9a4wp/hbgfred.txt which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://mypanel.vip/a9a4wp/hbgfred.txt*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://fv5-5.files.fm/down.php?i=qqrxaww3tr&n=rIFbbkp.txt
+id: auto-4ec0a68de39d34d7d20e6da277c861634057c5d01bf995a41d476b3f8c22047d
+status: experimental
+description: Detects traffic or activity related to http://fv5-5.files.fm/down.php?i=qqrxaww3tr&n=rIFbbkp.txt which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://fv5-5.files.fm/down.php?i=qqrxaww3tr&n=rIFbbkp.txt*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://mypanel.vip/a9a4wp/ndofghk.txt
+id: auto-829367b4f6f1b040035d5fad32070211d39c1d2ebd7391aaf53c2cef83fd602e
+status: experimental
+description: Detects traffic or activity related to https://mypanel.vip/a9a4wp/ndofghk.txt which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://mypanel.vip/a9a4wp/ndofghk.txt*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://www.dropbox.com/scl/fi/6sd0a0od839wwehcndldi/Merluis-Setup-2.0.0.exe
+id: auto-ade18a649e73ce65420d5d50668f975d89ecbbe8abeb8a10f8b82a269db58b52
+status: experimental
+description: Detects traffic or activity related to https://www.dropbox.com/scl/fi/6sd0a0od839wwehcndldi/Merluis-Setup-2.0.0.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://www.dropbox.com/scl/fi/6sd0a0od839wwehcndldi/Merluis-Setup-2.0.0.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - https://gitlab.com/evanblue/thestar/-/raw/main/259UZDS8POXH.exe
 id: auto-8a325b510f3bc848c97c114941b1b4b81564860fc2a86ec3272c6f580cb097dc
 status: experimental
@@ -2668,22 +2732,6 @@ detection:
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://download1979.mediafire.com/nyelsl7di8fgR-j6Bkej7w313J_849ezhLLIhBEEwrAM85k9cjCq8aNSSdEXuHepCbFO0Q0akBf57hPcBES4m4s_Ygw0wTTxwHXtpI61hvnHe2wTfQKvbX8gV2gHyggwWVmv8nkiF2Ypjd6pxJHkHpiuI7cM69BllWIBZ2asD5e2/35szk915pzn779n/Archive.rar
-id: auto-8992874887de5574464843eb9d782ed53627e7efc34b92237c7f193b4454cc37
-status: experimental
-description: Detects traffic or activity related to https://download1979.mediafire.com/nyelsl7di8fgR-j6Bkej7w313J_849ezhLLIhBEEwrAM85k9cjCq8aNSSdEXuHepCbFO0Q0akBf57hPcBES4m4s_Ygw0wTTxwHXtpI61hvnHe2wTfQKvbX8gV2gHyggwWVmv8nkiF2Ypjd6pxJHkHpiuI7cM69BllWIBZ2asD5e2/35szk915pzn779n/Archive.rar which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://download1979.mediafire.com/nyelsl7di8fgR-j6Bkej7w313J_849ezhLLIhBEEwrAM85k9cjCq8aNSSdEXuHepCbFO0Q0akBf57hPcBES4m4s_Ygw0wTTxwHXtpI61hvnHe2wTfQKvbX8gV2gHyggwWVmv8nkiF2Ypjd6pxJHkHpiuI7cM69BllWIBZ2asD5e2/35szk915pzn779n/Archive.rar*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Indicator - https://engine-api.systemoraengine.in.net/05fe317c-0981-4de2-bc8a-930d369db441/ck-3d80df5d12cdfe6450a782fc87bf66b444.google
@@ -64222,2853 +64270,357 @@ tags:
   - attack.T1071
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - https://light-bridge-x.kaltemech.in.net/verification.google
-id: auto-20484cbc360644787c545070f627e5c3982acd96d382903db06dae69b8f089b0
+title: Detect Activity to Known Malicious Indicator -  "3019d91b3e62096ec7c2a68e9fd71c875e6afc3829d6a39d1177df1851af879c"
+id: auto-52a0ada740f6e89550bd1836e0aafe5869f46b36850f5821589c53c9bc290dc5
 status: experimental
-description: Detects traffic or activity related to https://light-bridge-x.kaltemech.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "3019d91b3e62096ec7c2a68e9fd71c875e6afc3829d6a39d1177df1851af879c" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://light-bridge-x.kaltemech.in.net/verification.google*'
+    hashes:
+      - '* "3019d91b3e62096ec7c2a68e9fd71c875e6afc3829d6a39d1177df1851af879c"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://dark-room-v5.kaltemech.in.net/verification.google
-id: auto-085f105af8426e50bf68bdd9440b475609c24174f2bbb94db1e90a3012aa267a
+title: Detect Activity to Known Malicious Indicator -  "3f5bbdb78b0af94f95762ee128ea405cc237786265235f9dcdc5e2a7ebdbf885"
+id: auto-32a00845ce789b386280754802cb35494c300ae6c1b57c4721c116d49799432c
 status: experimental
-description: Detects traffic or activity related to https://dark-room-v5.kaltemech.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "3f5bbdb78b0af94f95762ee128ea405cc237786265235f9dcdc5e2a7ebdbf885" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://dark-room-v5.kaltemech.in.net/verification.google*'
+    hashes:
+      - '* "3f5bbdb78b0af94f95762ee128ea405cc237786265235f9dcdc5e2a7ebdbf885"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://ghost-node-0.fiumeveloce.in.net/verification.google
-id: auto-1d6f4a5afe7feda8b2fe1ca8823d0f363bbfbc0133a2d485991a351e6013f83c
+title: Detect Activity to Known Malicious Indicator -  "1a164d10fe3ca9a603c70bcf83a667b92bab36dbb1705c6865fb83a48935649f"
+id: auto-7e94993b5dfd65418d639e405c40387165784e03c06adbbffe1ae403827f024b
 status: experimental
-description: Detects traffic or activity related to https://ghost-node-0.fiumeveloce.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "1a164d10fe3ca9a603c70bcf83a667b92bab36dbb1705c6865fb83a48935649f" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://ghost-node-0.fiumeveloce.in.net/verification.google*'
+    hashes:
+      - '* "1a164d10fe3ca9a603c70bcf83a667b92bab36dbb1705c6865fb83a48935649f"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://user-auth-x3.fiumeveloce.in.net/verification.google
-id: auto-336e91b73e161a1b30b8ba668ed3f0b24699df3a414b96488b0ecff72bfea3c7
+title: Detect Activity to Known Malicious Indicator -  "d28e4a090cc3ea8ffc3e557246d8b8178f81bc13664948d77df9282d7966e970"
+id: auto-e544aed873948022564d98a2bcaeef9a2d9940294331e193f9aac00b998a3c4c
 status: experimental
-description: Detects traffic or activity related to https://user-auth-x3.fiumeveloce.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "d28e4a090cc3ea8ffc3e557246d8b8178f81bc13664948d77df9282d7966e970" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://user-auth-x3.fiumeveloce.in.net/verification.google*'
+    hashes:
+      - '* "d28e4a090cc3ea8ffc3e557246d8b8178f81bc13664948d77df9282d7966e970"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://core-shell-z8.fiumeveloce.in.net/verification.google
-id: auto-d0ebe296088f45165eadb7dedbf80f1bd66c72c911edd9ad13d28ab9e954c101
+title: Detect Activity to Known Malicious Indicator -  "838edf67ce87d02e6f743b5de6a2993a9fea65de92dc8f149027c0b759932259"
+id: auto-54488416d5923604e959e2732602ee472f065c21fe217b5e32ddd4caf28afdb1
 status: experimental
-description: Detects traffic or activity related to https://core-shell-z8.fiumeveloce.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "838edf67ce87d02e6f743b5de6a2993a9fea65de92dc8f149027c0b759932259" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://core-shell-z8.fiumeveloce.in.net/verification.google*'
+    hashes:
+      - '* "838edf67ce87d02e6f743b5de6a2993a9fea65de92dc8f149027c0b759932259"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://alpha-trace-v.fiumeveloce.in.net/verification.google
-id: auto-4305701acde458f5d156968797df7568338ce4305ccc5b05b4f2f53f69407324
+title: Detect Activity to Known Malicious Indicator -  "d8fcebf0f68ee6030a3d659d5de3013ce02c219c593c7a7dd88ed98ac139c7a3"
+id: auto-5b5badf81cd07c8e96ed3f7a86387684038126468b73426c5a86eae0bab5b998
 status: experimental
-description: Detects traffic or activity related to https://alpha-trace-v.fiumeveloce.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "d8fcebf0f68ee6030a3d659d5de3013ce02c219c593c7a7dd88ed98ac139c7a3" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://alpha-trace-v.fiumeveloce.in.net/verification.google*'
+    hashes:
+      - '* "d8fcebf0f68ee6030a3d659d5de3013ce02c219c593c7a7dd88ed98ac139c7a3"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://point-entry-4.grandestat.in.net/verification.google
-id: auto-0f004ac871d98be05ce14561cec3fc244b0482c07d9be9620f4389f74533761f
+title: Detect Activity to Known Malicious Indicator -  "2b1f971f0a4f1b97560936543a216589e820960d64569dd85e40a242b680cba9"
+id: auto-66582af7955d22fc09983209ed60113769e40ef42ef1cca52a658c651b3062a4
 status: experimental
-description: Detects traffic or activity related to https://point-entry-4.grandestat.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "2b1f971f0a4f1b97560936543a216589e820960d64569dd85e40a242b680cba9" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://point-entry-4.grandestat.in.net/verification.google*'
+    hashes:
+      - '* "2b1f971f0a4f1b97560936543a216589e820960d64569dd85e40a242b680cba9"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://data-base-v5.grandestat.in.net/verification.google
-id: auto-5e05e3c57cdaaaa5e276aec1aa3987a0470bdbaf7442e5ad973496bac7f88be3
+title: Detect Activity to Known Malicious Indicator -  "e89b2694d79be1e2c98d0cad3e2e75b83fdd9f334756d34eba62d21eb3605fd7"
+id: auto-4294054a54f89ada84cf5ef036e6adcdebbaeec1a301411fd2ece5746462235e
 status: experimental
-description: Detects traffic or activity related to https://data-base-v5.grandestat.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "e89b2694d79be1e2c98d0cad3e2e75b83fdd9f334756d34eba62d21eb3605fd7" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://data-base-v5.grandestat.in.net/verification.google*'
+    hashes:
+      - '* "e89b2694d79be1e2c98d0cad3e2e75b83fdd9f334756d34eba62d21eb3605fd7"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://base-infra-99.grandestat.in.net/verification.google
-id: auto-9bf753394db012a17e3aa1a050813e935f59459da00423d113ba9b30591d4b48
+title: Detect Activity to Known Malicious Indicator -  "82dc810ee6a3f5f0ed0e221f1f029e3ff4854cb138432c6d82440f4ccfe1a512"
+id: auto-7ef48e21f3867a8e8ee8c13371b861350a189d03fb6a0ff62aff6fe4f6eaad3e
 status: experimental
-description: Detects traffic or activity related to https://base-infra-99.grandestat.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "82dc810ee6a3f5f0ed0e221f1f029e3ff4854cb138432c6d82440f4ccfe1a512" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://base-infra-99.grandestat.in.net/verification.google*'
+    hashes:
+      - '* "82dc810ee6a3f5f0ed0e221f1f029e3ff4854cb138432c6d82440f4ccfe1a512"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://global-net-v1.grandestat.in.net/verification.google
-id: auto-66df981a38fc5928ae46c6347ba5cfb2b742360a36d33a15d15010063555ac37
+title: Detect Activity to Known Malicious Indicator -  "cbc9ce9067d192a6372095aea321a1b26ee2300173a0e1155ddda981b4300171"
+id: auto-0b77b7afaf335bd847ef06eb30f4500289687fb993be2748528a285a1d262e42
 status: experimental
-description: Detects traffic or activity related to https://global-net-v1.grandestat.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "cbc9ce9067d192a6372095aea321a1b26ee2300173a0e1155ddda981b4300171" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://global-net-v1.grandestat.in.net/verification.google*'
+    hashes:
+      - '* "cbc9ce9067d192a6372095aea321a1b26ee2300173a0e1155ddda981b4300171"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://local-hub-x9.mondolibre.in.net/verification.google
-id: auto-1ce724e923b172b20252a15a2e59508d3ee806907e5cee99e916175a99488244
+title: Detect Activity to Known Malicious Indicator -  "956d5427493be9155d5728c6294e5ee0a58cb2dce468b0187eae44722242aadf"
+id: auto-90a23cedf2bc9f1d626c8cb8ed93f4145de0d08fbae68d5a10a73cb08dc7195a
 status: experimental
-description: Detects traffic or activity related to https://local-hub-x9.mondolibre.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "956d5427493be9155d5728c6294e5ee0a58cb2dce468b0187eae44722242aadf" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://local-hub-x9.mondolibre.in.net/verification.google*'
+    hashes:
+      - '* "956d5427493be9155d5728c6294e5ee0a58cb2dce468b0187eae44722242aadf"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://staff-portal-1.mondolibre.in.net/verification.google
-id: auto-c9963fd63e15f878b87718466a6dbb2168b3f4e1d54c72a54bd96b1eb1374a86
+title: Detect Activity to Known Malicious Indicator -  "4a6476000affc9b9c43ca446e6d670ceae8a0555bf1e3d10591249c9c8b02a42"
+id: auto-b169e12f6dc4ec202fae0680dacb92c59daf6715cf4a33f290a485056924d62e
 status: experimental
-description: Detects traffic or activity related to https://staff-portal-1.mondolibre.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "4a6476000affc9b9c43ca446e6d670ceae8a0555bf1e3d10591249c9c8b02a42" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://staff-portal-1.mondolibre.in.net/verification.google*'
+    hashes:
+      - '* "4a6476000affc9b9c43ca446e6d670ceae8a0555bf1e3d10591249c9c8b02a42"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://work-flow-v0.mondolibre.in.net/verification.google
-id: auto-0f01be37d49f0da6ce6306d35c3fecd7813acf475c7e774c2ae7ecf3f1d28936
+title: Detect Activity to Known Malicious Indicator -  "79003e40638d1642c35252b5fb32c4d9ffbb11cead45340144799854fcd47644"
+id: auto-31f4bd4293829cb020b75e7e466394e203f69c516e819d4e8f2452979aeff565
 status: experimental
-description: Detects traffic or activity related to https://work-flow-v0.mondolibre.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "79003e40638d1642c35252b5fb32c4d9ffbb11cead45340144799854fcd47644" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://work-flow-v0.mondolibre.in.net/verification.google*'
+    hashes:
+      - '* "79003e40638d1642c35252b5fb32c4d9ffbb11cead45340144799854fcd47644"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://power-link-z5.mondolibre.in.net/verification.google
-id: auto-3ae9be325cf02937335f6b220b9b5254316a84aff858b457eaebc72cd94b2828
+title: Detect Activity to Known Malicious Indicator -  "bb7714c2aeba066621f1f7606f95e8103336b4147ff2ec6b0bc3bffc9b284754"
+id: auto-b7bc1288ea259f040f61bd54b4aa07bfe1ed647818572c0c5eb17bc2030a7a8a
 status: experimental
-description: Detects traffic or activity related to https://power-link-z5.mondolibre.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "bb7714c2aeba066621f1f7606f95e8103336b4147ff2ec6b0bc3bffc9b284754" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://power-link-z5.mondolibre.in.net/verification.google*'
+    hashes:
+      - '* "bb7714c2aeba066621f1f7606f95e8103336b4147ff2ec6b0bc3bffc9b284754"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://backend-node-v.stillewasser.in.net/verification.google
-id: auto-4dbdb70cd1702884af6eaaca99c228bd1cc145fdf4aced0d2df8421f82d54cb6
+title: Detect Activity to Known Malicious Indicator -  "dbb474f236caeda92d5b893ed1d9f9e80858529754756a9ca1d1dc5597421efa"
+id: auto-4f350cb7880a0aab6f99868ff7a71d80a90c1a4a8bed43474d5b4fb927b60ab0
 status: experimental
-description: Detects traffic or activity related to https://backend-node-v.stillewasser.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "dbb474f236caeda92d5b893ed1d9f9e80858529754756a9ca1d1dc5597421efa" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://backend-node-v.stillewasser.in.net/verification.google*'
+    hashes:
+      - '* "dbb474f236caeda92d5b893ed1d9f9e80858529754756a9ca1d1dc5597421efa"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://app-data-hub.fortezzarossa.in.net/verification.google
-id: auto-f0175bcdb9340300c5e347abc01761bba90308821af52fd9a7dc00abd4614262
+title: Detect Activity to Known Malicious Indicator -  "9372b977f945b3024129c560096bf216c573dd673cd3564ada3f814a903146a1"
+id: auto-db5ec2c7ebba5ae83ec070e3febd2b43c0a4c490dfc7bed65d585e439cc82500
 status: experimental
-description: Detects traffic or activity related to https://app-data-hub.fortezzarossa.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "9372b977f945b3024129c560096bf216c573dd673cd3564ada3f814a903146a1" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://app-data-hub.fortezzarossa.in.net/verification.google*'
+    hashes:
+      - '* "9372b977f945b3024129c560096bf216c573dd673cd3564ada3f814a903146a1"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://web-proxy-alt.fortezzarossa.in.net/verification.google
-id: auto-3c75a291574a3ee32d6170af52c7606c262d57849577673766595e62c74863d2
+title: Detect Activity to Known Malicious Indicator -  "73c1670448ba22107174af5b4852ab30a25147ad05eac3e53bf4cbf0ca6fa896"
+id: auto-31606b0d0f852883703e543cda241af98434f863fc56b8aeb13a140ab526ce70
 status: experimental
-description: Detects traffic or activity related to https://web-proxy-alt.fortezzarossa.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "73c1670448ba22107174af5b4852ab30a25147ad05eac3e53bf4cbf0ca6fa896" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://web-proxy-alt.fortezzarossa.in.net/verification.google*'
+    hashes:
+      - '* "73c1670448ba22107174af5b4852ab30a25147ad05eac3e53bf4cbf0ca6fa896"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://srv-cluster-01.fortezzarossa.in.net/verification.google
-id: auto-4ddef156661bee27ab37f1fb9b9e5bb2199c6f38642c4d40c3280cae846887d6
+title: Detect Activity to Known Malicious Indicator -  "ea05197e0c3bfb7ca461146bcfba417834b97a96d2a24397d745fe0f487e5d59"
+id: auto-370c82c62045805fc4300c8b20cba22e0f2bf13f7e2c9a15bacc41d96699d8f1
 status: experimental
-description: Detects traffic or activity related to https://srv-cluster-01.fortezzarossa.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "ea05197e0c3bfb7ca461146bcfba417834b97a96d2a24397d745fe0f487e5d59" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://srv-cluster-01.fortezzarossa.in.net/verification.google*'
+    hashes:
+      - '* "ea05197e0c3bfb7ca461146bcfba417834b97a96d2a24397d745fe0f487e5d59"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://cloud-drive-v7.fortezzarossa.in.net/verification.google
-id: auto-73358da5a451c8d94594931a5bba86d99d81fbcd5646b2ed2d6e643963f078da
+title: Detect Activity to Known Malicious Indicator -  "623e380d94ef336723be739f9b42648fba425fba2e39db7241bb9175c3709a04"
+id: auto-32c5576e2f0d692161b3cc046821e2073072b4a9f3e4f9f33d7de58fc39be532
 status: experimental
-description: Detects traffic or activity related to https://cloud-drive-v7.fortezzarossa.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "623e380d94ef336723be739f9b42648fba425fba2e39db7241bb9175c3709a04" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://cloud-drive-v7.fortezzarossa.in.net/verification.google*'
+    hashes:
+      - '* "623e380d94ef336723be739f9b42648fba425fba2e39db7241bb9175c3709a04"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://metrics-sync-1.petitnuage.in.net/verification.google
-id: auto-415cfa835e68efa83f7e6015eb2872b07c20a259d996978cb0e3102266fdd5dd
+title: Detect Activity to Known Malicious Indicator -  "6fb87b8587bcfad6d1ce722a2e4e245789fc4816171015efbee479a30108e2c9"
+id: auto-d26fb4a141d92a58ece8efecb2507e45f61704372e9159d9c31a5858c654c3ac
 status: experimental
-description: Detects traffic or activity related to https://metrics-sync-1.petitnuage.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "6fb87b8587bcfad6d1ce722a2e4e245789fc4816171015efbee479a30108e2c9" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://metrics-sync-1.petitnuage.in.net/verification.google*'
+    hashes:
+      - '* "6fb87b8587bcfad6d1ce722a2e4e245789fc4816171015efbee479a30108e2c9"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://api-v3-storage.petitnuage.in.net/verification.google
-id: auto-6477bc0f2afac8d33d81ea2a4b828b953e8c7170486150fc0beebbde8095ccba
+title: Detect Activity to Known Malicious Indicator -  "4d598bafdcea52627cc45652e78ba810026ecbcc63a36d026733ee4ff3daf4d0"
+id: auto-0684ab63b1b9e452bb37fee59d719475da1fb559f8e9e61643f2d4659884dbe4
 status: experimental
-description: Detects traffic or activity related to https://api-v3-storage.petitnuage.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "4d598bafdcea52627cc45652e78ba810026ecbcc63a36d026733ee4ff3daf4d0" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://api-v3-storage.petitnuage.in.net/verification.google*'
+    hashes:
+      - '* "4d598bafdcea52627cc45652e78ba810026ecbcc63a36d026733ee4ff3daf4d0"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://cdn-static-v5.petitnuage.in.net/verification.google
-id: auto-438ca3cf61a705dc307413adc7978890c2ba3ed6b4770afb01dc728deb3145c5
+title: Detect Activity to Known Malicious Indicator -  "e5929c73939fb69820a63bdc6e2a3014a405815840ec5b346fbf0ccb9ffc4fa9"
+id: auto-8ea264e788d5c79266d102ca89fd6de9075f3fb999819b581827099a1c47b15b
 status: experimental
-description: Detects traffic or activity related to https://cdn-static-v5.petitnuage.in.net/verification.google which is a known malicious url.
+description: Detects traffic or activity related to  "e5929c73939fb69820a63bdc6e2a3014a405815840ec5b346fbf0ccb9ffc4fa9" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://cdn-static-v5.petitnuage.in.net/verification.google*'
+    hashes:
+      - '* "e5929c73939fb69820a63bdc6e2a3014a405815840ec5b346fbf0ccb9ffc4fa9"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://main-point-1.metallocielo.in.net/verification.google
-id: auto-65a9137830ad944f90bd5117d6922a9157f8263dc098401a4dcea8e95073f3ec
-status: experimental
-description: Detects traffic or activity related to http://main-point-1.metallocielo.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://main-point-1.metallocielo.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://data-sync-x9.metallocielo.in.net/verification.google
-id: auto-3f1d8a83c59bdbd9ae86186ffa8d5b840629ff6c733e814e82723e3036edf563
-status: experimental
-description: Detects traffic or activity related to https://data-sync-x9.metallocielo.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://data-sync-x9.metallocielo.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://gate-proxy-z.metallocielo.in.net/verification.google
-id: auto-196f64a00be09f4d993aa1adc7e40087e178d969b2e41cd5bca90e2fd58e5478
-status: experimental
-description: Detects traffic or activity related to https://gate-proxy-z.metallocielo.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://gate-proxy-z.metallocielo.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://infra-web-01.metallocielo.in.net/verification.google
-id: auto-09f9dc6e907aa142d3ebec3314da5967f5bb8fff5e978bab7514dbeed2e5e385
-status: experimental
-description: Detects traffic or activity related to https://infra-web-01.metallocielo.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://infra-web-01.metallocielo.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://sat-uplink-5.grandevision.in.net/verification.google
-id: auto-7b7532de49ab69ac6ba3673b8edbfcd42c94587bed5815b990bcd9dfd5495ef0
-status: experimental
-description: Detects traffic or activity related to https://sat-uplink-5.grandevision.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://sat-uplink-5.grandevision.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://rock-core-v2.grandevision.in.net/verification.google
-id: auto-c1d9cb225788d9f75637bfd6a459ce31d4e3a38d0a3d8c86f09f62e30e5dcd3a
-status: experimental
-description: Detects traffic or activity related to https://rock-core-v2.grandevision.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://rock-core-v2.grandevision.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://steel-base-7.grandevision.in.net/verification.google
-id: auto-5543f9dd65d02a800d0228d616757c86d1978fe00d1e732f6659e4febf44ab68
-status: experimental
-description: Detects traffic or activity related to https://steel-base-7.grandevision.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://steel-base-7.grandevision.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://moon-orbit-x.grandevision.in.net/verification.google
-id: auto-d0a23b5f4eb36382dfc07ca9a7c350b7f8572a64faf7a64e959c97042e821dc1
-status: experimental
-description: Detects traffic or activity related to https://moon-orbit-x.grandevision.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://moon-orbit-x.grandevision.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://open-space-1.silberpfad.in.net/verification.google
-id: auto-bf346b89a05ff896e3c3da37a339a5f4b7082156365a603874526e56d54b83d8
-status: experimental
-description: Detects traffic or activity related to https://open-space-1.silberpfad.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://open-space-1.silberpfad.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://vast-field-z.silberpfad.in.net/verification.google
-id: auto-78db33acf230b2eb6115aed0378635a63ea7482bf3f067f31e179e2c87be9e03
-status: experimental
-description: Detects traffic or activity related to https://vast-field-z.silberpfad.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://vast-field-z.silberpfad.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://area-zone-99.silberpfad.in.net/verification.google
-id: auto-8141711cfa68a0738b55740f32220a421b0b4c17280a001133a84a6b66bb96dc
-status: experimental
-description: Detects traffic or activity related to https://area-zone-99.silberpfad.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://area-zone-99.silberpfad.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://outer-rim-v1.silberpfad.in.net/verification.google
-id: auto-8de90ef82733ae435279a3cb01c8fbc177a2dc0fda6da45fe6c90b1cfc954ff8
-status: experimental
-description: Detects traffic or activity related to https://outer-rim-v1.silberpfad.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://outer-rim-v1.silberpfad.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://vision-sync-x.altovelocita.in.net/verification.google
-id: auto-712136b22e3e568387af5a4620d43f205346f99ce427831daa6cf2f7b2d8810e
-status: experimental
-description: Detects traffic or activity related to https://vision-sync-x.altovelocita.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://vision-sync-x.altovelocita.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://scan-point-0.altovelocita.in.net/verification.google
-id: auto-7f833bc20d558de12f586be64183f36613e14a40ef144d3948dc9790dd82fba3
-status: experimental
-description: Detects traffic or activity related to https://scan-point-0.altovelocita.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://scan-point-0.altovelocita.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://light-bridge-1.altovelocita.in.net/verification.google
-id: auto-cc1f8dcd384451f40c61c4c959e56d26e949c7964b6bd7c7095cdac5a4f14313
-status: experimental
-description: Detects traffic or activity related to https://light-bridge-1.altovelocita.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://light-bridge-1.altovelocita.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://dark-room-z.altovelocita.in.net/verification.google
-id: auto-c3dbe691e19be113dcbddfe2720683dbc07079e525415bac03af429f47b585c1
-status: experimental
-description: Detects traffic or activity related to https://dark-room-z.altovelocita.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://dark-room-z.altovelocita.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://ghost-node-x.froidespace.in.net/verification.google
-id: auto-0b723a81ede4cb2e332a84e39608a8e69cc0aa4a92f70658fe090a1b80812195
-status: experimental
-description: Detects traffic or activity related to https://ghost-node-x.froidespace.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://ghost-node-x.froidespace.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://user-auth-11.froidespace.in.net/verification.google
-id: auto-1edf6b549eda331a1c325f6c604284110fc5a25beeb477eed61eddf7541005d1
-status: experimental
-description: Detects traffic or activity related to https://user-auth-11.froidespace.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://user-auth-11.froidespace.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://core-shell-v4.froidespace.in.net/verification.google
-id: auto-90d7888482298a1a668289c454b1bfea5d8fb9ce35ff2b3d69089ccc24f37164
-status: experimental
-description: Detects traffic or activity related to https://core-shell-v4.froidespace.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://core-shell-v4.froidespace.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://alpha-trace-9.froidespace.in.net/verification.google
-id: auto-2d16d5dbcb97f5b5f59f017da307ac6112587df51267b61edcf99972e879d9ee
-status: experimental
-description: Detects traffic or activity related to https://alpha-trace-9.froidespace.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://alpha-trace-9.froidespace.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.97:5553/karas.exe
-id: auto-83a8b0ff5c8ac040bd1a5032b8ab202799b04f0447fb814131979c786c6ed72c
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.97:5553/karas.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.97:5553/karas.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.97:5553/seshea.exe
-id: auto-3b63a5c5bcf5fd2fde3860be5442122765c6ca919c2ca64770b92a2ddb321f45
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.97:5553/seshea.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.97:5553/seshea.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.97:5553/ssl.exe
-id: auto-4c78946e0e30bcc2c8fa63f73f55908474482101752e07d6ad14ae873f4ea7fe
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.97:5553/ssl.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.97:5553/ssl.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.97:5553/xenos.exe
-id: auto-75fce53b0edf91476a237f8aa9e67c4b8cd46d4ce04e950aa3eb4c60a67d429f
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.97:5553/xenos.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.97:5553/xenos.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.97:5553/xenosa.exe
-id: auto-9b60d9a9a20f88721a9fc1780b2b7ffd27ff8da4d0b1a380a11312d9f5b040c1
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.97:5553/xenosa.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.97:5553/xenosa.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://data-base-00.mondolavoro.in.net/verification.google
-id: auto-d6f3479abe441bb72daa207b64716be1c1d57381088653940de354995d2f339c
-status: experimental
-description: Detects traffic or activity related to https://data-base-00.mondolavoro.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://data-base-00.mondolavoro.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://base-infra-77.mondolavoro.in.net/verification.google
-id: auto-c56bc599a2d9c7194acd805d07f3ecac35203554ffc6d3ed0e4fbe420b90aa2b
-status: experimental
-description: Detects traffic or activity related to https://base-infra-77.mondolavoro.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://base-infra-77.mondolavoro.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://global-net-x.mondolavoro.in.net/verification.google
-id: auto-011427f9c1c4be4ad6140f664ce9cc50877c6d2ce43777ea5dba218c353f3ce8
-status: experimental
-description: Detects traffic or activity related to https://global-net-x.mondolavoro.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://global-net-x.mondolavoro.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://local-hub-v9.starkewelle.in.net/verification.google
-id: auto-e619e60f38fc44a98e2047d15c9e8207f39cb16fed009793f5de5b0445a0187f
-status: experimental
-description: Detects traffic or activity related to https://local-hub-v9.starkewelle.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://local-hub-v9.starkewelle.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://staff-portal-0.starkewelle.in.net/verification.google
-id: auto-3b553e8a3ecf5a949ec5caf38637807dda8daef60e174026e4f10c6228d3f6de
-status: experimental
-description: Detects traffic or activity related to https://staff-portal-0.starkewelle.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://staff-portal-0.starkewelle.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://work-flow-z1.starkewelle.in.net/verification.google
-id: auto-089dccf1a3596252e7fd197c886d94e321b7cb01294beda0eecc03210705d68b
-status: experimental
-description: Detects traffic or activity related to https://work-flow-z1.starkewelle.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://work-flow-z1.starkewelle.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://power-link-v8.starkewelle.in.net/verification.google
-id: auto-db0a55f5383fb7255cf059be5325293d5fd3c5014e6e9544ed245889a24dbc44
-status: experimental
-description: Detects traffic or activity related to https://power-link-v8.starkewelle.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://power-link-v8.starkewelle.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://internal-sys.petitreseau.in.net/verification.google
-id: auto-8b62198f6a459e551341252b44b5824b4357faa74594cf4539b8c4876c4118b6
-status: experimental
-description: Detects traffic or activity related to https://internal-sys.petitreseau.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://internal-sys.petitreseau.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://backend-node-x.petitreseau.in.net/verification.google
-id: auto-e1fbedea9041d6f5ca96904a594abed673e15dd2e8d8c6401158ab768e5efbb4
-status: experimental
-description: Detects traffic or activity related to https://backend-node-x.petitreseau.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://backend-node-x.petitreseau.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://remote-access-7.petitreseau.in.net/verification.google
-id: auto-af7f830c0c6267a8e57ec79840dfd27dc449b8ed3cdbf95c1b089e6296fa177c
-status: experimental
-description: Detects traffic or activity related to https://remote-access-7.petitreseau.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://remote-access-7.petitreseau.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://web-proxy-v.vitasicura.in.net/verification.google
-id: auto-a15da57ecc168391ebc3f7bc4e0dc017d3c0114d19f9f18796be4b3356da9522
-status: experimental
-description: Detects traffic or activity related to https://web-proxy-v.vitasicura.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://web-proxy-v.vitasicura.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://srv-cluster-33.vitasicura.in.net/verification.google
-id: auto-26e0f6e9b4fc0e0a0f95180d1088adadeff207ec552e81cc0bd8698504b34f74
-status: experimental
-description: Detects traffic or activity related to https://srv-cluster-33.vitasicura.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://srv-cluster-33.vitasicura.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://local-host.life/download_raw/Rgple3DXXxCUvYUB/images.png
-id: auto-4650cd02aeefa966e8728bc79fe5abb5293c5f66b59c310a65f22bccdb35c1e8
-status: experimental
-description: Detects traffic or activity related to https://local-host.life/download_raw/Rgple3DXXxCUvYUB/images.png which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://local-host.life/download_raw/Rgple3DXXxCUvYUB/images.png*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://local-host.life/download_raw/9U116InjUiX3h3LY/ser.txt
-id: auto-c8b99d60194fe00bd4906855934b230cdbb03d7690001c06bd8804914fbd3810
-status: experimental
-description: Detects traffic or activity related to https://local-host.life/download_raw/9U116InjUiX3h3LY/ser.txt which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://local-host.life/download_raw/9U116InjUiX3h3LY/ser.txt*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://local-host.life/download_raw/Cw9aoa7PZwvcnVU5/mer.txt
-id: auto-7f8825f832e0ae369b5c7a46c18e47c55090f53c746a5ed4664f5512c1b89b78
-status: experimental
-description: Detects traffic or activity related to https://local-host.life/download_raw/Cw9aoa7PZwvcnVU5/mer.txt which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://local-host.life/download_raw/Cw9aoa7PZwvcnVU5/mer.txt*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://local-host.life/download_raw/Ig4TEtDBfygg1gOZ/sabvs.txt
-id: auto-abeaf5207182a69ac0d4bbaa06fc794352f7d6916022bf4e9ea6ebf94f66f703
-status: experimental
-description: Detects traffic or activity related to https://local-host.life/download_raw/Ig4TEtDBfygg1gOZ/sabvs.txt which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://local-host.life/download_raw/Ig4TEtDBfygg1gOZ/sabvs.txt*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://cloud-drive-a1.vitasicura.in.net/verification.google
-id: auto-131fe1202f5876135af6ea3e7bb2334e404386e3053dfde06fd7fb4f6b843114
-status: experimental
-description: Detects traffic or activity related to https://cloud-drive-a1.vitasicura.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://cloud-drive-a1.vitasicura.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://metrics-core.grossesystem.in.net/verification.google
-id: auto-9088234e591f1cdc1436cd829e54d495455fd50b8acf57c1f0b929cb1b4b906b
-status: experimental
-description: Detects traffic or activity related to https://metrics-core.grossesystem.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://metrics-core.grossesystem.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://dev-test-unit.grossesystem.in.net/verification.google
-id: auto-0e83cfa56acdb945a6417c8c3edcdfb7489d1f44994677920370b5b865312a0e
-status: experimental
-description: Detects traffic or activity related to https://dev-test-unit.grossesystem.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://dev-test-unit.grossesystem.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://api-v2-master.grossesystem.in.net/verification.google
-id: auto-0c58ff8373aa50662e3797a389d09b01e209968a1b869dbdf59723521a0ab06e
-status: experimental
-description: Detects traffic or activity related to https://api-v2-master.grossesystem.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://api-v2-master.grossesystem.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://cdn-static-4.grossesystem.in.net/verification.google
-id: auto-c5a4ae16d77c615ab5f0c4e687e4960c22526ca7a1131c55e86356d7f7d1f4f3
-status: experimental
-description: Detects traffic or activity related to https://cdn-static-4.grossesystem.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://cdn-static-4.grossesystem.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://vf16.stoppit.in.net/verification.google
-id: auto-9c71cfde68d659799d6f851c085cb4cc1dfecb9e7d03750255f50d86749b70b6
-status: experimental
-description: Detects traffic or activity related to https://vf16.stoppit.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://vf16.stoppit.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://climole.stoppit.in.net/verification.google
-id: auto-df860ed3082e639122e4e6b1ee2bbe604378c28fa91b1e530274ca59bf59f866
-status: experimental
-description: Detects traffic or activity related to https://climole.stoppit.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://climole.stoppit.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://rzlt.getron.in.net/verification.google
-id: auto-27d196aabcd179836d867ffc01235c2b8a14a96929636a9c9181fce3b49d6e1e
-status: experimental
-description: Detects traffic or activity related to https://rzlt.getron.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://rzlt.getron.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://dshqj1.getron.in.net/verification.google
-id: auto-019d053263a1df77f66b45b049ee32b13bb40fe19354a8454cb90e1b1f624e94
-status: experimental
-description: Detects traffic or activity related to https://dshqj1.getron.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://dshqj1.getron.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://local-host.life/download_raw/gNhDrkROldD6EkRc/Xeno.png
-id: auto-1a144ddb04f9f8511a9bbbd42c35f0321cb27b281a9bda02d1673bfadfbc6165
-status: experimental
-description: Detects traffic or activity related to https://local-host.life/download_raw/gNhDrkROldD6EkRc/Xeno.png which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://local-host.life/download_raw/gNhDrkROldD6EkRc/Xeno.png*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://sap0-node.zecoko.in.net/verification.google
-id: auto-470c19c6e3db41778ee47929bd0c36fa23c6cfba29ff624ca178b1b7210b4a66
-status: experimental
-description: Detects traffic or activity related to https://sap0-node.zecoko.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://sap0-node.zecoko.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://cube.zecoko.in.net/verification.google
-id: auto-15183ced723f937c2ac9385f300e44fce9817f358c728b19c6f7cea818939274
-status: experimental
-description: Detects traffic or activity related to https://cube.zecoko.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://cube.zecoko.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://yxngqe.cutlog.in.net/verification.google
-id: auto-b0e3ec860033503763079a95ca33b65d31bd86df28deefa2462c50ffc8d2ee58
-status: experimental
-description: Detects traffic or activity related to https://yxngqe.cutlog.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://yxngqe.cutlog.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://courie-sprou.cutlog.in.net/verification.google
-id: auto-31abdba282e9ea74dc7434b5c7993d984e63ad3b59415ae74ff9862c409eaeaa
-status: experimental
-description: Detects traffic or activity related to https://courie-sprou.cutlog.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://courie-sprou.cutlog.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://bufferforge.onfloor.in.net/verification.google
-id: auto-b222fe0e1f57a7980ab03beca164fd1bf5d80f813eff0bca8fb641f284d818b2
-status: experimental
-description: Detects traffic or activity related to https://bufferforge.onfloor.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://bufferforge.onfloor.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://mirogv.onfloor.in.net/verification.google
-id: auto-5cd1d1018fed869f760a558226b4a0db94756ba76a885fc73886dff0904bd3af
-status: experimental
-description: Detects traffic or activity related to https://mirogv.onfloor.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://mirogv.onfloor.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://alpha2-point.uptrend.in.net/verification.google
-id: auto-734fbe17827c8434e605fce3f07cfe47c2504832a2d431e2c2d1b97151d4a840
-status: experimental
-description: Detects traffic or activity related to https://alpha2-point.uptrend.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://alpha2-point.uptrend.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://wuurrgc.uptrend.in.net/verification.google
-id: auto-77a601c686059b91e7af85efae107dcf7f0a78613e146ec7d687f05f0d854879
-status: experimental
-description: Detects traffic or activity related to https://wuurrgc.uptrend.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://wuurrgc.uptrend.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/7362035837/rBOBWhe.exe
-id: auto-0096f54b98bcfc644975b1b79cceb5937bfd38a61e22e2e10b632fbb49bfb073
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.7/files/7362035837/rBOBWhe.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.7/files/7362035837/rBOBWhe.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://posteroutlet.getontra.in.net/verification.google
-id: auto-7b1aed01c93e73d70890764531d71ad442271aab459e45a3b16a3f553d8d462b
-status: experimental
-description: Detects traffic or activity related to https://posteroutlet.getontra.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://posteroutlet.getontra.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://genom-inde.getontra.in.net/verification.google
-id: auto-5661f9b6121671be47294bdba98a72e455a2ced806e86088c40fc6848793d972
-status: experimental
-description: Detects traffic or activity related to https://genom-inde.getontra.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://genom-inde.getontra.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://cvk6.freespe.in.net/verification.google
-id: auto-7c0f4c0d5a0d52aaec66ea935059f471fcf9f1c6954477b46e6414c89587b716
-status: experimental
-description: Detects traffic or activity related to https://cvk6.freespe.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://cvk6.freespe.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/8616879702/6KlKqZ9.exe
-id: auto-48173a5c40efa0a4278d9c3e6eae4b5e87942e39c3858f18cf015fecd7af7d76
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.7/files/8616879702/6KlKqZ9.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.7/files/8616879702/6KlKqZ9.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://birdcast.freespe.in.net/verification.google
-id: auto-0cabca9fee0b695e9ee2ea6d8ebb4c0f3987f6c93b83553c203370f7a1cc694a
-status: experimental
-description: Detects traffic or activity related to https://birdcast.freespe.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://birdcast.freespe.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://uanwzyl.lowflo.in.net/verification.google
-id: auto-e9da9a132249cd640650d87bbd379901da4d59c36660e7f45e7b6c6e526b0fea
-status: experimental
-description: Detects traffic or activity related to https://uanwzyl.lowflo.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://uanwzyl.lowflo.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://rekr.lowflo.in.net/verification.google
-id: auto-aa5d2bf30587d022a03aea056e47ccec40e732d9b4d97befe6a3d865cda09787
-status: experimental
-description: Detects traffic or activity related to https://rekr.lowflo.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://rekr.lowflo.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://softgui.stoppit.in.net/verification.google
-id: auto-1da856f227bf5072557fef452d7392672a68983b8108997127f8822de7845d6d
-status: experimental
-description: Detects traffic or activity related to https://softgui.stoppit.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://softgui.stoppit.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://m0fb.stoppit.in.net/verification.google
-id: auto-2220772603979c55e62f5106c8b2978c20043c9647f6c1bb2275a1f275706e0e
-status: experimental
-description: Detects traffic or activity related to https://m0fb.stoppit.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://m0fb.stoppit.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://wmajq.getron.in.net/verification.google
-id: auto-89eaf7a447ca51fee1118fbb82a2452c644b75695a04d01a30f0553f042aa384
-status: experimental
-description: Detects traffic or activity related to https://wmajq.getron.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://wmajq.getron.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://xbusrwue.zecoko.in.net/verification.google
-id: auto-135c6869b24736fecf84124c919c18c68df12882d5eb04ac216e0415134c0c77
-status: experimental
-description: Detects traffic or activity related to https://xbusrwue.zecoko.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://xbusrwue.zecoko.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://mz13se.alfabon.in.net/verification.google
-id: auto-7162600c53d938e91b706128a78938a214faf8915969527a6fef5367d429e552
-status: experimental
-description: Detects traffic or activity related to http://mz13se.alfabon.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://mz13se.alfabon.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://ooenm.zecoko.in.net/verification.google
-id: auto-8b4a90d3e5d316362f19c31649bfbf433072579382d244fa104098101ccd9929
-status: experimental
-description: Detects traffic or activity related to https://ooenm.zecoko.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://ooenm.zecoko.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://mz13se.alfabon.in.net/verification.google
-id: auto-ceb70914931ef95b9d7f7c7009c4e461f1f3c7a98cf17b1f23b04beb111bdbd9
-status: experimental
-description: Detects traffic or activity related to https://mz13se.alfabon.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://mz13se.alfabon.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://mistshe.getron.in.net/verification.google
-id: auto-80a2ab1026b43b1fd2ab381ea62554e8ebd4a547f5693908db8cd898d752bddf
-status: experimental
-description: Detects traffic or activity related to https://mistshe.getron.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://mistshe.getron.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://svvit-vector.zecoko.in.net/verification.google
-id: auto-25228c1c404a0f48d2398e4b840bff3cf13714fc282dec6d105fd50855cf55df
-status: experimental
-description: Detects traffic or activity related to https://svvit-vector.zecoko.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://svvit-vector.zecoko.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://yxmptwzw.cutlog.in.net/verification.google
-id: auto-b75f19240e0bbeb0df421088007e36bc4a39d09a792f4ad840f4a0bd37de6407
-status: experimental
-description: Detects traffic or activity related to https://yxmptwzw.cutlog.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://yxmptwzw.cutlog.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://mon1to-frame.cutlog.in.net/verification.google
-id: auto-4f0456ae47b7493007f379c6915cd23e91571d2ecf5c92909373952cc4e998fd
-status: experimental
-description: Detects traffic or activity related to https://mon1to-frame.cutlog.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://mon1to-frame.cutlog.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://lummeshar4.cutlog.in.net/verification.google
-id: auto-9b5d24a5614fc2b256cc79b319e65414f04ac96b83ba9721feeabad07e593e03
-status: experimental
-description: Detects traffic or activity related to https://lummeshar4.cutlog.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://lummeshar4.cutlog.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://qpzv.onfloor.in.net/verification.google
-id: auto-bcad8f49ae68fd2b2681cca8a0301ac3b9d04c6328ebcbc39d3ab79f47b656ea
-status: experimental
-description: Detects traffic or activity related to https://qpzv.onfloor.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://qpzv.onfloor.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://rav3-plate.onfloor.in.net/verification.google
-id: auto-0d0fb65cad6748aebd0b292198921348b5b2b7d14fc728c6ae3ab8e33cdc87f4
-status: experimental
-description: Detects traffic or activity related to https://rav3-plate.onfloor.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://rav3-plate.onfloor.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://kk8z.onfloor.in.net/verification.google
-id: auto-a76952e6343286c0f16d00a78ca56c4d104b8e03f282a27de2fd0194d371eb94
-status: experimental
-description: Detects traffic or activity related to https://kk8z.onfloor.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://kk8z.onfloor.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://neo-go1d.uptrend.in.net/verification.google
-id: auto-280aed6643d9584496c3034d5ce36a9761c42b56e70c61934924859412e29922
-status: experimental
-description: Detects traffic or activity related to https://neo-go1d.uptrend.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://neo-go1d.uptrend.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://ultra-rnot1f.uptrend.in.net/verification.google
-id: auto-e0a92781da0056f185424287476324fffaa7b03365f1affcb57379163be0438b
-status: experimental
-description: Detects traffic or activity related to https://ultra-rnot1f.uptrend.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://ultra-rnot1f.uptrend.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://9ucjff.uptrend.in.net/verification.google
-id: auto-97847608385efa9d86323173801c3253de92152a8b7540d84331ccb3edd13dea
-status: experimental
-description: Detects traffic or activity related to https://9ucjff.uptrend.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://9ucjff.uptrend.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://bpuk6mpm.uptrend.in.net/verification.google
-id: auto-0c6069f9adcbc6a6b887893a60274966c5c919d923677e7735eefae015722f47
-status: experimental
-description: Detects traffic or activity related to https://bpuk6mpm.uptrend.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://bpuk6mpm.uptrend.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://tnocf.uptrend.in.net/verification.google
-id: auto-b87aedc50e101b6eb44afdc8d67fb40484d2f564e6fa2b3840c17bd716eeca4e
-status: experimental
-description: Detects traffic or activity related to https://tnocf.uptrend.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://tnocf.uptrend.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://defendtimber.uptrend.in.net/verification.google
-id: auto-719d96fd662a6e63e321971954063ce0e12c24313fa210d449622cd556a33f99
-status: experimental
-description: Detects traffic or activity related to https://defendtimber.uptrend.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://defendtimber.uptrend.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://covmarsh.onfloor.in.net/verification.google
-id: auto-ea6a98741896ab01e2e475ea08f123172cf728f06e1b814984e5009891160e94
-status: experimental
-description: Detects traffic or activity related to https://covmarsh.onfloor.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://covmarsh.onfloor.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://pj74vo.onfloor.in.net/verification.google
-id: auto-6da95fa9215f7b239365893d3fbf696c4b333c343a90bc4e931934a36468e60c
-status: experimental
-description: Detects traffic or activity related to https://pj74vo.onfloor.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://pj74vo.onfloor.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://hkwyagfe.onfloor.in.net/verification.google
-id: auto-cc93843fdbec387cf31577084479d8b0d8d716fc90e43ce214c5bb5ae90bb477
-status: experimental
-description: Detects traffic or activity related to https://hkwyagfe.onfloor.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://hkwyagfe.onfloor.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://riveyby.onfloor.in.net/verification.google
-id: auto-a7a4ca772f755f1eef4c4df8f389d0fa1b6369f562313882d6208e4d2c2ec64d
-status: experimental
-description: Detects traffic or activity related to https://riveyby.onfloor.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://riveyby.onfloor.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://cipmem.cutlog.in.net/verification.google
-id: auto-b1ed2c52c9d974cb1441687040b40aa7883e12daa7ef12d52d97991f1505a43c
-status: experimental
-description: Detects traffic or activity related to https://cipmem.cutlog.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://cipmem.cutlog.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://clearadap.cutlog.in.net/verification.google
-id: auto-57f0d98a172a529d624a54f2cf9bc155dc5677715658155e3cc2a88a6037db8c
-status: experimental
-description: Detects traffic or activity related to https://clearadap.cutlog.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://clearadap.cutlog.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://workeractive.cutlog.in.net/verification.google
-id: auto-a12bb51390137978ed4f5cb46bf834ea26cbd0e56d8d76b0c17ba88f870321ff
-status: experimental
-description: Detects traffic or activity related to https://workeractive.cutlog.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://workeractive.cutlog.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://4nch-route.cutlog.in.net/verification.google
-id: auto-30f9b3d94ab2d2df9759186389c7f5748f09f0cee39b877ea0459a6e9ffae04c
-status: experimental
-description: Detects traffic or activity related to https://4nch-route.cutlog.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://4nch-route.cutlog.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://sat-uplink-x.mondofresco.in.net/verification.google
-id: auto-044998eaeee3fede0187b20834c2db5adfd992b1c552a40dd174e87a7d2f6519
-status: experimental
-description: Detects traffic or activity related to https://sat-uplink-x.mondofresco.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://sat-uplink-x.mondofresco.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://gate-proxy-1.silberstern.in.net/verification.google
-id: auto-34d91463e81feecb758504680fd5d63c4c749dfd0713e2f82d413f9749d361e6
-status: experimental
-description: Detects traffic or activity related to https://gate-proxy-1.silberstern.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://gate-proxy-1.silberstern.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://data-sync-v2.silberstern.in.net/verification.google
-id: auto-fdb0824f5bc8ce7f417e165ca7d2d8c0398d7895b65f9852f1a887bf0f47d21c
-status: experimental
-description: Detects traffic or activity related to https://data-sync-v2.silberstern.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://data-sync-v2.silberstern.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://main-point-5.silberstern.in.net/verification.google
-id: auto-52abaf821bd0a9b1ab5cd91cca7866b95e714eb386207a41cba4e51cb3a611f7
-status: experimental
-description: Detects traffic or activity related to https://main-point-5.silberstern.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://main-point-5.silberstern.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://casual9-forge.stoppit.in.net/verification.google
-id: auto-8fbc44969b0b298b580ac9b65953ad40f058e662d9d4c8243f7911ac066a419f
-status: experimental
-description: Detects traffic or activity related to https://casual9-forge.stoppit.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://casual9-forge.stoppit.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://sol-tideen.stoppit.in.net/verification.google
-id: auto-96efd202d3ce6b2b5b1d6c83ac38a6c1bb9c4e131f34a8a3eba020578784b213
-status: experimental
-description: Detects traffic or activity related to https://sol-tideen.stoppit.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://sol-tideen.stoppit.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://rnanif-gate.stoppit.in.net/verification.google
-id: auto-49019db56a2f47472a89b5cabd159547a95ece5bbfbece9230efb9d61d4bc453
-status: experimental
-description: Detects traffic or activity related to https://rnanif-gate.stoppit.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://rnanif-gate.stoppit.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://txeqa.stoppit.in.net/verification.google
-id: auto-215e202813a5002948258ee0e4f1b7be04a27a6c04d2f802ab7a3f758c5f04ba
-status: experimental
-description: Detects traffic or activity related to https://txeqa.stoppit.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://txeqa.stoppit.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://al1g3-route.getron.in.net/verification.google
-id: auto-e61a450eb5d1bce724de6db34dbd6d299de9de11c472565b06c4a865651a03de
-status: experimental
-description: Detects traffic or activity related to https://al1g3-route.getron.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://al1g3-route.getron.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://corepayload.getron.in.net/verification.google
-id: auto-56409f05299bc28ca405cb27f42d639f01caa2de4742837fee5036648332c272
-status: experimental
-description: Detects traffic or activity related to https://corepayload.getron.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://corepayload.getron.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://neo-lo4d.getron.in.net/verification.google
-id: auto-dce66260483a97716ad7bec1a03ffa9acc315759ac3b139b0aad68b5ce4cb3e3
-status: experimental
-description: Detects traffic or activity related to https://neo-lo4d.getron.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://neo-lo4d.getron.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://crystalion.getron.in.net/verification.google
-id: auto-d626bb9986f249e59f76c743193463301026fbb0e9ff8951887e957d90fb4624
-status: experimental
-description: Detects traffic or activity related to https://crystalion.getron.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://crystalion.getron.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://dyncresten.alfabon.in.net/verification.google
-id: auto-a8e051c9c56b27f149642a36ffa03aaeb0f221e1b12e16ce30faab7087bbca2b
-status: experimental
-description: Detects traffic or activity related to https://dyncresten.alfabon.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://dyncresten.alfabon.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://matrixfjor.alfabon.in.net/verification.google
-id: auto-b42076a078908c4df13d042d4c97267d140979d5c719a34d9af0be44b7825c38
-status: experimental
-description: Detects traffic or activity related to https://matrixfjor.alfabon.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://matrixfjor.alfabon.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://urbashallo.alfabon.in.net/verification.google
-id: auto-02b98e74690038e2ac71577b9224b5696b341c8343b07af3d8266cfce26a2817
-status: experimental
-description: Detects traffic or activity related to https://urbashallo.alfabon.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://urbashallo.alfabon.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://1qo3nia.alfabon.in.net/verification.google
-id: auto-e80893834cef29e086909fea309e667f2391d2e026bdaf8845ed883fc056976b
-status: experimental
-description: Detects traffic or activity related to https://1qo3nia.alfabon.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://1qo3nia.alfabon.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://6zlibyx.zecoko.in.net/verification.google
-id: auto-4524274c063469ecb4c3abfc02f8f210e720a759f0ae7993374964d253504aa4
-status: experimental
-description: Detects traffic or activity related to https://6zlibyx.zecoko.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://6zlibyx.zecoko.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://modernstrea.zecoko.in.net/verification.google
-id: auto-ae12d4ab0c6d9319e37d1489b492f3d581d7914eedef16ec2b0e342ad8cd9c1e
-status: experimental
-description: Detects traffic or activity related to https://modernstrea.zecoko.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://modernstrea.zecoko.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://s77nqr.zecoko.in.net/verification.google
-id: auto-f834b4135e96d6128ca4beb9f99dfa5ef9f0cd41c10347ef21ed3c9747d35d0a
-status: experimental
-description: Detects traffic or activity related to https://s77nqr.zecoko.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://s77nqr.zecoko.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://decodecoo.zecoko.in.net/verification.google
-id: auto-db8fb34dbfc2430d2e31d548a1f111f98ac60f0a6f7db2b9c363a36075f8c9ee
-status: experimental
-description: Detects traffic or activity related to https://decodecoo.zecoko.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://decodecoo.zecoko.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://merfluxon8.farman.in.net/verification.google
-id: auto-56baa1815205caff03df90af9682850923c0a313446a0e60e6178d90b3613ab1
-status: experimental
-description: Detects traffic or activity related to https://merfluxon8.farman.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://merfluxon8.farman.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://ufv174r8.farman.in.net/verification.google
-id: auto-590e4fd0b73547f2ac1faa30ed5633282917157ba78f4b89009a412b46eb9dc5
-status: experimental
-description: Detects traffic or activity related to https://ufv174r8.farman.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://ufv174r8.farman.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://sub-5p3cime.farman.in.net/verification.google
-id: auto-98de9f5b30104def3d1b15b7f25677782676074f3a336e257c8d48fd46e357b1
-status: experimental
-description: Detects traffic or activity related to https://sub-5p3cime.farman.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://sub-5p3cime.farman.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://quor-valeis.farman.in.net/verification.google
-id: auto-ab8586f904969845396b309ba618a88b6805818d77ea854e740139560c4ce2fd
-status: experimental
-description: Detects traffic or activity related to https://quor-valeis.farman.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://quor-valeis.farman.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://point-entry-b.petitjardin.in.net/verification.google
-id: auto-f42785b2d931782b295e0cd8cbbb0e582e345b05b5587d6b94685ed11e95545b
-status: experimental
-description: Detects traffic or activity related to https://point-entry-b.petitjardin.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://point-entry-b.petitjardin.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://data-base-101.petitjardin.in.net/verification.google
-id: auto-5bc790bdecc6860bc3648c80384cb19e06d19d0e1b6754d3691b6fc7921b0c26
-status: experimental
-description: Detects traffic or activity related to https://data-base-101.petitjardin.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://data-base-101.petitjardin.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://base-infra-v3.petitjardin.in.net/verification.google
-id: auto-ee38e8b7b2ff6d6d341d4afeda1e57de53bab67011a9a5db6d82e0f41b67026f
-status: experimental
-description: Detects traffic or activity related to https://base-infra-v3.petitjardin.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://base-infra-v3.petitjardin.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://local-hub-01.ondeviva.in.net/verification.google
-id: auto-f5ebed98f6b4b93a9a3854c6dfa6d1a48468baa843dd2a68487b49a3b8979bcf
-status: experimental
-description: Detects traffic or activity related to https://local-hub-01.ondeviva.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://local-hub-01.ondeviva.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://staff-portal-x.ondeviva.in.net/verification.google
-id: auto-803580c725d24bba48f9e6fb743429686f0e2090dcbdb8114f5d05933199fc99
-status: experimental
-description: Detects traffic or activity related to https://staff-portal-x.ondeviva.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://staff-portal-x.ondeviva.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://work-flow-99.ondeviva.in.net/verification.google
-id: auto-3fb76f34d711c01c6b0a33cc9901ce88ad553a9a15caa2243b3ba634b1dac048
-status: experimental
-description: Detects traffic or activity related to https://work-flow-99.ondeviva.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://work-flow-99.ondeviva.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://office-link-z.ondeviva.in.net/verification.google
-id: auto-61e81b06bcad22830bf7b9d3b5c0e020aad29993d6628795224df58fd46240db
-status: experimental
-description: Detects traffic or activity related to https://office-link-z.ondeviva.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://office-link-z.ondeviva.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://internal-dns-v.schnellkraft.in.net/verification.google
-id: auto-b20dc49b07e62820ce75364914ced88546dfbeee38aa2715b433e273db8e372b
-status: experimental
-description: Detects traffic or activity related to https://internal-dns-v.schnellkraft.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://internal-dns-v.schnellkraft.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://cache-dist-77.schnellkraft.in.net/verification.google
-id: auto-e94181188019b80d89d02f471a59dff3e454e1d2c65196b09dbf192aae836037
-status: experimental
-description: Detects traffic or activity related to https://cache-dist-77.schnellkraft.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://cache-dist-77.schnellkraft.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://backend-core-v.schnellkraft.in.net/verification.google
-id: auto-065ae03f3421f374299acfbba0cd1b946014c90fe681a2ac0212585d93d1b956
-status: experimental
-description: Detects traffic or activity related to https://backend-core-v.schnellkraft.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://backend-core-v.schnellkraft.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://remote-access-0.schnellkraft.in.net/verification.google
-id: auto-9937ea8ddda323e4da040011b718beeb1340d87841cbf33acdd9c154ee612f18
-status: experimental
-description: Detects traffic or activity related to https://remote-access-0.schnellkraft.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://remote-access-0.schnellkraft.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://app-data-sync.bleusoleil.in.net/verification.google
-id: auto-24ca57c886b800233bc2f63644f8921b4b8b09e4d88f6349fdfdce68e3fffd0f
-status: experimental
-description: Detects traffic or activity related to https://app-data-sync.bleusoleil.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://app-data-sync.bleusoleil.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://web-proxy-12.bleusoleil.in.net/verification.google
-id: auto-bfb8d3ca878aec016559dee602554acf1a8ac1ce67978a5790b77ba4b86847b9
-status: experimental
-description: Detects traffic or activity related to https://web-proxy-12.bleusoleil.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://web-proxy-12.bleusoleil.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://srv-cluster-9.bleusoleil.in.net/verification.google
-id: auto-6bcc5af862f53cd8ce8b291b94ba21865d0e89d3a23953f2d501b0e0256f5a26
-status: experimental
-description: Detects traffic or activity related to https://srv-cluster-9.bleusoleil.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://srv-cluster-9.bleusoleil.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://cloud-drive-x.bleusoleil.in.net/verification.google
-id: auto-9ce5c721f17022cc0c33213da2fd7331df979e98a5a30eb46ecd8703503d343a
-status: experimental
-description: Detects traffic or activity related to https://cloud-drive-x.bleusoleil.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://cloud-drive-x.bleusoleil.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://metrics-node.altamontagna.in.net/verification.google
-id: auto-b5176da950efb003939dd503dfb3a9646f796848236af1dd7a3fc2cbbfe13a82
-status: experimental
-description: Detects traffic or activity related to https://metrics-node.altamontagna.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://metrics-node.altamontagna.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://dev-test-hub.altamontagna.in.net/verification.google
-id: auto-464c174f07183abd3f7c414899d3c380b6310a7a57e6504cfeab03e3676b2096
-status: experimental
-description: Detects traffic or activity related to https://dev-test-hub.altamontagna.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://dev-test-hub.altamontagna.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://api-v1-storage.altamontagna.in.net/verification.google
-id: auto-be63042e3702d60f7d7eb23d4ec3d9dad1c5068d80b6e7440cc6fd3fd27a9ade
-status: experimental
-description: Detects traffic or activity related to https://api-v1-storage.altamontagna.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://api-v1-storage.altamontagna.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://cdn-static-3.altamontagna.in.net/verification.google
-id: auto-19323875f258a0eefa07f8a4d66518f4a99d3910f7364d96940a90206998f002
-status: experimental
-description: Detects traffic or activity related to https://cdn-static-3.altamontagna.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://cdn-static-3.altamontagna.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://main-point-z.grandemuro.in.net/verification.google
-id: auto-d4f23b9eeb5a1f607c4fce9501756bb7df5604b876f429c4611dbc5435ed01ea
-status: experimental
-description: Detects traffic or activity related to https://main-point-z.grandemuro.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://main-point-z.grandemuro.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://data-sync-00.grandemuro.in.net/verification.google
-id: auto-c47fee2c221945befd29933e46208e0f0a686b417836331f08b59eec7515003c
-status: experimental
-description: Detects traffic or activity related to https://data-sync-00.grandemuro.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://data-sync-00.grandemuro.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://gate-proxy-7.grandemuro.in.net/verification.google
-id: auto-a326872bcd773ad6cb1df8bb2ee1bb9d42117a4523272dd96633fb971b77cc19
-status: experimental
-description: Detects traffic or activity related to https://gate-proxy-7.grandemuro.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://gate-proxy-7.grandemuro.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://infra-web-v4.grandemuro.in.net/verification.google
-id: auto-5fe7de5d89288e5235e52cc840e871a4d59f92a18f8c3867b586049aaca16578
-status: experimental
-description: Detects traffic or activity related to https://infra-web-v4.grandemuro.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://infra-web-v4.grandemuro.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://sat-uplink-2.silenziovia.in.net/verification.google
-id: auto-7433b8fcc0d641a0a0f2226937dfb0b94850fd6156f8fc0fe9c0076d0f28c789
-status: experimental
-description: Detects traffic or activity related to https://sat-uplink-2.silenziovia.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://sat-uplink-2.silenziovia.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://rock-core-99.silenziovia.in.net/verification.google
-id: auto-34f09fb2e9bdd9955dcd51f1d843de3c0ec58701c5ebd0aa31765757c79ef9d3
-status: experimental
-description: Detects traffic or activity related to https://rock-core-99.silenziovia.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://rock-core-99.silenziovia.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://steel-base-1.silenziovia.in.net/verification.google
-id: auto-c9e18236990b837b8e09917ae6dedfbe84f8f265405b611c770099c0b23de453
-status: experimental
-description: Detects traffic or activity related to https://steel-base-1.silenziovia.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://steel-base-1.silenziovia.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://moon-orbit-v.silenziovia.in.net/verification.google
-id: auto-1a5786aead4b3d8387cc2424936afc5c80adad5c4119b1e84c83fdabc134b439
-status: experimental
-description: Detects traffic or activity related to https://moon-orbit-v.silenziovia.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://moon-orbit-v.silenziovia.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://open-space-8.astracorp.in.net/verification.google
-id: auto-56af87d50b979d7d40b665fc8adb2ebdd307d53db36d93e1a1bbb53a5e1a6b00
-status: experimental
-description: Detects traffic or activity related to https://open-space-8.astracorp.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://open-space-8.astracorp.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://vast-field-x.astracorp.in.net/verification.google
-id: auto-7783f2cf6a1274f9fc893dc83931b72fee16cee46b88778ba975cdabee8240c1
-status: experimental
-description: Detects traffic or activity related to https://vast-field-x.astracorp.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://vast-field-x.astracorp.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://area-zone-33.astracorp.in.net/verification.google
-id: auto-2a9b224757d5bdad06dae0b5eca4bbd9628b9fed4683856453c63153f3f5d02d
-status: experimental
-description: Detects traffic or activity related to https://area-zone-33.astracorp.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://area-zone-33.astracorp.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://outer-rim-v2.astracorp.in.net/verification.google
-id: auto-473c4b6021d1ec3a4751559d1ec6084dd5355e9125e7702b41cc1f233a8f0d7d
-status: experimental
-description: Detects traffic or activity related to https://outer-rim-v2.astracorp.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://outer-rim-v2.astracorp.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://vision-sync-9.petitfoyer.in.net/verification.google
-id: auto-33edd8e9a2ea989463885eb185d9197fcf53336584e1a473879e363efc91e071
-status: experimental
-description: Detects traffic or activity related to https://vision-sync-9.petitfoyer.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://vision-sync-9.petitfoyer.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://scan-point-05.petitfoyer.in.net/verification.google
-id: auto-f3cdb5376bd0462732ef581f025e6bc678e633a40ea565504d72ac01642dd34d
-status: experimental
-description: Detects traffic or activity related to https://scan-point-05.petitfoyer.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://scan-point-05.petitfoyer.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://light-bridge-7.petitfoyer.in.net/verification.google
-id: auto-ec8dac8d12c30748cfc1a67bdc7a1b75cb9297aad1ba92e6ce6d4ee178a5619a
-status: experimental
-description: Detects traffic or activity related to https://light-bridge-7.petitfoyer.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://light-bridge-7.petitfoyer.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://dark-room-v3.petitfoyer.in.net/verification.google
-id: auto-76ff0ac5e1c32a4716c4c4af4a82c223bd18b95e7f395a9c118e348d529727d4
-status: experimental
-description: Detects traffic or activity related to https://dark-room-v3.petitfoyer.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://dark-room-v3.petitfoyer.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://ghost-node-z.kaltesystem.in.net/verification.google
-id: auto-d37e533328bfb7174cd8cb37482f201b83e296b6617409cdf25da9dc135d16dd
-status: experimental
-description: Detects traffic or activity related to https://ghost-node-z.kaltesystem.in.net/verification.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://ghost-node-z.kaltesystem.in.net/verification.google*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "bc0caae0ac07a4d7cc1804e950cbd2e991782a098e06ad564dbddd9c3e6b6526"
 id: auto-32bbd3c2d4ffdb2c8038b8d61807062b2670b1198023c3a1eda3b0bed887befe
@@ -67192,134 +64744,6 @@ detection:
   selection:
     hashes:
       - '* "a0c4716fe403769ce0df491e2a3436139cedad97fe08caaebdddb402785d5ef5"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "2ef28834f30d3fd881f8c3004ab67c01e2ec283c03d57e173e43a7b30d52f97b"
-id: auto-ad6a0f49aec9bbb8eafb50ff46e95608e7a9ea67b28d22cd8e66bb89dbcfcbdd
-status: experimental
-description: Detects traffic or activity related to  "2ef28834f30d3fd881f8c3004ab67c01e2ec283c03d57e173e43a7b30d52f97b" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "2ef28834f30d3fd881f8c3004ab67c01e2ec283c03d57e173e43a7b30d52f97b"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "4be0aa46d7fc6deab04f210881e4f9ce9914fd3ca407f7f2f6782b6ee0e628fe"
-id: auto-0f6f58138c1b14a453c396eb188846ecfc223b04a5f5a7ae6a3ec8dcf63f3dd2
-status: experimental
-description: Detects traffic or activity related to  "4be0aa46d7fc6deab04f210881e4f9ce9914fd3ca407f7f2f6782b6ee0e628fe" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "4be0aa46d7fc6deab04f210881e4f9ce9914fd3ca407f7f2f6782b6ee0e628fe"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "06403d557b2c9521627ed5550620ae37a61229b1aa306a43f98d99aac183cabe"
-id: auto-a5497ec3666cac2b83b896f87618a6fb5b70d1b0c14c20850a8957d053956611
-status: experimental
-description: Detects traffic or activity related to  "06403d557b2c9521627ed5550620ae37a61229b1aa306a43f98d99aac183cabe" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "06403d557b2c9521627ed5550620ae37a61229b1aa306a43f98d99aac183cabe"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "a61a712091bac8a431c78a3fa827b25b123bc4f64542a68167178b0f665b7687"
-id: auto-bdda683d795cca2ee06fc9ff8a951994f7e438975334734235c23ff782b0c313
-status: experimental
-description: Detects traffic or activity related to  "a61a712091bac8a431c78a3fa827b25b123bc4f64542a68167178b0f665b7687" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "a61a712091bac8a431c78a3fa827b25b123bc4f64542a68167178b0f665b7687"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "28c5a1644c42a0ce35b4211edfd849a9a29282278a222ab2b64a1d7537e17eb4"
-id: auto-3b14512194df05370b2dd5a42beb40ba8092c1095e70e98f8c0f3ad74aa12933
-status: experimental
-description: Detects traffic or activity related to  "28c5a1644c42a0ce35b4211edfd849a9a29282278a222ab2b64a1d7537e17eb4" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "28c5a1644c42a0ce35b4211edfd849a9a29282278a222ab2b64a1d7537e17eb4"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "9e714ba3e2f8fe053550bb0234fc7e3fa64ce41e601bff83f0f47822245312fc"
-id: auto-9d8965cf1db1293783981f67f919b7b39f24366b9b4be2021dcfb66fa6643363
-status: experimental
-description: Detects traffic or activity related to  "9e714ba3e2f8fe053550bb0234fc7e3fa64ce41e601bff83f0f47822245312fc" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "9e714ba3e2f8fe053550bb0234fc7e3fa64ce41e601bff83f0f47822245312fc"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "286c72564fa71e052d37c12f4a327d0e7de231ddfd21bf596dd15a3c13992de8"
-id: auto-bae4c6cf8a25692a7bcba08c977838b6a660e4c62c3dae13a88804c6fbc59df5
-status: experimental
-description: Detects traffic or activity related to  "286c72564fa71e052d37c12f4a327d0e7de231ddfd21bf596dd15a3c13992de8" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "286c72564fa71e052d37c12f4a327d0e7de231ddfd21bf596dd15a3c13992de8"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "9be927e021dd63507b3d8259536f8ed3962df709c3b45fa5853187bb9fc12d21"
-id: auto-167b9e0064e3a76854afcad7b32f5283ef6109e72fcd386440858b21ff7d1dfe
-status: experimental
-description: Detects traffic or activity related to  "9be927e021dd63507b3d8259536f8ed3962df709c3b45fa5853187bb9fc12d21" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "9be927e021dd63507b3d8259536f8ed3962df709c3b45fa5853187bb9fc12d21"*'
   condition: selection
 level: high
 tags:

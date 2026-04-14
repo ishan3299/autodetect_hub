@@ -654,6 +654,22 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
+title: Detect Activity to Known Malicious Indicator -  "32cddec84197367a6363d2c6cdbb448cc22b8497e88178c748213ee7469f0681"
+id: auto-dc769807a2c337b8c6090a3651ced710199082d2626101bf9d805cf995a902f6
+status: experimental
+description: Detects traffic or activity related to  "32cddec84197367a6363d2c6cdbb448cc22b8497e88178c748213ee7469f0681" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "32cddec84197367a6363d2c6cdbb448cc22b8497e88178c748213ee7469f0681"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
 title: Detect Activity to Known Malicious Indicator -  "72bb2e01ca126f936d500bb3bc05c575e6295a37806863cb556888b2aee8c40f"
 id: auto-df11904b067604f57d5daf044735eb8e11badc3982ad9269f27ae6206b2ddf66
 status: experimental
@@ -712,38 +728,6 @@ detection:
   selection:
     hashes:
       - '* "025d683b3ebcfc6ffd60c825d2ea6b94f337e9af9c2ba0d6cbc59277246bbe05"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "d380bd25e07229cf11d5bd93835bcb2dd8d981313d45845332e244dbf01f3367"
-id: auto-92efcbad32b1421e083892fb0914fbb7d43781fdba2df957b693e3ab09008aa3
-status: experimental
-description: Detects traffic or activity related to  "d380bd25e07229cf11d5bd93835bcb2dd8d981313d45845332e244dbf01f3367" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "d380bd25e07229cf11d5bd93835bcb2dd8d981313d45845332e244dbf01f3367"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "ddcd21cbbefbe87db9bf2d1560b3d116015ad0ca4d06a8ee2a6692e2bcc25329"
-id: auto-08df9b10f102362f3d7145443d90445f4036077400a0f2370c8e1cd1c7ed3c15
-status: experimental
-description: Detects traffic or activity related to  "ddcd21cbbefbe87db9bf2d1560b3d116015ad0ca4d06a8ee2a6692e2bcc25329" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "ddcd21cbbefbe87db9bf2d1560b3d116015ad0ca4d06a8ee2a6692e2bcc25329"*'
   condition: selection
 level: high
 tags:
