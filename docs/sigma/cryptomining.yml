@@ -638,22 +638,6 @@ tags:
   - attack.t1071
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - https://cc-a89.pages.dev/static/apk/duanj.me.apk
-id: auto-07afd167087d187b51e18e24b0a1653074f39431967128820934af704efe3ea6
-status: experimental
-description: Detects traffic or activity related to https://cc-a89.pages.dev/static/apk/duanj.me.apk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://cc-a89.pages.dev/static/apk/duanj.me.apk*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
 title: Detect Activity to Known Malicious Indicator -  "32cddec84197367a6363d2c6cdbb448cc22b8497e88178c748213ee7469f0681"
 id: auto-dc769807a2c337b8c6090a3651ced710199082d2626101bf9d805cf995a902f6
 status: experimental
@@ -664,70 +648,6 @@ detection:
   selection:
     hashes:
       - '* "32cddec84197367a6363d2c6cdbb448cc22b8497e88178c748213ee7469f0681"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "72bb2e01ca126f936d500bb3bc05c575e6295a37806863cb556888b2aee8c40f"
-id: auto-df11904b067604f57d5daf044735eb8e11badc3982ad9269f27ae6206b2ddf66
-status: experimental
-description: Detects traffic or activity related to  "72bb2e01ca126f936d500bb3bc05c575e6295a37806863cb556888b2aee8c40f" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "72bb2e01ca126f936d500bb3bc05c575e6295a37806863cb556888b2aee8c40f"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "35e59b5009e69db255faf59c842918af9d24a41dff0179dba8b00cb7895bde0f"
-id: auto-dee9205f485af3b9cf9f3e40034247d919a127da45da4fecaab2142e6393115c
-status: experimental
-description: Detects traffic or activity related to  "35e59b5009e69db255faf59c842918af9d24a41dff0179dba8b00cb7895bde0f" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "35e59b5009e69db255faf59c842918af9d24a41dff0179dba8b00cb7895bde0f"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "44d2e656cd3641bc336724fef0692528b309a189fb5ab18861d0d498e5164437"
-id: auto-610dd034f651d692582f8df982f9f4c4948a4f4895d091884c56389d155864da
-status: experimental
-description: Detects traffic or activity related to  "44d2e656cd3641bc336724fef0692528b309a189fb5ab18861d0d498e5164437" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "44d2e656cd3641bc336724fef0692528b309a189fb5ab18861d0d498e5164437"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "025d683b3ebcfc6ffd60c825d2ea6b94f337e9af9c2ba0d6cbc59277246bbe05"
-id: auto-abad97199ebdb6a317ec516ed5a561fe75659dea9e5885acf64bbdff6541f30c
-status: experimental
-description: Detects traffic or activity related to  "025d683b3ebcfc6ffd60c825d2ea6b94f337e9af9c2ba0d6cbc59277246bbe05" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "025d683b3ebcfc6ffd60c825d2ea6b94f337e9af9c2ba0d6cbc59277246bbe05"*'
   condition: selection
 level: high
 tags:

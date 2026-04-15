@@ -1,3 +1,51 @@
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/8424601462/PU9pBUI.exe
+id: auto-1d80ba2322650939b5c31a779dfc3b0374e4d300b2aadfa87844678aac1eb934
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/8424601462/PU9pBUI.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/8424601462/PU9pBUI.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/6730435251/fyXPxPD.exe
+id: auto-12cda6ca2283600bad1cce54598c3a857c37994ede4baa818ad3bcd1c91ade5f
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/6730435251/fyXPxPD.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/6730435251/fyXPxPD.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/7640890992/KU5Ujka.exe
+id: auto-f8499f2e31e1ebf02c02970ff8ecc7441c2530761b5cd4ec4d61454b864cd10c
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/7640890992/KU5Ujka.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/7640890992/KU5Ujka.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://62.60.226.159/znk.exe
 id: auto-66a52a38b0b7ce09272956ef5dec60a34f72831422c19a0cc3586bb8f343940d
 status: experimental
@@ -3256,70 +3304,6 @@ detection:
   selection:
     c-uri:
       - '*http://158.94.208.7/files/7782139129/S6xWuZ1.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/7782139129/Y9lcbSi.exe
-id: auto-af4c775e25192d54a6e5620db5ccd196fc2460a9218701f538f80f27a6c61a95
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.7/files/7782139129/Y9lcbSi.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.7/files/7782139129/Y9lcbSi.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/7460962853/qZGuNez.exe
-id: auto-46ae73c201661e1602c6b6cbb612be9d1ea045574e5df13298d3b77e4fc3281f
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.7/files/7460962853/qZGuNez.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.7/files/7460962853/qZGuNez.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://api.wewpwsw.su/gate.exe
-id: auto-8f599d53285aaf378c8a556a0c2d161080efe81674a55bc082a3a3add25adb3d
-status: experimental
-description: Detects traffic or activity related to https://api.wewpwsw.su/gate.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://api.wewpwsw.su/gate.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/7782139129/7GKCAjW.exe
-id: auto-cd41323f12a308189fde6aa8ad374f6dda86183c6c2c7d395e09bd032c32c5d4
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.7/files/7782139129/7GKCAjW.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.7/files/7782139129/7GKCAjW.exe*'
   condition: selection
 level: high
 tags:
