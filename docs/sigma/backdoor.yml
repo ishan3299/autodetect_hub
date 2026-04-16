@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - https://ersesytuhbo.it.com/Dokumen-perusahaan.exe
+id: auto-dcd8bcb684eddca65f704d2e02a38a7e444cb79239a71464a9a3c4a39a75dbd2
+status: experimental
+description: Detects traffic or activity related to https://ersesytuhbo.it.com/Dokumen-perusahaan.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://ersesytuhbo.it.com/Dokumen-perusahaan.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1543
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator -  "4fa631a1f53f2a220595072e1d6bc5c963a70be5ff9fd7cf2c47245e6f7d715b"
 id: auto-98ba6e758a8d033add1f34ffeb8b082ee2bd0ed5e8a348ad86d8f6b8619eb486
 status: experimental

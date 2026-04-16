@@ -1,3 +1,35 @@
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/7048186296/ADohoJx.exe
+id: auto-f26b697b9430a999c19046d88fb89274277a3cbe51a95be81fa7e11ed4a964a5
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/7048186296/ADohoJx.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/7048186296/ADohoJx.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://196.199.55.11/XKcNhY4G8rcYpb.sh
+id: auto-b10d571e06d0c13ca21bfcf57a9297e3573f08272c510af3414feb40121bb487
+status: experimental
+description: Detects traffic or activity related to http://196.199.55.11/XKcNhY4G8rcYpb.sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://196.199.55.11/XKcNhY4G8rcYpb.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/8424601462/PU9pBUI.exe
 id: auto-1d80ba2322650939b5c31a779dfc3b0374e4d300b2aadfa87844678aac1eb934
 status: experimental
@@ -3260,52 +3292,4 @@ detection:
 level: high
 tags:
   - attack.t1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/7782139129/VGAGvKd.msi
-id: auto-16fdfe6e63c516e99b5308f7dd02a5850da63e532f3d3f72e6004798914e755f
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.7/files/7782139129/VGAGvKd.msi which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.7/files/7782139129/VGAGvKd.msi*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/8283992944/RriJPMz.exe
-id: auto-db9d954f6ea5ddc7aafcea74c30f403d7144a413aad5b0ad9ea6da0b14be7e00
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.7/files/8283992944/RriJPMz.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.7/files/8283992944/RriJPMz.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/7782139129/S6xWuZ1.exe
-id: auto-8f81ebd598eb6d88ce2bf3dc66b2e14d6d9d2bd02d22c3cdfcb11fccdcd942b4
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.7/files/7782139129/S6xWuZ1.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.7/files/7782139129/S6xWuZ1.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
   - source.URLhaus
