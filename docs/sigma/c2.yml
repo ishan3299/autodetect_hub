@@ -1,3 +1,35 @@
+title: Detect Activity to Known Malicious Indicator - http://62.60.226.159/spd.exe
+id: auto-8ded8c10873ca875b250a4f316683ecaf3b91880ee270e9d4ca1f4145dc270d5
+status: experimental
+description: Detects traffic or activity related to http://62.60.226.159/spd.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://62.60.226.159/spd.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://62.60.226.159/nk.exe
+id: auto-6caa340d9db562e3acf6c7e1ca2ad427b84762358ac36aa71b4d4a02b29aed0c
+status: experimental
+description: Detects traffic or activity related to http://62.60.226.159/nk.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://62.60.226.159/nk.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/7048186296/ADohoJx.exe
 id: auto-f26b697b9430a999c19046d88fb89274277a3cbe51a95be81fa7e11ed4a964a5
 status: experimental
@@ -3246,50 +3278,18 @@ tags:
   - attack.T1071
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - http://188.137.230.88/1.exe
-id: auto-bde1adb496a4fc038ac40aa176cba088c095dda40419fb3caccc7b510de8163b
+title: Detect Activity to Known Malicious Indicator -  "695d60736098ad4b725d8aa4131790b89ccc716cbabce3e84dfad0bb267e7a7e"
+id: auto-2298fcaa74464c52b62a6ec04c5a9816ee154265ef5e8a57f0d5301107a7e57c
 status: experimental
-description: Detects traffic or activity related to http://188.137.230.88/1.exe which is a known malicious url.
+description: Detects traffic or activity related to  "695d60736098ad4b725d8aa4131790b89ccc716cbabce3e84dfad0bb267e7a7e" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://188.137.230.88/1.exe*'
+    hashes:
+      - '* "695d60736098ad4b725d8aa4131790b89ccc716cbabce3e84dfad0bb267e7a7e"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/8574065846/HPlEReH.exe
-id: auto-3697c79bca20e93fdddb276b0d08cffa427cc065325738432d3ca4e4f932a0c1
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.7/files/8574065846/HPlEReH.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.7/files/8574065846/HPlEReH.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://nelark.icu/xftaswx/res/get-command.php
-id: auto-ab6f865a3b0e7e6cc07ce1a99b0eab277089d8309df688c8a90dbb32d7216c7a
-status: experimental
-description: Detects traffic or activity related to https://nelark.icu/xftaswx/res/get-command.php which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://nelark.icu/xftaswx/res/get-command.php*'
-  condition: selection
-level: high
-tags:
-  - attack.t1071
-  - source.URLhaus
+  - source.MalwareBazaar
