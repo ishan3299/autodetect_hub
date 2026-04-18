@@ -1,3 +1,147 @@
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/8717422379/HLSs5Qb.exe
+id: auto-50e74c1678b88b54517b12cd3f5b9549fc233b70e4e0989f4b5a9c3a44a3ffa7
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/8717422379/HLSs5Qb.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/8717422379/HLSs5Qb.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/8356237953/JDgf7L9.exe
+id: auto-db07fad2667630c2ba3953591d5ed49c77680f4387a121c0231c946f42eb800b
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/8356237953/JDgf7L9.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/8356237953/JDgf7L9.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://91.92.241.242/ycl
+id: auto-779de28d803f770694efc3b95445e94c01576b04cccd42317b3a51ed66a0902e
+status: experimental
+description: Detects traffic or activity related to http://91.92.241.242/ycl which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://91.92.241.242/ycl*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://91.92.241.242/service
+id: auto-6bac3c6d797fda7a534601c7cb3263116f1cd489c4eb5b739d83af198b9f3893
+status: experimental
+description: Detects traffic or activity related to http://91.92.241.242/service which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://91.92.241.242/service*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://91.92.241.242/update
+id: auto-910c6dfabed108471780993476c4fe715cfbdb1fc96eca51a75010536f58d319
+status: experimental
+description: Detects traffic or activity related to http://91.92.241.242/update which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://91.92.241.242/update*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/8757285646/4hzDW0t.exe
+id: auto-0a3e718514b4e05c4f0a1f47576a3bdc94234f29245a27f9972c179a0ea7d76f
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/8757285646/4hzDW0t.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/8757285646/4hzDW0t.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/6493278841/kglQns8.exe
+id: auto-ba6dce683fbab3d9388d2008f93cd158b694b6698fec89d83d5aefd153054886
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/6493278841/kglQns8.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/6493278841/kglQns8.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/oblivora/random.exe
+id: auto-475e50a8d24f37a19a36e561f6a6d505a5ad2789d292e30e02235a5d6a0cfb43
+status: experimental
+description: Detects traffic or activity related to http://85.239.147.6/files/oblivora/random.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.147.6/files/oblivora/random.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://thecowardlydog.com/courageme/mailbox-agent.exe
+id: auto-c23a0416f415247f09eaf9aaaab08486c4c41829416d55d8f1c5e4679bf6d676
+status: experimental
+description: Detects traffic or activity related to https://thecowardlydog.com/courageme/mailbox-agent.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://thecowardlydog.com/courageme/mailbox-agent.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://62.60.226.159/spd.exe
 id: auto-8ded8c10873ca875b250a4f316683ecaf3b91880ee270e9d4ca1f4145dc270d5
 status: experimental
@@ -3224,54 +3368,6 @@ detection:
   selection:
     c-uri:
       - '*http://158.94.208.7/files/8705834433/8njNDcy.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://188.137.232.95/1.exe
-id: auto-65a9b5b1cf2a241bbcc1dcf83ee0c938de33347965a6d604b7c794b789623c77
-status: experimental
-description: Detects traffic or activity related to http://188.137.232.95/1.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://188.137.232.95/1.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/5657278942/wTC5hgy.msi
-id: auto-e0fb2b7bd4dc5ae9e294043472df4242c68c4cef9fb2a20aa68f747f6c84e6f1
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.7/files/5657278942/wTC5hgy.msi which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.7/files/5657278942/wTC5hgy.msi*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/7845402472/eL1aVtT.exe
-id: auto-ed3cd7a3f0345d30a8d1ef72d41b87c3b515f0f02e5b18ad717837da42216de1
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.7/files/7845402472/eL1aVtT.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.7/files/7845402472/eL1aVtT.exe*'
   condition: selection
 level: high
 tags:

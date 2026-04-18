@@ -13,3 +13,35 @@ level: high
 tags:
   - attack.t1543
   - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator -  "3c1ae82572bbf90ed03cec446a991ec34765c68e9cb0c64c896613fe4c1df2f6"
+id: auto-5229d13b0d74cba9a80af47cce8a0e12edfc24883ef2f1605124d97384608d16
+status: experimental
+description: Detects traffic or activity related to  "3c1ae82572bbf90ed03cec446a991ec34765c68e9cb0c64c896613fe4c1df2f6" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "3c1ae82572bbf90ed03cec446a991ec34765c68e9cb0c64c896613fe4c1df2f6"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "3bd2ce406aa9c3105c45d9234c01412b75e9767cd5e1fa052b585ae4f96c9862"
+id: auto-f936a27d45b3e4a384ef1d5ade3e596dbb0973667a361b1f26df5f4f78f3b07b
+status: experimental
+description: Detects traffic or activity related to  "3bd2ce406aa9c3105c45d9234c01412b75e9767cd5e1fa052b585ae4f96c9862" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "3bd2ce406aa9c3105c45d9234c01412b75e9767cd5e1fa052b585ae4f96c9862"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
