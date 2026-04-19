@@ -701,19 +701,3 @@ level: high
 tags:
   - attack.T1071
   - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "905349922d0b68352ec3302b3ba1c93d4ae6ab8bd11d5d9f6570468fe81eb061"
-id: auto-85aa266f95a6f6c45cd190533a3826a54f8e747ea54e85559ffad4cc7463e91d
-status: experimental
-description: Detects traffic or activity related to  "905349922d0b68352ec3302b3ba1c93d4ae6ab8bd11d5d9f6570468fe81eb061" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "905349922d0b68352ec3302b3ba1c93d4ae6ab8bd11d5d9f6570468fe81eb061"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
