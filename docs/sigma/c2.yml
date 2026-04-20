@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - http://62.60.226.159/np.exe
+id: auto-14b63a7bc1069443189d5f016e2d767f73546521a77769a1dbb7cfd1d81e54e9
+status: experimental
+description: Detects traffic or activity related to http://62.60.226.159/np.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://62.60.226.159/np.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/8717422379/HLSs5Qb.exe
 id: auto-50e74c1678b88b54517b12cd3f5b9549fc233b70e4e0989f4b5a9c3a44a3ffa7
 status: experimental
@@ -3320,22 +3336,6 @@ detection:
   selection:
     c-uri:
       - '*http://158.94.208.7/files/8717422379/VMa1dJb.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.7/files/7776573655/uVFeyUy.exe
-id: auto-5a85048ac4439f6ce62ecb3557cb7c74fd8eb9db1869804991ff75baaf5a581a
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.7/files/7776573655/uVFeyUy.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.7/files/7776573655/uVFeyUy.exe*'
   condition: selection
 level: high
 tags:
