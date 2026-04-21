@@ -669,3 +669,19 @@ level: high
 tags:
   - attack.t1496
   - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator -  "a6f128ead9c40a8737d5d03496763087da7663642b969fb2c893f061d03010c9"
+id: auto-fc0cd1630fc9eaabb8e71159523071fa6bf6d1ec324a7cb1a943117bca3842a9
+status: experimental
+description: Detects traffic or activity related to  "a6f128ead9c40a8737d5d03496763087da7663642b969fb2c893f061d03010c9" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "a6f128ead9c40a8737d5d03496763087da7663642b969fb2c893f061d03010c9"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
