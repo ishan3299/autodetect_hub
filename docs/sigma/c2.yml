@@ -1,66 +1,34 @@
-title: Detect Activity to Known Malicious Indicator -  "261a8983d690ee71c37ea2433b59d3070665f9f156e33ed07be9b8baaf32eeb2"
-id: auto-309433590e95ca498e94ddc7e7701db0c832bfd55e412dd44d38761dfc368475
+title: Detect Activity to Known Malicious Indicator - http://indexsearchfindresult.com/check.php
+id: auto-b2ea6925d9a31a0f34db227db29c169a0aad975326b064625ab2ac6e28195be6
 status: experimental
-description: Detects traffic or activity related to  "261a8983d690ee71c37ea2433b59d3070665f9f156e33ed07be9b8baaf32eeb2" which is a known malicious hash.
+description: Detects traffic or activity related to http://indexsearchfindresult.com/check.php which is a known malicious url.
 logsource:
-  category: process_creation
+  category: proxy
 detection:
   selection:
-    hashes:
-      - '* "261a8983d690ee71c37ea2433b59d3070665f9f156e33ed07be9b8baaf32eeb2"*'
+    c-uri:
+      - '*http://indexsearchfindresult.com/check.php*'
   condition: selection
 level: high
 tags:
-  - attack.T1071
-  - source.MalwareBazaar
+  - attack.t1071
+  - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator -  "0941292775dbab5f96b5236138b3137313a06d1621a874a6989cc89e35fc307d"
-id: auto-e05a5b50da046478c91b3c525373cea2c1e013eed4317855bb352f9ba6110b40
+title: Detect Activity to Known Malicious Indicator - http://62.60.226.159/bot_x64.exe
+id: auto-54a3df828ef9a857cdad419b3abc7795cfd950be82cf4a253b905961179df409
 status: experimental
-description: Detects traffic or activity related to  "0941292775dbab5f96b5236138b3137313a06d1621a874a6989cc89e35fc307d" which is a known malicious hash.
+description: Detects traffic or activity related to http://62.60.226.159/bot_x64.exe which is a known malicious url.
 logsource:
-  category: process_creation
+  category: proxy
 detection:
   selection:
-    hashes:
-      - '* "0941292775dbab5f96b5236138b3137313a06d1621a874a6989cc89e35fc307d"*'
+    c-uri:
+      - '*http://62.60.226.159/bot_x64.exe*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "5f7af01d252fc1757dbff353c782b187d76910e018bd828adf084f04c66a5f3d"
-id: auto-c7eec35c26e89bf925d5e0d742af914848c490a6a8765b8e5e97f98f74986ccc
-status: experimental
-description: Detects traffic or activity related to  "5f7af01d252fc1757dbff353c782b187d76910e018bd828adf084f04c66a5f3d" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "5f7af01d252fc1757dbff353c782b187d76910e018bd828adf084f04c66a5f3d"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "d629db5e142af0cd1b1f02671c07335d4163ee9c7010ab9faad46487c0f02300"
-id: auto-1ffe44da200f721b12d184c63bb2b51cf1a953e4573d3ef1da55c9a2a7ee51a8
-status: experimental
-description: Detects traffic or activity related to  "d629db5e142af0cd1b1f02671c07335d4163ee9c7010ab9faad46487c0f02300" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "d629db5e142af0cd1b1f02671c07335d4163ee9c7010ab9faad46487c0f02300"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
+  - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Indicator - http://62.60.226.159/np.exe
 id: auto-14b63a7bc1069443189d5f016e2d767f73546521a77769a1dbb7cfd1d81e54e9
@@ -2280,70 +2248,6 @@ detection:
   selection:
     c-uri:
       - '*http://158.94.208.168/files/8316621590/qp9GNBx.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.168/files/7782139129/ADgr3iT.exe
-id: auto-994f8442c9bd268770d51ea537e4ddcde5deb41823fd34392795aafc500f79fa
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.168/files/7782139129/ADgr3iT.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.168/files/7782139129/ADgr3iT.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.168/files/1781548144/QlQgCVH.exe
-id: auto-8521558a3bac25b7a4274a9e97a6d7f69c1e8383fa9afc4fd676306d1982ce0f
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.168/files/1781548144/QlQgCVH.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.168/files/1781548144/QlQgCVH.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.168/files/8468794285/ZuVvCYO.exe
-id: auto-c357be5fce33adbbb214daa4822c60b8702ba37aaa0abf9c4636843d83aefc5c
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.168/files/8468794285/ZuVvCYO.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.168/files/8468794285/ZuVvCYO.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.208.168/files/1032264266/l8iybfv.exe
-id: auto-08c789478b9b140539f922282587a38cbbee5f8e77c695d5f17ad7ef978957b0
-status: experimental
-description: Detects traffic or activity related to http://158.94.208.168/files/1032264266/l8iybfv.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.208.168/files/1032264266/l8iybfv.exe*'
   condition: selection
 level: high
 tags:
