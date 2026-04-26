@@ -1,3 +1,83 @@
+title: Detect Activity to Known Malicious Indicator - http://162.249.125.147/mipsel
+id: auto-557dd265bf747fa0f61efab8eccc7e6962204d6daed0dfe364b506269e8224d6
+status: experimental
+description: Detects traffic or activity related to http://162.249.125.147/mipsel which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://162.249.125.147/mipsel*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://162.249.125.147/arm
+id: auto-eca8caacdb383f93f99b6f2edc27c3e36339c681dfd21376546286b860fc77b4
+status: experimental
+description: Detects traffic or activity related to http://162.249.125.147/arm which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://162.249.125.147/arm*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://162.249.125.147/arm5
+id: auto-360c17be8cf8c6a47eee5234c0652423108ddbfeca4e2e61136c91987e555fab
+status: experimental
+description: Detects traffic or activity related to http://162.249.125.147/arm5 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://162.249.125.147/arm5*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://162.249.125.147/arm7
+id: auto-26741c4b288af370338d12bfd5cf02eec7cfb47ab5e7880fd316f30dbbc4badf
+status: experimental
+description: Detects traffic or activity related to http://162.249.125.147/arm7 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://162.249.125.147/arm7*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://162.249.125.147/mpsl
+id: auto-57414f611120e96379723d0940166da5fa96f1167aeaa457ab1fd39fcc0a8a49
+status: experimental
+description: Detects traffic or activity related to http://162.249.125.147/mpsl which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://162.249.125.147/mpsl*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://madroxreborn.lol/bins/pmips
 id: auto-1168ea862375941e1226fd5abac4d13a1566fce195098d8087a946e32b32af4a
 status: experimental
