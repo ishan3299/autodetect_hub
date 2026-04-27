@@ -1,3 +1,35 @@
+title: Detect Activity to Known Malicious Indicator - http://31.57.109.131/scripts/xmrig.tar.gz
+id: auto-61111b51e6895e956445555fda995efb62bbaea290432506cc8795e24b8d5b87
+status: experimental
+description: Detects traffic or activity related to http://31.57.109.131/scripts/xmrig.tar.gz which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://31.57.109.131/scripts/xmrig.tar.gz*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://31.57.109.131/scripts/watcher
+id: auto-7fa7c59b4a6e373122ac92aef06a376497a50d218421925db2df88ff6ca19e2a
+status: experimental
+description: Detects traffic or activity related to http://31.57.109.131/scripts/watcher which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://31.57.109.131/scripts/watcher*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://5.63.19.19/vc
 id: auto-d3ce7da3133ff4d28ab0952a1a0e3217c76f8ca145607cbbda9c6f56bf930357
 status: experimental
@@ -798,69 +830,53 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - https://mainly-trim-lizard.cloudpub.ru/test1.exe
-id: auto-c50be3adf30d31716e35fbc1a3fc5e70bc024a220abc3e110f19a936cf77605b
+title: Detect Activity to Known Malicious Indicator -  "b9608b0578aad10d8187ad8b7cc15325a37b55314167a9b8566a2383096cca9a"
+id: auto-dda27ba21175af9d31993bbb636604e37420b2d4d7bdbd62ca3f8d4e74120d36
 status: experimental
-description: Detects traffic or activity related to https://mainly-trim-lizard.cloudpub.ru/test1.exe which is a known malicious url.
+description: Detects traffic or activity related to  "b9608b0578aad10d8187ad8b7cc15325a37b55314167a9b8566a2383096cca9a" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://mainly-trim-lizard.cloudpub.ru/test1.exe*'
+    hashes:
+      - '* "b9608b0578aad10d8187ad8b7cc15325a37b55314167a9b8566a2383096cca9a"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://mainly-trim-lizard.cloudpub.ru/test2.exe
-id: auto-9b60a708c13be58e5e0fef22fdb3f206432432c6aff09e1b9bbeda2ebf5f5e4d
+title: Detect Activity to Known Malicious Indicator -  "de8d4ccd5e141a209fdde559c42c0c1d4e9cb8020630a41f67783fde7cf95974"
+id: auto-c531a52a7c6d504465d05977372adc4ba063d5aa2059bea019cce8c802fafced
 status: experimental
-description: Detects traffic or activity related to https://mainly-trim-lizard.cloudpub.ru/test2.exe which is a known malicious url.
+description: Detects traffic or activity related to  "de8d4ccd5e141a209fdde559c42c0c1d4e9cb8020630a41f67783fde7cf95974" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://mainly-trim-lizard.cloudpub.ru/test2.exe*'
+    hashes:
+      - '* "de8d4ccd5e141a209fdde559c42c0c1d4e9cb8020630a41f67783fde7cf95974"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://mainly-trim-lizard.cloudpub.ru/test3.exe
-id: auto-daa96bcd8897a0baef56098c9eaf62fdb5dda409ef5c2a566b489a2ec849fc4e
+title: Detect Activity to Known Malicious Indicator -  "c5552d33f8cd872a68429ad6218b03deb438b29c19afeb8e501431bd1baef216"
+id: auto-7ee8c80af29afe77cebda3c9322a3488f4febd142a8cf8170e7dadc6e067dcf6
 status: experimental
-description: Detects traffic or activity related to https://mainly-trim-lizard.cloudpub.ru/test3.exe which is a known malicious url.
+description: Detects traffic or activity related to  "c5552d33f8cd872a68429ad6218b03deb438b29c19afeb8e501431bd1baef216" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://mainly-trim-lizard.cloudpub.ru/test3.exe*'
+    hashes:
+      - '* "c5552d33f8cd872a68429ad6218b03deb438b29c19afeb8e501431bd1baef216"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://192.177.26.196/files/1032264266/qvQb5og.exe
-id: auto-979bbfc0320dcfacec694cf71fb4573b1f6dfb7b1e80e4c94cd5ea6c56ac5572
-status: experimental
-description: Detects traffic or activity related to http://192.177.26.196/files/1032264266/qvQb5og.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://192.177.26.196/files/1032264266/qvQb5og.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "523c29bae61819c500be4eda407515bfcc1044904eda53c9d78e0184f1dc633c"
 id: auto-a504a128332a03db5d989866240be3ccbe0dd7e704a88201e71c93d0cd2c930c
@@ -1016,22 +1032,6 @@ detection:
   selection:
     hashes:
       - '* "fdb14707de0539a58c200f31ae6dbd43d34465d10c8ea60e332dfc122c4cd635"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "714f329b1b1bf157c3d0d43af04f74213be84cdfc207a61933a01598b98e026b"
-id: auto-20c18eea1541199f01dfea1bf5360d95b01d22c9c9b4c69ed9a262222152fbca
-status: experimental
-description: Detects traffic or activity related to  "714f329b1b1bf157c3d0d43af04f74213be84cdfc207a61933a01598b98e026b" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "714f329b1b1bf157c3d0d43af04f74213be84cdfc207a61933a01598b98e026b"*'
   condition: selection
 level: high
 tags:
