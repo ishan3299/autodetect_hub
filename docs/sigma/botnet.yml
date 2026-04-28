@@ -3773,19 +3773,3 @@ level: high
 tags:
   - attack.t1595
   - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://185.244.182.35/arm7
-id: auto-315af08c1510824f8fe9b674677f9c4c324f7ce35b69aa12e09a06a0fc346eb5
-status: experimental
-description: Detects traffic or activity related to http://185.244.182.35/arm7 which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://185.244.182.35/arm7*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
