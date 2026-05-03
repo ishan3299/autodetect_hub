@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - http://176.65.139.124/Photo.scr
+id: auto-2c4d2fd3e4e7133543cf098167aa3e9f3b0f111a0d687002d25ae8aa05fb8bf6
+status: experimental
+description: Detects traffic or activity related to http://176.65.139.124/Photo.scr which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://176.65.139.124/Photo.scr*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - https://125.135.169.171/aarch64
 id: auto-1c3429ccd9338eb317595aa0baaba3af6ccbbbd41c9a31f741c448fc2b8e100e
 status: experimental
@@ -1086,6 +1102,22 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
+title: Detect Activity to Known Malicious Indicator -  "b3b79564418d5d9c8f98b60b8a86365633a3377711fae91bca99dacd2bdf8809"
+id: auto-86c8cd853660bafafbbcce0d5b8750e7575ab092f9bdbb2738e0b02ca40aa344
+status: experimental
+description: Detects traffic or activity related to  "b3b79564418d5d9c8f98b60b8a86365633a3377711fae91bca99dacd2bdf8809" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "b3b79564418d5d9c8f98b60b8a86365633a3377711fae91bca99dacd2bdf8809"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
 title: Detect Activity to Known Malicious Indicator -  "35b6acc05cc54134f6699028dc55764ee3a4b3c5c1e57a5fe687af1cb9121c4a"
 id: auto-d176871000d35e67eb40da938d00917c2936f376fb48965b2af23f50ccd0acdc
 status: experimental
@@ -1112,22 +1144,6 @@ detection:
   selection:
     hashes:
       - '* "ee0a2f949f2db4a9234c1116ba1f5db643c1a0329ed8ea4e5e8c6fbe6c0cda11"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "06e64ca96b4f0fd1847856148a893693859a0935ad284f9550ed83c8fecb7340"
-id: auto-e32d494d59bfdfdb158c8ec8b3c2783d764ee66263659aaee821ebba198ff372
-status: experimental
-description: Detects traffic or activity related to  "06e64ca96b4f0fd1847856148a893693859a0935ad284f9550ed83c8fecb7340" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "06e64ca96b4f0fd1847856148a893693859a0935ad284f9550ed83c8fecb7340"*'
   condition: selection
 level: high
 tags:
