@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - http://185.104.63.91/wget.sh
+id: auto-2e50b699532a8456462d4d3582117ce87441fbad79e9f0bdce3a8ce54d6e8c1c
+status: experimental
+description: Detects traffic or activity related to http://185.104.63.91/wget.sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://185.104.63.91/wget.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://vmi3229260.contaboserver.net/luxzzxzzx/luxzz.arm5
 id: auto-e3afac7a76801458a7c290e0c9e5137464a96d9744382d950ada39dfe654809b
 status: experimental
