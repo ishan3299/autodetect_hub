@@ -1,3 +1,83 @@
+title: Detect Activity to Known Malicious Indicator - http://103.213.248.200/xmrig_g
+id: auto-356cc4307a628205670031be57549a414c4df178cc1652a93d141192d5fd6c60
+status: experimental
+description: Detects traffic or activity related to http://103.213.248.200/xmrig_g which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://103.213.248.200/xmrig_g*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://103.213.248.200/xmrig_86
+id: auto-292009c21ed3e343dc97925925c2f9bd70af21e54e40a47301c6c9120652af1f
+status: experimental
+description: Detects traffic or activity related to http://103.213.248.200/xmrig_86 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://103.213.248.200/xmrig_86*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://103.213.248.200/xmrig_m
+id: auto-aba0fc4519eafc81e2ec768dd666623fcd9152a0fcd560d8c65388123a4ec0b5
+status: experimental
+description: Detects traffic or activity related to http://103.213.248.200/xmrig_m which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://103.213.248.200/xmrig_m*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://103.213.248.200/xmrig_86c3
+id: auto-cb7baf0faf731c2568ebd720e489ccfc2542d9393270253a3a8fb84c31cfc525
+status: experimental
+description: Detects traffic or activity related to http://103.213.248.200/xmrig_86c3 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://103.213.248.200/xmrig_86c3*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://103.213.248.200/sex.sh
+id: auto-3e46c3591282413b765e2bcf2775f4f460842eaa6978437daaa1174c7d13b064
+status: experimental
+description: Detects traffic or activity related to http://103.213.248.200/sex.sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://103.213.248.200/sex.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://176.65.139.124:8081/Photo.scr
 id: auto-9f4ced7b06a622cacf5c5e5630b18177437ec770faa90fe1c6b182e73d11ca7e
 status: experimental
@@ -926,208 +1006,32 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - http://176.65.139.42:8080/proxyv2.sh
-id: auto-6297a4e6a4e0353c508484212171232d33bf4e14ea75c5dd538d9320342c4519
+title: Detect Activity to Known Malicious Indicator -  "f0843b933c5940e9ad967a76d1537ab864681dabca7b36097de7dd2d1beb147b"
+id: auto-746db70da9451c940da89944721ce5bcc87066d1ff0faedce9c0732a384b5029
 status: experimental
-description: Detects traffic or activity related to http://176.65.139.42:8080/proxyv2.sh which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://176.65.139.42:8080/proxyv2.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://176.65.139.42:8080/dob.sh
-id: auto-b78de60b41a9d2d9369555e5676a0c49fe7b0168dfafaa4c9952da3b6c5f9a59
-status: experimental
-description: Detects traffic or activity related to http://176.65.139.42:8080/dob.sh which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://176.65.139.42:8080/dob.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://176.65.139.42:8080/proxy.sh
-id: auto-418ff5bdbb5f8febfcd239deefa8e647bf6cba13b46adc6cf6e9ab662e816638
-status: experimental
-description: Detects traffic or activity related to http://176.65.139.42:8080/proxy.sh which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://176.65.139.42:8080/proxy.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://176.65.139.42:8080/get1.sh
-id: auto-b1550dae4b4e4819f62d50262b27527b0284e1a73243b09b2caa82c49084d923
-status: experimental
-description: Detects traffic or activity related to http://176.65.139.42:8080/get1.sh which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://176.65.139.42:8080/get1.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://176.65.139.42:8080/get.sh
-id: auto-3f6a2ada9b0ddb8f3e65b5a334a9cd783497ff6f4d3392c718970c21ceab6027
-status: experimental
-description: Detects traffic or activity related to http://176.65.139.42:8080/get.sh which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://176.65.139.42:8080/get.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://46.151.182.82/i686
-id: auto-065e6d1245e43dc5ecd9af06334c89fd0d9a1d409f268b58984709eec1c71e48
-status: experimental
-description: Detects traffic or activity related to https://46.151.182.82/i686 which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://46.151.182.82/i686*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://46.151.182.82/clean
-id: auto-50bf044220977c6e5055a018561c2802d069633705ba01bff0e05ba3a197a862
-status: experimental
-description: Detects traffic or activity related to https://46.151.182.82/clean which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://46.151.182.82/clean*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://46.151.182.82/aarch64
-id: auto-41770720e8945e8fbd0df70b6fbc5863bc0dcdd187d6926a8a0bd37c05183820
-status: experimental
-description: Detects traffic or activity related to https://46.151.182.82/aarch64 which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://46.151.182.82/aarch64*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://46.151.182.82/arm7
-id: auto-f21d8c8d6a40414b57d5491e788bf523e8e038c0ec514f66447a9e8002f68549
-status: experimental
-description: Detects traffic or activity related to https://46.151.182.82/arm7 which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://46.151.182.82/arm7*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://46.151.182.82/x86_64
-id: auto-095ac204f02ab11fb0016b7dc147cbe0b566eb47a5c5997ab418cbab04789561
-status: experimental
-description: Detects traffic or activity related to https://46.151.182.82/x86_64 which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://46.151.182.82/x86_64*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://46.151.182.82/sh
-id: auto-48c1175d99b7364437de20f1edf16fbc45494376c00117cfd2f25fe9ea25bbc7
-status: experimental
-description: Detects traffic or activity related to https://46.151.182.82/sh which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://46.151.182.82/sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://176.65.139.42:8080/apt0.sh
-id: auto-2e2942ee466725c61478a36d73a0df3ccc03b9b31a5c2bb4a9bdd87b694d1b83
-status: experimental
-description: Detects traffic or activity related to http://176.65.139.42:8080/apt0.sh which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://176.65.139.42:8080/apt0.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator -  "b3b79564418d5d9c8f98b60b8a86365633a3377711fae91bca99dacd2bdf8809"
-id: auto-86c8cd853660bafafbbcce0d5b8750e7575ab092f9bdbb2738e0b02ca40aa344
-status: experimental
-description: Detects traffic or activity related to  "b3b79564418d5d9c8f98b60b8a86365633a3377711fae91bca99dacd2bdf8809" which is a known malicious hash.
+description: Detects traffic or activity related to  "f0843b933c5940e9ad967a76d1537ab864681dabca7b36097de7dd2d1beb147b" which is a known malicious hash.
 logsource:
   category: process_creation
 detection:
   selection:
     hashes:
-      - '* "b3b79564418d5d9c8f98b60b8a86365633a3377711fae91bca99dacd2bdf8809"*'
+      - '* "f0843b933c5940e9ad967a76d1537ab864681dabca7b36097de7dd2d1beb147b"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "5375bcea7c7b3cd0a192acb63f3fc566759eb6ed0cb0e2302c1e67b06dbacd5f"
+id: auto-2543ebb25b7780b472918a28fe5f66af98bdfd4c5e57bcdfc556181cf83480f0
+status: experimental
+description: Detects traffic or activity related to  "5375bcea7c7b3cd0a192acb63f3fc566759eb6ed0cb0e2302c1e67b06dbacd5f" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "5375bcea7c7b3cd0a192acb63f3fc566759eb6ed0cb0e2302c1e67b06dbacd5f"*'
   condition: selection
 level: high
 tags:
