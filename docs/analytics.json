@@ -1,419 +1,110 @@
 {
-  "generated_at": "2026-05-05T02:06:53.342189",
-  "total_iocs": 28092,
-  "new_iocs_24h": 1213,
+  "generated_at": "2026-05-06T02:07:06.363472",
+  "total_iocs": 27992,
+  "new_iocs_24h": 1581,
   "top_types": {
-    "url": 27642,
-    "hash": 442,
+    "url": 27380,
+    "hash": 604,
     "ip": 7,
     "domain": 1
   },
   "top_tags": {
-    "elf": 10707,
-    "Mozi": 8180,
-    "ClearFake": 6794,
-    "32-bit": 6787,
-    "mips": 5368,
-    "mirai": 5059,
-    "ua-wget": 5004,
-    "opendir": 4347,
-    "ascii": 2018,
-    "NetSupport": 1924
+    "elf": 9708,
+    "Mozi": 8205,
+    "ClearFake": 7223,
+    "32-bit": 6767,
+    "mips": 5372,
+    "mirai": 4946,
+    "ua-wget": 4091,
+    "opendir": 3542,
+    "ascii": 2019,
+    "NetSupport": 1925
   },
   "top_sources": {
-    "URLhaus": 27642,
-    "MalwareBazaar": 442,
+    "URLhaus": 27380,
+    "MalwareBazaar": 604,
     "FeodoTracker": 5,
     "OTX": 2,
     "AbuseIPDB": 1
   },
   "mitre_coverage": {
-    "T1059.004": 18040,
-    "T1583": 13652,
-    "T1071": 5106,
-    "T1596": 4347,
-    "T1219": 2226,
+    "T1059.004": 17008,
+    "T1583": 13566,
+    "T1071": 4194,
+    "T1596": 3542,
+    "T1219": 2228,
     "T1059.001": 1954,
-    "T1204.002": 1252,
+    "T1204.002": 1254,
     "T1059.005": 949,
-    "T1498": 793,
     "T1587.001": 463,
     "T1555": 177,
-    "T1595": 169,
     "T1496": 65,
-    "T1566": 48,
+    "T1566": 49,
     "T1102": 34,
     "T1218.005": 25,
     "T1027": 20,
     "T1056.001": 19,
     "T1059": 15,
-    "T1059.003": 8
+    "T1498": 13,
+    "T1059.003": 8,
+    "T1059.007": 7
   },
   "recent_iocs": [
     {
-      "indicator": "http://199.98.88.92.rev.sfr.net/d/akido.sh4",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "SuperH",
-        "ua-wget"
-      ],
-      "first_seen": "2026-05-05 01:57:25 UTC",
-      "last_seen": "2026-05-05 01:57:25 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://199.98.88.92.rev.sfr.net/d/akido.ppc",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "PowerPC",
-        "ua-wget"
-      ],
-      "first_seen": "2026-05-05 01:57:22 UTC",
-      "last_seen": "2026-05-05 01:57:22 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://199.98.88.92.rev.sfr.net/d/akido.mips",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "mips",
-        "ua-wget"
-      ],
-      "first_seen": "2026-05-05 01:57:22 UTC",
-      "last_seen": "2026-05-05 01:57:22 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://199.98.88.92.rev.sfr.net/d/akido.x86",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "ua-wget",
-        "x86"
-      ],
-      "first_seen": "2026-05-05 01:57:20 UTC",
-      "last_seen": "2026-05-05 01:57:20 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://199.98.88.92.rev.sfr.net/d/akido.arm7",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "arm",
-        "elf",
-        "ua-wget"
-      ],
-      "first_seen": "2026-05-05 01:57:20 UTC",
-      "last_seen": "2026-05-05 01:57:20 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://199.98.88.92.rev.sfr.net/d/akido.x86_64",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "ua-wget",
-        "x86"
-      ],
-      "first_seen": "2026-05-05 01:57:20 UTC",
-      "last_seen": "2026-05-05 01:57:20 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://92.88.98.199/d/akido.arm7",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "arm",
-        "elf",
-        "opendir",
-        "ua-wget"
-      ],
-      "first_seen": "2026-05-05 01:57:18 UTC",
-      "last_seen": "2026-05-05 01:57:18 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://92.88.98.199/d/akido.arm6",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "arm",
-        "elf",
-        "opendir",
-        "ua-wget"
-      ],
-      "first_seen": "2026-05-05 01:57:17 UTC",
-      "last_seen": "2026-05-05 01:57:17 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://92.88.98.199/d/akido.ppc",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "opendir",
-        "PowerPC",
-        "ua-wget"
-      ],
-      "first_seen": "2026-05-05 01:57:17 UTC",
-      "last_seen": "2026-05-05 01:57:17 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://92.88.98.199/d/akido.x86",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "opendir",
-        "ua-wget",
-        "x86"
-      ],
-      "first_seen": "2026-05-05 01:57:17 UTC",
-      "last_seen": "2026-05-05 01:57:17 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://92.88.98.199/d/akido.sh4",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "opendir",
-        "SuperH",
-        "ua-wget"
-      ],
-      "first_seen": "2026-05-05 01:57:16 UTC",
-      "last_seen": "2026-05-05 01:57:16 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://92.88.98.199/d/akido.arm5",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "arm",
-        "elf",
-        "opendir",
-        "ua-wget"
-      ],
-      "first_seen": "2026-05-05 01:57:15 UTC",
-      "last_seen": "2026-05-05 01:57:15 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://92.88.98.199/d/akido.mpsl",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "mips",
-        "opendir",
-        "ua-wget"
-      ],
-      "first_seen": "2026-05-05 01:57:15 UTC",
-      "last_seen": "2026-05-05 01:57:15 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://199.98.88.92.rev.sfr.net/d/akido.arm5",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "arm",
-        "elf",
-        "ua-wget"
-      ],
-      "first_seen": "2026-05-05 01:57:15 UTC",
-      "last_seen": "2026-05-05 01:57:15 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://92.88.98.199/d/akido.spc",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "opendir",
-        "ua-wget",
-        "x86"
-      ],
-      "first_seen": "2026-05-05 01:57:15 UTC",
-      "last_seen": "2026-05-05 01:57:15 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://199.98.88.92.rev.sfr.net/d/akido.spc",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "ua-wget",
-        "x86"
-      ],
-      "first_seen": "2026-05-05 01:57:15 UTC",
-      "last_seen": "2026-05-05 01:57:15 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://199.98.88.92.rev.sfr.net/d/akido.mpsl",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "mips",
-        "ua-wget"
-      ],
-      "first_seen": "2026-05-05 01:57:15 UTC",
-      "last_seen": "2026-05-05 01:57:15 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://92.88.98.199/d/akido.arc",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "opendir",
-        "ua-wget",
-        "x86"
-      ],
-      "first_seen": "2026-05-05 01:57:15 UTC",
-      "last_seen": "2026-05-05 01:57:15 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://92.88.98.199/d/akido.x86_64",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "opendir",
-        "ua-wget",
-        "x86"
-      ],
-      "first_seen": "2026-05-05 01:57:15 UTC",
-      "last_seen": "2026-05-05 01:57:15 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://199.98.88.92.rev.sfr.net/d/akido.arm6",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "arm",
-        "elf",
-        "ua-wget"
-      ],
-      "first_seen": "2026-05-05 01:57:15 UTC",
-      "last_seen": "2026-05-05 01:57:15 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://199.98.88.92.rev.sfr.net/d/akido.m68k",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "m68k",
-        "ua-wget"
-      ],
-      "first_seen": "2026-05-05 01:57:15 UTC",
-      "last_seen": "2026-05-05 01:57:15 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://199.98.88.92.rev.sfr.net/d/akido.arm",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "arm",
-        "elf",
-        "ua-wget"
-      ],
-      "first_seen": "2026-05-05 01:57:15 UTC",
-      "last_seen": "2026-05-05 01:57:15 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://199.98.88.92.rev.sfr.net/d/akido.arc",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "ua-wget",
-        "x86"
-      ],
-      "first_seen": "2026-05-05 01:57:15 UTC",
-      "last_seen": "2026-05-05 01:57:15 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://92.88.98.199/d/akido.mips",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "mips",
-        "opendir",
-        "ua-wget"
-      ],
-      "first_seen": "2026-05-05 01:57:14 UTC",
-      "last_seen": "2026-05-05 01:57:14 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://92.88.98.199/d/akido.m68k",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "m68k",
-        "opendir",
-        "ua-wget"
-      ],
-      "first_seen": "2026-05-05 01:57:14 UTC",
-      "last_seen": "2026-05-05 01:57:14 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://92.88.98.199/d/akido.arm",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "arm",
-        "elf",
-        "opendir",
-        "ua-wget"
-      ],
-      "first_seen": "2026-05-05 01:57:14 UTC",
-      "last_seen": "2026-05-05 01:57:14 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "https://autbox.pavi1xen.lat/klpq2ia-77q9xy8b-kiew9b-vkd6-8aiuqtv/access-id9245.filter",
+      "indicator": "https://proxys.vexon4al.surf/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
         "ClearFake"
       ],
-      "first_seen": "2026-05-05 01:56:14 UTC",
-      "last_seen": "2026-05-05 01:56:14 UTC",
+      "first_seen": "2026-05-06 01:54:09 UTC",
+      "last_seen": "2026-05-06 01:54:09 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://113.224.244.88:53118/i",
+      "indicator": "https://appsrch.lorex7in.surf/kiss-m0dem-defndr-myrai-sdf934/kwtor.dll",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 01:53:10 UTC",
+      "last_seen": "2026-05-06 01:53:10 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://lanhop.vexon4al.surf/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 01:49:07 UTC",
+      "last_seen": "2026-05-06 01:49:07 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://webdocs.lorex7in.surf/kiss-m0dem-defndr-myrai-sdf934/kwtor.dll",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 01:47:10 UTC",
+      "last_seen": "2026-05-06 01:47:10 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://61.137.142.209:43704/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [],
+      "first_seen": "2026-05-06 01:47:08 UTC",
+      "last_seen": "2026-05-06 01:47:08 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://37.28.179.42:36267/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -422,266 +113,540 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-05-05 01:56:10 UTC",
-      "last_seen": "2026-05-05 01:56:10 UTC",
+      "first_seen": "2026-05-06 01:46:11 UTC",
+      "last_seen": "2026-05-06 01:46:11 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://libsys.nira6qen.lat/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "2026-05-05 01:55:22 UTC",
-      "last_seen": "2026-05-05 01:55:22 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "https://libsys.nira6qen.lat/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "2026-05-05 01:55:08 UTC",
-      "last_seen": "2026-05-05 01:55:08 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "https://domreg.sali8mor.lat/klpq2ia-77q9xy8b-kiew9b-vkd6-8aiuqtv/access-id9245.filter",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "2026-05-05 01:49:20 UTC",
-      "last_seen": "2026-05-05 01:49:20 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "https://jobadm.nira6qen.lat/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "2026-05-05 01:49:11 UTC",
-      "last_seen": "2026-05-05 01:49:11 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "https://pwrlog.sali8mor.lat/klpq2ia-77q9xy8b-kiew9b-vkd6-8aiuqtv/access-id9245.filter",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "2026-05-05 01:45:11 UTC",
-      "last_seen": "2026-05-05 01:45:11 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "https://rawdat.nira6qen.lat/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "2026-05-05 01:41:20 UTC",
-      "last_seen": "2026-05-05 01:41:20 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://rawdat.nira6qen.lat/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "2026-05-05 01:41:20 UTC",
-      "last_seen": "2026-05-05 01:41:20 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://42.224.168.94:56081/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-05-05 01:39:19 UTC",
-      "last_seen": "2026-05-05 01:39:19 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "https://extnet.sali8mor.lat/klpq2ia-77q9xy8b-kiew9b-vkd6-8aiuqtv/access-id9245.filter",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "2026-05-05 01:35:13 UTC",
-      "last_seen": "2026-05-05 01:35:13 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "https://zipark.nira6qen.lat/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "2026-05-05 01:35:12 UTC",
-      "last_seen": "2026-05-05 01:35:12 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://osbase.pano2vor.lat/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "2026-05-05 01:30:26 UTC",
-      "last_seen": "2026-05-05 01:30:26 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "https://osbase.pano2vor.lat/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "2026-05-05 01:30:08 UTC",
-      "last_seen": "2026-05-05 01:30:08 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://pkgrun.sali8mor.lat/klpq2ia-77q9xy8b-kiew9b-vkd6-8aiuqtv/access-id9245.filter",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "2026-05-05 01:29:20 UTC",
-      "last_seen": "2026-05-05 01:29:20 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "https://pkgrun.sali8mor.lat/klpq2ia-77q9xy8b-kiew9b-vkd6-8aiuqtv/access-id9245.filter",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "2026-05-05 01:29:07 UTC",
-      "last_seen": "2026-05-05 01:29:07 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://119.185.240.250:57170/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-05-05 01:27:21 UTC",
-      "last_seen": "2026-05-05 01:27:21 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "https://modbus.sali8mor.lat/klpq2ia-77q9xy8b-kiew9b-vkd6-8aiuqtv/access-id9245.filter",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "2026-05-05 01:26:12 UTC",
-      "last_seen": "2026-05-05 01:26:12 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://42.224.168.94:56081/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-05-05 01:24:20 UTC",
-      "last_seen": "2026-05-05 01:24:20 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "https://metalt.pano2vor.lat/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "2026-05-05 01:23:08 UTC",
-      "last_seen": "2026-05-05 01:23:08 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://59.92.150.57:55948/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-05-05 01:22:14 UTC",
-      "last_seen": "2026-05-05 01:22:14 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://196.190.224.62:59429/bin.sh",
+      "indicator": "http://171.38.86.177:47753/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
         "32-bit",
         "arm",
         "elf",
-        "mirai",
         "Mozi"
       ],
-      "first_seen": "2026-05-05 01:22:12 UTC",
-      "last_seen": "2026-05-05 01:22:12 UTC",
+      "first_seen": "2026-05-06 01:45:33 UTC",
+      "last_seen": "2026-05-06 01:45:33 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://apidoc.pano2vor.lat/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
+      "indicator": "https://subcli.vexon4al.surf/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
         "ClearFake"
       ],
-      "first_seen": "2026-05-05 01:17:19 UTC",
-      "last_seen": "2026-05-05 01:17:19 UTC",
+      "first_seen": "2026-05-06 01:43:10 UTC",
+      "last_seen": "2026-05-06 01:43:10 UTC",
       "sightings": 1
     },
     {
-      "indicator": "https://apidoc.pano2vor.lat/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
+      "indicator": "https://syskeys.lorex7in.surf/kiss-m0dem-defndr-myrai-sdf934/kwtor.dll",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
         "ClearFake"
       ],
-      "first_seen": "2026-05-05 01:17:11 UTC",
-      "last_seen": "2026-05-05 01:17:11 UTC",
+      "first_seen": "2026-05-06 01:41:09 UTC",
+      "last_seen": "2026-05-06 01:41:09 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://bitkit.vexon4al.surf/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 01:38:11 UTC",
+      "last_seen": "2026-05-06 01:38:11 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://112.248.31.154:58445/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-05-06 01:37:33 UTC",
+      "last_seen": "2026-05-06 01:37:33 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://110.36.77.16:45400/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "Mozi"
+      ],
+      "first_seen": "2026-05-06 01:37:06 UTC",
+      "last_seen": "2026-05-06 01:37:06 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://netmans.mel2vrax.surf/kiss-m0dem-defndr-myrai-sdf934/kwtor.dll",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 01:35:08 UTC",
+      "last_seen": "2026-05-06 01:35:08 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://115.55.230.81:35674/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-05-06 01:33:16 UTC",
+      "last_seen": "2026-05-06 01:33:16 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://envset.vexon4al.surf/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 01:32:13 UTC",
+      "last_seen": "2026-05-06 01:32:13 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://221.15.197.97:41327/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-05-06 01:30:11 UTC",
+      "last_seen": "2026-05-06 01:30:11 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://tcpcons.mel2vrax.surf/kiss-m0dem-defndr-myrai-sdf934/kwtor.dll",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 01:30:09 UTC",
+      "last_seen": "2026-05-06 01:30:09 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://doclab.vexon4al.surf/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 01:26:16 UTC",
+      "last_seen": "2026-05-06 01:26:16 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://37.28.179.42:36267/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-05-06 01:23:20 UTC",
+      "last_seen": "2026-05-06 01:23:20 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://sshpros.mel2vrax.surf/kiss-m0dem-defndr-myrai-sdf934/kwtor.dll",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 01:22:09 UTC",
+      "last_seen": "2026-05-06 01:22:09 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://syncit.pav3lorex.surf/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 01:21:07 UTC",
+      "last_seen": "2026-05-06 01:21:07 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://113.94.31.126:52659/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-05-06 01:19:22 UTC",
+      "last_seen": "2026-05-06 01:19:22 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://117.209.14.133:55163/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-05-06 01:15:17 UTC",
+      "last_seen": "2026-05-06 01:15:17 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://ioflow.pav3lorex.surf/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 01:15:16 UTC",
+      "last_seen": "2026-05-06 01:15:16 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://vmlists.mel2vrax.surf/kiss-m0dem-defndr-myrai-sdf934/kwtor.dll",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 01:15:08 UTC",
+      "last_seen": "2026-05-06 01:15:08 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://110.36.94.0:42212/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "Mozi"
+      ],
+      "first_seen": "2026-05-06 01:12:07 UTC",
+      "last_seen": "2026-05-06 01:12:07 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://usrgrps.mel2vrax.surf/kiss-m0dem-defndr-myrai-sdf934/kwtor.dll",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 01:10:10 UTC",
+      "last_seen": "2026-05-06 01:10:10 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://119.166.199.148:33577/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-05-06 01:07:19 UTC",
+      "last_seen": "2026-05-06 01:07:19 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://task-id.pav3lorex.surf/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 01:05:16 UTC",
+      "last_seen": "2026-05-06 01:05:16 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://optwebs.mel2vrax.surf/kiss-m0dem-defndr-myrai-sdf934/kwtor.dll",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 01:04:14 UTC",
+      "last_seen": "2026-05-06 01:04:14 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://119.166.199.148:33577/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-05-06 01:01:19 UTC",
+      "last_seen": "2026-05-06 01:01:19 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://61.137.195.1:59121/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-05-06 01:00:23 UTC",
+      "last_seen": "2026-05-06 01:00:23 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://39.79.147.45:33559/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-05-06 01:00:23 UTC",
+      "last_seen": "2026-05-06 01:00:23 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://com-web.pav3lorex.surf/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 00:59:08 UTC",
+      "last_seen": "2026-05-06 00:59:08 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://proxyss.sorix9el.surf/kiss-m0dem-defndr-myrai-sdf934/kwtor.dll",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 00:58:12 UTC",
+      "last_seen": "2026-05-06 00:58:12 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://125.47.242.189:53442/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-05-06 00:54:18 UTC",
+      "last_seen": "2026-05-06 00:54:18 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://refid-x.pav3lorex.surf/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 00:54:11 UTC",
+      "last_seen": "2026-05-06 00:54:11 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://117.209.14.133:55163/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-05-06 00:52:28 UTC",
+      "last_seen": "2026-05-06 00:52:28 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://lanhops.sorix9el.surf/kiss-m0dem-defndr-myrai-sdf934/kwtor.dll",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 00:52:13 UTC",
+      "last_seen": "2026-05-06 00:52:13 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://123.8.12.154:34725/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "Mozi"
+      ],
+      "first_seen": "2026-05-06 00:52:07 UTC",
+      "last_seen": "2026-05-06 00:52:07 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://autbox.pav3lorex.surf/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 00:48:12 UTC",
+      "last_seen": "2026-05-06 00:48:12 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://subclis.sorix9el.surf/kiss-m0dem-defndr-myrai-sdf934/kwtor.dll",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 00:47:09 UTC",
+      "last_seen": "2026-05-06 00:47:09 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://dom-reg.xamir9on.surf/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 00:42:12 UTC",
+      "last_seen": "2026-05-06 00:42:12 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://115.55.221.208:59141/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-05-06 00:41:19 UTC",
+      "last_seen": "2026-05-06 00:41:19 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://bitkits.sorix9el.surf/kiss-m0dem-defndr-myrai-sdf934/kwtor.dll",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 00:40:14 UTC",
+      "last_seen": "2026-05-06 00:40:14 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://pwr-log.xamir9on.surf/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 00:36:11 UTC",
+      "last_seen": "2026-05-06 00:36:11 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://envsets.sorix9el.surf/kiss-m0dem-defndr-myrai-sdf934/kwtor.dll",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 00:34:12 UTC",
+      "last_seen": "2026-05-06 00:34:12 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://123.14.39.227:54421/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-05-06 00:32:19 UTC",
+      "last_seen": "2026-05-06 00:32:19 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://61.53.87.13:48123/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-05-06 00:31:22 UTC",
+      "last_seen": "2026-05-06 00:31:22 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://ext-net.xamir9on.surf/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z/usr294-verif.confirm",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-05-06 00:30:14 UTC",
+      "last_seen": "2026-05-06 00:30:14 UTC",
       "sightings": 1
     }
   ]
