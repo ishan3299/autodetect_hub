@@ -1,3 +1,35 @@
+title: Detect Activity to Known Malicious Indicator - http://62.60.226.140/files/6077499728/KoZBO5k.exe
+id: auto-ad0703f000788d9a3b3516e12306f7f4a6f80ab8ebd15dfb342a6263314987a8
+status: experimental
+description: Detects traffic or activity related to http://62.60.226.140/files/6077499728/KoZBO5k.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://62.60.226.140/files/6077499728/KoZBO5k.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://62.60.226.140/files/2038862353/IAy9b8g.exe
+id: auto-f7e0b7a2a35e5098f741b47a43c43d3982fbb1312c5349a2fb05a6a91080df73
+status: experimental
+description: Detects traffic or activity related to http://62.60.226.140/files/2038862353/IAy9b8g.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://62.60.226.140/files/2038862353/IAy9b8g.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://62.60.226.140/files/8183300806/g1JZDCE.bat
 id: auto-24cb3dd21129ee5ee0da482a6c22a1ea6f6565d85b7682bb7de471d3e17cd1df
 status: experimental
@@ -1752,38 +1784,6 @@ detection:
   selection:
     c-uri:
       - '*http://85.239.147.6/files/7655527200/PocBtoN.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/7362035837/LalmHOj.exe
-id: auto-2ceb2be29b9d8252204a2b4df14aa9ef04550c31327e8e2788505ca082707048
-status: experimental
-description: Detects traffic or activity related to http://85.239.147.6/files/7362035837/LalmHOj.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://85.239.147.6/files/7362035837/LalmHOj.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/8301037712/W2hGvST.exe
-id: auto-bb73996cccc08b9d7d984973ebcfeb1e0e942dea8be27a158ecc829e4cad1b13
-status: experimental
-description: Detects traffic or activity related to http://85.239.147.6/files/8301037712/W2hGvST.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://85.239.147.6/files/8301037712/W2hGvST.exe*'
   condition: selection
 level: high
 tags:
