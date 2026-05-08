@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - http://tina.gautengsound.co.za/co.js
+id: auto-0d4c6d060f212390943b9f2f7e2ced9b8f6b3ab7686c6e7e5939592f59c417ff
+status: experimental
+description: Detects traffic or activity related to http://tina.gautengsound.co.za/co.js which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://tina.gautengsound.co.za/co.js*'
+  condition: selection
+level: high
+tags:
+  - attack.t1204.002
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://62.60.226.140/files/6077499728/KoZBO5k.exe
 id: auto-ad0703f000788d9a3b3516e12306f7f4a6f80ab8ebd15dfb342a6263314987a8
 status: experimental
@@ -1768,22 +1784,6 @@ detection:
   selection:
     c-uri:
       - '*http://85.239.147.6/files/8756257131/zCfWbdD.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://85.239.147.6/files/7655527200/PocBtoN.exe
-id: auto-82e7061d12e37f6d90d17cfbf1d623f2f0424c1860852a0ba40c85af5527b5f3
-status: experimental
-description: Detects traffic or activity related to http://85.239.147.6/files/7655527200/PocBtoN.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://85.239.147.6/files/7655527200/PocBtoN.exe*'
   condition: selection
 level: high
 tags:
