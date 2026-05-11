@@ -958,69 +958,37 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - http://77.110.96.200/xmr.gz
-id: auto-096b82d0c359937f1f56964e6d492d6d1ab8641b36fda438b829a9f0029f0234
+title: Detect Activity to Known Malicious Indicator -  "d0f5204860a8c1abe22bb20719dc0a43510ec5f9f3c9246e15c5439310d87655"
+id: auto-34143b43d7d5d5907f42d79ba846f56e291f24a13e4c891613afdc93c5d876fe
 status: experimental
-description: Detects traffic or activity related to http://77.110.96.200/xmr.gz which is a known malicious url.
+description: Detects traffic or activity related to  "d0f5204860a8c1abe22bb20719dc0a43510ec5f9f3c9246e15c5439310d87655" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://77.110.96.200/xmr.gz*'
+    hashes:
+      - '* "d0f5204860a8c1abe22bb20719dc0a43510ec5f9f3c9246e15c5439310d87655"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - http://77.110.96.200/lmm.gz
-id: auto-81f6033289bb49f79ae3940032f30274b219f0d509301483bc711d9e2c82db0f
+title: Detect Activity to Known Malicious Indicator -  "2d47e765a18e89bab6c3acac66c3ddb47c004c42e6d3230c5a7a102f2f424ce7"
+id: auto-1bc778852ccd32830e70307322bce9e8cbf7ba989bba4276e375f434c6932d9f
 status: experimental
-description: Detects traffic or activity related to http://77.110.96.200/lmm.gz which is a known malicious url.
+description: Detects traffic or activity related to  "2d47e765a18e89bab6c3acac66c3ddb47c004c42e6d3230c5a7a102f2f424ce7" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://77.110.96.200/lmm.gz*'
+    hashes:
+      - '* "2d47e765a18e89bab6c3acac66c3ddb47c004c42e6d3230c5a7a102f2f424ce7"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://77.110.96.200/min1.sh
-id: auto-7175e6230ba3d2dbd7483aa4ac6ca36c825ec61a8c3ba1a0bc02557b24df9754
-status: experimental
-description: Detects traffic or activity related to http://77.110.96.200/min1.sh which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://77.110.96.200/min1.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://77.110.96.200/ghost.sh
-id: auto-66ad6feeb063a5244ea82018a7cfb01247e1c6c3e43880a9c44a2c28fa77d5e4
-status: experimental
-description: Detects traffic or activity related to http://77.110.96.200/ghost.sh which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://77.110.96.200/ghost.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "bf3629eece10533f19eff8d6a0f6b71f8ccc12f5ca2516b0290a28bd41081918"
 id: auto-eda9953a9b52bbd50dbeb4b0a7930d7a4eb04f70d36c40815a987d4ecc4f4ae6
@@ -1048,22 +1016,6 @@ detection:
   selection:
     hashes:
       - '* "4a1dd2bf737357ff4c32df5b739cc5d8bb0003bcb35fbacc3174d36b2ef77cc0"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "1eedf9e28df3a305672087ed727afeefce0d29ef27daec20923251f1e14c0e12"
-id: auto-e77fe0e315c6bd0fb98b9b2fe821fd34ba20f8bce4d9e60812fc4b08b85ae70f
-status: experimental
-description: Detects traffic or activity related to  "1eedf9e28df3a305672087ed727afeefce0d29ef27daec20923251f1e14c0e12" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "1eedf9e28df3a305672087ed727afeefce0d29ef27daec20923251f1e14c0e12"*'
   condition: selection
 level: high
 tags:
