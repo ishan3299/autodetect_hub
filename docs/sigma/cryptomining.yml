@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - https://github.com/DoodleNoodle123/win-stager.msi/blob/main/win-stager.ps1
+id: auto-d2e43a9870296cf25baad59387b009ef3cbace32b1828e6ba58cc1fbe10dfd44
+status: experimental
+description: Detects traffic or activity related to https://github.com/DoodleNoodle123/win-stager.msi/blob/main/win-stager.ps1 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://github.com/DoodleNoodle123/win-stager.msi/blob/main/win-stager.ps1*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://cdn1.monero1478.com/dat/linux.dat
 id: auto-67676732bc184628a2c0a9f295cf5849e5aea750315d4dd67969732d5c9aaae8
 status: experimental
@@ -830,80 +846,16 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - http://46.151.182.82/i686
-id: auto-18e83991364fcec3c1cc831ecf5ba4db067afc32ec63801c29cc99fa8acb8fc8
+title: Detect Activity to Known Malicious Indicator -  "a79af189dd8f2557c849d99e791231df053f5a70d4088cf5f8b61ed3bda48154"
+id: auto-62a7987ac1407f219a6da568adf01dc06bb32b4097497dfea9e73e703193f150
 status: experimental
-description: Detects traffic or activity related to http://46.151.182.82/i686 which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://46.151.182.82/i686*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://77.110.125.145/q11.txt
-id: auto-55003270bccbea1d037abcc1617db6fbaf0e7633eca44e4005b7d6ced15fd3fb
-status: experimental
-description: Detects traffic or activity related to http://77.110.125.145/q11.txt which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://77.110.125.145/q11.txt*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://77.110.125.145/q12.txt
-id: auto-d0796783f1d18a49a973acad255e0b0cf02f5146688d7fc545e4de173747d994
-status: experimental
-description: Detects traffic or activity related to http://77.110.125.145/q12.txt which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://77.110.125.145/q12.txt*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://77.110.125.145/ghost.sh
-id: auto-89d84534adab83893146b1430b940e8d92e918cbca830c1c221781e8f0db64e4
-status: experimental
-description: Detects traffic or activity related to http://77.110.125.145/ghost.sh which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://77.110.125.145/ghost.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator -  "d0f5204860a8c1abe22bb20719dc0a43510ec5f9f3c9246e15c5439310d87655"
-id: auto-34143b43d7d5d5907f42d79ba846f56e291f24a13e4c891613afdc93c5d876fe
-status: experimental
-description: Detects traffic or activity related to  "d0f5204860a8c1abe22bb20719dc0a43510ec5f9f3c9246e15c5439310d87655" which is a known malicious hash.
+description: Detects traffic or activity related to  "a79af189dd8f2557c849d99e791231df053f5a70d4088cf5f8b61ed3bda48154" which is a known malicious hash.
 logsource:
   category: process_creation
 detection:
   selection:
     hashes:
-      - '* "d0f5204860a8c1abe22bb20719dc0a43510ec5f9f3c9246e15c5439310d87655"*'
+      - '* "a79af189dd8f2557c849d99e791231df053f5a70d4088cf5f8b61ed3bda48154"*'
   condition: selection
 level: high
 tags:
