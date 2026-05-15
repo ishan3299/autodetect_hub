@@ -846,16 +846,16 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator -  "a79af189dd8f2557c849d99e791231df053f5a70d4088cf5f8b61ed3bda48154"
-id: auto-62a7987ac1407f219a6da568adf01dc06bb32b4097497dfea9e73e703193f150
+title: Detect Activity to Known Malicious Indicator -  "b1668822304386f338d3c5c5dd1dff3ddad748621d3f59e6c3c2cbf1b77a41b3"
+id: auto-ba810f1b04fd87be0fa77bb280e768f99c7f2aea1367e992d2cca858989f4f28
 status: experimental
-description: Detects traffic or activity related to  "a79af189dd8f2557c849d99e791231df053f5a70d4088cf5f8b61ed3bda48154" which is a known malicious hash.
+description: Detects traffic or activity related to  "b1668822304386f338d3c5c5dd1dff3ddad748621d3f59e6c3c2cbf1b77a41b3" which is a known malicious hash.
 logsource:
   category: process_creation
 detection:
   selection:
     hashes:
-      - '* "a79af189dd8f2557c849d99e791231df053f5a70d4088cf5f8b61ed3bda48154"*'
+      - '* "b1668822304386f338d3c5c5dd1dff3ddad748621d3f59e6c3c2cbf1b77a41b3"*'
   condition: selection
 level: high
 tags:
