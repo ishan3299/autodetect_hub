@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - https://tmpfiles.org/dl/w4wlAekQJKj3/corvus.exe
+id: auto-15e87cfee1651c25a738206be093b3bf943c2ac42ac59658ec944698274acbc6
+status: experimental
+description: Detects traffic or activity related to https://tmpfiles.org/dl/w4wlAekQJKj3/corvus.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://tmpfiles.org/dl/w4wlAekQJKj3/corvus.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - https://github.com/DoodleNoodle123/win-stager.msi/blob/main/win-stager.ps1
 id: auto-d2e43a9870296cf25baad59387b009ef3cbace32b1828e6ba58cc1fbe10dfd44
 status: experimental
@@ -830,32 +846,32 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - https://github.com/cblootah/test/raw/refs/heads/main/payload.exe
-id: auto-2fb38075b9964c25a59f82966b351d9430385350b215c801a45b4887e96d0eb0
+title: Detect Activity to Known Malicious Indicator -  "1ad2bc22e39863ec3842fb255ea236a5e85d75aa039742e03e674cd6e2769993"
+id: auto-c564669687318dec750905d174169cb83c6fb31147c55cee3615a3078c9796ed
 status: experimental
-description: Detects traffic or activity related to https://github.com/cblootah/test/raw/refs/heads/main/payload.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://github.com/cblootah/test/raw/refs/heads/main/payload.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator -  "b1668822304386f338d3c5c5dd1dff3ddad748621d3f59e6c3c2cbf1b77a41b3"
-id: auto-ba810f1b04fd87be0fa77bb280e768f99c7f2aea1367e992d2cca858989f4f28
-status: experimental
-description: Detects traffic or activity related to  "b1668822304386f338d3c5c5dd1dff3ddad748621d3f59e6c3c2cbf1b77a41b3" which is a known malicious hash.
+description: Detects traffic or activity related to  "1ad2bc22e39863ec3842fb255ea236a5e85d75aa039742e03e674cd6e2769993" which is a known malicious hash.
 logsource:
   category: process_creation
 detection:
   selection:
     hashes:
-      - '* "b1668822304386f338d3c5c5dd1dff3ddad748621d3f59e6c3c2cbf1b77a41b3"*'
+      - '* "1ad2bc22e39863ec3842fb255ea236a5e85d75aa039742e03e674cd6e2769993"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "4ad2df70224af36a98f01733eb396b8d49165a3e979b08af75ce953c30518fde"
+id: auto-47b1234a3f0dd179c0f052282f305cbf9d9b3971516c84a4783503568a1dbc7c
+status: experimental
+description: Detects traffic or activity related to  "4ad2df70224af36a98f01733eb396b8d49165a3e979b08af75ce953c30518fde" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "4ad2df70224af36a98f01733eb396b8d49165a3e979b08af75ce953c30518fde"*'
   condition: selection
 level: high
 tags:
