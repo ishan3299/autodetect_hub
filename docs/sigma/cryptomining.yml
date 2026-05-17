@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - https://tmpfiles.org/dl/wtw2egtGc2IK/winspec.exe
+id: auto-405fa8c565a74ead7a30eb379db426bc89587cb9c9541298891a12c7e7ffe607
+status: experimental
+description: Detects traffic or activity related to https://tmpfiles.org/dl/wtw2egtGc2IK/winspec.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://tmpfiles.org/dl/wtw2egtGc2IK/winspec.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - https://tmpfiles.org/dl/w4wlAekQJKj3/corvus.exe
 id: auto-15e87cfee1651c25a738206be093b3bf943c2ac42ac59658ec944698274acbc6
 status: experimental
@@ -814,37 +830,53 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - https://github.com/cblootah/test/raw/refs/heads/main/crypted.exe
-id: auto-e68c3d11bc1e1847fcddd24ee4714dd9aa1d43b0b499bdf5f05b4d418471f298
+title: Detect Activity to Known Malicious Indicator -  "f337d833678d2929cacaa94f4982dc8155e01786ad63f6220e20fd1a3a3127f2"
+id: auto-1678d57c015b8cba40c46d49a79226dd427b0184e0948dc88215a35c981c155e
 status: experimental
-description: Detects traffic or activity related to https://github.com/cblootah/test/raw/refs/heads/main/crypted.exe which is a known malicious url.
+description: Detects traffic or activity related to  "f337d833678d2929cacaa94f4982dc8155e01786ad63f6220e20fd1a3a3127f2" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://github.com/cblootah/test/raw/refs/heads/main/crypted.exe*'
+    hashes:
+      - '* "f337d833678d2929cacaa94f4982dc8155e01786ad63f6220e20fd1a3a3127f2"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://248bestmoon.click/files/runtime.bin
-id: auto-b17a7f86f50b1058ed2d08ec056016bedb3332e8c2c9d7f0ff38b40bc1969a41
+title: Detect Activity to Known Malicious Indicator -  "18498e5081675e3fa85c7bf29f842b91f6e12c96ba51bf62bc9995f861a5583d"
+id: auto-81a9bc25681fe9d55d2107824993d4bf649fd493dec4a30593dd109452cf87c8
 status: experimental
-description: Detects traffic or activity related to https://248bestmoon.click/files/runtime.bin which is a known malicious url.
+description: Detects traffic or activity related to  "18498e5081675e3fa85c7bf29f842b91f6e12c96ba51bf62bc9995f861a5583d" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://248bestmoon.click/files/runtime.bin*'
+    hashes:
+      - '* "18498e5081675e3fa85c7bf29f842b91f6e12c96ba51bf62bc9995f861a5583d"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "90177d07a8065e45db20992ff869f755885445ee5a950e41c170d3c43aa30284"
+id: auto-0007a8948979fa182b6a7be2e87aa01f074419059afe8edac7d913dc539b6436
+status: experimental
+description: Detects traffic or activity related to  "90177d07a8065e45db20992ff869f755885445ee5a950e41c170d3c43aa30284" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "90177d07a8065e45db20992ff869f755885445ee5a950e41c170d3c43aa30284"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "1ad2bc22e39863ec3842fb255ea236a5e85d75aa039742e03e674cd6e2769993"
 id: auto-c564669687318dec750905d174169cb83c6fb31147c55cee3615a3078c9796ed
