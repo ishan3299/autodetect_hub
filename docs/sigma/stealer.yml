@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - https://github.com/gutsyheartpeu/davinci-vpn/releases/download/3.2/Davinci.VPN.3.2.exe
+id: auto-d13340fe48597f42b17715856a8ce7e3b4aa54aa7a5e69cc603c1ef392c0bcaa
+status: experimental
+description: Detects traffic or activity related to https://github.com/gutsyheartpeu/davinci-vpn/releases/download/3.2/Davinci.VPN.3.2.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://github.com/gutsyheartpeu/davinci-vpn/releases/download/3.2/Davinci.VPN.3.2.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1204.002
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://stage1-orschellx.com:8080/file/setup.pdf
 id: auto-e683244ebed496f1b7882deac211abe06fa329055e8e79d681633e49ce6642dc
 status: experimental
@@ -10126,965 +10142,213 @@ tags:
   - attack.T1071
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - https://banglabillboard.com/assets/images/iFmkhdg.txt
-id: auto-c4b7bb55c399ff57757bbe8b462b8c86935145685354f541942a0c9addaeb880
+title: Detect Activity to Known Malicious Indicator -  "d645ea9c55c62a5c709d28c0dacf50d4664e383c629d1d52749d5b4f3931b5e5"
+id: auto-be24e83de64f1b0874e0804edafad0c94949847510376d62deea33cdd0c10157
 status: experimental
-description: Detects traffic or activity related to https://banglabillboard.com/assets/images/iFmkhdg.txt which is a known malicious url.
+description: Detects traffic or activity related to  "d645ea9c55c62a5c709d28c0dacf50d4664e383c629d1d52749d5b4f3931b5e5" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://banglabillboard.com/assets/images/iFmkhdg.txt*'
+    hashes:
+      - '* "d645ea9c55c62a5c709d28c0dacf50d4664e383c629d1d52749d5b4f3931b5e5"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://walnuthillcounseling.com/wp-admin/network/wp-includes/pol/assets/css/update.ps1
-id: auto-7fa259ebe5d583dd9d06e6a96dbbfa539d851d673ba6a3d38b1cb2099d9e8e27
+title: Detect Activity to Known Malicious Indicator -  "135a0d4cb5df3f90e2067224a757051a3120d8a9f95942c121540468dbcc5f86"
+id: auto-1847d8ce8b266e5385c4966a4200b6f735f7813d105a68efea90202b97f59e3a
 status: experimental
-description: Detects traffic or activity related to https://walnuthillcounseling.com/wp-admin/network/wp-includes/pol/assets/css/update.ps1 which is a known malicious url.
+description: Detects traffic or activity related to  "135a0d4cb5df3f90e2067224a757051a3120d8a9f95942c121540468dbcc5f86" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://walnuthillcounseling.com/wp-admin/network/wp-includes/pol/assets/css/update.ps1*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.001
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://vault88x.secure-efficient2.su/img_071936.png
-id: auto-6af7d826d6f12e18a3219ee4ef0b9da7d1f091c7afba81121b22b7b869780eee
-status: experimental
-description: Detects traffic or activity related to https://vault88x.secure-efficient2.su/img_071936.png which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://vault88x.secure-efficient2.su/img_071936.png*'
+    hashes:
+      - '* "135a0d4cb5df3f90e2067224a757051a3120d8a9f95942c121540468dbcc5f86"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://banglabillboard.com/assets/images/knSkgpc.txt
-id: auto-2a9571f0182beb261407d978a7470a6e61af1571849841ab8757a6dc11c5396e
+title: Detect Activity to Known Malicious Indicator -  "2e5c4f780b468403e1399e939ecacb1a403c77751acd30ac0ec987bf0656d60a"
+id: auto-e6d64d264d6b0ada6c78d0dea617ac087e35eeb2ea0da5175baa33e17809dbe2
 status: experimental
-description: Detects traffic or activity related to https://banglabillboard.com/assets/images/knSkgpc.txt which is a known malicious url.
+description: Detects traffic or activity related to  "2e5c4f780b468403e1399e939ecacb1a403c77751acd30ac0ec987bf0656d60a" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://banglabillboard.com/assets/images/knSkgpc.txt*'
+    hashes:
+      - '* "2e5c4f780b468403e1399e939ecacb1a403c77751acd30ac0ec987bf0656d60a"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://officials.ink/image.png
-id: auto-afb3409459d9e192f715f1ffbcdb4990d702f58476203f55bff3b1df52432282
+title: Detect Activity to Known Malicious Indicator -  "067f24e9544027f588480c2feee527d1f38d3b6fa3859c96ca21664d748096a3"
+id: auto-e0346a8161ec9e5e2e470d8b303f9d69806cc95d3782b58c4b054bfa31725c55
 status: experimental
-description: Detects traffic or activity related to https://officials.ink/image.png which is a known malicious url.
+description: Detects traffic or activity related to  "067f24e9544027f588480c2feee527d1f38d3b6fa3859c96ca21664d748096a3" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://officials.ink/image.png*'
+    hashes:
+      - '* "067f24e9544027f588480c2feee527d1f38d3b6fa3859c96ca21664d748096a3"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://vault88x.secure-efficient2.su/MSI_133213.png
-id: auto-645172a0e4d9098f5d04458b763bca1b561cbb35b7ce8c7f9cfa503a02457cfe
+title: Detect Activity to Known Malicious Indicator -  "64dbbc8add8bae30fa577e3dd9316aa36abd69470e3797610b2fcae1087a7970"
+id: auto-da36d7e63447e686886f81d26291d48f537fd5a5691251ab20a719c245f577bd
 status: experimental
-description: Detects traffic or activity related to https://vault88x.secure-efficient2.su/MSI_133213.png which is a known malicious url.
+description: Detects traffic or activity related to  "64dbbc8add8bae30fa577e3dd9316aa36abd69470e3797610b2fcae1087a7970" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://vault88x.secure-efficient2.su/MSI_133213.png*'
+    hashes:
+      - '* "64dbbc8add8bae30fa577e3dd9316aa36abd69470e3797610b2fcae1087a7970"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://vault88x.secure-efficient2.su/img_151624.png
-id: auto-15628d2db437541bde40d9706f175ec87fee74b3665dfeaefa0217b07da9ad51
+title: Detect Activity to Known Malicious Indicator -  "641950ea3ee0b3803d0f68ce122ad9cae479b1e0584208d985ce450e91b275e6"
+id: auto-66b02023d3f5fbdf3db1c9eeba69b95ac545a2c510b00f13a792b1b7b394d87b
 status: experimental
-description: Detects traffic or activity related to https://vault88x.secure-efficient2.su/img_151624.png which is a known malicious url.
+description: Detects traffic or activity related to  "641950ea3ee0b3803d0f68ce122ad9cae479b1e0584208d985ce450e91b275e6" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://vault88x.secure-efficient2.su/img_151624.png*'
+    hashes:
+      - '* "641950ea3ee0b3803d0f68ce122ad9cae479b1e0584208d985ce450e91b275e6"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://krikadoo.com/wordpress/update.ps1
-id: auto-632d0e4fee9ea3797eeba0d0220e62719e3950095065c4c2261992bf42e8832b
+title: Detect Activity to Known Malicious Indicator -  "323d532793590b2d70e65769ab8fcf234bb9ea77f826697b84a2bfc7dee7d945"
+id: auto-ad9015a505f7ae276986172ada47c6eca35a29215d54bba173783c36149cfad6
 status: experimental
-description: Detects traffic or activity related to https://krikadoo.com/wordpress/update.ps1 which is a known malicious url.
+description: Detects traffic or activity related to  "323d532793590b2d70e65769ab8fcf234bb9ea77f826697b84a2bfc7dee7d945" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://krikadoo.com/wordpress/update.ps1*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.001
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://gitlab.com/amvefrray/triageisusck/-/raw/main/L7XH7UR9695U.exe
-id: auto-3d585b57efe14813e89dcd4f1486d82d5610d32a51e23685e7b147f4daeaf4ce
-status: experimental
-description: Detects traffic or activity related to https://gitlab.com/amvefrray/triageisusck/-/raw/main/L7XH7UR9695U.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://gitlab.com/amvefrray/triageisusck/-/raw/main/L7XH7UR9695U.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://bigblograin.bond/files/FAvFf4V3.exe
-id: auto-9e7ef8ae486dc3a181346b556ff1d7d13b99b17029a8c48b74907bb4e71db273
-status: experimental
-description: Detects traffic or activity related to https://bigblograin.bond/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://bigblograin.bond/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://mygoodblog.sbs/files/FAvFf4V3.exe
-id: auto-16d2baec62218edef1d64c1d25ee9ca6c891a42b640d1f589a15c5649bbe2e53
-status: experimental
-description: Detects traffic or activity related to https://mygoodblog.sbs/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://mygoodblog.sbs/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://mygoodblog.cyou/files/FAvFf4V3.exe
-id: auto-dca7f0eb753c8a9a4e00fd905bf81f8972d77d4a1b831abede9fa795dedd20cf
-status: experimental
-description: Detects traffic or activity related to https://mygoodblog.cyou/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://mygoodblog.cyou/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://beacon-mysummitfcu.org/files/FAvFf4V3.exe
-id: auto-a4ce18523b4d2677e460c2d76bc7f855a9d8fa05c37398ae2575577e7111b33c
-status: experimental
-description: Detects traffic or activity related to https://beacon-mysummitfcu.org/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://beacon-mysummitfcu.org/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://productionmaza.sbs/files/FAvFf4V3.exe
-id: auto-cb1635ebbacfc1f48ef3395c091884122ae07085baec50d594f5a7e6dbeff2c7
-status: experimental
-description: Detects traffic or activity related to https://productionmaza.sbs/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://productionmaza.sbs/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://158.94.210.248/files/FAvFf4V3.exe
-id: auto-25d602d890dd3026a6465e30b6b349d920253ac41281f130b6410adec8e54eaf
-status: experimental
-description: Detects traffic or activity related to http://158.94.210.248/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://158.94.210.248/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://goodgoodmoon.bond/files/FAvFf4V3.exe
-id: auto-1326e7c93a8d911096eb122aa5ccd5dd891795afc62887754cb0c7fcc3824b35
-status: experimental
-description: Detects traffic or activity related to https://goodgoodmoon.bond/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://goodgoodmoon.bond/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://mygoodblog.bond/files/FAvFf4V3.exe
-id: auto-74b09f6d1a500f5100972b42d29525d463223d27826fd315659d4fdcb63d922d
-status: experimental
-description: Detects traffic or activity related to http://mygoodblog.bond/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://mygoodblog.bond/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://biggestchlen.xyz/files/FAvFf4V3.exe
-id: auto-0e7dc156946f9fd43f880f48fc1cb380368c8cbb5abbae08e1fa2024e433bd24
-status: experimental
-description: Detects traffic or activity related to https://biggestchlen.xyz/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://biggestchlen.xyz/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://krempie.xyz/files/FAvFf4V3.exe
-id: auto-b59d4913ea1f1292fc5e521fa39813d71b69918048797d00af4ff7342f614750
-status: experimental
-description: Detects traffic or activity related to https://krempie.xyz/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://krempie.xyz/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://bigbadwolf.click/files/FAvFf4V3.exe
-id: auto-469d335b5ab71601498b5e9eb3ee68fe9f4be1ab6789e105a7f6e6a849d58d4e
-status: experimental
-description: Detects traffic or activity related to https://bigbadwolf.click/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://bigbadwolf.click/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://brukva.shop/files/FAvFf4V3.exe
-id: auto-d025b14c069bf373ab61835f90e50b132c5fe227e772fb9129022900ddb9c01b
-status: experimental
-description: Detects traffic or activity related to http://brukva.shop/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://brukva.shop/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://bestwebchlen.cyou/files/FAvFf4V3.exe
-id: auto-3316ac48a977340a8a41a4b195180863b48ba6bdfa44825ee6cc52f1463ab07f
-status: experimental
-description: Detects traffic or activity related to https://bestwebchlen.cyou/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://bestwebchlen.cyou/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://microblob.bond/files/FAvFf4V3.exe
-id: auto-b1e5e56e7f01f21ec05325ffcc1adb81abbbc82c9b8b67f86a0f59ec38a7f98a
-status: experimental
-description: Detects traffic or activity related to https://microblob.bond/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://microblob.bond/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://mygoodblog.bond/files/FAvFf4V3.exe
-id: auto-ddf72afd51a51d4010ed5bf01068d498918311ce3a4d349c43493c10a30430ab
-status: experimental
-description: Detects traffic or activity related to https://mygoodblog.bond/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://mygoodblog.bond/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://sirata.asia/files/FAvFf4V3.exe
-id: auto-df39509f916c7e2a35a7af02078b6a2c6e8500f6a0445b137e4dbc0eda1c055b
-status: experimental
-description: Detects traffic or activity related to https://sirata.asia/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://sirata.asia/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://myverifhouse.sbs/files/FAvFf4V3.exe
-id: auto-92ccf9d4f5ec02140e7c92ef2a40acdba50158392551dcfda6b2df106fd12f34
-status: experimental
-description: Detects traffic or activity related to http://myverifhouse.sbs/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://myverifhouse.sbs/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://allplanetssame.cfd/files/FAvFf4V3.exe
-id: auto-e35d3e1cc9b5f6a458fd877959bdffd63717298269396d6effa554995cefe793
-status: experimental
-description: Detects traffic or activity related to http://allplanetssame.cfd/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://allplanetssame.cfd/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://mrazotalog.lol/files/FAvFf4V3.exe
-id: auto-db4a2240f5676c1186a2bd64bce9a1ab6fbc698801c9f1a456cbc80d2d2c7f15
-status: experimental
-description: Detects traffic or activity related to https://mrazotalog.lol/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://mrazotalog.lol/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://myverifhouse.sbs/files/FAvFf4V3.exe
-id: auto-80086ebde31edcc932e960053ca33f28e1a3b9cae117254ba9d45fd2ea4ae512
-status: experimental
-description: Detects traffic or activity related to https://myverifhouse.sbs/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://myverifhouse.sbs/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://brukva.shop/files/FAvFf4V3.exe
-id: auto-55839933a494db4884d2fec74c40408669f5afb97eda4e9e99a51899eee3a2ba
-status: experimental
-description: Detects traffic or activity related to https://brukva.shop/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://brukva.shop/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://productionmaza.cyou/files/FAvFf4V3.exe
-id: auto-6c7f32d24e919bc463e05992427261d03c82e74f64f520dae04135ef175fafc8
-status: experimental
-description: Detects traffic or activity related to https://productionmaza.cyou/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://productionmaza.cyou/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://antongandon.club/files/FAvFf4V3.exe
-id: auto-57133b526232d9a60c67166fd532c32f5c4d150558b43e7a908ff6b6b885cbdc
-status: experimental
-description: Detects traffic or activity related to https://antongandon.club/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://antongandon.club/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://allplanetssame.cfd/files/FAvFf4V3.exe
-id: auto-c432811f1a095f16f56a374efd5c5bc1a1a5a20d2c741d3694e364d22710ae33
-status: experimental
-description: Detects traffic or activity related to https://allplanetssame.cfd/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://allplanetssame.cfd/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://bigboysclub.cyou/files/FAvFf4V3.exe
-id: auto-a828be44e1a42e277aaa366153bba215b63756191d49c143bd6c64b7c503cb4b
-status: experimental
-description: Detects traffic or activity related to http://bigboysclub.cyou/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://bigboysclub.cyou/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://productionmaza.cfd/files/FAvFf4V3.exe
-id: auto-6bd508216eed5b01d9f7228660e5909ac07b61f79e8b28c1659297791c19f1af
-status: experimental
-description: Detects traffic or activity related to https://productionmaza.cfd/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://productionmaza.cfd/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://cloudflare-check.cfd/files/FAvFf4V3.exe
-id: auto-29fe3c53656457c6c2068b39c1984ef558fbf7422908108e97980260d0b99960
-status: experimental
-description: Detects traffic or activity related to http://cloudflare-check.cfd/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://cloudflare-check.cfd/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://myverifyblog.sbs/files/FAvFf4V3.exe
-id: auto-eabfb7b32ed9925a839a84bd1820307b530a657a0aeb806ca5adbc25bd8e28a1
-status: experimental
-description: Detects traffic or activity related to http://myverifyblog.sbs/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://myverifyblog.sbs/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://158.94.210.248/files/FAvFf4V3.exe
-id: auto-371afe3e6c1bb3583ce073047cb94a191513508ee9ffe0ea3f3e4b877aeda31c
-status: experimental
-description: Detects traffic or activity related to https://158.94.210.248/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://158.94.210.248/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://mybiggestjoy.bond/files/FAvFf4V3.exe
-id: auto-22a4e6b081a04b2d86ab62366b89c7bc83708379eb54b1d71cb251db4f8ba9e3
-status: experimental
-description: Detects traffic or activity related to https://mybiggestjoy.bond/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://mybiggestjoy.bond/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://mymicroblog.lat/files/FAvFf4V3.exe
-id: auto-8c1b9f4ac4b7a62ba2d19f2d51b4acc9a738d14958624d0981e13b2a2ad30eb8
-status: experimental
-description: Detects traffic or activity related to https://mymicroblog.lat/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://mymicroblog.lat/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://cloudflare-check.cfd/files/FAvFf4V3.exe
-id: auto-1cd61996b961b0e7f519e04958d999bd1d0d530898423388c01a599450ff3954
-status: experimental
-description: Detects traffic or activity related to https://cloudflare-check.cfd/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://cloudflare-check.cfd/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://mybiggestjoy.bond/files/FAvFf4V3.exe
-id: auto-5a41b646359b63c0af2ca1a1db81c4a9d1c695f14cc90d69156fed09f6649fc6
-status: experimental
-description: Detects traffic or activity related to http://mybiggestjoy.bond/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://mybiggestjoy.bond/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://mrazotalog.lol/files/FAvFf4V3.exe
-id: auto-0b6be6403ee567e5753fef8c726c9e7f3dc7f0fc85e8bd00655135544fc0e850
-status: experimental
-description: Detects traffic or activity related to http://mrazotalog.lol/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://mrazotalog.lol/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://denegnet.click/files/FAvFf4V3.exe
-id: auto-6916318687da70eacac42895925bd1be6be86a1c055804abc91d3ea1c8831540
-status: experimental
-description: Detects traffic or activity related to http://denegnet.click/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://denegnet.click/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://blatnoitovar.xyz/files/FAvFf4V3.exe
-id: auto-24f58dad7e04f0c2e0ca6e5e45fb61da7cc02058b13fda10ac8a619c434ff54b
-status: experimental
-description: Detects traffic or activity related to http://blatnoitovar.xyz/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://blatnoitovar.xyz/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://mymicroblog.lat/files/FAvFf4V3.exe
-id: auto-83b7768443cc3dccdea767ec394ac4d93f82e26fce3015956c6d1ef363ca575d
-status: experimental
-description: Detects traffic or activity related to http://mymicroblog.lat/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://mymicroblog.lat/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://diddyparty.click/files/FAvFf4V3.exe
-id: auto-e78f888a3a7868f53d01617647e4b168bd6d283952ab00f3cce9b12adf974307
-status: experimental
-description: Detects traffic or activity related to https://diddyparty.click/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://diddyparty.click/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://etokrol.lol/files/FAvFf4V3.exe
-id: auto-01b1f522d68c1f344eb44bdcfbf4684bf5407126bfa98952d3f6d21f0f59dc75
-status: experimental
-description: Detects traffic or activity related to http://etokrol.lol/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://etokrol.lol/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://bigboysclub.cyou/files/FAvFf4V3.exe
-id: auto-27d211f0bb72b6ca17f4c76762f2ddc85da4b6b3ff82a68a33d34b888c046ad3
-status: experimental
-description: Detects traffic or activity related to https://bigboysclub.cyou/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://bigboysclub.cyou/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://blatnoitovar.xyz/files/FAvFf4V3.exe
-id: auto-c497f99028f2a5e8ea2a057a5e000ca7c7c32de2734da530035a0bf09fc76bca
-status: experimental
-description: Detects traffic or activity related to https://blatnoitovar.xyz/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://blatnoitovar.xyz/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://merengagoi.bond/files/FAvFf4V3.exe
-id: auto-20f51f720f9a74cc7c9116ac2a216b1f4ce34339667c9f4d5fa473a773dd16b7
-status: experimental
-description: Detects traffic or activity related to https://merengagoi.bond/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://merengagoi.bond/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://myverifyblog.sbs/files/FAvFf4V3.exe
-id: auto-a541b78dba2816b9a208f5dd6a074cc3d667e6b0bc5f30882ebeeafd9c3ffb8a
-status: experimental
-description: Detects traffic or activity related to https://myverifyblog.sbs/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://myverifyblog.sbs/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://productionmaza.cyou/files/FAvFf4V3.exe
-id: auto-368f9a713cf513149c15177eef99803282235db055b18697d707edeb36789f8e
-status: experimental
-description: Detects traffic or activity related to http://productionmaza.cyou/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://productionmaza.cyou/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://etokrol.lol/files/FAvFf4V3.exe
-id: auto-66f9ac7342574b320dc70783d141a794cb2dcc9bbcdc89e995a1ac6316bbc6b7
-status: experimental
-description: Detects traffic or activity related to https://etokrol.lol/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://etokrol.lol/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://gooddogshop.click/files/FAvFf4V3.exe
-id: auto-dbb7871b08972da128988a8e6b3a5ace6ea624b99805684d96864d4a5c60a0cc
-status: experimental
-description: Detects traffic or activity related to https://gooddogshop.click/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://gooddogshop.click/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://diddyparty.click/files/FAvFf4V3.exe
-id: auto-1eed9424522af000fd3f43615e8f891ae157ac7a9ea2ff9a66f4180a9295b89f
-status: experimental
-description: Detects traffic or activity related to http://diddyparty.click/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://diddyparty.click/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://denegnet.click/files/FAvFf4V3.exe
-id: auto-f86e6ababfaf87044008fc916aa9489b890f9623475be7047572540edcbaceec
-status: experimental
-description: Detects traffic or activity related to https://denegnet.click/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://denegnet.click/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://productionmaza.cfd/files/FAvFf4V3.exe
-id: auto-3f01ad0d5a87c32ed92e97bf8c286fbc5bcedc59be0eee78fee8fc57c6804842
-status: experimental
-description: Detects traffic or activity related to http://productionmaza.cfd/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://productionmaza.cfd/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://blobtop.sbs/files/FAvFf4V3.exe
-id: auto-54e9f93b34f7e2d20479c5305b7ef7cdc38f6f67b05c10cc9570114cf3d2384e
-status: experimental
-description: Detects traffic or activity related to https://blobtop.sbs/files/FAvFf4V3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://blobtop.sbs/files/FAvFf4V3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://scalesign.savor-woman.in.net/05fe317c-0981-4de2-bc8a-930d369db441/ck-3d80df5d12cdfe6450a782fc87bf66b444.google
-id: auto-04754dc449b8acbcc10e0e43c5e4cc19957c813c65f41617abe1e9367a95f26c
-status: experimental
-description: Detects traffic or activity related to https://scalesign.savor-woman.in.net/05fe317c-0981-4de2-bc8a-930d369db441/ck-3d80df5d12cdfe6450a782fc87bf66b444.google which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://scalesign.savor-woman.in.net/05fe317c-0981-4de2-bc8a-930d369db441/ck-3d80df5d12cdfe6450a782fc87bf66b444.google*'
+    hashes:
+      - '* "323d532793590b2d70e65769ab8fcf234bb9ea77f826697b84a2bfc7dee7d945"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "9ca8851027e039f37a11e3e7eb2344586cf6c93ffdcff6552ecd13fa60bd6221"
+id: auto-df083f4d9ee52b472318d402808daa097eac0fc604f9100463c492f0dc97cba1
+status: experimental
+description: Detects traffic or activity related to  "9ca8851027e039f37a11e3e7eb2344586cf6c93ffdcff6552ecd13fa60bd6221" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "9ca8851027e039f37a11e3e7eb2344586cf6c93ffdcff6552ecd13fa60bd6221"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "bd1ea10cb0a446d91b643e45e48024433f17cbcad4d949f91732bed6b7ee99e3"
+id: auto-048a0fca3ce53abc0503ec368f9407d91ebe8553865ac591a01b5da2a20c335c
+status: experimental
+description: Detects traffic or activity related to  "bd1ea10cb0a446d91b643e45e48024433f17cbcad4d949f91732bed6b7ee99e3" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "bd1ea10cb0a446d91b643e45e48024433f17cbcad4d949f91732bed6b7ee99e3"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "6e1324ee340642fc82568f9509db612e4185b7329c12e4f44f277c0c3691b12a"
+id: auto-2b295eca1b8a7dcca1a1a11340ef659518c504e2c1d402742ae25e471543fe20
+status: experimental
+description: Detects traffic or activity related to  "6e1324ee340642fc82568f9509db612e4185b7329c12e4f44f277c0c3691b12a" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "6e1324ee340642fc82568f9509db612e4185b7329c12e4f44f277c0c3691b12a"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "0b3215bf8a1c0d1583d9748be3ffb8b1230727647c0c093c63b3046b568f84cc"
+id: auto-56c3ca848286cb8dc6c69eeb296519eeaa9285f3296539ff9726f05a8eccd51d
+status: experimental
+description: Detects traffic or activity related to  "0b3215bf8a1c0d1583d9748be3ffb8b1230727647c0c093c63b3046b568f84cc" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "0b3215bf8a1c0d1583d9748be3ffb8b1230727647c0c093c63b3046b568f84cc"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "67e388a5daaef9ea05266b9dce5ec0703a2de1639b3c6b8ec34db1f000dbf997"
+id: auto-9c27b9b1dc7e00ac6896c03e7e9f833da422a5b18b78c5f9505c21bccd09088e
+status: experimental
+description: Detects traffic or activity related to  "67e388a5daaef9ea05266b9dce5ec0703a2de1639b3c6b8ec34db1f000dbf997" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "67e388a5daaef9ea05266b9dce5ec0703a2de1639b3c6b8ec34db1f000dbf997"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "150c758dd457300ea232a5750fbc04662f58c67e155947204977154fd17ca06d"
+id: auto-02443bb698cb8164078d4717de4c31f631a79305a844ba25bdc4b1596aab772e
+status: experimental
+description: Detects traffic or activity related to  "150c758dd457300ea232a5750fbc04662f58c67e155947204977154fd17ca06d" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "150c758dd457300ea232a5750fbc04662f58c67e155947204977154fd17ca06d"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "7908c22432e29287fa07768c1573b899d1f216545f0fd6d49653945001ad4181"
 id: auto-9b449d9f16a54ece8eabffa8b6a66c4f43090ceee1ecebbcb2362724ee0ee1e1
@@ -11096,6 +10360,22 @@ detection:
   selection:
     hashes:
       - '* "7908c22432e29287fa07768c1573b899d1f216545f0fd6d49653945001ad4181"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "fb8bdba791f8c4dcd097785ac52105316bea737360ace0e5f78738286a190426"
+id: auto-8c01bef9801da8888ea710215ea28426f089fc478912b815200e53a0bc359748
+status: experimental
+description: Detects traffic or activity related to  "fb8bdba791f8c4dcd097785ac52105316bea737360ace0e5f78738286a190426" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "fb8bdba791f8c4dcd097785ac52105316bea737360ace0e5f78738286a190426"*'
   condition: selection
 level: high
 tags:
@@ -11272,198 +10552,6 @@ detection:
   selection:
     hashes:
       - '* "b15cc945ae4a379f64644433b2857ca1460d8bbc0570a5a7f6d60acbb76f1aea"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "154d6125a22c44dd23377d3b91a41587a1b0ada011f100bff4e12dd59394186e"
-id: auto-dc7ccedecac7b01aa930d44ab6a15ec50c6c3314f9a292c38c869a9e8be1db50
-status: experimental
-description: Detects traffic or activity related to  "154d6125a22c44dd23377d3b91a41587a1b0ada011f100bff4e12dd59394186e" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "154d6125a22c44dd23377d3b91a41587a1b0ada011f100bff4e12dd59394186e"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "72155cf4cf77e7c96e315ddc32bbb6b77ee3c62f9f1779b832ae8c192ae05559"
-id: auto-7a80008580e44f10119335c89fb26b1a1150ae3ce87fc088f2b4394217c54d5d
-status: experimental
-description: Detects traffic or activity related to  "72155cf4cf77e7c96e315ddc32bbb6b77ee3c62f9f1779b832ae8c192ae05559" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "72155cf4cf77e7c96e315ddc32bbb6b77ee3c62f9f1779b832ae8c192ae05559"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "7b0665438ef9c8e4989a8222c713f8c84e2ac5e710117cca6fcb2572da975382"
-id: auto-b13c568319fefc443b85a5aeca6ccb34590e17275a90d63d68167ed6bb2f9170
-status: experimental
-description: Detects traffic or activity related to  "7b0665438ef9c8e4989a8222c713f8c84e2ac5e710117cca6fcb2572da975382" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "7b0665438ef9c8e4989a8222c713f8c84e2ac5e710117cca6fcb2572da975382"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "0e794f9133b3977065d72b7b3b3c9935aa449f7b35bf55eec5d197e1a69eec3a"
-id: auto-4cf7fbe78f167c075440bd877cf7636a2d2f2bc10ab4d7f81e781b14883fbd5b
-status: experimental
-description: Detects traffic or activity related to  "0e794f9133b3977065d72b7b3b3c9935aa449f7b35bf55eec5d197e1a69eec3a" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "0e794f9133b3977065d72b7b3b3c9935aa449f7b35bf55eec5d197e1a69eec3a"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "f536d46c74599e251c2691ff7aef41afce06b918232f2c15a5295de1a830e59d"
-id: auto-964c3de4b714711d28175a6ed2a92e06a92b01d90f2634318564765827b037b6
-status: experimental
-description: Detects traffic or activity related to  "f536d46c74599e251c2691ff7aef41afce06b918232f2c15a5295de1a830e59d" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "f536d46c74599e251c2691ff7aef41afce06b918232f2c15a5295de1a830e59d"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "cd8d67589c264492eb887bf179bf1665d44d05628b24573da5dfb12ab2e58dc8"
-id: auto-1484cc78206518108224e978882c9dcf991089e0ef362ae5f6140c983eed2807
-status: experimental
-description: Detects traffic or activity related to  "cd8d67589c264492eb887bf179bf1665d44d05628b24573da5dfb12ab2e58dc8" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "cd8d67589c264492eb887bf179bf1665d44d05628b24573da5dfb12ab2e58dc8"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "a78a69265a1f6a945bd4c0299accebc1f495ae955090ede8806faafebc302291"
-id: auto-a72e7b5c7b313d1e1fb4c07337c148e804833aea86e6de949930180b6b28d831
-status: experimental
-description: Detects traffic or activity related to  "a78a69265a1f6a945bd4c0299accebc1f495ae955090ede8806faafebc302291" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "a78a69265a1f6a945bd4c0299accebc1f495ae955090ede8806faafebc302291"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "6d0082b2b9891b7531b37e5511fb3071112f390a8af574fd30ff1714314a7dcc"
-id: auto-0db824fd0c677c30764ff8930ab9c5fc55e371431cf6c13788100e53211f0b3f
-status: experimental
-description: Detects traffic or activity related to  "6d0082b2b9891b7531b37e5511fb3071112f390a8af574fd30ff1714314a7dcc" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "6d0082b2b9891b7531b37e5511fb3071112f390a8af574fd30ff1714314a7dcc"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "ccc11f1ffba45377456d7bd1decd761cb3aa7e06464ef9d1783ae8d129f6634f"
-id: auto-7b407cbbc66404b690957f37881541efe7ffd9a3d988e8c5e20a2c43ad63d4e2
-status: experimental
-description: Detects traffic or activity related to  "ccc11f1ffba45377456d7bd1decd761cb3aa7e06464ef9d1783ae8d129f6634f" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "ccc11f1ffba45377456d7bd1decd761cb3aa7e06464ef9d1783ae8d129f6634f"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "3ddd9ddc089996bc9ef2ab85139fce51f1be9b25c24e04e88d8ddf54223a796b"
-id: auto-b23777d31d15599e5426e5b87c1b0685117fd3ebdb8942110245b348b494a581
-status: experimental
-description: Detects traffic or activity related to  "3ddd9ddc089996bc9ef2ab85139fce51f1be9b25c24e04e88d8ddf54223a796b" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "3ddd9ddc089996bc9ef2ab85139fce51f1be9b25c24e04e88d8ddf54223a796b"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "be5cc9d8fa9dfef9c57da9916a119424c8f5e8273fd5503e01c9fee733aae6da"
-id: auto-a31988e3667f5d2078174bc5c99efba0ca225fcd07054f1a43c812614d10173a
-status: experimental
-description: Detects traffic or activity related to  "be5cc9d8fa9dfef9c57da9916a119424c8f5e8273fd5503e01c9fee733aae6da" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "be5cc9d8fa9dfef9c57da9916a119424c8f5e8273fd5503e01c9fee733aae6da"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "59f2f6aedad282e7e5ce3c9b828ffebe66f691f030e858c1393cf519f0815647"
-id: auto-3413ea8c1110b52df630d3fd706e6b5fd93c892f7494c2c72734e47885bcdeee
-status: experimental
-description: Detects traffic or activity related to  "59f2f6aedad282e7e5ce3c9b828ffebe66f691f030e858c1393cf519f0815647" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "59f2f6aedad282e7e5ce3c9b828ffebe66f691f030e858c1393cf519f0815647"*'
   condition: selection
 level: high
 tags:

@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - http://2.56.246.76/nova.sh
+id: auto-9a56f1e21670d940424c50ea5235f25af581c2ffc59a32a1f845c78b248ce8db
+status: experimental
+description: Detects traffic or activity related to http://2.56.246.76/nova.sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://2.56.246.76/nova.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://de.cloud.dxang.com/linux_mipsel_softfloat
 id: auto-d749fb2feb2e5ffc53b3932a63c4a10bdb109a1bbda74015b011075b50e9e8b5
 status: experimental

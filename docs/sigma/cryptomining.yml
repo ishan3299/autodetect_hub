@@ -1,3 +1,131 @@
+title: Detect Activity to Known Malicious Indicator - https://121.176.14.102/arm7
+id: auto-eba85c1db238ef952ece1fcbfe718046c6cf815e33c36880ee81fb6e1d57c275
+status: experimental
+description: Detects traffic or activity related to https://121.176.14.102/arm7 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://121.176.14.102/arm7*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://121.176.14.102/x86_64
+id: auto-1f0b8b2bc07c1ae304919831858cabe5932a785b918a268e9e82ee0d0add1c1f
+status: experimental
+description: Detects traffic or activity related to https://121.176.14.102/x86_64 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://121.176.14.102/x86_64*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://121.176.14.102/aarch64
+id: auto-eedb14e9e6c8a705c8d395ae89d18eb865c060f3aed2b296217628c107b61ae6
+status: experimental
+description: Detects traffic or activity related to https://121.176.14.102/aarch64 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://121.176.14.102/aarch64*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://121.176.14.102/sh
+id: auto-de784f6386377b939d018deb6884815dc5cd7d128836dc198c5bccfb0e25886d
+status: experimental
+description: Detects traffic or activity related to https://121.176.14.102/sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://121.176.14.102/sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://121.176.14.102/i686
+id: auto-e489c50f2a5b3b053dd5f162a180514499a6ec5709290fe9a50c71f0c55030e5
+status: experimental
+description: Detects traffic or activity related to https://121.176.14.102/i686 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://121.176.14.102/i686*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://121.176.14.102/clean
+id: auto-bba762e7e747363eb9dfeed5ec74f9a94b6ae548224d0176bd2a518f1f3af52a
+status: experimental
+description: Detects traffic or activity related to https://121.176.14.102/clean which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://121.176.14.102/clean*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://31.58.226.146/nuts/bolts
+id: auto-a0b7c2322390db6a4b4300c7ae722e8c6d0b64446442b4496efea5b4052df162
+status: experimental
+description: Detects traffic or activity related to http://31.58.226.146/nuts/bolts which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://31.58.226.146/nuts/bolts*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://31.58.226.146/nuts/poop
+id: auto-fe189b1d744dd5482dfc014e4eda64b56032148428728b44eb98a19fd4b491c3
+status: experimental
+description: Detects traffic or activity related to http://31.58.226.146/nuts/poop which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://31.58.226.146/nuts/poop*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - https://tmpfiles.org/dl/wtw2egtGc2IK/winspec.exe
 id: auto-405fa8c565a74ead7a30eb379db426bc89587cb9c9541298891a12c7e7ffe607
 status: experimental
@@ -830,6 +958,70 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
+title: Detect Activity to Known Malicious Indicator -  "e9a26ae098631e9ab1ba5e0eaa10c55cb12902d9ba7dabd811ebd47afb8aca92"
+id: auto-8da8a25d0677dca14cc60e6159d72f339c40a3b518ec9eb6f08a5fb2a1b9f4c9
+status: experimental
+description: Detects traffic or activity related to  "e9a26ae098631e9ab1ba5e0eaa10c55cb12902d9ba7dabd811ebd47afb8aca92" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "e9a26ae098631e9ab1ba5e0eaa10c55cb12902d9ba7dabd811ebd47afb8aca92"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "c9d9583fb44131fe57df0c99c74e460973dd9c1f38ac57a7c3c8238be1e350eb"
+id: auto-8af38d6ec505d769128b575a6412ef28944b1aeb092fc578bda827e784d8237b
+status: experimental
+description: Detects traffic or activity related to  "c9d9583fb44131fe57df0c99c74e460973dd9c1f38ac57a7c3c8238be1e350eb" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "c9d9583fb44131fe57df0c99c74e460973dd9c1f38ac57a7c3c8238be1e350eb"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "a01e58ce02a7b7fe9e5368878d30ce576d958069b30e952ff68686e2264b3292"
+id: auto-bb4727af048e2b6fcb432c750d467d2a1df8b48783ea50838573aa93e04ab193
+status: experimental
+description: Detects traffic or activity related to  "a01e58ce02a7b7fe9e5368878d30ce576d958069b30e952ff68686e2264b3292" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "a01e58ce02a7b7fe9e5368878d30ce576d958069b30e952ff68686e2264b3292"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "e3177a205114b0645b340d5537feec0137b6d71cece0430f1c2453e826eb1777"
+id: auto-a2f9c90f98c8d8dbadaf8010803997a340c0e9a1ad2f53cf6cd021b2b7cdd35e
+status: experimental
+description: Detects traffic or activity related to  "e3177a205114b0645b340d5537feec0137b6d71cece0430f1c2453e826eb1777" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "e3177a205114b0645b340d5537feec0137b6d71cece0430f1c2453e826eb1777"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
 title: Detect Activity to Known Malicious Indicator -  "f337d833678d2929cacaa94f4982dc8155e01786ad63f6220e20fd1a3a3127f2"
 id: auto-1678d57c015b8cba40c46d49a79226dd427b0184e0948dc88215a35c981c155e
 status: experimental
@@ -872,38 +1064,6 @@ detection:
   selection:
     hashes:
       - '* "90177d07a8065e45db20992ff869f755885445ee5a950e41c170d3c43aa30284"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "1ad2bc22e39863ec3842fb255ea236a5e85d75aa039742e03e674cd6e2769993"
-id: auto-c564669687318dec750905d174169cb83c6fb31147c55cee3615a3078c9796ed
-status: experimental
-description: Detects traffic or activity related to  "1ad2bc22e39863ec3842fb255ea236a5e85d75aa039742e03e674cd6e2769993" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "1ad2bc22e39863ec3842fb255ea236a5e85d75aa039742e03e674cd6e2769993"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "4ad2df70224af36a98f01733eb396b8d49165a3e979b08af75ce953c30518fde"
-id: auto-47b1234a3f0dd179c0f052282f305cbf9d9b3971516c84a4783503568a1dbc7c
-status: experimental
-description: Detects traffic or activity related to  "4ad2df70224af36a98f01733eb396b8d49165a3e979b08af75ce953c30518fde" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "4ad2df70224af36a98f01733eb396b8d49165a3e979b08af75ce953c30518fde"*'
   condition: selection
 level: high
 tags:
