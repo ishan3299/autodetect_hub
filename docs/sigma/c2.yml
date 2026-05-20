@@ -1,3 +1,51 @@
+title: Detect Activity to Known Malicious Indicator - https://buly.kr/8TsmOPx
+id: auto-89b4458bd071da4feb008791b04c6735b897967104ffd8dc1b502c37166c2e23
+status: experimental
+description: Detects traffic or activity related to https://buly.kr/8TsmOPx which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://buly.kr/8TsmOPx*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://91.92.242.236/files-129312398/files/file_9eba8ba0028ac2cf.exe
+id: auto-50b7e5f11a2e269c7f4dad672b1916d6708b36174516b31dce6c01a8f66d2072
+status: experimental
+description: Detects traffic or activity related to http://91.92.242.236/files-129312398/files/file_9eba8ba0028ac2cf.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_9eba8ba0028ac2cf.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://91.92.242.236/files-129312398/files/file_d1817d35ffdfedd3.exe
+id: auto-9460d2288c4428951cc1dcc39263dfc69ab2c50822f2f38f50f49531f06e1990
+status: experimental
+description: Detects traffic or activity related to http://91.92.242.236/files-129312398/files/file_d1817d35ffdfedd3.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_d1817d35ffdfedd3.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - https://www.dropbox.com/scl/fi/ecom4qzkheclqn7ml8dng/f175fcc7b1277b.exe?rlkey=jctz6gr5wlpfas8bf48qokzgd&st=ur5dn56o&dl=1
 id: auto-9c80a731a2ba1d4b645b5058db4ef1ac5cb07665f13ba8e06b9e959d6b9ebfdc
 status: experimental
@@ -4280,22 +4328,6 @@ detection:
   selection:
     c-uri:
       - '*http://62.60.226.159/bot_x64.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.159/np.exe
-id: auto-14b63a7bc1069443189d5f016e2d767f73546521a77769a1dbb7cfd1d81e54e9
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.159/np.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.159/np.exe*'
   condition: selection
 level: high
 tags:
