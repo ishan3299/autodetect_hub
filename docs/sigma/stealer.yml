@@ -1,3 +1,83 @@
+title: Detect Activity to Known Malicious Indicator - http://91.92.242.236/files-129312398/files/file_41cc5cfe1c109d77.exe
+id: auto-d42577eabc4836467a59977811e218d9833500fd74a16398ed80d6b56e1f8068
+status: experimental
+description: Detects traffic or activity related to http://91.92.242.236/files-129312398/files/file_41cc5cfe1c109d77.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_41cc5cfe1c109d77.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://wss.a.pinggy.link/cdn/file/EchoVoiceMod-Installer-Wizard-1.4.2.exe
+id: auto-e89ca4ade14533b4ec0ee2965c40f6dc526df4843c78942147e038049347d1bd
+status: experimental
+description: Detects traffic or activity related to https://wss.a.pinggy.link/cdn/file/EchoVoiceMod-Installer-Wizard-1.4.2.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://wss.a.pinggy.link/cdn/file/EchoVoiceMod-Installer-Wizard-1.4.2.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1204.002
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://echovoicemod.fun/EchoVoiceMod.zip
+id: auto-0de8e727acc247753f1b1e805b4985505dc78de3bb9437aaa7aea0626105f4a5
+status: experimental
+description: Detects traffic or activity related to https://echovoicemod.fun/EchoVoiceMod.zip which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://echovoicemod.fun/EchoVoiceMod.zip*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://91.92.242.236/files-129312398/files/file_3b6e258854bc5270.exe
+id: auto-5107a616cb11ed844de972491b1fc6b4d463dffe2d2f92eaea98f7ef23cae98f
+status: experimental
+description: Detects traffic or activity related to http://91.92.242.236/files-129312398/files/file_3b6e258854bc5270.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_3b6e258854bc5270.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://zealpraxis.com/8761886
+id: auto-eab60c00e46465150a229b17fc0be410cf1de9b81da22224b8143ece98bae463
+status: experimental
+description: Detects traffic or activity related to https://zealpraxis.com/8761886 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://zealpraxis.com/8761886*'
+  condition: selection
+level: high
+tags:
+  - attack.t1555
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://91.92.242.236/files-129312398/files/file_85e88c7ae15946b2.exe
 id: auto-e5e7b0a77bed71d9e27d3f00d9aa24c6f9afc8ba6612a7cf0f2e05d6f4fd7071
 status: experimental
@@ -2974,597 +3054,213 @@ tags:
   - attack.t1204.002
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - https://gitlab.com/streffy/999/-/raw/main/S8D70IPCZNAA.exe
-id: auto-8a3bd1789dead22c22a3154e8a953d438f2aab31660e70587778d19241cf578b
+title: Detect Activity to Known Malicious Indicator -  "6f6f052595b109f4e8fdf42644b98f6380635f3f45f280cf85aacf6e30e30d2e"
+id: auto-d420613cdb3ed95fc73e0b29666e6bb5c9f2a8921ad334dbc4ec6dc26f5d792f
 status: experimental
-description: Detects traffic or activity related to https://gitlab.com/streffy/999/-/raw/main/S8D70IPCZNAA.exe which is a known malicious url.
+description: Detects traffic or activity related to  "6f6f052595b109f4e8fdf42644b98f6380635f3f45f280cf85aacf6e30e30d2e" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://gitlab.com/streffy/999/-/raw/main/S8D70IPCZNAA.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://www.italiaregina.it/wp-content/plugins/oAjtOHvn.exe
-id: auto-e66748321d6be69664beed7099632e3fb3299905d448cd10cd0c9b0931908625
-status: experimental
-description: Detects traffic or activity related to https://www.italiaregina.it/wp-content/plugins/oAjtOHvn.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://www.italiaregina.it/wp-content/plugins/oAjtOHvn.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://sonra.eutialyson.com/inst24.msi
-id: auto-cfdbdc46de2624dd1be2f487c3ef57d2faefc91efdd9d309a67b98a0155dfd3a
-status: experimental
-description: Detects traffic or activity related to https://sonra.eutialyson.com/inst24.msi which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://sonra.eutialyson.com/inst24.msi*'
+    hashes:
+      - '* "6f6f052595b109f4e8fdf42644b98f6380635f3f45f280cf85aacf6e30e30d2e"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://6z3dyra.qiv9moren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-9348c64acf996905e0e9d16f72c717a232b58b85764cda70c4539bdf7230d278
+title: Detect Activity to Known Malicious Indicator -  "d5647efd5104b67524f99f22788de313769ab552dd53bfe497eb2a7765bbe56f"
+id: auto-75fe55853a158942fc434dd9762f5abdef5be3c4d6c297aa499679ce083613cd
 status: experimental
-description: Detects traffic or activity related to https://6z3dyra.qiv9moren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
+description: Detects traffic or activity related to  "d5647efd5104b67524f99f22788de313769ab552dd53bfe497eb2a7765bbe56f" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://6z3dyra.qiv9moren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
+    hashes:
+      - '* "d5647efd5104b67524f99f22788de313769ab552dd53bfe497eb2a7765bbe56f"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://boostmanifest.qiv9moren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-4a819274ecae3f1e49025f87dc05e82d97a4e3cd5943093d7ee2308b78adc2eb
+title: Detect Activity to Known Malicious Indicator -  "e03dd36f22e24a323f8db11ba3a220786ea14c5617538b5433911e5a6d1f66a3"
+id: auto-e6879248484e40038860eb76acc0bdeb8d1c50f5fe8a6fa8dd4c8c19668cd775
 status: experimental
-description: Detects traffic or activity related to https://boostmanifest.qiv9moren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
+description: Detects traffic or activity related to  "e03dd36f22e24a323f8db11ba3a220786ea14c5617538b5433911e5a6d1f66a3" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://boostmanifest.qiv9moren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
+    hashes:
+      - '* "e03dd36f22e24a323f8db11ba3a220786ea14c5617538b5433911e5a6d1f66a3"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://eamo.bexla2rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-8350b5580f219b4dc6d3ff66432f5778ead7ca1cb95f942ec85cfb363c88cad8
+title: Detect Activity to Known Malicious Indicator -  "3aca18df0426522e0c301a55dae3d892b2009719854207b4bae45f4c94403c9f"
+id: auto-e0716c304324368eb90b1abd49ef332270aea5e9e500da5c1ca24e0d4e7d3fba
 status: experimental
-description: Detects traffic or activity related to https://eamo.bexla2rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
+description: Detects traffic or activity related to  "3aca18df0426522e0c301a55dae3d892b2009719854207b4bae45f4c94403c9f" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://eamo.bexla2rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
+    hashes:
+      - '* "3aca18df0426522e0c301a55dae3d892b2009719854207b4bae45f4c94403c9f"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://fl4rn2-phase.bexla2rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-df28c2cba2f7e9bdbdf476c43b72336807b22a22e96908dcc9a48dfb158d585a
+title: Detect Activity to Known Malicious Indicator -  "8e31d8ea218e372cf5c90398aa91c6d8bf77fda473a8d5d645f2812e846232b7"
+id: auto-9094a9a9d976560ee30298f33b39b2cc277e5527e52007722c6687f60669f4d5
 status: experimental
-description: Detects traffic or activity related to https://fl4rn2-phase.bexla2rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
+description: Detects traffic or activity related to  "8e31d8ea218e372cf5c90398aa91c6d8bf77fda473a8d5d645f2812e846232b7" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://fl4rn2-phase.bexla2rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
+    hashes:
+      - '* "8e31d8ea218e372cf5c90398aa91c6d8bf77fda473a8d5d645f2812e846232b7"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://bundleform.bexla2rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-de5d98a1a829bcb5e871cd8f1cc3cffaa8ccf0e67d2fb83b51abfac4dc904e7f
+title: Detect Activity to Known Malicious Indicator -  "bb00b166bd615e9b94ad242822696dbe6dba717af39aee9ebbd3d7734e0f0683"
+id: auto-4955dbe59aa8f5b9b442a72dee7f71db4ac2c501c4d0b148e4d8903b82ba30f0
 status: experimental
-description: Detects traffic or activity related to https://bundleform.bexla2rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
+description: Detects traffic or activity related to  "bb00b166bd615e9b94ad242822696dbe6dba717af39aee9ebbd3d7734e0f0683" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://bundleform.bexla2rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
+    hashes:
+      - '* "bb00b166bd615e9b94ad242822696dbe6dba717af39aee9ebbd3d7734e0f0683"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://colocip.bexla2rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-f8262352e2e4a0fdf610a25ece0c71d8a16dd22dafc6962f58e698e958495b3e
+title: Detect Activity to Known Malicious Indicator -  "335dabe699c9546e422cf0b39834cf62ef3edfccf1818a8407932db61fb0c0e1"
+id: auto-6dd7cbbfc083de4c14bf811b4380a357ef95e4f6b24e82db9287a20467b5bb5e
 status: experimental
-description: Detects traffic or activity related to https://colocip.bexla2rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
+description: Detects traffic or activity related to  "335dabe699c9546e422cf0b39834cf62ef3edfccf1818a8407932db61fb0c0e1" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://colocip.bexla2rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
+    hashes:
+      - '* "335dabe699c9546e422cf0b39834cf62ef3edfccf1818a8407932db61fb0c0e1"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://f0cu-grid.bexla2rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-0f9b5fbc064c7a08f6ec277d95cef9a6b44d75858983bcbafaca848759196550
+title: Detect Activity to Known Malicious Indicator -  "4f41aa4ab30b58dd89a2036f8e11f40859f13a937ca80468d7f646d21249025d"
+id: auto-082ed9c97ba9a29ce4c4e01a960e16171fb6cf0c3e0e75fc3a7ceb01c19e222f
 status: experimental
-description: Detects traffic or activity related to https://f0cu-grid.bexla2rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
+description: Detects traffic or activity related to  "4f41aa4ab30b58dd89a2036f8e11f40859f13a937ca80468d7f646d21249025d" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://f0cu-grid.bexla2rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
+    hashes:
+      - '* "4f41aa4ab30b58dd89a2036f8e11f40859f13a937ca80468d7f646d21249025d"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://planrec.bexla2rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-c67ac8130796d05e3b8f2840f09763f47f85130c71adc6f061ebfd9f74ebef66
+title: Detect Activity to Known Malicious Indicator -  "91c51f6103b9664b70fdbfa2234017d89e088972aab0bf77fb4917f42f7383f8"
+id: auto-75419973c2abd1961b7dbf301f38b361e7b7decd19f8140f2b1700d8fa4a9307
 status: experimental
-description: Detects traffic or activity related to https://planrec.bexla2rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
+description: Detects traffic or activity related to  "91c51f6103b9664b70fdbfa2234017d89e088972aab0bf77fb4917f42f7383f8" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://planrec.bexla2rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
+    hashes:
+      - '* "91c51f6103b9664b70fdbfa2234017d89e088972aab0bf77fb4917f42f7383f8"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://workersolar.dex7lavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-41156ad598bcb9d404fe6fa932cafb5da0fb3714da2a005c5c7922ef5b2aaa1d
+title: Detect Activity to Known Malicious Indicator -  "bc1363062c4f4aff514d71fd85fc9a5a08ad7fc2ea9a40298bb8865d041b8a3f"
+id: auto-ca46e66216a94aa7cc723968f9b6d856910eb206ffbff35a4889851b37f209ef
 status: experimental
-description: Detects traffic or activity related to https://workersolar.dex7lavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
+description: Detects traffic or activity related to  "bc1363062c4f4aff514d71fd85fc9a5a08ad7fc2ea9a40298bb8865d041b8a3f" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://workersolar.dex7lavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
+    hashes:
+      - '* "bc1363062c4f4aff514d71fd85fc9a5a08ad7fc2ea9a40298bb8865d041b8a3f"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://kel-marken.dex7lavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-4292315ece3d0412c213a6a0f77823d59a8d7c4c09bad284f63f8aac06bf322b
+title: Detect Activity to Known Malicious Indicator -  "8672d109eea8f93d3709e72a8ee821f424bfda7f70ad82048ea2d1387b31c1b0"
+id: auto-8e550f1d55455c3b4ffebb6727ad2544f20a4b5dfab985c8ab4f78b7fcd3a48e
 status: experimental
-description: Detects traffic or activity related to https://kel-marken.dex7lavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
+description: Detects traffic or activity related to  "8672d109eea8f93d3709e72a8ee821f424bfda7f70ad82048ea2d1387b31c1b0" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://kel-marken.dex7lavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
+    hashes:
+      - '* "8672d109eea8f93d3709e72a8ee821f424bfda7f70ad82048ea2d1387b31c1b0"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://kelcoreos9.dex7lavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-0fabe74dcc2031f68baa1ec3b48640366fd2c7b2f2e7b271691cb30f23f29149
+title: Detect Activity to Known Malicious Indicator -  "069fe3ee8f7fa8877cf01478f42b51c0ad071abb7a79e267eb332cb7f066924e"
+id: auto-969686ae64229a01bc4238f44d8387d07d48c51e77fa59b6d5cde61300d558bc
 status: experimental
-description: Detects traffic or activity related to https://kelcoreos9.dex7lavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
+description: Detects traffic or activity related to  "069fe3ee8f7fa8877cf01478f42b51c0ad071abb7a79e267eb332cb7f066924e" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://kelcoreos9.dex7lavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
+    hashes:
+      - '* "069fe3ee8f7fa8877cf01478f42b51c0ad071abb7a79e267eb332cb7f066924e"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://mer-meshis.dex7lavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-650cfae1f9670205a693d77aa3f23ce71343c5d8584d513bc43cd65bb4530bb8
+title: Detect Activity to Known Malicious Indicator -  "ebaf8f3cf910b2a0e32e97c13712d6dc9ba62fc57ec456a55136420585755bbf"
+id: auto-065c8d98dc101c0f9eb5c85ee1a3792ed484b2ebc051d404b91d85b696713871
 status: experimental
-description: Detects traffic or activity related to https://mer-meshis.dex7lavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
+description: Detects traffic or activity related to  "ebaf8f3cf910b2a0e32e97c13712d6dc9ba62fc57ec456a55136420585755bbf" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://mer-meshis.dex7lavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
+    hashes:
+      - '* "ebaf8f3cf910b2a0e32e97c13712d6dc9ba62fc57ec456a55136420585755bbf"*'
   condition: selection
 level: high
 tags:
   - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://del1v-graph.dex7lavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-bcae45d8532167bf12c2d717fb6870f8f9ab21c7732212781a80a0c06e24f0ba
-status: experimental
-description: Detects traffic or activity related to https://del1v-graph.dex7lavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://del1v-graph.dex7lavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://summiceda.dex7lavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-882429b54abf2a66c41fb5aae4ad4ab5f5d9d5aa1d37d930ad967932c866304e
-status: experimental
-description: Detects traffic or activity related to https://summiceda.dex7lavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://summiceda.dex7lavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://validatorgri.miv4soren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-fdba951f678de8b44adcbfdec542f780d277c60fbb96f290d4c73dd09f58c520
-status: experimental
-description: Detects traffic or activity related to https://validatorgri.miv4soren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://validatorgri.miv4soren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://sermarkos.miv4soren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-9d6a30846d1eb4ab4b8f30ce532519e646e6a7293986b26dd14b1a0db22b01c4
-status: experimental
-description: Detects traffic or activity related to https://sermarkos.miv4soren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://sermarkos.miv4soren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://gpfour4.miv4soren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-b082ecc43a0bdeadfeeb0739d90bd0cc0c93a99de7486d5e518645b05b9633e6
-status: experimental
-description: Detects traffic or activity related to https://gpfour4.miv4soren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://gpfour4.miv4soren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://sknrzs3z.miv4soren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-a692164bc77aff6e1d1e66b980e50a6e44c9c7ad3926896eb41460ff92f84998
-status: experimental
-description: Detects traffic or activity related to https://sknrzs3z.miv4soren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://sknrzs3z.miv4soren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://hyper-inv0ice.miv4soren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-2679ab6952aaa53cb799c37fa6d8682cac8be98031d925a0cd7cec6beee4e4d5
-status: experimental
-description: Detects traffic or activity related to https://hyper-inv0ice.miv4soren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://hyper-inv0ice.miv4soren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://fjtx.miv4soren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-091cc8fa92776eae637394afc62ce569eab08525a3fea67f10979492d9489270
-status: experimental
-description: Detects traffic or activity related to https://fjtx.miv4soren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://fjtx.miv4soren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://valehar.nov3liren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-04372068af028bbf61cb46364f545dfb0802d2a6ab9344911ed5e198f67bf6cb
-status: experimental
-description: Detects traffic or activity related to https://valehar.nov3liren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://valehar.nov3liren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://rockconvoy.kymle1rax.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-b9a30cf9bd76322c730815a171a84e177c1e7d7adc441d66b4056ba0b13a431d
-status: experimental
-description: Detects traffic or activity related to https://rockconvoy.kymle1rax.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://rockconvoy.kymle1rax.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://firmwa7-point.to9varon.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-57629651a7204a85cf0d3dcf08698c71068fe2077e7357de039a4c53e66f2d43
-status: experimental
-description: Detects traffic or activity related to https://firmwa7-point.to9varon.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://firmwa7-point.to9varon.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://bytehard.sylo6mer.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-74ef1d7d7ab035cff2d3bc77348968957504c5fcd5b342ff2b8d275ab167bfe2
-status: experimental
-description: Detects traffic or activity related to https://bytehard.sylo6mer.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://bytehard.sylo6mer.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://trigg-crest.rax4pavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-9c91cd35fc5fccb14192aa6ca0cae3218cbef5557d98d1f23c1153fa42e78627
-status: experimental
-description: Detects traffic or activity related to https://trigg-crest.rax4pavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://trigg-crest.rax4pavel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://mossphoto.zex8liron.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-ac2c568a3695c3bd6bdc622d5ebeaa87f95d1d5cc33f5625b6a3a887e336c136
-status: experimental
-description: Detects traffic or activity related to https://mossphoto.zex8liron.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://mossphoto.zex8liron.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://dpcr.qiv2moren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-7674a2e17de988738f919b99f0b868509211ef831084dbcda2df3dac990b4f5e
-status: experimental
-description: Detects traffic or activity related to https://dpcr.qiv2moren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://dpcr.qiv2moren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://focusflame.bexla9rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-1e76018237bd36bd6c098f6d9a9fa2013620d768725a97fe921433a07833e3bf
-status: experimental
-description: Detects traffic or activity related to https://focusflame.bexla9rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://focusflame.bexla9rin.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://conv3r5-glow.dex3lavan.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-23be26575be0436362e1bb5e88b4f573a43467baee5cc9c93cdbd95ae7101b82
-status: experimental
-description: Detects traffic or activity related to https://conv3r5-glow.dex3lavan.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://conv3r5-glow.dex3lavan.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://84gxvrtf.miv7sorel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-42c7d94032535813f38dd06250f3a76b00f962c72104dd82b532269abbf1f595
-status: experimental
-description: Detects traffic or activity related to https://84gxvrtf.miv7sorel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://84gxvrtf.miv7sorel.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://systelaun.nov3liren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-b268dbee2518e46bc122ae79150ebe6f0da8a3a5302854a3296c70ed985be334
-status: experimental
-description: Detects traffic or activity related to https://systelaun.nov3liren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://systelaun.nov3liren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://clust1-dock.nov3liren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-19141787a8c783fdf0e41c2e84da8cfc1727cab22d9f83ba7d545e8a028eea6a
-status: experimental
-description: Detects traffic or activity related to https://clust1-dock.nov3liren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://clust1-dock.nov3liren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://springledg.nov3liren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-70dee53244b55a9a64cf017508bac6a72aa6f9a975d12738f9756da63bc5daf0
-status: experimental
-description: Detects traffic or activity related to https://springledg.nov3liren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://springledg.nov3liren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://serven5um.nov3liren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk
-id: auto-75344f0ede07f6d38cd8657141747f8468b865b65e78c977cca20b214cd2ec4f
-status: experimental
-description: Detects traffic or activity related to https://serven5um.nov3liren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://serven5um.nov3liren.in.net/cdk-msdn-3457325-null/load-file0dsdf567.chk*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "84ce9564ef826922137dd56da0a9d3ef347eb35c7164018cd48a1433926fade6"
 id: auto-24b5675368c32fa7d2aef380fd420069289795e68d1d98b22df3ce9e1f8ab11f
@@ -3592,6 +3288,22 @@ detection:
   selection:
     hashes:
       - '* "8a98fbecbec0917b637a2c364a0caa4b311120d7bb3f7208c9f1fc021264336e"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "223b65ac4158c6b75a84bdb6b91efe60770e41fc9a5db47acd0e4d0c491d6ba5"
+id: auto-2df414213e37ba2f5dab13fbc3443d5a6756ece7e76edbb7bffc17cb816475c4
+status: experimental
+description: Detects traffic or activity related to  "223b65ac4158c6b75a84bdb6b91efe60770e41fc9a5db47acd0e4d0c491d6ba5" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "223b65ac4158c6b75a84bdb6b91efe60770e41fc9a5db47acd0e4d0c491d6ba5"*'
   condition: selection
 level: high
 tags:
@@ -3816,118 +3528,6 @@ detection:
   selection:
     hashes:
       - '* "4503fe5a9a97249fb92441419b29b21eb52f737b42cfb37cffa5bb8bd55cc356"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "ef408139a0b5b7dc0f75cdd0700238264f264c5d23382d6d5b2389b5f908164f"
-id: auto-c25c3d34b72b6afdb4fcfb125c8b8a33b48eb455037d4e893d3db0b71c2d8d8a
-status: experimental
-description: Detects traffic or activity related to  "ef408139a0b5b7dc0f75cdd0700238264f264c5d23382d6d5b2389b5f908164f" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "ef408139a0b5b7dc0f75cdd0700238264f264c5d23382d6d5b2389b5f908164f"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "af6e1f4644b2e1e2a9c269d3acbd2faa1ea3facb9b68829c6f6a93a34ddb9c44"
-id: auto-825da02e9c4cce391b275cbba8653c8a26ccf3431758bd3dbf7f7e86c218b6f8
-status: experimental
-description: Detects traffic or activity related to  "af6e1f4644b2e1e2a9c269d3acbd2faa1ea3facb9b68829c6f6a93a34ddb9c44" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "af6e1f4644b2e1e2a9c269d3acbd2faa1ea3facb9b68829c6f6a93a34ddb9c44"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "16007cfdf1d0fdd3c004ea52957ff97b88c31f7d880be88822325c48b4504c56"
-id: auto-14ceba6205d71724212392331cc935b4dd96c47b4d3b01c4d82c29263582a00a
-status: experimental
-description: Detects traffic or activity related to  "16007cfdf1d0fdd3c004ea52957ff97b88c31f7d880be88822325c48b4504c56" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "16007cfdf1d0fdd3c004ea52957ff97b88c31f7d880be88822325c48b4504c56"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "933d8df496e3eca4254bccf831549803daa069b3ee515e85b7e699a3e2e67800"
-id: auto-e29ecbe1d6ed8c8179b4f27b74f313da606ffc7f421172240a5f43a136bbe31d
-status: experimental
-description: Detects traffic or activity related to  "933d8df496e3eca4254bccf831549803daa069b3ee515e85b7e699a3e2e67800" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "933d8df496e3eca4254bccf831549803daa069b3ee515e85b7e699a3e2e67800"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "2a89325f2ee48ccf888cbe5a859a7d61dfbeb89dae062c39682adb628e45787f"
-id: auto-590847a471a1d0503a8c839c2268f5acf4c9b3125e5ea515eec451ffbd82ff4f
-status: experimental
-description: Detects traffic or activity related to  "2a89325f2ee48ccf888cbe5a859a7d61dfbeb89dae062c39682adb628e45787f" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "2a89325f2ee48ccf888cbe5a859a7d61dfbeb89dae062c39682adb628e45787f"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "1963aa0f51baebbc5f9a04bf57e0358dda6c80e16055a9654bf9a4cae08b4415"
-id: auto-822a410d8a60b20a47cd85832e8640bc511f41de1c5fc1912a4626c0a8d58794
-status: experimental
-description: Detects traffic or activity related to  "1963aa0f51baebbc5f9a04bf57e0358dda6c80e16055a9654bf9a4cae08b4415" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "1963aa0f51baebbc5f9a04bf57e0358dda6c80e16055a9654bf9a4cae08b4415"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "6c60efcfb9fed6366ff0eed3e1a80846c1ae0b28e0b289e105e360b2578351b6"
-id: auto-4b0a3e73b21e4bc6906b3d335c9271ab39f7b60f08583b10e4ba8dff3bc27184
-status: experimental
-description: Detects traffic or activity related to  "6c60efcfb9fed6366ff0eed3e1a80846c1ae0b28e0b289e105e360b2578351b6" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "6c60efcfb9fed6366ff0eed3e1a80846c1ae0b28e0b289e105e360b2578351b6"*'
   condition: selection
 level: high
 tags:
