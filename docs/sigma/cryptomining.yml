@@ -670,37 +670,21 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - http://176.65.139.124/Photo.scr
-id: auto-2c4d2fd3e4e7133543cf098167aa3e9f3b0f111a0d687002d25ae8aa05fb8bf6
+title: Detect Activity to Known Malicious Indicator -  "5faa8bac97d186a546c140a89de778f529f94a66052ffbe022aee810d3edb3f1"
+id: auto-2e904d8bd2c8acf7924cda63d3c8f78dd81a36fefc425129c7a06d7ee96b7ba0
 status: experimental
-description: Detects traffic or activity related to http://176.65.139.124/Photo.scr which is a known malicious url.
+description: Detects traffic or activity related to  "5faa8bac97d186a546c140a89de778f529f94a66052ffbe022aee810d3edb3f1" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://176.65.139.124/Photo.scr*'
+    hashes:
+      - '* "5faa8bac97d186a546c140a89de778f529f94a66052ffbe022aee810d3edb3f1"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://panychurasc0.com/ORIGINAL/3.exe
-id: auto-dff98a46a719418c517c33c107e20a2cff3a57f83ac6825ce3d0899d9437fab2
-status: experimental
-description: Detects traffic or activity related to https://panychurasc0.com/ORIGINAL/3.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://panychurasc0.com/ORIGINAL/3.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "6ffafaa40005d4dff0436ac9b18cce45d99d6b106e840c0cad22fe08e31d2f5f"
 id: auto-384aacfcb32adb656c7ca6ae9440cdf73d1c6a5cbc0f5988d2a4a71290fd159d
