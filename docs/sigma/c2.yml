@@ -1,3 +1,51 @@
+title: Detect Activity to Known Malicious Indicator - http://91.92.242.236/files-129312398/files/file_3cd781bcee69e6b7.exe
+id: auto-90df4b43f56d6f421190baf7fd8d893451e2703893bcbd2c8c96768a7e854344
+status: experimental
+description: Detects traffic or activity related to http://91.92.242.236/files-129312398/files/file_3cd781bcee69e6b7.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_3cd781bcee69e6b7.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://www.theworldofm.net/wp-content/plugins/contextual-related-posts/vendor/taskHost.exe
+id: auto-d7ac3bd20db72663741c902526d4cc959c06c0771ff49cf4181543b606cf8332
+status: experimental
+description: Detects traffic or activity related to https://www.theworldofm.net/wp-content/plugins/contextual-related-posts/vendor/taskHost.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://www.theworldofm.net/wp-content/plugins/contextual-related-posts/vendor/taskHost.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://91.92.242.236/files-129312398/files/file_36af00307cbf2eec.exe
+id: auto-7f078277ecc4d3b93ec4fd26ba534342612827934c85171c2da59f52671bcc6d
+status: experimental
+description: Detects traffic or activity related to http://91.92.242.236/files-129312398/files/file_36af00307cbf2eec.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_36af00307cbf2eec.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://91.92.242.236/files-129312398/files/file_0326a71c1857de0a.exe
 id: auto-4c182d46ce846a1bc4f269d21b53a7efc2c07dc805abb6a41a36ded7a76c6003
 status: experimental
@@ -6024,246 +6072,6 @@ detection:
   selection:
     c-uri:
       - '*http://62.60.226.140/files/2038862353/H1TirUY.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.140/files/8183300806/P6qauiK.bat
-id: auto-0a2c27e50113a3d6a1d7f95fd7105503d017a06aad1bb80072ed5a9ecc7b63bc
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.140/files/8183300806/P6qauiK.bat which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.140/files/8183300806/P6qauiK.bat*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.140/files/8183300806/gmKTIHA.bat
-id: auto-f947b65fbbb06e3fab06763dfb1bba56f885ef60c7897d6136cc65234b830381
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.140/files/8183300806/gmKTIHA.bat which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.140/files/8183300806/gmKTIHA.bat*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.140/files/8183300806/2fh2tbR.bat
-id: auto-2f4b69f63ff2a83c806294e7006af33191f36f182104f20653a27c3ecf0cc7aa
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.140/files/8183300806/2fh2tbR.bat which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.140/files/8183300806/2fh2tbR.bat*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.140/files/8183300806/SzM66Qy.bat
-id: auto-5d012f181a588bc9b53f18db56b28fc1178f77fcd9e3807efb18b3109997130f
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.140/files/8183300806/SzM66Qy.bat which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.140/files/8183300806/SzM66Qy.bat*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.140/files/8212392349/KSGIUCN.bat
-id: auto-fe10dd09497eb57b3db3dac3b2a6184f715a7f84f340572369596b44a9248665
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.140/files/8212392349/KSGIUCN.bat which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.140/files/8212392349/KSGIUCN.bat*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.140/files/yosef/random.exe
-id: auto-bd6fbbff4551e313fc4926091c236393b1ed259b1133938a57bf3b09fe67fb83
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.140/files/yosef/random.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.140/files/yosef/random.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.140/files/8635093259/JBFQSSU.exe
-id: auto-34628d9a48d28aadf9c611ff37d49b22d960b0f8b9d3a283cd24db8d5b9b917f
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.140/files/8635093259/JBFQSSU.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.140/files/8635093259/JBFQSSU.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://91.92.241.243/files/file_6cfb5baf4de72734.exe
-id: auto-e3e0a2e6a6e8ace7c6009b907f0ac5672dc5360a48aed56dabd22a7ac97fccf8
-status: experimental
-description: Detects traffic or activity related to http://91.92.241.243/files/file_6cfb5baf4de72734.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://91.92.241.243/files/file_6cfb5baf4de72734.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://mybuddyone.b-cdn.net/setup.msi
-id: auto-476743ef7a6faef7e944ab18d86f05c227d53da280cde59905c0ea00616fba63
-status: experimental
-description: Detects traffic or activity related to https://mybuddyone.b-cdn.net/setup.msi which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://mybuddyone.b-cdn.net/setup.msi*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.140/files/6849343518/wSMCRDE.exe
-id: auto-82b06ed9b0d3a55c8655a13486a90eff12e06dc2e8c29ebf57baf647bc7551b2
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.140/files/6849343518/wSMCRDE.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.140/files/6849343518/wSMCRDE.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://91.92.241.243/files/file_5241ac07ddb70336.exe
-id: auto-dde6c39545d35a46f891486d7b75a4b6c18e5593df85d3c4298fe603a389ac97
-status: experimental
-description: Detects traffic or activity related to http://91.92.241.243/files/file_5241ac07ddb70336.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://91.92.241.243/files/file_5241ac07ddb70336.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://62.60.226.140/files/1781548144/RqDFssh.exe
-id: auto-a1949a9cc69724da25378b6cdf4f88c931769d6990489230ddcba87dfd6aae4b
-status: experimental
-description: Detects traffic or activity related to http://62.60.226.140/files/1781548144/RqDFssh.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://62.60.226.140/files/1781548144/RqDFssh.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://91.92.241.243/files/file_a46ce3f4b9e389a1.exe
-id: auto-db358e7e9a414fb0a34cbc1752712847d6d134a4a956b7ef1bffa6c25bf76d35
-status: experimental
-description: Detects traffic or activity related to http://91.92.241.243/files/file_a46ce3f4b9e389a1.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://91.92.241.243/files/file_a46ce3f4b9e389a1.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://91.92.241.243/files/file_f7f19e796291105f.exe
-id: auto-11ad1d8c90e75e6f55dbcbb6d8bafb48e51df034efea69be065295402f16088f
-status: experimental
-description: Detects traffic or activity related to http://91.92.241.243/files/file_f7f19e796291105f.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://91.92.241.243/files/file_f7f19e796291105f.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://91.92.241.243/files/file_3e2830fa7d31655a.exe
-id: auto-c91378b1c10cd0112c475e82b68a0e8cff27551c37c0c865824218a1b42a399d
-status: experimental
-description: Detects traffic or activity related to http://91.92.241.243/files/file_3e2830fa7d31655a.exe which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://91.92.241.243/files/file_3e2830fa7d31655a.exe*'
   condition: selection
 level: high
 tags:

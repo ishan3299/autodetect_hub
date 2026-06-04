@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - http://91.92.242.236/files-129312398/files/file_d03ee7ca7adf58d0.exe
+id: auto-ec4186ec9cdbea0cd6cea5e282a13ae0ac4789abad1b3274daffdce2f585eea3
+status: experimental
+description: Detects traffic or activity related to http://91.92.242.236/files-129312398/files/file_d03ee7ca7adf58d0.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_d03ee7ca7adf58d0.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - https://download.logltech.workers.dev/up/down/api/javae
 id: auto-f349cf1c7a7fe3db636296aa5f266197781bc9e776029d9ce26674e7612996e1
 status: experimental
@@ -574,85 +590,21 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - http://103.213.248.200/xmrig_g
-id: auto-356cc4307a628205670031be57549a414c4df178cc1652a93d141192d5fd6c60
+title: Detect Activity to Known Malicious Indicator -  "cd4da450ee62fd96023c19139f977dbb924d0c631fa691d3c23370fc196175fa"
+id: auto-9ee2d1fa26fc98b4d7247ffb588e4a7e687cb741e6b02dfb8183700f13dacbcb
 status: experimental
-description: Detects traffic or activity related to http://103.213.248.200/xmrig_g which is a known malicious url.
+description: Detects traffic or activity related to  "cd4da450ee62fd96023c19139f977dbb924d0c631fa691d3c23370fc196175fa" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://103.213.248.200/xmrig_g*'
+    hashes:
+      - '* "cd4da450ee62fd96023c19139f977dbb924d0c631fa691d3c23370fc196175fa"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://103.213.248.200/xmrig_86
-id: auto-292009c21ed3e343dc97925925c2f9bd70af21e54e40a47301c6c9120652af1f
-status: experimental
-description: Detects traffic or activity related to http://103.213.248.200/xmrig_86 which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://103.213.248.200/xmrig_86*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://103.213.248.200/xmrig_m
-id: auto-aba0fc4519eafc81e2ec768dd666623fcd9152a0fcd560d8c65388123a4ec0b5
-status: experimental
-description: Detects traffic or activity related to http://103.213.248.200/xmrig_m which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://103.213.248.200/xmrig_m*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://103.213.248.200/xmrig_86c3
-id: auto-cb7baf0faf731c2568ebd720e489ccfc2542d9393270253a3a8fb84c31cfc525
-status: experimental
-description: Detects traffic or activity related to http://103.213.248.200/xmrig_86c3 which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://103.213.248.200/xmrig_86c3*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://103.213.248.200/sex.sh
-id: auto-3e46c3591282413b765e2bcf2775f4f460842eaa6978437daaa1174c7d13b064
-status: experimental
-description: Detects traffic or activity related to http://103.213.248.200/sex.sh which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://103.213.248.200/sex.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "adfa14deed04a850938bf48ef190b1f30b93d1bebe07ad2e7d0b48d8a03bdabc"
 id: auto-de8b18142ab048288e9a029c7937d26c1b8a49b845f0c11dc0bb02b9ec6d9a74
@@ -664,22 +616,6 @@ detection:
   selection:
     hashes:
       - '* "adfa14deed04a850938bf48ef190b1f30b93d1bebe07ad2e7d0b48d8a03bdabc"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "5faa8bac97d186a546c140a89de778f529f94a66052ffbe022aee810d3edb3f1"
-id: auto-2e904d8bd2c8acf7924cda63d3c8f78dd81a36fefc425129c7a06d7ee96b7ba0
-status: experimental
-description: Detects traffic or activity related to  "5faa8bac97d186a546c140a89de778f529f94a66052ffbe022aee810d3edb3f1" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "5faa8bac97d186a546c140a89de778f529f94a66052ffbe022aee810d3edb3f1"*'
   condition: selection
 level: high
 tags:
