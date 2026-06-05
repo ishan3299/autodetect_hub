@@ -1,3 +1,83 @@
+title: Detect Activity to Known Malicious Indicator - http://xzxni-135-134-92-71.run.pinggy-free.link/run.sh
+id: auto-6d08ca00527dcadc2a1fd8742f707a3fe0f51d108b33cade636db4ee4e0c21db
+status: experimental
+description: Detects traffic or activity related to http://xzxni-135-134-92-71.run.pinggy-free.link/run.sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://xzxni-135-134-92-71.run.pinggy-free.link/run.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://s.littleshabby.net/payloads/zzh
+id: auto-0bf7c30f69278bb090e8308a2b01ba80d148409c9f44dd592ead55c421930919
+status: experimental
+description: Detects traffic or activity related to https://s.littleshabby.net/payloads/zzh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://s.littleshabby.net/payloads/zzh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://s.littleshabby.net/xmrig-linux
+id: auto-1191edb8c83acab42989515cdebe568dfc52295a0615df9c3f6ae53cd1ce457a
+status: experimental
+description: Detects traffic or activity related to https://s.littleshabby.net/xmrig-linux which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://s.littleshabby.net/xmrig-linux*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://s.littleshabby.net/xmrig-linux
+id: auto-104440ed1a73c59ad27d9d535cbd2d00c95e4f0f3bfec1ab09d73c2758830017
+status: experimental
+description: Detects traffic or activity related to http://s.littleshabby.net/xmrig-linux which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://s.littleshabby.net/xmrig-linux*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://s.littleshabby.net/payloads/zzh
+id: auto-98dde16bfec953e81875057de6a382f6a511ced4795fa618d6a6a4a5dc68151e
+status: experimental
+description: Detects traffic or activity related to http://s.littleshabby.net/payloads/zzh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://s.littleshabby.net/payloads/zzh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://91.92.242.236/files-129312398/files/file_d03ee7ca7adf58d0.exe
 id: auto-ec4186ec9cdbea0cd6cea5e282a13ae0ac4789abad1b3274daffdce2f585eea3
 status: experimental
@@ -558,37 +638,85 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - https://mecatrankil.com/3.exe
-id: auto-f542629d0f418a6d48cf6f3cfb4d8882be061c309d6feba5699ba7c5e0b3a91b
+title: Detect Activity to Known Malicious Indicator -  "fe4d4e0cc334b29175b850e44f2dd38a935aad65bb7674e43d15d500fd2c987a"
+id: auto-7268bd303272692164247bbe4edca3b2300fa8136c97d5aac54ecb1b4738ac0a
 status: experimental
-description: Detects traffic or activity related to https://mecatrankil.com/3.exe which is a known malicious url.
+description: Detects traffic or activity related to  "fe4d4e0cc334b29175b850e44f2dd38a935aad65bb7674e43d15d500fd2c987a" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://mecatrankil.com/3.exe*'
+    hashes:
+      - '* "fe4d4e0cc334b29175b850e44f2dd38a935aad65bb7674e43d15d500fd2c987a"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Indicator - https://mecatrankil.com/chrome_144.exe
-id: auto-ac0fad93be5c37f5528e94e81a93b8e0d791aa919918bd66c349baad6d960ddb
+title: Detect Activity to Known Malicious Indicator -  "265211511e1f51fc2df4ab9abb29c0cc7cc645fffc449247ac7d1cf97ea2e858"
+id: auto-cf8afed2bc5c61e10d23e30a31fc80d0674ee394ed0f9f9977c81c8f0f1c26a7
 status: experimental
-description: Detects traffic or activity related to https://mecatrankil.com/chrome_144.exe which is a known malicious url.
+description: Detects traffic or activity related to  "265211511e1f51fc2df4ab9abb29c0cc7cc645fffc449247ac7d1cf97ea2e858" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://mecatrankil.com/chrome_144.exe*'
+    hashes:
+      - '* "265211511e1f51fc2df4ab9abb29c0cc7cc645fffc449247ac7d1cf97ea2e858"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "730d74a4cb83e70342122b6c29e30f7ba71dd5739cf2508208aa8a6554480511"
+id: auto-d93528c7f3963d7c2178c06a28fa592474f66ee1e4b2b6966c2862982947b1c9
+status: experimental
+description: Detects traffic or activity related to  "730d74a4cb83e70342122b6c29e30f7ba71dd5739cf2508208aa8a6554480511" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "730d74a4cb83e70342122b6c29e30f7ba71dd5739cf2508208aa8a6554480511"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "8b06710b0381269449269e3251124a0d52e4f1c6c59505ae7a3b132764f45a87"
+id: auto-778afac101469902f730dc0e58276a0235d3a07cce9273b8fb379034ad7b74d1
+status: experimental
+description: Detects traffic or activity related to  "8b06710b0381269449269e3251124a0d52e4f1c6c59505ae7a3b132764f45a87" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "8b06710b0381269449269e3251124a0d52e4f1c6c59505ae7a3b132764f45a87"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "d1487fa8c36489e6e46c950484855b52d4bd3e5a6e86b9caffc7e9a3168a60f4"
+id: auto-b7f3715b64b86853d3cb643b6e111997200841363809f98a95c6b097c7626551
+status: experimental
+description: Detects traffic or activity related to  "d1487fa8c36489e6e46c950484855b52d4bd3e5a6e86b9caffc7e9a3168a60f4" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "d1487fa8c36489e6e46c950484855b52d4bd3e5a6e86b9caffc7e9a3168a60f4"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "cd4da450ee62fd96023c19139f977dbb924d0c631fa691d3c23370fc196175fa"
 id: auto-9ee2d1fa26fc98b4d7247ffb588e4a7e687cb741e6b02dfb8183700f13dacbcb
@@ -600,22 +728,6 @@ detection:
   selection:
     hashes:
       - '* "cd4da450ee62fd96023c19139f977dbb924d0c631fa691d3c23370fc196175fa"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "adfa14deed04a850938bf48ef190b1f30b93d1bebe07ad2e7d0b48d8a03bdabc"
-id: auto-de8b18142ab048288e9a029c7937d26c1b8a49b845f0c11dc0bb02b9ec6d9a74
-status: experimental
-description: Detects traffic or activity related to  "adfa14deed04a850938bf48ef190b1f30b93d1bebe07ad2e7d0b48d8a03bdabc" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "adfa14deed04a850938bf48ef190b1f30b93d1bebe07ad2e7d0b48d8a03bdabc"*'
   condition: selection
 level: high
 tags:

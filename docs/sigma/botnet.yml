@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - http://45.198.224.42/n
+id: auto-b8f4ca75cc7cca12056d342b08c1da5c9eb70c4674b51abd7890edb75d3f2094
+status: experimental
+description: Detects traffic or activity related to http://45.198.224.42/n which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.198.224.42/n*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://cnc.reaperc2.xyz/bot.x86_64
 id: auto-4ed0dbc787b2bc2172c83604cbc58be3c7ea7f5666d63063593c145c207bc7e4
 status: experimental
