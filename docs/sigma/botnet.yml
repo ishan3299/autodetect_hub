@@ -1,3 +1,99 @@
+title: Detect Activity to Known Malicious Indicator - http://94.183.232.247/ARMV7L
+id: auto-9a0ebe541b9c0e10e56955ddbeea0d476dd82610f7160f16d58029b84c2323f9
+status: experimental
+description: Detects traffic or activity related to http://94.183.232.247/ARMV7L which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://94.183.232.247/ARMV7L*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://smart.abuse.st/arm7
+id: auto-84a70041d0cb2c69ade0c29dc66a6aebdcfcb482376fa6c54fc001137b9efc58
+status: experimental
+description: Detects traffic or activity related to http://smart.abuse.st/arm7 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://smart.abuse.st/arm7*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://smart.abuse.st/x86_64
+id: auto-bee36755556803af02c430c60aa6744f1c96f172969c517f1e00426cffd65c1b
+status: experimental
+description: Detects traffic or activity related to http://smart.abuse.st/x86_64 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://smart.abuse.st/x86_64*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://smart.abuse.st/mpsl
+id: auto-3a181d6a6ebfda6a3bb268edc6f9070b636503d484771277c941ab5610d32025
+status: experimental
+description: Detects traffic or activity related to http://smart.abuse.st/mpsl which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://smart.abuse.st/mpsl*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://smart.abuse.st/arm5
+id: auto-bd9910971a9dbdba55b69d152d6bce5c3fa4ce42b75d1e441a537bba1446ef9e
+status: experimental
+description: Detects traffic or activity related to http://smart.abuse.st/arm5 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://smart.abuse.st/arm5*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://159.89.171.49/wp-admin/
+id: auto-42dcf03aa99fc558015c38c4b1b9a63ff43bcad35e516bc3fb1b2d3c30bd2dd3
+status: experimental
+description: Detects traffic or activity related to http://159.89.171.49/wp-admin/ which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://159.89.171.49/wp-admin/*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://45.198.224.42/n
 id: auto-b8f4ca75cc7cca12056d342b08c1da5c9eb70c4674b51abd7890edb75d3f2094
 status: experimental
