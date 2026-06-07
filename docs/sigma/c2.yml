@@ -5902,18 +5902,18 @@ tags:
   - attack.T1071
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - http://tina.gautengsound.co.za/co.js
-id: auto-0d4c6d060f212390943b9f2f7e2ced9b8f6b3ab7686c6e7e5939592f59c417ff
+title: Detect Activity to Known Malicious Indicator -  "161e25e9bff516913bb9e9a4add7a76181112d5a9c9a618a4ff9e75403992cd9"
+id: auto-04ffab92c89a60107c405d226234377e8521ed34a43bd0ed4e6c766b67244632
 status: experimental
-description: Detects traffic or activity related to http://tina.gautengsound.co.za/co.js which is a known malicious url.
+description: Detects traffic or activity related to  "161e25e9bff516913bb9e9a4add7a76181112d5a9c9a618a4ff9e75403992cd9" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://tina.gautengsound.co.za/co.js*'
+    hashes:
+      - '* "161e25e9bff516913bb9e9a4add7a76181112d5a9c9a618a4ff9e75403992cd9"*'
   condition: selection
 level: high
 tags:
-  - attack.t1204.002
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
