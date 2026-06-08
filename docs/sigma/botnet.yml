@@ -1,3 +1,35 @@
+title: Detect Activity to Known Malicious Indicator - http://217.60.195.70/arm7
+id: auto-5df0b1b85de1cce818040c591a00ad3abaa8f179f3c76bfe4118dd7356e61e2b
+status: experimental
+description: Detects traffic or activity related to http://217.60.195.70/arm7 which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://217.60.195.70/arm7*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://192.168.10.100/msmq/private
+id: auto-63fa6c007f10786f4f8b1712235f0916a0a8500580d63730380bf5b79b3d7085
+status: experimental
+description: Detects traffic or activity related to http://192.168.10.100/msmq/private which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://192.168.10.100/msmq/private*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://no7shmh.shop/ppc
 id: auto-9e3d4fccd450d30e96baa10b040996bbd9f158ec5c23476285c7785a786d248c
 status: experimental
