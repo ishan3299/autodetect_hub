@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - http://64.118.132.61/exploit.sh
+id: auto-10e12904320f0f3be51da3a50cc68f45e45581f645dcdcb84bb6e4e7dca92b3b
+status: experimental
+description: Detects traffic or activity related to http://64.118.132.61/exploit.sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://64.118.132.61/exploit.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://217.60.195.70/arm7
 id: auto-5df0b1b85de1cce818040c591a00ad3abaa8f179f3c76bfe4118dd7356e61e2b
 status: experimental
