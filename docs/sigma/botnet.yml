@@ -1,3 +1,83 @@
+title: Detect Activity to Known Malicious Indicator - http://189.183.104.194:84//r/nSec-Fetch-Dest
+id: auto-c219957152089ac8059ea2345a2a594bfea264c3648695b2dff19f56b02a6d49
+status: experimental
+description: Detects traffic or activity related to http://189.183.104.194:84//r/nSec-Fetch-Dest which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://189.183.104.194:84//r/nSec-Fetch-Dest*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity/r/nAccept-Encoding
+id: auto-90eec213856b2266a0d0d5f5427a686178b1f71becd529ddc39c0aba52ac6d5a
+status: experimental
+description: Detects traffic or activity related to https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity/r/nAccept-Encoding which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity/r/nAccept-Encoding*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://177.152.150.32:8084//r/n/r/n
+id: auto-c495669f1ae0eced85922d883d295a72145802edcb1e0bdcb6c74e91b969ecf3
+status: experimental
+description: Detects traffic or activity related to http://177.152.150.32:8084//r/n/r/n which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://177.152.150.32:8084//r/n/r/n*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://64.118.132.61/release/
+id: auto-984e236ed7210dcff465cb315b7e6f32f41b892c8ac707dfc78c50d67d9fb220
+status: experimental
+description: Detects traffic or activity related to http://64.118.132.61/release/ which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://64.118.132.61/release/*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://162.248.101.153/n2/teleport
+id: auto-c75df0d91115e9c407ded4bb99e982e3bfb866bc794ccb404782a3364c73def8
+status: experimental
+description: Detects traffic or activity related to http://162.248.101.153/n2/teleport which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://162.248.101.153/n2/teleport*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://64.118.132.61/exploit.sh
 id: auto-10e12904320f0f3be51da3a50cc68f45e45581f645dcdcb84bb6e4e7dca92b3b
 status: experimental
