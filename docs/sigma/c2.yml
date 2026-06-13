@@ -1,3 +1,83 @@
+title: Detect Activity to Known Malicious Indicator - http://91.92.242.236/files-129312398/files/file_b92525972d65ba7f.exe
+id: auto-01fda514109690665aa5a857ca1cbf228dd52d6e72124378dbc8d2137c70d495
+status: experimental
+description: Detects traffic or activity related to http://91.92.242.236/files-129312398/files/file_b92525972d65ba7f.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_b92525972d65ba7f.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://91.92.242.236/files-129312398/files/file_34a9e7e80dbe267c.exe
+id: auto-7a1ccc7f04e58705479ab84da2406630515631298615f3d1807ee98f9fdd2879
+status: experimental
+description: Detects traffic or activity related to http://91.92.242.236/files-129312398/files/file_34a9e7e80dbe267c.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_34a9e7e80dbe267c.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://54328cf8554e67ed-185-174-159-197.serveousercontent.com/_next/static/media/ee4c97c61938da5b.js
+id: auto-27b1fd0dd561dc619fcb7635fc8cb783e150acebbc89368c8e09749aa3cb9ee3
+status: experimental
+description: Detects traffic or activity related to https://54328cf8554e67ed-185-174-159-197.serveousercontent.com/_next/static/media/ee4c97c61938da5b.js which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://54328cf8554e67ed-185-174-159-197.serveousercontent.com/_next/static/media/ee4c97c61938da5b.js*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://views-lan-infant-solve.trycloudflare.com/_next/static/stream/edeb69ed676eee4d.js
+id: auto-be56679a0c94c4a0498c3801dbdd1861b57d0216866b6b7ca95d6f4a98d98541
+status: experimental
+description: Detects traffic or activity related to https://views-lan-infant-solve.trycloudflare.com/_next/static/stream/edeb69ed676eee4d.js which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://views-lan-infant-solve.trycloudflare.com/_next/static/stream/edeb69ed676eee4d.js*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - http://91.92.242.236/files-129312398/files/file_80ffdadbe65cc63f.exe
+id: auto-7b4507b1468e94359d737bd388b95e71c1e5af65833598e42ff153d10701f321
+status: experimental
+description: Detects traffic or activity related to http://91.92.242.236/files-129312398/files/file_80ffdadbe65cc63f.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_80ffdadbe65cc63f.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://91.92.242.236/files-129312398/files/file_f6edb9a78d132c35.exe
 id: auto-443a3cf7bf26781fc74e82787c77f24280d4491f64cd25b399d36b4bb55069c5
 status: experimental

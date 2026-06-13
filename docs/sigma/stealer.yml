@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Indicator - http://91.92.242.236/files-129312398/files/file_dae96b431f16be7b.exe
+id: auto-9f738a4c7eb72a1f43e2f9a486efdc8e58d1307a88057435403b4d3f9e8110fd
+status: experimental
+description: Detects traffic or activity related to http://91.92.242.236/files-129312398/files/file_dae96b431f16be7b.exe which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_dae96b431f16be7b.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - https://tmcksa.com/IMGP/optimized_MSI.png
 id: auto-06912698cb5ea50896e9201ad99b4eec3000424b7042e1d6d75530c5b3688269
 status: experimental
@@ -3390,6 +3406,102 @@ tags:
   - attack.T1071
   - source.URLhaus
 ---
+title: Detect Activity to Known Malicious Indicator -  "ec58efce6d4d8e30f4100c0b38defd36b7210b1282ad6a0a3e4d167a9751b9db"
+id: auto-2d55a611a6f61c4ba6d4f52f77bc5b32f5bc7f67ba80c75bb565ddfd67a28ebb
+status: experimental
+description: Detects traffic or activity related to  "ec58efce6d4d8e30f4100c0b38defd36b7210b1282ad6a0a3e4d167a9751b9db" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "ec58efce6d4d8e30f4100c0b38defd36b7210b1282ad6a0a3e4d167a9751b9db"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "b30d5775034d080b834c5d75f40b77a2dab79c56d6f32a5b1a11c1a16ea9797e"
+id: auto-43d721bfce56e2af5bd54fbbbe543d0a8719055858ddd4b6569f3e6e94387578
+status: experimental
+description: Detects traffic or activity related to  "b30d5775034d080b834c5d75f40b77a2dab79c56d6f32a5b1a11c1a16ea9797e" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "b30d5775034d080b834c5d75f40b77a2dab79c56d6f32a5b1a11c1a16ea9797e"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "8b6d087dc70aa52e70ddc2d7541b8cada0572ad783cd6967ba103bf158371085"
+id: auto-2c1a80ba9ec9240256eb8a4b84a7fdd24210c60d82728a965c894c33ca5b3037
+status: experimental
+description: Detects traffic or activity related to  "8b6d087dc70aa52e70ddc2d7541b8cada0572ad783cd6967ba103bf158371085" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "8b6d087dc70aa52e70ddc2d7541b8cada0572ad783cd6967ba103bf158371085"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "c6dc62c4bad1c383518470c3156b4f38126b991450f050fb656d82db72d5c5a8"
+id: auto-d71c99787df3acc95161255531ace5d253c8a85fa979f0d56969784a72ba8414
+status: experimental
+description: Detects traffic or activity related to  "c6dc62c4bad1c383518470c3156b4f38126b991450f050fb656d82db72d5c5a8" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "c6dc62c4bad1c383518470c3156b4f38126b991450f050fb656d82db72d5c5a8"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "25d698139f84c382dda5a725bb17d2812f763d32362aa01ffadd82d59c735582"
+id: auto-6dfc76c2341a440c09cd750e735c9d4d8da23175fc542fc0d6e3a0b224eddfa6
+status: experimental
+description: Detects traffic or activity related to  "25d698139f84c382dda5a725bb17d2812f763d32362aa01ffadd82d59c735582" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "25d698139f84c382dda5a725bb17d2812f763d32362aa01ffadd82d59c735582"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "f9d3a34e0f5c126151e61f1792d585b60024cd194d0acdc5aa4962a35d4cc397"
+id: auto-84b5bcb6625043378fddf0a6b4977e3c9da503a90e94ddb1b79c5fa71b650727
+status: experimental
+description: Detects traffic or activity related to  "f9d3a34e0f5c126151e61f1792d585b60024cd194d0acdc5aa4962a35d4cc397" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "f9d3a34e0f5c126151e61f1792d585b60024cd194d0acdc5aa4962a35d4cc397"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
 title: Detect Activity to Known Malicious Indicator -  "8a82da328a3db0fca63f31e7b464b5989cecfd619ebab0b238c07b63544bf823"
 id: auto-183928a6dd96a4cf15276daef8a076a02db33dbf6a28ec3be6eb84087bcf6a75
 status: experimental
@@ -3512,838 +3624,6 @@ detection:
   selection:
     hashes:
       - '* "85e9c56646b76b89ae6e03480a732fc85a6ea6be3e6655adc55218d80ada53fe"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "402d2be2a5186e3f8c035551695099c60b28d092969cc72bd9c7360453f8d63e"
-id: auto-340c9430efe14e0cf2568511ed019ca58ea9967393964018e99b6f93444b9f92
-status: experimental
-description: Detects traffic or activity related to  "402d2be2a5186e3f8c035551695099c60b28d092969cc72bd9c7360453f8d63e" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "402d2be2a5186e3f8c035551695099c60b28d092969cc72bd9c7360453f8d63e"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "3ffcc57ec8c236ae9a7b8ab7de9bf0e5c4f2e29e6c9266b383cc845262b1c3ec"
-id: auto-4db3708a4f1bbac653fcff5e20c0c2b0b92b63dafe945de028dd46b602defd8e
-status: experimental
-description: Detects traffic or activity related to  "3ffcc57ec8c236ae9a7b8ab7de9bf0e5c4f2e29e6c9266b383cc845262b1c3ec" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "3ffcc57ec8c236ae9a7b8ab7de9bf0e5c4f2e29e6c9266b383cc845262b1c3ec"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "c4028d2f6fd3c0a11a7ae73810c3923cbaa7455d19b901ad1047c3a9c5c73971"
-id: auto-633f2c3b7d5b82b818579b0d12d9eac7847246c0415fed099cf51a187a795ae9
-status: experimental
-description: Detects traffic or activity related to  "c4028d2f6fd3c0a11a7ae73810c3923cbaa7455d19b901ad1047c3a9c5c73971" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "c4028d2f6fd3c0a11a7ae73810c3923cbaa7455d19b901ad1047c3a9c5c73971"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "04520ba8357973055e714e7aebcb7f5710ffe74baf0682efb4a0c436e44fbbd8"
-id: auto-0c5fcdd4e84eaee1193bc45baf10dd2df8c84c5a0e77ddc621df881ebd3fe445
-status: experimental
-description: Detects traffic or activity related to  "04520ba8357973055e714e7aebcb7f5710ffe74baf0682efb4a0c436e44fbbd8" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "04520ba8357973055e714e7aebcb7f5710ffe74baf0682efb4a0c436e44fbbd8"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "354b48e050f30e4cb9a48c8dbc8443c1c562d797c342398148a79c4b97e16aef"
-id: auto-78d0728850c340c950d588328359c223a67367e1ca16f2ceea5aa4e0af6e4b57
-status: experimental
-description: Detects traffic or activity related to  "354b48e050f30e4cb9a48c8dbc8443c1c562d797c342398148a79c4b97e16aef" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "354b48e050f30e4cb9a48c8dbc8443c1c562d797c342398148a79c4b97e16aef"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "49f730662afa06738e3694018d8e2a196a96266c36b3f864add5bd5977baf04e"
-id: auto-d846d954b7d0095a7eeaac036cc96353e3a767c68390b79f460c569509ad0a17
-status: experimental
-description: Detects traffic or activity related to  "49f730662afa06738e3694018d8e2a196a96266c36b3f864add5bd5977baf04e" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "49f730662afa06738e3694018d8e2a196a96266c36b3f864add5bd5977baf04e"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "f681fd6ce59054691f794374b12e01e930c203131fd77d257f025e35f0f63e8d"
-id: auto-4ce27ab5e1fd86e76e8da60875be8f6e90c85a26a4dce7d33e847b92bf23acda
-status: experimental
-description: Detects traffic or activity related to  "f681fd6ce59054691f794374b12e01e930c203131fd77d257f025e35f0f63e8d" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "f681fd6ce59054691f794374b12e01e930c203131fd77d257f025e35f0f63e8d"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "208de02eff5e40eb46a6cafa857355b8292a7078531db690b6844f5a49445eb4"
-id: auto-b0366271ce3209a26b48812266b4a39c1386fbe040517c98776715446bab62d8
-status: experimental
-description: Detects traffic or activity related to  "208de02eff5e40eb46a6cafa857355b8292a7078531db690b6844f5a49445eb4" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "208de02eff5e40eb46a6cafa857355b8292a7078531db690b6844f5a49445eb4"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "29119d33848a3a3efa1b0b11be3ec606240e47d013c629f5c357f70ab4d77931"
-id: auto-77d18035964b4179f537925fa201ea6889164e516c0e9d0e0d209dcac39e0c46
-status: experimental
-description: Detects traffic or activity related to  "29119d33848a3a3efa1b0b11be3ec606240e47d013c629f5c357f70ab4d77931" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "29119d33848a3a3efa1b0b11be3ec606240e47d013c629f5c357f70ab4d77931"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "0792da04193cb72263cf16ee80af36682a2ddd6113d13b679880ff632fc3e26c"
-id: auto-adad3cc7bd8c01dc421aa42dfdabbd6db898c17b624b41b6771c38f774baa42d
-status: experimental
-description: Detects traffic or activity related to  "0792da04193cb72263cf16ee80af36682a2ddd6113d13b679880ff632fc3e26c" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "0792da04193cb72263cf16ee80af36682a2ddd6113d13b679880ff632fc3e26c"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "3d9ee40c6b7b67f193511b665d005945179f0d5a9870e8ecb4e4cef495213de6"
-id: auto-77e4401d3f1dc520ee610ec6dd3b35065403062668be5e2b33a8c9211dbce93c
-status: experimental
-description: Detects traffic or activity related to  "3d9ee40c6b7b67f193511b665d005945179f0d5a9870e8ecb4e4cef495213de6" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "3d9ee40c6b7b67f193511b665d005945179f0d5a9870e8ecb4e4cef495213de6"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "783008a032b58cbc5b194bfdb579e392b8519db1482f60ce7cf6084f599c3b75"
-id: auto-b1397456c302795c5a6cff961b59770c2f3379e5dd70b5b0f418dd92b256ad77
-status: experimental
-description: Detects traffic or activity related to  "783008a032b58cbc5b194bfdb579e392b8519db1482f60ce7cf6084f599c3b75" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "783008a032b58cbc5b194bfdb579e392b8519db1482f60ce7cf6084f599c3b75"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "f19ba38ca35db5f36cd5d73d04040abb16718c1003c0fce072df90ce3cf5eead"
-id: auto-89a0202c7cd5d177173d0e46b79fdac3395affc94ccf6858e26e3fdadb1aaeff
-status: experimental
-description: Detects traffic or activity related to  "f19ba38ca35db5f36cd5d73d04040abb16718c1003c0fce072df90ce3cf5eead" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "f19ba38ca35db5f36cd5d73d04040abb16718c1003c0fce072df90ce3cf5eead"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "ba0cb805e9c834ac74903d865a9e4adc73efcf2738acf82b97a3ae880c32a4e3"
-id: auto-d6e8f3bb0a550144c942356863e2369db501ad1e38e88dd4a59280deb16ad0bf
-status: experimental
-description: Detects traffic or activity related to  "ba0cb805e9c834ac74903d865a9e4adc73efcf2738acf82b97a3ae880c32a4e3" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "ba0cb805e9c834ac74903d865a9e4adc73efcf2738acf82b97a3ae880c32a4e3"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "4c510755f504064b9aa13ab6b61122b0dcd3435fb3253ce6854cef90b2b24cf8"
-id: auto-11179c11429d1ebb5c435594d45f19cab68bead8a8e147ef31687e2cdbf75afb
-status: experimental
-description: Detects traffic or activity related to  "4c510755f504064b9aa13ab6b61122b0dcd3435fb3253ce6854cef90b2b24cf8" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "4c510755f504064b9aa13ab6b61122b0dcd3435fb3253ce6854cef90b2b24cf8"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "574a9dc8d3c70754407618fba81e49af5229a673a7dc9a194f11cd877af1683c"
-id: auto-f0810c94ce30df348adc66256e08914aa983b5eaad348fa6e220c78ae9a7fdce
-status: experimental
-description: Detects traffic or activity related to  "574a9dc8d3c70754407618fba81e49af5229a673a7dc9a194f11cd877af1683c" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "574a9dc8d3c70754407618fba81e49af5229a673a7dc9a194f11cd877af1683c"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "d5f064832a93f2a1d0850e3652698d3c9d6d7c2a51bff3a0b865dec84cbbb374"
-id: auto-48676dda828c94fa8d07ccec1fc32f3da8ccc64bd69b512e6a73d08d16c6f428
-status: experimental
-description: Detects traffic or activity related to  "d5f064832a93f2a1d0850e3652698d3c9d6d7c2a51bff3a0b865dec84cbbb374" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "d5f064832a93f2a1d0850e3652698d3c9d6d7c2a51bff3a0b865dec84cbbb374"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "17a9fc6fc9aaf20f81dcca2fe9846e01e835ab0250912ee47c8aa8536a359fae"
-id: auto-de5a69982254cfbc64629afacd7d2327cabf470ebb83a9c4d65459000e7b8ccb
-status: experimental
-description: Detects traffic or activity related to  "17a9fc6fc9aaf20f81dcca2fe9846e01e835ab0250912ee47c8aa8536a359fae" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "17a9fc6fc9aaf20f81dcca2fe9846e01e835ab0250912ee47c8aa8536a359fae"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "220a9b6ae51dcfa91fc56516178c62bca535ef8f1db792aa863d442066f50691"
-id: auto-15240052764d43ea6793ba6e2b8d6b7a76686a3d31a69090c8067748619f55d5
-status: experimental
-description: Detects traffic or activity related to  "220a9b6ae51dcfa91fc56516178c62bca535ef8f1db792aa863d442066f50691" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "220a9b6ae51dcfa91fc56516178c62bca535ef8f1db792aa863d442066f50691"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "761745042e6ba4fadd0bf1ef4a28df72d34caefddd294cd022a37cd6e282faea"
-id: auto-9e6a40963c0552ca0bfc4ab057a9c2b354ac4e027d1c63514fbf2ee8399c0758
-status: experimental
-description: Detects traffic or activity related to  "761745042e6ba4fadd0bf1ef4a28df72d34caefddd294cd022a37cd6e282faea" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "761745042e6ba4fadd0bf1ef4a28df72d34caefddd294cd022a37cd6e282faea"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "8ff1f162756335ca314c2a347aa1ac9d377325364bd1b2b5e84d7dcd09a00a0f"
-id: auto-7e5f7b8f1ca8e5da9e5ae04419a5f45e7a43a66b43e905ce65b9929ceca79e5b
-status: experimental
-description: Detects traffic or activity related to  "8ff1f162756335ca314c2a347aa1ac9d377325364bd1b2b5e84d7dcd09a00a0f" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "8ff1f162756335ca314c2a347aa1ac9d377325364bd1b2b5e84d7dcd09a00a0f"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "86fa2d6e4055dcfbc903a51c3482a96d7149a0eae57f5cdc791f674e5e87a786"
-id: auto-d89acb8e7a4af09e5a96c9f151c7e7ce75e957eecf125b4f01cd25f50bd56172
-status: experimental
-description: Detects traffic or activity related to  "86fa2d6e4055dcfbc903a51c3482a96d7149a0eae57f5cdc791f674e5e87a786" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "86fa2d6e4055dcfbc903a51c3482a96d7149a0eae57f5cdc791f674e5e87a786"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "6a59318d58eb3a3cef3fbe65d8476d58e1535c3c8e546b12bfa7da6bdb3f039f"
-id: auto-4472ba1441dcf892750fd9f5f4adc14f708323b868f12471db4bdbf32181be5e
-status: experimental
-description: Detects traffic or activity related to  "6a59318d58eb3a3cef3fbe65d8476d58e1535c3c8e546b12bfa7da6bdb3f039f" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "6a59318d58eb3a3cef3fbe65d8476d58e1535c3c8e546b12bfa7da6bdb3f039f"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "db42e0587dde8c3a650cc807e957210285a4c8b1cc4bb1e31e0db4855f0c9b12"
-id: auto-73367490144decc6dee4bc623d051f8cec4234f14567e06580eb5f03d26419d0
-status: experimental
-description: Detects traffic or activity related to  "db42e0587dde8c3a650cc807e957210285a4c8b1cc4bb1e31e0db4855f0c9b12" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "db42e0587dde8c3a650cc807e957210285a4c8b1cc4bb1e31e0db4855f0c9b12"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "509ca0ac662f7029588be141c6b62e8f8d64b994886213bbb656121bea3c33c3"
-id: auto-c2cd295486ec6b9645685dc6f4270424969751ec0cc0aa9149e79364cf9f78a4
-status: experimental
-description: Detects traffic or activity related to  "509ca0ac662f7029588be141c6b62e8f8d64b994886213bbb656121bea3c33c3" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "509ca0ac662f7029588be141c6b62e8f8d64b994886213bbb656121bea3c33c3"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "86b9fc468e13235003066c38f0606ceec093fc1130da10a4c12eb7b15c54387c"
-id: auto-f68eb49e8cf77b5fcf3c41463eec4d4dbc5d25f7fb309f31f4933f819b2c4198
-status: experimental
-description: Detects traffic or activity related to  "86b9fc468e13235003066c38f0606ceec093fc1130da10a4c12eb7b15c54387c" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "86b9fc468e13235003066c38f0606ceec093fc1130da10a4c12eb7b15c54387c"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "8fa1f3e3cb1d773962fa0fd626fbd1595829d1d0826c271765f040778b58bc72"
-id: auto-6ae1444407b9706074f172580b87df947b11029761a807961436df784703ec33
-status: experimental
-description: Detects traffic or activity related to  "8fa1f3e3cb1d773962fa0fd626fbd1595829d1d0826c271765f040778b58bc72" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "8fa1f3e3cb1d773962fa0fd626fbd1595829d1d0826c271765f040778b58bc72"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "21ebfef3bccef414a12aae17947949773e6dee6bf283b11d8756ac2ee2509241"
-id: auto-3e27142b5cb786b60435ce0bf2a816cc5cd024e4f3c2d8bf519218901a8286b9
-status: experimental
-description: Detects traffic or activity related to  "21ebfef3bccef414a12aae17947949773e6dee6bf283b11d8756ac2ee2509241" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "21ebfef3bccef414a12aae17947949773e6dee6bf283b11d8756ac2ee2509241"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "5281fc111278e9df642790799efd801617affe9346b2a923df36769b051dbeec"
-id: auto-f3e7994928b23947086406388d6b99c00cca81f6ada310638772300ea9bc7713
-status: experimental
-description: Detects traffic or activity related to  "5281fc111278e9df642790799efd801617affe9346b2a923df36769b051dbeec" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "5281fc111278e9df642790799efd801617affe9346b2a923df36769b051dbeec"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "5ebb195c1c7cb0f9f7fd57415eddb32fb15e72567b7f1ea166a73e6fa4b16636"
-id: auto-7fad4462422aa48b45a656a45bbfd3249adf7a86665f1a4292a152102c6ae351
-status: experimental
-description: Detects traffic or activity related to  "5ebb195c1c7cb0f9f7fd57415eddb32fb15e72567b7f1ea166a73e6fa4b16636" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "5ebb195c1c7cb0f9f7fd57415eddb32fb15e72567b7f1ea166a73e6fa4b16636"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "9e1aa478a7edfc6b9ae520955abcd2faa6bd3937fa083bca242ec237ba360e91"
-id: auto-523f442553837f5b370f424f316df8002bc3be2948c43ab9a164c9f73fa57d6b
-status: experimental
-description: Detects traffic or activity related to  "9e1aa478a7edfc6b9ae520955abcd2faa6bd3937fa083bca242ec237ba360e91" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "9e1aa478a7edfc6b9ae520955abcd2faa6bd3937fa083bca242ec237ba360e91"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "4e4b07ea66c8d238da3398a2a81281a27737e3cb82bcaf48195a9e6d423e050d"
-id: auto-6b4d21ef898b9ce456e0ceebc257471c79214f98767bdfe92c5245ffa9aeeb30
-status: experimental
-description: Detects traffic or activity related to  "4e4b07ea66c8d238da3398a2a81281a27737e3cb82bcaf48195a9e6d423e050d" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "4e4b07ea66c8d238da3398a2a81281a27737e3cb82bcaf48195a9e6d423e050d"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "36a1e1df79f8a326f36eedb17f2c0ae36d7b216a72389617de1ad32532b61b37"
-id: auto-f367e3974d0b3ee803e3371a8d96dd6bf2af2d1caa487d5e941a0e9694f0be77
-status: experimental
-description: Detects traffic or activity related to  "36a1e1df79f8a326f36eedb17f2c0ae36d7b216a72389617de1ad32532b61b37" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "36a1e1df79f8a326f36eedb17f2c0ae36d7b216a72389617de1ad32532b61b37"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "b0724f9d6d771ff9de0f58017c521b6b6482c479e5d84369400f488c5bd4aec3"
-id: auto-efbd23bbf9af20dd798510f1da18346d8ccd51a4c96bbefc374146fff98265b1
-status: experimental
-description: Detects traffic or activity related to  "b0724f9d6d771ff9de0f58017c521b6b6482c479e5d84369400f488c5bd4aec3" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "b0724f9d6d771ff9de0f58017c521b6b6482c479e5d84369400f488c5bd4aec3"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "cc7c63019c4992e260ad50c5c2de278550560c6c75a76ed769ce0bae611f70d8"
-id: auto-61c32750b0e40ba3b97e2a2f138a071b2a88d8e910d108d31602a9024137768c
-status: experimental
-description: Detects traffic or activity related to  "cc7c63019c4992e260ad50c5c2de278550560c6c75a76ed769ce0bae611f70d8" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "cc7c63019c4992e260ad50c5c2de278550560c6c75a76ed769ce0bae611f70d8"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "a9d89b15296863842971bfdbd35da2034d271ab4ba74ee4ed74221ad137f8ce8"
-id: auto-20d44871178dea7dc4bc5dabd63c9f098c5a587533b4204d48b86e241f7a3256
-status: experimental
-description: Detects traffic or activity related to  "a9d89b15296863842971bfdbd35da2034d271ab4ba74ee4ed74221ad137f8ce8" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "a9d89b15296863842971bfdbd35da2034d271ab4ba74ee4ed74221ad137f8ce8"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "7b94dd5269ed976687b8f7a8050ec2987019af43c2a761908a2404f061e3929c"
-id: auto-642c83e0392c85a273c4ec9853cd2bbe3e8fbd270e23f52cf9e0495227e765bf
-status: experimental
-description: Detects traffic or activity related to  "7b94dd5269ed976687b8f7a8050ec2987019af43c2a761908a2404f061e3929c" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "7b94dd5269ed976687b8f7a8050ec2987019af43c2a761908a2404f061e3929c"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "6fd8cf9b6c48349c807dd1f76da1a2ccf0216b7a633d5a7f6b067e38f1061e97"
-id: auto-60db934aa9cdd957803d04d81c118f1e879e099aa00c5636006dd966b9deecb4
-status: experimental
-description: Detects traffic or activity related to  "6fd8cf9b6c48349c807dd1f76da1a2ccf0216b7a633d5a7f6b067e38f1061e97" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "6fd8cf9b6c48349c807dd1f76da1a2ccf0216b7a633d5a7f6b067e38f1061e97"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "5060df36d2b6701839279f5ac009ecf132a4659afd568eafcfa3a215a2b734e8"
-id: auto-f6788cafad793434015ab9274f6e3dbca57026ed3c202720b707399aac1b6540
-status: experimental
-description: Detects traffic or activity related to  "5060df36d2b6701839279f5ac009ecf132a4659afd568eafcfa3a215a2b734e8" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "5060df36d2b6701839279f5ac009ecf132a4659afd568eafcfa3a215a2b734e8"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "6866bc5f6ab88e116b3f13fbe4891bd23e3145f16e52fd153af70c871bac6911"
-id: auto-84d34cb8f1e8c7f141f57032b4acb2b4d6357cf14912ecd34bfb407207120a63
-status: experimental
-description: Detects traffic or activity related to  "6866bc5f6ab88e116b3f13fbe4891bd23e3145f16e52fd153af70c871bac6911" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "6866bc5f6ab88e116b3f13fbe4891bd23e3145f16e52fd153af70c871bac6911"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "5a31b27b8a41ba3387f060f9ebe9353e1fbab6b23e6b8f9ba8fb364c3c8ed5ba"
-id: auto-e6a74417ca27b551ad0872c303436ba911275b3e4185cd5760da863c2663e333
-status: experimental
-description: Detects traffic or activity related to  "5a31b27b8a41ba3387f060f9ebe9353e1fbab6b23e6b8f9ba8fb364c3c8ed5ba" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "5a31b27b8a41ba3387f060f9ebe9353e1fbab6b23e6b8f9ba8fb364c3c8ed5ba"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "ed7b43af39b111ebcfd376a6cd5690bfe6523f053c5e96c136fb8df887f8f21c"
-id: auto-3250135f1dd432776e1e1a97f62af612ff774f34e4b01085eb22332c4e251c6a
-status: experimental
-description: Detects traffic or activity related to  "ed7b43af39b111ebcfd376a6cd5690bfe6523f053c5e96c136fb8df887f8f21c" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "ed7b43af39b111ebcfd376a6cd5690bfe6523f053c5e96c136fb8df887f8f21c"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "4fe508025770c53e0717b524175f079ee23443a4ed909a36be04ee7522e7e055"
-id: auto-aae2620d849d09ad7c0fd20dfe10e53f78e659c40c4a1b8548139b252f676803
-status: experimental
-description: Detects traffic or activity related to  "4fe508025770c53e0717b524175f079ee23443a4ed909a36be04ee7522e7e055" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "4fe508025770c53e0717b524175f079ee23443a4ed909a36be04ee7522e7e055"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "c6f8729d491286d2deaa843edd031cd48e735b9c4963825d94b53a2bec084be4"
-id: auto-ae83d61255f49a6b275bd6b90d3356d4a2f806d0173bb410ebdf789331ee5e64
-status: experimental
-description: Detects traffic or activity related to  "c6f8729d491286d2deaa843edd031cd48e735b9c4963825d94b53a2bec084be4" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "c6f8729d491286d2deaa843edd031cd48e735b9c4963825d94b53a2bec084be4"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "443ab50f1e37a066234f533d168d1215f74242a187bc7ee02c0133661626940b"
-id: auto-34f5dbe7a239dd6242d33ee7bc28f98eb6b818e81053e0ae6387aa7c435ef3be
-status: experimental
-description: Detects traffic or activity related to  "443ab50f1e37a066234f533d168d1215f74242a187bc7ee02c0133661626940b" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "443ab50f1e37a066234f533d168d1215f74242a187bc7ee02c0133661626940b"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "33b14a466f8bca5d4ebc5297f17abf1b5d20e267466ba22e3445e756af997875"
-id: auto-0d4a4d50cfbaad581aa7fcc1115b6705d8e5131ef0b4c8eccb4e84d2b90cfe4b
-status: experimental
-description: Detects traffic or activity related to  "33b14a466f8bca5d4ebc5297f17abf1b5d20e267466ba22e3445e756af997875" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "33b14a466f8bca5d4ebc5297f17abf1b5d20e267466ba22e3445e756af997875"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "b1ef11ff13a7dd1937a5b24a3ff4138744f5db07c87410ebdce73f8416e74b23"
-id: auto-a2b91cdffeedc54a60cf23bf9ead2fe27639fd987007ae059a909d093fce5135
-status: experimental
-description: Detects traffic or activity related to  "b1ef11ff13a7dd1937a5b24a3ff4138744f5db07c87410ebdce73f8416e74b23" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "b1ef11ff13a7dd1937a5b24a3ff4138744f5db07c87410ebdce73f8416e74b23"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "7a9c9837e5475c25b5406c4b5509ab51f6ab4c43d92eaea435641f7485ae7f99"
-id: auto-f5241de83f95e6381014d4cdd7830c4a510a43d3cb0ba0c1d183f3abc6f04979
-status: experimental
-description: Detects traffic or activity related to  "7a9c9837e5475c25b5406c4b5509ab51f6ab4c43d92eaea435641f7485ae7f99" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "7a9c9837e5475c25b5406c4b5509ab51f6ab4c43d92eaea435641f7485ae7f99"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "737ddc8d56c2b8c5bf7844c15bfb31374924833eaedecc1fa0330477e6b2e151"
-id: auto-b3145075d53120904377bd6cbc3809b61d8a9462e59037bc93cf107904d84fa5
-status: experimental
-description: Detects traffic or activity related to  "737ddc8d56c2b8c5bf7844c15bfb31374924833eaedecc1fa0330477e6b2e151" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "737ddc8d56c2b8c5bf7844c15bfb31374924833eaedecc1fa0330477e6b2e151"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "16ec3929a471fcb26e96c082849bd165e7593b5c0ba6fdcb6fa2563cd8f82aa4"
-id: auto-fca091ab214dc0efe50da0ececef7130a0014969e9e4c7be5729167bd7ae4828
-status: experimental
-description: Detects traffic or activity related to  "16ec3929a471fcb26e96c082849bd165e7593b5c0ba6fdcb6fa2563cd8f82aa4" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "16ec3929a471fcb26e96c082849bd165e7593b5c0ba6fdcb6fa2563cd8f82aa4"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "e7b4603170acc4bf93f058df2e6239513638b2928561d07ece0246e57f7def5b"
-id: auto-e928d39d93661f4454042d831e909c6f65f341df9da47137d9fe3b2ad4d5c7c7
-status: experimental
-description: Detects traffic or activity related to  "e7b4603170acc4bf93f058df2e6239513638b2928561d07ece0246e57f7def5b" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "e7b4603170acc4bf93f058df2e6239513638b2928561d07ece0246e57f7def5b"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "d1fcd185dd9b18bd39082dd15414d70eec8324171d4583185634204c992a1ef1"
-id: auto-91617fc3f2ef2229d4e872967dbc6799351d2d56f18d4107ecaa2bc79c0d7dcb
-status: experimental
-description: Detects traffic or activity related to  "d1fcd185dd9b18bd39082dd15414d70eec8324171d4583185634204c992a1ef1" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "d1fcd185dd9b18bd39082dd15414d70eec8324171d4583185634204c992a1ef1"*'
   condition: selection
 level: high
 tags:
