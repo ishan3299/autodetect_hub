@@ -1,3 +1,67 @@
+title: Detect Activity to Known Malicious Indicator - https://raw.githubusercontent.com/BenoitDaude/ABCDYUOSD/refs/heads/main/xmrig-x86_64-static
+id: auto-54f698a5ebea85d5f606d90bdd957fed72f825cae4978eef50b12206bfb3c423
+status: experimental
+description: Detects traffic or activity related to https://raw.githubusercontent.com/BenoitDaude/ABCDYUOSD/refs/heads/main/xmrig-x86_64-static which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://raw.githubusercontent.com/BenoitDaude/ABCDYUOSD/refs/heads/main/xmrig-x86_64-static*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://raw.githubusercontent.com/BenoitDaude/ABCDYUOSD/refs/heads/main/xmrig-i686-static
+id: auto-50f88b743b52d41f0386de4041b9990d5be48c2cb6b70c46229af511f2524f8c
+status: experimental
+description: Detects traffic or activity related to https://raw.githubusercontent.com/BenoitDaude/ABCDYUOSD/refs/heads/main/xmrig-i686-static which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://raw.githubusercontent.com/BenoitDaude/ABCDYUOSD/refs/heads/main/xmrig-i686-static*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://raw.githubusercontent.com/BenoitDaude/ABCDYUOSD/refs/heads/main/xmrig-armv7-static
+id: auto-237204cd73ba48156d6d622878c152a6628c6771b2bbea7091a44cec7e7e8761
+status: experimental
+description: Detects traffic or activity related to https://raw.githubusercontent.com/BenoitDaude/ABCDYUOSD/refs/heads/main/xmrig-armv7-static which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://raw.githubusercontent.com/BenoitDaude/ABCDYUOSD/refs/heads/main/xmrig-armv7-static*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://raw.githubusercontent.com/BenoitDaude/ABCDYUOSD/refs/heads/main/xmrig-aarch64-static
+id: auto-c5e17b81a44fb15652424a841a17b5e701458230b57e04f959c110cf9f67fa1f
+status: experimental
+description: Detects traffic or activity related to https://raw.githubusercontent.com/BenoitDaude/ABCDYUOSD/refs/heads/main/xmrig-aarch64-static which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://raw.githubusercontent.com/BenoitDaude/ABCDYUOSD/refs/heads/main/xmrig-aarch64-static*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://agrovelca.com/3.exe
 id: auto-2fc2de9d99b26a48f3c28d04084c5a82a0944031c97ca3f6a81a072b8acc48db
 status: experimental
@@ -590,133 +654,21 @@ tags:
   - attack.t1496
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Indicator - https://121.176.14.102/arm7
-id: auto-eba85c1db238ef952ece1fcbfe718046c6cf815e33c36880ee81fb6e1d57c275
+title: Detect Activity to Known Malicious Indicator -  "0f5b306d0e04b56939893e35f82e218b618fbe4ec3ea21ff7316e866a46e9eb2"
+id: auto-35e4661aa1328e662752ca15e053b717c5a1bdb2f15da8e899e190baf78b43f9
 status: experimental
-description: Detects traffic or activity related to https://121.176.14.102/arm7 which is a known malicious url.
+description: Detects traffic or activity related to  "0f5b306d0e04b56939893e35f82e218b618fbe4ec3ea21ff7316e866a46e9eb2" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*https://121.176.14.102/arm7*'
+    hashes:
+      - '* "0f5b306d0e04b56939893e35f82e218b618fbe4ec3ea21ff7316e866a46e9eb2"*'
   condition: selection
 level: high
 tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://121.176.14.102/x86_64
-id: auto-1f0b8b2bc07c1ae304919831858cabe5932a785b918a268e9e82ee0d0add1c1f
-status: experimental
-description: Detects traffic or activity related to https://121.176.14.102/x86_64 which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://121.176.14.102/x86_64*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://121.176.14.102/aarch64
-id: auto-eedb14e9e6c8a705c8d395ae89d18eb865c060f3aed2b296217628c107b61ae6
-status: experimental
-description: Detects traffic or activity related to https://121.176.14.102/aarch64 which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://121.176.14.102/aarch64*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://121.176.14.102/sh
-id: auto-de784f6386377b939d018deb6884815dc5cd7d128836dc198c5bccfb0e25886d
-status: experimental
-description: Detects traffic or activity related to https://121.176.14.102/sh which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://121.176.14.102/sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://121.176.14.102/i686
-id: auto-e489c50f2a5b3b053dd5f162a180514499a6ec5709290fe9a50c71f0c55030e5
-status: experimental
-description: Detects traffic or activity related to https://121.176.14.102/i686 which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://121.176.14.102/i686*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - https://121.176.14.102/clean
-id: auto-bba762e7e747363eb9dfeed5ec74f9a94b6ae548224d0176bd2a518f1f3af52a
-status: experimental
-description: Detects traffic or activity related to https://121.176.14.102/clean which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://121.176.14.102/clean*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://31.58.226.146/nuts/bolts
-id: auto-a0b7c2322390db6a4b4300c7ae722e8c6d0b64446442b4496efea5b4052df162
-status: experimental
-description: Detects traffic or activity related to http://31.58.226.146/nuts/bolts which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://31.58.226.146/nuts/bolts*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Indicator - http://31.58.226.146/nuts/poop
-id: auto-fe189b1d744dd5482dfc014e4eda64b56032148428728b44eb98a19fd4b491c3
-status: experimental
-description: Detects traffic or activity related to http://31.58.226.146/nuts/poop which is a known malicious url.
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://31.58.226.146/nuts/poop*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "707af1fc2b119cea491cf366d738634ec6918d12c0db13052f4f8f8bf139b7b9"
 id: auto-a65d66bf1f554699beb34344aef31da9d57bf8adda3b6b07fe4c232c3a5c210e
@@ -760,38 +712,6 @@ detection:
   selection:
     hashes:
       - '* "ee4263fccb0aa847d032174ad12f1486f0cd3a51a7aabd548f089e731ee97a9f"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "8441a4fd099d810166cba6dc1796c5ff57ef1856c8edd73ff07ab674c8d73dcc"
-id: auto-1bce253457029976d600c6d6f3c37d29c72a7ebbc65cf20de92aaeea9e03844f
-status: experimental
-description: Detects traffic or activity related to  "8441a4fd099d810166cba6dc1796c5ff57ef1856c8edd73ff07ab674c8d73dcc" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "8441a4fd099d810166cba6dc1796c5ff57ef1856c8edd73ff07ab674c8d73dcc"*'
-  condition: selection
-level: high
-tags:
-  - attack.T1071
-  - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Indicator -  "4dd2a916d6767a36f1b289339555b1993471952acf4f3ed4813644bf232a68f9"
-id: auto-ac3fa09b64c6e981750718f71b4c2aee5b93e9d184d52c3722acce9660cfa98d
-status: experimental
-description: Detects traffic or activity related to  "4dd2a916d6767a36f1b289339555b1993471952acf4f3ed4813644bf232a68f9" which is a known malicious hash.
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - '* "4dd2a916d6767a36f1b289339555b1993471952acf4f3ed4813644bf232a68f9"*'
   condition: selection
 level: high
 tags:
