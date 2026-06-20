@@ -1,3 +1,67 @@
+title: Detect Activity to Known Malicious Indicator - https://github.com/nulltrafficaway/project-lab-test/releases/download/test/softwaretech
+id: auto-9ec0fb11de6a277a85734b798fe2b370165f145e7d2c2cb638f557165210a374
+status: experimental
+description: Detects traffic or activity related to https://github.com/nulltrafficaway/project-lab-test/releases/download/test/softwaretech which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://github.com/nulltrafficaway/project-lab-test/releases/download/test/softwaretech*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://raw.githubusercontent.com/nulltrafficaway/project-lab-test/refs/heads/main/config.json
+id: auto-c58d3a7ee5fd037d5b132b43f91c0ad6ae72962dae14216912dbe424576b24cb
+status: experimental
+description: Detects traffic or activity related to https://raw.githubusercontent.com/nulltrafficaway/project-lab-test/refs/heads/main/config.json which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://raw.githubusercontent.com/nulltrafficaway/project-lab-test/refs/heads/main/config.json*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://raw.githubusercontent.com/nulltrafficaway/project-lab-test/refs/heads/main/watchsoftware.sh
+id: auto-2caad5a2bfcb594f45e63f1def7d92c72dbbb731296ba3484588c065785bbb17
+status: experimental
+description: Detects traffic or activity related to https://raw.githubusercontent.com/nulltrafficaway/project-lab-test/refs/heads/main/watchsoftware.sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://raw.githubusercontent.com/nulltrafficaway/project-lab-test/refs/heads/main/watchsoftware.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator - https://raw.githubusercontent.com/nulltrafficaway/project-lab-test/refs/heads/main/deploy_softwaretech.sh
+id: auto-a4697110ec656fe1c0aaa16708a567a3121c5f288583fe464b869a718532dcb4
+status: experimental
+description: Detects traffic or activity related to https://raw.githubusercontent.com/nulltrafficaway/project-lab-test/refs/heads/main/deploy_softwaretech.sh which is a known malicious url.
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://raw.githubusercontent.com/nulltrafficaway/project-lab-test/refs/heads/main/deploy_softwaretech.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Indicator - http://67.220.73.243/xmrig
 id: auto-873f156494d6e128943c7ee08a23c69012051bb93fe3d6095bfb277add7db4ad
 status: experimental
@@ -589,6 +653,54 @@ level: high
 tags:
   - attack.t1496
   - source.URLhaus
+---
+title: Detect Activity to Known Malicious Indicator -  "237e6ff6b83166d19edabf4cade3cec3ceb4b9665b70c52d4b0e79b9670d8846"
+id: auto-cffdebe278ea0dd2c2408c4e386b49202341369a155d1974249bbadb46e9adea
+status: experimental
+description: Detects traffic or activity related to  "237e6ff6b83166d19edabf4cade3cec3ceb4b9665b70c52d4b0e79b9670d8846" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "237e6ff6b83166d19edabf4cade3cec3ceb4b9665b70c52d4b0e79b9670d8846"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "d89ac69f086cb3029a8eac0fed1310d46142b3891d2d6874f5ed0a742d887c4a"
+id: auto-a5f1bbf1a7728a7baa23023923480e5f358ec8ceecf056eed402a82874e1e5d2
+status: experimental
+description: Detects traffic or activity related to  "d89ac69f086cb3029a8eac0fed1310d46142b3891d2d6874f5ed0a742d887c4a" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "d89ac69f086cb3029a8eac0fed1310d46142b3891d2d6874f5ed0a742d887c4a"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Indicator -  "a2c042f9db2a3e0634378ad4ce85269f97167438754e5e9f059a3c58c25b1cae"
+id: auto-8ba001f30ee7aad4d8601f1d1afd3abf5226a5fb00fecba5baaa19e532e02921
+status: experimental
+description: Detects traffic or activity related to  "a2c042f9db2a3e0634378ad4ce85269f97167438754e5e9f059a3c58c25b1cae" which is a known malicious hash.
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - '* "a2c042f9db2a3e0634378ad4ce85269f97167438754e5e9f059a3c58c25b1cae"*'
+  condition: selection
+level: high
+tags:
+  - attack.T1071
+  - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Indicator -  "8d5fb1aa1eead3de107ec5b99178d3c8d48b23b6116554cd9319538735c3d7c6"
 id: auto-e641ac3dac666c1dd1ea127508eeba1df7745097b2d878e814b4a221f02ccd70
