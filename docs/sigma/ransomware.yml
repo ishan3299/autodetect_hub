@@ -1,15 +1,15 @@
-title: Detect Activity to Known Malicious Indicator - http://179.43.186.246:14888/download/0e23d66b-d075-445a-bc56-e0d05a633724
-id: auto-bcfe59d7bcfaf5dd82f36f4ff907fe444e533be32e55e8dba4d4f467cb447538
+title: Detect Activity to Known Malicious Indicator -  "d3961de88685bcad6385becf06dad8772b0a1f9f572ece4238f943f077d46d0a"
+id: auto-1638547a8cb918412d78d87179c7f4080f4f2d465853936da4ee07c4436d4210
 status: experimental
-description: Detects traffic or activity related to http://179.43.186.246:14888/download/0e23d66b-d075-445a-bc56-e0d05a633724 which is a known malicious url.
+description: Detects traffic or activity related to  "d3961de88685bcad6385becf06dad8772b0a1f9f572ece4238f943f077d46d0a" which is a known malicious hash.
 logsource:
-  category: proxy
+  category: process_creation
 detection:
   selection:
-    c-uri:
-      - '*http://179.43.186.246:14888/download/0e23d66b-d075-445a-bc56-e0d05a633724*'
+    hashes:
+      - '* "d3961de88685bcad6385becf06dad8772b0a1f9f572ece4238f943f077d46d0a"*'
   condition: selection
 level: high
 tags:
-  - attack.t1486
-  - source.URLhaus
+  - attack.T1071
+  - source.MalwareBazaar
