@@ -1,6 +1,6 @@
 import json
 import os
-import hashlib
+import uuid
 import yaml
 import logging
 
@@ -10,16 +10,16 @@ def load_config():
     with open("config.yaml", "r") as f:
         return yaml.safe_load(f)
 
-TEMPLATE = """title: Detect Activity to Known Malicious Indicator - {indicator}
+TEMPLATE = """title: Detect Activity to Known Malicious {category} - {source} {type}s - Chunk {chunk_num}
 id: {rule_id}
 status: experimental
-description: Detects traffic or activity related to {indicator} which is a known malicious {type}.
+description: Detects traffic or activity related to known malicious {type}s associated with {category} from {source} (Chunk {chunk_num}).
 logsource:
-  category: {category}
+  category: {logsource_category}
 detection:
   selection:
     {field}:
-      - '*{indicator}*'
+{value_list}
   condition: selection
 level: high
 tags:
@@ -61,6 +61,31 @@ def generate_sigma():
     with open(input_file, "r") as f:
         indicators = json.load(f)
 
+    # Group indicators by: (ind_type, source, category_slug, t_code)
+    groups = {}
+    
+    for item in indicators:
+        val = item["indicator"]
+        ind_type = item["indicator_type"]
+        tags = item.get("tags", [])
+        source = item["source"]
+        
+        # Determine category slug
+        category_slug = determine_category(tags)
+        
+        # Determine T-Code
+        t_code = "T1071" # Default
+        for tag in tags:
+            tag_lower = tag.lower()
+            if tag_lower in mappings:
+                t_code = mappings[tag_lower]
+                break
+
+        key = (ind_type, source, category_slug, t_code)
+        if key not in groups:
+            groups[key] = []
+        groups[key].append(val)
+
     # Dictionary to hold rules by category
     categorized_rules = {
         "ransomware": [],
@@ -74,58 +99,76 @@ def generate_sigma():
     }
     
     all_rules = []
+    chunk_size = 500
 
-    for item in indicators:
-        val = item["indicator"]
-        ind_type = item["indicator_type"]
-        tags = item.get("tags", [])
+    for key, vals in groups.items():
+        ind_type, source, category_slug, t_code = key
         
-        # Determine category for file segregation
-        category_slug = determine_category(tags)
-        
-        # Determine T-Code
-        t_code = "T1071" # Default
-        for tag in tags:
-            tag_lower = tag.lower()
-            if tag_lower in mappings:
-                t_code = mappings[tag_lower].lower()
-                break
-
-        # Basic mapping
+        # Determine logsource category and field
         if ind_type == "domain":
-            category = "dns"
+            logsource_category = "dns"
             field = "query"
+            wildcard = True
         elif ind_type == "ip":
-            category = "firewall" # simplified
+            logsource_category = "firewall"
             field = "dst_ip"
+            wildcard = False
         elif ind_type == "hash":
-            category = "process_creation"
+            logsource_category = "process_creation"
             field = "hashes"
+            wildcard = False
         elif ind_type == "url":
-            category = "proxy"
+            logsource_category = "proxy"
             field = "c-uri"
+            wildcard = True
         else:
             continue
-        
-        # Generate stable ID
-        rule_id = "auto-" + hashlib.sha256(val.encode()).hexdigest()
-        
-        rule_content = TEMPLATE.format(
-            indicator=val,
-            rule_id=rule_id,
-            type=ind_type,
-            category=category,
-            field=field,
-            t_code=t_code,
-            source=item["source"]
-        )
-        
-        all_rules.append(rule_content)
-        categorized_rules[category_slug].append(rule_content)
+
+        # Chunk values
+        for i in range(0, len(vals), chunk_size):
+            chunk = vals[i:i+chunk_size]
+            chunk_num = (i // chunk_size) + 1
+            
+            # Format values
+            if wildcard:
+                value_list = "\n".join(f"      - '*{v}*'" for v in chunk)
+            else:
+                value_list = "\n".join(f"      - '{v}'" for v in chunk)
+
+            # Generate stable UUIDv5 based on fields
+            uuid_seed = f"{ind_type}-{source}-{category_slug}-{t_code}-{chunk_num}"
+            rule_id = str(uuid.uuid5(uuid.NAMESPACE_DNS, uuid_seed))
+
+            rule_content = TEMPLATE.format(
+                category=category_slug.capitalize(),
+                source=source,
+                type=ind_type,
+                chunk_num=chunk_num,
+                rule_id=rule_id,
+                logsource_category=logsource_category,
+                field=field,
+                value_list=value_list,
+                t_code=t_code.lower()
+            )
+            
+            all_rules.append(rule_content)
+            
+            if category_slug in categorized_rules:
+                categorized_rules[category_slug].append(rule_content)
+            else:
+                categorized_rules["other"].append(rule_content)
 
     os.makedirs(sigma_dir, exist_ok=True)
     
-    # Write "all_rules.yml" for backward compatibility
+    # Clean up old yml files to prevent stale rules from remaining
+    import glob
+    for old_file in glob.glob(os.path.join(sigma_dir, "*.yml")):
+        try:
+            os.remove(old_file)
+        except OSError:
+            pass
+    
+    # Write "all_rules.yml"
     with open(sigma_output, "w") as f:
         f.write("---\n".join(all_rules))
     

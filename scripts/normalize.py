@@ -39,14 +39,19 @@ def normalize():
     for item in all_indicators:
         val = item.get("value")
         if val:
+            current_date = item.get("first_seen")
+            if not current_date:
+                 import datetime
+                 current_date = datetime.date.today().isoformat()
+                 
             if val not in unique_map:
                 unique_map[val] = {
                     "indicator": val,
                     "indicator_type": item.get("type"),
                     "source": item.get("source"),
                     "tags": item.get("tags", []),
-                    "first_seen": item.get("first_seen"),
-                    "last_seen": item.get("first_seen"),
+                    "first_seen": current_date,
+                    "last_seen": current_date,
                     "sightings": 1
                 }
             else:
@@ -55,17 +60,12 @@ def normalize():
                 new_tags = set(item.get("tags", []))
                 unique_map[val]["tags"] = list(existing_tags.union(new_tags))
 
-                current_date = item.get("first_seen", None)
-                if not current_date:
-                     import datetime
-                     current_date = datetime.date.today().isoformat()
-
                 # Update First Seen (Keep Earliest)
-                existing_fs = unique_map[val].get("first_seen", current_date)
+                existing_fs = unique_map[val].get("first_seen") or current_date
                 unique_map[val]["first_seen"] = min(existing_fs, current_date)
 
                 # Update Last Seen (Keep Latest)
-                existing_ls = unique_map[val].get("last_seen", current_date)
+                existing_ls = unique_map[val].get("last_seen") or current_date
                 unique_map[val]["last_seen"] = max(existing_ls, current_date)
 
                 # Increment Sightings

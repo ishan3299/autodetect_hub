@@ -103,11 +103,19 @@
     <script src="assets/js/main.js"></script>
     <script>
         window.addEventListener('DOMContentLoaded', async () => {
-            const indicators = await fetchJSON('indicators.json') || [];
+            const analytics = await fetchJSON('analytics.json');
             const coverage = await fetchJSON('attack-coverage.json') || {};
 
-            displayStats(indicators, coverage);
-            document.getElementById('last-updated').innerText = new Date().toLocaleString();
+            if (analytics) {
+                displayStatsFromAnalytics(analytics, coverage);
+                if (analytics.generated_at) {
+                    document.getElementById('last-updated').innerText = new Date(analytics.generated_at).toLocaleString();
+                } else {
+                    document.getElementById('last-updated').innerText = new Date().toLocaleString();
+                }
+            } else {
+                document.getElementById('last-updated').innerText = "Unavailable";
+            }
         });
     </script>
 </body>

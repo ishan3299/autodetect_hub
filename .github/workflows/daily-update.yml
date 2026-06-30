@@ -51,14 +51,16 @@ jobs:
           # Copy data for frontend
           cp data/normalized/indicators.json docs/indicators.json
           
-          # Copy rules for download
-          mkdir -p docs/suricata docs/kql
+          # Create directories
+          mkdir -p docs/suricata docs/kql docs/sigma
+          
+          # Clear old rules to prevent stale rules
+          rm -f docs/suricata/* docs/kql/* docs/sigma/*
+          
+          # Copy fresh rules
           cp detections/suricata/all_rules.rules docs/suricata/
           cp detections/kql/all_rules.kql docs/kql/
-          
-          # Copy Sigma bundle
-          mkdir -p docs/sigma
-          cp detections/sigma/all_rules.yml docs/sigma/
+          cp detections/sigma/*.yml docs/sigma/
 
       - name: Commit and Push
         run: |

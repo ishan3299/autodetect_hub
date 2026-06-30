@@ -24,20 +24,39 @@ def generate_suricata():
     rules = []
     sid_start = 1000000
     
+    from urllib.parse import urlparse
+
     for idx, item in enumerate(indicators):
         val = item["indicator"]
         sid = sid_start + idx
         
         if item["indicator_type"] == "domain":
-            rule = f'alert dns any any -> any any (msg:"Known Malicious Domain {val}"; dns.query; content:"{val}"; sid:{sid}; rev:1;)'
+            rule = f'alert dns any any -> any any (msg:"Known Malicious Domain {val}"; dns.query; content:"{val}"; nocase; sid:{sid}; rev:1;)'
             rules.append(rule)
         elif item["indicator_type"] == "ip":
             rule = f'alert ip any any -> {val} any (msg:"Known Malicious IP {val}"; sid:{sid}; rev:1;)'
             rules.append(rule)
         elif item["indicator_type"] == "url":
-            # escape special chars if needed, simplified for demo
-            safe_val = val.replace(":", "\\:").replace(";", "\\;")
-            rule = f'alert http any any -> any any (msg:"Known Malicious URL {safe_val}"; http.uri; content:"{safe_val}"; sid:{sid}; rev:1;)'
+            try:
+                parsed = urlparse(val)
+                host = parsed.netloc.split(":")[0] if parsed.netloc else ""
+                path = parsed.path
+                if parsed.query:
+                    path += "?" + parsed.query
+                
+                if host and path and path != "/":
+                    safe_host = host.replace(":", "\\:").replace(";", "\\;")
+                    safe_path = path.replace(":", "\\:").replace(";", "\\;")
+                    rule = f'alert http any any -> any any (msg:"Known Malicious URL {val}"; http.host; content:"{safe_host}"; nocase; http.uri; content:"{safe_path}"; nocase; sid:{sid}; rev:1;)'
+                elif host:
+                    safe_host = host.replace(":", "\\:").replace(";", "\\;")
+                    rule = f'alert http any any -> any any (msg:"Known Malicious URL {val}"; http.host; content:"{safe_host}"; nocase; sid:{sid}; rev:1;)'
+                else:
+                    safe_val = val.replace(":", "\\:").replace(";", "\\;")
+                    rule = f'alert http any any -> any any (msg:"Known Malicious URL {safe_val}"; http.uri; content:"{safe_val}"; nocase; sid:{sid}; rev:1;)'
+            except Exception:
+                safe_val = val.replace(":", "\\:").replace(";", "\\;")
+                rule = f'alert http any any -> any any (msg:"Known Malicious URL {safe_val}"; http.uri; content:"{safe_val}"; nocase; sid:{sid}; rev:1;)'
             rules.append(rule)
             
     os.makedirs(os.path.dirname(output_file), exist_ok=True)

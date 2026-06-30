@@ -1,44 +1,44 @@
 {
-  "generated_at": "2026-06-30T02:41:35.963773",
-  "total_iocs": 22568,
-  "new_iocs_24h": 1110,
+  "generated_at": "2026-06-30T15:25:22.599588",
+  "total_iocs": 22879,
+  "new_iocs_24h": 1481,
   "top_types": {
-    "url": 21851,
-    "hash": 709,
+    "url": 22048,
+    "hash": 823,
     "ip": 7,
     "domain": 1
   },
   "top_tags": {
-    "elf": 9811,
-    "Mozi": 6679,
-    "32-bit": 5842,
+    "elf": 9956,
+    "Mozi": 6747,
+    "32-bit": 5904,
+    "mips": 5103,
     "SmartLoader": 5066,
     "SmartLoader-MaaS": 5061,
     "LuaJIT-loader": 5059,
-    "mips": 5051,
-    "ua-wget": 4256,
-    "mirai": 4038,
-    "ClearFake": 1719
+    "ua-wget": 4284,
+    "mirai": 4118,
+    "ClearFake": 1726
   },
   "top_sources": {
-    "URLhaus": 21851,
-    "MalwareBazaar": 709,
+    "URLhaus": 22048,
+    "MalwareBazaar": 823,
     "FeodoTracker": 5,
     "OTX": 2,
     "AbuseIPDB": 1
   },
   "mitre_coverage": {
-    "T1059.004": 16206,
-    "T1583": 11211,
-    "T1071": 4463,
+    "T1059.004": 16415,
+    "T1583": 11367,
+    "T1071": 4491,
     "T1596": 636,
-    "T1219": 510,
-    "T1204.002": 451,
+    "T1219": 514,
+    "T1204.002": 456,
     "T1595": 217,
     "T1555": 158,
-    "T1587.001": 125,
+    "T1587.001": 126,
     "T1059.001": 95,
-    "T1496": 60,
+    "T1496": 65,
     "T1566": 49,
     "T1027": 44,
     "T1218.005": 44,
@@ -47,11 +47,25 @@
     "T1056.001": 11,
     "T1059.007": 9,
     "T1059": 7,
-    "T1059.003": 3
+    "T1036": 3
   },
   "recent_iocs": [
     {
-      "indicator": "http://115.53.222.156:36864/bin.sh",
+      "indicator": "http://119.102.37.12:47897/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "arm",
+        "elf",
+        "Mozi"
+      ],
+      "first_seen": "2026-06-30 09:41:24 UTC",
+      "last_seen": "2026-06-30 09:41:24 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://182.117.127.155:42540/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -60,12 +74,23 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-06-30 02:40:17 UTC",
-      "last_seen": "2026-06-30 02:40:17 UTC",
+      "first_seen": "2026-06-30 09:36:39 UTC",
+      "last_seen": "2026-06-30 09:36:39 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://182.113.44.175:37523/i",
+      "indicator": "http://112.248.82.68:53040/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "Mozi"
+      ],
+      "first_seen": "2026-06-30 09:36:07 UTC",
+      "last_seen": "2026-06-30 09:36:07 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://193.31.201.20:44808/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -74,12 +99,68 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-06-30 02:39:18 UTC",
-      "last_seen": "2026-06-30 02:39:18 UTC",
+      "first_seen": "2026-06-30 09:35:33 UTC",
+      "last_seen": "2026-06-30 09:35:33 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://112.248.188.99:44924/i",
+      "indicator": "http://201.131.163.246:35619/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "arm",
+        "elf",
+        "mirai",
+        "Mozi"
+      ],
+      "first_seen": "2026-06-30 09:35:30 UTC",
+      "last_seen": "2026-06-30 09:35:30 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://119.102.37.12:47897/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "arm",
+        "elf",
+        "mirai",
+        "Mozi"
+      ],
+      "first_seen": "2026-06-30 09:35:23 UTC",
+      "last_seen": "2026-06-30 09:35:23 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://46.158.180.6:46944/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "mirai"
+      ],
+      "first_seen": "2026-06-30 09:32:09 UTC",
+      "last_seen": "2026-06-30 09:32:09 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://201.131.163.246:35619/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "arm",
+        "elf",
+        "mirai",
+        "Mozi"
+      ],
+      "first_seen": "2026-06-30 09:24:22 UTC",
+      "last_seen": "2026-06-30 09:24:22 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://182.117.42.205:52117/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -88,12 +169,23 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-06-30 02:38:25 UTC",
-      "last_seen": "2026-06-30 02:38:25 UTC",
+      "first_seen": "2026-06-30 09:23:26 UTC",
+      "last_seen": "2026-06-30 09:23:26 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://61.163.148.147:53074/bin.sh",
+      "indicator": "http://112.248.82.68:53040/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "Mozi"
+      ],
+      "first_seen": "2026-06-30 09:16:13 UTC",
+      "last_seen": "2026-06-30 09:16:13 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://221.15.8.91:56640/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -102,12 +194,12 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-06-30 02:33:14 UTC",
-      "last_seen": "2026-06-30 02:33:14 UTC",
+      "first_seen": "2026-06-30 09:09:31 UTC",
+      "last_seen": "2026-06-30 09:09:31 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://112.248.188.99:44924/bin.sh",
+      "indicator": "http://119.116.69.246:45381/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -116,131 +208,66 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-06-30 02:33:13 UTC",
-      "last_seen": "2026-06-30 02:33:13 UTC",
+      "first_seen": "2026-06-30 09:09:30 UTC",
+      "last_seen": "2026-06-30 09:09:30 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://182.122.224.134:56491/bin.sh",
+      "indicator": "http://182.117.127.155:42540/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
+        "32-bit",
+        "elf",
+        "mips",
         "Mozi"
       ],
-      "first_seen": "2026-06-30 02:27:08 UTC",
-      "last_seen": "2026-06-30 02:27:08 UTC",
+      "first_seen": "2026-06-30 09:07:26 UTC",
+      "last_seen": "2026-06-30 09:07:26 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://91.92.242.236/files-129312398/files/file_a3402a55abdee979.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "54e64e",
-        "dropped-by-amadey"
-      ],
-      "first_seen": "2026-06-30 02:24:12 UTC",
-      "last_seen": "2026-06-30 02:24:12 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "https://46imdg6k.blackjackonlineplay83.com/?ublib=8b459ed8-90fe-411c-9a9e-c2ce877a2f1f",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake"
-      ],
-      "first_seen": "2026-06-30 02:04:07 UTC",
-      "last_seen": "2026-06-30 02:04:07 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://163.142.93.143:35908/bin.sh",
+      "indicator": "http://115.52.121.177:56168/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [],
-      "first_seen": "2026-06-30 01:41:13 UTC",
-      "last_seen": "2026-06-30 01:41:13 UTC",
+      "first_seen": "2026-06-30 09:07:08 UTC",
+      "last_seen": "2026-06-30 09:07:08 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://113.200.237.170:46901/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-06-30 01:39:32 UTC",
-      "last_seen": "2026-06-30 01:39:32 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://110.36.24.172:41580/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-06-30 01:36:20 UTC",
-      "last_seen": "2026-06-30 01:36:20 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://110.36.24.172:41580/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-06-30 01:12:14 UTC",
-      "last_seen": "2026-06-30 01:12:14 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://124.6.168.74:48151/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "mirai"
-      ],
-      "first_seen": "2026-06-30 01:12:07 UTC",
-      "last_seen": "2026-06-30 01:12:07 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "https://328bpzpg.313betapk.com/?ublib=de9c22d3-9522-4ddc-831e-2f9462340b85",
+      "indicator": "https://cdn.jsdelivr.net/gh/belova-bb071/fdshub-j5/pirs-7",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
         "ClearFake"
       ],
-      "first_seen": "2026-06-30 01:03:23 UTC",
-      "last_seen": "2026-06-30 01:03:23 UTC",
+      "first_seen": "2026-06-30 09:01:07 UTC",
+      "last_seen": "2026-06-30 09:01:07 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://42.229.185.49:56590/i",
+      "indicator": "https://kdf.betbacklink.com/828d0bd4-5a79-4c2e-b0cb-9442f513c675",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "Mozi"
+        "ClearFake"
       ],
-      "first_seen": "2026-06-30 01:02:08 UTC",
-      "last_seen": "2026-06-30 01:02:08 UTC",
+      "first_seen": "2026-06-30 09:01:06 UTC",
+      "last_seen": "2026-06-30 09:01:06 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://163.142.93.143:35908/i",
+      "indicator": "http://115.52.121.177:56168/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [],
+      "first_seen": "2026-06-30 08:45:27 UTC",
+      "last_seen": "2026-06-30 08:45:27 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://221.15.15.223:37181/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -249,45 +276,180 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-06-30 00:56:27 UTC",
-      "last_seen": "2026-06-30 00:56:27 UTC",
+      "first_seen": "2026-06-30 08:40:46 UTC",
+      "last_seen": "2026-06-30 08:40:46 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://scanbot.me/shell/rev.sh",
+      "indicator": "http://182.121.69.245:45715/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "ua-wget"
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
       ],
-      "first_seen": "2026-06-30 00:53:05 UTC",
-      "last_seen": "2026-06-30 00:53:05 UTC",
+      "first_seen": "2026-06-30 08:35:25 UTC",
+      "last_seen": "2026-06-30 08:35:25 UTC",
       "sightings": 1
     },
     {
-      "indicator": "https://scanbot.me/scanbot.sh",
+      "indicator": "http://182.116.94.38:45909/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "ua-wget"
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
       ],
-      "first_seen": "2026-06-30 00:51:07 UTC",
-      "last_seen": "2026-06-30 00:51:07 UTC",
+      "first_seen": "2026-06-30 08:28:43 UTC",
+      "last_seen": "2026-06-30 08:28:43 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://124.6.168.74:48151/bin.sh",
+      "indicator": "http://42.85.161.29:39651/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [],
+      "first_seen": "2026-06-30 08:27:37 UTC",
+      "last_seen": "2026-06-30 08:27:37 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://221.14.53.175:36339/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-06-30 08:22:22 UTC",
+      "last_seen": "2026-06-30 08:22:22 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://221.14.53.175:36339/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-06-30 08:15:23 UTC",
+      "last_seen": "2026-06-30 08:15:23 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://182.124.187.230:34082/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-06-30 08:13:17 UTC",
+      "last_seen": "2026-06-30 08:13:17 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://182.121.69.245:45715/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-06-30 08:08:29 UTC",
+      "last_seen": "2026-06-30 08:08:29 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://221.15.15.223:37181/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-06-30 08:08:24 UTC",
+      "last_seen": "2026-06-30 08:08:24 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://ry7ddj68.1x303.casino/?ublib=54315a32-d171-4251-b21d-53a500e1a785",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-06-30 08:06:08 UTC",
+      "last_seen": "2026-06-30 08:06:08 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://110.37.90.59:54109/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
         "mirai"
       ],
-      "first_seen": "2026-06-30 00:47:08 UTC",
-      "last_seen": "2026-06-30 00:47:08 UTC",
+      "first_seen": "2026-06-30 08:02:08 UTC",
+      "last_seen": "2026-06-30 08:02:08 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://113.200.237.170:46901/bin.sh",
+      "indicator": "http://182.116.94.38:45909/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-06-30 08:01:24 UTC",
+      "last_seen": "2026-06-30 08:01:24 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://61.52.45.192:37650/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-06-30 07:59:21 UTC",
+      "last_seen": "2026-06-30 07:59:21 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://119.164.32.152:35013/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "mirai"
+      ],
+      "first_seen": "2026-06-30 07:51:11 UTC",
+      "last_seen": "2026-06-30 07:51:11 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://103.172.186.155:48768/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -297,23 +459,12 @@
         "mirai",
         "Mozi"
       ],
-      "first_seen": "2026-06-30 00:42:35 UTC",
-      "last_seen": "2026-06-30 00:42:35 UTC",
+      "first_seen": "2026-06-30 07:46:23 UTC",
+      "last_seen": "2026-06-30 07:46:23 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://123.11.35.118:60685/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "mirai"
-      ],
-      "first_seen": "2026-06-30 00:32:09 UTC",
-      "last_seen": "2026-06-30 00:32:09 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://122.156.143.62:45218/i",
+      "indicator": "http://182.124.187.230:34082/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -322,26 +473,192 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-06-30 00:29:24 UTC",
-      "last_seen": "2026-06-30 00:29:24 UTC",
+      "first_seen": "2026-06-30 07:44:30 UTC",
+      "last_seen": "2026-06-30 07:44:30 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://41.216.189.157/nz/o.xml",
+      "indicator": "http://115.63.243.58:33251/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "opendir",
+        "Mozi"
+      ],
+      "first_seen": "2026-06-30 07:35:50 UTC",
+      "last_seen": "2026-06-30 07:35:50 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://221.15.22.116:57599/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-06-30 07:33:57 UTC",
+      "last_seen": "2026-06-30 07:33:57 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://61.52.45.192:37650/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-06-30 07:23:16 UTC",
+      "last_seen": "2026-06-30 07:23:16 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://103.172.186.155:48768/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "arm",
+        "elf",
+        "mirai",
+        "Mozi"
+      ],
+      "first_seen": "2026-06-30 07:21:31 UTC",
+      "last_seen": "2026-06-30 07:21:31 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://77.83.39.66/Bin/ScreenConnect.ClientSetup.exe",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "77-83-39-66",
+        "connectwise",
+        "exe"
+      ],
+      "first_seen": "2026-06-30 07:18:11 UTC",
+      "last_seen": "2026-06-30 07:18:11 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://77.83.39.66/bin/support.client.exe",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "77-83-39-66",
+        "connectwise",
+        "exe"
+      ],
+      "first_seen": "2026-06-30 07:18:08 UTC",
+      "last_seen": "2026-06-30 07:18:08 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://182.114.33.45:53667/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-06-30 07:10:15 UTC",
+      "last_seen": "2026-06-30 07:10:15 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://119.187.248.249:47084/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [],
+      "first_seen": "2026-06-30 07:07:22 UTC",
+      "last_seen": "2026-06-30 07:07:22 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://162.248.100.101/n2/tbk",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
         "sh",
-        "ua-wget",
-        "xml"
+        "ua-wget"
       ],
-      "first_seen": "2026-06-30 00:21:14 UTC",
-      "last_seen": "2026-06-30 00:21:14 UTC",
+      "first_seen": "2026-06-30 06:53:28 UTC",
+      "last_seen": "2026-06-30 06:53:28 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://116.139.240.35:46645/i",
+      "indicator": "http://45.198.224.15:8080/barm7",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "45-198-224-15-8080",
+        "elf",
+        "mirai"
+      ],
+      "first_seen": "2026-06-30 06:52:32 UTC",
+      "last_seen": "2026-06-30 06:52:32 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://45.198.224.15:8080/dlr.mpsl",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "45-198-224-15-8080",
+        "elf",
+        "mirai"
+      ],
+      "first_seen": "2026-06-30 06:52:31 UTC",
+      "last_seen": "2026-06-30 06:52:31 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://45.198.224.15:8080/dlr.mips",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "45-198-224-15-8080",
+        "elf",
+        "mirai"
+      ],
+      "first_seen": "2026-06-30 06:52:31 UTC",
+      "last_seen": "2026-06-30 06:52:31 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://192.109.200.17/Bin/ScreenConnect.ClientSetup.exe",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "192-109-200-17",
+        "connectwise",
+        "exe"
+      ],
+      "first_seen": "2026-06-30 06:52:31 UTC",
+      "last_seen": "2026-06-30 06:52:31 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "https://192.109.200.17/bin/support.client.exe",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "192-109-200-17",
+        "connectwise",
+        "exe"
+      ],
+      "first_seen": "2026-06-30 06:52:30 UTC",
+      "last_seen": "2026-06-30 06:52:30 UTC",
+      "sightings": 1
+    },
+    {
+      "indicator": "http://188.17.91.233:50476/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -350,304 +667,30 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-06-30 00:17:23 UTC",
-      "last_seen": "2026-06-30 00:17:23 UTC",
+      "first_seen": "2026-06-30 06:36:23 UTC",
+      "last_seen": "2026-06-30 06:36:23 UTC",
       "sightings": 1
     },
     {
-      "indicator": "http://183.35.50.90:37281/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-06-30 00:15:24 UTC",
-      "last_seen": "2026-06-30 00:15:24 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://200.115.102.16:42740/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "Mozi"
-      ],
-      "first_seen": "2026-06-30 00:14:38 UTC",
-      "last_seen": "2026-06-30 00:14:38 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "https://dshm5yet.betbuf.live/?ublib=1ce5150f-8088-455a-af66-9a7b7b9c9849",
+      "indicator": "https://i54qzo8r.btyek.xyz/?ublib=6c8dd409-c881-4f41-afb1-e58bb7ad1526",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
         "ClearFake"
       ],
-      "first_seen": "2026-06-30 00:03:09 UTC",
-      "last_seen": "2026-06-30 00:03:09 UTC",
+      "first_seen": "2026-06-30 06:26:25 UTC",
+      "last_seen": "2026-06-30 06:26:25 UTC",
       "sightings": 1
     },
     {
-      "indicator": "https://a70tlkg4.1xboropartners.com/?ublib=cc7a6cb8-fc2a-4603-93fe-e32be899893a",
+      "indicator": "https://6j9kkd0s.chillbazi.com/?ublib=dbf0f122-b823-4560-ac48-ae7df8ab1233",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
         "ClearFake"
       ],
-      "first_seen": "2026-06-30 00:02:23 UTC",
-      "last_seen": "2026-06-30 00:02:23 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": "http://122.156.143.62:45218/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-06-30 00:00:15 UTC",
-      "last_seen": "2026-06-30 00:00:15 UTC",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"164ac73154aafebcace00b726f8285cbe8bdf6bf937d70d2e4060eebae2062a8\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"0d87a0985a608c6e0dd1c43d37eabcb525f23e65630a9bc5dcd46a0c898bf502\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"Mirai\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"44b6b758145eaa63171cbb5cc2a28002abb30f94d8076ae727f5d876ffddcc13\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"Mirai\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"80df8251504352d10f11985f7dbd73d1c2429692b2d87e81422982ed50382180\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"fb98ed4d9a5ff70157e5652602a92a7edf0ac11af3a9981996dc00dcffd8cc2f\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"Mirai\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"22d7f840c2172050085316795c270b8f75da45108d087a132556ffbf8dd3e158\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"Mirai\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"724666cc3e87297c4deafd3ab65b81b1493cd223b48baf2b588ad14894482eb9\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"6da6fe83c1a948bba950f53254b5130e0f17cc6a5af67ba4b3aa7f6c4e3801e4\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"7290cbb1028c1b544a0d38509321df1c391c4cf7f4dd9e5b751c6132738b1bc3\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"Mirai\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"22ea2b5030dfa05adbd50d714c170fd0a0c4ff4d0a245a46a8a7a23f995e6d3b\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"Mirai\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"a79102b1943a98ec07d45fe7b85432f6d8bb534e4fd90d2e18213b9d59bea6a1\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"31ea1252fc6866e35ed394c00647a3f811c6b3a4edfdcfc42b2609fa1411af4b\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"9723ffa8e979dabd945619498666655daf695a805057f552e53b1f9a0b9c34e8\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"072b708c1658e2744b77af796f5f12b9edd0bcfed6aa338fafab2891de868205\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"f96575db91db3fc3f49101dbc1d31ff9a596d8d2aa51c5d0951db941623f9ba0\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"ValleyRAT\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"51634b90405a6af4e01b530eaabee0b2a23f446855693bad966dbb8374ec6a1b\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"Mirai\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"ac4066497f065e66e6552267c6c359b6739b3203de70dd066a292e3e9541aebc\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"Mirai\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"ce779eea029e759719fae9e424c52954c1f7e5373099b5d45426ca01bec50d04\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"ffb5e04b4403df4fc22d04c1a46a2fd27edd6696a4eae6a435afa105a4d1a364\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": " \"98d86be099dd339adebf2d9d761635652f5e8a854a9640e8114c3ae1ffbd7c85\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "sightings": 1
-    },
-    {
-      "indicator": "162.243.103.246",
-      "indicator_type": "ip",
-      "source": "FeodoTracker",
-      "tags": [
-        "Emotet"
-      ],
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
+      "first_seen": "2026-06-30 06:26:25 UTC",
+      "last_seen": "2026-06-30 06:26:25 UTC",
       "sightings": 1
     }
   ]

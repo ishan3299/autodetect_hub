@@ -21,31 +21,73 @@ def generate_kql():
     with open(input_file, "r") as f:
         indicators = json.load(f)
 
-    # We'll just make one big KQL file that looks for any of them, or separate queries? 
-    # Instructions imply a file. I'll make a list of queries.
-    queries = []
-    
+    # Group indicators by type and source
+    grouped = {}
     for item in indicators:
+        ind_type = item["indicator_type"]
+        source = item["source"]
         val = item["indicator"]
-        if item["indicator_type"] == "domain":
-            query = f"""DNS
-| where QueryName contains "{val}"
-| extend ThreatSource = "{item['source']}"
-// Generated for {val}
+        
+        key = (ind_type, source)
+        if key not in grouped:
+            grouped[key] = []
+        grouped[key].append(val)
+
+    queries = []
+    chunk_size = 500
+
+    for (ind_type, source), vals in grouped.items():
+        for i in range(0, len(vals), chunk_size):
+            chunk = vals[i:i+chunk_size]
+            chunk_num = (i // chunk_size) + 1
+            formatted_list = ",\n    ".join(f'"{v}"' for v in chunk)
+
+            if ind_type == "domain":
+                query = f"""// Malicious Domains - Chunk {chunk_num} (Source: {source})
+DNS
+| where QueryName has_any (
+    {formatted_list}
+  )
+| extend ThreatSource = "{source}"
+| extend ThreatIndicator = QueryName
 """
-            queries.append(query)
-        elif item["indicator_type"] == "url":
-             query = f"""UrlClickEvents
-| where Url contains "{val}"
-| extend ThreatSource = "{item['source']}"
+                queries.append(query)
+            elif ind_type == "url":
+                query = f"""// Malicious URLs - Chunk {chunk_num} (Source: {source})
+UrlClickEvents
+| where Url has_any (
+    {formatted_list}
+  )
+| extend ThreatSource = "{source}"
+| extend ThreatIndicator = Url
 """
-             queries.append(query)
-            
+                queries.append(query)
+            elif ind_type == "ip":
+                query = f"""// Malicious IPs - Chunk {chunk_num} (Source: {source})
+DeviceNetworkEvents
+| where RemoteIP in (
+    {formatted_list}
+  )
+| extend ThreatSource = "{source}"
+| extend ThreatIndicator = RemoteIP
+"""
+                queries.append(query)
+            elif ind_type == "hash":
+                query = f"""// Malicious Hashes - Chunk {chunk_num} (Source: {source})
+DeviceProcessEvents
+| where SHA256 in (
+    {formatted_list}
+  )
+| extend ThreatSource = "{source}"
+| extend ThreatIndicator = SHA256
+"""
+                queries.append(query)
+
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     with open(output_file, "w") as f:
-        f.write("\n".join(queries))
+        f.write("\n\n".join(queries))
     
-    logging.info(f"Generated {len(queries)} KQL queries in {output_file}.")
+    logging.info(f"Generated {len(queries)} KQL query blocks in {output_file}.")
 
 if __name__ == "__main__":
     generate_kql()

@@ -82,23 +82,33 @@
     <script src="assets/js/main.js"></script>
     <script>
         window.addEventListener('DOMContentLoaded', async () => {
-            const indicators = await fetchJSON('indicators.json') || [];
+            const analytics = await fetchJSON('analytics.json');
             const coverage = await fetchJSON('attack-coverage.json') || {};
 
             // Populating Stats
             const statsBody = document.getElementById('stats-body');
-            statsBody.innerHTML = `
-                <tr>
-                    <td>Total Indicators</td>
-                    <td>${indicators.length}</td>
-                    <td><a href="indicators.json" style="color: var(--accent-secondary);">indicators.json</a></td>
-                </tr>
-                <tr>
-                    <td>ATT&CK Techniques Covered</td>
-                    <td>${Object.keys(coverage).length}</td>
-                    <td><a href="attack-coverage.json" style="color: var(--accent-secondary);">attack-coverage.json</a></td>
-                </tr>
-            `;
+            if (analytics) {
+                statsBody.innerHTML = `
+                    <tr>
+                        <td>Total Indicators</td>
+                        <td>${analytics.total_iocs.toLocaleString()}</td>
+                        <td><a href="indicators.json" style="color: var(--accent-secondary);">indicators.json</a></td>
+                    </tr>
+                    <tr>
+                        <td>ATT&CK Techniques Covered</td>
+                        <td>${Object.keys(coverage).length}</td>
+                        <td><a href="attack-coverage.json" style="color: var(--accent-secondary);">attack-coverage.json</a></td>
+                    </tr>
+                `;
+            } else {
+                statsBody.innerHTML = `
+                    <tr>
+                        <td>Total Indicators</td>
+                        <td>Error loading data</td>
+                        <td><a href="indicators.json" style="color: var(--accent-secondary);">indicators.json</a></td>
+                    </tr>
+                `;
+            }
         });
     </script>
 </body>

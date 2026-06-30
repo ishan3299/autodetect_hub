@@ -23,6 +23,78 @@ function displayStats(indicators, coverage) {
     }
 }
 
+function displayStatsFromAnalytics(analytics, coverage) {
+    const totalEl = document.getElementById('total-indicators');
+    if (totalEl) totalEl.innerText = analytics.total_iocs.toLocaleString();
+
+    const coveredEl = document.getElementById('covered-techniques');
+    if (coveredEl && coverage) coveredEl.innerText = Object.keys(coverage).length;
+
+    // Render Charts if elements exist
+    if (document.getElementById('chart-types') && typeof Chart !== 'undefined') {
+        renderChartsFromAnalytics(analytics);
+    }
+}
+
+function renderChartsFromAnalytics(analytics) {
+    const types = analytics.top_types || {};
+    const sources = analytics.top_sources || {};
+
+    const commonOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: { labels: { color: '#8b949e', font: { family: 'Inter' } } }
+        },
+        scales: {
+            y: { ticks: { color: '#8b949e' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+            x: { ticks: { color: '#8b949e' }, grid: { color: 'rgba(255,255,255,0.05)' } }
+        }
+    };
+
+    // Chart 1: Types (Doughnut)
+    if (document.getElementById('chart-types')) {
+        new Chart(document.getElementById('chart-types'), {
+            type: 'doughnut',
+            data: {
+                labels: Object.keys(types),
+                datasets: [{
+                    data: Object.values(types),
+                    backgroundColor: ['#2f81f7', '#3fb950', '#d29922', '#f85149', '#a371f7'],
+                    borderColor: '#0d1117',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'right', labels: { color: '#c9d1d9', font: { family: 'Inter' } } }
+                }
+            }
+        });
+    }
+
+    // Chart 2: Sources (Bar)
+    if (document.getElementById('chart-sources')) {
+        const sortedSources = Object.entries(sources).sort((a, b) => b[1] - a[1]);
+        new Chart(document.getElementById('chart-sources'), {
+            type: 'bar',
+            data: {
+                labels: sortedSources.map(s => s[0]),
+                datasets: [{
+                    label: 'Count',
+                    data: sortedSources.map(s => s[1]),
+                    backgroundColor: 'rgba(56, 139, 253, 0.5)',
+                    borderColor: '#2f81f7',
+                    borderWidth: 1
+                }]
+            },
+            options: commonOptions
+        });
+    }
+}
+
 function renderCharts(indicators) {
     // Process Data
     const types = {};
