@@ -659,3 +659,23 @@ level: high
 tags:
   - attack.t1595
   - source.URLhaus
+---
+title: Detect Activity to Known Malicious Botnet - MalwareBazaar hashs - Chunk 1
+id: 94657b47-821e-5397-8d60-427bf25f661f
+status: experimental
+description: Detects traffic or activity related to known malicious hashs associated with Botnet from MalwareBazaar (Chunk 1).
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - ' "3d4f34812e0cc01496db866db3109134a962d6148a8f2c5d392807df29089d7b"'
+      - ' "e093480ce432d25f67d7a7285cd150bc7628036b582ab5b0640fb6b38b311ba2"'
+      - ' "260f2d62bfecd03062c92e53d86b583d171e8f0153de3631cbfc5cc8bb3d10ce"'
+      - ' "e24a6177f71ee4d453a874dc2ab73168b7e432257183df54a146d9a8ea995c6b"'
+      - ' "4c666890a558a284ac2f14950f096f255f622b9b4e32771d17f4667d63d2847d"'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.MalwareBazaar
