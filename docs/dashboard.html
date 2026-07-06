@@ -112,6 +112,19 @@
 
     <script src="assets/js/main.js"></script>
     <script>
+        function escapeHTML(str) {
+            if (!str) return '';
+            return str.replace(/[&<>'"]/g, 
+                tag => ({
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    "'": '&#39;',
+                    '"': '&quot;'
+                }[tag] || tag)
+            );
+        }
+
         window.addEventListener('DOMContentLoaded', async () => {
             const data = await fetchJSON('analytics.json');
             if (!data) return;
@@ -198,20 +211,23 @@
             data.recent_iocs.slice(0, 10).forEach(item => {
                 const row = document.createElement('tr');
 
-                const tagsHtml = item.tags.map(t => `<code>${t}</code>`).join(" ");
+                const tagsHtml = item.tags.map(t => `<code>${escapeHTML(t)}</code>`).join(" ");
                 const severityClass = item.severity === 'high' ? 'danger' : (item.severity === 'medium' ? 'warning' : 'success');
                 const severityLabel = item.severity ? item.severity.toUpperCase() : 'LOW';
                 const statusClass = item.status === 'active' ? 'active' : 'inactive';
                 const statusLabel = item.status === 'active' ? '<span class="dot"></span>Active' : 'Inactive';
+                
+                const valShort = item.value.substring(0, 50);
+                const valDisplay = escapeHTML(valShort) + (item.value.length > 50 ? '...' : '');
 
                 row.innerHTML = `
-                    <td style="font-family: var(--font-mono); color: var(--accent-secondary);">${item.value.substring(0, 50)}${item.value.length > 50 ? '...' : ''}</td>
-                    <td style="text-transform: uppercase; font-size: 0.8rem; font-weight: 600;">${item.indicator_type}</td>
+                    <td style="font-family: var(--font-mono); color: var(--accent-secondary);">${valDisplay}</td>
+                    <td style="text-transform: uppercase; font-size: 0.8rem; font-weight: 600;">${escapeHTML(item.indicator_type)}</td>
                     <td><span class="badge ${severityClass}">${severityLabel}</span></td>
                     <td><span class="badge ${statusClass}">${statusLabel}</span></td>
                     <td>${tagsHtml}</td>
-                    <td>${item.first_seen}</td>
-                    <td>${item.source}</td>
+                    <td>${escapeHTML(item.first_seen)}</td>
+                    <td>${escapeHTML(item.source)}</td>
                 `;
                 tbody.appendChild(row);
             });

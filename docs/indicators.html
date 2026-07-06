@@ -82,6 +82,19 @@
 
     <script src="assets/js/main.js"></script>
     <script>
+        function escapeHTML(str) {
+            if (!str) return '';
+            return str.replace(/[&<>'"]/g, 
+                tag => ({
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    "'": '&#39;',
+                    '"': '&quot;'
+                }[tag] || tag)
+            );
+        }
+
         window.addEventListener('DOMContentLoaded', async () => {
             const indicators = await fetchJSON('indicators.json') || [];
             
@@ -136,12 +149,12 @@
                     const statusLabel = item.status === 'active' ? '<span class="dot"></span>Active' : 'Inactive';
 
                     tr.innerHTML = `
-                        <td><code>${item.indicator}</code></td>
-                        <td style="text-transform: uppercase; font-size: 0.8rem; font-weight: 600;">${item.indicator_type}</td>
+                        <td><code>${escapeHTML(item.indicator)}</code></td>
+                        <td style="text-transform: uppercase; font-size: 0.8rem; font-weight: 600;">${escapeHTML(item.indicator_type)}</td>
                         <td><span class="badge ${severityClass}">${severityLabel}</span></td>
                         <td><span class="badge ${statusClass}">${statusLabel}</span></td>
-                        <td>${item.source}</td>
-                        <td>${(item.tags || []).map(t => `<span style="background: rgba(255,255,255,0.05); padding: 2px 6px; border-radius: 4px; font-size: 0.85em; border: 1px solid rgba(255,255,255,0.05);">${t}</span>`).join(' ')}</td>
+                        <td>${escapeHTML(item.source)}</td>
+                        <td>${(item.tags || []).map(t => `<span style="background: rgba(255,255,255,0.05); padding: 2px 6px; border-radius: 4px; font-size: 0.85em; border: 1px solid rgba(255,255,255,0.05);">${escapeHTML(t)}</span>`).join(' ')}</td>
                     `;
                     tbody.appendChild(tr);
                 });

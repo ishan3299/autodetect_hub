@@ -201,7 +201,8 @@
 
             copyBtn.addEventListener('click', () => {
                 if (!currentRuleContent) return;
-                navigator.clipboard.writeText(currentRuleContent).then(() => {
+                
+                function showCopySuccess() {
                     const originalText = copyBtn.innerText;
                     copyBtn.innerText = 'Copied!';
                     copyBtn.style.borderColor = '#10b981';
@@ -211,7 +212,26 @@
                         copyBtn.style.borderColor = '';
                         copyBtn.style.color = '';
                     }, 2000);
-                });
+                }
+
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(currentRuleContent).then(showCopySuccess);
+                } else {
+                    // Fallback for non-https or unsupported browsers
+                    const textarea = document.createElement('textarea');
+                    textarea.value = currentRuleContent;
+                    textarea.style.position = 'fixed';
+                    document.body.appendChild(textarea);
+                    textarea.focus();
+                    textarea.select();
+                    try {
+                        document.execCommand('copy');
+                        showCopySuccess();
+                    } catch (err) {
+                        alert('Failed to copy text. Please copy manually.');
+                    }
+                    document.body.removeChild(textarea);
+                }
             });
         });
     </script>
