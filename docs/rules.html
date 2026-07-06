@@ -39,51 +39,182 @@
             <p>Rules are automatically generated and segregated by threat category.</p>
 
             <h3>Sigma Rules (Categorized)</h3>
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; margin-bottom: 2rem;">
-                <a href="sigma/all_rules.yml" download class="stat-item"
-                    style="text-decoration: none; border-color: var(--accent-secondary); min-width: 150px;">
-                    <div style="font-weight: bold; color: var(--accent-secondary); margin-bottom: 0.5rem;">All Rules
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 1rem; margin-bottom: 2rem;">
+                <div class="stat-item" style="text-align: left; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between; border-color: var(--accent-secondary);">
+                    <div>
+                        <div style="font-weight: bold; color: var(--accent-secondary); margin-bottom: 0.25rem;">All Rules</div>
+                        <div style="color: var(--text-secondary); font-size: 0.8rem; font-family: var(--font-mono); margin-bottom: 1.5rem;">all_rules.yml</div>
                     </div>
-                    <div style="color: var(--text-secondary); font-size: 0.8rem;">Full Bundle</div>
-                </a>
-                <a href="sigma/ransomware.yml" download class="stat-item"
-                    style="text-decoration: none; min-width: 150px;">
-                    <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.5rem;">Ransomware</div>
-                    <div style="color: var(--text-secondary); font-size: 0.8rem;">ransomware.yml</div>
-                </a>
-                <a href="sigma/c2.yml" download class="stat-item" style="text-decoration: none; min-width: 150px;">
-                    <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.5rem;">C2</div>
-                    <div style="color: var(--text-secondary); font-size: 0.8rem;">c2.yml</div>
-                </a>
-                <a href="sigma/stealer.yml" download class="stat-item" style="text-decoration: none; min-width: 150px;">
-                    <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.5rem;">Stealers</div>
-                    <div style="color: var(--text-secondary); font-size: 0.8rem;">stealer.yml</div>
-                </a>
-                <a href="sigma/botnet.yml" download class="stat-item" style="text-decoration: none; min-width: 150px;">
-                    <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.5rem;">Botnets</div>
-                    <div style="color: var(--text-secondary); font-size: 0.8rem;">botnet.yml</div>
-                </a>
-                <a href="sigma/phishing.yml" download class="stat-item"
-                    style="text-decoration: none; min-width: 150px;">
-                    <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.5rem;">Phishing</div>
-                    <div style="color: var(--text-secondary); font-size: 0.8rem;">phishing.yml</div>
-                </a>
+                    <div style="display: flex; gap: 0.5rem; width: 100%;">
+                        <button class="view-rule-btn btn-primary" data-url="sigma/all_rules.yml" data-name="All Sigma Rules" style="padding: 0.35rem 0.75rem !important; font-size: 0.75rem !important; flex: 1;">View</button>
+                        <a href="sigma/all_rules.yml" download style="text-decoration: none; padding: 0.35rem 0.75rem; font-size: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); color: var(--text-primary); background: rgba(255,255,255,0.02); text-align: center; flex: 1; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s;">Download</a>
+                    </div>
+                </div>
+
+                <div class="stat-item" style="text-align: left; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.25rem;">C2 Server</div>
+                        <div style="color: var(--text-secondary); font-size: 0.8rem; font-family: var(--font-mono); margin-bottom: 1.5rem;">c2.yml</div>
+                    </div>
+                    <div style="display: flex; gap: 0.5rem; width: 100%;">
+                        <button class="view-rule-btn btn-primary" data-url="sigma/c2.yml" data-name="C2 Server Rules" style="padding: 0.35rem 0.75rem !important; font-size: 0.75rem !important; flex: 1;">View</button>
+                        <a href="sigma/c2.yml" download style="text-decoration: none; padding: 0.35rem 0.75rem; font-size: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); color: var(--text-primary); background: rgba(255,255,255,0.02); text-align: center; flex: 1; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s;">Download</a>
+                    </div>
+                </div>
+
+                <div class="stat-item" style="text-align: left; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.25rem;">Credential Stealers</div>
+                        <div style="color: var(--text-secondary); font-size: 0.8rem; font-family: var(--font-mono); margin-bottom: 1.5rem;">stealer.yml</div>
+                    </div>
+                    <div style="display: flex; gap: 0.5rem; width: 100%;">
+                        <button class="view-rule-btn btn-primary" data-url="sigma/stealer.yml" data-name="Stealer Rules" style="padding: 0.35rem 0.75rem !important; font-size: 0.75rem !important; flex: 1;">View</button>
+                        <a href="sigma/stealer.yml" download style="text-decoration: none; padding: 0.35rem 0.75rem; font-size: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); color: var(--text-primary); background: rgba(255,255,255,0.02); text-align: center; flex: 1; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s;">Download</a>
+                    </div>
+                </div>
+
+                <div class="stat-item" style="text-align: left; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.25rem;">Botnets</div>
+                        <div style="color: var(--text-secondary); font-size: 0.8rem; font-family: var(--font-mono); margin-bottom: 1.5rem;">botnet.yml</div>
+                    </div>
+                    <div style="display: flex; gap: 0.5rem; width: 100%;">
+                        <button class="view-rule-btn btn-primary" data-url="sigma/botnet.yml" data-name="Botnet Rules" style="padding: 0.35rem 0.75rem !important; font-size: 0.75rem !important; flex: 1;">View</button>
+                        <a href="sigma/botnet.yml" download style="text-decoration: none; padding: 0.35rem 0.75rem; font-size: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); color: var(--text-primary); background: rgba(255,255,255,0.02); text-align: center; flex: 1; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s;">Download</a>
+                    </div>
+                </div>
+
+                <div class="stat-item" style="text-align: left; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.25rem;">Phishing URLs</div>
+                        <div style="color: var(--text-secondary); font-size: 0.8rem; font-family: var(--font-mono); margin-bottom: 1.5rem;">phishing.yml</div>
+                    </div>
+                    <div style="display: flex; gap: 0.5rem; width: 100%;">
+                        <button class="view-rule-btn btn-primary" data-url="sigma/phishing.yml" data-name="Phishing Rules" style="padding: 0.35rem 0.75rem !important; font-size: 0.75rem !important; flex: 1;">View</button>
+                        <a href="sigma/phishing.yml" download style="text-decoration: none; padding: 0.35rem 0.75rem; font-size: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); color: var(--text-primary); background: rgba(255,255,255,0.02); text-align: center; flex: 1; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s;">Download</a>
+                    </div>
+                </div>
+
+                <div class="stat-item" style="text-align: left; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.25rem;">Cryptomining</div>
+                        <div style="color: var(--text-secondary); font-size: 0.8rem; font-family: var(--font-mono); margin-bottom: 1.5rem;">cryptomining.yml</div>
+                    </div>
+                    <div style="display: flex; gap: 0.5rem; width: 100%;">
+                        <button class="view-rule-btn btn-primary" data-url="sigma/cryptomining.yml" data-name="Cryptomining Rules" style="padding: 0.35rem 0.75rem !important; font-size: 0.75rem !important; flex: 1;">View</button>
+                        <a href="sigma/cryptomining.yml" download style="text-decoration: none; padding: 0.35rem 0.75rem; font-size: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); color: var(--text-primary); background: rgba(255,255,255,0.02); text-align: center; flex: 1; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s;">Download</a>
+                    </div>
+                </div>
+
+                <div class="stat-item" style="text-align: left; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.25rem;">Other Threats</div>
+                        <div style="color: var(--text-secondary); font-size: 0.8rem; font-family: var(--font-mono); margin-bottom: 1.5rem;">other.yml</div>
+                    </div>
+                    <div style="display: flex; gap: 0.5rem; width: 100%;">
+                        <button class="view-rule-btn btn-primary" data-url="sigma/other.yml" data-name="Other Threat Rules" style="padding: 0.35rem 0.75rem !important; font-size: 0.75rem !important; flex: 1;">View</button>
+                        <a href="sigma/other.yml" download style="text-decoration: none; padding: 0.35rem 0.75rem; font-size: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); color: var(--text-primary); background: rgba(255,255,255,0.02); text-align: center; flex: 1; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s;">Download</a>
+                    </div>
+                </div>
             </div>
 
             <h3>Other Formats</h3>
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                <a href="suricata/all_rules.rules" download class="stat-item"
-                    style="text-decoration: none; min-width: 200px;">
-                    <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.5rem;">Suricata</div>
-                    <div style="color: var(--text-secondary); font-size: 0.8rem;">all_rules.rules</div>
-                </a>
-                <a href="kql/all_rules.kql" download class="stat-item" style="text-decoration: none; min-width: 200px;">
-                    <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.5rem;">KQL</div>
-                    <div style="color: var(--text-secondary); font-size: 0.8rem;">all_rules.kql</div>
-                </a>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+                <div class="stat-item" style="text-align: left; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.25rem;">Suricata Rules</div>
+                        <div style="color: var(--text-secondary); font-size: 0.8rem; font-family: var(--font-mono); margin-bottom: 1.5rem;">all_rules.rules</div>
+                    </div>
+                    <div style="display: flex; gap: 0.5rem; width: 100%;">
+                        <button class="view-rule-btn btn-primary" data-url="suricata/all_rules.rules" data-name="Suricata IDS Rules" style="padding: 0.35rem 0.75rem !important; font-size: 0.75rem !important; flex: 1;">View</button>
+                        <a href="suricata/all_rules.rules" download style="text-decoration: none; padding: 0.35rem 0.75rem; font-size: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); color: var(--text-primary); background: rgba(255,255,255,0.02); text-align: center; flex: 1; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s;">Download</a>
+                    </div>
+                </div>
+
+                <div class="stat-item" style="text-align: left; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="font-weight: bold; color: var(--text-primary); margin-bottom: 0.25rem;">KQL Queries</div>
+                        <div style="color: var(--text-secondary); font-size: 0.8rem; font-family: var(--font-mono); margin-bottom: 1.5rem;">all_rules.kql</div>
+                    </div>
+                    <div style="display: flex; gap: 0.5rem; width: 100%;">
+                        <button class="view-rule-btn btn-primary" data-url="kql/all_rules.kql" data-name="KQL Sentinel Queries" style="padding: 0.35rem 0.75rem !important; font-size: 0.75rem !important; flex: 1;">View</button>
+                        <a href="kql/all_rules.kql" download style="text-decoration: none; padding: 0.35rem 0.75rem; font-size: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); color: var(--text-primary); background: rgba(255,255,255,0.02); text-align: center; flex: 1; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; transition: all 0.3s;">Download</a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+
+    <!-- Interactive Viewer Modal -->
+    <div id="rule-modal" class="modal" style="display: none;">
+        <div class="modal-content card">
+            <div class="modal-header">
+                <h2 id="modal-title">Rule Content</h2>
+                <button id="close-modal" class="close-btn">&times;</button>
+            </div>
+            <pre><code id="modal-code"></code></pre>
+            <div class="modal-actions">
+                <button id="copy-btn" class="btn-primary">Copy to Clipboard</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('rule-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalCode = document.getElementById('modal-code');
+            const closeModal = document.getElementById('close-modal');
+            const copyBtn = document.getElementById('copy-btn');
+            
+            let currentRuleContent = '';
+
+            document.querySelectorAll('.view-rule-btn').forEach(btn => {
+                btn.addEventListener('click', async () => {
+                    const url = btn.getAttribute('data-url');
+                    const name = btn.getAttribute('data-name');
+                    modalTitle.innerText = `Viewing: ${name}`;
+                    modalCode.innerText = 'Loading rule content...';
+                    modal.style.display = 'flex';
+                    
+                    try {
+                        const response = await fetch(url);
+                        if (!response.ok) throw new Error('Failed to fetch rule');
+                        currentRuleContent = await response.text();
+                        modalCode.innerText = currentRuleContent;
+                    } catch (err) {
+                        modalCode.innerText = `Error loading rule: ${err.message}`;
+                        currentRuleContent = '';
+                    }
+                });
+            });
+
+            closeModal.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+
+            copyBtn.addEventListener('click', () => {
+                if (!currentRuleContent) return;
+                navigator.clipboard.writeText(currentRuleContent).then(() => {
+                    const originalText = copyBtn.innerText;
+                    copyBtn.innerText = 'Copied!';
+                    copyBtn.style.borderColor = '#10b981';
+                    copyBtn.style.color = '#34d399';
+                    setTimeout(() => {
+                        copyBtn.innerText = originalText;
+                        copyBtn.style.borderColor = '';
+                        copyBtn.style.color = '';
+                    }, 2000);
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

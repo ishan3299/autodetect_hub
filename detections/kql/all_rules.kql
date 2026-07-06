@@ -1,3 +1,25 @@
+// Malicious IPs - Chunk 1 (Source: AbuseIPDB)
+DeviceNetworkEvents
+| where RemoteIP in (
+    "1.2.3.4"
+  )
+| extend ThreatSource = "AbuseIPDB"
+| extend ThreatIndicator = RemoteIP
+
+
+// Malicious IPs - Chunk 1 (Source: FeodoTracker)
+DeviceNetworkEvents
+| where RemoteIP in (
+    "162.243.103.246",
+    "50.16.16.211",
+    "34.204.119.63",
+    "178.62.3.223",
+    "27.133.154.218"
+  )
+| extend ThreatSource = "FeodoTracker"
+| extend ThreatIndicator = RemoteIP
+
+
 // Malicious URLs - Chunk 1 (Source: URLhaus)
 UrlClickEvents
 | where Url has_any (
@@ -22262,33 +22284,6 @@ UrlClickEvents
 | extend ThreatIndicator = Url
 
 
-// Malicious IPs - Chunk 1 (Source: AbuseIPDB)
-DeviceNetworkEvents
-| where RemoteIP in (
-    "1.2.3.4"
-  )
-| extend ThreatSource = "AbuseIPDB"
-| extend ThreatIndicator = RemoteIP
-
-
-// Malicious Domains - Chunk 1 (Source: OTX)
-DNS
-| where QueryName has_any (
-    "malicious-example.com"
-  )
-| extend ThreatSource = "OTX"
-| extend ThreatIndicator = QueryName
-
-
-// Malicious IPs - Chunk 1 (Source: OTX)
-DeviceNetworkEvents
-| where RemoteIP in (
-    "192.168.1.100"
-  )
-| extend ThreatSource = "OTX"
-| extend ThreatIndicator = RemoteIP
-
-
 // Malicious Hashes - Chunk 1 (Source: MalwareBazaar)
 DeviceProcessEvents
 | where SHA256 in (
@@ -22835,14 +22830,19 @@ DeviceProcessEvents
 | extend ThreatIndicator = SHA256
 
 
-// Malicious IPs - Chunk 1 (Source: FeodoTracker)
+// Malicious Domains - Chunk 1 (Source: OTX)
+DNS
+| where QueryName has_any (
+    "malicious-example.com"
+  )
+| extend ThreatSource = "OTX"
+| extend ThreatIndicator = QueryName
+
+
+// Malicious IPs - Chunk 1 (Source: OTX)
 DeviceNetworkEvents
 | where RemoteIP in (
-    "162.243.103.246",
-    "50.16.16.211",
-    "34.204.119.63",
-    "178.62.3.223",
-    "27.133.154.218"
+    "192.168.1.100"
   )
-| extend ThreatSource = "FeodoTracker"
+| extend ThreatSource = "OTX"
 | extend ThreatIndicator = RemoteIP

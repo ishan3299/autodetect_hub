@@ -1,3 +1,39 @@
+title: Detect Activity to Known Malicious Other - AbuseIPDB ips - Chunk 1
+id: e0f358e2-7f6c-5889-a284-5fdc255bd8c7
+status: experimental
+description: Detects traffic or activity related to known malicious ips associated with Other from AbuseIPDB (Chunk 1).
+logsource:
+  category: firewall
+detection:
+  selection:
+    dst_ip:
+      - '1.2.3.4'
+  condition: selection
+level: high
+tags:
+  - attack.t1110
+  - source.AbuseIPDB
+---
+title: Detect Activity to Known Malicious Other - FeodoTracker ips - Chunk 1
+id: c02e47c7-a21c-588c-bb21-24e6375bb3bb
+status: experimental
+description: Detects traffic or activity related to known malicious ips associated with Other from FeodoTracker (Chunk 1).
+logsource:
+  category: firewall
+detection:
+  selection:
+    dst_ip:
+      - '162.243.103.246'
+      - '50.16.16.211'
+      - '34.204.119.63'
+      - '178.62.3.223'
+      - '27.133.154.218'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.FeodoTracker
+---
 title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 1
 id: bbd98a62-ba3f-595c-89b5-1e975cca3cbf
 status: experimental
@@ -21718,38 +21754,6 @@ tags:
   - attack.t1218.005
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Other - AbuseIPDB ips - Chunk 1
-id: e0f358e2-7f6c-5889-a284-5fdc255bd8c7
-status: experimental
-description: Detects traffic or activity related to known malicious ips associated with Other from AbuseIPDB (Chunk 1).
-logsource:
-  category: firewall
-detection:
-  selection:
-    dst_ip:
-      - '1.2.3.4'
-  condition: selection
-level: high
-tags:
-  - attack.t1110
-  - source.AbuseIPDB
----
-title: Detect Activity to Known Malicious Other - OTX ips - Chunk 1
-id: 2369d50b-04b4-55c0-af96-c5bf98bef9c4
-status: experimental
-description: Detects traffic or activity related to known malicious ips associated with Other from OTX (Chunk 1).
-logsource:
-  category: firewall
-detection:
-  selection:
-    dst_ip:
-      - '192.168.1.100'
-  condition: selection
-level: high
-tags:
-  - attack.t1595
-  - source.OTX
----
 title: Detect Activity to Known Malicious Other - MalwareBazaar hashs - Chunk 1
 id: 7c6f2a2d-2462-5aae-96a3-56a2ed66bf72
 status: experimental
@@ -22262,22 +22266,18 @@ tags:
   - attack.t1071
   - source.MalwareBazaar
 ---
-title: Detect Activity to Known Malicious Other - FeodoTracker ips - Chunk 1
-id: c02e47c7-a21c-588c-bb21-24e6375bb3bb
+title: Detect Activity to Known Malicious Other - OTX ips - Chunk 1
+id: 2369d50b-04b4-55c0-af96-c5bf98bef9c4
 status: experimental
-description: Detects traffic or activity related to known malicious ips associated with Other from FeodoTracker (Chunk 1).
+description: Detects traffic or activity related to known malicious ips associated with Other from OTX (Chunk 1).
 logsource:
   category: firewall
 detection:
   selection:
     dst_ip:
-      - '162.243.103.246'
-      - '50.16.16.211'
-      - '34.204.119.63'
-      - '178.62.3.223'
-      - '27.133.154.218'
+      - '192.168.1.100'
   condition: selection
 level: high
 tags:
-  - attack.t1071
-  - source.FeodoTracker
+  - attack.t1595
+  - source.OTX

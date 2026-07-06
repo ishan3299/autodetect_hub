@@ -32,23 +32,28 @@
     <main>
         <div class="header-bar">
             <h1>Threat Indicators</h1>
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                <select id="filter-type"
-                    style="padding: 0.5rem; border-radius: 6px; background: var(--glass-bg); color: var(--text-primary); border: 1px solid var(--glass-border);">
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                <select id="filter-type">
                     <option value="">All Types</option>
                 </select>
-                <select id="filter-source"
-                    style="padding: 0.5rem; border-radius: 6px; background: var(--glass-bg); color: var(--text-primary); border: 1px solid var(--glass-border);">
+                <select id="filter-source">
                     <option value="">All Sources</option>
                 </select>
-                <button id="btn-reset"
-                    style="padding: 0.5rem 1rem; border-radius: 6px; background: var(--glass-border); color: var(--text-primary); border: none; cursor: pointer;">Reset</button>
-                <div style="width: 1px; background: var(--glass-border); margin: 0 0.5rem;"></div>
-                <input type="text" id="search" placeholder="Search..."
-                    style="margin-bottom: 0; padding: 0.5rem; border-radius: 6px; background: var(--glass-bg); border: 1px solid var(--glass-border); color: var(--text-primary);">
-                <button id="btn-export"
-                    style="padding: 0.5rem 1rem; border-radius: 6px; background: var(--accent-glow); color: var(--accent-secondary); border: 1px solid var(--accent-secondary); cursor: pointer;">Export
-                    CSV</button>
+                <select id="filter-severity">
+                    <option value="">All Severities</option>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                <select id="filter-status">
+                    <option value="">All Statuses</option>
+                    <option value="active">Active</option>
+                    <option value="inactive">Inactive</option>
+                </select>
+                <button id="btn-reset">Reset</button>
+                <div style="width: 1px; background: rgba(255,255,255,0.05); height: 25px; margin: 0 0.25rem;"></div>
+                <input type="text" id="search" placeholder="Search...">
+                <button id="btn-export">Export CSV</button>
             </div>
         </div>
 
@@ -62,6 +67,8 @@
                     <tr>
                         <th>Value</th>
                         <th>Type</th>
+                        <th>Severity</th>
+                        <th>Status</th>
                         <th>Source</th>
                         <th>Tags</th>
                     </tr>
@@ -86,6 +93,8 @@
             const searchInput = document.getElementById('search');
             const typeSelect = document.getElementById('filter-type');
             const sourceSelect = document.getElementById('filter-source');
+            const severitySelect = document.getElementById('filter-severity');
+            const statusSelect = document.getElementById('filter-status');
             const resetBtn = document.getElementById('btn-reset');
             const exportBtn = document.getElementById('btn-export');
 
@@ -93,19 +102,23 @@
             const distinctTypes = [...new Set(indicators.map(i => i.indicator_type))].sort();
             const distinctSources = [...new Set(indicators.map(i => i.source))].sort();
 
-            distinctTypes.forEach(t => typeSelect.add(new Option(t, t)));
+            distinctTypes.forEach(t => typeSelect.add(new Option(t.toUpperCase(), t)));
             distinctSources.forEach(s => sourceSelect.add(new Option(s, s)));
 
             function applyFilters() {
                 const term = searchInput.value.toLowerCase();
                 const type = typeSelect.value;
                 const source = sourceSelect.value;
+                const severity = severitySelect.value;
+                const status = statusSelect.value;
 
                 const filtered = indicators.filter(i => {
                     const matchTerm = !term || i.indicator.toLowerCase().includes(term) || (i.tags || []).join(' ').toLowerCase().includes(term);
                     const matchType = !type || i.indicator_type === type;
                     const matchSource = !source || i.source === source;
-                    return matchTerm && matchType && matchSource;
+                    const matchSeverity = !severity || i.severity === severity;
+                    const matchStatus = !status || i.status === status;
+                    return matchTerm && matchType && matchSource && matchSeverity && matchStatus;
                 });
 
                 render(filtered);
@@ -116,11 +129,19 @@
                 tbody.innerHTML = '';
                 list.slice(0, 100).forEach(item => {
                     const tr = document.createElement('tr');
+                    
+                    const severityClass = item.severity === 'high' ? 'danger' : (item.severity === 'medium' ? 'warning' : 'success');
+                    const severityLabel = item.severity ? item.severity.toUpperCase() : 'LOW';
+                    const statusClass = item.status === 'active' ? 'active' : 'inactive';
+                    const statusLabel = item.status === 'active' ? '<span class="dot"></span>Active' : 'Inactive';
+
                     tr.innerHTML = `
                         <td><code>${item.indicator}</code></td>
-                        <td>${item.indicator_type}</td>
+                        <td style="text-transform: uppercase; font-size: 0.8rem; font-weight: 600;">${item.indicator_type}</td>
+                        <td><span class="badge ${severityClass}">${severityLabel}</span></td>
+                        <td><span class="badge ${statusClass}">${statusLabel}</span></td>
                         <td>${item.source}</td>
-                        <td>${(item.tags || []).map(t => `<span style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; font-size: 0.85em;">${t}</span>`).join(' ')}</td>
+                        <td>${(item.tags || []).map(t => `<span style="background: rgba(255,255,255,0.05); padding: 2px 6px; border-radius: 4px; font-size: 0.85em; border: 1px solid rgba(255,255,255,0.05);">${t}</span>`).join(' ')}</td>
                     `;
                     tbody.appendChild(tr);
                 });
@@ -130,11 +151,15 @@
             searchInput.addEventListener('input', applyFilters);
             typeSelect.addEventListener('change', applyFilters);
             sourceSelect.addEventListener('change', applyFilters);
+            severitySelect.addEventListener('change', applyFilters);
+            statusSelect.addEventListener('change', applyFilters);
 
             resetBtn.addEventListener('click', () => {
                 searchInput.value = '';
                 typeSelect.value = '';
                 sourceSelect.value = '';
+                severitySelect.value = '';
+                statusSelect.value = '';
                 applyFilters();
             });
 

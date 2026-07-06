@@ -3,9 +3,44 @@ import os
 import json
 import glob
 import logging
+from datetime import datetime, date
 from common import load_config, setup_logging
 
 setup_logging()
+
+def calculate_status_and_severity(item):
+    # Determine severity based on sightings and critical tags
+    tags_lower = [t.lower() for t in item.get("tags", [])]
+    sightings = item.get("sightings", 1)
+    
+    high_threat_tags = {"ransomware", "stealer", "c2", "cobaltstrike", "agenttesla", "lokibot", "redline"}
+    med_threat_tags = {"mirai", "mozi", "gootloader", "socgholish", "asyncrat", "njrat", "remcos"}
+    
+    if sightings > 2 or any(tag in high_threat_tags for tag in tags_lower):
+        severity = "high"
+    elif sightings == 2 or any(tag in med_threat_tags for tag in tags_lower):
+        severity = "medium"
+    else:
+        severity = "low"
+        
+    # Determine active status (last seen within 7 days)
+    status = "inactive"
+    last_seen_str = item.get("last_seen", "")
+    if last_seen_str:
+        try:
+            # extract YYYY-MM-DD
+            date_part = last_seen_str.split()[0]
+            last_seen_date = datetime.strptime(date_part, "%Y-%m-%d").date()
+            today_date = date.today()
+            delta = (today_date - last_seen_date).days
+            if delta <= 7:
+                status = "active"
+        except Exception:
+            status = "active" # fallback if parsing error occurs
+    else:
+        status = "active"
+        
+    return severity, status
 
 def normalize():
     config = load_config()
@@ -41,8 +76,11 @@ def normalize():
         if val:
             current_date = item.get("first_seen")
             if not current_date:
-                 import datetime
-                 current_date = datetime.date.today().isoformat()
+                 current_date = date.today().isoformat()
+                 
+            # Standardize date format to start with YYYY-MM-DD if ISO representation
+            if "T" in current_date:
+                current_date = current_date.replace("T", " ")
                  
             if val not in unique_map:
                 unique_map[val] = {
@@ -71,8 +109,13 @@ def normalize():
                 # Increment Sightings
                 unique_map[val]["sightings"] = unique_map[val].get("sightings", 1) + 1
 
-    
     final_list = list(unique_map.values())
+    
+    # Calculate status and severity for each normalized indicator
+    for item in final_list:
+        severity, status = calculate_status_and_severity(item)
+        item["severity"] = severity
+        item["status"] = status
     
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     with open(output_file, "w") as f:
@@ -81,4 +124,5 @@ def normalize():
 
 if __name__ == "__main__":
     normalize()
+
 
