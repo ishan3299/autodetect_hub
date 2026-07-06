@@ -217,8 +217,9 @@
                 const statusClass = item.status === 'active' ? 'active' : 'inactive';
                 const statusLabel = item.status === 'active' ? '<span class="dot"></span>Active' : 'Inactive';
                 
-                const valShort = item.value.substring(0, 50);
-                const valDisplay = escapeHTML(valShort) + (item.value.length > 50 ? '...' : '');
+                const val = item.indicator || item.value || '';
+                const valShort = val.substring(0, 50);
+                const valDisplay = escapeHTML(valShort) + (val.length > 50 ? '...' : '');
 
                 row.innerHTML = `
                     <td style="font-family: var(--font-mono); color: var(--accent-secondary);">${valDisplay}</td>
