@@ -7,6 +7,38 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://59.180.157.78:46393/i*'
+      - '*http://220.167.188.228:48336/i*'
+      - '*http://123.10.225.140:53465/bin.sh*'
+      - '*http://42.224.145.94:45012/i*'
+      - '*http://196.189.35.226:52716/bin.sh*'
+      - '*http://220.167.188.228:48336/bin.sh*'
+      - '*http://123.8.93.69:47494/i*'
+      - '*http://42.224.145.94:45012/bin.sh*'
+      - '*http://123.8.93.69:47494/bin.sh*'
+      - '*http://221.15.212.44:36077/i*'
+      - '*http://1.58.208.78:33017/bin.sh*'
+      - '*http://94.181.6.67:36395/i*'
+      - '*http://103.44.136.115:35447/i*'
+      - '*http://110.37.61.44:49758/i*'
+      - '*http://59.180.157.78:46393/bin.sh*'
+      - '*http://94.181.6.67:36395/bin.sh*'
+      - '*http://42.231.186.76:54013/i*'
+      - '*http://110.37.61.44:49758/bin.sh*'
+      - '*http://103.44.136.115:35447/bin.sh*'
+      - '*http://110.36.11.225:36446/i*'
+      - '*http://110.36.29.196:39125/bin.sh*'
+      - '*http://112.246.16.106:42448/bin.sh*'
+      - '*http://115.54.128.181:49195/bin.sh*'
+      - '*http://110.36.11.225:36446/bin.sh*'
+      - '*http://202.1.26.69:37695/i*'
+      - '*http://117.208.46.126:33920/i*'
+      - '*http://38.21.70.189:46846/bin.sh*'
+      - '*http://117.208.46.126:33920/bin.sh*'
+      - '*http://182.119.182.78:59445/bin.sh*'
+      - '*http://202.1.26.69:37695/bin.sh*'
+      - '*http://59.180.168.190:45133/i*'
+      - '*http://112.255.27.172:53031/bin.sh*'
       - '*http://222.139.127.61:46244/i*'
       - '*http://125.27.11.15:43282/i*'
       - '*http://175.166.11.195:60468/i*'
@@ -475,6 +507,21 @@ detection:
       - '*http://180.245.47.188:38673/bin.sh*'
       - '*http://42.233.147.89:55111/bin.sh*'
       - '*http://45.186.37.201:43806/bin.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 2
+id: 3280d032-ab24-5bda-a626-46ea367dec83
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 2).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://36.100.34.57:48336/bin.sh*'
       - '*http://222.246.40.85:36278/i*'
       - '*http://42.224.254.133:54137/bin.sh*'
@@ -507,21 +554,6 @@ detection:
       - '*http://39.79.15.194:37416/i*'
       - '*http://105.224.71.15:54389/i*'
       - '*http://110.36.3.201:46433/i*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 2
-id: 3280d032-ab24-5bda-a626-46ea367dec83
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 2).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://115.49.4.59:52130/i*'
       - '*http://45.184.19.72:35922/bin.sh*'
       - '*http://115.55.8.197:54012/i*'
@@ -990,6 +1022,21 @@ detection:
       - '*http://125.99.206.137:56905/i*'
       - '*http://123.5.168.44:37849/bin.sh*'
       - '*http://123.5.168.44:37849/i*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 3
+id: b4c3a7d0-bec2-5921-8931-e0b92dde7ae9
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 3).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://42.224.5.211:53756/bin.sh*'
       - '*http://112.249.57.185:33486/bin.sh*'
       - '*http://182.114.49.53:50476/bin.sh*'
@@ -1022,21 +1069,6 @@ detection:
       - '*http://158.255.83.238:60237/bin.sh*'
       - '*http://2.181.198.232:40941/i*'
       - '*http://182.114.33.45:53667/i*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 3
-id: b4c3a7d0-bec2-5921-8931-e0b92dde7ae9
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 3).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://146.66.249.166:59922/i*'
       - '*http://2.181.198.232:40941/bin.sh*'
       - '*http://112.248.143.42:48431/i*'
@@ -1505,6 +1537,21 @@ detection:
       - '*http://141.11.88.125/bins/arm5*'
       - '*http://141.11.88.125/bins/mips*'
       - '*http://141.11.88.127/ppc*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 4
+id: 31d10a72-77a2-5904-a676-31ec13776188
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 4).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://141.11.88.127/m68k*'
       - '*http://141.11.88.125/bins/arm7*'
       - '*http://85.204.125.67:8080/a-r.m-4.SativaC2*'
@@ -1537,21 +1584,6 @@ detection:
       - '*http://219.157.58.156:47845/i*'
       - '*http://182.120.9.25:43181/bin.sh*'
       - '*http://112.27.10.150:34339/Mozi.m*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 4
-id: 31d10a72-77a2-5904-a676-31ec13776188
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 4).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://14.0.131.161:38465/i*'
       - '*http://39.71.205.224:59523/i*'
       - '*http://14.0.131.161:38465/bin.sh*'
@@ -2020,6 +2052,21 @@ detection:
       - '*http://94.154.43.192/00101010101001/morte.arm6*'
       - '*http://94.154.43.192/00101010101001/morte.mips*'
       - '*http://94.154.43.192/00101010101001/morte.x86*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 5
+id: f24002af-ac50-52ff-99ad-5db356ff3e34
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 5).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://94.154.43.192/00101010101001/morte.m68k*'
       - '*http://94.154.43.192/00101010101001/morte.sh4*'
       - '*http://94.154.43.192/00101010101001/morte.arm7*'
@@ -2052,21 +2099,6 @@ detection:
       - '*http://94.154.43.192/nz/nz.x86_64*'
       - '*http://94.154.43.192/nz/nz.spc*'
       - '*http://94.154.43.192/nz/nz.mips*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 5
-id: f24002af-ac50-52ff-99ad-5db356ff3e34
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 5).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://94.154.43.192/nz/nz.mpsl*'
       - '*http://94.154.43.192/nz/nz.arm5*'
       - '*http://94.154.43.192/nz/nz.ppc*'
@@ -2535,6 +2567,21 @@ detection:
       - '*http://123.14.120.179:51403/i*'
       - '*http://182.114.196.78:57175/i*'
       - '*http://182.121.225.253:55178/i*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 6
+id: 4c7aa780-cda7-52f9-8706-3be71e36c8fa
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 6).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://111.70.13.127:52255/i*'
       - '*http://42.227.186.255:53599/i*'
       - '*http://182.121.225.253:55178/bin.sh*'
@@ -2567,21 +2614,6 @@ detection:
       - '*http://119.53.152.104:51081/bin.sh*'
       - '*http://42.238.240.251:44088/bin.sh*'
       - '*http://5.175.166.176/n2/m68k*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 6
-id: 4c7aa780-cda7-52f9-8706-3be71e36c8fa
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 6).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://5.175.166.176/n2/armv6l*'
       - '*http://5.175.166.176/n2/sh4*'
       - '*http://5.175.166.176/n2/x86_64*'
@@ -3050,6 +3082,21 @@ detection:
       - '*http://110.39.255.247:44356/i*'
       - '*http://124.6.169.54:35741/bin.sh*'
       - '*http://110.36.14.214:59831/bin.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 7
+id: 58f410fd-0021-5896-acb9-cadc9e436b75
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 7).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://115.56.5.76:53816/bin.sh*'
       - '*http://110.37.13.16:55480/i*'
       - '*http://83.219.1.198:58281/i*'
@@ -3082,21 +3129,6 @@ detection:
       - '*http://95.106.1.158:4993/i*'
       - '*http://125.121.120.124:56291/bin.sh*'
       - '*http://42.55.31.123:38986/i*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 7
-id: 58f410fd-0021-5896-acb9-cadc9e436b75
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 7).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://175.148.72.100:44283/i*'
       - '*http://80.67.33.209:49747/bin.sh*'
       - '*http://42.57.201.49:55454/i*'
@@ -3565,6 +3597,21 @@ detection:
       - '*http://110.38.216.103:43807/i*'
       - '*http://123.5.207.139:56932/bin.sh*'
       - '*http://58.212.37.115:56807/i*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 8
+id: 4b73b07a-d06c-5ccd-a8f0-2e0eb1b99b49
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 8).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://42.233.106.128:35105/i*'
       - '*http://8.217.17.75:2000/ml*'
       - '*http://222.138.150.103:52365/i*'
@@ -3597,21 +3644,6 @@ detection:
       - '*http://62.60.159.184/bins/mips*'
       - '*http://39.65.164.36:54938/i*'
       - '*http://39.65.164.36:54938/bin.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 8
-id: 4b73b07a-d06c-5ccd-a8f0-2e0eb1b99b49
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 8).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://182.127.153.193:49823/i*'
       - '*http://182.127.153.193:49823/bin.sh*'
       - '*http://125.41.226.75:42100/i*'
@@ -4080,6 +4112,21 @@ detection:
       - '*http://5.182.210.61/1cf3cd*'
       - '*http://129.121.114.124/260D*'
       - '*http://129.121.114.124/4Jss*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 9
+id: c5162941-f553-53f8-8fc4-a55d00a7ddbe
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 9).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://5.182.210.61/fcbb51*'
       - '*http://5.182.210.61/6bef08*'
       - '*http://5.182.210.61/bfca01*'
@@ -4112,21 +4159,6 @@ detection:
       - '*http://88.242.189.117:50212/bin.sh*'
       - '*http://110.38.198.178:49594/i*'
       - '*http://119.189.248.26:47070/bin.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 9
-id: c5162941-f553-53f8-8fc4-a55d00a7ddbe
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 9).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://110.38.198.178:49594/bin.sh*'
       - '*http://123.9.16.189:58017/i*'
       - '*http://115.51.103.199:55384/bin.sh*'
@@ -4595,6 +4627,21 @@ detection:
       - '*http://222.138.225.235:51309/bin.sh*'
       - '*http://115.50.223.146:37335/i*'
       - '*http://182.119.69.213:53242/i*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 10
+id: 3c3635eb-a678-50be-966a-6b274b6b3133
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 10).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://42.58.252.169:58524/bin.sh*'
       - '*http://bitter-handsome-truck.digivmm.katapult.cloud/bins/monero.arm7*'
       - '*http://152.89.76.240/gocl*'
@@ -4627,21 +4674,6 @@ detection:
       - '*http://87.121.79.223/arm5*'
       - '*http://87.121.79.223/arm7*'
       - '*http://87.121.79.223/a.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 10
-id: 3c3635eb-a678-50be-966a-6b274b6b3133
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 10).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://115.57.255.30:39793/i*'
       - '*http://178.236.246.159/bins/scsi_tmf_0*'
       - '*http://125.40.39.250:36541/i*'
@@ -5110,6 +5142,21 @@ detection:
       - '*http://137.220.242.60/arm7*'
       - '*http://194.48.251.24/sparc*'
       - '*http://194.48.251.24/mpsl*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 11
+id: 561883e0-6e84-5ac2-9d91-44406eb83c2c
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 11).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://194.48.251.24/i486*'
       - '*http://194.48.251.24/arc*'
       - '*http://194.48.251.24/x86_64*'
@@ -5142,21 +5189,6 @@ detection:
       - '*http://182.119.68.90:40721/i*'
       - '*http://110.37.65.231:37164/i*'
       - '*http://120.84.215.91:36330/i*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 11
-id: 561883e0-6e84-5ac2-9d91-44406eb83c2c
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 11).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://64.89.163.22:8080/ZtNzfCdj2VGYFlW*'
       - '*http://182.119.68.90:40721/bin.sh*'
       - '*http://123.4.234.195:33104/i*'
@@ -5625,6 +5657,21 @@ detection:
       - '*http://115.50.28.30:39038/bin.sh*'
       - '*http://5.166.134.69:43702/bin.sh*'
       - '*http://125.40.50.214:51817/i*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 12
+id: 49520dd0-8945-5b3c-a977-0e06ce206160
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 12).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://113.228.154.135:55885/bin.sh*'
       - '*http://110.39.249.174:43257/bin.sh*'
       - '*http://110.39.226.242:50411/bin.sh*'
@@ -5657,21 +5704,6 @@ detection:
       - '*http://static.249.223.175.5.nextregister.eu/data_mipsel*'
       - '*http://49.86.251.92:55109/i*'
       - '*http://static.249.223.175.5.nextregister.eu/data_arm4*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 12
-id: 49520dd0-8945-5b3c-a977-0e06ce206160
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 12).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://static.249.223.175.5.nextregister.eu/data_mips-uclibc*'
       - '*http://static.249.223.175.5.nextregister.eu/data_powerpc*'
       - '*http://static.249.223.175.5.nextregister.eu/data_x86_64*'
@@ -6140,6 +6172,21 @@ detection:
       - '*http://163.142.94.12:57621/bin.sh*'
       - '*http://182.114.253.140:49224/i*'
       - '*http://110.39.237.192:45087/bin.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 13
+id: 21ef8f6b-f05f-5da6-9fed-29d17c2d0321
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 13).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://138.204.196.136:52466/i*'
       - '*http://124.94.174.181:52089/i*'
       - '*http://103.179.240.227:36011/bin.sh*'
@@ -6172,21 +6219,6 @@ detection:
       - '*http://220.202.88.26:50952/i*'
       - '*http://220.202.88.26:50952/bin.sh*'
       - '*http://182.119.198.123:58380/bin.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 13
-id: 21ef8f6b-f05f-5da6-9fed-29d17c2d0321
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 13).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://60.18.122.125:45482/i*'
       - '*http://110.38.201.196:57954/i*'
       - '*http://115.63.201.87:42531/bin.sh*'
@@ -6655,6 +6687,21 @@ detection:
       - '*http://175.146.231.239:42122/i*'
       - '*http://110.36.2.23:53930/i*'
       - '*http://222.137.38.204:55196/i*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 14
+id: b494997b-2667-5f08-b021-c051710205fd
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 14).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://164.163.25.157:46533/bin.sh*'
       - '*http://bitter-handsome-truck.digivmm.katapult.cloud/monero.arm7*'
       - '*http://bitter-handsome-truck.digivmm.katapult.cloud/monero.arm*'
@@ -6687,21 +6734,6 @@ detection:
       - '*http://222.134.174.11:42020/i*'
       - '*http://219.155.201.171:42151/i*'
       - '*http://39.75.13.98:51389/bin.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 14
-id: b494997b-2667-5f08-b021-c051710205fd
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 14).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://123.129.57.161:40728/bin.sh*'
       - '*http://115.55.233.214:46738/bin.sh*'
       - '*http://115.61.51.46:36588/bin.sh*'
@@ -7170,6 +7202,21 @@ detection:
       - '*http://115.57.183.82:57666/bin.sh*'
       - '*http://123.188.85.241:50099/bin.sh*'
       - '*http://178.165.125.212:37192/bin.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 15
+id: b9a70b5c-7ec8-5cd7-b6b5-34cf56a8d1ac
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 15).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://175.165.167.49:36784/i*'
       - '*http://110.37.14.156:52094/bin.sh*'
       - '*http://115.56.155.235:44490/i*'
@@ -7202,21 +7249,6 @@ detection:
       - '*http://220.191.125.228:52333/bin.sh*'
       - '*http://185.221.253.208:35635/i*'
       - '*http://222.139.44.132:54271/i*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 15
-id: b9a70b5c-7ec8-5cd7-b6b5-34cf56a8d1ac
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 15).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://112.234.118.229:47219/i*'
       - '*http://153.117.6.41:54477/Mozi.a*'
       - '*http://222.141.184.80:51905/i*'
@@ -7685,6 +7717,21 @@ detection:
       - '*http://219.155.74.13:45841/bin.sh*'
       - '*http://115.59.8.55:48575/i*'
       - '*http://183.23.139.62:60621/bin.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 16
+id: 579b69b0-9216-59c6-a21a-9b3fa0d5a3e7
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 16).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://115.59.8.55:48575/bin.sh*'
       - '*http://202.107.96.28:50487/i*'
       - '*http://182.90.192.6:56722/i*'
@@ -7717,21 +7764,6 @@ detection:
       - '*http://150.40.127.154/FBI.x86_64*'
       - '*http://vps36563.maxko-hosting.net/FBI.x86_64*'
       - '*http://vps36563.maxko-hosting.net/FBI.ppc*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 16
-id: 579b69b0-9216-59c6-a21a-9b3fa0d5a3e7
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 16).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://vps36563.maxko-hosting.net/FBI.arm6*'
       - '*http://vps36563.maxko-hosting.net/FBI.x86*'
       - '*http://150.40.127.154/FBI.arm5*'
@@ -8200,6 +8232,21 @@ detection:
       - '*http://152.236.7.10/eat/some/godisdead.13*'
       - '*http://152.236.7.10/eat/some/godisdead.7*'
       - '*http://152.236.7.10/eat/some/godisdead.10*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 17
+id: 6feebd99-a080-5fa2-b04b-964c5a8b2a3a
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 17).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://152.236.7.10/eat/some/godisdead.5*'
       - '*http://152.236.7.10/eat/some/godisdead.11*'
       - '*http://152.236.7.10/eat/some/godisdead.4*'
@@ -8232,21 +8279,6 @@ detection:
       - '*http://217.60.195.70:8080/mpsl*'
       - '*http://217.60.195.70:8080/arm5*'
       - '*http://217.60.195.70:8080/spc*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 17
-id: 6feebd99-a080-5fa2-b04b-964c5a8b2a3a
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 17).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://217.60.195.70:8080/sh4*'
       - '*http://217.60.195.70:8080/arm4*'
       - '*http://217.60.195.70:8080/arc*'
@@ -8715,6 +8747,21 @@ detection:
       - '*http://77.236.74.65:53870/i*'
       - '*http://162.255.251.91:42469/bin.sh*'
       - '*http://42.238.99.200:50128/i*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 18
+id: 942120aa-64a4-5467-ab18-a1c0d7e8dfdd
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 18).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://42.238.99.200:50128/bin.sh*'
       - '*http://125.41.141.50:59154/bin.sh*'
       - '*http://91.225.163.226:51068/i*'
@@ -8747,21 +8794,6 @@ detection:
       - '*http://72.194.227.46:56396/i*'
       - '*http://117.190.134.254:56689/bin.sh*'
       - '*http://72.194.227.46:56396/bin.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 18
-id: 942120aa-64a4-5467-ab18-a1c0d7e8dfdd
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 18).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://125.46.196.74:37618/i*'
       - '*http://123.4.252.184:40584/bin.sh*'
       - '*http://119.189.147.14:40588/i*'
@@ -9230,6 +9262,21 @@ detection:
       - '*http://45.205.1.59/9e8f68*'
       - '*http://45.205.1.59/ef18ef*'
       - '*http://45.205.1.59/dd744a*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 19
+id: 9492d714-e248-561a-9e3e-4206f542d8b5
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 19).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://45.205.1.59/d2f0ce*'
       - '*http://45.205.1.59/91ec19*'
       - '*http://45.205.1.59/5bd151*'
@@ -9262,21 +9309,6 @@ detection:
       - '*http://45.205.1.59/cadd23*'
       - '*http://45.205.1.59/e3c653*'
       - '*http://45.205.1.59/f5de46*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 19
-id: 9492d714-e248-561a-9e3e-4206f542d8b5
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 19).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://45.205.1.59/f36ef8*'
       - '*http://45.205.1.59/c71254*'
       - '*http://45.205.1.59/f1fa84*'
@@ -9745,6 +9777,21 @@ detection:
       - '*http://176.65.149.168/bins/kaizen.arm6*'
       - '*http://176.65.149.168/bins/kaizen.m68k*'
       - '*http://176.65.149.168/bins/kaizen.mpsl*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 20
+id: ba30111a-e8c8-5dad-ae01-82a89c973906
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 20).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://176.65.149.168/bins/kaizen.arm64*'
       - '*http://176.65.149.168/bins/kaizen.ppc*'
       - '*http://176.65.149.168/bins/kaizen.x86_64*'
@@ -9777,21 +9824,6 @@ detection:
       - '*http://123.12.199.227:54179/bin.sh*'
       - '*http://42.229.222.209:47687/i*'
       - '*http://42.229.222.209:47687/bin.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 20
-id: ba30111a-e8c8-5dad-ae01-82a89c973906
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 20).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://123.188.64.6:39760/bin.sh*'
       - '*http://110.85.110.38:41787/i*'
       - '*http://59.96.137.169:33582/i*'
@@ -9847,354 +9879,6 @@ detection:
       - '*http://45.13.186.32/x86_64*'
       - '*http://45.13.186.32/arm*'
       - '*http://45.13.186.32/x86*'
-      - '*http://125.120.169.148:39245/bin.sh*'
-      - '*http://125.120.169.148:39245/i*'
-      - '*http://115.61.49.31:47097/bin.sh*'
-      - '*http://61.168.52.2:44741/i*'
-      - '*http://61.168.52.2:44741/bin.sh*'
-      - '*http://219.155.208.105:54469/i*'
-      - '*http://125.44.193.5:49463/bin.sh*'
-      - '*http://110.36.80.173:49601/i*'
-      - '*http://110.36.24.172:52506/i*'
-      - '*http://182.119.61.14:38150/i*'
-      - '*http://219.155.208.105:54469/bin.sh*'
-      - '*http://115.52.40.38:42894/i*'
-      - '*http://175.148.157.98:50298/i*'
-      - '*http://45.13.186.32/o.xml*'
-      - '*http://45.13.186.32/run.sh*'
-      - '*http://110.36.24.172:52506/bin.sh*'
-      - '*http://112.248.253.64:37450/i*'
-      - '*http://115.52.40.38:42894/bin.sh*'
-      - '*http://175.148.157.98:50298/bin.sh*'
-      - '*http://110.36.80.173:49601/bin.sh*'
-      - '*http://115.53.30.127:37226/i*'
-      - '*http://61.53.149.234:42859/i*'
-      - '*http://117.57.51.13:43163/i*'
-      - '*http://112.248.253.64:37450/bin.sh*'
-      - '*http://115.53.30.127:37226/bin.sh*'
-      - '*http://61.53.149.234:42859/bin.sh*'
-      - '*http://125.44.247.225:56503/i*'
-      - '*http://83.68.249.16:48649/bin.sh*'
-      - '*http://125.44.247.225:56503/bin.sh*'
-      - '*http://39.74.81.185:47990/bin.sh*'
-      - '*http://115.48.239.147:51932/i*'
-      - '*http://59.103.116.68:50721/i*'
-      - '*http://115.56.47.209:55747/i*'
-      - '*http://123.14.217.137:60862/i*'
-      - '*http://59.103.116.68:50721/bin.sh*'
-      - '*http://123.14.217.137:60862/bin.sh*'
-      - '*http://175.165.79.195:39992/i*'
-      - '*http://115.56.47.209:55747/bin.sh*'
-      - '*http://201.149.107.50:50872/i*'
-      - '*http://175.165.79.195:39992/bin.sh*'
-      - '*http://42.232.50.2:48557/i*'
-      - '*http://113.232.91.126:51179/i*'
-      - '*http://42.232.50.2:48557/bin.sh*'
-      - '*http://182.119.166.194:34505/bin.sh*'
-      - '*http://110.37.97.32:49972/i*'
-      - '*http://27.204.197.147:39822/bin.sh*'
-      - '*http://201.149.107.50:50872/bin.sh*'
-      - '*http://39.79.133.212:32822/i*'
-      - '*http://27.215.51.79:50704/bin.sh*'
-      - '*http://110.39.226.207:49670/i*'
-      - '*http://27.215.51.79:50704/i*'
-      - '*http://110.37.97.32:49972/bin.sh*'
-      - '*http://42.56.142.229:46645/bin.sh*'
-      - '*http://39.79.133.212:32822/bin.sh*'
-      - '*http://110.39.226.207:49670/bin.sh*'
-      - '*http://121.202.142.137:46266/bin.sh*'
-      - '*http://123.9.206.120:46155/i*'
-      - '*http://110.39.231.61:54150/i*'
-      - '*http://123.188.214.59:56605/i*'
-      - '*http://123.188.214.59:56605/bin.sh*'
-      - '*http://119.179.254.246:60360/i*'
-      - '*http://176.65.149.124.ptr.pfcloud.network/hiddenbin/mips*'
-      - '*http://176.65.149.124/hiddenbin/mips*'
-      - '*http://222.134.162.189:49301/i*'
-      - '*http://110.39.231.61:54150/bin.sh*'
-      - '*http://119.179.254.246:60360/bin.sh*'
-      - '*http://222.134.162.189:49301/bin.sh*'
-      - '*http://182.124.77.13:55832/i*'
-      - '*http://123.5.125.75:57845/i*'
-      - '*http://182.126.123.184:34550/i*'
-      - '*http://221.1.246.99:56735/bin.sh*'
-      - '*http://123.9.246.153:46455/bin.sh*'
-      - '*http://163.142.86.141:43603/i*'
-      - '*http://182.127.218.77:43915/i*'
-      - '*http://182.126.123.184:34550/bin.sh*'
-      - '*http://182.121.251.167:56537/i*'
-      - '*http://42.235.48.225:56035/i*'
-      - '*http://27.37.227.254:60470/i*'
-      - '*http://182.127.218.77:43915/bin.sh*'
-      - '*http://221.15.4.22:52125/i*'
-      - '*http://221.15.4.22:52125/bin.sh*'
-      - '*http://123.129.133.197:36697/i*'
-      - '*http://42.235.48.225:56035/bin.sh*'
-      - '*http://42.231.31.141:54460/i*'
-      - '*http://115.48.239.147:51932/bin.sh*'
-      - '*http://123.129.133.197:36697/bin.sh*'
-      - '*http://115.48.133.67:47180/i*'
-      - '*http://110.36.86.0:42361/i*'
-      - '*http://218.91.33.157:33594/bin.sh*'
-      - '*http://115.196.208.209:46989/i*'
-      - '*http://110.36.86.0:42361/bin.sh*'
-      - '*http://123.12.228.250:56772/i*'
-      - '*http://115.196.208.209:46989/bin.sh*'
-      - '*http://123.12.228.250:56772/bin.sh*'
-      - '*http://115.52.246.24:50196/i*'
-      - '*http://193.93.228.160:55488/i*'
-      - '*http://42.57.219.22:45414/i*'
-      - '*http://115.52.246.24:50196/bin.sh*'
-      - '*http://193.93.228.160:55488/bin.sh*'
-      - '*http://125.44.193.5:49463/i*'
-      - '*http://31.56.209.220/spc*'
-      - '*http://31.56.209.220/dlink*'
-      - '*http://31.56.209.220/i686*'
-      - '*http://31.56.209.220/m68k*'
-      - '*http://31.56.209.220/ppc*'
-      - '*http://31.56.209.220/sh4*'
-      - '*http://31.56.209.220/arm6*'
-      - '*http://31.56.209.220/massload*'
-      - '*http://31.56.209.220/arm4*'
-      - '*http://188.132.232.81/qNU*'
-      - '*http://188.132.232.81/2r0*'
-      - '*http://176.65.139.151/x-8.6-.Sakura*'
-      - '*http://176.65.139.151/a-r.m-6.Sakura*'
-      - '*http://176.65.139.151/m-p.s-l.Sakura*'
-      - '*http://176.65.139.151/i-5.8-6.Sakura*'
-      - '*http://188.132.232.81/9eB*'
-      - '*http://188.132.232.81/9hF*'
-      - '*http://176.65.139.151/a-r.m-7.Sakura*'
-      - '*http://176.65.139.151/m-i.p-s.Sakura*'
-      - '*http://188.132.232.81/LVUD*'
-      - '*http://188.132.232.81/oHK7*'
-      - '*http://176.65.139.151/a-r.m-4.Sakura*'
-      - '*http://176.65.139.151/s-h.4-.Sakura*'
-      - '*http://176.65.139.151/x-3.2-.Sakura*'
-      - '*http://176.65.139.151/a-r.m-5.Sakura*'
-      - '*http://188.132.232.81/Bqj*'
-      - '*http://188.132.232.81/jjA*'
-      - '*http://188.132.232.81/RRSb*'
-      - '*http://188.132.232.81/hks*'
-      - '*http://188.132.232.81/VWgm*'
-      - '*http://176.65.139.151/m-6.8-k.Sakura*'
-      - '*http://188.132.232.81/8Px*'
-      - '*http://188.132.232.81/gXk*'
-      - '*http://188.132.232.81/4qGx*'
-      - '*http://176.65.139.151/p-p.c-.Sakura*'
-      - '*http://188.132.232.81/dPO*'
-      - '*http://42.6.84.128:50383/i*'
-      - '*http://123.12.229.216:53676/i*'
-      - '*http://60.22.196.199:55242/i*'
-      - '*http://60.22.196.199:55242/bin.sh*'
-      - '*http://123.188.58.169:60524/i*'
-      - '*http://123.12.229.216:53676/bin.sh*'
-      - '*http://115.55.232.97:44344/bin.sh*'
-      - '*http://123.189.155.23:38727/i*'
-      - '*http://182.119.61.14:38150/bin.sh*'
-      - '*http://123.188.58.169:60524/bin.sh*'
-      - '*http://123.189.155.23:38727/bin.sh*'
-      - '*http://175.149.111.45:36110/i*'
-      - '*http://36.69.86.7:56006/i*'
-      - '*http://42.232.229.19:55174/i*'
-      - '*http://182.116.120.105:34489/bin.sh*'
-      - '*http://42.232.225.18:36131/bin.sh*'
-      - '*http://164.163.25.157:41716/i*'
-      - '*http://39.74.81.159:47136/i*'
-      - '*http://39.74.81.159:47136/bin.sh*'
-      - '*http://94.199.218.56:9070/bin.sh*'
-      - '*http://36.69.86.7:56006/bin.sh*'
-      - '*http://182.126.118.237:35787/i*'
-      - '*http://123.5.168.75:54129/i*'
-      - '*http://164.163.25.157:41716/bin.sh*'
-      - '*http://125.43.33.196:39064/i*'
-      - '*http://42.232.229.19:55174/bin.sh*'
-      - '*http://222.137.232.213:35720/bin.sh*'
-      - '*http://176.65.139.144/dbg*'
-      - '*http://176.65.139.144/bins/arm5*'
-      - '*http://176.65.139.144/bins/ppc*'
-      - '*http://176.65.139.144/spc*'
-      - '*http://176.65.139.144/bins/sh4*'
-      - '*http://176.65.139.144/bins/m68k*'
-      - '*http://176.65.139.144/bins/arm*'
-      - '*http://176.65.139.144/bins/arm7*'
-      - '*http://176.65.139.144/bins/i686*'
-      - '*http://176.65.139.144/bins/arm6*'
-      - '*http://176.65.139.144/bins/spc*'
-      - '*http://176.65.139.144/ppc*'
-      - '*http://176.65.139.144/bins/x86_64*'
-      - '*http://176.65.139.144/x86_64*'
-      - '*http://176.65.139.144/bins/dbg*'
-      - '*http://176.65.139.144/x86*'
-      - '*http://176.65.139.144/m68k*'
-      - '*http://176.65.139.144/bins/mpsl*'
-      - '*http://176.65.139.144/bins/mips*'
-      - '*http://176.65.139.144/cat.sh*'
-      - '*http://176.65.139.144/bins/x86*'
-      - '*http://176.65.139.144/sh4*'
-      - '*http://176.65.139.144/i686*'
-      - '*http://176.65.139.144/bins/cat.sh*'
-      - '*http://176.65.139.144/arm6*'
-      - '*http://163.142.86.138:60944/i*'
-      - '*http://182.113.202.170:36412/i*'
-      - '*http://110.36.1.200:53411/i*'
-      - '*http://125.43.33.196:39064/bin.sh*'
-      - '*http://123.14.32.97:42939/bin.sh*'
-      - '*http://27.215.53.135:55865/i*'
-      - '*http://182.113.202.170:36412/bin.sh*'
-      - '*http://123.11.77.199:53437/i*'
-      - '*http://123.11.77.199:53437/bin.sh*'
-      - '*http://42.229.151.147:52080/bin.sh*'
-      - '*http://39.78.182.101:34099/bin.sh*'
-      - '*http://182.127.178.140:59972/i*'
-      - '*http://27.215.53.135:55865/bin.sh*'
-      - '*http://27.220.114.3:48953/i*'
-      - '*http://182.119.71.160:55615/i*'
-      - '*http://39.78.182.101:34099/i*'
-      - '*http://182.127.178.140:59972/bin.sh*'
-      - '*http://42.231.31.141:54460/bin.sh*'
-      - '*http://125.45.156.130:59062/bin.sh*'
-      - '*http://42.226.223.139:53794/i*'
-      - '*http://42.226.223.139:53794/bin.sh*'
-      - '*http://182.112.14.59:38383/i*'
-      - '*http://27.204.197.147:39822/i*'
-      - '*http://175.146.244.185:50487/bin.sh*'
-      - '*http://175.146.244.185:50487/i*'
-      - '*http://42.229.151.147:52080/i*'
-      - '*http://115.55.117.53:58381/i*'
-      - '*http://112.248.103.32:46711/bin.sh*'
-      - '*http://222.141.26.232:48120/i*'
-      - '*http://182.112.14.59:38383/bin.sh*'
-      - '*http://222.141.26.232:48120/bin.sh*'
-      - '*http://182.127.80.22:51497/i*'
-      - '*http://182.127.80.22:51497/bin.sh*'
-      - '*http://113.236.127.99:47004/i*'
-      - '*http://45.135.194.3/hiddenbin/boatnet.arm*'
-      - '*http://45.135.194.3/hiddenbin/boatnet.spc*'
-      - '*http://45.135.194.3/hiddenbin/boatnet.arm6*'
-      - '*http://45.135.194.3/hiddenbin/boatnet.m68k*'
-      - '*http://45.135.194.3/hiddenbin/boatnet.x86*'
-      - '*http://45.135.194.3/hiddenbin/boatnet.sh4*'
-      - '*http://45.135.194.3/hiddenbin/boatnet.mpsl*'
-      - '*http://45.135.194.3/hiddenbin/boatnet.arm7*'
-      - '*http://45.135.194.3/hiddenbin/boatnet.arm5*'
-      - '*http://45.135.194.3/hiddenbin/boatnet.mips*'
-      - '*http://45.135.194.3/hiddenbin/boatnet.ppc*'
-      - '*http://105.224.251.135:51433/i*'
-      - '*http://113.236.127.99:47004/bin.sh*'
-      - '*http://115.63.144.173:37265/i*'
-      - '*http://46.23.108.238/powerpc*'
-      - '*http://46.23.108.238/m68k*'
-      - '*http://46.23.108.238/armv6l*'
-      - '*http://46.23.108.238/i686*'
-      - '*http://46.23.108.238/sparc*'
-      - '*http://46.23.108.238/armv7l*'
-      - '*http://46.23.108.238/i586*'
-      - '*http://46.23.108.238/armv5l*'
-      - '*http://46.23.108.238/armv4l*'
-      - '*http://112.248.187.118:60374/i*'
-      - '*http://112.248.187.118:60374/bin.sh*'
-      - '*http://123.14.233.40:41750/i*'
-      - '*http://115.63.144.173:37265/bin.sh*'
-      - '*http://176.65.139.121/.Sassy.armv5l*'
-      - '*http://176.65.139.121/.Sassy.sparc*'
-      - '*http://151.245.104.193/hiddenbin/Mystic.mips64*'
-      - '*http://176.65.139.121/.Sassy.powerpc*'
-      - '*http://188.132.232.81/19io*'
-      - '*http://151.245.104.193/hiddenbin/Mystic.ppc*'
-      - '*http://151.245.104.193/hiddenbin/Mystic.x86*'
-      - '*http://5.175.223.249/data_aarch64*'
-      - '*http://188.132.232.81/XmgG*'
-      - '*http://188.132.232.81/Mn0r*'
-      - '*http://188.132.232.81/azAJ*'
-      - '*http://188.132.232.81/lXhZ*'
-      - '*http://188.132.232.81/ell*'
-      - '*http://151.245.104.193/hiddenbin/Mystic.arm6*'
-      - '*http://176.65.139.121/.Sassy.m68k*'
-      - '*http://188.132.232.81/O2d*'
-      - '*http://151.245.104.193/hiddenbin/Mystic.arm7*'
-      - '*http://5.175.223.249/data_arm6*'
-      - '*http://188.132.232.81/h87q*'
-      - '*http://188.132.232.81/hskK*'
-      - '*http://188.132.232.81/Ok4*'
-      - '*http://188.132.232.81/305b*'
-      - '*http://188.132.232.81/bcM5*'
-      - '*http://169.40.104.99/data_arm5*'
-      - '*http://176.65.139.121/.Sassy.x86_64*'
-      - '*http://176.65.139.121/.Sassy.sh4*'
-      - '*http://176.65.139.121/.Sassy.i486*'
-      - '*http://169.40.104.99/data_mips*'
-      - '*http://176.65.139.121/.Sassy.armv6l*'
-      - '*http://176.65.139.121/.Sassy.armv7l*'
-      - '*http://176.65.139.121/.Sassy.mipsel*'
-      - '*http://169.40.104.99/data_arm6*'
-      - '*http://176.65.139.121/.Sassy.arc*'
-      - '*http://176.65.139.121/.Sassy.aarch64*'
-      - '*http://169.40.104.99/data_arm7*'
-      - '*http://151.245.104.193/hiddenbin/Mystic.m68k*'
-      - '*http://176.65.139.121/.Sassy.mips*'
-      - '*http://169.40.104.99/data_arm4*'
-      - '*http://176.65.139.121/.Sassy.armv4l*'
-      - '*http://5.175.223.249/data_mipsel*'
-      - '*http://5.175.223.249/data_mips-uclibc*'
-      - '*http://151.245.104.193/hiddenbin/Mystic.i686*'
-      - '*http://151.245.104.193/hiddenbin/Mystic.sh4*'
-      - '*http://151.245.104.193/hiddenbin/Mystic.mips*'
-      - '*http://151.245.104.193/hiddenbin/Mystic.arc*'
-      - '*http://151.245.104.193/hiddenbin/Mystic.x86_64*'
-      - '*http://151.245.104.193/hiddenbin/Mystic.mpsl*'
-      - '*http://151.245.104.193/hiddenbin/Mystic.sparc*'
-      - '*http://5.175.223.249/data_arm7*'
-      - '*http://5.175.223.249/data_arm5*'
-      - '*http://5.175.223.249/data_powerpc*'
-      - '*http://5.175.223.249/data_arm4*'
-      - '*http://5.175.223.249/data_mips*'
-      - '*http://5.175.223.249/data_x86_64*'
-      - '*http://5.175.223.249/data_mipsel-uclibc*'
-      - '*http://188.132.232.81/ED5H*'
-      - '*http://188.132.232.81/nQd*'
-      - '*http://188.132.232.81/rnY*'
-      - '*http://188.132.232.81/kAqy*'
-      - '*http://188.132.232.81/l5V7*'
-      - '*http://188.132.232.81/Zjf5*'
-      - '*http://188.132.232.81/f9f5*'
-      - '*http://151.245.104.193/hiddenbin/Mystic.arm*'
-      - '*http://5.175.223.249/data_x86*'
-      - '*http://151.245.104.193/hiddenbin/Mystic.arm5*'
-      - '*http://188.132.232.81/OdB*'
-      - '*http://123.14.32.97:42939/i*'
-      - '*http://219.157.38.224:58000/i*'
-      - '*http://222.141.78.195:35380/i*'
-      - '*http://182.119.29.164:59367/i*'
-      - '*http://219.157.38.224:58000/bin.sh*'
-      - '*http://125.43.225.33:40947/i*'
-      - '*http://182.119.29.164:59367/bin.sh*'
-      - '*http://42.234.235.79:45107/i*'
-      - '*http://107.148.158.112/3.tok*'
-      - '*http://182.124.32.56:52669/i*'
-      - '*http://58.255.41.28:49663/i*'
-      - '*http://85.100.205.208:55271/i*'
-      - '*http://72.255.30.244:36949/i*'
-      - '*http://85.100.205.208:55271/bin.sh*'
-      - '*http://42.231.182.162:57397/i*'
-      - '*http://110.36.93.217:47482/i*'
-      - '*http://72.255.30.244:36949/bin.sh*'
-      - '*http://160.30.142.2:59412/i*'
-      - '*http://160.30.142.2:59412/bin.sh*'
-      - '*http://61.52.158.137:36439/i*'
-      - '*http://154.242.18.65:50270/i*'
-      - '*http://61.52.147.206:59280/i*'
-      - '*http://60.211.45.225:38494/i*'
-      - '*http://61.52.158.137:36439/bin.sh*'
-      - '*http://219.156.22.2:32963/bin.sh*'
-      - '*http://61.52.147.206:59280/bin.sh*'
-      - '*http://115.58.132.117:58676/i*'
-      - '*http://182.117.151.82:36077/bin.sh*'
-      - '*http://61.53.91.236:52594/i*'
-      - '*http://85.12.237.201:53945/i*'
-      - '*http://46.236.65.44:47941/i*'
-      - '*http://113.229.178.69:50774/i*'
-      - '*http://125.40.39.221:56750/bin.sh*'
   condition: selection
 level: high
 tags:
@@ -10210,6 +9894,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://115.55.4.118:39524/i*'
+      - '*http://222.137.6.57:51029/i*'
+      - '*https://aipmmwm.bet1forward.com/3a3621a3-b2b8-4430-99bb-d87bca25413f*'
+      - '*https://vh1oi5hz.rayegan.net/?ublib=fd1f8591-966e-4993-a0cc-38ee0bf39db4*'
+      - '*http://222.137.6.57:51029/bin.sh*'
+      - '*https://vqincjko.jetbahis.win/05d8a49b-5487-4fbd-ad61-70541e8ad7a4*'
+      - '*http://182.123.245.51:60755/i*'
+      - '*https://vfchqur.bahiscash.com/a086b290-ea2b-4fa5-9f7b-e4af8420b387*'
+      - '*http://182.123.245.51:60755/bin.sh*'
+      - '*http://62.60.226.140/files/8634320058/ENIOnn8.exe*'
+      - '*https://ntqpkct.bahiscart.com/f29b444d-1c06-49a9-a69c-029904eaadd1*'
+      - '*https://u9gcj5sd.oxiidbet.com/?ublib=55a4e6f9-1eba-4151-bd42-9c01fa2b2c8a*'
+      - '*http://59.96.137.166:41050/i*'
+      - '*https://nazemud.ac90bet.net/1a2dfa37-1efd-4b97-9945-7e195dd16099*'
       - '*https://azxhmev.prozhe.net/fa296535-349e-4380-8e53-b05fe29b5396*'
       - '*http://119.185.140.136:34637/bin.sh*'
       - '*http://110.36.28.45:52690/i*'
@@ -10696,20 +10394,6 @@ detection:
       - '*http://110.36.68.198:59056/i*'
       - '*https://ceohdvj.bonos.promo/07c568e7-e51d-4d15-b60a-725fc9cc4001*'
       - '*http://123.133.220.150:58690/i*'
-      - '*http://123.133.220.150:58690/bin.sh*'
-      - '*http://222.139.41.63:38230/i*'
-      - '*https://vchbhqa.betbazi.net/0f783cb6-1e72-412f-9aa8-e296829c1ae4*'
-      - '*http://222.139.41.63:38230/bin.sh*'
-      - '*https://q3g84ost.22beet.pro/?ublib=da047756-5a36-4f69-b6c7-0933dd42be2a*'
-      - '*https://gefpeqd.bet1xiraq.com/6b2ad2c9-239c-4eb6-9e98-8fa51c409803*'
-      - '*https://feeykse.betbacklink.com/68218a9b-f9c4-427f-85ad-5c3a7a3e3560*'
-      - '*http://110.36.25.33:50344/i*'
-      - '*http://27.194.253.28:49514/i*'
-      - '*http://61.52.73.171:59471/bin.sh*'
-      - '*https://fituwzg.yek.autos/2184dcb9-2bf6-4158-8689-eef70a2c9ede*'
-      - '*http://220.201.156.155:43300/bin.sh*'
-      - '*https://www.y8uo8qn.top/view%20details%20(3).zip*'
-      - '*https://yunczfkm.cyou/test.vhd*'
   condition: selection
 level: high
 tags:
@@ -10725,6 +10409,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://123.133.220.150:58690/bin.sh*'
+      - '*http://222.139.41.63:38230/i*'
+      - '*https://vchbhqa.betbazi.net/0f783cb6-1e72-412f-9aa8-e296829c1ae4*'
+      - '*http://222.139.41.63:38230/bin.sh*'
+      - '*https://q3g84ost.22beet.pro/?ublib=da047756-5a36-4f69-b6c7-0933dd42be2a*'
+      - '*https://gefpeqd.bet1xiraq.com/6b2ad2c9-239c-4eb6-9e98-8fa51c409803*'
+      - '*https://feeykse.betbacklink.com/68218a9b-f9c4-427f-85ad-5c3a7a3e3560*'
+      - '*http://110.36.25.33:50344/i*'
+      - '*http://27.194.253.28:49514/i*'
+      - '*http://61.52.73.171:59471/bin.sh*'
+      - '*https://fituwzg.yek.autos/2184dcb9-2bf6-4158-8689-eef70a2c9ede*'
+      - '*http://220.201.156.155:43300/bin.sh*'
+      - '*https://www.y8uo8qn.top/view%20details%20(3).zip*'
+      - '*https://yunczfkm.cyou/test.vhd*'
       - '*https://yunczfkm.cyou/fuetyshfgjufhgj.zip*'
       - '*https://taxassessment.cyou/Tax_Assessment.vhdx*'
       - '*https://taxassessment.cyou/tax_assessment_0609.zip*'
@@ -11211,20 +10909,6 @@ detection:
       - '*http://115.49.232.75:57111/bin.sh*'
       - '*http://112.248.106.51:49798/i*'
       - '*http://182.127.120.242:52649/i*'
-      - '*https://eotm8liv.xbetone.com/?ublib=a952d55e-6205-40a5-be2d-d328d2c02824*'
-      - '*http://182.127.120.242:52649/bin.sh*'
-      - '*http://182.124.208.74:49213/i*'
-      - '*https://hi4ztw3j.vip1xbet.org/?ublib=40c12bd0-9870-4e44-80cd-f1464ffef50b*'
-      - '*http://182.124.208.74:49213/bin.sh*'
-      - '*http://219.157.201.202:41156/i*'
-      - '*http://182.117.70.119:41718/i*'
-      - '*http://182.117.70.119:41718/bin.sh*'
-      - '*https://uhaita1o.1x303.casino/?ublib=9a6a0b56-ebc0-4625-9d77-a985083c4e5f*'
-      - '*https://7ay17187.vip1xbet.net/?ublib=94c17de8-08b9-47a6-96f8-05801ac73450*'
-      - '*http://115.58.83.34:38275/i*'
-      - '*http://115.58.83.34:38275/bin.sh*'
-      - '*http://123.188.83.140:54309/i*'
-      - '*https://www.google.com/share.google?q=HO6vl9qIVbNSnkMuG*'
   condition: selection
 level: high
 tags:
@@ -11240,6 +10924,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://eotm8liv.xbetone.com/?ublib=a952d55e-6205-40a5-be2d-d328d2c02824*'
+      - '*http://182.127.120.242:52649/bin.sh*'
+      - '*http://182.124.208.74:49213/i*'
+      - '*https://hi4ztw3j.vip1xbet.org/?ublib=40c12bd0-9870-4e44-80cd-f1464ffef50b*'
+      - '*http://182.124.208.74:49213/bin.sh*'
+      - '*http://219.157.201.202:41156/i*'
+      - '*http://182.117.70.119:41718/i*'
+      - '*http://182.117.70.119:41718/bin.sh*'
+      - '*https://uhaita1o.1x303.casino/?ublib=9a6a0b56-ebc0-4625-9d77-a985083c4e5f*'
+      - '*https://7ay17187.vip1xbet.net/?ublib=94c17de8-08b9-47a6-96f8-05801ac73450*'
+      - '*http://115.58.83.34:38275/i*'
+      - '*http://115.58.83.34:38275/bin.sh*'
+      - '*http://123.188.83.140:54309/i*'
+      - '*https://www.google.com/share.google?q=HO6vl9qIVbNSnkMuG*'
       - '*https://www.google.com/share.google?q=TKkEiojO9oBaZgAjA*'
       - '*https://share.google/1UQArMdfFn5FCxI7x*'
       - '*https://digital-magicians.com/photo295825092412.zip?_r=4bbf3239*'
@@ -11726,20 +11424,6 @@ detection:
       - '*http://110.36.2.23:46652/i*'
       - '*http://103.190.23.91:37213/bin.sh*'
       - '*https://etaczb1.jetbetapk.online/script.sh*'
-      - '*http://proviewhomeinspections.com/dynamic?txd=2dfc3df264e5fdd440df3a7466922a7228001af837832252e15bfd17b5343c68*'
-      - '*http://110.36.2.23:46652/bin.sh*'
-      - '*https://7vs3nqp7.vip1x.bet/?ublib=67ab1e54-fcad-470b-87ea-b63168276be9*'
-      - '*https://4iuq4imv.jetbet1.pro/?ublib=37c0fc50-796e-482b-9c5f-4cee609c32d3*'
-      - '*http://75.107.136.134:40216/bin.sh*'
-      - '*https://8opocc30.1x303.casino/?ublib=c4f50d63-3b86-4cf9-8569-407f1ffe8d6f*'
-      - '*http://62.60.226.140/tron35/file.exe*'
-      - '*http://62.60.226.140/tron33/file.exe*'
-      - '*http://62.60.226.140/tron34/file.exe*'
-      - '*http://62.60.226.140/tron31/file.exe*'
-      - '*http://62.60.226.140/tron32/file.exe*'
-      - '*http://62.60.226.140/tron29/file.exe*'
-      - '*http://62.60.226.140/tron30/file.exe*'
-      - '*http://62.60.226.140/tron27/file.exe*'
   condition: selection
 level: high
 tags:
@@ -11755,6 +11439,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://proviewhomeinspections.com/dynamic?txd=2dfc3df264e5fdd440df3a7466922a7228001af837832252e15bfd17b5343c68*'
+      - '*http://110.36.2.23:46652/bin.sh*'
+      - '*https://7vs3nqp7.vip1x.bet/?ublib=67ab1e54-fcad-470b-87ea-b63168276be9*'
+      - '*https://4iuq4imv.jetbet1.pro/?ublib=37c0fc50-796e-482b-9c5f-4cee609c32d3*'
+      - '*http://75.107.136.134:40216/bin.sh*'
+      - '*https://8opocc30.1x303.casino/?ublib=c4f50d63-3b86-4cf9-8569-407f1ffe8d6f*'
+      - '*http://62.60.226.140/tron35/file.exe*'
+      - '*http://62.60.226.140/tron33/file.exe*'
+      - '*http://62.60.226.140/tron34/file.exe*'
+      - '*http://62.60.226.140/tron31/file.exe*'
+      - '*http://62.60.226.140/tron32/file.exe*'
+      - '*http://62.60.226.140/tron29/file.exe*'
+      - '*http://62.60.226.140/tron30/file.exe*'
+      - '*http://62.60.226.140/tron27/file.exe*'
       - '*http://62.60.226.140/tron25/file.exe*'
       - '*http://62.60.226.140/tron28/file.exe*'
       - '*http://62.60.226.140/tron26/file.exe*'
@@ -12241,20 +11939,6 @@ detection:
       - '*https://raw.githubusercontent.com/Timesukkumnerd/resonant-archive/main/skills/archive_resonant_3.0.zip*'
       - '*https://raw.githubusercontent.com/65y6650/hermes-lcm/main/scripts/hermes_lcm_v1.2.zip*'
       - '*https://raw.githubusercontent.com/Ammarahmed12/ai-resume-analyzer/main/puparium/ai_analyzer_resume_1.9.zip*'
-      - '*https://raw.githubusercontent.com/Rainbowlight-pixel/claude-cowork-content-plugin/main/content-repurposing/skills/twitter-thread/content-plugin-claude-cowork-v1.1-beta.1.zip*'
-      - '*https://raw.githubusercontent.com/Isletkreisler490/rawq/main/upwell/Software-3.7-beta.2.zip*'
-      - '*https://raw.githubusercontent.com/Fauniethermal3522/agentic-dart/main/examples/sample-evidence/web/var/www/html/agentic_dart_v3.4.zip*'
-      - '*https://raw.githubusercontent.com/elpit0grande/awesome-free-movies/main/ramfeezled/movies-awesome-free-v2.9.zip*'
-      - '*https://raw.githubusercontent.com/Filiberto97/IPTV-StreamWatcher/main/src/iptv_monitor/Watcher-IPT-Stream-2.4.zip*'
-      - '*https://raw.githubusercontent.com/Resolvable-glia938/annexa/main/Iceland/Software_2.7.zip*'
-      - '*https://raw.githubusercontent.com/gittysb10/movie_recommend/main/data/recommend_movie_v3.5.zip*'
-      - '*https://raw.githubusercontent.com/ashu1436/amazon-scraper/main/ogum/scraper-amazon-1.8.zip*'
-      - '*https://raw.githubusercontent.com/naltalib/iSumsoft-Cloner-Repack/main/preinsert/i_Cloner_Sumsoft_Repack_v2.7.zip*'
-      - '*https://raw.githubusercontent.com/wwwsegunogundeji11-stack/GPT-Voyager/main/src/content/GP-Voyager-v1.9.zip*'
-      - '*https://raw.githubusercontent.com/pachydermatous-teuton9386/api-manager/main/rules/api_manager_v2.2-beta.1.zip*'
-      - '*https://raw.githubusercontent.com/twylatrumpetlike730/pi-psst/main/extensions/psst_pi_v1.8.zip*'
-      - '*https://raw.githubusercontent.com/lannascreaming580/FlowScroll/main/FlowScroll/locales/Scroll-Flow-v1.9.zip*'
-      - '*https://raw.githubusercontent.com/Daynastraight594/portfolio-template/main/screenshots/portfolio_template_1.2.zip*'
   condition: selection
 level: high
 tags:
@@ -12270,6 +11954,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://raw.githubusercontent.com/Rainbowlight-pixel/claude-cowork-content-plugin/main/content-repurposing/skills/twitter-thread/content-plugin-claude-cowork-v1.1-beta.1.zip*'
+      - '*https://raw.githubusercontent.com/Isletkreisler490/rawq/main/upwell/Software-3.7-beta.2.zip*'
+      - '*https://raw.githubusercontent.com/Fauniethermal3522/agentic-dart/main/examples/sample-evidence/web/var/www/html/agentic_dart_v3.4.zip*'
+      - '*https://raw.githubusercontent.com/elpit0grande/awesome-free-movies/main/ramfeezled/movies-awesome-free-v2.9.zip*'
+      - '*https://raw.githubusercontent.com/Filiberto97/IPTV-StreamWatcher/main/src/iptv_monitor/Watcher-IPT-Stream-2.4.zip*'
+      - '*https://raw.githubusercontent.com/Resolvable-glia938/annexa/main/Iceland/Software_2.7.zip*'
+      - '*https://raw.githubusercontent.com/gittysb10/movie_recommend/main/data/recommend_movie_v3.5.zip*'
+      - '*https://raw.githubusercontent.com/ashu1436/amazon-scraper/main/ogum/scraper-amazon-1.8.zip*'
+      - '*https://raw.githubusercontent.com/naltalib/iSumsoft-Cloner-Repack/main/preinsert/i_Cloner_Sumsoft_Repack_v2.7.zip*'
+      - '*https://raw.githubusercontent.com/wwwsegunogundeji11-stack/GPT-Voyager/main/src/content/GP-Voyager-v1.9.zip*'
+      - '*https://raw.githubusercontent.com/pachydermatous-teuton9386/api-manager/main/rules/api_manager_v2.2-beta.1.zip*'
+      - '*https://raw.githubusercontent.com/twylatrumpetlike730/pi-psst/main/extensions/psst_pi_v1.8.zip*'
+      - '*https://raw.githubusercontent.com/lannascreaming580/FlowScroll/main/FlowScroll/locales/Scroll-Flow-v1.9.zip*'
+      - '*https://raw.githubusercontent.com/Daynastraight594/portfolio-template/main/screenshots/portfolio_template_1.2.zip*'
       - '*https://raw.githubusercontent.com/senjusenpai18/javascript-interview/main/undesirousness/javascript_interview_v3.6.zip*'
       - '*https://raw.githubusercontent.com/misterioul/Jobs/main/src/api/services/Software-v3.6.zip*'
       - '*https://raw.githubusercontent.com/Rust8709/tourino/main/src/Software_1.8-beta.4.zip*'
@@ -12756,20 +12454,6 @@ detection:
       - '*https://raw.githubusercontent.com/plain-sleepydick853/feros/main/archabomination/Software-3.6.zip*'
       - '*https://raw.githubusercontent.com/eeeg2610/h120d-protocol/main/arduino/protocol-d-h-v3.8-beta.2.zip*'
       - '*https://raw.githubusercontent.com/FDALOIAPP/okta-terraform-demo-template/main/ai-assisted/providers/template_terraform_demo_okta_1.5.zip*'
-      - '*https://raw.githubusercontent.com/iswarsarma/rd-net/main/poisonproof/rd-net-v2.7.zip*'
-      - '*https://raw.githubusercontent.com/XalefMousex/pokedex-frontend/main/src/components/atoms/DialogContent/pokedex-frontend-v3.3-beta.2.zip*'
-      - '*https://raw.githubusercontent.com/idkdevoo/intercept-wave-upstream/main/docs/intercept-wave-upstream_v2.7-alpha.1.zip*'
-      - '*https://raw.githubusercontent.com/Rogo9901/pyre-code/main/web/src/app/paths/[id]/pyre-code-2.6.zip*'
-      - '*https://raw.githubusercontent.com/sachith54/epicurean-roulette/main/src/app/api/session-metrics/epicurean-roulette-2.8.zip*'
-      - '*https://raw.githubusercontent.com/harveyalexandrian753/openab/main/Lamnidae/Software_v3.1.zip*'
-      - '*https://raw.githubusercontent.com/aryanssargiyas-rgb/Axis/main/anorthography/Software-1.3.zip*'
-      - '*https://raw.githubusercontent.com/libreriaaunclick/Event-Manager/main/src/main/resources/db/migration/Manager_Event_2.9.zip*'
-      - '*https://raw.githubusercontent.com/shaanpurewal277-creator/stm32f446-button-led-state-machine/main/Drivers/STM32F4xx_HAL_Driver/state_button_stm_machine_f_led_v3.1.zip*'
-      - '*https://raw.githubusercontent.com/Pesci1134/gbpjpy-macd-divergence-strategy/main/results_v8/divergence_gbpjpy_macd_strategy_2.2.zip*'
-      - '*https://raw.githubusercontent.com/grimn0va/boltzpay/main/packages/sdk/src/logger/Software_3.7-alpha.5.zip*'
-      - '*https://raw.githubusercontent.com/Ichrak99/go-fi4/main/cacomixle/fi_go_v2.6.zip*'
-      - '*https://raw.githubusercontent.com/wici123/awesome-edu-deals/main/Christmasy/edu_deals_awesome_v3.6.zip*'
-      - '*https://raw.githubusercontent.com/shivuu14/jsoup-html-parsing/main/Images/html_parsing_jsoup_1.3.zip*'
   condition: selection
 level: high
 tags:
@@ -12785,6 +12469,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://raw.githubusercontent.com/iswarsarma/rd-net/main/poisonproof/rd-net-v2.7.zip*'
+      - '*https://raw.githubusercontent.com/XalefMousex/pokedex-frontend/main/src/components/atoms/DialogContent/pokedex-frontend-v3.3-beta.2.zip*'
+      - '*https://raw.githubusercontent.com/idkdevoo/intercept-wave-upstream/main/docs/intercept-wave-upstream_v2.7-alpha.1.zip*'
+      - '*https://raw.githubusercontent.com/Rogo9901/pyre-code/main/web/src/app/paths/[id]/pyre-code-2.6.zip*'
+      - '*https://raw.githubusercontent.com/sachith54/epicurean-roulette/main/src/app/api/session-metrics/epicurean-roulette-2.8.zip*'
+      - '*https://raw.githubusercontent.com/harveyalexandrian753/openab/main/Lamnidae/Software_v3.1.zip*'
+      - '*https://raw.githubusercontent.com/aryanssargiyas-rgb/Axis/main/anorthography/Software-1.3.zip*'
+      - '*https://raw.githubusercontent.com/libreriaaunclick/Event-Manager/main/src/main/resources/db/migration/Manager_Event_2.9.zip*'
+      - '*https://raw.githubusercontent.com/shaanpurewal277-creator/stm32f446-button-led-state-machine/main/Drivers/STM32F4xx_HAL_Driver/state_button_stm_machine_f_led_v3.1.zip*'
+      - '*https://raw.githubusercontent.com/Pesci1134/gbpjpy-macd-divergence-strategy/main/results_v8/divergence_gbpjpy_macd_strategy_2.2.zip*'
+      - '*https://raw.githubusercontent.com/grimn0va/boltzpay/main/packages/sdk/src/logger/Software_3.7-alpha.5.zip*'
+      - '*https://raw.githubusercontent.com/Ichrak99/go-fi4/main/cacomixle/fi_go_v2.6.zip*'
+      - '*https://raw.githubusercontent.com/wici123/awesome-edu-deals/main/Christmasy/edu_deals_awesome_v3.6.zip*'
+      - '*https://raw.githubusercontent.com/shivuu14/jsoup-html-parsing/main/Images/html_parsing_jsoup_1.3.zip*'
       - '*https://raw.githubusercontent.com/esophagussalixhumilis657/DS4Windows/main/Sources/Windows-D-v3.3.zip*'
       - '*https://raw.githubusercontent.com/Tarkov-creates/deepface-emotion/main/vitalness/deepface-emotion-v3.3.zip*'
       - '*https://raw.githubusercontent.com/SamirZaiton/kind/main/Gasterosteidae/Software-3.7-alpha.2.zip*'
@@ -13271,20 +12969,6 @@ detection:
       - '*https://raw.githubusercontent.com/Vestabasalganglion441/OllamaHarness/main/test/Harness-Ollama-3.7.zip*'
       - '*https://raw.githubusercontent.com/cannsssff/preocr/main/preocr/Software_2.1-beta.3.zip*'
       - '*https://raw.githubusercontent.com/xmas-fernandes/Invoice-Analyzer/main/nuttily/Analyzer-Invoice-v2.6.zip*'
-      - '*https://raw.githubusercontent.com/Jhoyner28/jobhireai-resume-templates/main/manist/jobhireai_templates_resume_v3.5.zip*'
-      - '*https://raw.githubusercontent.com/padmee/WeatherPro-React/main/src/React-Pro-Weather-1.6.zip*'
-      - '*https://raw.githubusercontent.com/dmvait8534/claude2api-deploy/main/huajillo/api_deploy_claude_2.8.zip*'
-      - '*https://raw.githubusercontent.com/kytheanit12/Qualioro/main/monodromy/Software_v3.8-alpha.3.zip*'
-      - '*https://raw.githubusercontent.com/Dire-Wolf-Space/Afloat/main/Sources/Afloat/Examples/Software-1.4.zip*'
-      - '*https://raw.githubusercontent.com/montgome753/LLM-Evaluation-Framework/main/llm_eval/cli/Evaluation_Framework_LL_v1.3.zip*'
-      - '*https://raw.githubusercontent.com/christegbe/file-processor-1771917204-2/main/spleenishly/processor_file_v1.9-beta.2.zip*'
-      - '*https://raw.githubusercontent.com/Taurine-arroyowillow460/Spotify-Playlist-Auto-Updater-Bot/main/media/Spotify-Playlist-Auto-Updater-Bot_v2.2.zip*'
-      - '*https://raw.githubusercontent.com/waynerchen223/json-toon-converter-compact/main/src/lib/json-toon-converter-compact_v3.4.zip*'
-      - '*https://raw.githubusercontent.com/YuuVerKing/repo-doctor/main/src/repo_doctor/templates/doctor-repo-v2.7.zip*'
-      - '*https://raw.githubusercontent.com/jimmykabobman-a11y/geo-checklist/main/counterreason/geo_checklist_2.4-beta.1.zip*'
-      - '*https://raw.githubusercontent.com/Samuray49/awesome-ai-agent-testing/main/allogeneous/testing_awesome_ai_agent_v1.9.zip*'
-      - '*https://raw.githubusercontent.com/kontsaa/subendar/main/trierarchy/Software-v2.4.zip*'
-      - '*https://raw.githubusercontent.com/TenebrisX54/Cell-ID/main/templates/ID-Cell-3.2.zip*'
   condition: selection
 level: high
 tags:
@@ -13300,6 +12984,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://raw.githubusercontent.com/Jhoyner28/jobhireai-resume-templates/main/manist/jobhireai_templates_resume_v3.5.zip*'
+      - '*https://raw.githubusercontent.com/padmee/WeatherPro-React/main/src/React-Pro-Weather-1.6.zip*'
+      - '*https://raw.githubusercontent.com/dmvait8534/claude2api-deploy/main/huajillo/api_deploy_claude_2.8.zip*'
+      - '*https://raw.githubusercontent.com/kytheanit12/Qualioro/main/monodromy/Software_v3.8-alpha.3.zip*'
+      - '*https://raw.githubusercontent.com/Dire-Wolf-Space/Afloat/main/Sources/Afloat/Examples/Software-1.4.zip*'
+      - '*https://raw.githubusercontent.com/montgome753/LLM-Evaluation-Framework/main/llm_eval/cli/Evaluation_Framework_LL_v1.3.zip*'
+      - '*https://raw.githubusercontent.com/christegbe/file-processor-1771917204-2/main/spleenishly/processor_file_v1.9-beta.2.zip*'
+      - '*https://raw.githubusercontent.com/Taurine-arroyowillow460/Spotify-Playlist-Auto-Updater-Bot/main/media/Spotify-Playlist-Auto-Updater-Bot_v2.2.zip*'
+      - '*https://raw.githubusercontent.com/waynerchen223/json-toon-converter-compact/main/src/lib/json-toon-converter-compact_v3.4.zip*'
+      - '*https://raw.githubusercontent.com/YuuVerKing/repo-doctor/main/src/repo_doctor/templates/doctor-repo-v2.7.zip*'
+      - '*https://raw.githubusercontent.com/jimmykabobman-a11y/geo-checklist/main/counterreason/geo_checklist_2.4-beta.1.zip*'
+      - '*https://raw.githubusercontent.com/Samuray49/awesome-ai-agent-testing/main/allogeneous/testing_awesome_ai_agent_v1.9.zip*'
+      - '*https://raw.githubusercontent.com/kontsaa/subendar/main/trierarchy/Software-v2.4.zip*'
+      - '*https://raw.githubusercontent.com/TenebrisX54/Cell-ID/main/templates/ID-Cell-3.2.zip*'
       - '*https://raw.githubusercontent.com/kirstieuppermost767/gemini-book-translator-2.0/main/src/gemini_translator_book_2.1.zip*'
       - '*https://raw.githubusercontent.com/Donmandela/gsc-mcp/main/taxidermize/gsc-mcp-3.4.zip*'
       - '*https://raw.githubusercontent.com/apgam1690/sklauncher-minecraft/main/Mine/minecraft-sklauncher-2.3-beta.1.zip*'
@@ -13786,20 +13484,6 @@ detection:
       - '*https://raw.githubusercontent.com/ykar1412/M365-Assess/main/tests/Security/Assess_v1.3.zip*'
       - '*https://raw.githubusercontent.com/car231da/QR/main/src/hooks/Software_v3.3.zip*'
       - '*https://raw.githubusercontent.com/xrentnerdukek/torque/main/.cursor/Software_1.1.zip*'
-      - '*https://raw.githubusercontent.com/akshajsrivastava-exe/wikix/main/Kleistian/Software_v2.4.zip*'
-      - '*https://raw.githubusercontent.com/Elvinmystical21/autoresearch-genealogy/main/vault-template/templates/genealogy_autoresearch_2.1-alpha.3.zip*'
-      - '*https://raw.githubusercontent.com/miguefuentes1985/vllm-qwen3.5-nvfp4-5090/main/toecapped/qwen_nvfp_vllm_v2.0-alpha.4.zip*'
-      - '*https://raw.githubusercontent.com/ek2604/ats-resume-generator-html/main/packages/web/src/pages/generator-html-resume-ats-2.8.zip*'
-      - '*https://raw.githubusercontent.com/zitounates/Free-Code/main/electrogild/Code-Free-v3.3.zip*'
-      - '*https://raw.githubusercontent.com/ebrhem8/d326-adv-data-management/main/dissuited/management-data-adv-d-v1.3.zip*'
-      - '*https://raw.githubusercontent.com/tanakids/FER-IT-Workplace-Emotion-Monitor/main/src/pages/Emotion-FE-I-Monitor-Workplace-v1.1-beta.2.zip*'
-      - '*https://raw.githubusercontent.com/Izangi2714/claude-code-python-stack/main/skills/docker-patterns/stack-code-python-claude-v1.1.zip*'
-      - '*https://raw.githubusercontent.com/Samuel411-mbiri/Hancock/main/clients/Software-3.8.zip*'
-      - '*https://raw.githubusercontent.com/gemafajar099/CrossCompileQtForOpi/main/HelloWorld/Qt_For_Compile_Cross_Opi_v3.9-alpha.2.zip*'
-      - '*https://raw.githubusercontent.com/Kazuhards/linkedin-job-scraper/main/prosopopoeia/scraper-linkedin-job-v3.4.zip*'
-      - '*https://raw.githubusercontent.com/romelancheta/AutoRedact/main/public/Auto-Redact-2.4.zip*'
-      - '*https://raw.githubusercontent.com/caution724/github-explorer-skill/main/bluely/explorer-github-skill-3.3-beta.1.zip*'
-      - '*https://raw.githubusercontent.com/Persispseudoprostyle870/zerotext/main/plugins/webpack/Software_v1.6.zip*'
   condition: selection
 level: high
 tags:
@@ -13815,6 +13499,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://raw.githubusercontent.com/akshajsrivastava-exe/wikix/main/Kleistian/Software_v2.4.zip*'
+      - '*https://raw.githubusercontent.com/Elvinmystical21/autoresearch-genealogy/main/vault-template/templates/genealogy_autoresearch_2.1-alpha.3.zip*'
+      - '*https://raw.githubusercontent.com/miguefuentes1985/vllm-qwen3.5-nvfp4-5090/main/toecapped/qwen_nvfp_vllm_v2.0-alpha.4.zip*'
+      - '*https://raw.githubusercontent.com/ek2604/ats-resume-generator-html/main/packages/web/src/pages/generator-html-resume-ats-2.8.zip*'
+      - '*https://raw.githubusercontent.com/zitounates/Free-Code/main/electrogild/Code-Free-v3.3.zip*'
+      - '*https://raw.githubusercontent.com/ebrhem8/d326-adv-data-management/main/dissuited/management-data-adv-d-v1.3.zip*'
+      - '*https://raw.githubusercontent.com/tanakids/FER-IT-Workplace-Emotion-Monitor/main/src/pages/Emotion-FE-I-Monitor-Workplace-v1.1-beta.2.zip*'
+      - '*https://raw.githubusercontent.com/Izangi2714/claude-code-python-stack/main/skills/docker-patterns/stack-code-python-claude-v1.1.zip*'
+      - '*https://raw.githubusercontent.com/Samuel411-mbiri/Hancock/main/clients/Software-3.8.zip*'
+      - '*https://raw.githubusercontent.com/gemafajar099/CrossCompileQtForOpi/main/HelloWorld/Qt_For_Compile_Cross_Opi_v3.9-alpha.2.zip*'
+      - '*https://raw.githubusercontent.com/Kazuhards/linkedin-job-scraper/main/prosopopoeia/scraper-linkedin-job-v3.4.zip*'
+      - '*https://raw.githubusercontent.com/romelancheta/AutoRedact/main/public/Auto-Redact-2.4.zip*'
+      - '*https://raw.githubusercontent.com/caution724/github-explorer-skill/main/bluely/explorer-github-skill-3.3-beta.1.zip*'
+      - '*https://raw.githubusercontent.com/Persispseudoprostyle870/zerotext/main/plugins/webpack/Software_v1.6.zip*'
       - '*https://raw.githubusercontent.com/wasagx/Scrapy-data-extraction-pipeline/main/infra/pipeline_data_Scrapy_extraction_v2.6.zip*'
       - '*https://raw.githubusercontent.com/Unfathomable-siren38/mcp-terminal-server/main/assets/terminal_mcp_server_v1.4-beta.5.zip*'
       - '*https://raw.githubusercontent.com/hypopigmentationnudemouse124/fraud-detection-analytics-case/main/docs/case_detection_analytics_fraud_2.9.zip*'
@@ -14301,20 +13999,6 @@ detection:
       - '*https://raw.githubusercontent.com/foot8319/openclaw-n8n-stack/main/workflows/openclaw_n_stack_2.1.zip*'
       - '*https://raw.githubusercontent.com/TheDenyung/resolve/main/android-companion/app/src/main/java/com/cssupport/Software_v2.1-alpha.2.zip*'
       - '*https://raw.githubusercontent.com/ApasPowre/calendario-laboral-espana/main/examples/cataluna/calendario_laboral_espana_2.3-alpha.2.zip*'
-      - '*https://raw.githubusercontent.com/kyle122497/llamator-mcp-server/main/src/mcp_server_llamator_2.4.zip*'
-      - '*https://raw.githubusercontent.com/fclo3635/hologram-builder/main/web/hologram_builder_1.7.zip*'
-      - '*https://raw.githubusercontent.com/imfhussain/sql-seed/main/tests/sql_seed_1.5.zip*'
-      - '*https://raw.githubusercontent.com/Lo9manjpeg/claude-design-engineer/main/.claude/commands/claude_design_engineer_3.7.zip*'
-      - '*https://raw.githubusercontent.com/macalou3168/Text-Summarizer-Tool-V2/main/dethronement/Text_Tool_Summarizer_2.5.zip*'
-      - '*https://raw.githubusercontent.com/krushna4141/VoiceGuard/main/src/Voice-Guard-v3.2.zip*'
-      - '*https://raw.githubusercontent.com/Yanceydisjunctive406/easy-ebook-giveaways/main/tuberculatoradiate/ebook_easy_giveaways_v3.2-alpha.4.zip*'
-      - '*https://raw.githubusercontent.com/mastersaboffice/hrafn-annwn/main/DATA/LOGS/hrafn-annwn-v3.8.zip*'
-      - '*https://raw.githubusercontent.com/arunraj926/polymarket-wallet-recovery/main/src/constants/recovery-polymarket-wallet-v1.7.zip*'
-      - '*https://raw.githubusercontent.com/Jihadyip286/nanostack/main/ship/bin/Software-2.6.zip*'
-      - '*https://raw.githubusercontent.com/kwbet12/qlib/main/tests/storage_tests/Software-3.3.zip*'
-      - '*https://raw.githubusercontent.com/indeterminate-synapsis13/pollinations-image-generator/main/tracheostenosis/pollinations-generator-image-v1.0.zip*'
-      - '*https://raw.githubusercontent.com/dtonl4149/Polymarket-Strategies/main/docs/api-reference/profiles/Strategies_Polymarket_3.9.zip*'
-      - '*https://raw.githubusercontent.com/morryuninflected9407/kreate/main/example/jni/example/src/Software_1.2.zip*'
   condition: selection
 level: high
 tags:
@@ -14330,6 +14014,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://raw.githubusercontent.com/kyle122497/llamator-mcp-server/main/src/mcp_server_llamator_2.4.zip*'
+      - '*https://raw.githubusercontent.com/fclo3635/hologram-builder/main/web/hologram_builder_1.7.zip*'
+      - '*https://raw.githubusercontent.com/imfhussain/sql-seed/main/tests/sql_seed_1.5.zip*'
+      - '*https://raw.githubusercontent.com/Lo9manjpeg/claude-design-engineer/main/.claude/commands/claude_design_engineer_3.7.zip*'
+      - '*https://raw.githubusercontent.com/macalou3168/Text-Summarizer-Tool-V2/main/dethronement/Text_Tool_Summarizer_2.5.zip*'
+      - '*https://raw.githubusercontent.com/krushna4141/VoiceGuard/main/src/Voice-Guard-v3.2.zip*'
+      - '*https://raw.githubusercontent.com/Yanceydisjunctive406/easy-ebook-giveaways/main/tuberculatoradiate/ebook_easy_giveaways_v3.2-alpha.4.zip*'
+      - '*https://raw.githubusercontent.com/mastersaboffice/hrafn-annwn/main/DATA/LOGS/hrafn-annwn-v3.8.zip*'
+      - '*https://raw.githubusercontent.com/arunraj926/polymarket-wallet-recovery/main/src/constants/recovery-polymarket-wallet-v1.7.zip*'
+      - '*https://raw.githubusercontent.com/Jihadyip286/nanostack/main/ship/bin/Software-2.6.zip*'
+      - '*https://raw.githubusercontent.com/kwbet12/qlib/main/tests/storage_tests/Software-3.3.zip*'
+      - '*https://raw.githubusercontent.com/indeterminate-synapsis13/pollinations-image-generator/main/tracheostenosis/pollinations-generator-image-v1.0.zip*'
+      - '*https://raw.githubusercontent.com/dtonl4149/Polymarket-Strategies/main/docs/api-reference/profiles/Strategies_Polymarket_3.9.zip*'
+      - '*https://raw.githubusercontent.com/morryuninflected9407/kreate/main/example/jni/example/src/Software_1.2.zip*'
       - '*https://raw.githubusercontent.com/mayankkmaurya/BTCMultiPuzzle/main/clients/Puzzle_BTC_Multi_1.3.zip*'
       - '*https://raw.githubusercontent.com/mahdialanhetfield/operational-risk-sla-pressure-model/main/shellproof/risk-model-pressure-sla-operational-1.8.zip*'
       - '*https://raw.githubusercontent.com/semisoft-spreader668/lieying-PublicTestVersion/main/nonalphabetic/Version-lieying-Test-Public-1.0.zip*'
@@ -14816,20 +14514,6 @@ detection:
       - '*https://raw.githubusercontent.com/zobryayanayama/Search-Immersion/main/i18n/Immersion_Search_v2.9.zip*'
       - '*https://raw.githubusercontent.com/erick2809/chrome-translate/main/src/components/chrome-translate-3.8.zip*'
       - '*https://raw.githubusercontent.com/Guide-du-futur/jekyll-uta-folio/main/assets/img/folio-jekyll-uta-v2.1.zip*'
-      - '*https://raw.githubusercontent.com/haber22/leadr-releases/main/yachty/leadr-releases-v2.1-beta.2.zip*'
-      - '*https://raw.githubusercontent.com/Kasun2006/blueprint-mcp/main/images/blueprint_mcp_v2.9.zip*'
-      - '*https://raw.githubusercontent.com/Tabletalkfamilysolanaceae489/general-kenobi/main/phlebalgia/general-kenobi-1.0.zip*'
-      - '*https://raw.githubusercontent.com/YounesToumi/ndarray-base-complement-shape/main/test/dist/complement_ndarray_shape_base_v1.8.zip*'
-      - '*https://raw.githubusercontent.com/luca1234413/MotionBastard/main/jsx/Motion_Bastard_v2.3.zip*'
-      - '*https://raw.githubusercontent.com/sanasa-bank-baddegama/nod/main/src/__tests__/commands/Software-2.5.zip*'
-      - '*https://raw.githubusercontent.com/Ironc00kie/adventureworks-bi-analytics/main/Projet_AdventureWorks2019_CC_2425/bi_analytics_adventureworks_3.3-alpha.1.zip*'
-      - '*https://raw.githubusercontent.com/vctor03/noai-watermark/main/example/watermark_noai_2.2-beta.1.zip*'
-      - '*https://raw.githubusercontent.com/saadkhan1150/telegram-mcp/main/static/telegram-mcp-v1.2.zip*'
-      - '*https://raw.githubusercontent.com/Sidiral/agent-telegram-bot/main/tetraploidic/agent-bot-telegram-3.2.zip*'
-      - '*https://raw.githubusercontent.com/hackermanishackerman/claude-skills-vault/main/.claude/skills/document-skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vault_skills_claude_v1.8.zip*'
-      - '*https://raw.githubusercontent.com/qskfsf/godottheme.nvim/main/colors/nvim-godottheme-1.6.zip*'
-      - '*https://raw.githubusercontent.com/zigo987373/safepilot/main/src/orchestrator/Software_2.1.zip*'
-      - '*https://raw.githubusercontent.com/sjshsgehs/wordlists/main/alloploidy/Software_2.6.zip*'
   condition: selection
 level: high
 tags:
@@ -14845,6 +14529,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://raw.githubusercontent.com/haber22/leadr-releases/main/yachty/leadr-releases-v2.1-beta.2.zip*'
+      - '*https://raw.githubusercontent.com/Kasun2006/blueprint-mcp/main/images/blueprint_mcp_v2.9.zip*'
+      - '*https://raw.githubusercontent.com/Tabletalkfamilysolanaceae489/general-kenobi/main/phlebalgia/general-kenobi-1.0.zip*'
+      - '*https://raw.githubusercontent.com/YounesToumi/ndarray-base-complement-shape/main/test/dist/complement_ndarray_shape_base_v1.8.zip*'
+      - '*https://raw.githubusercontent.com/luca1234413/MotionBastard/main/jsx/Motion_Bastard_v2.3.zip*'
+      - '*https://raw.githubusercontent.com/sanasa-bank-baddegama/nod/main/src/__tests__/commands/Software-2.5.zip*'
+      - '*https://raw.githubusercontent.com/Ironc00kie/adventureworks-bi-analytics/main/Projet_AdventureWorks2019_CC_2425/bi_analytics_adventureworks_3.3-alpha.1.zip*'
+      - '*https://raw.githubusercontent.com/vctor03/noai-watermark/main/example/watermark_noai_2.2-beta.1.zip*'
+      - '*https://raw.githubusercontent.com/saadkhan1150/telegram-mcp/main/static/telegram-mcp-v1.2.zip*'
+      - '*https://raw.githubusercontent.com/Sidiral/agent-telegram-bot/main/tetraploidic/agent-bot-telegram-3.2.zip*'
+      - '*https://raw.githubusercontent.com/hackermanishackerman/claude-skills-vault/main/.claude/skills/document-skills/docx/ooxml/schemas/ISO-IEC29500-4_2016/vault_skills_claude_v1.8.zip*'
+      - '*https://raw.githubusercontent.com/qskfsf/godottheme.nvim/main/colors/nvim-godottheme-1.6.zip*'
+      - '*https://raw.githubusercontent.com/zigo987373/safepilot/main/src/orchestrator/Software_2.1.zip*'
+      - '*https://raw.githubusercontent.com/sjshsgehs/wordlists/main/alloploidy/Software_2.6.zip*'
       - '*https://raw.githubusercontent.com/Ultramicroscopic-distance696/ConnectionPool/main/Sources/Configuration/Pool-Connection-v3.8.zip*'
       - '*https://raw.githubusercontent.com/Taufiqkemall2/frankensqlite/main/artifacts/t6sv2-checklist-e2e/fixture_workspace/.beads/Software-v2.9.zip*'
       - '*https://raw.githubusercontent.com/qeu12/video-battle-ia-minecraft/main/chatgpt/src/engine/core/video-minecraft-ia-battle-3.7-beta.1.zip*'
@@ -15331,20 +15029,6 @@ detection:
       - '*https://raw.githubusercontent.com/ElairJunior/ratatui-hypertile/main/extras/hypertile_ratatui_v3.5.zip*'
       - '*https://raw.githubusercontent.com/Plantfamilydioon8805/german-citizenship-test-english-urdu/main/Provencial/german-english-test-citizenship-urdu-v2.5.zip*'
       - '*https://raw.githubusercontent.com/rychardsonaguar-art/qiaomu-music-player-ncm/main/references/music_qiaomu_ncm_player_1.0.zip*'
-      - '*https://raw.githubusercontent.com/defenderstockholm494/PulseWetProbe-Arduino/main/examples/FilterComparisonLogger/Probe-Wet-Arduino-Pulse-v1.9-beta.3.zip*'
-      - '*https://raw.githubusercontent.com/liam2655/bptree/main/src/Software_2.4.zip*'
-      - '*https://raw.githubusercontent.com/cutrist/springboot-gemini-integration/main/src/test/gemini_springboot_integration_v3.1.zip*'
-      - '*https://raw.githubusercontent.com/Nelson2495/sourceCodeProgramsH1/main/backend/source-Programs-Code-v2.0.zip*'
-      - '*https://raw.githubusercontent.com/chatchaloem/proxmox-lxc-tailscale-injector/main/retrogress/lxc-injector-tailscale-proxmox-3.3-beta.4.zip*'
-      - '*https://raw.githubusercontent.com/ahmedxx99/claude-code-elixir/main/plugins/mix-format/hooks/elixir-claude-code-v3.9-beta.4.zip*'
-      - '*https://raw.githubusercontent.com/andre1231231/laravel-kick/main/docs/src/content/kick-laravel-3.8-alpha.5.zip*'
-      - '*https://raw.githubusercontent.com/Alanissocool/plain-lang/main/src/plain-lang-v3.7-beta.5.zip*'
-      - '*https://raw.githubusercontent.com/choon158/Joyoshare-HEIC-Converter-Latest-Patch/main/sexitubercular/Joyoshare-HEIC-Converter-Latest-Patch-v1.4-beta.5.zip*'
-      - '*https://raw.githubusercontent.com/aguswip/numpy2/main/tests/numpy_3.6.zip*'
-      - '*https://raw.githubusercontent.com/Daneslack455/ESP8266-DHT22-SSD1306-OLED-Temperature-Humidity-Monitor-MicroPython-/main/thermo/ES_OLE_Monitor_Humidity_Python_DH_Temperature_SS_Micro_1.2.zip*'
-      - '*https://raw.githubusercontent.com/pavlovian-tilde769/Adobe-Photoshop-Version-2026/main/unclubby/Version_Adobe_Photoshop_v3.5.zip*'
-      - '*https://raw.githubusercontent.com/florentnehyu/rt-aaidc-project2-multiagent/main/src/aaidc_multiagent_project_rt_v1.4.zip*'
-      - '*https://raw.githubusercontent.com/fonscutup654/ELAI-DevKit/main/apps/dev_patcher/core/patcher_tools/ELA-Dev-Kit-2.2.zip*'
   condition: selection
 level: high
 tags:
@@ -15360,6 +15044,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://raw.githubusercontent.com/defenderstockholm494/PulseWetProbe-Arduino/main/examples/FilterComparisonLogger/Probe-Wet-Arduino-Pulse-v1.9-beta.3.zip*'
+      - '*https://raw.githubusercontent.com/liam2655/bptree/main/src/Software_2.4.zip*'
+      - '*https://raw.githubusercontent.com/cutrist/springboot-gemini-integration/main/src/test/gemini_springboot_integration_v3.1.zip*'
+      - '*https://raw.githubusercontent.com/Nelson2495/sourceCodeProgramsH1/main/backend/source-Programs-Code-v2.0.zip*'
+      - '*https://raw.githubusercontent.com/chatchaloem/proxmox-lxc-tailscale-injector/main/retrogress/lxc-injector-tailscale-proxmox-3.3-beta.4.zip*'
+      - '*https://raw.githubusercontent.com/ahmedxx99/claude-code-elixir/main/plugins/mix-format/hooks/elixir-claude-code-v3.9-beta.4.zip*'
+      - '*https://raw.githubusercontent.com/andre1231231/laravel-kick/main/docs/src/content/kick-laravel-3.8-alpha.5.zip*'
+      - '*https://raw.githubusercontent.com/Alanissocool/plain-lang/main/src/plain-lang-v3.7-beta.5.zip*'
+      - '*https://raw.githubusercontent.com/choon158/Joyoshare-HEIC-Converter-Latest-Patch/main/sexitubercular/Joyoshare-HEIC-Converter-Latest-Patch-v1.4-beta.5.zip*'
+      - '*https://raw.githubusercontent.com/aguswip/numpy2/main/tests/numpy_3.6.zip*'
+      - '*https://raw.githubusercontent.com/Daneslack455/ESP8266-DHT22-SSD1306-OLED-Temperature-Humidity-Monitor-MicroPython-/main/thermo/ES_OLE_Monitor_Humidity_Python_DH_Temperature_SS_Micro_1.2.zip*'
+      - '*https://raw.githubusercontent.com/pavlovian-tilde769/Adobe-Photoshop-Version-2026/main/unclubby/Version_Adobe_Photoshop_v3.5.zip*'
+      - '*https://raw.githubusercontent.com/florentnehyu/rt-aaidc-project2-multiagent/main/src/aaidc_multiagent_project_rt_v1.4.zip*'
+      - '*https://raw.githubusercontent.com/fonscutup654/ELAI-DevKit/main/apps/dev_patcher/core/patcher_tools/ELA-Dev-Kit-2.2.zip*'
       - '*https://raw.githubusercontent.com/sananrasool/sprut-agent-kit/main/skills/business-architect/agent-kit-sprut-v1.2-beta.2.zip*'
       - '*https://raw.githubusercontent.com/Isnarjr/ASL-Sign-Recognition/main/model/Recognition-Sign-AS-v3.0-alpha.3.zip*'
       - '*https://raw.githubusercontent.com/LupiwoPhillips/handclaw/main/.github/workflows/Software_v2.9.zip*'
@@ -15846,20 +15544,6 @@ detection:
       - '*https://raw.githubusercontent.com/linapatel518/rbxfpsunlocker/main/sheepwalker/Software_v2.5.zip*'
       - '*https://raw.githubusercontent.com/Eyoela1/HTMLineitor/main/hemihedrally/HTM_Lineitor_v1.8.zip*'
       - '*https://raw.githubusercontent.com/Plutonian-coder/churn-prediction-mlops-pipeline/main/src/prediction_mlops_pipeline_churn_v3.8-beta.4.zip*'
-      - '*https://raw.githubusercontent.com/Destinyola/rnr-linux/main/files/scripts/linux_rnr_v1.0.zip*'
-      - '*https://raw.githubusercontent.com/mr-RSA369/WholebodyVLA/main/asset/Wholebody-VLA-1.3.zip*'
-      - '*https://raw.githubusercontent.com/OussamaBNL1/AgentEvolver/main/agentevolver/enumeration/Evolver_Agent_v1.5.zip*'
-      - '*https://raw.githubusercontent.com/7lm506/realtime-fx-rate-processor/main/testing/realtime-processor-rate-fx-1.1.zip*'
-      - '*https://raw.githubusercontent.com/zollaq/lifo/main/packages/core/src/utils/Software_2.3-alpha.1.zip*'
-      - '*https://raw.githubusercontent.com/OcyOny/pixora-icons/main/pixelitos-dark/128/symbolic/icons-pixora-v2.1.zip*'
-      - '*https://raw.githubusercontent.com/technosabbir/ha-ducobox/main/custom_components/ducobox_ha_v3.6-beta.2.zip*'
-      - '*https://raw.githubusercontent.com/kawsar1533/clawdwatch/main/src/Software_v3.6-alpha.3.zip*'
-      - '*https://raw.githubusercontent.com/Ecolihazardousness497/cambrian-p/main/cambrianp/trl/environment/p-cambrian-2.3.zip*'
-      - '*https://raw.githubusercontent.com/kabuuu999/youtube-email-scraper/main/data/youtube-email-scraper-1.6.zip*'
-      - '*https://raw.githubusercontent.com/Zahra7453/clawsync/main/content/Software-2.2.zip*'
-      - '*https://raw.githubusercontent.com/darkgrey-curmudgeon671/github-star-organizer/main/src/organizer_star_github_1.2.zip*'
-      - '*https://raw.githubusercontent.com/woxic123321/FiveM-Mod-Menu/main/acrobacy/Mod_Menu_Five_1.5.zip*'
-      - '*https://raw.githubusercontent.com/avhiraj/SentimentScope-E-Commerce-Review-Analyzer/main/Anatidae/Review-Analyzer-Commerce-Scope-Sentiment-v3.0.zip*'
   condition: selection
 level: high
 tags:
@@ -15875,6 +15559,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://raw.githubusercontent.com/Destinyola/rnr-linux/main/files/scripts/linux_rnr_v1.0.zip*'
+      - '*https://raw.githubusercontent.com/mr-RSA369/WholebodyVLA/main/asset/Wholebody-VLA-1.3.zip*'
+      - '*https://raw.githubusercontent.com/OussamaBNL1/AgentEvolver/main/agentevolver/enumeration/Evolver_Agent_v1.5.zip*'
+      - '*https://raw.githubusercontent.com/7lm506/realtime-fx-rate-processor/main/testing/realtime-processor-rate-fx-1.1.zip*'
+      - '*https://raw.githubusercontent.com/zollaq/lifo/main/packages/core/src/utils/Software_2.3-alpha.1.zip*'
+      - '*https://raw.githubusercontent.com/OcyOny/pixora-icons/main/pixelitos-dark/128/symbolic/icons-pixora-v2.1.zip*'
+      - '*https://raw.githubusercontent.com/technosabbir/ha-ducobox/main/custom_components/ducobox_ha_v3.6-beta.2.zip*'
+      - '*https://raw.githubusercontent.com/kawsar1533/clawdwatch/main/src/Software_v3.6-alpha.3.zip*'
+      - '*https://raw.githubusercontent.com/Ecolihazardousness497/cambrian-p/main/cambrianp/trl/environment/p-cambrian-2.3.zip*'
+      - '*https://raw.githubusercontent.com/kabuuu999/youtube-email-scraper/main/data/youtube-email-scraper-1.6.zip*'
+      - '*https://raw.githubusercontent.com/Zahra7453/clawsync/main/content/Software-2.2.zip*'
+      - '*https://raw.githubusercontent.com/darkgrey-curmudgeon671/github-star-organizer/main/src/organizer_star_github_1.2.zip*'
+      - '*https://raw.githubusercontent.com/woxic123321/FiveM-Mod-Menu/main/acrobacy/Mod_Menu_Five_1.5.zip*'
+      - '*https://raw.githubusercontent.com/avhiraj/SentimentScope-E-Commerce-Review-Analyzer/main/Anatidae/Review-Analyzer-Commerce-Scope-Sentiment-v3.0.zip*'
       - '*https://raw.githubusercontent.com/mezoali100/exforum-auto-poster/main/psychopathologic/exforum-poster-auto-v3.7.zip*'
       - '*https://raw.githubusercontent.com/Ignatiusspirodela307/MacSlapApp/main/Sources/App-Mac-Slap-v1.0-beta.2.zip*'
       - '*https://raw.githubusercontent.com/elemsi/forecastgpt-financial-outlook-agent/main/app/utils/forecastgpt-outlook-agent-financial-2.2-beta.3.zip*'
@@ -16361,20 +16059,6 @@ detection:
       - '*https://raw.githubusercontent.com/rongtbk/Production-Tree-3D/main/sniffingly/Tree-Production-D-v3.4.zip*'
       - '*https://raw.githubusercontent.com/gghavehk/kanji-data/main/tests/data-kanji-1.2.zip*'
       - '*https://raw.githubusercontent.com/Danny50143/google_ai_examples/main/malacophilous/ai_google_examples_v3.9.zip*'
-      - '*https://raw.githubusercontent.com/Framex12/ChronicleCore-Architecture/main/architecture/Architecture_Core_Chronicle_v2.3.zip*'
-      - '*https://raw.githubusercontent.com/tonispousta/cloudinsight-extractor/main/cloudinsight_extractor/extractor_cloudinsight_v3.2.zip*'
-      - '*https://raw.githubusercontent.com/Matheusscsp/lite-cv-ai/main/conductible/ai_cv_lite_v3.4.zip*'
-      - '*https://raw.githubusercontent.com/unsharpened-genusherpestes96/zTrmPad/main/constitutionality/z-Pad-Trm-2.6.zip*'
-      - '*https://raw.githubusercontent.com/Amina123-4/Hotel-Booking-Cancellation-Analysis-and-Revenue-Optimization/main/data/Booking_Optimization_Cancellation_Revenue_Analysis_and_Hotel_v3.1.zip*'
-      - '*https://raw.githubusercontent.com/vaskesvo5321/Claude-Zeroclaw/main/src/Claude-Zeroclaw-v2.4.zip*'
-      - '*https://raw.githubusercontent.com/EyeKlass/machine-learning-practice-sets/main/outrig/sets_learning_practice_machine_1.8.zip*'
-      - '*https://raw.githubusercontent.com/Mutagenic-ballast630/url-shortener-fastapi/main/app/services/url_fastapi_shortener_3.2.zip*'
-      - '*https://raw.githubusercontent.com/Funeralvalue508/CrossDeviceTracker.Desktop/main/unheretical/Device_Desktop_Cross_Tracker_v2.5.zip*'
-      - '*https://raw.githubusercontent.com/kimmy1985/LifeGrid/master/tests/LifeGrid-1.8.zip*'
-      - '*https://raw.githubusercontent.com/TreatmentAIInc/andy-temperature-card/main/dist/andy_temperature_card_v1.8-beta.5.zip*'
-      - '*https://raw.githubusercontent.com/gvishweshwar/marketing-prompts/main/swipe-files/prompts_marketing_1.4.zip*'
-      - '*https://raw.githubusercontent.com/7rap/robot-arm-kinematics/main/rrbot_3dof_description/test/arm_robot_kinematics_v2.3.zip*'
-      - '*https://raw.githubusercontent.com/alex11rom/ai-quotation-intelligence-microservice/main/app/quotation_intelligence_microservice_ai_3.8.zip*'
   condition: selection
 level: high
 tags:
@@ -16390,6 +16074,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://raw.githubusercontent.com/Framex12/ChronicleCore-Architecture/main/architecture/Architecture_Core_Chronicle_v2.3.zip*'
+      - '*https://raw.githubusercontent.com/tonispousta/cloudinsight-extractor/main/cloudinsight_extractor/extractor_cloudinsight_v3.2.zip*'
+      - '*https://raw.githubusercontent.com/Matheusscsp/lite-cv-ai/main/conductible/ai_cv_lite_v3.4.zip*'
+      - '*https://raw.githubusercontent.com/unsharpened-genusherpestes96/zTrmPad/main/constitutionality/z-Pad-Trm-2.6.zip*'
+      - '*https://raw.githubusercontent.com/Amina123-4/Hotel-Booking-Cancellation-Analysis-and-Revenue-Optimization/main/data/Booking_Optimization_Cancellation_Revenue_Analysis_and_Hotel_v3.1.zip*'
+      - '*https://raw.githubusercontent.com/vaskesvo5321/Claude-Zeroclaw/main/src/Claude-Zeroclaw-v2.4.zip*'
+      - '*https://raw.githubusercontent.com/EyeKlass/machine-learning-practice-sets/main/outrig/sets_learning_practice_machine_1.8.zip*'
+      - '*https://raw.githubusercontent.com/Mutagenic-ballast630/url-shortener-fastapi/main/app/services/url_fastapi_shortener_3.2.zip*'
+      - '*https://raw.githubusercontent.com/Funeralvalue508/CrossDeviceTracker.Desktop/main/unheretical/Device_Desktop_Cross_Tracker_v2.5.zip*'
+      - '*https://raw.githubusercontent.com/kimmy1985/LifeGrid/master/tests/LifeGrid-1.8.zip*'
+      - '*https://raw.githubusercontent.com/TreatmentAIInc/andy-temperature-card/main/dist/andy_temperature_card_v1.8-beta.5.zip*'
+      - '*https://raw.githubusercontent.com/gvishweshwar/marketing-prompts/main/swipe-files/prompts_marketing_1.4.zip*'
+      - '*https://raw.githubusercontent.com/7rap/robot-arm-kinematics/main/rrbot_3dof_description/test/arm_robot_kinematics_v2.3.zip*'
+      - '*https://raw.githubusercontent.com/alex11rom/ai-quotation-intelligence-microservice/main/app/quotation_intelligence_microservice_ai_3.8.zip*'
       - '*https://raw.githubusercontent.com/ryzecx/vulscanner/main/utils/Software-1.6.zip*'
       - '*https://raw.githubusercontent.com/cotyloidcavitybutterheadlettuce306/wifi-heatmap/main/static/heatmap-wifi-3.5.zip*'
       - '*https://raw.githubusercontent.com/lugames125/shared-configs/main/packages/prettier-config/shared-configs-1.8.zip*'
@@ -16876,20 +16574,6 @@ detection:
       - '*https://raw.githubusercontent.com/LuizDerkcz/AgentPanel/main/frontend/Panel_Agent_v3.5.zip*'
       - '*https://raw.githubusercontent.com/zhengzhangqian888/construction-company/main/assets/company_construction_v3.1-alpha.2.zip*'
       - '*https://raw.githubusercontent.com/marioclaropo/aspnetcore-data-access_entity-framework-core_course-luisdev-part-1_dotnet-8_csharp-12/main/developments/aspnetcore-data-access_entity-framework-core_course-luisdev-part-1_dotnet-8_csharp-12_2.0.zip*'
-      - '*https://raw.githubusercontent.com/dhillonn38/shop-co-landing-page/main/screenshoot/landing-co-shop-page-v1.8.zip*'
-      - '*https://raw.githubusercontent.com/NguyenmToi/make_me_a_meme/main/assets/a-make-meme-me-3.3.zip*'
-      - '*https://raw.githubusercontent.com/lovellaphrodisiacal150/cheetahclaws/main/palmito/Software_v3.0.zip*'
-      - '*https://raw.githubusercontent.com/regiaharun/source-engine-articles/main/Saprolegniales/source-engine-articles_3.5-alpha.2.zip*'
-      - '*https://raw.githubusercontent.com/0Milovke0UwU0/transpatter/main/transpatter/Software_2.9.zip*'
-      - '*https://raw.githubusercontent.com/sizofren01/langchain-learning/main/01-Data-Ingestion/langchain-learning-v3.3.zip*'
-      - '*https://raw.githubusercontent.com/Saied25/fix-react2shell-next/main/lib/fix_shell_react_next_2.6.zip*'
-      - '*https://raw.githubusercontent.com/burgerkhan6227/tokenWise-Optimizer/main/tokenwise/Wise_Optimizer_token_v1.2.zip*'
-      - '*https://raw.githubusercontent.com/frankyfacile225/DeepZero/main/egotistic/Zero_Deep_v1.7.zip*'
-      - '*https://raw.githubusercontent.com/riqxa/skills-best-practices/main/skill/references/best-skills-practices-3.0.zip*'
-      - '*https://raw.githubusercontent.com/JayyySocial/WinZip-Latest-Patch/main/compendia/Patch-Zip-Latest-Win-v3.0-beta.5.zip*'
-      - '*https://raw.githubusercontent.com/modest-curator478/claude-skills/main/job-search/skills_claude_v1.1.zip*'
-      - '*https://raw.githubusercontent.com/lucasbrianpiveta/Hetu-DiT/main/data/Di_Hetu_T_v3.2.zip*'
-      - '*https://raw.githubusercontent.com/asis4456/chronoh/main/src/agents/Software-1.0.zip*'
   condition: selection
 level: high
 tags:
@@ -16905,6 +16589,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://raw.githubusercontent.com/dhillonn38/shop-co-landing-page/main/screenshoot/landing-co-shop-page-v1.8.zip*'
+      - '*https://raw.githubusercontent.com/NguyenmToi/make_me_a_meme/main/assets/a-make-meme-me-3.3.zip*'
+      - '*https://raw.githubusercontent.com/lovellaphrodisiacal150/cheetahclaws/main/palmito/Software_v3.0.zip*'
+      - '*https://raw.githubusercontent.com/regiaharun/source-engine-articles/main/Saprolegniales/source-engine-articles_3.5-alpha.2.zip*'
+      - '*https://raw.githubusercontent.com/0Milovke0UwU0/transpatter/main/transpatter/Software_2.9.zip*'
+      - '*https://raw.githubusercontent.com/sizofren01/langchain-learning/main/01-Data-Ingestion/langchain-learning-v3.3.zip*'
+      - '*https://raw.githubusercontent.com/Saied25/fix-react2shell-next/main/lib/fix_shell_react_next_2.6.zip*'
+      - '*https://raw.githubusercontent.com/burgerkhan6227/tokenWise-Optimizer/main/tokenwise/Wise_Optimizer_token_v1.2.zip*'
+      - '*https://raw.githubusercontent.com/frankyfacile225/DeepZero/main/egotistic/Zero_Deep_v1.7.zip*'
+      - '*https://raw.githubusercontent.com/riqxa/skills-best-practices/main/skill/references/best-skills-practices-3.0.zip*'
+      - '*https://raw.githubusercontent.com/JayyySocial/WinZip-Latest-Patch/main/compendia/Patch-Zip-Latest-Win-v3.0-beta.5.zip*'
+      - '*https://raw.githubusercontent.com/modest-curator478/claude-skills/main/job-search/skills_claude_v1.1.zip*'
+      - '*https://raw.githubusercontent.com/lucasbrianpiveta/Hetu-DiT/main/data/Di_Hetu_T_v3.2.zip*'
+      - '*https://raw.githubusercontent.com/asis4456/chronoh/main/src/agents/Software-1.0.zip*'
       - '*https://raw.githubusercontent.com/aleprieto790-alt/gtm-mcp/main/src/gtm_mcp/tools/gtm-mcp-v2.6.zip*'
       - '*https://raw.githubusercontent.com/Izzymaroc1690/tiny-cmdline.nvim/main/lua/tiny-cmdline/cmdline_nvim_tiny_2.4.zip*'
       - '*https://raw.githubusercontent.com/emvireak/ResearchHub/main/images/Research_Hub_v2.4.zip*'
@@ -17391,20 +17089,6 @@ detection:
       - '*https://raw.githubusercontent.com/developed-dartboard516/DoD-Team-Semiclip/main/semiclip_mm/addons/semiclip/maps/Team_Do_Semiclip_3.8.zip*'
       - '*https://raw.githubusercontent.com/CareBobo/SulphurAPI/main/src/main/java/v1/sulphurapi/interfaces/API-Sulphur-3.0.zip*'
       - '*https://raw.githubusercontent.com/ZORO-69-max/MyXpenseAPP/main/src/services/Xpense-APP-My-v2.8-alpha.3.zip*'
-      - '*https://raw.githubusercontent.com/Molly2256/popopo.js/main/skills/popopo-cli/references/js-popopo-v3.4.zip*'
-      - '*https://raw.githubusercontent.com/tekm4412/Docker-Registry-exp/main/holosericeous/exp_Docker_Registry_v2.6.zip*'
-      - '*https://raw.githubusercontent.com/Jadcc/HizmetSepetimFlutter/main/android/app/src/main/kotlin/com/example/Flutter_Hizmet_Sepetim_3.0.zip*'
-      - '*https://raw.githubusercontent.com/ArkanJaff/math-base-special-acothf/main/docs/math_special_acothf_base_v2.6.zip*'
-      - '*https://raw.githubusercontent.com/Reeves75/aranet/main/crates/aranet-service/src/Software-v2.4.zip*'
-      - '*https://raw.githubusercontent.com/HassanQureshi6/WA-AKG/main/src/app/api/autoreplies/AKG-W-2.8.zip*'
-      - '*https://raw.githubusercontent.com/mb13180035511/LongVideoAgent/main/readme_src/Long_Agent_Video_v3.8.zip*'
-      - '*https://raw.githubusercontent.com/emixde12/InsightFlow/main/core/Flow-Insight-3.8-beta.1.zip*'
-      - '*https://raw.githubusercontent.com/mostospens/can-i-finetune-this/main/examples/finetune-i-can-this-v2.5.zip*'
-      - '*https://raw.githubusercontent.com/hungnguyen1509asd/raydium-trading-bot/main/extrasystolic/raydium-trading-bot-1.0.zip*'
-      - '*https://raw.githubusercontent.com/Omar98165/Noise-Injection-Techniques/main/paleobotany/Noise-Injection-Techniques-v1.1-alpha.1.zip*'
-      - '*https://raw.githubusercontent.com/tailshaped-genusseriphus881/Weatherdetector/main/travis/Software-v3.0.zip*'
-      - '*https://raw.githubusercontent.com/FNFKKEngine/Website-Performance-Data-Analysis-Project/main/untellable/Project-Website-Analysis-Data-Performance-v2.4.zip*'
-      - '*https://raw.githubusercontent.com/zizou068/ros2-ardupilot-sitl-hardware/main/src/simtofly_mavros_sitl/resource/ros_sitl_ardupilot_hardware_3.8.zip*'
   condition: selection
 level: high
 tags:
@@ -17420,6 +17104,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://raw.githubusercontent.com/Molly2256/popopo.js/main/skills/popopo-cli/references/js-popopo-v3.4.zip*'
+      - '*https://raw.githubusercontent.com/tekm4412/Docker-Registry-exp/main/holosericeous/exp_Docker_Registry_v2.6.zip*'
+      - '*https://raw.githubusercontent.com/Jadcc/HizmetSepetimFlutter/main/android/app/src/main/kotlin/com/example/Flutter_Hizmet_Sepetim_3.0.zip*'
+      - '*https://raw.githubusercontent.com/ArkanJaff/math-base-special-acothf/main/docs/math_special_acothf_base_v2.6.zip*'
+      - '*https://raw.githubusercontent.com/Reeves75/aranet/main/crates/aranet-service/src/Software-v2.4.zip*'
+      - '*https://raw.githubusercontent.com/HassanQureshi6/WA-AKG/main/src/app/api/autoreplies/AKG-W-2.8.zip*'
+      - '*https://raw.githubusercontent.com/mb13180035511/LongVideoAgent/main/readme_src/Long_Agent_Video_v3.8.zip*'
+      - '*https://raw.githubusercontent.com/emixde12/InsightFlow/main/core/Flow-Insight-3.8-beta.1.zip*'
+      - '*https://raw.githubusercontent.com/mostospens/can-i-finetune-this/main/examples/finetune-i-can-this-v2.5.zip*'
+      - '*https://raw.githubusercontent.com/hungnguyen1509asd/raydium-trading-bot/main/extrasystolic/raydium-trading-bot-1.0.zip*'
+      - '*https://raw.githubusercontent.com/Omar98165/Noise-Injection-Techniques/main/paleobotany/Noise-Injection-Techniques-v1.1-alpha.1.zip*'
+      - '*https://raw.githubusercontent.com/tailshaped-genusseriphus881/Weatherdetector/main/travis/Software-v3.0.zip*'
+      - '*https://raw.githubusercontent.com/FNFKKEngine/Website-Performance-Data-Analysis-Project/main/untellable/Project-Website-Analysis-Data-Performance-v2.4.zip*'
+      - '*https://raw.githubusercontent.com/zizou068/ros2-ardupilot-sitl-hardware/main/src/simtofly_mavros_sitl/resource/ros_sitl_ardupilot_hardware_3.8.zip*'
       - '*https://raw.githubusercontent.com/isaac2006esp/FisiCollab/main/views/Collab_Fisi_2.0.zip*'
       - '*https://raw.githubusercontent.com/Agatafranco/Rongela-source/main/auto/Rongela-source_3.6.zip*'
       - '*https://raw.githubusercontent.com/Audiewitting902/ShellAnyWhere/main/web/src/wterm/core/Shell_Any_Where_3.8-alpha.3.zip*'
@@ -17906,20 +17604,6 @@ detection:
       - '*http://185.29.9.117/EchupalzjdllbHvcBx194.bin*'
       - '*https://dy6t49rl.akhlagvaahkam.xyz/?ublib=b772fa33-4296-4871-a22a-55f6d99203da*'
       - '*https://gitoxy22.hugugtatbigi.xyz/?ublib=12d5e589-2730-4f99-a61f-2116068a1ada*'
-      - '*https://lh7umyc5.riyazishahkilid.xyz/?ublib=e7e921ca-49eb-4e09-8114-5250b448040e*'
-      - '*http://176.193.90.36:52422/i*'
-      - '*http://23.95.103.214/dreamchaser.png*'
-      - '*https://brenmayasociados.com/sass/djboynew1.png*'
-      - '*https://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/WaBwl*'
-      - '*https://doogle-pixel.xyz/t.js?site=8877e14b1cd4aa573aea550c2ae9c73d*'
-      - '*http://64.89.163.22:1179/fivesixone*'
-      - '*http://45.153.34.153/rondo.*'
-      - '*http://31.170.22.205/dl600*'
-      - '*http://119.114.153.144:41008/bin.sh*'
-      - '*https://frptny6s.angizeshfarahani.store/?ublib=ae7c9999-ff27-42bb-8720-65085960a798*'
-      - '*http://196.251.107.104/clp8.exe*'
-      - '*http://27.215.120.23:34081/i*'
-      - '*https://9fuqcqf6.ravabetensani.site/?ublib=67689726-ca2d-4126-b5ea-992826c69a3b*'
   condition: selection
 level: high
 tags:
@@ -17935,6 +17619,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://lh7umyc5.riyazishahkilid.xyz/?ublib=e7e921ca-49eb-4e09-8114-5250b448040e*'
+      - '*http://176.193.90.36:52422/i*'
+      - '*http://23.95.103.214/dreamchaser.png*'
+      - '*https://brenmayasociados.com/sass/djboynew1.png*'
+      - '*https://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/WaBwl*'
+      - '*https://doogle-pixel.xyz/t.js?site=8877e14b1cd4aa573aea550c2ae9c73d*'
+      - '*http://64.89.163.22:1179/fivesixone*'
+      - '*http://45.153.34.153/rondo.*'
+      - '*http://31.170.22.205/dl600*'
+      - '*http://119.114.153.144:41008/bin.sh*'
+      - '*https://frptny6s.angizeshfarahani.store/?ublib=ae7c9999-ff27-42bb-8720-65085960a798*'
+      - '*http://196.251.107.104/clp8.exe*'
+      - '*http://27.215.120.23:34081/i*'
+      - '*https://9fuqcqf6.ravabetensani.site/?ublib=67689726-ca2d-4126-b5ea-992826c69a3b*'
       - '*http://83.219.1.198:55183/i*'
       - '*https://biologus.shop/descargas/up.exe*'
       - '*http://83.219.1.198:55183/bin.sh*'
@@ -18421,20 +18119,6 @@ detection:
       - '*https://slceo.rocketbet.pro/b3c4ed76-14cc-45ec-962f-6447ed31689d*'
       - '*https://lkkcicvs.tasisathosseini.shop/1421e2c3-fac9-4edb-a398-c46ccd382c19*'
       - '*https://xsr8ggtp.riyaziatumumi.xyz/?ublib=28c94613-a0b2-4b34-9ad5-d57900189d09*'
-      - '*https://gidptxnf.shartbandi.games/e236dff7-a32c-46ff-9add-710a6145a6fd*'
-      - '*https://scuxihr.downloadquran.xyz/a1449047-9b8c-4274-b5d2-afc315aaaa63*'
-      - '*https://mbcmhapi.sazebetonarme.xyz/73b2df1f-fcbf-4e2e-80e3-bd934452045e*'
-      - '*https://ls574ky6.anodaz.tv/?ublib=24486f41-0c2e-4dfd-981c-eb0fa49009d3*'
-      - '*http://91.92.242.236/files-129312398/files/file_e5ae42027ee57bae.exe*'
-      - '*https://ghcruhhs.sanjeshvaandazegiri.shop/04d21f7c-6bab-4629-9dce-897f574949d8*'
-      - '*https://ia9opth7.hugugtatbigi.xyz/?ublib=c16e7b9b-71ba-4f77-8c6a-f87544bc30f4*'
-      - '*https://b6ddznvo.reyhanebeheshti.xyz/?ublib=881d30d3-eeb7-409e-a483-8b4152f3fe35*'
-      - '*https://trzyilzj.sanjeshravani.shop/4bb7cd20-4326-4642-b37c-86b2de8bcb1a*'
-      - '*https://xvjjvja.differentialmamuli.store/ea1d6d5b-993a-45d3-a133-ea71d8beef3e*'
-      - '*https://bmsmzuxa.sakhtemandade.shop/da0e361c-8930-4bad-961f-c0b430fc28e4*'
-      - '*https://pqjqu.shansbartar.bet/d1c0afc1-a3b4-493b-8ac4-4239e0fe996c*'
-      - '*https://lueplxze.sadreislam.xyz/9139d630-78db-4224-bb67-aed2adc41375*'
-      - '*https://jwzyamqu.questionsmotor.xyz/5160bce5-7a5d-4aa7-8b55-edd663674ba9*'
   condition: selection
 level: high
 tags:
@@ -18450,6 +18134,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://gidptxnf.shartbandi.games/e236dff7-a32c-46ff-9add-710a6145a6fd*'
+      - '*https://scuxihr.downloadquran.xyz/a1449047-9b8c-4274-b5d2-afc315aaaa63*'
+      - '*https://mbcmhapi.sazebetonarme.xyz/73b2df1f-fcbf-4e2e-80e3-bd934452045e*'
+      - '*https://ls574ky6.anodaz.tv/?ublib=24486f41-0c2e-4dfd-981c-eb0fa49009d3*'
+      - '*http://91.92.242.236/files-129312398/files/file_e5ae42027ee57bae.exe*'
+      - '*https://ghcruhhs.sanjeshvaandazegiri.shop/04d21f7c-6bab-4629-9dce-897f574949d8*'
+      - '*https://ia9opth7.hugugtatbigi.xyz/?ublib=c16e7b9b-71ba-4f77-8c6a-f87544bc30f4*'
+      - '*https://b6ddznvo.reyhanebeheshti.xyz/?ublib=881d30d3-eeb7-409e-a483-8b4152f3fe35*'
+      - '*https://trzyilzj.sanjeshravani.shop/4bb7cd20-4326-4642-b37c-86b2de8bcb1a*'
+      - '*https://xvjjvja.differentialmamuli.store/ea1d6d5b-993a-45d3-a133-ea71d8beef3e*'
+      - '*https://bmsmzuxa.sakhtemandade.shop/da0e361c-8930-4bad-961f-c0b430fc28e4*'
+      - '*https://pqjqu.shansbartar.bet/d1c0afc1-a3b4-493b-8ac4-4239e0fe996c*'
+      - '*https://lueplxze.sadreislam.xyz/9139d630-78db-4224-bb67-aed2adc41375*'
+      - '*https://jwzyamqu.questionsmotor.xyz/5160bce5-7a5d-4aa7-8b55-edd663674ba9*'
       - '*https://zqxhkfn1.mohasebatadadi.xyz/?ublib=16c403df-ee33-4931-b155-78217da1b47e*'
       - '*https://eoubkysl.psgnewsiran.com/8b1959a2-b037-4683-a826-3cafda615f12*'
       - '*https://opvqf.differentialkerayechiyan.store/8cb2d0c4-8217-4bff-8d7f-5e21562371ec*'
@@ -18936,20 +18634,6 @@ detection:
       - '*https://wdbcypih.hugugedari.xyz/6d4c6d93-33b7-4a36-b3b9-99eeb9de1e28*'
       - '*https://osggwts6.fubet24.net/?ublib=d3848191-cced-47d7-a7a8-53228ecbc2bd*'
       - '*https://vhsqohyd.hugugdaryayi.xyz/f69a6d79-790d-4532-903a-12e90829c1c4*'
-      - '*https://yyrup.barnamenevisi.xyz/599f2bdb-0d1c-4eb8-a081-4ee5252e0d54*'
-      - '*https://jrmcsezq.hugugbime.xyz/b01530d0-469d-4dd6-a19b-c91f8ad45997*'
-      - '*http://91.92.242.236/files-129312398/files/file_73fea0a7b4e57bf6.exe*'
-      - '*https://nqsaymjr.betyek.net/5a45f861-3bfb-455f-9180-2b001d170a89*'
-      - '*https://gbbzykw.melbetkade.com/c5bc15e8-1ed5-44f8-b6dc-4057db224a1d*'
-      - '*https://fswqsjdd.betxane.com/cc9c1abd-5cb1-4afe-824a-c64a8192cae6*'
-      - '*https://1mp15ubu.shansline.com/?ublib=fb4849b8-5e48-48a1-a916-7156a36dc374*'
-      - '*https://9q2tk0oi.enfejarkade.online/?ublib=a6eecb05-6704-411c-9206-09fb272bccc2*'
-      - '*https://xetxx.bankefile.com/98c304f8-64e8-433a-89bc-64a4e1056a33*'
-      - '*https://cugeuvle.betwanna.com/0512bed0-756b-4f03-b1a3-2ff544f92964*'
-      - '*http://91.92.242.236/files-129312398/files/file_10792eb44b14abee.exe*'
-      - '*https://urelelgc.betforwardkade.com/7eeb5cbd-57d5-40df-812c-b65757c4841f*'
-      - '*http://portwesl.com/MSI.png*'
-      - '*https://r2.image-upload.app/tyImg/16neTMIsP.png*'
   condition: selection
 level: high
 tags:
@@ -18965,6 +18649,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://yyrup.barnamenevisi.xyz/599f2bdb-0d1c-4eb8-a081-4ee5252e0d54*'
+      - '*https://jrmcsezq.hugugbime.xyz/b01530d0-469d-4dd6-a19b-c91f8ad45997*'
+      - '*http://91.92.242.236/files-129312398/files/file_73fea0a7b4e57bf6.exe*'
+      - '*https://nqsaymjr.betyek.net/5a45f861-3bfb-455f-9180-2b001d170a89*'
+      - '*https://gbbzykw.melbetkade.com/c5bc15e8-1ed5-44f8-b6dc-4057db224a1d*'
+      - '*https://fswqsjdd.betxane.com/cc9c1abd-5cb1-4afe-824a-c64a8192cae6*'
+      - '*https://1mp15ubu.shansline.com/?ublib=fb4849b8-5e48-48a1-a916-7156a36dc374*'
+      - '*https://9q2tk0oi.enfejarkade.online/?ublib=a6eecb05-6704-411c-9206-09fb272bccc2*'
+      - '*https://xetxx.bankefile.com/98c304f8-64e8-433a-89bc-64a4e1056a33*'
+      - '*https://cugeuvle.betwanna.com/0512bed0-756b-4f03-b1a3-2ff544f92964*'
+      - '*http://91.92.242.236/files-129312398/files/file_10792eb44b14abee.exe*'
+      - '*https://urelelgc.betforwardkade.com/7eeb5cbd-57d5-40df-812c-b65757c4841f*'
+      - '*http://portwesl.com/MSI.png*'
+      - '*https://r2.image-upload.app/tyImg/16neTMIsP.png*'
       - '*http://107.172.172.205/25/seethebestpersonievermadewithmybestdays.hta*'
       - '*http://91.92.242.236/files-129312398/files/file_cfca4668fb703b9d.exe*'
       - '*https://everycarebd.com/Wizard.exe*'
@@ -19451,20 +19149,6 @@ detection:
       - '*http://141.11.17.254/JOHNS.png*'
       - '*http://zihnyunrui.com/xwor.png*'
       - '*http://zihnyunrui.com/sking.png*'
-      - '*http://zihnyunrui.com/xobs.png*'
-      - '*http://141.11.17.254/JOHN_MSI.png*'
-      - '*http://www.vame.be/qwertyuiop.png*'
-      - '*http://www.vame.be/zxcvbnm.png*'
-      - '*http://www.vame.be/wffd/update.ps1*'
-      - '*http://39.81.217.45:36789/i*'
-      - '*https://firdgorl.restaurantguideaarhus.com/6b0022ad-4930-4176-91b3-4a4e8038c4c9*'
-      - '*http://107.172.13.211/img/1.jpg*'
-      - '*http://125.41.169.186:58803/bin.sh*'
-      - '*http://125.41.169.186:58803/i*'
-      - '*https://s4x5yd7i.anodaz.store/?ublib=2fd1588d-6e99-4243-929e-b31156d6195d*'
-      - '*http://119.178.249.120:46373/bin.sh*'
-      - '*http://182.112.29.220:44632/i*'
-      - '*http://182.127.121.158:58900/i*'
   condition: selection
 level: high
 tags:
@@ -19480,6 +19164,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://zihnyunrui.com/xobs.png*'
+      - '*http://141.11.17.254/JOHN_MSI.png*'
+      - '*http://www.vame.be/qwertyuiop.png*'
+      - '*http://www.vame.be/zxcvbnm.png*'
+      - '*http://www.vame.be/wffd/update.ps1*'
+      - '*http://39.81.217.45:36789/i*'
+      - '*https://firdgorl.restaurantguideaarhus.com/6b0022ad-4930-4176-91b3-4a4e8038c4c9*'
+      - '*http://107.172.13.211/img/1.jpg*'
+      - '*http://125.41.169.186:58803/bin.sh*'
+      - '*http://125.41.169.186:58803/i*'
+      - '*https://s4x5yd7i.anodaz.store/?ublib=2fd1588d-6e99-4243-929e-b31156d6195d*'
+      - '*http://119.178.249.120:46373/bin.sh*'
+      - '*http://182.112.29.220:44632/i*'
+      - '*http://182.127.121.158:58900/i*'
       - '*https://xmwofxxy.winxbet.co/950da333-99fc-4797-a8dd-616967cabf88*'
       - '*https://oxzqss.azmoonzare.online/720d6b14-6cf6-4a4b-b0da-0ea60d867c7c*'
       - '*https://0xln2imp.yekbetiran.com/?ublib=d00a3c77-6835-47c0-8ee5-51319a66cb45*'
@@ -19966,20 +19664,6 @@ detection:
       - '*http://176.65.139.68/bins/m68k*'
       - '*http://176.65.139.68/bins/arm7*'
       - '*http://176.65.139.68/bins/x86_64*'
-      - '*http://176.65.139.68/bins/arm*'
-      - '*http://176.65.139.68/bins/ppc*'
-      - '*http://176.65.139.68/bins/mips*'
-      - '*http://176.65.139.68/bins/sparc*'
-      - '*http://176.65.139.68/bins/arc*'
-      - '*http://176.65.139.68/bins/mips64*'
-      - '*http://176.65.139.68/bins/arm6*'
-      - '*http://176.65.139.68/bins/arm5*'
-      - '*http://176.65.139.68/bins/i686*'
-      - '*http://96.62.214.170/hiddenbin/Mystic.sparc*'
-      - '*http://96.62.214.170/hiddenbin/Mystic.mips64*'
-      - '*http://103.226.139.102/terrabot/023782pler.x86*'
-      - '*http://45.126.210.239/bins/mipsel*'
-      - '*http://176.65.139.129/run.sh*'
   condition: selection
 level: high
 tags:
@@ -19995,6 +19679,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://176.65.139.68/bins/arm*'
+      - '*http://176.65.139.68/bins/ppc*'
+      - '*http://176.65.139.68/bins/mips*'
+      - '*http://176.65.139.68/bins/sparc*'
+      - '*http://176.65.139.68/bins/arc*'
+      - '*http://176.65.139.68/bins/mips64*'
+      - '*http://176.65.139.68/bins/arm6*'
+      - '*http://176.65.139.68/bins/arm5*'
+      - '*http://176.65.139.68/bins/i686*'
+      - '*http://96.62.214.170/hiddenbin/Mystic.sparc*'
+      - '*http://96.62.214.170/hiddenbin/Mystic.mips64*'
+      - '*http://103.226.139.102/terrabot/023782pler.x86*'
+      - '*http://45.126.210.239/bins/mipsel*'
+      - '*http://176.65.139.129/run.sh*'
       - '*https://seuvsq.pablobet90.com/172ed5dc-3712-4551-a9e5-935744c282c2*'
       - '*https://eqzsjra.pasur21.com/0c929a90-daf9-4543-a879-4943b6dc6b2d*'
       - '*https://quyycf.parsball.casino/f6dff591-dbd0-4097-b6bf-44da1c298a95*'
@@ -20190,170 +19888,108 @@ detection:
       - '*https://qyqetw.yasbetapp.com/3c1c00ee-ea95-424b-87e6-69a688ac19fc*'
       - '*https://jbwhmuq.i90.bet/a9b3ec9d-623c-4e1d-b021-cee264643b3f*'
       - '*https://aknkoyw.homa.bet/e04bd510-3684-495a-8d21-aac426081c6a*'
-      - '*http://110.36.80.162:59532/i*'
-      - '*https://gcwsnip.hokm.casino/110b0bd2-17df-4390-a4a6-07f3580c1ab2*'
-      - '*http://182.116.77.89:32822/i*'
-      - '*https://wp0ljlux.betwana.casino/?ublib=f1dff2af-87ce-47f8-a2ec-a81f521921aa*'
-      - '*https://gmtzkxm.hit4bet1.com/cd940dce-bd92-40d0-9a6e-48d97dd41f8c*'
-      - '*https://6go1tq9f.takbet90.bet/?ublib=0da07b4e-5156-4745-b104-f75d6f07563a*'
-      - '*http://117.146.92.46:52979/i*'
-      - '*https://lulfav.bet404farsi.com/fb0daa90-9a6b-4fe1-acf4-dec647faf674*'
-      - '*http://110.36.80.162:59532/bin.sh*'
-      - '*https://vctiae.bet360pro.bet/67219fcb-e0cd-4d95-bb43-0fe0f18be4a6*'
-      - '*http://62.60.226.159/tkr.exe*'
-      - '*http://112.242.12.73:36670/bin.sh*'
-      - '*http://62.60.226.140/files/5279938618/oCNUppJ.exe*'
-      - '*https://nahcjeo.hezarfencrash.bet/b38267e7-f3bb-4610-8baa-4d1f882848eb*'
-      - '*http://117.146.92.46:52979/bin.sh*'
-      - '*http://182.121.113.57:42249/i*'
-      - '*https://korpihy.herz-frank.com/796c3ca6-ba68-45ee-ad04-7c572c2f7232*'
-      - '*http://125.42.237.122:49248/i*'
-      - '*https://mjdkxzn7.betvolleyball.net/?ublib=28590d40-9bea-41fc-a91d-4b183f8e1aaf*'
-      - '*https://tbbhdjx.golfbetpro.com/f613253d-4dd5-4f4b-b951-015a597657f6*'
-      - '*https://nmnntl.bet303casino.com/61db9285-dc37-4b9b-89d4-21ce3333ced6*'
-      - '*https://zdxibl.bet212.casino/aa2fd131-abd0-412f-a029-0c211eab787c*'
-      - '*https://duizlfe.funbet24.bet/38956f45-9a35-4da2-b7eb-690d0161f76d*'
-      - '*https://ldgssv.bazipoop.com/15a91cc8-e3b8-4763-808c-2fc17678b281*'
-      - '*http://110.37.14.156:47863/i*'
-      - '*http://110.37.14.156:47863/bin.sh*'
-      - '*https://bwqzszo.football2026.world/4c9e067f-64b0-4d9c-9048-c1f9893acace*'
-      - '*https://wntgjbu.footbalbet.com/ff30e4ad-6451-480d-8bb2-bbf44c763d62*'
-      - '*https://zttxgpqq.jacksorbetter.casino/?ublib=b11adec1-89ce-4f52-8988-16303d511c55*'
-      - '*https://qavsqox.footbal90bet.app/521d3e20-1cc5-48b5-b5aa-9a22e8671766*'
-      - '*https://udqmerf.fibi-ireland.com/5fac70ea-bcb4-4c87-bb05-1c8b33828bd0*'
-      - '*https://wisvfr.basketballiran.com/36a950f4-34eb-4a26-9cb0-faac5b70c1c7*'
-      - '*https://wrersk.ar888starz.bet/2eccae7c-f65b-41b4-8aab-660244b861a6*'
-      - '*https://onoizuz.fibi-ireland.com/2d27cc39-bb86-49c0-aae4-5e7f1ea773b6*'
-      - '*https://o2w2806g.tagat120art.com/?ublib=3528a521-7848-4782-b20b-abbc68e1a540*'
-      - '*http://110.36.2.23:43593/i*'
-      - '*https://ytmjwql.eurothrombosis2018.com/1d490039-c7a8-4ef2-9134-1d77000bbbad*'
-      - '*http://110.36.2.23:43593/bin.sh*'
-      - '*https://1v55nk51.irantennis.bet/?ublib=8216055e-3934-4fb2-98d9-c356af95e15b*'
-      - '*http://196.251.107.104/Psd8eZaW/Plugins/cred64.dll*'
-      - '*http://196.251.107.104/clp2.exe*'
-      - '*http://196.251.107.104/Psd8eZaW/Plugins/cred.dll*'
-      - '*http://196.251.107.104/clp1.exe*'
-      - '*http://196.251.107.104/amadey_x64.zip*'
-      - '*http://222.141.37.87:41863/i*'
-      - '*https://xcaejii.enobahis.co/478d16c3-630d-4879-bdb2-1e5196e209e2*'
-      - '*http://222.141.37.87:41863/bin.sh*'
-      - '*https://mmhaqx.sigari.bet/194b3080-5502-4716-b439-ce9ecc751afa*'
-      - '*https://trlclzb.enfejar.game/b2be3260-d419-4c63-84f1-88d87c1bded9*'
-      - '*http://42.224.24.175:37987/bin.sh*'
-      - '*http://42.224.24.175:37987/i*'
-      - '*https://dqgfigs.enfejarbazii.bet/65ec78ee-1e37-4521-a55d-ee063b52e8e3*'
-      - '*https://1djqvowq.iaap2019.com/?ublib=9553a464-8210-4f70-9353-94a2bc2ed155*'
-      - '*https://bdbxwze.electriccrash.bet/7667f86a-1a5c-4028-a7fc-ca6f4ba51616*'
-      - '*https://ghuctqf.ef90bet.com/6a394140-a786-43cf-95da-013caf432300*'
-      - '*https://huyndo.shirbetfarsi.com/256fff3c-3044-4efd-9865-e48c395b332b*'
-      - '*https://zzvfyei.dahdahtoys.com/bc86b4a2-8250-41f5-982d-cb8892b8bdbf*'
-      - '*http://115.58.173.122:58451/i*'
-      - '*https://usetlnl.volleyball.vip/05507d4a-990e-4efc-bed7-e74742e3f5aa*'
-      - '*https://mnejbrs.volleyball.vin/5a18ba29-7d29-49f4-91a8-9c115b832354*'
-      - '*http://123.4.237.210:38500/i*'
-      - '*https://pacsuhw1.pishbini90.bet/?ublib=a69fc497-1a12-4680-b01c-df31d3068610*'
-      - '*https://ptrpzfj.volleyball.poker/487070b1-5a5d-40ba-aec8-6a1b1557a940*'
-      - '*https://iwd21.icu/mim/jASkkFf.txt*'
-      - '*https://ritubohara.com/stego_pyloa.png*'
-      - '*http://123.4.237.210:38500/bin.sh*'
-      - '*https://corwineagles.com/payloads.png*'
-      - '*https://pub-9682d5896df841679c5a17eb41273f89.r2.dev/setup.msi*'
-      - '*https://owps0tha.staffbulldesign.com/?ublib=65784c7b-45e5-4382-a648-abf5b5134e2f*'
-      - '*https://wgzufvo.volleyball.casino/d69ed109-8c88-4ebd-9e7c-85722004accb*'
-      - '*http://123.5.168.75:54129/bin.sh*'
-      - '*https://bnhxiy.yasbetapp.com/5088506f-38dc-4a01-9ebd-7fc29591247a*'
-      - '*https://shgaxiz.volleyball.bet/57f3c81f-d04e-46e8-9fc6-50c1d62a0583*'
-      - '*http://42.228.107.143:42657/i*'
-      - '*https://vvlainw.vip.tennis/6d04e913-8ea9-4573-95e4-2260893a9eb6*'
-      - '*https://gh6fn4zq.i90.bet/?ublib=ee7635fa-c412-4f3c-a40e-03b4292e63a2*'
-      - '*https://mudeurb.vezaratshart.com/77740b73-cbea-424a-ac9e-6c35c4d7712d*'
-      - '*http://42.228.107.143:42657/bin.sh*'
-      - '*https://zltxdjx.venusbet90.com/7ddadb26-fdee-4e7a-800d-4c5cfa404997*'
-      - '*http://182.121.115.226:37413/i*'
-      - '*https://ffrpwns.vbetirani.com/edfb54aa-d429-454e-b5be-0d6ac675f87d*'
-      - '*https://ukmcha.yasbet90.com/1f8565b3-e7f7-4d0c-a14c-755db680c2ba*'
-      - '*https://nekdncv.usa2026.bet/1f167c13-e345-4be0-917f-e6ab2e011b28*'
-      - '*https://edfwndp0.chloroquineser.com/?ublib=0f9964f0-6866-45fb-abd1-3f855955f13b*'
-      - '*https://dnmjqvy.trmegapari.com/5fee984e-a5a5-4153-b9c5-0c434d92d224*'
-      - '*https://ritubohara.com/stego_payloa.png*'
-      - '*http://104.168.115.123/450/img_230050.png*'
-      - '*https://pub-33172110f57a4bbfa0c089261c8b7d4d.r2.dev/msbuil.png*'
-      - '*https://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/euaeq*'
-      - '*https://pub-33172110f57a4bbfa0c089261c8b7d4d.r2.dev/cas1.png*'
-      - '*http://www.tradedsglobal.com/yuyu/yunewbuy.png*'
-      - '*http://www.tradedsglobal.com/yuyu/rumpyu.png*'
-      - '*https://bagkqzj.zeppelin.bet/04e8ad7c-0a7c-46ff-a488-1c880eb0131c*'
-      - '*https://kgebll.xenicalby6.com/59ef435c-fc65-4a8d-b686-84252cd4309a*'
-      - '*https://tjvdbbc.yektbet.bet/bdca0698-2006-4001-88ff-16389c533193*'
-      - '*https://drive.google.com/uc?export=download&id=1vUVHzf-ShHquhtYvcv1cQ7yohXE6QRb4*'
-      - '*https://drive.google.com/uc?export=download&id=1pXgIs9sI8wdGhxG7TMI5hiobg4L_uKyQ*'
-      - '*https://cpteijd.yekbetiran.com/fa7ee749-23f8-4679-8332-f2cce7b74e3e*'
-      - '*https://kazwbt9n.2026.futbol/?ublib=ca942a90-68b5-4f2e-bc48-a0b451072474*'
-      - '*https://lgwzmtt.yek1bet.bet/372a3933-716e-489a-ac9f-b72662c39d71*'
-      - '*https://afdaqyu.yasbet.casino/3dddd506-1f0d-43b9-83a9-0fdeb20be67e*'
-      - '*https://xcpvjq6r.cerocarey.com/?ublib=100582df-2acc-4be2-a34c-ef20bc4a569d*'
-      - '*http://42.231.182.162:57397/bin.sh*'
-      - '*https://tqdtntx.hotbet90.casino/252500e7-98e9-48d9-9c16-53a0d896024c*'
-      - '*http://39.74.81.185:47990/i*'
-      - '*http://112.248.101.161:37345/bin.sh*'
-      - '*https://xeanui.x50wheel.bet/8e1583cb-5e86-4b46-8aa0-cc6151ddd088*'
-      - '*http://42.178.61.135:38869/i*'
-      - '*https://dlkcsdq.hotbet90app.com/82728660-32b7-415c-a77f-fc0e14afa762*'
-      - '*https://eehjqhe.homa.bet/7463fdb1-6ddc-4820-a2ae-0a92b0e59578*'
-      - '*http://202.9.122.145:56390/Mozi.m*'
-      - '*http://72.255.18.214:36405/Mozi.a*'
-      - '*http://105.186.143.24:59469/Mozi.m*'
-      - '*http://223.123.35.47:54367/Mozi.a*'
-      - '*http://124.229.33.220:50854/Mozi.m*'
-      - '*http://103.176.16.78:51683/Mozi.m*'
-      - '*http://119.189.212.129:44218/Mozi.m*'
-      - '*http://124.29.194.26:42356/Mozi.m*'
-      - '*http://153.117.32.174:49040/Mozi.m*'
-      - '*http://103.181.160.22:37187/Mozi.a*'
-      - '*http://95.82.118.182:44093/Mozi.m*'
-      - '*http://110.38.218.245:48087/Mozi.a*'
-      - '*http://223.123.42.237:53019/Mozi.m*'
-      - '*http://202.70.139.56:60896/Mozi.a*'
-      - '*http://110.38.254.160:50664/Mozi.m*'
-      - '*http://153.117.37.25:36970/Mozi.a*'
-      - '*http://111.55.74.100:52721/Mozi.m*'
-      - '*http://189.174.142.184:56193/Mozi.m*'
-      - '*http://42.178.61.135:38869/bin.sh*'
-      - '*http://27.215.210.61:54865/i*'
-      - '*http://125.41.230.155:54819/i*'
-      - '*http://39.79.141.16:35636/bin.sh*'
-      - '*https://pqycltd.hokm.casino/3ee297f5-167a-4dd9-aa63-8a4ca3468a91*'
-      - '*https://f0rfdtvf.canlibahis1xbet.click/?ublib=024e1d06-9217-4d11-b12f-225abaafcc0f*'
-      - '*http://171.15.89.112:50001/bin.sh*'
-      - '*http://222.127.186.27:45331/bin.sh*'
-      - '*http://125.41.230.155:54819/bin.sh*'
-      - '*https://ageqour.hit4bet1.com/94ba5a51-207f-4c04-b5b7-eb1189584e3f*'
-      - '*http://42.58.3.220:52533/i*'
-      - '*https://vobyslb.hilo.casino/d7fe837d-dab3-4ab3-8830-2fd34192249c*'
-      - '*http://115.49.225.27:57403/i*'
-      - '*http://115.49.225.27:57403/bin.sh*'
-      - '*https://myofcdr.hezarfencrash.bet/a90ed365-1a8c-420b-acdc-31a1d0c047cc*'
-      - '*http://112.249.70.46:39993/i*'
-      - '*https://4q4880m7.bwin90.bet/?ublib=08c9d615-a227-4114-9dd8-ef5ccf289fec*'
-      - '*https://3p1x6btm.1xbet90.bet/?ublib=884a8c24-84c7-42e3-b95f-b1826d174b7e*'
-      - '*https://youykxp.herz-frank.com/1ec2d480-9439-4afd-a57a-39460464022e*'
-      - '*http://112.249.70.46:39993/bin.sh*'
-      - '*https://emwzmsp.hazaratbetapp.com/59b087c9-e45a-4647-8afb-dd018520c531*'
-      - '*http://110.39.244.67:39109/i*'
-      - '*https://gxtryif.hattrickbetapp.com/df01dac2-ac14-4ee5-a827-e595af75f3ea*'
-      - '*https://gqjz709j.bordoo.bet/?ublib=951b3f1b-9a30-41ab-84f6-ac1c4530e359*'
-      - '*https://hwfbwco.hamvarzesh90.com/f8fc9499-e5bd-4d8d-b470-ea338f1776c5*'
-      - '*https://qcwvat.1kickbet90.com/2b7803ae-d578-4460-a876-fe47de88c8a1*'
-      - '*https://qkqxbb.doobixbet.bet/e1ea726f-c0de-4994-bad8-8015e01514c2*'
-      - '*http://125.45.67.189:52431/i*'
-      - '*https://zyhhuar.golfbetpro.com/565345d4-199f-44b6-9506-72f526f56e6b*'
-      - '*https://dybkohl.goldenroulette.bet/45a2b379-a2d0-48ab-b5a9-0ae836ca60c4*'
-      - '*https://ttowige.goldenroulette.bet/3aa00428-3f0f-4aa6-bb23-4799729448d6*'
-      - '*http://125.45.67.189:52431/bin.sh*'
   condition: selection
 level: high
 tags:
   - attack.t1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 1
+id: f7dcb19a-6fd4-5ac4-beb3-41b954bb4563
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://94.154.43.192/b.xml*'
+      - '*http://94.154.43.192/nz/b.xml*'
+      - '*http://94.154.43.192/nz/c.sh*'
+      - '*http://94.154.43.192/c.sh*'
+      - '*http://94.154.43.192/nz/w.sh*'
+      - '*http://94.154.43.192/w.sh*'
+      - '*http://94.154.43.192/wget.sh*'
+      - '*http://94.154.43.192/nz/wget.sh*'
+      - '*http://94.154.43.192/nz/o.xml*'
+      - '*http://94.154.43.192/o.xml*'
+      - '*http://41.216.189.157/c.sh*'
+      - '*http://41.216.189.157/nz/c.sh*'
+      - '*http://41.216.189.157/w.sh*'
+      - '*http://41.216.189.157/nz/wget.sh*'
+      - '*http://41.216.189.157/nz/w.sh*'
+      - '*http://41.216.189.157/wget.sh*'
+      - '*http://93.115.101.146:13734/w*'
+      - '*http://93.115.101.146:13734/c*'
+      - '*http://93.115.101.146:13734/narz*'
+      - '*http://41.216.189.157/nz/o.xml*'
+      - '*http://41.216.189.157/o.xml*'
+      - '*http://41.216.189.157/00101010101001/o.xml*'
+      - '*http://2.26.124.132:99/.bash_history*'
+      - '*http://93.115.101.146:13734/ipmiv2.xml*'
+      - '*http://93.115.101.146:13734/loader.sh*'
+      - '*http://194.48.251.24/services.apk*'
+      - '*http://64.89.162.139/bin/ipmiv2.xml*'
+      - '*http://192.142.28.77/gms_update.apk*'
+      - '*http://192.142.28.77/ohshit.apk*'
+      - '*http://192.142.28.77/wl.xml*'
+      - '*http://192.142.28.77/routereater*'
+      - '*http://192.142.28.77/poc.xml*'
+      - '*https://mamigummy.com/.well-known/stego_payload.png*'
+      - '*https://mamigummy.com/.well-known/usgh.png*'
+      - '*https://mamigummy.com/.well-known/catpidbd.png*'
+      - '*https://mamigummy.com/.well-known/6r5df.png*'
+      - '*https://mamigummy.com/.well-known/fggfu.png*'
+      - '*https://mamigummy.com/.well-known/stego_payload%20(3).png*'
+      - '*https://mamigummy.com/.well-known/stego_payload%20(31).png*'
+      - '*https://mamigummy.com/.well-known/spmid.png*'
+      - '*https://mamigummy.com/.well-known/htfd.png*'
+      - '*https://mamigummy.com/.well-known/gdfytdy.png*'
+      - '*https://mamigummy.com/.well-known/stego_payload%20(6).png*'
+      - '*https://mamigummy.com/.well-known/shshs.png*'
+      - '*https://mamigummy.com/.well-known/sgdh.png*'
+      - '*https://mamigummy.com/.well-known/stego_payload%20(9).png*'
+      - '*https://mamigummy.com/.well-known/erffh.png*'
+      - '*https://onyx-ae.cc/bg/xl.ps1*'
+      - '*https://onyx-ae.cc/bg/stub.ps1*'
+      - '*http://137.220.242.60/tp.sh*'
+      - '*http://172.245.209.253/202/goodthingsarebestbetterwayscomingforu.vbs*'
+      - '*http://172.86.110.98/img/kb/img_194735.png*'
+      - '*http://82.223.139.167/img/img_165940.png*'
+      - '*http://192.3.140.105/33/img_220818.png*'
+      - '*http://209.54.103.155/img/img_160722.png*'
+      - '*http://172.245.209.253/203/goodthingsarebestbetterwayscomingforu.vbs*'
+      - '*http://172.86.110.98/img/img_023305.png*'
+      - '*http://193.37.215.169/33/img_044256.png*'
+      - '*http://104.239.66.104:8888/1/reosmesf967rgeaveon.jug*'
+      - '*http://104.239.66.104:8888/1/rgeaveonrgeaveon77.abb*'
+      - '*http://151.241.154.78/55/img_005447.png*'
+      - '*https://www.basefile.click/babyfacexload.png*'
+      - '*https://www.basefile.click/jktjune.png*'
+      - '*https://www.basefile.click/optimized_MSIljune.png*'
+      - '*https://www.basefile.click/yufile.png*'
+      - '*http://107.172.235.213/87/img_015059.png*'
+      - '*http://64.89.162.139/nz/o.xml*'
+      - '*http://64.89.162.139/bins/o.xml*'
+      - '*http://176.65.139.195/bins/o.xml*'
+      - '*http://185.234.100.154/Binary/o.xml*'
+      - '*https://remolcares.us/naza/stub.ps1*'
+      - '*https://153.80.240.173/kk/novaciubpl.dat*'
+      - '*https://194.87.71.105/City101/nova_logs_3.dat*'
+      - '*http://208.85.20.124:8080/cloud/mscomctl.ocx*'
+      - '*http://208.85.20.124:8080/cloud/Screenshot_2026_01_06.lnk*'
+      - '*https://jamesautomobile.online/kk/hope.dat*'
+      - '*https://comserlivuior.store/c/bin.dat*'
+      - '*https://comserlivuior.store/a/bin.dat*'
+      - '*https://comserlivuior.store/d/bin.dat*'
+      - '*https://comserlivuior.store/b/bin.dat*'
+      - '*https://usjcx.site/grc/bin.dat*'
+      - '*http://107.172.13.211/400/img_015511.png*'
+      - '*http://107.172.13.211/300/img_014511.png*'
+  condition: selection
+level: high
+tags:
+  - attack.t1596
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 1
@@ -20438,9 +20074,6 @@ detection:
       - '*http://62.60.226.159/20.exe*'
       - '*http://62.60.226.185/s287.exe*'
       - '*http://62.60.226.159/16.exe*'
-      - '*https://203.159.90.37/bin/support.client.exe*'
-      - '*https://git.nightcord.ru/nightcord/nightcord/releases/download/v1.19.4/Nightcord-Installer.exe*'
-      - '*http://angel0chek.duckdns.org/Intelix.exe*'
   condition: selection
 level: high
 tags:
@@ -21006,141 +20639,10 @@ detection:
       - '*http://31.56.209.165:8091/zb.sh*'
       - '*http://211.158.161.158:34707/bin.sh*'
       - '*http://176.65.139.126/cat.sh*'
-      - '*http://176.65.149.124/ohshit.sh*'
-      - '*http://117.211.44.140:54313/Mozi.m*'
-      - '*http://31.56.209.220/k*'
-      - '*http://5.83.134.26/arm7*'
-      - '*http://smart.abuse.st/telnet.sh*'
-      - '*http://5.83.134.26/spc*'
-      - '*http://5.83.134.26/m68k*'
-      - '*http://5.83.134.26/ppc*'
-      - '*http://5.83.134.26/arm*'
-      - '*http://5.83.134.26/x86_64*'
-      - '*http://5.83.134.26/arm6*'
-      - '*http://5.83.134.26/arc*'
-      - '*http://5.83.134.26/sh4*'
-      - '*http://smart.abuse.st/tplink*'
-      - '*http://smart.abuse.st/x86*'
-      - '*http://5.83.134.26/curl.sh*'
-      - '*http://5.83.134.26/wget.sh*'
-      - '*http://103.91.62.65:39927/i*'
-      - '*http://176.65.139.151/Sakura.sh*'
-      - '*http://112.98.97.184:34651/i*'
-      - '*http://112.98.97.184:34651/bin.sh*'
-      - '*http://203.177.28.149:45642/Mozi.m*'
-      - '*http://176.65.139.144/arm5*'
-      - '*http://176.65.139.144/mpsl*'
-      - '*http://176.65.139.144/mips*'
-      - '*http://176.65.139.144/arm*'
-      - '*http://176.65.139.144/arm7*'
-      - '*http://72.255.19.244:41921/Mozi.a*'
-      - '*http://206.135.174.164:39528/Mozi.a*'
-      - '*http://103.176.16.167:60492/Mozi.a*'
-      - '*http://217.60.199.225/dissarm4*'
-      - '*http://smart.abuse.st/mips*'
-      - '*http://59.176.80.131:60859/Mozi.a*'
-      - '*http://46.23.108.238/x86*'
-      - '*http://46.23.108.238/sh4*'
-      - '*http://46.23.108.238/mipsel*'
-      - '*http://46.23.108.238/mips*'
-      - '*http://115.50.204.246:56225/Mozi.a*'
-      - '*http://223.123.72.212:50541/Mozi.m*'
-      - '*http://176.65.139.151:5123/sysupdate.sh*'
-      - '*http://123.148.242.35:43983/Mozi.a*'
   condition: selection
 level: high
 tags:
   - attack.t1583
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 1
-id: f7dcb19a-6fd4-5ac4-beb3-41b954bb4563
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Other from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://94.154.43.192/nz/o.xml*'
-      - '*http://94.154.43.192/o.xml*'
-      - '*http://41.216.189.157/c.sh*'
-      - '*http://41.216.189.157/nz/c.sh*'
-      - '*http://41.216.189.157/w.sh*'
-      - '*http://41.216.189.157/nz/wget.sh*'
-      - '*http://41.216.189.157/nz/w.sh*'
-      - '*http://41.216.189.157/wget.sh*'
-      - '*http://93.115.101.146:13734/w*'
-      - '*http://93.115.101.146:13734/c*'
-      - '*http://93.115.101.146:13734/narz*'
-      - '*http://41.216.189.157/nz/o.xml*'
-      - '*http://41.216.189.157/o.xml*'
-      - '*http://41.216.189.157/00101010101001/o.xml*'
-      - '*http://2.26.124.132:99/.bash_history*'
-      - '*http://93.115.101.146:13734/ipmiv2.xml*'
-      - '*http://93.115.101.146:13734/loader.sh*'
-      - '*http://194.48.251.24/services.apk*'
-      - '*http://64.89.162.139/bin/ipmiv2.xml*'
-      - '*http://192.142.28.77/gms_update.apk*'
-      - '*http://192.142.28.77/ohshit.apk*'
-      - '*http://192.142.28.77/wl.xml*'
-      - '*http://192.142.28.77/routereater*'
-      - '*http://192.142.28.77/poc.xml*'
-      - '*https://mamigummy.com/.well-known/stego_payload.png*'
-      - '*https://mamigummy.com/.well-known/usgh.png*'
-      - '*https://mamigummy.com/.well-known/catpidbd.png*'
-      - '*https://mamigummy.com/.well-known/6r5df.png*'
-      - '*https://mamigummy.com/.well-known/fggfu.png*'
-      - '*https://mamigummy.com/.well-known/stego_payload%20(3).png*'
-      - '*https://mamigummy.com/.well-known/stego_payload%20(31).png*'
-      - '*https://mamigummy.com/.well-known/spmid.png*'
-      - '*https://mamigummy.com/.well-known/htfd.png*'
-      - '*https://mamigummy.com/.well-known/gdfytdy.png*'
-      - '*https://mamigummy.com/.well-known/stego_payload%20(6).png*'
-      - '*https://mamigummy.com/.well-known/shshs.png*'
-      - '*https://mamigummy.com/.well-known/sgdh.png*'
-      - '*https://mamigummy.com/.well-known/stego_payload%20(9).png*'
-      - '*https://mamigummy.com/.well-known/erffh.png*'
-      - '*https://onyx-ae.cc/bg/xl.ps1*'
-      - '*https://onyx-ae.cc/bg/stub.ps1*'
-      - '*http://137.220.242.60/tp.sh*'
-      - '*http://172.245.209.253/202/goodthingsarebestbetterwayscomingforu.vbs*'
-      - '*http://172.86.110.98/img/kb/img_194735.png*'
-      - '*http://82.223.139.167/img/img_165940.png*'
-      - '*http://192.3.140.105/33/img_220818.png*'
-      - '*http://209.54.103.155/img/img_160722.png*'
-      - '*http://172.245.209.253/203/goodthingsarebestbetterwayscomingforu.vbs*'
-      - '*http://172.86.110.98/img/img_023305.png*'
-      - '*http://193.37.215.169/33/img_044256.png*'
-      - '*http://104.239.66.104:8888/1/reosmesf967rgeaveon.jug*'
-      - '*http://104.239.66.104:8888/1/rgeaveonrgeaveon77.abb*'
-      - '*http://151.241.154.78/55/img_005447.png*'
-      - '*https://www.basefile.click/babyfacexload.png*'
-      - '*https://www.basefile.click/jktjune.png*'
-      - '*https://www.basefile.click/optimized_MSIljune.png*'
-      - '*https://www.basefile.click/yufile.png*'
-      - '*http://107.172.235.213/87/img_015059.png*'
-      - '*http://64.89.162.139/nz/o.xml*'
-      - '*http://64.89.162.139/bins/o.xml*'
-      - '*http://176.65.139.195/bins/o.xml*'
-      - '*http://185.234.100.154/Binary/o.xml*'
-      - '*https://remolcares.us/naza/stub.ps1*'
-      - '*https://153.80.240.173/kk/novaciubpl.dat*'
-      - '*https://194.87.71.105/City101/nova_logs_3.dat*'
-      - '*http://208.85.20.124:8080/cloud/mscomctl.ocx*'
-      - '*http://208.85.20.124:8080/cloud/Screenshot_2026_01_06.lnk*'
-      - '*https://jamesautomobile.online/kk/hope.dat*'
-      - '*https://comserlivuior.store/c/bin.dat*'
-      - '*https://comserlivuior.store/a/bin.dat*'
-      - '*https://comserlivuior.store/d/bin.dat*'
-      - '*https://comserlivuior.store/b/bin.dat*'
-      - '*https://usjcx.site/grc/bin.dat*'
-      - '*http://107.172.13.211/400/img_015511.png*'
-      - '*http://107.172.13.211/300/img_014511.png*'
-  condition: selection
-level: high
-tags:
-  - attack.t1596
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Other - URLhaus urls - Chunk 1
@@ -21184,8 +20686,6 @@ detection:
       - '*https://muaklekcoop.com/ckfinder/core/js/phpjquery.php*'
       - '*https://jolly-bread-f04e.deborahbmuellerziytqsjw7623.workers.dev/EjdhukaB*'
       - '*https://jolly-bread-f04e.deborahbmuellerziytqsjw7623.workers.dev/EjdhukaB.html*'
-      - '*https://trade-eprex.pro/wp-admin/network/wp-debug/stubz.ps1*'
-      - '*https://rosebaie.ma/wp-includes/js/jcrop/jqueryJcrop.php*'
   condition: selection
 level: high
 tags:
@@ -21464,11 +20964,6 @@ detection:
       - '*http://176.65.132.109/Bin/ScreenConnect.ClientSetup.exe*'
       - '*https://192.159.99.49/Bin/ScreenConnect.ClientSetup.exe*'
       - '*https://192.159.99.49/bin/support.client.exe*'
-      - '*http://45.88.186.70/Bin/ScreenConnect.ClientSetup.exe*'
-      - '*https://194.26.192.187/Bin/ScreenConnect.ClientSetup.exe*'
-      - '*https://193.26.115.238/Bin/ScreenConnect.ClientSetup.exe*'
-      - '*https://203.159.90.37/Bin/ScreenConnect.ClientSetup.exe*'
-      - '*https://194.26.192.187/bin/support.client.exe*'
   condition: selection
 level: high
 tags:
@@ -21917,7 +21412,6 @@ detection:
       - '*http://107.172.13.211/300/becomeperfecthistimeforbestproperthings.hta*'
       - '*https://deltahub.vip/delta.hta*'
       - '*http://107.173.9.85/807/greatnessideadsbeomcebestthingsforme.hta*'
-      - '*http://104.168.115.123/450/mybestgirlfriendonmybestfeelnigsforme.hta*'
   condition: selection
 level: high
 tags:
@@ -21982,6 +21476,17 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "3888f2bd1f97dcb4df53c622479010be225d60a3dd9e5daef67e5c78fcbdd520"'
+      - ' "824f3fde1d14e67fbe30dd056eb6b01b86becc51f75c5dba09beba599841217b"'
+      - ' "8517a75d6a6da5640ea40971355292e808aa21d07d2009d11e548bd1f679f711"'
+      - ' "9b44ac08112b3a2bbd7627727f68aa1dea140b89878e0f9c4493567f115fdabf"'
+      - ' "23dd9adcd564b519ecc6953c402637d7200a565bd939bf990ea70f5bdcd895ae"'
+      - ' "9141fe9327ca1caa1bf70adb61b07caa3dd5f7b5720b617e78a14dd1ca151fb9"'
+      - ' "53de9fbfc8ec10fe8b317143126afd2b91b9cff9ca46426581d2d7653a12438f"'
+      - ' "3b4345d443ac5791092635b18a847d1db3aee953428d9ad04dc01f82478ee2a9"'
+      - ' "80917e22a9d17c7d856eafc01c1a52b661dddd3820490afb3982aa9fafb20677"'
+      - ' "6af11b40d0a09644d689ea72f10a181cb4936fe8dbe3ab936cde60aa27129842"'
+      - ' "f7c6561a918ef565f49fd35aada047b70fde12cfd5d98b0704c7353d48d06db0"'
       - ' "3f46f24356ee0ca1a8147a0deea5a584870bb1d99f3fcc996ced516830148778"'
       - ' "c18aebf9c041c7f430259e590e4bfd921ad5d4fd641bad51132f7b64823b36f9"'
       - ' "5ff40ae515caa482c04d44ac0078e3ea85917129d473b01b9ee9caf0c0cfbb4d"'
@@ -22387,30 +21892,6 @@ detection:
       - ' "357d6a12b37bf72550d9df5035f25157d3ca75e1a69e71783586ee4759ee7b45"'
       - ' "da258307c61058016d7e553c07f00dcc06c119ce40536db59d4f726c16d32fb2"'
       - ' "2a51dabd7c6c63d88ae13ca65a8a01c99fae1d4913a08ace28910c6f47074323"'
-      - ' "e65ee878453d6fa2005f27ad16ecab564cf371992db9e058d8bdd78bde54a99a"'
-      - ' "7a5ddf0ddbe18b048b75dfe5153fc8ee5b6b5e8d9832c96ac7ea18591d272cdb"'
-      - ' "c433957cc91e17664147cbbb9dabcee58a81747a4e4b3fdb233b6daedd8974ab"'
-      - ' "ffc708aed38519ea8799e0cabebf6444934d1aa7db9f83a3c31b6847ed139b6d"'
-      - ' "380137fe3eb4ab4dae0d26aa1b94a4b19a9c28b1d84697b6e80ff8cb93ec5dca"'
-      - ' "5db55a1df1b4cd848c772430af5afa07b6d16c3fc2d1fcc4e85a2ff698f918e5"'
-      - ' "a166b4f2f9c5565737ba6512416030b2518c812cd0abb3af52749b5bebdd9625"'
-      - ' "0a5d4b8f65eba399f0b41ac648d939650ab6422ce4c715f8a1b5b99e1178678b"'
-      - ' "27e3c9b676e96ef69a0043ebf547748ac7189207dc2100cc188ea024be596266"'
-      - ' "6af02f9f08e5d6e9318ed302e4d74618148f7c600af1b394e05812b18b8ca040"'
-      - ' "0bf8f52b28291edc505a64962e6ce04387a9784fc5b18aeff53629adb1f72f56"'
-      - ' "b15fabb4f73fff2dd8dbb1a58e46423e9d33d985af34880d17e410b9ecd6bc47"'
-      - ' "9f42721255d8d62b4595b9040a9a7d742c8fe2a5ff17745c8e250cd04928c480"'
-      - ' "3c279bc94d37eeaf2b81f78820ada90c8e40814e45818c7c5666ea8c49688d67"'
-      - ' "536cb0e2ffffa40d1ccd096eaaad43f094813bae15d8f6316dc35fb998d5e4cd"'
-      - ' "dceebf2ce1186b22f60b7ee064670db88347761767ea8610a35e50e568b348b3"'
-      - ' "f5b43a3803a8149dda677d208ba7ef5e0aa33640bcd3dd58924355f4fc54be99"'
-      - ' "b4f0148df9332a4c3fdf19c71885867f7bff3f36641ba49dec8946ab366a64a8"'
-      - ' "6eb5274407dd458da90fd988c04e30f5c14cf813fb4a4489b6a64eddc966a7fd"'
-      - ' "da01b54e7d42de9f00fdac7f2123779363a13df7d40bdb72558c9618e13dc77b"'
-      - ' "c17aff83c3fbddb86fe5a40d7a654af5591b16522fb15c222bbf3d57b0b16748"'
-      - ' "addbd8770b53a50e83c711143332c76e9160f920675e2de5591669d3b93f499b"'
-      - ' "3a03b35a4c614d651954f8298d5bb75abe33223e0791bdc1b9bdb2af69d3009b"'
-      - ' "518f5438a21e9aa9a91f0dd589088e443fda111d8ada5ea67d1cf14d6645974c"'
   condition: selection
 level: high
 tags:

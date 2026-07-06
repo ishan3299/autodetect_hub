@@ -1,6 +1,60 @@
 // Malicious URLs - Chunk 1 (Source: URLhaus)
 UrlClickEvents
 | where Url has_any (
+    "http://59.180.157.78:46393/i",
+    "http://220.167.188.228:48336/i",
+    "http://115.55.4.118:39524/i",
+    "http://123.10.225.140:53465/bin.sh",
+    "http://42.224.145.94:45012/i",
+    "http://196.189.35.226:52716/bin.sh",
+    "http://220.167.188.228:48336/bin.sh",
+    "http://222.137.6.57:51029/i",
+    "https://aipmmwm.bet1forward.com/3a3621a3-b2b8-4430-99bb-d87bca25413f",
+    "https://vh1oi5hz.rayegan.net/?ublib=fd1f8591-966e-4993-a0cc-38ee0bf39db4",
+    "http://123.8.93.69:47494/i",
+    "http://42.224.145.94:45012/bin.sh",
+    "http://123.8.93.69:47494/bin.sh",
+    "http://221.15.212.44:36077/i",
+    "http://1.58.208.78:33017/bin.sh",
+    "http://222.137.6.57:51029/bin.sh",
+    "http://94.181.6.67:36395/i",
+    "http://103.44.136.115:35447/i",
+    "https://vqincjko.jetbahis.win/05d8a49b-5487-4fbd-ad61-70541e8ad7a4",
+    "http://110.37.61.44:49758/i",
+    "http://59.180.157.78:46393/bin.sh",
+    "http://182.123.245.51:60755/i",
+    "http://94.181.6.67:36395/bin.sh",
+    "https://vfchqur.bahiscash.com/a086b290-ea2b-4fa5-9f7b-e4af8420b387",
+    "http://42.231.186.76:54013/i",
+    "http://110.37.61.44:49758/bin.sh",
+    "http://103.44.136.115:35447/bin.sh",
+    "http://182.123.245.51:60755/bin.sh",
+    "http://110.36.11.225:36446/i",
+    "http://110.36.29.196:39125/bin.sh",
+    "http://112.246.16.106:42448/bin.sh",
+    "http://94.154.43.192/b.xml",
+    "http://94.154.43.192/nz/b.xml",
+    "http://62.60.226.140/files/8634320058/ENIOnn8.exe",
+    "http://94.154.43.192/nz/c.sh",
+    "http://94.154.43.192/c.sh",
+    "http://94.154.43.192/nz/w.sh",
+    "http://94.154.43.192/w.sh",
+    "http://94.154.43.192/wget.sh",
+    "http://94.154.43.192/nz/wget.sh",
+    "http://115.54.128.181:49195/bin.sh",
+    "http://110.36.11.225:36446/bin.sh",
+    "https://ntqpkct.bahiscart.com/f29b444d-1c06-49a9-a69c-029904eaadd1",
+    "http://202.1.26.69:37695/i",
+    "http://117.208.46.126:33920/i",
+    "http://38.21.70.189:46846/bin.sh",
+    "http://117.208.46.126:33920/bin.sh",
+    "http://182.119.182.78:59445/bin.sh",
+    "https://u9gcj5sd.oxiidbet.com/?ublib=55a4e6f9-1eba-4151-bd42-9c01fa2b2c8a",
+    "http://202.1.26.69:37695/bin.sh",
+    "http://59.96.137.166:41050/i",
+    "https://nazemud.ac90bet.net/1a2dfa37-1efd-4b97-9945-7e195dd16099",
+    "http://59.180.168.190:45133/i",
+    "http://112.255.27.172:53031/bin.sh",
     "http://222.139.127.61:46244/i",
     "http://125.27.11.15:43282/i",
     "https://azxhmev.prozhe.net/fa296535-349e-4380-8e53-b05fe29b5396",
@@ -446,7 +500,15 @@ UrlClickEvents
     "http://112.246.16.106:53726/i",
     "http://123.190.235.107:45926/bin.sh",
     "http://103.157.210.26:58597/i",
-    "http://115.49.93.222:36105/i",
+    "http://115.49.93.222:36105/i"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 2 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://108.168.0.60:38944/bin.sh",
     "http://112.246.16.106:53726/bin.sh",
     "https://evypenr.winnerbahis-tr.com/7cc69da8-80c4-4d91-8222-5f10a071cbd3",
@@ -500,15 +562,7 @@ UrlClickEvents
     "http://peachcity.si/n2/tbk",
     "http://peachcity.si/n2/armv6l",
     "http://peachcity.si/n2/m68k",
-    "http://peachcity.si/n2/aarch64"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 2 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://peachcity.si/n2/aarch64",
     "http://airyvineic.help/rebirth.m68k",
     "http://a7.wtf/n2/mips",
     "http://a7.wtf/n2/ppc",
@@ -954,7 +1008,15 @@ UrlClickEvents
     "https://yunczfkm.cyou/fuetyshfgjufhgj.zip",
     "http://110.38.211.139:58721/i",
     "https://taxassessment.cyou/Tax_Assessment.vhdx",
-    "https://taxassessment.cyou/tax_assessment_0609.zip",
+    "https://taxassessment.cyou/tax_assessment_0609.zip"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 3 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://taxassessment.cyou/tax_assessment_sg.zip",
     "https://github.com/officedesknote-star/bodakuwa/raw/refs/heads/main/ScreenConnect.ClientSetup%20(18)%20(1).msi",
     "https://github.com/officedesknote-star/bzeet/raw/refs/heads/main/ScreenConnect.ClientSetup%20(25).msi",
@@ -1008,15 +1070,7 @@ UrlClickEvents
     "http://171.8.21.66:44209/bin.sh",
     "http://110.39.247.200:58559/i",
     "http://115.52.244.235:58014/bin.sh",
-    "https://erngvel.takbetkade.com/def0e59f-d16d-4633-9fb2-5ddb8cbfdbc8"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 3 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://erngvel.takbetkade.com/def0e59f-d16d-4633-9fb2-5ddb8cbfdbc8",
     "https://dqr7yibh.thevallartasrestaurants.com/?ublib=622239d9-c6ac-4d06-8e25-37ff6868e811",
     "http://136.60.32.162:46640/bin.sh",
     "http://94.154.43.12/gg10",
@@ -1462,7 +1516,15 @@ UrlClickEvents
     "http://141.11.88.128/bins/sh4",
     "http://141.11.88.128/bins/mips",
     "http://141.11.88.128/bins/spc",
-    "http://141.11.88.128/bins/m68k",
+    "http://141.11.88.128/bins/m68k"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 4 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://141.11.88.128/bins/ppc",
     "http://141.11.88.128/bins/x86_64",
     "http://141.11.88.128/bins/arm5",
@@ -1516,15 +1578,7 @@ UrlClickEvents
     "http://76.164.203.171/t/tftp.sh",
     "http://45.198.224.151/main_x86",
     "http://45.198.224.151/main_arm7",
-    "http://167.99.95.139/x86_64"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 4 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://167.99.95.139/x86_64",
     "http://76.164.203.171/t/arm7",
     "http://167.99.95.139/x86",
     "http://167.99.95.139/arm7",
@@ -1970,7 +2024,15 @@ UrlClickEvents
     "http://157.211.252.240:56836/i",
     "http://58.217.188.162:38059/i",
     "http://115.59.231.34:52676/bin.sh",
-    "http://117.245.84.209:57482/bin.sh",
+    "http://117.245.84.209:57482/bin.sh"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 5 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://78.38.18.210:34087/bin.sh",
     "http://203.160.9.182:43948/bin.sh",
     "http://27.215.143.81:41304/i",
@@ -2024,15 +2086,7 @@ UrlClickEvents
     "http://141.11.88.129/main_mpsl",
     "http://141.11.88.129/main_arm7",
     "http://141.11.88.129/main_m68k",
-    "http://141.11.88.129/main_x86_64"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 5 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://141.11.88.129/main_x86_64",
     "http://141.11.88.129/main_mips",
     "http://123.10.233.251:57888/i",
     "http://27.44.144.66:40003/bin.sh",
@@ -2478,7 +2532,15 @@ UrlClickEvents
     "https://hol.villgrow.life/DX.zip",
     "http://141.11.88.119/dg.mips",
     "https://xeno.help/downloads/Xeno-v1.3.55.rar",
-    "https://setup-code.com/install.ps1",
+    "https://setup-code.com/install.ps1"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 6 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://110.36.15.18:48106/i",
     "http://110.36.15.18:48106/bin.sh",
     "http://138.252.69.11:51869/i",
@@ -2532,15 +2594,7 @@ UrlClickEvents
     "http://141.11.88.125/bins/ppc",
     "http://141.11.88.125/bins/sh4",
     "http://141.11.88.125/bins/x86",
-    "http://141.11.88.125/bins/arm5"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 6 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://141.11.88.125/bins/arm5",
     "http://141.11.88.125/bins/mips",
     "http://141.11.88.127/ppc",
     "http://141.11.88.127/m68k",
@@ -2986,7 +3040,15 @@ UrlClickEvents
     "http://85.11.167.128/bot_x86_64",
     "http://85.11.167.52/main.exe",
     "http://115.59.11.40:48637/i",
-    "http://188.17.91.233:50476/bin.sh",
+    "http://188.17.91.233:50476/bin.sh"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 7 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://42.234.221.65:45775/i",
     "http://115.56.112.225:41296/i",
     "http://115.56.112.225:41296/bin.sh",
@@ -3040,15 +3102,7 @@ UrlClickEvents
     "http://45.198.224.88/bins/xnxnxnxnxnxnxnxnloongarch64xnxn",
     "http://45.198.224.88/bins/xnxnxnxnxnxnxnxnor1kxnxn",
     "http://45.198.224.88/bins/xnxnxnxnxnxnxnxnriscv64xnxn",
-    "http://45.198.224.88/bins/xnxnxnxnxnxnxnxnx86_64xnxn"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 7 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://45.198.224.88/bins/xnxnxnxnxnxnxnxnx86_64xnxn",
     "http://45.198.224.88/bins/xnxnxnxnxnxnxnxnsh2xnxn",
     "http://45.198.224.88/bins/xnxnxnxnxnxnxnxnsh4xnxn",
     "http://117.146.92.46:49521/bin.sh",
@@ -3494,7 +3548,15 @@ UrlClickEvents
     "https://www.google.com/share.google?q=TKkEiojO9oBaZgAjA",
     "https://share.google/1UQArMdfFn5FCxI7x",
     "https://digital-magicians.com/photo295825092412.zip?_r=4bbf3239",
-    "https://digital-magicians.com/photo295825092412.zip",
+    "https://digital-magicians.com/photo295825092412.zip"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 8 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://share.google/djh8Mb9GJkbeOL52P",
     "https://digital-magicians.com/photo295825092412.zip?_r=599004b6",
     "https://share.google/TKkEiojO9oBaZgAjA",
@@ -3548,15 +3610,7 @@ UrlClickEvents
     "https://39p49guo.mokatebatedari.xyz/?ublib=aec9e769-eb3a-4f2c-b43e-a59bc857ba59",
     "http://27.44.144.168:43603/bin.sh",
     "https://w0l83hua.1xsignupbet.com/?ublib=1f7d1d52-c5f9-4339-bccd-f55fda1c63a2",
-    "http://123.12.21.35:42838/bin.sh"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 8 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://123.12.21.35:42838/bin.sh",
     "http://113.237.48.192:40812/i",
     "http://182.114.252.213:57272/bin.sh",
     "http://27.37.101.136:56949/i",
@@ -4002,7 +4056,15 @@ UrlClickEvents
     "http://198.2.108.22:60038/i",
     "http://68.185.152.86:35035/i",
     "http://42.228.101.90:47153/bin.sh",
-    "http://1.2.185.103:35327/bin.sh",
+    "http://1.2.185.103:35327/bin.sh"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 9 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://61.53.133.243:51710/bin.sh",
     "http://68.185.152.86:35035/bin.sh",
     "http://123.10.10.203:34657/i",
@@ -4056,15 +4118,7 @@ UrlClickEvents
     "http://91.92.40.63:5001/arm64",
     "http://91.92.40.63:5001/bins.sh",
     "http://91.92.40.63:5001/arm6",
-    "http://115.55.128.10:40239/i"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 9 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://115.55.128.10:40239/i",
     "http://115.63.241.78:34511/i",
     "http://123.5.187.238:49841/bin.sh",
     "http://115.48.144.183:48348/i",
@@ -4510,7 +4564,15 @@ UrlClickEvents
     "http://219.155.71.61:54554/i",
     "http://116.68.162.210:46035/bin.sh",
     "http://42.228.249.78:34381/i",
-    "http://68.235.251.87:59068/bin.sh",
+    "http://68.235.251.87:59068/bin.sh"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 10 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://123.11.171.209:35204/i",
     "http://24.54.95.49:46040/bin.sh",
     "http://45.192.97.47/a-r.m-4.Sakura",
@@ -4564,15 +4626,7 @@ UrlClickEvents
     "https://gkn9py5i.honarrang.online/?ublib=9acbec46-3cf2-48c1-af92-731bcb3553b6",
     "http://182.119.196.139:46792/bin.sh",
     "http://42.228.249.78:34381/bin.sh",
-    "https://cdn.jsdelivr.net/gh/Tedy324/vlan44-nginx/sample"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 10 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://cdn.jsdelivr.net/gh/Tedy324/vlan44-nginx/sample",
     "http://42.54.3.165:50302/i",
     "https://sjc3.sabad724.bio/36580b02-9d9c-4a93-81a8-46f87779e789",
     "https://cdn.jsdelivr.net/gh/Tedy324/vlan44-nginx/secure",
@@ -5018,7 +5072,15 @@ UrlClickEvents
     "http://115.55.195.171:55392/i",
     "http://60.211.47.18:43371/i",
     "http://115.55.195.171:55392/bin.sh",
-    "http://45.225.135.18/1.xml",
+    "http://45.225.135.18/1.xml"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 11 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://125.26.202.115:44848/i",
     "http://61.52.45.81:48072/i",
     "http://123.9.194.9:52342/i",
@@ -5072,15 +5134,7 @@ UrlClickEvents
     "http://72.61.196.110/bin/untouchable.x86_64",
     "http://220.202.88.35:42004/bin.sh",
     "http://110.39.255.247:44356/i",
-    "http://219.155.80.251:50769/i"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 11 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://219.155.80.251:50769/i",
     "http://124.6.169.54:35741/bin.sh",
     "http://server-830796.thatserver.com/jkL",
     "http://110.36.14.214:59831/bin.sh",
@@ -5526,7 +5580,15 @@ UrlClickEvents
     "http://51.81.96.73/n2/ppc",
     "http://51.81.96.73/n2/x86",
     "http://51.81.96.73/n2/armv5l",
-    "http://51.81.96.73/n2/armv7l",
+    "http://51.81.96.73/n2/armv7l"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 12 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://51.81.96.73/n2/x86_64",
     "http://51.81.96.73/n2/m68k",
     "http://51.81.96.73/n2/armv4l",
@@ -5580,15 +5642,7 @@ UrlClickEvents
     "http://123.235.174.119:58919/i",
     "http://61.174.122.41:50602/i",
     "http://110.36.76.24:60644/i",
-    "http://112.98.97.229:34651/i"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 12 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://112.98.97.229:34651/i",
     "http://39.81.158.32:45742/i",
     "http://61.174.122.41:50602/bin.sh",
     "http://39.81.158.32:45742/bin.sh",
@@ -6034,7 +6088,15 @@ UrlClickEvents
     "https://p0d2virz.blackjacktipsnnt.com/?ublib=b7adadd3-bf63-4a27-a9d5-e1294e8d8cc7",
     "http://115.57.183.108:38043/i",
     "https://e1fi2yi1.vip1x.bet/?ublib=370112d6-38db-4738-a39a-6e6f52d505db",
-    "http://27.44.147.19:60780/i",
+    "http://27.44.147.19:60780/i"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 13 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://115.50.1.43:55000/i",
     "http://171.114.229.216:44119/i",
     "http://115.57.183.108:38043/bin.sh",
@@ -6088,15 +6150,7 @@ UrlClickEvents
     "http://62.60.226.140/files/7782139129/iVrqVfp.ps1",
     "http://62.60.226.140/files/7782139129/gyOEOUD.exe",
     "https://69xb4m1d.betmajic.cc/?ublib=d8b4f87c-aa48-4fdd-a215-ea08f68ed6fe",
-    "https://8ra83hil.blackjackonlineplay83.com/?ublib=55ce4ecc-431f-4b5c-9237-45709215d541"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 13 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://8ra83hil.blackjackonlineplay83.com/?ublib=55ce4ecc-431f-4b5c-9237-45709215d541",
     "http://182.127.176.150:34262/i",
     "http://182.127.176.150:34262/bin.sh",
     "http://222.141.82.143:50860/i",
@@ -6542,7 +6596,15 @@ UrlClickEvents
     "http://125.45.34.23:44645/i",
     "http://36.88.136.194:52549/bin.sh",
     "http://123.123.205.117:26387/bin.sh",
-    "http://5.83.134.26/larm4",
+    "http://5.83.134.26/larm4"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 14 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://5.83.134.26/larm5",
     "http://5.83.134.26/larm7",
     "http://62.60.251.15/bins/sora.arm7",
@@ -6596,15 +6658,7 @@ UrlClickEvents
     "http://220.202.65.145:45746/i",
     "http://2.178.39.174:47789/i",
     "http://177.36.61.196:38572/bin.sh",
-    "http://112.248.61.219:42732/i"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 14 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://112.248.61.219:42732/i",
     "http://182.121.168.120:51172/bin.sh",
     "https://92a3tm8e.1x303.casino/?ublib=ecee7dc8-1d49-415e-be42-d124f4e7efa9",
     "http://112.248.61.219:42732/bin.sh",
@@ -7050,7 +7104,15 @@ UrlClickEvents
     "https://raw.githubusercontent.com/larimreis/flower-diffusion-model/main/generated_images/flower-model-diffusion-1.1-alpha.3.zip",
     "https://raw.githubusercontent.com/DynamoFusion/Free-E-PaperDesignerPro/main/Argante/Designer-Free-Paper-Pro-1.5.zip",
     "https://raw.githubusercontent.com/Magendiran07/super-builder-platform/main/src/components/dashboard/super_builder_platform_1.6.zip",
-    "https://raw.githubusercontent.com/ryabell2023-cmd/docksentry/main/app/Software_v3.3.zip",
+    "https://raw.githubusercontent.com/ryabell2023-cmd/docksentry/main/app/Software_v3.3.zip"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 15 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://raw.githubusercontent.com/wagawgaw/Pumpfun-Sniper-Bot/main/DexLab/Pumpfun-Bot-Sniper-v3.5-alpha.4.zip",
     "https://raw.githubusercontent.com/Mebi26/youtube-subtitle-translator/main/icons/subtitle_translator_youtube_v1.4.zip",
     "https://raw.githubusercontent.com/raulika223/ecommerce-product-service/main/alembic/versions/service-product-ecommerce-1.0.zip",
@@ -7104,15 +7166,7 @@ UrlClickEvents
     "https://raw.githubusercontent.com/KUpals001/youtube-downloader/main/app/api/youtube-downloader-v3.7.zip",
     "https://raw.githubusercontent.com/Iritaseedless872/clustering-and-classification-bank-transactions/main/architraved/clustering-and-classification-bank-transactions_v3.8.zip",
     "https://raw.githubusercontent.com/Lowsodiumdietdevotional330/RuleScope/main/client/src/Scope_Rule_1.8.zip",
-    "https://raw.githubusercontent.com/Jyrayaa/devops-configs/main/server-configs/apache-project/sites-available/devops_configs_1.7.zip"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 15 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://raw.githubusercontent.com/Jyrayaa/devops-configs/main/server-configs/apache-project/sites-available/devops_configs_1.7.zip",
     "https://raw.githubusercontent.com/bilel2011714/Drowsy/main/front/assets/Software_2.0-alpha.5.zip",
     "https://raw.githubusercontent.com/didiergoore/file-processor-1771921235-2/main/src/hooks/processor-file-v1.7.zip",
     "https://raw.githubusercontent.com/Lawfullybegotten-ulteriority844/lume/main/terminals/wezterm/Software_v1.1.zip",
@@ -7558,7 +7612,15 @@ UrlClickEvents
     "https://raw.githubusercontent.com/Jlyayou/Internet-Speed-Inspector/main/android/app/src/debug/Internet_Inspector_Speed_2.8.zip",
     "https://raw.githubusercontent.com/TamaleGT/BerrySentinel/main/pyrene/Berry_Sentinel_v3.8.zip",
     "https://raw.githubusercontent.com/moussegenusanthurium256/bemo/main/triconsonantalism/Software-v2.4.zip",
-    "https://raw.githubusercontent.com/chowkdeveloper-a11y/PixARMesh/main/metadata/Mesh-Pix-AR-v1.5-beta.3.zip",
+    "https://raw.githubusercontent.com/chowkdeveloper-a11y/PixARMesh/main/metadata/Mesh-Pix-AR-v1.5-beta.3.zip"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 16 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://raw.githubusercontent.com/AlXander98/FastPortScanner/main/plaidy/Port_Fast_Scanner_1.7.zip",
     "https://raw.githubusercontent.com/Moumitasubi/Harmonix/main/src/components/Software_1.9.zip",
     "https://raw.githubusercontent.com/Joripremature506/Invincible-VS-Game-Release-Desktop/main/Game-Resource/V-Game-Invincible-Release-Desktop-v3.6.zip",
@@ -7612,15 +7674,7 @@ UrlClickEvents
     "https://raw.githubusercontent.com/shearno3856/tenzor-pay/main/upcrane/tenzor-pay-3.6.zip",
     "https://raw.githubusercontent.com/arshveer1208/ssh-brute-force-splunk/main/gude/ssh-splunk-force-brute-3.3.zip",
     "https://raw.githubusercontent.com/cloudedminds/Burnout_Analysis/main/docs/Analysis_Burnout_v1.6.zip",
-    "https://raw.githubusercontent.com/naseem499379/mihomo_yamls/main/General_Config/liandu2024/yamls_mihomo_2.5.zip"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 16 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://raw.githubusercontent.com/naseem499379/mihomo_yamls/main/General_Config/liandu2024/yamls_mihomo_2.5.zip",
     "https://raw.githubusercontent.com/LegendsVenom/kotodama-framework/main/personas/lian_ej/kotodama_framework_2.5.zip",
     "https://raw.githubusercontent.com/SesethuNkqenkqa/veritas-ai/main/fonts/ai_veritas_v3.6-beta.1.zip",
     "https://raw.githubusercontent.com/abuhadi-80/ExchangeProtocol/main/StructuralExplainability/ExchangeProtocol/Core/Record/Entity/Protocol-Exchange-3.1.zip",
@@ -8066,7 +8120,15 @@ UrlClickEvents
     "https://raw.githubusercontent.com/Ashkumgup/votequiz/main/static/Software_v2.7.zip",
     "https://raw.githubusercontent.com/Huldalackadaisical179/github-planner/main/src/skills/plan-to-issues/references/github_planner_v2.6.zip",
     "https://raw.githubusercontent.com/AIN010010/klaviyo-sms-optin-flow-automation/main/media/automation_optin_klaviyo_flow_sms_1.1-beta.4.zip",
-    "https://raw.githubusercontent.com/Surging-scotandlot818/product-dev-blueprint/main/src/app/projects/blueprint-product-dev-1.1-beta.5.zip",
+    "https://raw.githubusercontent.com/Surging-scotandlot818/product-dev-blueprint/main/src/app/projects/blueprint-product-dev-1.1-beta.5.zip"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 17 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://raw.githubusercontent.com/samikhan78-wb/libft/main/predoubt/Software_v3.0.zip",
     "https://raw.githubusercontent.com/rifat-w/Classification-SVG-model/main/Kanawari/model-SV-Classification-v1.3.zip",
     "https://raw.githubusercontent.com/energia30-byte/better-tokio-select/main/src/select_tokio_better_1.9.zip",
@@ -8120,15 +8182,7 @@ UrlClickEvents
     "https://raw.githubusercontent.com/dykeruv/argus-mcp/main/lifesaving/mcp-argus-v1.7.zip",
     "https://raw.githubusercontent.com/AYMANDG523/ai-rfq-crm-orchestration-platform/main/Screenshots/orchestration_platform_ai_rfq_crm_v3.1.zip",
     "https://raw.githubusercontent.com/Albrt-scripter/kshurta-reload/main/src/assets/images/logos/kshurta-reload-2.6.zip",
-    "https://raw.githubusercontent.com/humair832/GeminiBusiness_CookieExtractor/main/icons/Cookie_Extractor_Gemini_Business_v3.8.zip"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 17 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://raw.githubusercontent.com/humair832/GeminiBusiness_CookieExtractor/main/icons/Cookie_Extractor_Gemini_Business_v3.8.zip",
     "https://raw.githubusercontent.com/AlolorBazel/zero-downtime-deployment-eks/main/docs/eks_deployment_zero_downtime_1.4.zip",
     "https://raw.githubusercontent.com/Defectlameness737/suno-lab/main/Sipunculida/lab_suno_1.1.zip",
     "https://raw.githubusercontent.com/Maraboustorkouterplanet353/MGSpatialSelectionDemo/main/Content/__ExternalActors__/TopDown/Lvl_TopDown/9/BG/MG_Spatial_Demo_Selection_v3.3.zip",
@@ -8574,7 +8628,15 @@ UrlClickEvents
     "https://raw.githubusercontent.com/Adripaz911/interactive-vue-portfolio/main/src/components/portfolio-vue-interactive-1.9.zip",
     "https://raw.githubusercontent.com/priyanshuchourasiya/api-security-labs-owasp-aws/main/owasp-api-top10/labs-security-aws-owasp-api-2.1-alpha.4.zip",
     "https://raw.githubusercontent.com/gene8069/Weather_Forcust_Kenya_DL_Models_Auth/main/kenya_weather_data/D-Auth-Kenya-Models-Weather-Forcust-1.0.zip",
-    "https://raw.githubusercontent.com/widapra/security-intelligence-engine/main/modules/engine_security_intelligence_2.4.zip",
+    "https://raw.githubusercontent.com/widapra/security-intelligence-engine/main/modules/engine_security_intelligence_2.4.zip"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 18 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://raw.githubusercontent.com/ARBOLCC/Post-Scraper-and-CSS-Editor-for-kingkolton9/main/Butsu/Post-Scraper-and-CSS-Editor-for-kingkolton9_3.8.zip",
     "https://raw.githubusercontent.com/jrizzlers/tetris_js/main/.cursor/rules/general/tetris-js-2.9.zip",
     "https://raw.githubusercontent.com/Saddleaeon625/NERVISION-AI/main/static/img/illustration/NERVISIO-AI-v2.5.zip",
@@ -8628,15 +8690,7 @@ UrlClickEvents
     "https://raw.githubusercontent.com/ulinduanushaherth/MakeSense/main/eviot/query/Make-Sense-v3.4-beta.1.zip",
     "https://raw.githubusercontent.com/hobbsroberti162/sql-queries-and-dbms/main/overcapitalization/and-dbms-queries-sql-v3.1.zip",
     "https://raw.githubusercontent.com/dominiquekiplingesque408/JWToken-analyzer/main/corradiate/JW-analyzer-Token-v3.7.zip",
-    "https://raw.githubusercontent.com/danielsod12/claude-compaction-viewer/main/src/claude_compaction_viewer/viewer-claude-compaction-v1.5.zip"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 18 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://raw.githubusercontent.com/danielsod12/claude-compaction-viewer/main/src/claude_compaction_viewer/viewer-claude-compaction-v1.5.zip",
     "https://raw.githubusercontent.com/ANONIMO1234576856/Cmdix/main/src/Software-v3.0.zip",
     "https://raw.githubusercontent.com/blackwall0220/roblox-discord-status-bot/master/Pelodytes/status-roblox-discord-bot-v2.8.zip",
     "https://raw.githubusercontent.com/shabin118k/cnft-mint-platform/main/app/api/ipfs/upload/platform_cnft_mint_v1.8.zip",
@@ -9082,7 +9136,15 @@ UrlClickEvents
     "https://raw.githubusercontent.com/zahidzeeshan497-star/mdplane/main/apps/web/src/Software_3.7.zip",
     "https://raw.githubusercontent.com/babsso25/Chat2API/main/src/main/logger/API_Chat_3.9.zip",
     "https://raw.githubusercontent.com/alvszph/accounting-documents-ai-agent/main/typst/agent-ai-documents-accounting-v3.1.zip",
-    "https://raw.githubusercontent.com/Razoredent/Eye-Contact-Coach/main/semismile/Coach_Eye_Contact_v2.8.zip",
+    "https://raw.githubusercontent.com/Razoredent/Eye-Contact-Coach/main/semismile/Coach_Eye_Contact_v2.8.zip"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 19 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://raw.githubusercontent.com/LocItChu/mac-media-stack/main/scripts/mac-stack-media-1.7.zip",
     "https://raw.githubusercontent.com/lakeez201/null-e/main/src/cache/null-e-1.0.zip",
     "https://raw.githubusercontent.com/erlandlila/YOLOv11-People-Enter-Exit-Detector/main/assets/Enter-People-Ov-Exit-YOL-Detector-v1.3.zip",
@@ -9136,15 +9198,7 @@ UrlClickEvents
     "https://raw.githubusercontent.com/Ilovema4629/envsafe/main/src/cli/Software-1.1.zip",
     "https://raw.githubusercontent.com/Brayan13-13/CodePilot/main/src/app/api/chat/sessions/Code-Pilot-1.8.zip",
     "https://raw.githubusercontent.com/syncretismdeposit560/TypeAnything/main/third_party/weasel/test/Anything_Type_v2.0.zip",
-    "https://raw.githubusercontent.com/theflixerbox77/ralph-wiggum-codex/main/docs/prompt-improver-spec/artifacts/codex-ralph-wiggum-v1.3.zip"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 19 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://raw.githubusercontent.com/theflixerbox77/ralph-wiggum-codex/main/docs/prompt-improver-spec/artifacts/codex-ralph-wiggum-v1.3.zip",
     "https://raw.githubusercontent.com/petratranslational479/Seluniyaa/main/Samantha/Software_1.1.zip",
     "https://raw.githubusercontent.com/SETIA109/json-steroids/main/json-steroids-derive/steroids_json_1.6.zip",
     "https://raw.githubusercontent.com/ErtiPrenci/inventory-public/main/internal/repository/inventory_public_v2.2-alpha.2.zip",
@@ -9590,7 +9644,15 @@ UrlClickEvents
     "https://raw.githubusercontent.com/hassanaht/RAAC-Adventures/main/omniferous/RAA_Adventures_2.5.zip",
     "https://raw.githubusercontent.com/zenyrae123/claude-data-analysis-ultra-main/main/.claude/skills/recommender-system/data_ultra_claude_analysis_main_v3.5.zip",
     "https://raw.githubusercontent.com/younger-osage691/any2pdf/main/lovstudio-any2pdf/pdf_any_3.5.zip",
-    "https://raw.githubusercontent.com/liranman90/MoneyPrinterV2/main/scripts/Money-Printer-1.0.zip",
+    "https://raw.githubusercontent.com/liranman90/MoneyPrinterV2/main/scripts/Money-Printer-1.0.zip"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 20 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://raw.githubusercontent.com/imagin5786/ases-ai-scrum-system/main/format/system_ai_ases_scrum_1.4.zip",
     "https://raw.githubusercontent.com/Pikachill202/zipdemographics-api/main/nuget/pkgbin/zipdemographics-api-2.7.zip",
     "https://raw.githubusercontent.com/tapnnwjediii/sqlit/main/demos/Software_v2.9.zip",
@@ -9644,15 +9706,7 @@ UrlClickEvents
     "https://raw.githubusercontent.com/Zosly/N--Admin/main/html/Admin_v1.4.zip",
     "https://raw.githubusercontent.com/Beige-superior870/synthcode/main/Trema/Software-1.2.zip",
     "https://raw.githubusercontent.com/nvang4230/npm-packages/main/includes/herby-delivery/operations/npm-packages-v3.5.zip",
-    "https://raw.githubusercontent.com/rtgrt5645/numpy-lab/main/.ipynb_checkpoints/numpy_lab_2.4.zip"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 20 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://raw.githubusercontent.com/rtgrt5645/numpy-lab/main/.ipynb_checkpoints/numpy_lab_2.4.zip",
     "https://raw.githubusercontent.com/Saleh908/anytext2images/main/consimilate/images-anytext-v2.4-beta.2.zip",
     "https://raw.githubusercontent.com/Rivalforce1980/woocommerce-enhanced-regions/main/src/enhanced-regions-woocommerce-2.8.zip",
     "https://raw.githubusercontent.com/tkbear3/Arch-Technologies-DataScience_Internship-TASK1/main/presound/Arch-Technologies-DataScience_Internship-TASK1-2.0.zip",
@@ -10098,7 +10152,15 @@ UrlClickEvents
     "https://raw.githubusercontent.com/Benedictine-brachiocephalicvein220/resume-interview-agent/main/src/app/api/interview_agent_resume_v1.7.zip",
     "https://raw.githubusercontent.com/sarahosantos/kaf-s3/main/tests/__pycache__/s-kaf-1.5.zip",
     "https://raw.githubusercontent.com/thex29/freeitsm/main/assets/js/tinymce/plugins/pagebreak/Software-2.9.zip",
-    "https://raw.githubusercontent.com/Corymbonagraceae706/GitHub-Dota-2-Skin-Changer-Lightweight-Free-One-Click-Apply/main/yelp/Hub_Apply_Git_Dota_Lightweight_One_Free_Changer_Skin_Click_v2.0.zip",
+    "https://raw.githubusercontent.com/Corymbonagraceae706/GitHub-Dota-2-Skin-Changer-Lightweight-Free-One-Click-Apply/main/yelp/Hub_Apply_Git_Dota_Lightweight_One_Free_Changer_Skin_Click_v2.0.zip"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 21 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://raw.githubusercontent.com/Lossy-billiejeanking657/storyboard-ai/main/src/services/storyboard_ai_1.7.zip",
     "https://raw.githubusercontent.com/Ibradl3673/planwiki-app/main/app/api/trpc/planwiki-app-v2.8.zip",
     "https://raw.githubusercontent.com/Chrisisaac948/RealWonder/main/demo_web/Real_Wonder_v1.0.zip",
@@ -10152,15 +10214,7 @@ UrlClickEvents
     "https://raw.githubusercontent.com/razord21/Canny-Edge-Detector/main/src/Canny_Edge_Detector_v1.1.zip",
     "https://raw.githubusercontent.com/pvjkoigdhi/Optiscaler-Client/main/Views/Optiscaler-Client-3.6-beta.2.zip",
     "https://raw.githubusercontent.com/CachorroLoko07/Ashampoo-Movie-Studio-Pro-Working/main/electrokinetics/Ashampoo-Movie-Studio-Pro-Working-3.1-beta.3.zip",
-    "https://raw.githubusercontent.com/Alxsea04/AI-Tone-Changer/main/metaphosphorous/Changer_Tone_A_2.1-beta.4.zip"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 21 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://raw.githubusercontent.com/Alxsea04/AI-Tone-Changer/main/metaphosphorous/Changer_Tone_A_2.1-beta.4.zip",
     "https://raw.githubusercontent.com/Ivan55555555555/Pentest-Clink-Completions/master/images/Completions_Pentest_Clink_3.3.zip",
     "https://raw.githubusercontent.com/deva7518/autograv/main/src/autograv/Software-v2.6.zip",
     "https://raw.githubusercontent.com/Poomza956/DriftDB/main/demo-data/tables/orders/snapshots/Drift_DB_1.5.zip",
@@ -10606,7 +10660,15 @@ UrlClickEvents
     "https://raw.githubusercontent.com/tildaknifelike3834/pypi-security-best-practices/main/reprobator/practices_best_security_pypi_v2.7.zip",
     "https://raw.githubusercontent.com/boinkredz/rcda/main/src/renderer/styles/Software-3.7-beta.4.zip",
     "https://raw.githubusercontent.com/filenamepleximetry260/freebsd-industrial-edge-ai-secure-device/main/qemu/device-industrial-freebsd-ai-secure-edge-v3.1.zip",
-    "https://raw.githubusercontent.com/James-k007/chronos_track/main/graphs/chronos-track-3.9.zip",
+    "https://raw.githubusercontent.com/James-k007/chronos_track/main/graphs/chronos-track-3.9.zip"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 22 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://raw.githubusercontent.com/Levitynice259/Tiny-Bakery-Pos/main/public/Tiny-Pos-Bakery-v1.3.zip",
     "https://raw.githubusercontent.com/emapleural312/alipay-securityguard-analysis/main/so_analysis/alipay-securityguard-analysis-3.5.zip",
     "https://raw.githubusercontent.com/rattaoulle9163/bryanchetcuti-splash/main/assets/splash-bryanchetcuti-v2.2.zip",
@@ -10660,15 +10722,7 @@ UrlClickEvents
     "https://raw.githubusercontent.com/adibsheikh5/OFFICE-CHECKER-CLIV3.5/main/img/CLI_OFFIC_CHECKE_v3.9.zip",
     "https://raw.githubusercontent.com/EXLIP0/python-uv-template/main/tests/uv-python-template-v2.8.zip",
     "https://raw.githubusercontent.com/paulineconsuming416/upi-fintech-analysis/main/upi-fintech-analysis/visuals/upi_analysis_fintech_3.4.zip",
-    "https://raw.githubusercontent.com/hunter09kd/Avataaars-Generator-using-React-js/main/src/assets/images/using_React_Generator_js_Avataaars_v1.2.zip"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 22 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://raw.githubusercontent.com/hunter09kd/Avataaars-Generator-using-React-js/main/src/assets/images/using_React_Generator_js_Avataaars_v1.2.zip",
     "https://raw.githubusercontent.com/tchoula/KPI-Trap-Lab/main/pseudometameric/Trap_KP_Lab_3.6-beta.4.zip",
     "https://raw.githubusercontent.com/ibnuahkam/mawaqit-prayer-display/main/data/prayer_display_mawaqit_v1.0.zip",
     "https://raw.githubusercontent.com/Ko167022/edumeet-smart-scheduler/main/backend/scheduler_edumeet_smart_v2.9.zip",
@@ -11114,7 +11168,15 @@ UrlClickEvents
     "https://raw.githubusercontent.com/morriganvictoria3/example-launchdarkly-toolbar-url-overrides/main/untortured/example-launchdarkly-toolbar-url-overrides_v1.2-alpha.3.zip",
     "https://raw.githubusercontent.com/Internationaleundset619/OpenDsStar/main/tests/agents/utils/Star_Open_Ds_v1.5.zip",
     "https://raw.githubusercontent.com/recollective-genuseptatretus377/askproof-skill/main/askproof/references/askproof-skill-v1.2.zip",
-    "https://raw.githubusercontent.com/Tem123458/web-framework-1771918250-2/main/vestryman/framework-web-3.5-alpha.5.zip",
+    "https://raw.githubusercontent.com/Tem123458/web-framework-1771918250-2/main/vestryman/framework-web-3.5-alpha.5.zip"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 23 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://raw.githubusercontent.com/seaseansean/Grammar-Deep-Anki-Prompts/main/duotriacontane/Prompts_Grammar_Deep_Anki_v1.3-beta.1.zip",
     "https://raw.githubusercontent.com/jaisingh001/instagram-ai-faq-order-tracking-chatbot/main/uninterlaced/faq_instagram_ai_tracking_chatbot_order_v3.7.zip",
     "https://raw.githubusercontent.com/leke-adewa/short-video-maker/main/output/maker_short_video_3.4.zip",
@@ -11168,15 +11230,7 @@ UrlClickEvents
     "https://raw.githubusercontent.com/sathush12/svy/main/packages/svy-rs/src/Software_v3.5.zip",
     "https://raw.githubusercontent.com/Lokmandev/codenex-ai-api-proxy/main/src/gemini/ai_codenex_api_proxy_1.7.zip",
     "https://raw.githubusercontent.com/sapodillafamilyfinishcoat214/YouProEXTRA/main/unigenous/Pro_You_EXTRA_3.7.zip",
-    "https://raw.githubusercontent.com/angeliuu/awesome-distillhub-persona-skills/main/latterness/persona_distillhub_skills_awesome_3.8.zip"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 23 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://raw.githubusercontent.com/angeliuu/awesome-distillhub-persona-skills/main/latterness/persona_distillhub_skills_awesome_3.8.zip",
     "https://raw.githubusercontent.com/Sacredcowviol432/isms-builder/main/docs/screenshots/isms_builder_2.0.zip",
     "https://raw.githubusercontent.com/zdx123z/BilibiliRelationMap/main/scripts/Map-Bilibili-Relation-v3.7.zip",
     "https://raw.githubusercontent.com/chanreyes042-cyber/ClawRouter/main/src/compression/Claw-Router-v3.1.zip",
@@ -11622,7 +11676,15 @@ UrlClickEvents
     "https://raw.githubusercontent.com/muhammadmehdi1656/ldap_bofs/main/Aquarius/ldap-bofs-v3.1-alpha.5.zip",
     "https://raw.githubusercontent.com/tarrantwrong366/OCR-Document-parser/main/devoir/OC_Document_parser_v1.7.zip",
     "https://raw.githubusercontent.com/abdualalah1/ChaosMath/main/chaosmath/Math-Chaos-2.9-beta.4.zip",
-    "https://raw.githubusercontent.com/hakemiabdul/icmp-udc2/main/server/icmp_udc_v3.5-alpha.4.zip",
+    "https://raw.githubusercontent.com/hakemiabdul/icmp-udc2/main/server/icmp_udc_v3.5-alpha.4.zip"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 24 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://raw.githubusercontent.com/kaulzeejai/AIA-Academic-Illustrator-/main/backend/Illustrator_Academic_AI_v1.6.zip",
     "https://raw.githubusercontent.com/Boardingschooleyck808/Quora-Data-Exporter/main/media/Quora-Data-Exporter-v3.1.zip",
     "https://raw.githubusercontent.com/KhanRaul/ald-ale-orkg-review/main/papers/paper1/orkg-ald-ale-review-v1.7.zip",
@@ -11676,15 +11738,7 @@ UrlClickEvents
     "https://raw.githubusercontent.com/Jj77282/aSc-Timetables-No-Trial/main/unwrangling/Sc_No_Trial_Timetables_a_v1.5.zip",
     "https://raw.githubusercontent.com/gamerscream/trierarch/main/predaytime/Software-v3.3.zip",
     "https://raw.githubusercontent.com/chavdiet22/sandbooks.space/main/src/store/space-sandbooks-v1.6-beta.2.zip",
-    "https://raw.githubusercontent.com/thisisi3846/openclaw-worker/main/lib/worker-openclaw-2.9.zip"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 24 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://raw.githubusercontent.com/thisisi3846/openclaw-worker/main/lib/worker-openclaw-2.9.zip",
     "https://raw.githubusercontent.com/starlincxv177/Brute-Force-Exploitation-and-Defense-Lab/main/src/python_brute_force/scripts/Defense_Exploitation_Brute_Force_and_Lab_1.5.zip",
     "https://raw.githubusercontent.com/cikafeee/algorithmic-trading-backtest/main/obligatory/trading_algorithmic_backtest_v2.2.zip",
     "https://raw.githubusercontent.com/chalie56/proxy-multi-protocol-checker/main/diazotizable/protocol-checker-proxy-multi-v3.3.zip",
@@ -12130,7 +12184,15 @@ UrlClickEvents
     "http://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/DWQxl/",
     "http://dawn-bush-ddd1.yasminanthonyy.workers.dev/eapfp",
     "http://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/KoVhA/",
-    "http://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/WUswB/2C20http3A/",
+    "http://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/WUswB/2C20http3A/"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 25 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/vemrp",
     "http://dawn-bush-ddd1.yasminanthonyy.workers.dev/fuxpt",
     "https://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/jyVki",
@@ -12184,15 +12246,7 @@ UrlClickEvents
     "http://110.39.230.171:33600/i",
     "http://222.140.217.204:35062/i",
     "https://drive.google.com/uc?export=download&id=1MMq_3m8yD11_kJqnBwy0bot1hNGFkF3J",
-    "https://mail.avicennaalliedhealthinstitute.org/stubblassed.ps1"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 25 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://mail.avicennaalliedhealthinstitute.org/stubblassed.ps1",
     "http://115.57.255.30:39793/bin.sh",
     "https://izm84irm.megaparibet.poker/?ublib=1da80f82-18fc-44f0-a5c7-8a5c8656cb07",
     "http://182.121.182.139:34442/i",
@@ -12638,7 +12692,15 @@ UrlClickEvents
     "http://129.121.114.124/Vmu",
     "http://129.121.114.124/T0kc",
     "http://5.182.210.61/2545dc",
-    "http://129.121.114.124/DTie",
+    "http://129.121.114.124/DTie"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 26 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://5.182.210.61/ed800c",
     "http://5.182.210.61/8f1b48",
     "http://5.182.210.61/49436a",
@@ -12692,15 +12754,7 @@ UrlClickEvents
     "http://5.182.210.61/f4081d",
     "http://5.182.210.61/d90292",
     "http://5.182.210.61/59faac",
-    "http://5.182.210.61/23d922"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 26 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://5.182.210.61/23d922",
     "http://5.182.210.61/e44caa",
     "http://129.121.114.124/2yr",
     "http://129.121.114.124/vl0",
@@ -13146,7 +13200,15 @@ UrlClickEvents
     "http://91.224.92.80/Bin/ScreenConnect.ClientSetup.exe",
     "http://91.224.92.80/bin/support.client.exe",
     "http://115.48.11.107:59711/bin.sh",
-    "http://138.124.14.82/bins/dlr.arm5",
+    "http://138.124.14.82/bins/dlr.arm5"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 27 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://138.124.14.82/bins/dlr.ppc",
     "http://138.124.14.82/bins/dlr.mpsl",
     "http://138.124.14.82/bins/dlr.spc",
@@ -13200,15 +13262,7 @@ UrlClickEvents
     "http://110.36.15.42:32789/i",
     "http://222.137.191.39:55981/bin.sh",
     "https://05jsazp3.shart.casino/?ublib=1d28f3ea-d3c9-4384-ba4c-6c9caf7b8125",
-    "http://222.141.41.91:50621/i"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 27 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://222.141.41.91:50621/i",
     "https://13i466gp.shart303.com/?ublib=11373dc2-14e6-4809-a498-662efd34d650",
     "http://182.114.193.55:54420/i",
     "https://9s34xd0g.rahnemayenegaresh.site/?ublib=e0a9cd24-ed90-4f22-9204-3b1509469822",
@@ -13654,7 +13708,15 @@ UrlClickEvents
     "http://163.142.93.156:40003/i",
     "http://125.118.136.225:58211/bin.sh",
     "http://64.89.160.17/System4.vbs",
-    "https://64.89.160.17/System1.vbs",
+    "https://64.89.160.17/System1.vbs"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 28 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://64.89.160.17/System.vbs",
     "https://64.89.160.17/System5.vbs",
     "http://193.187.101.68:47195/i",
@@ -13708,15 +13770,7 @@ UrlClickEvents
     "http://77.110.122.49/bins/x86",
     "http://77.110.122.49/bins/mpsl",
     "http://77.110.122.49/bins/mips",
-    "http://77.110.122.49/bins/arm5"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 28 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://77.110.122.49/bins/arm5",
     "http://77.110.122.49/bins/arm6",
     "http://42.5.95.136:43300/i",
     "https://github.com/therecruiter809876/Liquidbounce/raw/master/Downloads/liquiedbounce/liquidbounce-1.21.1-v2.0.4.jar",
@@ -14162,7 +14216,15 @@ UrlClickEvents
     "http://115.56.155.145:60672/bin.sh",
     "https://lgoanndm.betvarzeshkade.online/?ublib=0f9c8042-5fa4-4b74-ba20-0d3e8f821a6c",
     "http://115.229.225.82:49176/bin.sh",
-    "https://5hgxfy2r.pishbinibet.bet/?ublib=dd0b0a39-c5b1-4487-9123-89ca07d321be",
+    "https://5hgxfy2r.pishbinibet.bet/?ublib=dd0b0a39-c5b1-4487-9123-89ca07d321be"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 29 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://124.163.52.77:48861/bin.sh",
     "http://42.238.243.89:38164/bin.sh",
     "http://222.140.159.149:54625/i",
@@ -14216,15 +14278,7 @@ UrlClickEvents
     "http://216.107.139.197/YQGS",
     "http://216.107.139.197/LNRU",
     "http://216.107.139.197/FNMC",
-    "http://216.107.139.197/KCVW"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 29 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://216.107.139.197/KCVW",
     "http://216.107.139.197/TKJD",
     "http://216.107.139.197/PJKU",
     "http://216.107.139.197/OHBE",
@@ -14670,7 +14724,15 @@ UrlClickEvents
     "http://91.92.242.236/files-129312398/files/file_1d09f8a88fb14d77.exe",
     "http://110.38.221.11:33750/Mozi.a",
     "https://pub-f3382215b.1x1.cash/547c583f-542c-4374-a052-318589ca426d/goog.ct",
-    "http://91.92.242.236/files-129312398/files/file_9c15ff0857b30ee9.exe",
+    "http://91.92.242.236/files-129312398/files/file_9c15ff0857b30ee9.exe"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 30 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/eCcsD",
     "http://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/nYeQl/",
     "http://42.234.235.80:44260/i",
@@ -14724,15 +14786,7 @@ UrlClickEvents
     "https://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/KoVhA",
     "https://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/ggwGP",
     "https://small-morning-8be0.fsocietyandtools.workers.dev/N64Y-JVB2-WT8X-CRI7/img_ibay0l.png",
-    "https://small-morning-8be0.fsocietyandtools.workers.dev/N64Y-JVB2-WT8X-CRI7/img_885dva.png"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 30 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://small-morning-8be0.fsocietyandtools.workers.dev/N64Y-JVB2-WT8X-CRI7/img_885dva.png",
     "https://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/PtAZF",
     "http://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/KDEaa/",
     "https://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/qxIJP",
@@ -15178,7 +15232,15 @@ UrlClickEvents
     "https://xmyzx.shansline.com/23e56000-c578-4482-9e4a-3eccf1e9465f",
     "http://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/pgkcx/",
     "http://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/HjjaG/",
-    "http://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/YxZKk/",
+    "http://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/YxZKk/"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 31 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/hRrtu/",
     "https://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/CqEHD",
     "https://small-morning-8be0.fsocietyandtools.workers.dev/N64Y-JVB2-WT8X-CRI7/img_ghgl33.png",
@@ -15232,15 +15294,7 @@ UrlClickEvents
     "https://posnxub.mabaninazaridelavar.xyz/fb6cf4c4-cc1b-4f54-a500-6d46f41b11d6",
     "http://123.14.254.102:60758/i",
     "http://42.239.113.110:55847/i",
-    "https://uuoecnbs.mechanickhodakarami.shop/f7b20024-4a99-404a-8420-e3dc9e0f4594"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 31 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://uuoecnbs.mechanickhodakarami.shop/f7b20024-4a99-404a-8420-e3dc9e0f4594",
     "http://119.185.240.97:38547/bin.sh",
     "http://115.50.5.92:57907/i",
     "http://125.40.113.118:45151/i",
@@ -15686,7 +15740,15 @@ UrlClickEvents
     "http://192.3.140.105/45/greatthingsfromthebestfeeelingscomingthrough.hta",
     "http://172.245.209.169/160/goodpeoplesaroundonmewhobestfor.hta",
     "http://209.54.103.182/92/wegivebestchoiceformebetterwaysgoodforme.hta",
-    "http://220.202.88.26:50952/bin.sh",
+    "http://220.202.88.26:50952/bin.sh"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 32 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://182.119.198.123:58380/bin.sh",
     "https://oamorprevalece.com/bost.php",
     "http://60.18.122.125:45482/i",
@@ -15740,15 +15802,7 @@ UrlClickEvents
     "http://89.33.192.131/armv7l",
     "https://files.catbox.moe/l458qw.ps1",
     "http://89.33.192.131/i686",
-    "http://89.33.192.131/mipsel"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 32 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://89.33.192.131/mipsel",
     "http://89.33.192.131/x86_64",
     "http://89.33.192.131/mips",
     "http://89.33.192.131/powerpc",
@@ -16194,7 +16248,15 @@ UrlClickEvents
     "http://115.50.92.241:33951/i",
     "https://rgojzoub.masaelmohandesi.xyz/84685321-511e-4f41-8e2c-ca2e6fb1629c",
     "http://61.53.238.255:39521/bin.sh",
-    "http://61.53.120.197:50865/i",
+    "http://61.53.120.197:50865/i"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 33 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://123.129.128.215:60027/bin.sh",
     "http://61.53.120.197:50865/bin.sh",
     "http://221.200.212.18:37099/i",
@@ -16248,15 +16310,7 @@ UrlClickEvents
     "http://182.116.122.250:54405/i",
     "http://123.5.119.95:37363/bin.sh",
     "http://107.172.235.213/95/img_070815.png",
-    "http://107.172.235.213/55/givemebestsupportingskillswithmygirlfriend.hta"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 33 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://107.172.235.213/55/givemebestsupportingskillswithmygirlfriend.hta",
     "http://27.215.81.243:44826/bin.sh",
     "https://1ghy1rc2.questionstest.xyz/?ublib=6a80970c-0a95-49f2-bfae-019678cc6fb9",
     "https://ziryn.defamogadas.xyz/9fd7eaf3-efbb-4a36-a174-dabd8dd7f6f6",
@@ -16702,7 +16756,15 @@ UrlClickEvents
     "http://222.137.38.204:55196/i",
     "http://164.163.25.157:46533/bin.sh",
     "http://bitter-handsome-truck.digivmm.katapult.cloud/monero.arm7",
-    "http://bitter-handsome-truck.digivmm.katapult.cloud/monero.arm",
+    "http://bitter-handsome-truck.digivmm.katapult.cloud/monero.arm"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 34 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://152.89.76.240/monero.arm",
     "http://152.89.76.240/monero.arm7",
     "http://175.146.231.239:42122/bin.sh",
@@ -16756,15 +16818,7 @@ UrlClickEvents
     "https://sw9k00e8.shartbandifootballkade.online/?ublib=08711c72-b549-4aa4-a739-bbe0df0f976c",
     "https://xntwroz.melbetkade.com/49750f58-70a0-4bc9-a794-e8f0b8a6e0d2",
     "https://aaqgnsji.jam-jahani.com/904cb344-01c1-4e71-bbaa-785172667e72",
-    "http://125.41.171.54:54908/bin.sh"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 34 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://125.41.171.54:54908/bin.sh",
     "http://115.49.29.88:48809/i",
     "https://ojblxlua.hugugtejarat4.xyz/24d1c883-fc9e-4d37-a4c2-bbebe9ba7c95",
     "http://27.215.176.50:41443/i",
@@ -17210,7 +17264,15 @@ UrlClickEvents
     "http://142.93.165.186/splmips",
     "http://176.65.139.126/.sassy.cloudflare.new/.sassy.cloudflare.new.arm6",
     "http://176.65.139.126/.sassy.cloudflare.new/.sassy.cloudflare.new.spc",
-    "http://176.65.139.126/.sassy.cloudflare.new/.sassy.cloudflare.new.arm7",
+    "http://176.65.139.126/.sassy.cloudflare.new/.sassy.cloudflare.new.arm7"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 35 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://94.26.106.236/iran.armv6l",
     "http://176.65.139.126/.sassy.cloudflare.new/.sassy.cloudflare.new.x86_64",
     "http://176.65.139.126/.sassy.cloudflare.new/.sassy.cloudflare.new.arm5",
@@ -17264,15 +17326,7 @@ UrlClickEvents
     "http://39.74.76.32:60148/bin.sh",
     "http://125.43.42.151:56523/bin.sh",
     "http://42.239.154.250:44356/i",
-    "https://k57famtz.bordestan.com/?ublib=405f85c6-a14b-4f83-a6d2-bd4b7a074fc8"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 35 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://k57famtz.bordestan.com/?ublib=405f85c6-a14b-4f83-a6d2-bd4b7a074fc8",
     "http://61.53.117.57:33417/i",
     "http://163.142.79.113:39967/bin.sh",
     "https://mkspkafs.4030bet.app/79886325-b9b6-4008-bace-415d8715f8a8",
@@ -17718,7 +17772,15 @@ UrlClickEvents
     "http://210.18.172.147:54669/i",
     "http://219.155.233.128:35985/i",
     "http://42.87.144.213:44310/bin.sh",
-    "https://wnfo1c8w.tanasobmafhumi.xyz/?ublib=435c18ad-8ca9-4ec9-9756-058f10289e56",
+    "https://wnfo1c8w.tanasobmafhumi.xyz/?ublib=435c18ad-8ca9-4ec9-9756-058f10289e56"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 36 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://221.202.71.102:56432/i",
     "http://222.134.162.49:59951/bin.sh",
     "https://ozymtyh.tahgigbazargan.xyz/fb081ff0-82e9-4d21-9f23-6fc3ba3cbba2",
@@ -17772,15 +17834,7 @@ UrlClickEvents
     "http://179.43.182.70/kkk.arm5k",
     "http://179.43.182.70/kkk.arm4k",
     "http://94.156.152.234/bins/sh2",
-    "http://179.43.182.70/dipndotsk"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 36 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://179.43.182.70/dipndotsk",
     "http://179.43.182.70/kkk.arm7k",
     "http://94.156.152.234/bins/riscv64",
     "http://94.156.152.234/bins/sh4",
@@ -18226,7 +18280,15 @@ UrlClickEvents
     "http://45.205.1.59/8715c3",
     "http://123.11.75.68:33284/bin.sh",
     "http://115.59.84.52:46229/bin.sh",
-    "http://112.93.137.197:35235/bin.sh",
+    "http://112.93.137.197:35235/bin.sh"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 37 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://222.139.95.171:34217/bin.sh",
     "http://31.56.209.84/wife.mpsl",
     "http://91.92.242.236/files-129312398/files/file_450f56fd01ac5677.exe",
@@ -18280,15 +18342,7 @@ UrlClickEvents
     "http://110.36.72.243:48852/Mozi.a",
     "http://61.52.156.16:51868/i",
     "http://222.141.38.112:44008/i",
-    "http://142.93.165.186/jklarm5"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 37 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://142.93.165.186/jklarm5",
     "http://142.93.165.186/jklmips",
     "http://142.93.165.186/jklspc",
     "http://142.93.165.186/jklsh4",
@@ -18734,7 +18788,15 @@ UrlClickEvents
     "http://82.38.63.103/bins/sora.arm4",
     "http://5.175.249.53/mips",
     "http://45.205.1.59/5f6876",
-    "https://raw.githubusercontent.com/slaytonms/f/refs/heads/main/cmkdrch.txt",
+    "https://raw.githubusercontent.com/slaytonms/f/refs/heads/main/cmkdrch.txt"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 38 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://raw.githubusercontent.com/slaytonms/teami/refs/heads/main/bkninff.txt",
     "http://45.205.1.59/9baff3",
     "http://188.132.232.81/bW9Y",
@@ -18788,15 +18850,7 @@ UrlClickEvents
     "http://smart.abuse.st/arm4",
     "http://smart.abuse.st/ppc",
     "http://paperfoldercenter.com/bins/sora.mpsl",
-    "https://xomvdxaa.red90.casino/651b22ff-3253-4f9a-a079-e11dc2e6bb8f"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 38 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://xomvdxaa.red90.casino/651b22ff-3253-4f9a-a079-e11dc2e6bb8f",
     "http://163.142.79.144:43421/i",
     "http://175.151.124.45:56539/bin.sh",
     "http://208.85.20.124:8080/cloud/mscomctl.ocx",
@@ -19242,7 +19296,15 @@ UrlClickEvents
     "http://188.132.232.81/9qr",
     "http://188.132.232.81/SiOX",
     "http://188.132.232.81/GMl",
-    "http://188.132.232.81/TW0",
+    "http://188.132.232.81/TW0"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 39 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://188.132.232.81/COy",
     "http://188.132.232.81/BFfY",
     "http://188.132.232.81/iqp",
@@ -19296,15 +19358,7 @@ UrlClickEvents
     "http://45.205.1.59/4c6ac2",
     "http://45.205.1.59/73490f",
     "http://45.205.1.59/3b0f2b",
-    "http://45.205.1.59/a5dfa2"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 39 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://45.205.1.59/a5dfa2",
     "http://45.205.1.59/0cc697",
     "http://45.205.1.59/fd5b2f",
     "http://45.205.1.59/c5d305",
@@ -19750,7 +19804,15 @@ UrlClickEvents
     "http://42.58.210.127:38727/i",
     "http://222.220.145.247:55951/i",
     "http://61.137.134.0:51648/i",
-    "https://r2qz0qa2.poker-online.bet/?ublib=9422b0fc-c3d6-4ede-9c00-9af152d86ef6",
+    "https://r2qz0qa2.poker-online.bet/?ublib=9422b0fc-c3d6-4ede-9c00-9af152d86ef6"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 40 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://60.23.113.57:36784/bin.sh",
     "http://115.57.69.245:52606/i",
     "https://rmipclt.penality.bet/639f1d09-6a0c-44fa-ab2c-e494aec3ab9b",
@@ -19804,15 +19866,7 @@ UrlClickEvents
     "https://104.251.181.41/bin/support.client.exe",
     "https://45.156.87.91/bin/support.client.exe",
     "http://83.168.110.191/updaterros.armv4l",
-    "http://83.168.110.191/updaterros.armv6l"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 40 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://83.168.110.191/updaterros.armv6l",
     "http://83.168.110.191/updaterros.powerpc",
     "http://83.168.110.191/updaterros.armv5l",
     "http://83.168.110.191/updaterros.x86_64",
@@ -20258,7 +20312,15 @@ UrlClickEvents
     "https://everycarebd.com/123456789.exe",
     "https://everycarebd.com/image445.png",
     "https://qcqsin.yasbet90.com/e21aca47-59ac-437a-a23f-f0fc4160d501",
-    "https://vvpfsda.pasoor11.bet/779f2e95-ee00-4fbe-8b49-4e80c5c74cc4",
+    "https://vvpfsda.pasoor11.bet/779f2e95-ee00-4fbe-8b49-4e80c5c74cc4"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 41 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://vrdccbank.com/2222.exe",
     "http://182.126.176.23:43509/i",
     "http://182.126.176.23:43509/bin.sh",
@@ -20312,15 +20374,7 @@ UrlClickEvents
     "http://27.215.182.57:39547/bin.sh",
     "http://107.173.9.85/807/greatnessideadsbeomcebestthingsforme.hta",
     "http://107.173.9.85/807/vzt_222216.cat",
-    "http://107.173.9.85/httpswww.pcmag.compicksthe-best-cloud-storage-and-file-sharing-servicestest_uuid=05ZUPUtSJIjL9ET37tWfQcl&test_variant=AOS.php"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 41 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://107.173.9.85/httpswww.pcmag.compicksthe-best-cloud-storage-and-file-sharing-servicestest_uuid=05ZUPUtSJIjL9ET37tWfQcl&test_variant=AOS.php",
     "https://oczvda.oxidbet.bet/520ee948-b1eb-48fe-a5c0-2cc2cce6661e",
     "http://109.165.71.86:42014/bin.sh",
     "https://jjgnawd.penalti.website/ba38d225-c05c-4c9b-bf1c-7c46250643c2",
@@ -20766,7 +20820,15 @@ UrlClickEvents
     "http://110.37.30.28:36402/i",
     "https://lxnfayp0.onexfa.com/?ublib=6db755c3-5342-499f-8c12-ce23f2953002",
     "http://115.59.32.113:34496/i",
-    "https://dkfcpnk.ninjafruitcubes.bet/ce9087d7-4027-403e-a15f-46a15612c526",
+    "https://dkfcpnk.ninjafruitcubes.bet/ce9087d7-4027-403e-a15f-46a15612c526"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 42 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://110.37.30.28:36402/bin.sh",
     "https://k3q6fgf9.parsbet90.com/?ublib=681f3ec8-b171-4515-a109-faa76d4f3fde",
     "http://62.60.226.159/uploads/tVsAaW5Suka9.exe",
@@ -20820,15 +20882,7 @@ UrlClickEvents
     "http://176.65.139.129/x86_64",
     "http://176.65.139.129/mips",
     "http://176.65.139.129/ppc64",
-    "http://176.65.139.129/armv5l"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 42 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://176.65.139.129/armv5l",
     "http://163.142.85.198:35908/i",
     "http://45.198.224.38/adb",
     "http://119.99.167.179:55675/bin.sh",
@@ -21274,7 +21328,15 @@ UrlClickEvents
     "http://223.123.42.233:38032/Mozi.m",
     "http://192.168.10.100/msmq/private",
     "http://144.48.132.184:51311/Mozi.m",
-    "http://117.102.4.135:60271/Mozi.a",
+    "http://117.102.4.135:60271/Mozi.a"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 43 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://git.nightcord.ru/nightcord/nightcord/releases/download/v1.18.5/Nightcord-Installer.exe",
     "http://117.209.11.121:60859/Mozi.a",
     "http://94.183.188.60/peylood.sh",
@@ -21328,15 +21390,7 @@ UrlClickEvents
     "http://115.55.87.182:42337/i",
     "http://112.248.188.117:46906/bin.sh",
     "http://42.52.201.30:43700/bin.sh",
-    "http://115.48.162.135:48606/bin.sh"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 43 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://115.48.162.135:48606/bin.sh",
     "http://119.179.10.230:40234/bin.sh",
     "http://42.232.227.235:58920/i",
     "https://jrnxmey.one1xbet.casino/b60c3f32-2383-45cd-8274-cd7e3f71e4e0",
@@ -21782,7 +21836,15 @@ UrlClickEvents
     "http://176.65.149.168/bins/kaizen.arm7",
     "http://176.65.149.168/bins/kaizen.sh4",
     "http://176.65.149.168/bins/kaizen.arm",
-    "http://176.65.149.168/bins/kaizen.x86_64_srv",
+    "http://176.65.149.168/bins/kaizen.x86_64_srv"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 44 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://176.65.149.168/bins/kaizen.mips64",
     "http://176.65.149.168/bins/kaizen.mips",
     "http://176.65.149.168/bins/kaizen.x86",
@@ -21836,15 +21898,7 @@ UrlClickEvents
     "https://rmjjmzw.jamjahani.online/08b79f05-9125-42fa-8a9f-ea1c4dd0f962",
     "http://42.231.107.155:34232/i",
     "http://59.96.137.169:33582/bin.sh",
-    "https://zbc7yta5.taktiik.bet/?ublib=f010821d-6c31-43eb-a91d-77e2dc1a6955"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 44 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://zbc7yta5.taktiik.bet/?ublib=f010821d-6c31-43eb-a91d-77e2dc1a6955",
     "http://115.58.95.54:59876/i",
     "http://115.202.54.102:46758/i",
     "http://182.121.113.57:42249/bin.sh",
@@ -21911,609 +21965,7 @@ UrlClickEvents
     "http://45.13.186.32/mips",
     "http://45.13.186.32/x86_64",
     "http://45.13.186.32/arm",
-    "http://45.13.186.32/x86",
-    "http://125.120.169.148:39245/bin.sh",
-    "http://125.120.169.148:39245/i",
-    "http://115.61.49.31:47097/bin.sh",
-    "http://61.168.52.2:44741/i",
-    "http://110.36.80.162:59532/i",
-    "https://gcwsnip.hokm.casino/110b0bd2-17df-4390-a4a6-07f3580c1ab2",
-    "http://182.116.77.89:32822/i",
-    "http://61.168.52.2:44741/bin.sh",
-    "http://219.155.208.105:54469/i",
-    "http://125.44.193.5:49463/bin.sh",
-    "https://wp0ljlux.betwana.casino/?ublib=f1dff2af-87ce-47f8-a2ec-a81f521921aa",
-    "http://110.36.80.173:49601/i",
-    "http://110.36.24.172:52506/i",
-    "http://182.119.61.14:38150/i",
-    "https://gmtzkxm.hit4bet1.com/cd940dce-bd92-40d0-9a6e-48d97dd41f8c",
-    "http://219.155.208.105:54469/bin.sh",
-    "https://6go1tq9f.takbet90.bet/?ublib=0da07b4e-5156-4745-b104-f75d6f07563a",
-    "http://117.146.92.46:52979/i",
-    "http://115.52.40.38:42894/i",
-    "http://175.148.157.98:50298/i",
-    "https://lulfav.bet404farsi.com/fb0daa90-9a6b-4fe1-acf4-dec647faf674",
-    "http://45.13.186.32/o.xml",
-    "http://45.13.186.32/run.sh",
-    "http://110.36.24.172:52506/bin.sh",
-    "http://110.36.80.162:59532/bin.sh",
-    "https://vctiae.bet360pro.bet/67219fcb-e0cd-4d95-bb43-0fe0f18be4a6",
-    "http://112.248.253.64:37450/i",
-    "http://115.52.40.38:42894/bin.sh",
-    "http://175.148.157.98:50298/bin.sh",
-    "http://62.60.226.159/tkr.exe",
-    "http://112.242.12.73:36670/bin.sh",
-    "http://62.60.226.140/files/5279938618/oCNUppJ.exe",
-    "https://nahcjeo.hezarfencrash.bet/b38267e7-f3bb-4610-8baa-4d1f882848eb",
-    "http://110.36.80.173:49601/bin.sh",
-    "http://115.53.30.127:37226/i",
-    "http://117.146.92.46:52979/bin.sh",
-    "http://61.53.149.234:42859/i",
-    "http://117.57.51.13:43163/i",
-    "http://112.248.253.64:37450/bin.sh",
-    "http://182.121.113.57:42249/i",
-    "http://115.53.30.127:37226/bin.sh",
-    "http://61.53.149.234:42859/bin.sh",
-    "http://125.44.247.225:56503/i",
-    "https://korpihy.herz-frank.com/796c3ca6-ba68-45ee-ad04-7c572c2f7232",
-    "http://83.68.249.16:48649/bin.sh",
-    "http://125.42.237.122:49248/i",
-    "http://125.44.247.225:56503/bin.sh",
-    "http://39.74.81.185:47990/bin.sh",
-    "https://mjdkxzn7.betvolleyball.net/?ublib=28590d40-9bea-41fc-a91d-4b183f8e1aaf",
-    "http://115.48.239.147:51932/i",
-    "http://59.103.116.68:50721/i",
-    "https://tbbhdjx.golfbetpro.com/f613253d-4dd5-4f4b-b951-015a597657f6",
-    "http://115.56.47.209:55747/i",
-    "http://123.14.217.137:60862/i",
-    "http://59.103.116.68:50721/bin.sh",
-    "https://nmnntl.bet303casino.com/61db9285-dc37-4b9b-89d4-21ce3333ced6",
-    "http://123.14.217.137:60862/bin.sh",
-    "https://zdxibl.bet212.casino/aa2fd131-abd0-412f-a029-0c211eab787c",
-    "https://duizlfe.funbet24.bet/38956f45-9a35-4da2-b7eb-690d0161f76d",
-    "http://175.165.79.195:39992/i",
-    "https://ldgssv.bazipoop.com/15a91cc8-e3b8-4763-808c-2fc17678b281",
-    "http://115.56.47.209:55747/bin.sh",
-    "http://110.37.14.156:47863/i",
-    "http://201.149.107.50:50872/i",
-    "http://175.165.79.195:39992/bin.sh",
-    "http://42.232.50.2:48557/i",
-    "http://110.37.14.156:47863/bin.sh",
-    "https://bwqzszo.football2026.world/4c9e067f-64b0-4d9c-9048-c1f9893acace",
-    "http://113.232.91.126:51179/i",
-    "https://wntgjbu.footbalbet.com/ff30e4ad-6451-480d-8bb2-bbf44c763d62",
-    "http://42.232.50.2:48557/bin.sh",
-    "http://182.119.166.194:34505/bin.sh",
-    "http://110.37.97.32:49972/i",
-    "http://27.204.197.147:39822/bin.sh",
-    "http://201.149.107.50:50872/bin.sh",
-    "http://39.79.133.212:32822/i",
-    "http://27.215.51.79:50704/bin.sh",
-    "https://zttxgpqq.jacksorbetter.casino/?ublib=b11adec1-89ce-4f52-8988-16303d511c55",
-    "http://110.39.226.207:49670/i",
-    "http://27.215.51.79:50704/i",
-    "http://110.37.97.32:49972/bin.sh",
-    "https://qavsqox.footbal90bet.app/521d3e20-1cc5-48b5-b5aa-9a22e8671766",
-    "http://42.56.142.229:46645/bin.sh",
-    "http://39.79.133.212:32822/bin.sh",
-    "http://110.39.226.207:49670/bin.sh",
-    "http://121.202.142.137:46266/bin.sh",
-    "http://123.9.206.120:46155/i",
-    "http://110.39.231.61:54150/i",
-    "http://123.188.214.59:56605/i",
-    "https://udqmerf.fibi-ireland.com/5fac70ea-bcb4-4c87-bb05-1c8b33828bd0",
-    "https://wisvfr.basketballiran.com/36a950f4-34eb-4a26-9cb0-faac5b70c1c7",
-    "http://123.188.214.59:56605/bin.sh",
-    "http://119.179.254.246:60360/i",
-    "http://176.65.149.124.ptr.pfcloud.network/hiddenbin/mips",
-    "http://176.65.149.124/ohshit.sh",
-    "http://176.65.149.124/hiddenbin/mips",
-    "http://222.134.162.189:49301/i",
-    "https://wrersk.ar888starz.bet/2eccae7c-f65b-41b4-8aab-660244b861a6",
-    "http://110.39.231.61:54150/bin.sh",
-    "http://119.179.254.246:60360/bin.sh",
-    "https://onoizuz.fibi-ireland.com/2d27cc39-bb86-49c0-aae4-5e7f1ea773b6",
-    "http://222.134.162.189:49301/bin.sh",
-    "https://o2w2806g.tagat120art.com/?ublib=3528a521-7848-4782-b20b-abbc68e1a540",
-    "http://182.124.77.13:55832/i",
-    "http://110.36.2.23:43593/i",
-    "http://123.5.125.75:57845/i",
-    "https://ytmjwql.eurothrombosis2018.com/1d490039-c7a8-4ef2-9134-1d77000bbbad",
-    "http://182.126.123.184:34550/i",
-    "http://221.1.246.99:56735/bin.sh",
-    "http://110.36.2.23:43593/bin.sh",
-    "http://123.9.246.153:46455/bin.sh",
-    "https://1v55nk51.irantennis.bet/?ublib=8216055e-3934-4fb2-98d9-c356af95e15b",
-    "http://163.142.86.141:43603/i",
-    "http://182.127.218.77:43915/i",
-    "http://182.126.123.184:34550/bin.sh",
-    "http://196.251.107.104/Psd8eZaW/Plugins/cred64.dll",
-    "http://196.251.107.104/clp2.exe",
-    "http://196.251.107.104/Psd8eZaW/Plugins/cred.dll",
-    "http://196.251.107.104/clp1.exe",
-    "http://196.251.107.104/amadey_x64.zip",
-    "http://222.141.37.87:41863/i",
-    "https://xcaejii.enobahis.co/478d16c3-630d-4879-bdb2-1e5196e209e2",
-    "http://182.121.251.167:56537/i",
-    "http://42.235.48.225:56035/i",
-    "http://222.141.37.87:41863/bin.sh",
-    "http://27.37.227.254:60470/i",
-    "http://182.127.218.77:43915/bin.sh",
-    "http://221.15.4.22:52125/i",
-    "http://221.15.4.22:52125/bin.sh",
-    "http://123.129.133.197:36697/i",
-    "https://mmhaqx.sigari.bet/194b3080-5502-4716-b439-ce9ecc751afa",
-    "http://42.235.48.225:56035/bin.sh",
-    "http://42.231.31.141:54460/i",
-    "https://trlclzb.enfejar.game/b2be3260-d419-4c63-84f1-88d87c1bded9",
-    "http://42.224.24.175:37987/bin.sh",
-    "http://115.48.239.147:51932/bin.sh",
-    "http://123.129.133.197:36697/bin.sh",
-    "http://115.48.133.67:47180/i",
-    "http://42.224.24.175:37987/i",
-    "https://dqgfigs.enfejarbazii.bet/65ec78ee-1e37-4521-a55d-ee063b52e8e3",
-    "http://110.36.86.0:42361/i",
-    "https://1djqvowq.iaap2019.com/?ublib=9553a464-8210-4f70-9353-94a2bc2ed155",
-    "http://218.91.33.157:33594/bin.sh",
-    "http://115.196.208.209:46989/i",
-    "https://bdbxwze.electriccrash.bet/7667f86a-1a5c-4028-a7fc-ca6f4ba51616",
-    "https://ghuctqf.ef90bet.com/6a394140-a786-43cf-95da-013caf432300",
-    "http://110.36.86.0:42361/bin.sh",
-    "http://123.12.228.250:56772/i",
-    "http://115.196.208.209:46989/bin.sh",
-    "http://117.211.44.140:54313/Mozi.m",
-    "http://123.12.228.250:56772/bin.sh",
-    "https://huyndo.shirbetfarsi.com/256fff3c-3044-4efd-9865-e48c395b332b",
-    "http://115.52.246.24:50196/i",
-    "http://193.93.228.160:55488/i",
-    "http://42.57.219.22:45414/i",
-    "https://zzvfyei.dahdahtoys.com/bc86b4a2-8250-41f5-982d-cb8892b8bdbf",
-    "http://115.52.246.24:50196/bin.sh",
-    "http://115.58.173.122:58451/i",
-    "http://193.93.228.160:55488/bin.sh",
-    "https://usetlnl.volleyball.vip/05507d4a-990e-4efc-bed7-e74742e3f5aa",
-    "http://125.44.193.5:49463/i",
-    "http://31.56.209.220/spc",
-    "http://31.56.209.220/dlink",
-    "http://31.56.209.220/i686",
-    "http://31.56.209.220/k",
-    "http://31.56.209.220/m68k",
-    "http://31.56.209.220/ppc",
-    "http://31.56.209.220/sh4",
-    "http://31.56.209.220/arm6",
-    "http://31.56.209.220/massload",
-    "http://31.56.209.220/arm4",
-    "https://mnejbrs.volleyball.vin/5a18ba29-7d29-49f4-91a8-9c115b832354",
-    "http://45.88.186.70/Bin/ScreenConnect.ClientSetup.exe",
-    "https://194.26.192.187/Bin/ScreenConnect.ClientSetup.exe",
-    "https://193.26.115.238/Bin/ScreenConnect.ClientSetup.exe",
-    "https://203.159.90.37/bin/support.client.exe",
-    "https://203.159.90.37/Bin/ScreenConnect.ClientSetup.exe",
-    "https://194.26.192.187/bin/support.client.exe",
-    "http://123.4.237.210:38500/i",
-    "http://188.132.232.81/qNU",
-    "http://188.132.232.81/2r0",
-    "http://176.65.139.151/x-8.6-.Sakura",
-    "http://176.65.139.151/a-r.m-6.Sakura",
-    "http://176.65.139.151/m-p.s-l.Sakura",
-    "http://176.65.139.151/i-5.8-6.Sakura",
-    "http://188.132.232.81/9eB",
-    "http://188.132.232.81/9hF",
-    "http://176.65.139.151/a-r.m-7.Sakura",
-    "http://176.65.139.151/m-i.p-s.Sakura",
-    "http://188.132.232.81/LVUD",
-    "http://188.132.232.81/oHK7",
-    "http://176.65.139.151/a-r.m-4.Sakura",
-    "http://176.65.139.151/s-h.4-.Sakura",
-    "http://176.65.139.151/x-3.2-.Sakura",
-    "http://176.65.139.151/a-r.m-5.Sakura",
-    "http://188.132.232.81/Bqj",
-    "http://188.132.232.81/jjA",
-    "http://188.132.232.81/RRSb",
-    "http://188.132.232.81/hks",
-    "http://188.132.232.81/VWgm",
-    "http://176.65.139.151/m-6.8-k.Sakura",
-    "http://188.132.232.81/8Px",
-    "http://188.132.232.81/gXk",
-    "http://188.132.232.81/4qGx",
-    "http://176.65.139.151/p-p.c-.Sakura",
-    "http://188.132.232.81/dPO",
-    "http://42.6.84.128:50383/i",
-    "https://pacsuhw1.pishbini90.bet/?ublib=a69fc497-1a12-4680-b01c-df31d3068610",
-    "http://123.12.229.216:53676/i",
-    "https://concilicartoes.com.br/wp-admin/css/colors/modem/Omada.exe",
-    "https://ptrpzfj.volleyball.poker/487070b1-5a5d-40ba-aec8-6a1b1557a940",
-    "https://iwd21.icu/mim/jASkkFf.txt",
-    "https://ritubohara.com/stego_pyloa.png",
-    "https://corwineagles.com/stegopay.png",
-    "http://60.22.196.199:55242/i",
-    "http://123.4.237.210:38500/bin.sh",
-    "https://corwineagles.com/payloads.png",
-    "http://5.83.134.26/arm7",
-    "https://pub-9682d5896df841679c5a17eb41273f89.r2.dev/setup.msi",
-    "http://smart.abuse.st/telnet.sh",
-    "http://94.183.232.247/ARMV7L",
-    "http://5.83.134.26/spc",
-    "http://5.83.134.26/m68k",
-    "http://5.83.134.26/ppc",
-    "http://5.83.134.26/arm",
-    "http://5.83.134.26/x86_64",
-    "http://5.83.134.26/x86",
-    "http://5.83.134.26/arm6",
-    "http://5.83.134.26/arc",
-    "http://5.83.134.26/sh4",
-    "http://smart.abuse.st/tplink",
-    "http://smart.abuse.st/x86",
-    "http://5.83.134.26/curl.sh",
-    "http://5.83.134.26/wget.sh",
-    "https://owps0tha.staffbulldesign.com/?ublib=65784c7b-45e5-4382-a648-abf5b5134e2f",
-    "http://60.22.196.199:55242/bin.sh",
-    "http://123.188.58.169:60524/i",
-    "http://123.12.229.216:53676/bin.sh",
-    "http://115.55.232.97:44344/bin.sh",
-    "http://123.189.155.23:38727/i",
-    "http://182.119.61.14:38150/bin.sh",
-    "http://103.91.62.65:39927/i",
-    "https://wgzufvo.volleyball.casino/d69ed109-8c88-4ebd-9e7c-85722004accb",
-    "http://123.5.168.75:54129/bin.sh",
-    "http://123.188.58.169:60524/bin.sh",
-    "http://123.189.155.23:38727/bin.sh",
-    "http://175.149.111.45:36110/i",
-    "http://36.69.86.7:56006/i",
-    "https://bnhxiy.yasbetapp.com/5088506f-38dc-4a01-9ebd-7fc29591247a",
-    "http://42.232.229.19:55174/i",
-    "http://182.116.120.105:34489/bin.sh",
-    "http://42.232.225.18:36131/bin.sh",
-    "https://shgaxiz.volleyball.bet/57f3c81f-d04e-46e8-9fc6-50c1d62a0583",
-    "http://164.163.25.157:41716/i",
-    "http://39.74.81.159:47136/i",
-    "http://39.74.81.159:47136/bin.sh",
-    "http://42.228.107.143:42657/i",
-    "http://94.199.218.56:9070/bin.sh",
-    "http://36.69.86.7:56006/bin.sh",
-    "http://182.126.118.237:35787/i",
-    "http://123.5.168.75:54129/i",
-    "http://164.163.25.157:41716/bin.sh",
-    "https://vvlainw.vip.tennis/6d04e913-8ea9-4573-95e4-2260893a9eb6",
-    "http://125.43.33.196:39064/i",
-    "https://gh6fn4zq.i90.bet/?ublib=ee7635fa-c412-4f3c-a40e-03b4292e63a2",
-    "http://42.232.229.19:55174/bin.sh",
-    "http://222.137.232.213:35720/bin.sh",
-    "https://mudeurb.vezaratshart.com/77740b73-cbea-424a-ac9e-6c35c4d7712d",
-    "http://176.65.139.144/dbg",
-    "http://176.65.139.144/bins/arm5",
-    "http://176.65.139.144/bins/ppc",
-    "http://176.65.139.144/spc",
-    "http://176.65.139.151/Sakura.sh",
-    "http://176.65.139.144/bins/sh4",
-    "http://176.65.139.144/bins/m68k",
-    "http://176.65.139.144/bins/arm",
-    "http://176.65.139.144/bins/arm7",
-    "http://176.65.139.144/bins/i686",
-    "http://176.65.139.144/bins/arm6",
-    "http://176.65.139.144/bins/spc",
-    "http://176.65.139.144/ppc",
-    "http://176.65.139.144/bins/x86_64",
-    "http://176.65.139.144/x86_64",
-    "http://176.65.139.144/bins/dbg",
-    "http://176.65.139.144/x86",
-    "http://176.65.139.144/m68k",
-    "http://176.65.139.144/bins/mpsl",
-    "http://42.228.107.143:42657/bin.sh",
-    "http://176.65.139.144/bins/mips",
-    "http://176.65.139.144/cat.sh",
-    "http://176.65.139.144/bins/x86",
-    "http://176.65.139.144/sh4",
-    "http://176.65.139.144/i686",
-    "http://176.65.139.144/bins/cat.sh",
-    "http://176.65.139.144/arm6",
-    "https://zltxdjx.venusbet90.com/7ddadb26-fdee-4e7a-800d-4c5cfa404997",
-    "http://163.142.86.138:60944/i",
-    "http://182.113.202.170:36412/i",
-    "http://110.36.1.200:53411/i",
-    "http://182.121.115.226:37413/i",
-    "http://125.43.33.196:39064/bin.sh",
-    "http://123.14.32.97:42939/bin.sh",
-    "http://27.215.53.135:55865/i",
-    "https://ffrpwns.vbetirani.com/edfb54aa-d429-454e-b5be-0d6ac675f87d",
-    "http://182.113.202.170:36412/bin.sh",
-    "http://123.11.77.199:53437/i",
-    "https://ukmcha.yasbet90.com/1f8565b3-e7f7-4d0c-a14c-755db680c2ba",
-    "http://123.11.77.199:53437/bin.sh",
-    "http://42.229.151.147:52080/bin.sh",
-    "http://112.98.97.184:34651/i",
-    "http://39.78.182.101:34099/bin.sh",
-    "https://nekdncv.usa2026.bet/1f167c13-e345-4be0-917f-e6ab2e011b28",
-    "http://182.127.178.140:59972/i",
-    "http://27.215.53.135:55865/bin.sh",
-    "http://27.220.114.3:48953/i",
-    "http://182.119.71.160:55615/i",
-    "http://39.78.182.101:34099/i",
-    "http://182.127.178.140:59972/bin.sh",
-    "http://42.231.31.141:54460/bin.sh",
-    "https://edfwndp0.chloroquineser.com/?ublib=0f9964f0-6866-45fb-abd1-3f855955f13b",
-    "http://112.98.97.184:34651/bin.sh",
-    "https://dnmjqvy.trmegapari.com/5fee984e-a5a5-4153-b9c5-0c434d92d224",
-    "http://125.45.156.130:59062/bin.sh",
-    "https://ritubohara.com/stego_payloa.png",
-    "http://104.168.115.123/450/img_230050.png",
-    "https://dofahospitals.com/xw/phan.dat",
-    "http://104.168.115.123/450/mybestgirlfriendonmybestfeelnigsforme.hta",
-    "https://globaltechnosoft.com/beascuyr/obdSAif.txt",
-    "https://pastefy.app/lqjXi6ru/raw",
-    "https://pub-33172110f57a4bbfa0c089261c8b7d4d.r2.dev/msbuil.png",
-    "https://icy-lab-0431.guilherme-telecomunicacoes2024.workers.dev/euaeq",
-    "https://pub-33172110f57a4bbfa0c089261c8b7d4d.r2.dev/cas1.png",
-    "https://trade-eprex.pro/wp-admin/network/wp-debug/stubz.ps1",
-    "http://www.tradedsglobal.com/yuyu/yunewbuy.png",
-    "http://www.tradedsglobal.com/yuyu/rumpyu.png",
-    "http://42.226.223.139:53794/i",
-    "http://42.226.223.139:53794/bin.sh",
-    "http://203.177.28.149:45642/Mozi.m",
-    "http://182.112.14.59:38383/i",
-    "https://bagkqzj.zeppelin.bet/04e8ad7c-0a7c-46ff-a488-1c880eb0131c",
-    "http://27.204.197.147:39822/i",
-    "https://kgebll.xenicalby6.com/59ef435c-fc65-4a8d-b686-84252cd4309a",
-    "http://175.146.244.185:50487/bin.sh",
-    "https://tjvdbbc.yektbet.bet/bdca0698-2006-4001-88ff-16389c533193",
-    "http://175.146.244.185:50487/i",
-    "https://vrdccbank.com/freda01.exe",
-    "https://drive.google.com/uc?export=download&id=1vUVHzf-ShHquhtYvcv1cQ7yohXE6QRb4",
-    "https://drive.google.com/uc?export=download&id=1pXgIs9sI8wdGhxG7TMI5hiobg4L_uKyQ",
-    "https://git.nightcord.ru/nightcord/nightcord/releases/download/v1.19.4/Nightcord-Installer.exe",
-    "http://smart.abuse.st/arm7",
-    "http://smart.abuse.st/x86_64",
-    "http://smart.abuse.st/mpsl",
-    "http://smart.abuse.st/arm5",
-    "https://cpteijd.yekbetiran.com/fa7ee749-23f8-4679-8332-f2cce7b74e3e",
-    "https://kazwbt9n.2026.futbol/?ublib=ca942a90-68b5-4f2e-bc48-a0b451072474",
-    "https://lgwzmtt.yek1bet.bet/372a3933-716e-489a-ac9f-b72662c39d71",
-    "http://42.229.151.147:52080/i",
-    "http://115.55.117.53:58381/i",
-    "http://112.248.103.32:46711/bin.sh",
-    "http://222.141.26.232:48120/i",
-    "http://182.112.14.59:38383/bin.sh",
-    "http://222.141.26.232:48120/bin.sh",
-    "https://afdaqyu.yasbet.casino/3dddd506-1f0d-43b9-83a9-0fdeb20be67e",
-    "http://182.127.80.22:51497/i",
-    "https://xcpvjq6r.cerocarey.com/?ublib=100582df-2acc-4be2-a34c-ef20bc4a569d",
-    "http://42.231.182.162:57397/bin.sh",
-    "http://182.127.80.22:51497/bin.sh",
-    "https://tqdtntx.hotbet90.casino/252500e7-98e9-48d9-9c16-53a0d896024c",
-    "http://113.236.127.99:47004/i",
-    "http://39.74.81.185:47990/i",
-    "http://112.248.101.161:37345/bin.sh",
-    "http://45.135.194.3/hiddenbin/boatnet.arm",
-    "http://45.135.194.3/hiddenbin/boatnet.spc",
-    "http://45.135.194.3/hiddenbin/boatnet.arm6",
-    "http://45.135.194.3/hiddenbin/boatnet.m68k",
-    "http://45.135.194.3/hiddenbin/boatnet.x86",
-    "http://45.135.194.3/hiddenbin/boatnet.sh4",
-    "http://45.135.194.3/hiddenbin/boatnet.mpsl",
-    "http://45.135.194.3/hiddenbin/boatnet.arm7",
-    "http://45.135.194.3/hiddenbin/boatnet.arm5",
-    "http://45.135.194.3/hiddenbin/boatnet.mips",
-    "http://45.135.194.3/hiddenbin/boatnet.ppc",
-    "http://105.224.251.135:51433/i",
-    "https://xeanui.x50wheel.bet/8e1583cb-5e86-4b46-8aa0-cc6151ddd088",
-    "http://113.236.127.99:47004/bin.sh",
-    "http://176.65.139.144/arm5",
-    "http://176.65.139.144/mpsl",
-    "http://176.65.139.144/mips",
-    "http://176.65.139.144/arm",
-    "http://176.65.139.144/arm7",
-    "http://42.178.61.135:38869/i",
-    "https://rosebaie.ma/wp-includes/js/jcrop/Jcropmin.exe",
-    "https://rosebaie.ma/wp-includes/js/jcrop/Jcropgif.exe",
-    "https://rosebaie.ma/wp-includes/js/jcrop/jqueryJcrop.php",
-    "https://dlkcsdq.hotbet90app.com/82728660-32b7-415c-a77f-fc0e14afa762",
-    "http://115.63.144.173:37265/i",
-    "https://eehjqhe.homa.bet/7463fdb1-6ddc-4820-a2ae-0a92b0e59578",
-    "http://202.9.122.145:56390/Mozi.m",
-    "http://72.255.18.214:36405/Mozi.a",
-    "http://105.186.143.24:59469/Mozi.m",
-    "http://223.123.35.47:54367/Mozi.a",
-    "http://124.229.33.220:50854/Mozi.m",
-    "http://103.176.16.78:51683/Mozi.m",
-    "http://119.189.212.129:44218/Mozi.m",
-    "http://124.29.194.26:42356/Mozi.m",
-    "http://153.117.32.174:49040/Mozi.m",
-    "http://103.181.160.22:37187/Mozi.a",
-    "http://95.82.118.182:44093/Mozi.m",
-    "http://110.38.218.245:48087/Mozi.a",
-    "http://72.255.19.244:41921/Mozi.a",
-    "http://206.135.174.164:39528/Mozi.a",
-    "http://223.123.42.237:53019/Mozi.m",
-    "http://202.70.139.56:60896/Mozi.a",
-    "http://103.176.16.167:60492/Mozi.a",
-    "http://110.38.254.160:50664/Mozi.m",
-    "http://153.117.37.25:36970/Mozi.a",
-    "http://111.55.74.100:52721/Mozi.m",
-    "http://189.174.142.184:56193/Mozi.m",
-    "http://217.60.199.225/dissarm4",
-    "http://smart.abuse.st/mips",
-    "http://59.176.80.131:60859/Mozi.a",
-    "http://46.23.108.238/powerpc",
-    "http://46.23.108.238/m68k",
-    "http://46.23.108.238/armv6l",
-    "http://46.23.108.238/i686",
-    "http://46.23.108.238/sparc",
-    "http://46.23.108.238/armv7l",
-    "http://46.23.108.238/i586",
-    "http://46.23.108.238/armv5l",
-    "http://46.23.108.238/armv4l",
-    "http://112.248.187.118:60374/i",
-    "http://42.178.61.135:38869/bin.sh",
-    "http://27.215.210.61:54865/i"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 45 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
-    "http://46.23.108.238/x86",
-    "http://46.23.108.238/sh4",
-    "http://46.23.108.238/mipsel",
-    "http://46.23.108.238/mips",
-    "http://125.41.230.155:54819/i",
-    "http://112.248.187.118:60374/bin.sh",
-    "http://123.14.233.40:41750/i",
-    "http://115.63.144.173:37265/bin.sh",
-    "http://39.79.141.16:35636/bin.sh",
-    "https://bloomglow9.com/zxc/mdw",
-    "https://bloomglow9.com/zxc/kito",
-    "https://anvil-89.com/curl/76011de550817b5869456ca678d74d1d4fb86045d51749bb87e1f2ef6d40bc12",
-    "https://anvil-89.com/zyeMb6slon_3VWVlkSkdiJurcyhY5cFNtchnavRnMgU/jetbrains/update",
-    "http://158.94.208.104/x7GkP2mQ9zL4/student_1.bin",
-    "http://159.89.171.49/wp-admin/",
-    "http://176.65.139.121/.Sassy.armv5l",
-    "http://176.65.139.121/.Sassy.sparc",
-    "http://151.245.104.193/hiddenbin/Mystic.mips64",
-    "http://176.65.139.121/.Sassy.powerpc",
-    "http://188.132.232.81/19io",
-    "http://151.245.104.193/hiddenbin/Mystic.ppc",
-    "http://151.245.104.193/hiddenbin/Mystic.x86",
-    "http://5.175.223.249/data_aarch64",
-    "http://188.132.232.81/XmgG",
-    "http://188.132.232.81/Mn0r",
-    "http://188.132.232.81/azAJ",
-    "http://188.132.232.81/lXhZ",
-    "http://188.132.232.81/ell",
-    "http://151.245.104.193/hiddenbin/Mystic.arm6",
-    "http://176.65.139.121/.Sassy.m68k",
-    "http://188.132.232.81/O2d",
-    "http://151.245.104.193/hiddenbin/Mystic.arm7",
-    "http://5.175.223.249/data_arm6",
-    "http://188.132.232.81/h87q",
-    "http://188.132.232.81/hskK",
-    "http://188.132.232.81/Ok4",
-    "http://188.132.232.81/305b",
-    "http://188.132.232.81/bcM5",
-    "http://169.40.104.99/data_arm5",
-    "http://176.65.139.121/.Sassy.x86_64",
-    "http://176.65.139.121/.Sassy.sh4",
-    "http://176.65.139.121/.Sassy.i486",
-    "http://169.40.104.99/data_mips",
-    "http://176.65.139.121/.Sassy.armv6l",
-    "http://176.65.139.121/.Sassy.armv7l",
-    "http://176.65.139.121/.Sassy.mipsel",
-    "http://169.40.104.99/data_arm6",
-    "http://176.65.139.121/.Sassy.arc",
-    "http://176.65.139.121/.Sassy.aarch64",
-    "http://169.40.104.99/data_arm7",
-    "http://151.245.104.193/hiddenbin/Mystic.m68k",
-    "http://176.65.139.121/.Sassy.mips",
-    "http://169.40.104.99/data_arm4",
-    "http://176.65.139.121/.Sassy.armv4l",
-    "http://5.175.223.249/data_mipsel",
-    "http://5.175.223.249/data_mips-uclibc",
-    "http://151.245.104.193/hiddenbin/Mystic.i686",
-    "http://151.245.104.193/hiddenbin/Mystic.sh4",
-    "http://151.245.104.193/hiddenbin/Mystic.mips",
-    "http://151.245.104.193/hiddenbin/Mystic.arc",
-    "http://151.245.104.193/hiddenbin/Mystic.x86_64",
-    "http://151.245.104.193/hiddenbin/Mystic.mpsl",
-    "http://151.245.104.193/hiddenbin/Mystic.sparc",
-    "http://5.175.223.249/data_arm7",
-    "http://5.175.223.249/data_arm5",
-    "http://5.175.223.249/data_powerpc",
-    "http://5.175.223.249/data_arm4",
-    "http://5.175.223.249/data_mips",
-    "http://5.175.223.249/data_x86_64",
-    "http://5.175.223.249/data_mipsel-uclibc",
-    "http://188.132.232.81/ED5H",
-    "http://188.132.232.81/nQd",
-    "http://188.132.232.81/rnY",
-    "http://188.132.232.81/kAqy",
-    "http://188.132.232.81/l5V7",
-    "http://188.132.232.81/Zjf5",
-    "http://188.132.232.81/f9f5",
-    "http://151.245.104.193/hiddenbin/Mystic.arm",
-    "http://5.175.223.249/data_x86",
-    "http://151.245.104.193/hiddenbin/Mystic.arm5",
-    "http://188.132.232.81/OdB",
-    "https://pqycltd.hokm.casino/3ee297f5-167a-4dd9-aa63-8a4ca3468a91",
-    "http://123.14.32.97:42939/i",
-    "https://f0rfdtvf.canlibahis1xbet.click/?ublib=024e1d06-9217-4d11-b12f-225abaafcc0f",
-    "http://171.15.89.112:50001/bin.sh",
-    "http://222.127.186.27:45331/bin.sh",
-    "http://115.50.204.246:56225/Mozi.a",
-    "http://223.123.72.212:50541/Mozi.m",
-    "http://itskuba.com/1g/4.jpg",
-    "http://www.itskuba.com/1g/2.jpg",
-    "http://worthknowing.us/6.jpg",
-    "http://www.itskuba.com/1g/5.jpg",
-    "http://itskuba.com/1g/3.jpg",
-    "http://itskuba.com/1g/1.jpg",
-    "http://worthknowing.us/5.jpg",
-    "http://worthknowing.us/7.jpg",
-    "http://www.itskuba.com/1g/3.jpg",
-    "http://worthknowing.us/3.jpg",
-    "http://itskuba.com/1g/6.jpg",
-    "http://worthknowing.us/4.jpg",
-    "http://worthknowing.us/2.jpg",
-    "http://itskuba.com/1g/2.jpg",
-    "http://176.65.139.151:5123/sysupdate.sh",
-    "http://123.148.242.35:43983/Mozi.a",
-    "http://angel0chek.duckdns.org/Intelix.exe",
-    "http://125.41.230.155:54819/bin.sh",
-    "http://219.157.38.224:58000/i",
-    "https://ageqour.hit4bet1.com/94ba5a51-207f-4c04-b5b7-eb1189584e3f",
-    "http://222.141.78.195:35380/i",
-    "http://182.119.29.164:59367/i",
-    "http://219.157.38.224:58000/bin.sh",
-    "http://125.43.225.33:40947/i",
-    "http://42.58.3.220:52533/i",
-    "http://182.119.29.164:59367/bin.sh",
-    "https://vobyslb.hilo.casino/d7fe837d-dab3-4ab3-8830-2fd34192249c",
-    "http://42.234.235.79:45107/i",
-    "http://115.49.225.27:57403/i",
-    "http://115.49.225.27:57403/bin.sh",
-    "https://myofcdr.hezarfencrash.bet/a90ed365-1a8c-420b-acdc-31a1d0c047cc",
-    "http://107.148.158.112/3.tok",
-    "http://112.249.70.46:39993/i",
-    "http://182.124.32.56:52669/i",
-    "http://58.255.41.28:49663/i",
-    "https://4q4880m7.bwin90.bet/?ublib=08c9d615-a227-4114-9dd8-ef5ccf289fec",
-    "http://85.100.205.208:55271/i",
-    "https://3p1x6btm.1xbet90.bet/?ublib=884a8c24-84c7-42e3-b95f-b1826d174b7e",
-    "https://youykxp.herz-frank.com/1ec2d480-9439-4afd-a57a-39460464022e",
-    "http://72.255.30.244:36949/i",
-    "http://112.249.70.46:39993/bin.sh",
-    "http://85.100.205.208:55271/bin.sh",
-    "http://42.231.182.162:57397/i",
-    "http://110.36.93.217:47482/i",
-    "http://72.255.30.244:36949/bin.sh",
-    "https://emwzmsp.hazaratbetapp.com/59b087c9-e45a-4647-8afb-dd018520c531",
-    "http://110.39.244.67:39109/i",
-    "http://160.30.142.2:59412/i",
-    "http://160.30.142.2:59412/bin.sh",
-    "https://gxtryif.hattrickbetapp.com/df01dac2-ac14-4ee5-a827-e595af75f3ea",
-    "http://61.52.158.137:36439/i",
-    "http://154.242.18.65:50270/i",
-    "http://61.52.147.206:59280/i",
-    "https://gqjz709j.bordoo.bet/?ublib=951b3f1b-9a30-41ab-84f6-ac1c4530e359",
-    "https://hwfbwco.hamvarzesh90.com/f8fc9499-e5bd-4d8d-b470-ea338f1776c5",
-    "http://60.211.45.225:38494/i",
-    "https://qcwvat.1kickbet90.com/2b7803ae-d578-4460-a876-fe47de88c8a1",
-    "http://61.52.158.137:36439/bin.sh",
-    "https://qkqxbb.doobixbet.bet/e1ea726f-c0de-4994-bad8-8015e01514c2",
-    "http://125.45.67.189:52431/i",
-    "http://219.156.22.2:32963/bin.sh",
-    "http://61.52.147.206:59280/bin.sh",
-    "http://115.58.132.117:58676/i",
-    "http://182.117.151.82:36077/bin.sh",
-    "https://zyhhuar.golfbetpro.com/565345d4-199f-44b6-9506-72f526f56e6b",
-    "http://61.53.91.236:52594/i",
-    "http://85.12.237.201:53945/i",
-    "https://dybkohl.goldenroulette.bet/45a2b379-a2d0-48ab-b5a9-0ae836ca60c4",
-    "http://46.236.65.44:47941/i",
-    "http://113.229.178.69:50774/i",
-    "https://ttowige.goldenroulette.bet/3aa00428-3f0f-4aa6-bb23-4799729448d6",
-    "http://125.40.39.221:56750/bin.sh",
-    "http://125.45.67.189:52431/bin.sh"
+    "http://45.13.186.32/x86"
   )
 | extend ThreatSource = "URLhaus"
 | extend ThreatIndicator = Url
@@ -22549,6 +22001,17 @@ DeviceNetworkEvents
 // Malicious Hashes - Chunk 1 (Source: MalwareBazaar)
 DeviceProcessEvents
 | where SHA256 in (
+    " "3888f2bd1f97dcb4df53c622479010be225d60a3dd9e5daef67e5c78fcbdd520"",
+    " "824f3fde1d14e67fbe30dd056eb6b01b86becc51f75c5dba09beba599841217b"",
+    " "8517a75d6a6da5640ea40971355292e808aa21d07d2009d11e548bd1f679f711"",
+    " "9b44ac08112b3a2bbd7627727f68aa1dea140b89878e0f9c4493567f115fdabf"",
+    " "23dd9adcd564b519ecc6953c402637d7200a565bd939bf990ea70f5bdcd895ae"",
+    " "9141fe9327ca1caa1bf70adb61b07caa3dd5f7b5720b617e78a14dd1ca151fb9"",
+    " "53de9fbfc8ec10fe8b317143126afd2b91b9cff9ca46426581d2d7653a12438f"",
+    " "3b4345d443ac5791092635b18a847d1db3aee953428d9ad04dc01f82478ee2a9"",
+    " "80917e22a9d17c7d856eafc01c1a52b661dddd3820490afb3982aa9fafb20677"",
+    " "6af11b40d0a09644d689ea72f10a181cb4936fe8dbe3ab936cde60aa27129842"",
+    " "f7c6561a918ef565f49fd35aada047b70fde12cfd5d98b0704c7353d48d06db0"",
     " "3f46f24356ee0ca1a8147a0deea5a584870bb1d99f3fcc996ced516830148778"",
     " "c18aebf9c041c7f430259e590e4bfd921ad5d4fd641bad51132f7b64823b36f9"",
     " "5ff40ae515caa482c04d44ac0078e3ea85917129d473b01b9ee9caf0c0cfbb4d"",
@@ -23006,31 +22469,7 @@ DeviceProcessEvents
     " "71a395a22d8ad7421b7050c650187c771ea52d5820640b259d79dfcd8c4adb1b"",
     " "357d6a12b37bf72550d9df5035f25157d3ca75e1a69e71783586ee4759ee7b45"",
     " "da258307c61058016d7e553c07f00dcc06c119ce40536db59d4f726c16d32fb2"",
-    " "2a51dabd7c6c63d88ae13ca65a8a01c99fae1d4913a08ace28910c6f47074323"",
-    " "e65ee878453d6fa2005f27ad16ecab564cf371992db9e058d8bdd78bde54a99a"",
-    " "7a5ddf0ddbe18b048b75dfe5153fc8ee5b6b5e8d9832c96ac7ea18591d272cdb"",
-    " "c433957cc91e17664147cbbb9dabcee58a81747a4e4b3fdb233b6daedd8974ab"",
-    " "ffc708aed38519ea8799e0cabebf6444934d1aa7db9f83a3c31b6847ed139b6d"",
-    " "380137fe3eb4ab4dae0d26aa1b94a4b19a9c28b1d84697b6e80ff8cb93ec5dca"",
-    " "5db55a1df1b4cd848c772430af5afa07b6d16c3fc2d1fcc4e85a2ff698f918e5"",
-    " "a166b4f2f9c5565737ba6512416030b2518c812cd0abb3af52749b5bebdd9625"",
-    " "0a5d4b8f65eba399f0b41ac648d939650ab6422ce4c715f8a1b5b99e1178678b"",
-    " "27e3c9b676e96ef69a0043ebf547748ac7189207dc2100cc188ea024be596266"",
-    " "6af02f9f08e5d6e9318ed302e4d74618148f7c600af1b394e05812b18b8ca040"",
-    " "0bf8f52b28291edc505a64962e6ce04387a9784fc5b18aeff53629adb1f72f56"",
-    " "b15fabb4f73fff2dd8dbb1a58e46423e9d33d985af34880d17e410b9ecd6bc47"",
-    " "9f42721255d8d62b4595b9040a9a7d742c8fe2a5ff17745c8e250cd04928c480"",
-    " "3c279bc94d37eeaf2b81f78820ada90c8e40814e45818c7c5666ea8c49688d67"",
-    " "536cb0e2ffffa40d1ccd096eaaad43f094813bae15d8f6316dc35fb998d5e4cd"",
-    " "dceebf2ce1186b22f60b7ee064670db88347761767ea8610a35e50e568b348b3"",
-    " "f5b43a3803a8149dda677d208ba7ef5e0aa33640bcd3dd58924355f4fc54be99"",
-    " "b4f0148df9332a4c3fdf19c71885867f7bff3f36641ba49dec8946ab366a64a8"",
-    " "6eb5274407dd458da90fd988c04e30f5c14cf813fb4a4489b6a64eddc966a7fd"",
-    " "da01b54e7d42de9f00fdac7f2123779363a13df7d40bdb72558c9618e13dc77b"",
-    " "c17aff83c3fbddb86fe5a40d7a654af5591b16522fb15c222bbf3d57b0b16748"",
-    " "addbd8770b53a50e83c711143332c76e9160f920675e2de5591669d3b93f499b"",
-    " "3a03b35a4c614d651954f8298d5bb75abe33223e0791bdc1b9bdb2af69d3009b"",
-    " "518f5438a21e9aa9a91f0dd589088e443fda111d8ada5ea67d1cf14d6645974c""
+    " "2a51dabd7c6c63d88ae13ca65a8a01c99fae1d4913a08ace28910c6f47074323""
   )
 | extend ThreatSource = "MalwareBazaar"
 | extend ThreatIndicator = SHA256
