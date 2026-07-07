@@ -1,55 +1,697 @@
 {
-  "generated_at": "2026-07-07T04:45:39.991400",
-  "total_iocs": 22450,
-  "new_iocs_24h": 642,
+  "generated_at": "2026-07-07T02:24:38.617199",
+  "total_iocs": 21981,
+  "new_iocs_24h": 693,
   "top_types": {
-    "url": 21912,
-    "hash": 530,
+    "url": 21473,
+    "hash": 500,
     "ip": 7,
     "domain": 1
   },
   "top_tags": {
-    "elf": 9912,
-    "Mozi": 6983,
-    "32-bit": 5868,
+    "elf": 9616,
+    "Mozi": 6790,
+    "32-bit": 5692,
     "SmartLoader": 5066,
     "SmartLoader-MaaS": 5061,
     "LuaJIT-loader": 5059,
-    "mips": 5009,
-    "ua-wget": 4044,
-    "mirai": 3993,
-    "ClearFake": 1727
+    "mips": 4854,
+    "ua-wget": 3908,
+    "mirai": 3845,
+    "ClearFake": 1664
   },
   "top_sources": {
-    "URLhaus": 21912,
-    "MalwareBazaar": 530,
+    "URLhaus": 21473,
+    "MalwareBazaar": 500,
     "FeodoTracker": 5,
     "OTX": 2,
     "AbuseIPDB": 1
   },
   "mitre_coverage": {
-    "T1059.004": 16333,
-    "T1583": 11499,
-    "T1071": 4199,
-    "T1596": 650,
-    "T1219": 427,
-    "T1204.002": 388,
-    "T1555": 159,
+    "T1059.004": 15830,
+    "T1583": 11144,
+    "T1071": 4063,
+    "T1596": 609,
+    "T1219": 423,
+    "T1204.002": 382,
+    "T1555": 158,
     "T1595": 151,
     "T1587.001": 110,
-    "T1059.001": 80,
+    "T1059.001": 76,
     "T1496": 59,
     "T1566": 50,
     "T1059.005": 43,
-    "T1027": 35,
     "T1218.005": 35,
+    "T1027": 34,
     "T1102": 23,
     "T1059.007": 11,
-    "T1059": 9,
-    "T1036": 3,
-    "T1059.003": 3
+    "T1059": 8,
+    "T1059.003": 3,
+    "T1036": 3
   },
   "recent_iocs": [
+    {
+      "indicator": "http://42.239.242.55:41810/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-07 02:11:23 U C",
+      "last_seen": "2026-07-07 02:11:23 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.180.190/corp/a",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "BlackMatter",
+        "dropped-by-Phorpiex"
+      ],
+      "first_seen": "2026-07-07 02:11:06 U C",
+      "last_seen": "2026-07-07 02:11:06 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://119.117.252.95:53457/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-07 02:10:24 U C",
+      "last_seen": "2026-07-07 02:10:24 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://125.41.75.221:39880/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-07 01:59:24 U C",
+      "last_seen": "2026-07-07 01:59:24 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://115.59.225.152:55523/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-07 01:53:25 U C",
+      "last_seen": "2026-07-07 01:53:25 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://42.239.242.55:41810/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-07 01:46:28 U C",
+      "last_seen": "2026-07-07 01:46:28 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "https://jhq8hqlo.1xforward.vip/?ublib=aa67ab88-4fc9-4d6f-b25f-63af261910b2",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake",
+        "mac-0x68dc",
+        "macOS"
+      ],
+      "first_seen": "2026-07-07 01:46:07 U C",
+      "last_seen": "2026-07-07 01:46:07 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://119.117.252.95:53457/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-07 01:44:27 U C",
+      "last_seen": "2026-07-07 01:44:27 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "https://oybvqan.1xrussia.com/11b213cb-61da-4808-bd1c-3ed43e0df821",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake",
+        "win-0x4679",
+        "windows"
+      ],
+      "first_seen": "2026-07-07 01:41:06 U C",
+      "last_seen": "2026-07-07 01:41:06 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "https://gexbskxk.beshnoinja.ir/cc28b0ff-9ccf-4af1-96f3-bdb120010091",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake",
+        "win-0x0cd5",
+        "windows"
+      ],
+      "first_seen": "2026-07-07 01:38:07 U C",
+      "last_seen": "2026-07-07 01:38:07 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://39.79.234.185:58649/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-07 01:36:25 U C",
+      "last_seen": "2026-07-07 01:36:25 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://42.224.67.141:45357/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-07 01:34:09 U C",
+      "last_seen": "2026-07-07 01:34:09 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://101.66.43.107:34135/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "arm",
+        "elf",
+        "mirai",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-07 01:33:16 U C",
+      "last_seen": "2026-07-07 01:33:16 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://39.87.12.58:57189/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "Mozi"
+      ],
+      "first_seen": "2026-07-07 01:16:10 U C",
+      "last_seen": "2026-07-07 01:16:10 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://178.16.54.109/ph8.exe",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "dropped-by-Phorpiex"
+      ],
+      "first_seen": "2026-07-07 01:11:06 U C",
+      "last_seen": "2026-07-07 01:11:06 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://178.16.54.109/ph7.exe",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "dropped-by-Phorpiex"
+      ],
+      "first_seen": "2026-07-07 01:11:06 U C",
+      "last_seen": "2026-07-07 01:11:06 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://61.163.148.179:34307/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-07 00:46:21 U C",
+      "last_seen": "2026-07-07 00:46:21 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://we.aibotnet.su/mips",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "mips",
+        "ua-wget"
+      ],
+      "first_seen": "2026-07-07 00:45:41 U C",
+      "last_seen": "2026-07-07 00:45:41 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "https://hybnjif.1xpin.pro/e2d4416d-b73d-4f8f-aa9d-04b1c8d90ea1",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake",
+        "win-0x4679",
+        "windows"
+      ],
+      "first_seen": "2026-07-07 00:43:06 U C",
+      "last_seen": "2026-07-07 00:43:06 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://42.228.45.67:33424/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-07 00:38:15 U C",
+      "last_seen": "2026-07-07 00:38:15 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://42.224.114.38:49973/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "arm",
+        "elf",
+        "mirai",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-07 00:34:21 U C",
+      "last_seen": "2026-07-07 00:34:21 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://182.127.108.91:46070/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-07 00:34:21 U C",
+      "last_seen": "2026-07-07 00:34:21 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://112.249.89.236:44363/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-07 00:32:35 U C",
+      "last_seen": "2026-07-07 00:32:35 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": " \"393683cb84df747b671414d49ac04eef066618216c26927b4ad4532ba2d9b2ad\"",
+      "indicator_type": "hash",
+      "source": "MalwareBazaar",
+      "tags": [
+        " \"n/a\""
+      ],
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": " \"8770a3fead8861b818e32c832fc3411699dbb35e2f178ca0be6b2d7f9bc48140\"",
+      "indicator_type": "hash",
+      "source": "MalwareBazaar",
+      "tags": [
+        " \"n/a\""
+      ],
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": " \"4a8aa017e3bda8b370335b21c58a8918c5ea163e8b4364837fb15fccdbd15e02\"",
+      "indicator_type": "hash",
+      "source": "MalwareBazaar",
+      "tags": [
+        " \"n/a\""
+      ],
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": " \"d117ee4a244959625a761696a9c719d161e6b11a7e880ada14ec8dde3f88d0ef\"",
+      "indicator_type": "hash",
+      "source": "MalwareBazaar",
+      "tags": [
+        " \"n/a\""
+      ],
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": " \"3aac5e3fce6038cf911ac31dd206a1109c78177d26b382412797d9da9840af53\"",
+      "indicator_type": "hash",
+      "source": "MalwareBazaar",
+      "tags": [
+        " \"n/a\""
+      ],
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": " \"dcd93e03208c3f5d2f946023e2bd0e13c58ba275e71208921e62d2ddc03762b4\"",
+      "indicator_type": "hash",
+      "source": "MalwareBazaar",
+      "tags": [
+        " \"n/a\""
+      ],
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": " \"e8bc62068f3ec8434e4658afea482cdb340b88ddaae63c28dfcf6140c82620a1\"",
+      "indicator_type": "hash",
+      "source": "MalwareBazaar",
+      "tags": [
+        " \"CoinMiner\""
+      ],
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": " \"32f4dc44d81286d23683761744153d06c37df34eb6e9c95de020bfc3fccf74fb\"",
+      "indicator_type": "hash",
+      "source": "MalwareBazaar",
+      "tags": [
+        " \"n/a\""
+      ],
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": " \"4196d8f75e231e009033437d53451e3e30a6487f8ead8e411be11a9b3ace682d\"",
+      "indicator_type": "hash",
+      "source": "MalwareBazaar",
+      "tags": [
+        " \"Mirai\""
+      ],
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": " \"3afca0f0f28a8e8a57ea459ec7bbc8ec03082e8c818b521687c36e9375fef784\"",
+      "indicator_type": "hash",
+      "source": "MalwareBazaar",
+      "tags": [
+        " \"CoinMiner\""
+      ],
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "162.243.103.246",
+      "indicator_type": "ip",
+      "source": "FeodoTracker",
+      "tags": [
+        "Emotet"
+      ],
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "50.16.16.211",
+      "indicator_type": "ip",
+      "source": "FeodoTracker",
+      "tags": [
+        "QakBot"
+      ],
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "34.204.119.63",
+      "indicator_type": "ip",
+      "source": "FeodoTracker",
+      "tags": [
+        "QakBot"
+      ],
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "178.62.3.223",
+      "indicator_type": "ip",
+      "source": "FeodoTracker",
+      "tags": [
+        "QakBot"
+      ],
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "27.133.154.218",
+      "indicator_type": "ip",
+      "source": "FeodoTracker",
+      "tags": [
+        "QakBot"
+      ],
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://182.126.103.204:46161/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-06 23:50:25 U C",
+      "last_seen": "2026-07-06 23:50:25 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "https://vqyjhmr.1xpin.live/1a28dceb-73a9-452a-8490-a8efc97218a3",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake",
+        "win-0x4679",
+        "windows"
+      ],
+      "first_seen": "2026-07-06 23:48:06 U C",
+      "last_seen": "2026-07-06 23:48:06 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "https://rxt0h93a.1xforward.com/?ublib=48292505-5058-466d-abeb-91fabe918a26",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake",
+        "mac-0x68dc",
+        "macOS"
+      ],
+      "first_seen": "2026-07-06 23:43:06 U C",
+      "last_seen": "2026-07-06 23:43:06 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "https://rugcfdaz.marjaevakil.ir/28a56e04-4fe3-40d7-a2ce-de815924332f",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake",
+        "win-0x0cd5",
+        "windows"
+      ],
+      "first_seen": "2026-07-06 23:38:07 U C",
+      "last_seen": "2026-07-06 23:38:07 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://182.126.103.204:46161/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-06 23:28:23 U C",
+      "last_seen": "2026-07-06 23:28:23 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://42.232.228.31:53154/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-07-06 23:27:25 U C",
+      "last_seen": "2026-07-06 23:27:25 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
     {
       "indicator": "http://110.37.119.220:47156/i",
       "indicator_type": "url",
@@ -58,6 +700,7 @@
         "32-bit",
         "arm",
         "elf",
+        "mirai",
         "Mozi"
       ],
       "first_seen": "2026-07-06 23:01:18 U C",
@@ -141,675 +784,6 @@
       ],
       "first_seen": "2026-07-06 22:37:22 U C",
       "last_seen": "2026-07-06 22:37:22 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://45.150.195.235/tarm7",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "arm",
-        "elf",
-        "mirai",
-        "ua-wget"
-      ],
-      "first_seen": "2026-07-06 22:37:22 U C",
-      "last_seen": "2026-07-06 22:37:22 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://45.150.195.235/tarm6",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "arm",
-        "elf",
-        "mirai",
-        "ua-wget"
-      ],
-      "first_seen": "2026-07-06 22:37:17 U C",
-      "last_seen": "2026-07-06 22:37:17 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://119.179.238.246:33133/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 22:36:20 U C",
-      "last_seen": "2026-07-06 22:36:20 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "https://ymy16goe.calvaryhospice.org/?ublib=34135967-aa3b-40c1-a658-e70818b5f6e4",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake",
-        "mac-0x76c7",
-        "macOS"
-      ],
-      "first_seen": "2026-07-06 22:35:09 U C",
-      "last_seen": "2026-07-06 22:35:09 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://3tloufwg.oris303.com/?ublib=37eb6e79-22ae-4de8-9133-1d922f4397ad",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake",
-        "mac-0xfb64",
-        "macOS"
-      ],
-      "first_seen": "2026-07-06 22:34:08 U C",
-      "last_seen": "2026-07-06 22:34:08 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://196.190.10.252:44170/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "mirai"
-      ],
-      "first_seen": "2026-07-06 22:26:06 U C",
-      "last_seen": "2026-07-06 22:26:06 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://196.190.10.252:44170/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 22:20:22 U C",
-      "last_seen": "2026-07-06 22:20:22 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://115.50.88.177:46689/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 22:02:08 U C",
-      "last_seen": "2026-07-06 22:02:08 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "https://pwsljqp.1xbeet.vip/601bef65-5be8-47a0-ae92-b38c9dfb9bbb",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake",
-        "win-0x4679",
-        "windows"
-      ],
-      "first_seen": "2026-07-06 21:55:11 U C",
-      "last_seen": "2026-07-06 21:55:11 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://dwpxsmzy.1xforward.bet/?ublib=81f5e50b-62f9-456b-ba1c-f819222ea43f",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake",
-        "mac-0x68dc",
-        "macOS"
-      ],
-      "first_seen": "2026-07-06 21:45:14 U C",
-      "last_seen": "2026-07-06 21:45:14 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://ogiforjk.iranmotorplus.ir/02773a30-e94f-49f9-be60-9bc328ac0f94",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake",
-        "win-0x0cd5",
-        "windows"
-      ],
-      "first_seen": "2026-07-06 21:40:07 U C",
-      "last_seen": "2026-07-06 21:40:07 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://82.144.86.37:40653/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "mirai"
-      ],
-      "first_seen": "2026-07-06 21:37:09 U C",
-      "last_seen": "2026-07-06 21:37:09 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://123.132.156.131:50352/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 21:36:21 U C",
-      "last_seen": "2026-07-06 21:36:21 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://110.38.208.89:56690/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 21:34:21 U C",
-      "last_seen": "2026-07-06 21:34:21 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://110.38.208.89:56690/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 21:27:15 U C",
-      "last_seen": "2026-07-06 21:27:15 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://123.132.156.131:50352/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 21:16:22 U C",
-      "last_seen": "2026-07-06 21:16:22 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://105.184.158.249:59541/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 21:16:22 U C",
-      "last_seen": "2026-07-06 21:16:22 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://119.185.170.78:49993/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 21:13:16 U C",
-      "last_seen": "2026-07-06 21:13:16 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://82.144.86.37:40653/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "mirai"
-      ],
-      "first_seen": "2026-07-06 21:07:07 U C",
-      "last_seen": "2026-07-06 21:07:07 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "https://ryovgcz.1xbeet.site/40f025f9-8c2c-4b8c-b5dd-9393a2e7c71c",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake",
-        "win-0x4679",
-        "windows"
-      ],
-      "first_seen": "2026-07-06 21:00:07 U C",
-      "last_seen": "2026-07-06 21:00:07 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://42.87.34.157:56771/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 20:55:18 U C",
-      "last_seen": "2026-07-06 20:55:18 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://115.48.55.3:49980/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 20:55:18 U C",
-      "last_seen": "2026-07-06 20:55:18 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://110.37.43.119:43262/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 20:44:25 U C",
-      "last_seen": "2026-07-06 20:44:25 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://42.225.207.24:52041/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 20:39:25 U C",
-      "last_seen": "2026-07-06 20:39:25 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://110.36.28.45:56113/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 20:36:23 U C",
-      "last_seen": "2026-07-06 20:36:23 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://182.119.33.172:41900/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 20:26:25 U C",
-      "last_seen": "2026-07-06 20:26:25 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://125.120.88.71:57971/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [],
-      "first_seen": "2026-07-06 20:26:24 U C",
-      "last_seen": "2026-07-06 20:26:24 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://110.37.80.218:49898/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "mirai"
-      ],
-      "first_seen": "2026-07-06 20:26:08 U C",
-      "last_seen": "2026-07-06 20:26:08 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://42.225.207.24:52041/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 20:19:23 U C",
-      "last_seen": "2026-07-06 20:19:23 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://123.13.52.232:33331/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 20:10:24 U C",
-      "last_seen": "2026-07-06 20:10:24 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "https://sfdvbdy.1xbeet.app/12f40b9f-2830-4f41-9fe9-9213d6fa9ad1",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake",
-        "win-0x4679",
-        "windows"
-      ],
-      "first_seen": "2026-07-06 20:08:05 U C",
-      "last_seen": "2026-07-06 20:08:05 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://175.17.228.41:45154/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [],
-      "first_seen": "2026-07-06 19:52:08 U C",
-      "last_seen": "2026-07-06 19:52:08 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://182.121.40.102:58400/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 19:46:33 U C",
-      "last_seen": "2026-07-06 19:46:33 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "https://x6ho2kp5.1xcart.pro/?ublib=73754938-5b6d-4184-85a7-20028c652c21",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake",
-        "mac-0x68dc",
-        "macOS"
-      ],
-      "first_seen": "2026-07-06 19:42:08 U C",
-      "last_seen": "2026-07-06 19:42:08 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://efdnssea.honaribash.ir/b8a924ae-32de-4294-bc0f-31a926d14e9b",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake",
-        "win-0x0cd5",
-        "windows"
-      ],
-      "first_seen": "2026-07-06 19:38:08 U C",
-      "last_seen": "2026-07-06 19:38:08 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://182.121.40.102:58400/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 19:21:20 U C",
-      "last_seen": "2026-07-06 19:21:20 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "https://vykzqwol.gamefarma.com/7439b079-fd45-4749-87fa-9863e2245e4e",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake",
-        "win-0x0cd5",
-        "windows"
-      ],
-      "first_seen": "2026-07-06 19:20:08 U C",
-      "last_seen": "2026-07-06 19:20:08 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://110.36.1.200:38574/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [],
-      "first_seen": "2026-07-06 19:17:10 U C",
-      "last_seen": "2026-07-06 19:17:10 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://119.186.232.222:41659/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-07-06 19:14:26 U C",
-      "last_seen": "2026-07-06 19:14:26 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "https://ezqhmvl.1bonus.bet/e7d29f27-8c23-433d-933d-bb0919f92ea7",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClearFake",
-        "win-0x4679",
-        "windows"
-      ],
-      "first_seen": "2026-07-06 19:13:06 U C",
-      "last_seen": "2026-07-06 19:13:06 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://45.90.163.37/GOONGANGONTOP/mpsl",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "mips",
-        "mirai",
-        "opendir",
-        "ua-wget"
-      ],
-      "first_seen": "2026-07-06 19:06:11 U C",
-      "last_seen": "2026-07-06 19:06:11 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://45.90.163.37/GOONGANGONTOP/sh4",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "mirai",
-        "opendir",
-        "SuperH",
-        "ua-wget"
-      ],
-      "first_seen": "2026-07-06 19:06:11 U C",
-      "last_seen": "2026-07-06 19:06:11 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://45.90.163.37/GOONGANGONTOP/m68k",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "m68k",
-        "mirai",
-        "opendir",
-        "ua-wget"
-      ],
-      "first_seen": "2026-07-06 19:05:23 U C",
-      "last_seen": "2026-07-06 19:05:23 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://45.90.163.37/GOONGANGONTOP/x86_64",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "mirai",
-        "opendir",
-        "ua-wget",
-        "x86"
-      ],
-      "first_seen": "2026-07-06 19:05:23 U C",
-      "last_seen": "2026-07-06 19:05:23 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
