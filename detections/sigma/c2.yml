@@ -7,6 +7,20 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://37.1.213.59/y8jdGc5jS/Plugins/cred.dll*'
+      - '*http://37.1.213.59/y8jdGc5jS/Plugins/clip64.dll*'
+      - '*http://37.1.213.59/y8jdGc5jS/Plugins/clip.dll*'
+      - '*http://37.1.213.59/y8jdGc5jS/Plugins/cred64.dll*'
+      - '*http://91.92.242.236/files-129312398/files/file_8ae360959a1933a5.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_fcf6a02309e203c4.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_da8de9dae556667a.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_150a4c9b22b37ebe.ps1*'
+      - '*http://91.92.242.236/files-129312398/files/file_6d9d8fc309228ece.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_a3af4669c51aa82d.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_3e7393fd5c99d55c.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_447e39c0c96b3cb5.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_1054d1bff4b2c953.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_93d3d417921c3a69.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_5f7718a500a1354b.exe*'
       - '*http://62.60.226.185/tu3929.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_a9272b568a0889e4.exe*'
@@ -252,20 +266,3 @@ level: high
 tags:
   - attack.t1496
   - source.URLhaus
----
-title: Detect Activity to Known Malicious C2 - MalwareBazaar hashs - Chunk 1
-id: f74c7de3-963b-593e-bd64-3558c23b37ff
-status: experimental
-description: Detects traffic or activity related to known malicious hashs associated with C2 from MalwareBazaar (Chunk 1).
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - ' "11265b15cf310d8b0582883d1d0417891f8456f7ab620690fa0ddfd512ff494a"'
-      - ' "7675d23d748b0f2b60d9c074d6db1e843a69efd541bd96077065d04b5daa5637"'
-  condition: selection
-level: high
-tags:
-  - attack.t1071
-  - source.MalwareBazaar
