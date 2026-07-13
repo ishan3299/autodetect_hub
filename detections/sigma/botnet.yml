@@ -7,6 +7,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://94.154.43.42/urlhaus/niggerniggerniggers*'
       - '*http://sc.c1s.su/tplink.sh*'
       - '*http://sc.c1s.su/massload*'
       - '*http://peopleops.uti.cool/sh4*'
@@ -395,30 +396,6 @@ detection:
       - '*http://45.198.224.42/e.mpsl*'
       - '*http://h23.dad/b*'
       - '*http://94.26.106.236/payload.sh*'
-      - '*http://assets.f1cs-dev.it/jklarm5*'
-      - '*http://assets.f1cs-dev.it/jklsh4*'
-      - '*http://assets.f1cs-dev.it/curl.sh*'
-      - '*http://assets.f1cs-dev.it/jklx86*'
-      - '*http://assets.f1cs-dev.it/jklarm7*'
-      - '*http://assets.f1cs-dev.it/wget.sh*'
-      - '*http://assets.f1cs-dev.it/jklspc*'
-      - '*http://assets.f1cs-dev.it/jklmpsl*'
-      - '*http://assets.f1cs-dev.it/jklppc*'
-      - '*http://assets.f1cs-dev.it/jklmips*'
-      - '*http://assets.f1cs-dev.it/jklarm*'
-      - '*http://assets.f1cs-dev.it/jklm68k*'
-      - '*http://assets.f1cs-dev.it/jklarm6*'
-      - '*http://igmc.duckdns.org/kkk.arm4k*'
-      - '*http://igmc.duckdns.org/dipndotsk*'
-      - '*http://igmc.duckdns.org/chromek*'
-      - '*http://igmc.duckdns.org/kkk.arm7*'
-      - '*http://igmc.duckdns.org/kkk.arm5k*'
-      - '*http://igmc.duckdns.org/dipsk*'
-      - '*http://igmc.duckdns.org/kkk.arm6k*'
-      - '*http://igmc.duckdns.org/wget.sh*'
-      - '*http://igmc.duckdns.org/c.sh*'
-      - '*http://igmc.duckdns.org/kkk.arm7k*'
-      - '*http://igmc.duckdns.org/w.sh*'
   condition: selection
 level: high
 tags:
@@ -434,6 +411,34 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://igmc.ddns.net/ar-15/ar15.arm5*'
+      - '*http://igmc.duckdns.org/ar-15/ar15.ppc*'
+      - '*http://igmc.ddns.net/ar-15/ar15.mpsl*'
+      - '*http://igmc.ddns.net/ar-15/ar15.arm7*'
+      - '*http://igmc.ddns.net/ar-15/ar15.spc*'
+      - '*http://igmc.duckdns.org/ar-15/ar15.arm*'
+      - '*http://igmc.duckdns.org/ar-15/ar15.x86*'
+      - '*http://igmc.duckdns.org/ar-15/ar15.sh4*'
+      - '*http://igmc.ddns.net/ar-15/ar15.ppc*'
+      - '*http://igmc.ddns.net/ar-15/ar15.x86*'
+      - '*http://igmc.ddns.net/ar-15/ar15.m68k*'
+      - '*http://igmc.ddns.net/ar-15/ar15.mips*'
+      - '*http://igmc.ddns.net/ar-15/ar15.sh4*'
+      - '*http://igmc.ddns.net/ar-15/ar15.x86_64*'
+      - '*http://igmc.duckdns.org/ar-15/ar15.mips*'
+      - '*http://igmc.duckdns.org/ar-15/ar15.x86_64*'
+      - '*http://igmc.duckdns.org/ar-15/ar15.spc*'
+      - '*http://igmc.duckdns.org/ar-15/ar15.arm5*'
+      - '*http://igmc.duckdns.org/ar-15/ar15.mpsl*'
+      - '*http://igmc.duckdns.org/ar-15/ar15.arm7*'
+      - '*http://igmc.ddns.net/ar-15/ar15.i686*'
+      - '*http://igmc.duckdns.org/ar-15/ar15.i686*'
+      - '*http://igmc.duckdns.org/ar-15/ar15.m68k*'
+      - '*http://igmc.duckdns.org/ar-15/ar15.arm6*'
+      - '*http://igmc.ddns.net/ar-15/ar15.arc*'
+      - '*http://igmc.duckdns.org/ar-15/ar15.arc*'
+      - '*http://igmc.ddns.net/ar-15/ar15.arm*'
+      - '*http://igmc.ddns.net/ar-15/ar15.arm6*'
       - '*http://sc.c1s.su/tftp.sh*'
       - '*http://sc.c1s.su/ftpget.sh*'
       - '*http://sc.c1s.su/no_killer/arm5*'
@@ -906,6 +911,21 @@ detection:
       - '*http://zippycanyonez.pro/GOONGANGONTOP/juan.x86*'
       - '*http://zippycanyonez.pro/kamru.x86*'
       - '*http://zippycanyonez.pro/bins/wife.x86*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 2
+id: f581b3e9-19d6-5b39-a931-4f2898da0559
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 2).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://zippycanyonez.pro/hiddenbin/kokuryu.x86*'
       - '*http://zippycanyonez.pro/hiddenbin/condi.x86*'
       - '*http://zippycanyonez.pro/n2/unreverseable.x86_64*'
@@ -934,21 +954,6 @@ detection:
       - '*http://zippycanyonez.pro/bin/kokuryu.x86_64*'
       - '*http://zippycanyonez.pro/pelerberjembudpeler/perc.x86*'
       - '*http://zippycanyonez.pro/00101010101001/boatnet.x86*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 2
-id: f581b3e9-19d6-5b39-a931-4f2898da0559
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 2).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://zippycanyonez.pro/hiddenbin/nz.x86_64*'
       - '*http://zippycanyonez.pro/bin/tuxbot.x86_64*'
       - '*http://zippycanyonez.pro/atomic/untouchable.x86_64*'
