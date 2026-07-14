@@ -53,30 +53,8 @@ detection:
       - '*https://raw.githubusercontent.com/BenoitDaude/ABCDYUOSD/refs/heads/main/xmrig-armv7-static*'
       - '*https://raw.githubusercontent.com/BenoitDaude/ABCDYUOSD/refs/heads/main/xmrig-aarch64-static*'
       - '*http://agrovelca.com/3.exe*'
-      - '*https://217.60.195.113/clean*'
-      - '*https://217.60.195.113/arm7*'
-      - '*https://217.60.195.113/x86_64*'
-      - '*https://217.60.195.113/i686*'
-      - '*https://217.60.195.113/aarch64*'
-      - '*https://217.60.195.113/sh*'
   condition: selection
 level: high
 tags:
   - attack.t1496
   - source.URLhaus
----
-title: Detect Activity to Known Malicious Cryptomining - MalwareBazaar hashs - Chunk 1
-id: a9489914-32b3-565d-900f-897d9a586db4
-status: experimental
-description: Detects traffic or activity related to known malicious hashs associated with Cryptomining from MalwareBazaar (Chunk 1).
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - ' "a1a89529c78a5f99f0460a3f834feca616a8d5d57a8255ed4ffbb9b0fbc9a75a"'
-  condition: selection
-level: high
-tags:
-  - attack.t1071
-  - source.MalwareBazaar

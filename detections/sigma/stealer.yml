@@ -1,5 +1,5 @@
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: e108ae44-1f21-5d60-bd89-1db6818590ed
+id: e3bcc79d-3256-5a48-838f-eefb6b1a3db2
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
 logsource:
@@ -7,11 +7,38 @@ logsource:
 detection:
   selection:
     c-uri:
-      - '*https://www.dropbox.com/scl/fi/mi04qq5uwgzibvbe85xxh/InnerEvil.zip?rlkey=sj6b21tfiqnpvdsv9qkm9mqbw&st=qj6l2jgm&dl=1*'
+      - '*http://192.236.217.68/85/seethebestthings.js*'
+      - '*http://192.236.217.77/86/uneedbestthingsfrobetterplacescomingforme.js*'
+      - '*http://192.227.219.92/35/bestwishesforbetterpeoplescoming.js*'
+      - '*https://jsonkeeper.com/b/DJBPO*'
+      - '*http://172.245.195.197/123/weneedbestdevilsystemforbettertogetback.js*'
+      - '*http://192.227.135.196/80/bestangelkindsbreakbackmebestformebetter.js*'
   condition: selection
 level: high
 tags:
-  - attack.t1102
+  - attack.t1059.007
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: 673a38ce-cbdb-5ebd-bff9-fea64ffb1ea5
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://192.236.217.68/85/ecc/cxx.hta*'
+      - '*http://192.236.217.77/86/ecv/cxc.hta*'
+      - '*http://192.227.219.92/35/cce/goodthingsforme.hta*'
+      - '*http://193.177.220.9/25/mygoodnetworkingskillforgoodpersoncome.hta*'
+      - '*http://172.245.195.197/123/dc/bestwishesfromthebetterplacescomingforme.hta*'
+      - '*http://107.172.135.8/123/evc/greatindianthingsareperfectforbest.hta*'
+      - '*http://23.95.103.215/156/notimefordothatallbrotherherewiatingalot.hta*'
+  condition: selection
+level: high
+tags:
+  - attack.t1218.005
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
@@ -23,6 +50,9 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://nmcdn.info/NMLoader%20v%204.2.1.zip*'
+      - '*https://nightmare-cheats.vip/NMLoader%20v%204.2.1.zip*'
+      - '*https://nightmare-download.pw/NMLoader%20v%204.2.1.zip*'
       - '*https://exptersed.com/debug/loader.sh*'
       - '*https://exptersed.com/debug/payload.applescript*'
       - '*https://exptersed.com/debug/payload.applescript?build=2200432e9275376bedaf93db2cd7feb4*'
@@ -78,78 +108,6 @@ tags:
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: ebe57f60-46c3-5544-84b3-766b112c260a
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://185.199.197.10/load/os1/beb.exe*'
-      - '*http://185.199.197.10/load/kliulij.exe*'
-      - '*http://185.199.197.10/load/jhgkuyyg.exe*'
-      - '*http://185.199.197.10/load/hjbk.exe*'
-      - '*http://185.199.197.10/load/ojujn.exe*'
-      - '*http://185.199.197.10/load/hnmh.exe*'
-      - '*http://185.199.197.10/load/bjbh.exe*'
-      - '*https://solar-sanat.net/Chrome08.exe*'
-      - '*https://solar-sanat.net/raj101.exe*'
-      - '*http://217.60.195.253/tharsky/rev.bat*'
-      - '*http://217.60.195.253/tharsky/TharY.bat*'
-      - '*http://217.60.195.253/tharsky/swag.exe*'
-      - '*http://217.60.195.253/tharsky/Y.exe*'
-      - '*https://solar-sanat.net/chrome78.exe*'
-      - '*https://partytimedjsohio.com/bbl2/ARAW.exe*'
-      - '*http://162.55.1.86:3005/Decrypt.exe*'
-      - '*http://162.55.1.86:3005/Extractor.exe*'
-      - '*https://areal.rj.gov.br/levantamento/5gr67j/nWm2nB/jICBF8*'
-      - '*https://areal.rj.gov.br/levantamento/5gr67j/FR88rm/CmLZHu*'
-      - '*https://widerangegroup.com/cage.exe*'
-      - '*https://solar-sanat.net/RoxanneIQ6.exe*'
-      - '*https://yettyagency.tz/Client4.exe*'
-      - '*https://royalcare-sy.com/4444.exe*'
-      - '*https://solar-sanat.net/DragonBalls76Ace.exe*'
-      - '*https://cliquelogistics.com.pk/Rmx12.exe*'
-      - '*https://gaiadeqi.com/transfer.png*'
-      - '*http://196.251.107.104/rms.exe*'
-      - '*https://cdn.privatefile.host/api/cdn/f/79fa0ef13c04d252be3860c9ca8560fe*'
-      - '*http://77.90.41.3:42457/api/cdn/f/79fa0ef13c04d252be3860c9ca8560fe*'
-      - '*https://cdn.privatefile.host/api/cdn/f/063935fd7849651eab889f519e9c7f64*'
-      - '*http://77.90.41.3:42457/api/cdn/f/46f82cd809e6896a6a2a7b9349d2035c*'
-      - '*http://77.90.41.3:42457/api/cdn/f/063935fd7849651eab889f519e9c7f64*'
-      - '*https://cdn.privatefile.host/api/cdn/f/46f82cd809e6896a6a2a7b9349d2035c*'
-      - '*http://46.151.182.157:751/download*'
-      - '*http://158.94.210.207:8080/Vmlyjlrir.exe*'
-      - '*http://5.252.155.72/load/os1/crz.exe*'
-      - '*http://5.252.155.72/load/os1/beb.exe*'
-      - '*http://5.252.155.72/load/werwte.exe*'
-      - '*http://5.252.155.72/load/iuyuh.exe*'
-      - '*https://solar-sanat.net/ThornFlash3Client.exe*'
-      - '*https://xeno.lat/download/Xeno-v1.3.55.exe*'
-      - '*http://dfgjhkllkhuuk.info/load/jhgkuyyg.exe*'
-      - '*http://dfgjhkllkhuuk.info/load/hnmh.exe*'
-      - '*http://dfgjhkllkhuuk.info/load/iuyuh.exe*'
-      - '*http://dfgjhkllkhuuk.info/load/hjbk.exe*'
-      - '*http://dfgjhkllkhuuk.info/load/bjbh.exe*'
-      - '*http://dfgjhkllkhuuk.info/load/werwte.exe*'
-      - '*http://dfgjhkllkhuuk.info/load/ojujn.exe*'
-      - '*http://dfgjhkllkhuuk.info/load/kliulij.exe*'
-      - '*http://dfgjhkllkhuuk.info/load/os1/KUgDQ.exe*'
-      - '*http://dfgjhkllkhuuk.info/load/os1/U1.exe*'
-      - '*http://dfgjhkllkhuuk.info/load/os1/crz.exe*'
-      - '*http://dfgjhkllkhuuk.info/load/os1/cry.exe*'
-      - '*http://dfgjhkllkhuuk.info/load/os1/qwe.exe*'
-      - '*http://dfgjhkllkhuuk.info/load/os1/beb.exe*'
-      - '*https://vrdccbank.com/2727.exe*'
-      - '*https://solar-sanat.net/kononiaZClient.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
 id: bf9f0c07-fdcf-5e93-b032-b681d29af785
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
@@ -158,6 +116,12 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://31.77.168.180:5000/piva.exe*'
+      - '*http://31.77.168.180:5000/sosermasn.exe*'
+      - '*http://31.77.168.180:5000/bkrs.exe*'
+      - '*http://31.77.168.180:5000/repapa.exe*'
+      - '*https://fairth.dev/Fairth.zip*'
+      - '*https://www.dropbox.com/scl/fi/87ikws7x5qn2p1ogczanv/unitymanager.exe?rlkey=tp4t2v1llj60fopadmv63zx1n&st=1feetr0p&e=1&dl=1*'
       - '*https://pritinder.ifree.page/img_003724.png*'
       - '*https://misty-cherry-cea3.uploadsimg.workers.dev/UEPmb*'
       - '*http://193.177.220.9/img/c/img_181846.png*'
@@ -254,8 +218,6 @@ detection:
       - '*http://85.121.240.117/ASdoIee.txt*'
       - '*http://sixmexicos.com/jp/stego_payload.png*'
       - '*http://31.77.168.8:5000/tochka.exe*'
-      - '*https://scoala1gherla.ro/wp-admin/css/colors/oceans/Ebu.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_ed27e62be8d4fe3d.exe*'
   condition: selection
 level: high
 tags:
@@ -263,7 +225,7 @@ tags:
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: 673a38ce-cbdb-5ebd-bff9-fea64ffb1ea5
+id: e108ae44-1f21-5d60-bd89-1db6818590ed
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
 logsource:
@@ -271,19 +233,15 @@ logsource:
 detection:
   selection:
     c-uri:
-      - '*http://192.227.219.92/35/cce/goodthingsforme.hta*'
-      - '*http://193.177.220.9/25/mygoodnetworkingskillforgoodpersoncome.hta*'
-      - '*http://172.245.195.197/123/dc/bestwishesfromthebetterplacescomingforme.hta*'
-      - '*http://107.172.135.8/123/evc/greatindianthingsareperfectforbest.hta*'
-      - '*http://23.95.103.215/156/notimefordothatallbrotherherewiatingalot.hta*'
+      - '*https://www.dropbox.com/scl/fi/mi04qq5uwgzibvbe85xxh/InnerEvil.zip?rlkey=sj6b21tfiqnpvdsv9qkm9mqbw&st=qj6l2jgm&dl=1*'
   condition: selection
 level: high
 tags:
-  - attack.t1218.005
+  - attack.t1102
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: e3bcc79d-3256-5a48-838f-eefb6b1a3db2
+id: ebe57f60-46c3-5544-84b3-766b112c260a
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
 logsource:
@@ -291,14 +249,67 @@ logsource:
 detection:
   selection:
     c-uri:
-      - '*http://192.227.219.92/35/bestwishesforbetterpeoplescoming.js*'
-      - '*https://jsonkeeper.com/b/DJBPO*'
-      - '*http://172.245.195.197/123/weneedbestdevilsystemforbettertogetback.js*'
-      - '*http://192.227.135.196/80/bestangelkindsbreakbackmebestformebetter.js*'
+      - '*http://185.199.197.10/load/os1/beb.exe*'
+      - '*http://185.199.197.10/load/kliulij.exe*'
+      - '*http://185.199.197.10/load/jhgkuyyg.exe*'
+      - '*http://185.199.197.10/load/hjbk.exe*'
+      - '*http://185.199.197.10/load/ojujn.exe*'
+      - '*http://185.199.197.10/load/hnmh.exe*'
+      - '*http://185.199.197.10/load/bjbh.exe*'
+      - '*https://solar-sanat.net/Chrome08.exe*'
+      - '*https://solar-sanat.net/raj101.exe*'
+      - '*http://217.60.195.253/tharsky/rev.bat*'
+      - '*http://217.60.195.253/tharsky/TharY.bat*'
+      - '*http://217.60.195.253/tharsky/swag.exe*'
+      - '*http://217.60.195.253/tharsky/Y.exe*'
+      - '*https://solar-sanat.net/chrome78.exe*'
+      - '*https://partytimedjsohio.com/bbl2/ARAW.exe*'
+      - '*http://162.55.1.86:3005/Decrypt.exe*'
+      - '*http://162.55.1.86:3005/Extractor.exe*'
+      - '*https://areal.rj.gov.br/levantamento/5gr67j/nWm2nB/jICBF8*'
+      - '*https://areal.rj.gov.br/levantamento/5gr67j/FR88rm/CmLZHu*'
+      - '*https://widerangegroup.com/cage.exe*'
+      - '*https://solar-sanat.net/RoxanneIQ6.exe*'
+      - '*https://yettyagency.tz/Client4.exe*'
+      - '*https://royalcare-sy.com/4444.exe*'
+      - '*https://solar-sanat.net/DragonBalls76Ace.exe*'
+      - '*https://cliquelogistics.com.pk/Rmx12.exe*'
+      - '*https://gaiadeqi.com/transfer.png*'
+      - '*http://196.251.107.104/rms.exe*'
+      - '*https://cdn.privatefile.host/api/cdn/f/79fa0ef13c04d252be3860c9ca8560fe*'
+      - '*http://77.90.41.3:42457/api/cdn/f/79fa0ef13c04d252be3860c9ca8560fe*'
+      - '*https://cdn.privatefile.host/api/cdn/f/063935fd7849651eab889f519e9c7f64*'
+      - '*http://77.90.41.3:42457/api/cdn/f/46f82cd809e6896a6a2a7b9349d2035c*'
+      - '*http://77.90.41.3:42457/api/cdn/f/063935fd7849651eab889f519e9c7f64*'
+      - '*https://cdn.privatefile.host/api/cdn/f/46f82cd809e6896a6a2a7b9349d2035c*'
+      - '*http://46.151.182.157:751/download*'
+      - '*http://158.94.210.207:8080/Vmlyjlrir.exe*'
+      - '*http://5.252.155.72/load/os1/crz.exe*'
+      - '*http://5.252.155.72/load/os1/beb.exe*'
+      - '*http://5.252.155.72/load/werwte.exe*'
+      - '*http://5.252.155.72/load/iuyuh.exe*'
+      - '*https://solar-sanat.net/ThornFlash3Client.exe*'
+      - '*https://xeno.lat/download/Xeno-v1.3.55.exe*'
+      - '*http://dfgjhkllkhuuk.info/load/jhgkuyyg.exe*'
+      - '*http://dfgjhkllkhuuk.info/load/hnmh.exe*'
+      - '*http://dfgjhkllkhuuk.info/load/iuyuh.exe*'
+      - '*http://dfgjhkllkhuuk.info/load/hjbk.exe*'
+      - '*http://dfgjhkllkhuuk.info/load/bjbh.exe*'
+      - '*http://dfgjhkllkhuuk.info/load/werwte.exe*'
+      - '*http://dfgjhkllkhuuk.info/load/ojujn.exe*'
+      - '*http://dfgjhkllkhuuk.info/load/kliulij.exe*'
+      - '*http://dfgjhkllkhuuk.info/load/os1/KUgDQ.exe*'
+      - '*http://dfgjhkllkhuuk.info/load/os1/U1.exe*'
+      - '*http://dfgjhkllkhuuk.info/load/os1/crz.exe*'
+      - '*http://dfgjhkllkhuuk.info/load/os1/cry.exe*'
+      - '*http://dfgjhkllkhuuk.info/load/os1/qwe.exe*'
+      - '*http://dfgjhkllkhuuk.info/load/os1/beb.exe*'
+      - '*https://vrdccbank.com/2727.exe*'
+      - '*https://solar-sanat.net/kononiaZClient.exe*'
   condition: selection
 level: high
 tags:
-  - attack.t1059.007
+  - attack.t1204.002
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
@@ -398,7 +409,38 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "fa38f6539af74b5b355c532a3c71c588960d34abd825442fea98c2177375d010"'
+      - ' "aec2007bddf386d7659b60f712334d7f277f65edfd9f11a61c711b7b4b7119e2"'
+      - ' "d5d5465b53f72727b8218dab4165b954748d29ab8f8de275fbd3a6fac0e08b6d"'
+      - ' "ed38c22c7385998f5182bfae0a235faee616ed19fb34b945b1b8e211e3001e96"'
+      - ' "16a1260ae199d83c537b65ca558b33c7a783d28c5547b5fcb35dee4cceb5f12e"'
+      - ' "d871b4706e6410c4170a03a86629822e046d81e15f6a50d905059d7f2383f1de"'
+      - ' "c20a551057c10e699156ebeb57677cb51625534d8256a3dd3cd8b3efbca5235c"'
+      - ' "b999fba4d4db5bdbfa86d6744ba53b4473f37b53d0fe74c47f7c8238350a11d8"'
+      - ' "b50f2a725bec5a139e3bebe5d823af0c25d0a7335adab21b53743c2afdc0b6cb"'
+      - ' "8e97301bed92f00dbd667e65c4e10f7c5d53789eeff64fb067c13a7b66985a48"'
+      - ' "d39142fd261676d1c0ef0b817c44afddc800f6e7b3b1ffa2f2d9a27f548a5095"'
+      - ' "d9824b3a6894de0606a03a23417f1c7e780ee0b5655f724dbfa455601e13eb8e"'
+      - ' "01f82df6d640458c9852fcceff2893b668c150dc6e7ae83298533c5c1b5815d2"'
+      - ' "05fd60735b593c0e809807b14f7d0d1d717aba1fdd62171fbf15ae771846bb3e"'
+      - ' "13543ef85a0988a09ef430a1f114f920a670a82f9e360ff9e6872252062d4768"'
+      - ' "0b845b890586407658a6bfcb1030b32be641760120e304bdf372a835ca5d77a4"'
+      - ' "7e732b4df4080ac0e000a70c84428aade4334da642001f1afe47683482c4f7a0"'
+      - ' "34ad97945a1f70cdbf8af7777a6c71c990d841840cf3c94a387f6cc83450ad4b"'
+      - ' "d81d3e290d3e6f3f453a0e911069c95065ad52287bf2d46d4cbd12f268a423e7"'
+      - ' "3ecae3266e1e24200de4a94f0ecdd504219d6de741af53340f65de9c8098fa01"'
+      - ' "4049128f0308d05dcb8d24b668f69238d720199de32ba0d8304cd3c3b3bde1b9"'
+      - ' "f36467769f8a9e79cf9342a01622cd6a099fb0104f20057c44fa8758823f1c6e"'
+      - ' "746c06f05b8e3bc93d6495a6c447c3c1874bd77011c33b0bcfe74ae27addbfaf"'
+      - ' "63423364abc33ebeda68838dd5605d60b883e21f3c29b1d98c927c75c8fb25d5"'
+      - ' "ffa78f3d4b1dafb9723e6a68456e42a57c0a109b9b8246196e1a8a6d6d2d6f5a"'
+      - ' "69346d2b7d476208653f58962bda327b95e7dcf3c033b983071538bfb3f2ced6"'
+      - ' "027004739726842d8e416672cb7da85c43a75357984f818e27db5eb0dee0b600"'
+      - ' "24636cfe302fe7c74efa9e78f343e1fdd984468117ebf2df80a141ef7a635fb8"'
+      - ' "69bddeb75e3b47d1e8a26073149c695309a95da1808ff3d6fefd0a1ec7affdd3"'
+      - ' "e9a85beb46d004dec0de69d07a2e8a812b5b0d54316be9a66c0658745e54d2a6"'
       - ' "b871f50abbd7e06e6dbede78f499c2efc426d7f8ba08943f06e104f82d8ecc0c"'
+      - ' "5e815731f67cb070fb1b31272c45bd7f4ecd4a408cbbc68a9545bafc3292d72c"'
       - ' "05235d0287744075e70663a98f429178b4410ea82c0710fd50e756ca6e273d1e"'
       - ' "0a31641b50287de2bce780316c8ac05f41a24262877a46ac25ef468e3da9381b"'
       - ' "aeb862624e0b3839fdfe861d3cb6e6104ab0efc820b12e75cf88f8bc034005c3"'
@@ -411,21 +453,6 @@ detection:
       - ' "116e6d06ce45806d7b1a59b3cfb7544fd0be3ec345d62a02cbac11ca4275e086"'
       - ' "44814d2124603ec71ad8315b3992359039d0cf5f1f795042393438f6797eb38d"'
       - ' "725700849bc04426ca22bdfcabfebde8612749058816e7cba8ceec442ee8848a"'
-      - ' "30add75b83a74e078a70e970d8ae2b604cac0d4a06e3e03bd61b9faeba64e5f3"'
-      - ' "dd255b896e9bb61ada543cc6ad859ba9ba9578fd9140c9a9864a8e303bb0d36f"'
-      - ' "72e3fb64a103033837ee52ff73f5c00b2a8536b363431cd1308e7ce00f26908a"'
-      - ' "8b18c11fe95bd59dd8e018d75668792c478e557a71a54a7f078f2ef4f060ab0c"'
-      - ' "880d74780d64dd25ce6f24c1c7a04f7d6028ba89a7acfe35fcfe428c89ef24d1"'
-      - ' "7afb1a1dc8c72d5b4924d499464f5512264ef2021db5c2b8a9d0d9bda288e842"'
-      - ' "e52af1bb74ee3f0368ec1779791328961c86c18b73e15c3ab28b422d7cbe1b14"'
-      - ' "38d8dbf64062747f22fd847354d4f74282946532899a3def1006004675a55d65"'
-      - ' "2c00df08acd7500c2cdf62c40aad9cf5996a2c14fb985192fc639f8cd835e380"'
-      - ' "23ac49199d2dd8bd67f71c43afe84526efe5cce2c1fff478b2b0db24a91f8a77"'
-      - ' "d11696a1fff07a188f3fb0494212eacb3ed8ae125bcb4da03b09b3f689c7cecb"'
-      - ' "2bfeca0ba891310daaf48750cec82329f5c8769d29384ef3799c0d5fbc1d8788"'
-      - ' "4bb16555c6d16051154f98850757d5eacfefcd07031cdde2054e574f988e8c5b"'
-      - ' "34c37d16da934f0281861d55fd766ddac8e1860e9f62204bbb32cfb0052f51d7"'
-      - ' "8ebc8fc6ce56d5684a1f15bc23439a183e5955ab82971c5c7a7b0b8832d78198"'
   condition: selection
 level: high
 tags:
