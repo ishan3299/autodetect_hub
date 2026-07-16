@@ -1,3 +1,21 @@
+title: Detect Activity to Known Malicious Cryptomining - MalwareBazaar hashs - Chunk 1
+id: a9489914-32b3-565d-900f-897d9a586db4
+status: experimental
+description: Detects traffic or activity related to known malicious hashs associated with Cryptomining from MalwareBazaar (Chunk 1).
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - ' "ff760476038ffcc82c2bf2cb3addd9b86b3f2c7a84ab3baffb7dd370476b348f"'
+      - ' "991548c6e6b6b0fa1984a620a5ebea746d21a5b3cbbf6b4c389e0e6f5bfd13cd"'
+      - ' "246dca0b1a6195c4c6fb26bcb9b31aef79f1af5f8e506007715d53c794051d08"'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.MalwareBazaar
+---
 title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
 id: f42dab2b-f6e3-5181-ac2d-d61e4dcc95d4
 status: experimental
@@ -68,25 +86,8 @@ detection:
       - '*https://raw.githubusercontent.com/BenoitDaude/ABCDYUOSD/refs/heads/main/xmrig-i686-static*'
       - '*https://raw.githubusercontent.com/BenoitDaude/ABCDYUOSD/refs/heads/main/xmrig-armv7-static*'
       - '*https://raw.githubusercontent.com/BenoitDaude/ABCDYUOSD/refs/heads/main/xmrig-aarch64-static*'
-      - '*http://agrovelca.com/3.exe*'
   condition: selection
 level: high
 tags:
   - attack.t1496
   - source.URLhaus
----
-title: Detect Activity to Known Malicious Cryptomining - MalwareBazaar hashs - Chunk 1
-id: a9489914-32b3-565d-900f-897d9a586db4
-status: experimental
-description: Detects traffic or activity related to known malicious hashs associated with Cryptomining from MalwareBazaar (Chunk 1).
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - ' "246dca0b1a6195c4c6fb26bcb9b31aef79f1af5f8e506007715d53c794051d08"'
-  condition: selection
-level: high
-tags:
-  - attack.t1071
-  - source.MalwareBazaar
