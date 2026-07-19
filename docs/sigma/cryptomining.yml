@@ -7,38 +7,16 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "877525407f4b6feafe8e16b736e9eaad24ef4df2ad142387cc005b3b0fba76f6"'
+      - ' "1e83be9c9bcc879bbf68332b8c5b5fb5ab2591ae6098a4ed4fe65aee0780cfac"'
+      - ' "7df3cebf5b779a0a266ca4fdb979fab474223505bfc9a63d27a1ff985ef9fffc"'
+      - ' "bed4780f7c726192443063214f085b9f93b89f736e25ab17e44c1aa77f667c2f"'
       - ' "c4b117f30786d0b328d90c2818e4c454e81d29ed5921d8f8847e80333a12ee86"'
-      - ' "ce4b41b1cba3c019ee40821970246f4779808a44a8d9651dd2b57a9f5eb0719a"'
-      - ' "5c4a38c19214a0de28fe2aeddfb09068af897bc20fddbf66b8ee9b2d285fbd59"'
-      - ' "e89abc340823248d1b4cf2e51eaca79348516687f9acce270d1ca165c503153c"'
-      - ' "d92102f338d5d8a1fa4c00104e2ffd6c6cd06c2c800023f3fa53dc9d98986ddb"'
-      - ' "b4d780466f9deb04216b42d6cef6cdf5efb0dc6914fa1b543f4d64ae0326d7a1"'
-      - ' "bcba4234552933d2a50fbf5878e2e4155d94f251aba99345d1d9108ea6c8a6bc"'
-      - ' "da876a12b32267fcb7f43ae01636016b6bce497cc6773c3318072d387c883a95"'
-      - ' "74ed8d57566e1b44f1594555727813c93f8850b5d7bd7f10a707d519b4ff95da"'
-      - ' "8f225e59f3b892c7ed440db4c913491f825ccd64792cb759b55563c1b1310ece"'
-      - ' "07b9702bc859227a658903d1b4cf85d9daed6e0c24e670332c83020cc0a37166"'
   condition: selection
 level: high
 tags:
   - attack.t1071
   - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
-id: f42dab2b-f6e3-5181-ac2d-d61e4dcc95d4
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://endpoint.project0.cc/f/init.cfg*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
 id: 3316af2f-5b86-5439-89c7-8ee743b4dbdf
@@ -49,6 +27,12 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://217.60.195.113/test/clean*'
+      - '*https://217.60.195.113/test/arm7*'
+      - '*https://217.60.195.113/test/riscv*'
+      - '*https://217.60.195.113/test/i686*'
+      - '*https://217.60.195.113/test/aarch64*'
+      - '*https://217.60.195.113/test/x86_64*'
       - '*https://raw.githubusercontent.com/nulltrafficaway/labprojecttest/refs/heads/main/config.json*'
       - '*https://raw.githubusercontent.com/nulltrafficaway/labprojecttest/refs/heads/main/w2.sh*'
       - '*https://raw.githubusercontent.com/nulltrafficaway/labprojecttest/refs/heads/main/check2.sh*'
@@ -92,4 +76,20 @@ detection:
 level: high
 tags:
   - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
+id: f42dab2b-f6e3-5181-ac2d-d61e4dcc95d4
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://endpoint.project0.cc/f/init.cfg*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
   - source.URLhaus
