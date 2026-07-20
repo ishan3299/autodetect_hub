@@ -7,6 +7,11 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_2af1b4c1adddd8a7.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_acf09b376bde6a81.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_c03b5bdb5d880801.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_93279daf91973b83.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_0ddd88740ca3f88d.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_1b333eb31fd13114.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_de33e495882e1b4f.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_c732ee2417c2a078.exe*'
@@ -225,41 +230,8 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_f707d1dbd509f8bf.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_955d2a66642a3e71.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_af4a0ffcd7644ab1.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_c3e26435ae069c5c.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_8f3d5f27d351cf7a.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_f3f5f94ea0848af3.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_e4737f96f6127894.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_51e3681c11244730.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_6d44ed9e866f2f4b.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_768601ddd072e6a1.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_301b2cac623503b0.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_b3f400dc7a2ef2be.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_4b7cf889b2d63efb.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_f4c7b9998333ce07.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_7b683994c41e1ed1.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_f3fc09c539d5e2fc.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_b099002ce9eea2f4.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_e5e61926ff222dbb.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_78146a795d94b253.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_b36800b0d3cfa189.exe*'
   condition: selection
 level: high
 tags:
   - attack.t1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
-id: f14eb7f3-9c29-5eed-a133-748d1a8387e9
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with C2 from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://91.92.242.236/files-129312398/files/file_1443878c027b966b.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
   - source.URLhaus
