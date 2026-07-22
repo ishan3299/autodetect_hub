@@ -7,15 +7,12 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "1501fb778e9ceefc0dca1f8cfe8c9fdd1738db5f6dbb0032348f3e161391d016"'
+      - ' "ab161caf790e0722f10c95343132e648a3d64185ed575834e5a9853c9dca7618"'
+      - ' "1a937fa01d4ff5ce37ce61bd6b6abdca0c9bd6f66752e640b77bef673f20bd27"'
+      - ' "e0e37969dfd722c3036557fe6c3af6dfd70b5a55f496c9771c3e9dd97e648823"'
+      - ' "4b8a2fdaad0f3e6e6325d3deef163526e470c9a88a23f73e491bd228f3548641"'
       - ' "d7edbb3e6ef59d56861f4bd4e5be6fdf5a954c0fb745ef79289815832f4573c5"'
-      - ' "9d6d0bce1b37cb65deb9b158edf41bcb9c44ae07634de8563b53a05f158955af"'
-      - ' "f3a8ffee82d63d285245f66f82f7add5a056a20f4b339e8cdd218ffd3ac6314d"'
-      - ' "48a9a9ec75caf2b45a7a78c63d339aae96c2eab2d5510c974544bb04f49e0948"'
-      - ' "a485511f190cca50a45098bddd4f45f7bdeb8467f12cf726d1659fa3326aa5be"'
-      - ' "f7fe0d0be53dc875f6101bce77f3314b3ee40319106fc87da06bf93e6c51ac8c"'
-      - ' "3fe7dd0ff92a06d6e832728c5be15f86092ab3b27827231410184adeeb689c21"'
-      - ' "a531f3e6224862abd00091c4955d535ace2bb886df53bdcd59c3a32b44c93629"'
-      - ' "8ec920a35a7c6dd60e4aeb3b1ed09cd344f4c5191d4314a05ce72bf757377c86"'
   condition: selection
 level: high
 tags:
@@ -31,6 +28,9 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://158.94.208.44/pb7Ulzhaae3xpSNrEvJH5yqqyMyIbnNF/mKM65Cf6QNqeOVw9.exe*'
+      - '*https://davestrap.xyz/installer.exe*'
+      - '*https://lightcord.xyz/downloads/LightCord-Setup-Win.exe*'
       - '*http://165.22.14.76/sex.sh*'
       - '*https://217.60.195.113/test/clean*'
       - '*https://217.60.195.113/test/arm7*'
@@ -58,9 +58,6 @@ detection:
       - '*http://ashahaarmans.nl/3.exe*'
       - '*http://ashahaarmans.nl/144.exe*'
       - '*http://45.225.135.18/deploy_softwaretech.sh*'
-      - '*http://64.89.163.22/deploy_softwaretech.sh*'
-      - '*https://www.nccommunication.be/images/y11.png*'
-      - '*http://51.15.39.25/m.png*'
   condition: selection
 level: high
 tags:
