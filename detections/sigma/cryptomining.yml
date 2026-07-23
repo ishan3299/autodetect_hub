@@ -1,24 +1,3 @@
-title: Detect Activity to Known Malicious Cryptomining - MalwareBazaar hashs - Chunk 1
-id: a9489914-32b3-565d-900f-897d9a586db4
-status: experimental
-description: Detects traffic or activity related to known malicious hashs associated with Cryptomining from MalwareBazaar (Chunk 1).
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - ' "1501fb778e9ceefc0dca1f8cfe8c9fdd1738db5f6dbb0032348f3e161391d016"'
-      - ' "ab161caf790e0722f10c95343132e648a3d64185ed575834e5a9853c9dca7618"'
-      - ' "1a937fa01d4ff5ce37ce61bd6b6abdca0c9bd6f66752e640b77bef673f20bd27"'
-      - ' "e0e37969dfd722c3036557fe6c3af6dfd70b5a55f496c9771c3e9dd97e648823"'
-      - ' "4b8a2fdaad0f3e6e6325d3deef163526e470c9a88a23f73e491bd228f3548641"'
-      - ' "d7edbb3e6ef59d56861f4bd4e5be6fdf5a954c0fb745ef79289815832f4573c5"'
-  condition: selection
-level: high
-tags:
-  - attack.t1071
-  - source.MalwareBazaar
----
 title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
 id: 3316af2f-5b86-5439-89c7-8ee743b4dbdf
 status: experimental
@@ -79,3 +58,28 @@ level: high
 tags:
   - attack.t1059.004
   - source.URLhaus
+---
+title: Detect Activity to Known Malicious Cryptomining - MalwareBazaar hashs - Chunk 1
+id: a9489914-32b3-565d-900f-897d9a586db4
+status: experimental
+description: Detects traffic or activity related to known malicious hashs associated with Cryptomining from MalwareBazaar (Chunk 1).
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - ' "ebb62d8bb972d004cbe583b15bed4fccd7d003af90eb0530c5120c36cd7251a4"'
+      - ' "a0493b5b7524c51c7d97757e014a35140cb61be1fdf2b620e9c5d1eb23c9cc21"'
+      - ' "e4710869dc5deaeba46756b9b65777240f714922dc9ce1a8621460abb3e69c2b"'
+      - ' "d91084567f60c19702fd31ccbb03eab02b8681ade212212084e528c72370b66a"'
+      - ' "85142e27e44b83ae26230454694d1666652e718e3764e57a1d6539c83e448402"'
+      - ' "1501fb778e9ceefc0dca1f8cfe8c9fdd1738db5f6dbb0032348f3e161391d016"'
+      - ' "ab161caf790e0722f10c95343132e648a3d64185ed575834e5a9853c9dca7618"'
+      - ' "1a937fa01d4ff5ce37ce61bd6b6abdca0c9bd6f66752e640b77bef673f20bd27"'
+      - ' "e0e37969dfd722c3036557fe6c3af6dfd70b5a55f496c9771c3e9dd97e648823"'
+      - ' "4b8a2fdaad0f3e6e6325d3deef163526e470c9a88a23f73e491bd228f3548641"'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.MalwareBazaar
