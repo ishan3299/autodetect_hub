@@ -29,19 +29,3 @@ level: high
 tags:
   - attack.t1566
   - source.URLhaus
----
-title: Detect Activity to Known Malicious Phishing - URLhaus urls - Chunk 1
-id: 43d35a6a-8d31-5e80-9c5e-cac04e0a62a1
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Phishing from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://hostinghosting3.site/proxy2_pJEwZXwJC50YcPab.php?name=billing_statement_kredivo_jatuh_tempo.pdf*'
-  condition: selection
-level: high
-tags:
-  - attack.t1071
-  - source.URLhaus
