@@ -33,10 +33,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_a42c1dc8442e1c9b.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_c728de98ac1beb8a.exe*'
       - '*http://45.225.135.18/check.sh*'
-      - '*http://209.250.238.240/aarch64*'
-      - '*http://ashahaarmans.nl/3.exe*'
-      - '*http://ashahaarmans.nl/144.exe*'
-      - '*http://45.225.135.18/deploy_softwaretech.sh*'
   condition: selection
 level: high
 tags:
@@ -68,15 +64,12 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "1a5fc161c39e639f6c053ad79040e2f18827c0d8df3e39b5202a3920fcc9b4b9"'
+      - ' "52f447218c94376f552d1c2b5bfa01c4ef2b5d32ac9ac061236cd286a9efba67"'
+      - ' "76da85ad5be21209b93a67040dca0e5fff144730fdff49ec8447b8b2b3dca7a2"'
       - ' "932aa31eb7fa070617035b427aab26a148eaee8e9d4d69da22b5ae89279b3adb"'
       - ' "86fe031101b19d7f9ca74392f638684715447baded94d81ef62799d0b72b4057"'
       - ' "4852391f807c55bf92aa89c874b739add2d284e2669a9c9c51e8e7e76882fa8a"'
-      - ' "b7ce2cf4c4a9cf3a2906bd3f53fff00f2c3e8ae4200451bf6194b00d94617490"'
-      - ' "842cd640dae0c4eae792cfa2057774bbef7ccfe94cc8bcf3b189dbc03370e2d2"'
-      - ' "029a364b81370e6f680886c2e1a0751cc45d1539db9ef0b9b55265def3422259"'
-      - ' "762d34adaef9bdd6a5a6e2d894bb4c5bda434e8740360adf82a399d7d1f7f46c"'
-      - ' "d3f47a263a810cfc1998780f0a47ea01c6a197c2f57cf62e60d7709032e4cb4b"'
-      - ' "694a3bab92e60e6760649fd40e97c04ff03faded2073e7a0c2e061229bf7820a"'
   condition: selection
 level: high
 tags:
