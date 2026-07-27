@@ -7,6 +7,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://msfconfig.icu/tmp/system.txt*'
       - '*http://158.94.208.44/pb7Ulzhaae3xpSNrEvJH5yqqyMyIbnNF/mKM65Cf6QNqeOVw9.exe*'
       - '*https://davestrap.xyz/installer.exe*'
       - '*https://lightcord.xyz/downloads/LightCord-Setup-Win.exe*'
@@ -31,8 +32,6 @@ detection:
       - '*http://64.89.163.22/d.sh*'
       - '*https://raw.githubusercontent.com/seition2doc/dosta2/main/n3.bat*'
       - '*http://91.92.242.236/files-129312398/files/file_a42c1dc8442e1c9b.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_c728de98ac1beb8a.exe*'
-      - '*http://45.225.135.18/check.sh*'
   condition: selection
 level: high
 tags:
@@ -64,12 +63,19 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "1d42789ea54be34dbfa2d96095416723bc78f592bc56c62073f09dd5bad76654"'
+      - ' "2fed5d0552cf80eaae1928150238397a632ebb9521e98129daa71eb46ea1f113"'
       - ' "1a5fc161c39e639f6c053ad79040e2f18827c0d8df3e39b5202a3920fcc9b4b9"'
+      - ' "3100f5931301a7968b274bc718c8363fe8b73cab7b997cf4ae161e39d06197ef"'
+      - ' "be24e3ff143568fc82e42ed4aeee92e3f6f58c5fe3c5bb442cf4b998c90463d2"'
+      - ' "fb4c3e7dc26b98030ee6f118356105780a293aff695652df6edd3f1058cc5d85"'
+      - ' "1eecf2377d20768c28d741e21affaa53cf26db0d083efdbf43a92fa938b7e4be"'
+      - ' "c43396e514f92076c9a0c7e22248af8d60714a83eeab866d52dab13808a8bc32"'
+      - ' "bf8b6b4846ad542696304b6d7e339d2c1425cd27aa61ac48df08c1de2dc4fabb"'
+      - ' "dc863b3db099b101c6c95a17b70bfccbb9826916e6a27c13d6315a5568ba3f13"'
+      - ' "2f206563640dd66a743ffd493ce0e3c31a8fc5a24b9f5d2b540fc22d45c13d66"'
       - ' "52f447218c94376f552d1c2b5bfa01c4ef2b5d32ac9ac061236cd286a9efba67"'
       - ' "76da85ad5be21209b93a67040dca0e5fff144730fdff49ec8447b8b2b3dca7a2"'
-      - ' "932aa31eb7fa070617035b427aab26a148eaee8e9d4d69da22b5ae89279b3adb"'
-      - ' "86fe031101b19d7f9ca74392f638684715447baded94d81ef62799d0b72b4057"'
-      - ' "4852391f807c55bf92aa89c874b739add2d284e2669a9c9c51e8e7e76882fa8a"'
   condition: selection
 level: high
 tags:
