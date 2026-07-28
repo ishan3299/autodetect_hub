@@ -1,4 +1,20 @@
 title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
+id: 5d9e1d92-b2c4-5b25-8e48-0c8b2432093e
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://47.239.127.71/lib/xxx*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
 id: 3316af2f-5b86-5439-89c7-8ee743b4dbdf
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
@@ -30,8 +46,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_9ed873a1d14ec6de.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_a3402a55abdee979.exe*'
       - '*http://64.89.163.22/d.sh*'
-      - '*https://raw.githubusercontent.com/seition2doc/dosta2/main/n3.bat*'
-      - '*http://91.92.242.236/files-129312398/files/file_a42c1dc8442e1c9b.exe*'
   condition: selection
 level: high
 tags:
@@ -63,19 +77,18 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "9cae45ef7526eb2c7db2a7ed5f5b2af93cb55d5cbecf907f9a07afef887b54b0"'
+      - ' "9787788d19b47b0b3a18a71ae37b23a372635d652028601c1d2f99f005070da5"'
+      - ' "382dc078f427e7a2e34bfd03c4d8634f4f2b93cba6e840bfca50dab7f7f7727a"'
+      - ' "a516213a66bbab81d9d90526a7cd9f9179499b1f625c44a4b94cb96058120360"'
+      - ' "e863bd21f4bac8aa4ca9bfa206c2fe24b5d81ada4f09c61d7afee087f67aaf92"'
+      - ' "d5a0377ee9f1732a6f10372750fd638e081edf44a9703eda5d5ef53a2ab82f43"'
+      - ' "cbd57b480505947bde04f95df8639eddfdfde609b23ba4669b7cdee6ffa77d19"'
+      - ' "8aff1e9e988033fcf509e995c64b2e7cd5432922a5502b43aa32bfaa6de08ed9"'
+      - ' "c6a35e65da4be7cc3be1d23f1a8d3de42dc547e06d146c792a698c34aa4f4b39"'
+      - ' "526c040bb853b294f4fb55f8301fa8a03d2bea9dc1877570fc98cc04890af440"'
       - ' "1d42789ea54be34dbfa2d96095416723bc78f592bc56c62073f09dd5bad76654"'
       - ' "2fed5d0552cf80eaae1928150238397a632ebb9521e98129daa71eb46ea1f113"'
-      - ' "1a5fc161c39e639f6c053ad79040e2f18827c0d8df3e39b5202a3920fcc9b4b9"'
-      - ' "3100f5931301a7968b274bc718c8363fe8b73cab7b997cf4ae161e39d06197ef"'
-      - ' "be24e3ff143568fc82e42ed4aeee92e3f6f58c5fe3c5bb442cf4b998c90463d2"'
-      - ' "fb4c3e7dc26b98030ee6f118356105780a293aff695652df6edd3f1058cc5d85"'
-      - ' "1eecf2377d20768c28d741e21affaa53cf26db0d083efdbf43a92fa938b7e4be"'
-      - ' "c43396e514f92076c9a0c7e22248af8d60714a83eeab866d52dab13808a8bc32"'
-      - ' "bf8b6b4846ad542696304b6d7e339d2c1425cd27aa61ac48df08c1de2dc4fabb"'
-      - ' "dc863b3db099b101c6c95a17b70bfccbb9826916e6a27c13d6315a5568ba3f13"'
-      - ' "2f206563640dd66a743ffd493ce0e3c31a8fc5a24b9f5d2b540fc22d45c13d66"'
-      - ' "52f447218c94376f552d1c2b5bfa01c4ef2b5d32ac9ac061236cd286a9efba67"'
-      - ' "76da85ad5be21209b93a67040dca0e5fff144730fdff49ec8447b8b2b3dca7a2"'
   condition: selection
 level: high
 tags:

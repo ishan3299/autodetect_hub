@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Ransomware - URLhaus urls - Chunk 1
+id: cc5bf58f-aef9-52d7-97b1-7f312e76d409
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Ransomware from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://178.20.41.208:1002/login*'
+  condition: selection
+level: high
+tags:
+  - attack.t1486
+  - source.URLhaus
