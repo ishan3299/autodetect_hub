@@ -7,6 +7,35 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://dsgagfsahkfsahfjs.shop/zero.mipsrouter*'
+      - '*http://31-56-209-153.cprapid.com/nz/nz.arm6*'
+      - '*http://wqok85qtq.net/nz/nz.arc*'
+      - '*http://31-56-209-153.cprapid.com/nz/nz.i686*'
+      - '*http://31-56-209-153.cprapid.com/nz/nz.arm5*'
+      - '*http://31-56-209-153.cprapid.com/nz/nz.x86_64*'
+      - '*http://31-56-209-153.cprapid.com/nz/debug*'
+      - '*http://31-56-209-153.cprapid.com/nz/nz.ppc*'
+      - '*http://31-56-209-153.cprapid.com/nz/nz.m68k*'
+      - '*http://31-56-209-153.cprapid.com/nz/nz.mips*'
+      - '*http://31-56-209-153.cprapid.com/nz/nz.x86*'
+      - '*http://31-56-209-153.cprapid.com/nz/nz.arc*'
+      - '*http://31-56-209-153.cprapid.com/nz/nz.arm7*'
+      - '*http://wqok85qtq.net/wget.sh*'
+      - '*http://31-56-209-153.cprapid.com/nz/o.xml*'
+      - '*http://31-56-209-153.cprapid.com/w.sh*'
+      - '*http://31-56-209-153.cprapid.com/wget.sh*'
+      - '*http://31-56-209-153.cprapid.com/nz/nz.arm*'
+      - '*http://31-56-209-153.cprapid.com/nz/nz.spc*'
+      - '*http://31-56-209-153.cprapid.com/nz/nz.sh4*'
+      - '*http://31-56-209-153.cprapid.com/nz/nz.mpsl*'
+      - '*http://wqok85qtq.net/nz/nz.arm*'
+      - '*http://wqok85qtq.net/w.sh*'
+      - '*http://wqok85qtq.net/nz/nz.i686*'
+      - '*http://s3o65awrf56.net/nz/nz.arm*'
+      - '*http://s3o65awrf56.net/nz/nz.i686*'
+      - '*http://s3o65awrf56.net/nz/nz.arc*'
+      - '*http://s3o65awrf56.net/w.sh*'
+      - '*http://s3o65awrf56.net/wget.sh*'
       - '*http://dsgagfsahkfsahfjs.shop/zero.armv4l*'
       - '*http://dsgagfsahkfsahfjs.shop/zero.i486*'
       - '*http://dsgagfsahkfsahfjs.shop/zero.mipsel*'
@@ -478,6 +507,21 @@ detection:
       - '*http://zippycanyonez.pro/unreverseable.x86_64*'
       - '*http://zippycanyonez.pro/GOONGANGONTOP/wife.x86_64*'
       - '*http://zippycanyonez.pro/n2/monero.x86*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 2
+id: f581b3e9-19d6-5b39-a931-4f2898da0559
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 2).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://zippycanyonez.pro/00101010101001/wife.x86*'
       - '*http://zippycanyonez.pro/bin/sora.x86_64*'
       - '*http://zippycanyonez.pro/GOONGANGONTOP/peler.x86_64*'
@@ -507,21 +551,6 @@ detection:
       - '*http://zippycanyonez.pro/bins/sorrow.x86_64*'
       - '*http://zippycanyonez.pro/pelerberjembudpeler/sorrow.x86_64*'
       - '*http://zippycanyonez.pro/chunky/nerv.x86*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 2
-id: f581b3e9-19d6-5b39-a931-4f2898da0559
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 2).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://zippycanyonez.pro/00101010101001/sorrow.x86_64*'
       - '*http://zippycanyonez.pro/pelerberjembudpeler/rebirth.x86_64*'
       - '*http://zippycanyonez.pro/atomic/kokuryu.x86_64*'
@@ -773,18 +802,6 @@ detection:
       - '*http://zippycanyonez.pro/atomic.x86*'
       - '*http://zippycanyonez.pro/chunky/null.x86_64*'
       - '*http://zippycanyonez.pro/tuxbot.x86_64*'
-      - '*http://falhuhna.shop/arm64*'
-      - '*http://falhuhna.shop/mipsle*'
-      - '*http://falhuhna.shop/amd64*'
-      - '*http://falhuhna.shop/bot.exe*'
-      - '*http://falhuhna.shop/arm5*'
-      - '*http://falhuhna.shop/bins.sh*'
-      - '*http://falhuhna.shop/i386*'
-      - '*http://falhuhna.shop/armv7l*'
-      - '*http://falhuhna.shop/x86*'
-      - '*http://falhuhna.shop/mips*'
-      - '*http://falhuhna.shop/arm*'
-      - '*http://falhuhna.shop/arm6*'
   condition: selection
 level: high
 tags:
@@ -800,6 +817,10 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://31-56-209-153.cprapid.com/nz.sh*'
+      - '*http://31-56-209-153.cprapid.com/c.sh*'
+      - '*http://wqok85qtq.net/nz.sh*'
+      - '*http://s3o65awrf56.net/nz.sh*'
       - '*http://dsgagfsahkfsahfjs.shop/payload.sh*'
       - '*http://wqok85qtq.net/nz/nz.arm7*'
       - '*http://s3o65awrf56.net/nz/nz.arm6*'
@@ -1050,11 +1071,6 @@ detection:
       - '*http://airyvineic.help/rebirth.ppc*'
       - '*http://airyvineic.help/rebirth.mips*'
       - '*http://airyvineic.help/rebirth.mpsl*'
-      - '*https://nightmare-cheats.pw/download*'
-      - '*http://85.11.167.200/bin/x86*'
-      - '*http://85.11.167.200/kimwolf.x86_64*'
-      - '*http://85.11.167.200/bin.x86_64*'
-      - '*http://85.11.167.200/hiddenbin/mossad.x86*'
   condition: selection
 level: high
 tags:

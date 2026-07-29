@@ -7,6 +7,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_669902b87da3f16e.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_73ed34a7752ecb3a.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_cd9c2f76b688ed8a.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_aa93170430df9ad7.exe*'
@@ -208,18 +209,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_bee60de1bbb4b7ab.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_03c843c1895def49.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_693c5dc771ac90cb.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_4572f734680cd610.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_b51c36e8b987a353.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_05de27fb2e5e386e.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_d47a28124e19d797.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_63220d65d215e423.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_4b52551724e14b53.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_3922586d68ff0b99.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_953a0cc5e541d8cb.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_39e00d6f9516aa4f.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_046d722173c8d9e4.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_6b79ab0a9691dd23.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_ae76c4af6a3c828a.exe*'
   condition: selection
 level: high
 tags:
@@ -288,3 +277,20 @@ level: high
 tags:
   - attack.t1204.002
   - source.URLhaus
+---
+title: Detect Activity to Known Malicious C2 - MalwareBazaar hashs - Chunk 1
+id: f74c7de3-963b-593e-bd64-3558c23b37ff
+status: experimental
+description: Detects traffic or activity related to known malicious hashs associated with C2 from MalwareBazaar (Chunk 1).
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - ' "d8b6088156477df342a5387bc81aef1e242f12d2f722e5e2030cbc51c203d547"'
+      - ' "624ac3ad002bf57ad104a1153a4196e24d954086091348bcf7a0b57b38998dbc"'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.MalwareBazaar

@@ -34,6 +34,7 @@ detection:
       - '*https://217.60.195.113/test/i686*'
       - '*https://217.60.195.113/test/aarch64*'
       - '*https://217.60.195.113/test/x86_64*'
+      - '*http://endpoint.project0.cc/f/m/.X0-lock_x86_64*'
       - '*https://raw.githubusercontent.com/nulltrafficaway/labprojecttest/refs/heads/main/config.json*'
       - '*https://raw.githubusercontent.com/nulltrafficaway/labprojecttest/refs/heads/main/w2.sh*'
       - '*https://raw.githubusercontent.com/nulltrafficaway/labprojecttest/refs/heads/main/check2.sh*'
@@ -77,6 +78,13 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "460210f3fd4047499e12f4e4fcbbf556f2a1957f1ef276238aaa152554a02b37"'
+      - ' "679a9028729d7ce6177c78ed0a4607194343c1877abcac6a8552c8085066dc41"'
+      - ' "1d9bbba8601db0ad5ef2a66b75a1a0f1c8f4c4cb01378bce031d360c9c543f32"'
+      - ' "c1996d4fe6c679462269511c38184b50b89ff7f05a3c3055b1cf8f686d2b03c4"'
+      - ' "dc907a7b5d67117a35298a23c57df45549b96937f90bf067ac792b32c97edf76"'
+      - ' "52f011851639a0c3a5ac55a68314d0b11d6893805f93f0934a4b72f5c3c6d15d"'
+      - ' "decafa3d6023701eec07d0d0f1ac5b8070a47bb979a5d18d2e70296e51f1e2c4"'
       - ' "9cae45ef7526eb2c7db2a7ed5f5b2af93cb55d5cbecf907f9a07afef887b54b0"'
       - ' "9787788d19b47b0b3a18a71ae37b23a372635d652028601c1d2f99f005070da5"'
       - ' "382dc078f427e7a2e34bfd03c4d8634f4f2b93cba6e840bfca50dab7f7f7727a"'
@@ -87,8 +95,6 @@ detection:
       - ' "8aff1e9e988033fcf509e995c64b2e7cd5432922a5502b43aa32bfaa6de08ed9"'
       - ' "c6a35e65da4be7cc3be1d23f1a8d3de42dc547e06d146c792a698c34aa4f4b39"'
       - ' "526c040bb853b294f4fb55f8301fa8a03d2bea9dc1877570fc98cc04890af440"'
-      - ' "1d42789ea54be34dbfa2d96095416723bc78f592bc56c62073f09dd5bad76654"'
-      - ' "2fed5d0552cf80eaae1928150238397a632ebb9521e98129daa71eb46ea1f113"'
   condition: selection
 level: high
 tags:

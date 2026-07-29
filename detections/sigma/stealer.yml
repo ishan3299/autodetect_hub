@@ -1,70 +1,4 @@
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: ebe57f60-46c3-5544-84b3-766b112c260a
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://aethersyncmatrix5.lol/noncrypt/obsh/beb.exe*'
-      - '*https://aethersyncmatrix5.lol/load/os1/crazy.exe*'
-      - '*https://aethersyncmatrix5.lol/noncrypt/obsh/R2.exe*'
-      - '*https://aethersyncmatrix5.lol/load/os1/R2.exe*'
-      - '*https://aethersyncmatrix5.lol/load/os1/beb.exe*'
-      - '*https://aethersyncmatrix5.lol/noncrypt/obsh/R5.exe*'
-      - '*https://aethersyncmatrix5.lol/noncrypt/obsh/crazy.exe*'
-      - '*https://aethersyncmatrix5.lol/crypt/obsh/beb.exe*'
-      - '*https://aethersyncmatrix5.lol/crypt/21-32/arFtU.exe*'
-      - '*https://aethersyncmatrix5.lol/crypt/obsh/R2.exe*'
-      - '*https://aethersyncmatrix5.lol/crypt/obsh/R5.exe*'
-      - '*https://aethersyncmatrix5.lol/crypt/obsh/acr.exe*'
-      - '*https://aethersyncmatrix5.lol/crypt/21-32/kliulij.exe*'
-      - '*https://aethersyncmatrix5.lol/crypt/21-32/ARbeb.exe*'
-      - '*https://aethersyncmatrix5.lol/crypt/21-32/kJHGFDs.exe*'
-      - '*https://aethersyncmatrix5.lol/crypt/21-32/hjbk.exe*'
-      - '*https://aethersyncmatrix5.lol/crypt/21-32/hnmh.exe*'
-      - '*https://aethersyncmatrix5.lol/crypt/21-32/jhgkuyyg.exe*'
-      - '*https://aethersyncmatrix5.lol/crypt/21-32/KLLNMF.exe*'
-      - '*https://aethersyncmatrix5.lol/crypt/21-32/KLHdfs.exe*'
-      - '*https://aethersyncmatrix5.lol/crypt/21-32/xqAAE.exe*'
-      - '*http://193.221.200.26:5001/877901a58750.exe*'
-      - '*https://hypercorevector9.lol/load/KLHdfs.exe*'
-      - '*https://solar-sanat.net/wearebeack.exe*'
-      - '*https://solar-sanat.net/C567-89.exe*'
-      - '*https://solar-sanat.net/Thor7.exe*'
-      - '*https://solar-sanat.net/DaiDai.exe*'
-      - '*https://solar-sanat.net/fresh.exe*'
-      - '*https://solar-sanat.net/715-16.exe*'
-      - '*https://partytimedjsohio.com/bbl2/OWIRE.exe*'
-      - '*https://blueweqatar.com/sonic.exe*'
-      - '*https://solar-sanat.net/Signori78.exe*'
-      - '*https://blueweqatar.com/fallacy001.exe*'
-      - '*https://solar-sanat.net/1207-1007.exe*'
-      - '*http://185.199.197.10/load/os1/beb.exe*'
-      - '*http://185.199.197.10/load/kliulij.exe*'
-      - '*http://185.199.197.10/load/jhgkuyyg.exe*'
-      - '*http://185.199.197.10/load/hjbk.exe*'
-      - '*http://185.199.197.10/load/ojujn.exe*'
-      - '*http://185.199.197.10/load/hnmh.exe*'
-      - '*http://185.199.197.10/load/bjbh.exe*'
-      - '*https://solar-sanat.net/Chrome08.exe*'
-      - '*https://solar-sanat.net/raj101.exe*'
-      - '*http://217.60.195.253/tharsky/rev.bat*'
-      - '*http://217.60.195.253/tharsky/TharY.bat*'
-      - '*http://217.60.195.253/tharsky/swag.exe*'
-      - '*http://217.60.195.253/tharsky/Y.exe*'
-      - '*https://solar-sanat.net/chrome78.exe*'
-      - '*https://partytimedjsohio.com/bbl2/ARAW.exe*'
-      - '*http://162.55.1.86:3005/Decrypt.exe*'
-      - '*http://162.55.1.86:3005/Extractor.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
 id: bf9f0c07-fdcf-5e93-b032-b681d29af785
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
@@ -73,6 +7,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://raw.githubusercontent.com/developmentteamx/developmenxxx/main/ChromeElevator.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_3e42c5177eedf927.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_0347bac9c2511708.exe*'
       - '*http://178.16.54.109/desk.exe*'
@@ -184,11 +119,126 @@ detection:
       - '*https://sergiotrabuccocineasta.com/098729.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_f62b9b46f8f064d5.exe*'
       - '*https://thebrighttable.com/bbl2/Client.exe*'
-      - '*https://werknova.co/download*'
   condition: selection
 level: high
 tags:
   - attack.t1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: e3bcc79d-3256-5a48-838f-eefb6b1a3db2
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://204.44.69.216/93/goodthingswithbestnetworkingskillcomingfromtheheartforme.js*'
+      - '*http://192.236.217.77/87/waitingforadgoodthingstocomeforthis.js*'
+      - '*http://209.54.101.188/145/goodness.js*'
+      - '*http://192.236.217.68/85/seethebestthings.js*'
+      - '*http://192.236.217.77/86/uneedbestthingsfrobetterplacescomingforme.js*'
+      - '*http://192.227.219.92/35/bestwishesforbetterpeoplescoming.js*'
+      - '*https://jsonkeeper.com/b/DJBPO*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.007
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: 673a38ce-cbdb-5ebd-bff9-fea64ffb1ea5
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://204.44.69.216/93/ecce/givenmethebestthignswithbetterplacescomingfromthebest.hta*'
+      - '*http://209.54.101.188/148/oo/mm.hta*'
+      - '*http://204.44.93.85/20/wcz/goodthingsforbestnetworkingskill.hta*'
+      - '*http://192.236.217.77/87/nj/weneedbestsolutionsforme.hta*'
+      - '*http://209.54.101.188/144/cve/goodwayforbestattendingthingsforme.hta*'
+      - '*http://209.54.101.188/145/nc/scc.hta*'
+      - '*http://192.236.217.68/85/ecc/cxx.hta*'
+      - '*http://192.236.217.77/86/ecv/cxc.hta*'
+      - '*http://192.227.219.92/35/cce/goodthingsforme.hta*'
+      - '*http://193.177.220.9/25/mygoodnetworkingskillforgoodpersoncome.hta*'
+  condition: selection
+level: high
+tags:
+  - attack.t1218.005
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: ebe57f60-46c3-5544-84b3-766b112c260a
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://solar-sanat.net/1158-27.exe*'
+      - '*https://solar-sanat.net/Rogerz7.exe*'
+      - '*https://aethersyncmatrix5.lol/noncrypt/obsh/beb.exe*'
+      - '*https://aethersyncmatrix5.lol/load/os1/crazy.exe*'
+      - '*https://aethersyncmatrix5.lol/noncrypt/obsh/R2.exe*'
+      - '*https://aethersyncmatrix5.lol/load/os1/R2.exe*'
+      - '*https://aethersyncmatrix5.lol/load/os1/beb.exe*'
+      - '*https://aethersyncmatrix5.lol/noncrypt/obsh/mixnew.exe*'
+      - '*https://aethersyncmatrix5.lol/noncrypt/obsh/R5.exe*'
+      - '*https://aethersyncmatrix5.lol/noncrypt/obsh/crazy.exe*'
+      - '*https://aethersyncmatrix5.lol/crypt/obsh/beb.exe*'
+      - '*https://aethersyncmatrix5.lol/crypt/21-32/arFtU.exe*'
+      - '*https://aethersyncmatrix5.lol/crypt/obsh/R2.exe*'
+      - '*https://aethersyncmatrix5.lol/crypt/obsh/R5.exe*'
+      - '*https://aethersyncmatrix5.lol/crypt/obsh/acr.exe*'
+      - '*https://aethersyncmatrix5.lol/crypt/21-32/kliulij.exe*'
+      - '*https://aethersyncmatrix5.lol/crypt/21-32/ARbeb.exe*'
+      - '*https://aethersyncmatrix5.lol/crypt/21-32/kJHGFDs.exe*'
+      - '*https://aethersyncmatrix5.lol/crypt/21-32/hjbk.exe*'
+      - '*https://aethersyncmatrix5.lol/crypt/21-32/hnmh.exe*'
+      - '*https://aethersyncmatrix5.lol/crypt/21-32/jhgkuyyg.exe*'
+      - '*https://aethersyncmatrix5.lol/crypt/21-32/KLLNMF.exe*'
+      - '*https://aethersyncmatrix5.lol/crypt/21-32/KLHdfs.exe*'
+      - '*https://aethersyncmatrix5.lol/crypt/21-32/xqAAE.exe*'
+      - '*http://193.221.200.26:5001/877901a58750.exe*'
+      - '*https://hypercorevector9.lol/load/KLHdfs.exe*'
+      - '*https://solar-sanat.net/wearebeack.exe*'
+      - '*https://solar-sanat.net/C567-89.exe*'
+      - '*https://solar-sanat.net/Thor7.exe*'
+      - '*https://solar-sanat.net/DaiDai.exe*'
+      - '*https://solar-sanat.net/fresh.exe*'
+      - '*https://solar-sanat.net/715-16.exe*'
+      - '*https://partytimedjsohio.com/bbl2/OWIRE.exe*'
+      - '*https://blueweqatar.com/sonic.exe*'
+      - '*https://solar-sanat.net/Signori78.exe*'
+      - '*https://blueweqatar.com/fallacy001.exe*'
+      - '*https://solar-sanat.net/1207-1007.exe*'
+      - '*http://185.199.197.10/load/os1/beb.exe*'
+      - '*http://185.199.197.10/load/kliulij.exe*'
+      - '*http://185.199.197.10/load/jhgkuyyg.exe*'
+      - '*http://185.199.197.10/load/hjbk.exe*'
+      - '*http://185.199.197.10/load/ojujn.exe*'
+      - '*http://185.199.197.10/load/hnmh.exe*'
+      - '*http://185.199.197.10/load/bjbh.exe*'
+      - '*https://solar-sanat.net/Chrome08.exe*'
+      - '*https://solar-sanat.net/raj101.exe*'
+      - '*http://217.60.195.253/tharsky/rev.bat*'
+      - '*http://217.60.195.253/tharsky/TharY.bat*'
+      - '*http://217.60.195.253/tharsky/swag.exe*'
+      - '*http://217.60.195.253/tharsky/Y.exe*'
+      - '*https://solar-sanat.net/chrome78.exe*'
+      - '*https://partytimedjsohio.com/bbl2/ARAW.exe*'
+      - '*http://162.55.1.86:3005/Decrypt.exe*'
+      - '*http://162.55.1.86:3005/Extractor.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1204.002
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
@@ -254,51 +304,6 @@ tags:
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: 673a38ce-cbdb-5ebd-bff9-fea64ffb1ea5
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://209.54.101.188/148/oo/mm.hta*'
-      - '*http://204.44.93.85/20/wcz/goodthingsforbestnetworkingskill.hta*'
-      - '*http://192.236.217.77/87/nj/weneedbestsolutionsforme.hta*'
-      - '*http://209.54.101.188/144/cve/goodwayforbestattendingthingsforme.hta*'
-      - '*http://209.54.101.188/145/nc/scc.hta*'
-      - '*http://192.236.217.68/85/ecc/cxx.hta*'
-      - '*http://192.236.217.77/86/ecv/cxc.hta*'
-      - '*http://192.227.219.92/35/cce/goodthingsforme.hta*'
-      - '*http://193.177.220.9/25/mygoodnetworkingskillforgoodpersoncome.hta*'
-  condition: selection
-level: high
-tags:
-  - attack.t1218.005
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: e3bcc79d-3256-5a48-838f-eefb6b1a3db2
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://192.236.217.77/87/waitingforadgoodthingstocomeforthis.js*'
-      - '*http://209.54.101.188/145/goodness.js*'
-      - '*http://192.236.217.68/85/seethebestthings.js*'
-      - '*http://192.236.217.77/86/uneedbestthingsfrobetterplacescomingforme.js*'
-      - '*http://192.227.219.92/35/bestwishesforbetterpeoplescoming.js*'
-      - '*https://jsonkeeper.com/b/DJBPO*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.007
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
 id: fce00e4c-4848-5f04-960c-02c30ef68174
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
@@ -358,6 +363,39 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "0605015c8428fb4efc98e0abd8af027c7a01f2e87471dbc7e4389a3c6e5844c4"'
+      - ' "350e280370d76945e1b4d460009d97d6976fcc4e33c966d73c78d4b520b50874"'
+      - ' "ca2c730214744670ea887ec8b305d769537345d23b791e6d7cecd74770672bc3"'
+      - ' "bf06a13c596956a93116bbacd4a0a9ce9c8333d58b4d6abdd2286303d80e3079"'
+      - ' "ac2b8a0539b5d3bd13333ed2c7ac3a3f6819e07678397c71c2f7a32f9e6615db"'
+      - ' "a66a0a22f5e61f4098c595260074f0ebc1bbc8d507241fcedccd2806864cd55f"'
+      - ' "a392ab291af76e8ff631a4e38b75b346989088ee823a2ce3d4c2dbbf84b6d500"'
+      - ' "9d7aebba3271d1d00dbebab0e608f329c0bfc40bbcc34922419a191728d05248"'
+      - ' "7cfc514481d2c36325b8a29f088dc365f0adc7b813b329722054c933a9a1aaf3"'
+      - ' "7730d2322f1057df4a3c724e4a4f64e7a6c6a06783f63a0eaf99f7dd4ab16ce4"'
+      - ' "745b84223b450fd185279bd8dab4f71ff149bb832ec147449313dfe7bca55e4c"'
+      - ' "581dc70066ef9ddf2feb271833a24d3c957791a863e4d82f5db492badac0abc5"'
+      - ' "3aa89c6ce9c39037c218719549735d5a3451f896683cf842bb03eea66bd8c6e5"'
+      - ' "2b4975f71bb6e589bb6b1c23296b530ad798fedbdf392f58e69818d334a45273"'
+      - ' "070181f442b486e6bc3192434f99c19bff30441fdc069a2274987d742178c2ec"'
+      - ' "0cf715d47bf25c5ca920110d091807c3fddb2bc14b45701fd2b36648e5463826"'
+      - ' "247ccd7c34e6600d90b6e6d5dc82858fcf369da21d9a323db52a37ade981c62c"'
+      - ' "3f95a86fb5a628574736c53ce3d4b54a9e039caae220c64b55f03d9490fffb9e"'
+      - ' "4eac222c9b28ad1fcb44fe3a15a228632cce94333d6ca132f8e156d09adb8677"'
+      - ' "51147a93ee2f3b3ac60c446435c96e72bdd54a1c0fb27cda033537f88c3690a0"'
+      - ' "5e10c356f7a41764011d102094f4823f2dce439c5cd50c68c23e3328de9255dc"'
+      - ' "d33bc3e0969ef5e0960659f9befe232bdb4f8ab9b6b1e2556f2dcf4f8fc35659"'
+      - ' "ec292b53c9f56152d0e4f7e0b62eaf0b5fe495efda49c2cfa38c7643da9c7e2d"'
+      - ' "b0196d8a25ab7bbb1c9185161e978f21ec473d482cbc9c60cfca0c0c587c9e24"'
+      - ' "624f9d23167fef7006ceed2413a6e491b69abfe918e07918335a90e97ffc4852"'
+      - ' "00f41782b7ffda43f48a632433f8d70d2363600af03b02182009d72d825ec650"'
+      - ' "baf71232724f96eeac468eb71dba5e5af62cebdac9a3aa181ce234d8bdb2a748"'
+      - ' "4bc1a57aa178ec0dac3e9cd8588be8262215dcc2530631ceffbfb3ace6a5e7bc"'
+      - ' "231cf8667128133cbe160a250ec7ac720a39fe1ce9c8b4d93a640fa1584a85b8"'
+      - ' "1f01e3b931247bcd13f8b1733b472ccb3eed66b0892c230c45eea2c28a2c5cf1"'
+      - ' "aa4948508c0c98758400c5b167319a5fc45fa2bdec45c352db96719e3b075362"'
+      - ' "5043c52418d1e8c7e0ef50572965de2900e4bb092c88d15f6cbebe45f830bdc8"'
+      - ' "4c5fc1896f633b28f6a102c6cf0e83cce39be8ede9e4b0f91f5ef9c42e6ab7c5"'
       - ' "89d0178c292a0230d69c1de53f5e55994d195329cbbbacbaa7fb2e6101917b63"'
       - ' "a7c07b87c4968d7ac8120e2c6fb40ccd615d1bd25d4445fbe129d7c66235740a"'
       - ' "ab4394c429efc69b6927a5eb6ecfe7e2cc3df99dd2d279f96729d72a8283e85f"'
@@ -374,62 +412,6 @@ detection:
       - ' "2c025d944ae359c4140d0d041976e649523d435195418b8cc19d5f7936e1d072"'
       - ' "7fe7d4029a8c120dadb61c2e79a528d4ebe768582fdd5c11870d0d5fd25ed6e3"'
       - ' "0da0e50360469d64558e6de818b57f966126400d0b1e4b50cd50acd6cde86ae1"'
-      - ' "7b092a35e70113f5165a653135cb3a7ca29312ceb0b4a874c160473d30830a60"'
-      - ' "35392a9849d7e9dfb4ee700a16700a94883fde859d57fdd891631bdbc6a75db0"'
-      - ' "c431caed57d9d7699aa519790582595c96224c0f00bee914f8c4ee2252495e23"'
-      - ' "9626a88c8395f0bd5c34b1c09ba8571d56004945c8569d954841fceafc498ef6"'
-      - ' "2489a7c56d832faf097303f8f495f5d459e62c83eeff43b39ab3a3e6a66b8c5b"'
-      - ' "4e40ac262149dde5d453c18cf700c384c846aa51dfcc5dcb9d57eac720b06d3f"'
-      - ' "205fc66381b8e254508d40c693a1314c9fc2b94b8023b29483803c8b0e449c4d"'
-      - ' "9e7fc86ad3c5efb2e6746ab61dc43187eeb685c1fd9719bcb9553c173530f899"'
-      - ' "ece6e9395edb8935c993a2945ac196a614149d65f10212e912e4654981646e37"'
-      - ' "b0fb0119b9cce5b7aeef7f3499f5a71c5642c89f130daabc60822413cc2f5cd5"'
-      - ' "0e13be378b2ddf71bb66fbe2f90e4eeb241fe9fa92ef8e382320c86685f21d6f"'
-      - ' "8fb184c2d0b42adc0695d6dab31d7905490028c77d9a472d18c06975e19bf24a"'
-      - ' "e440f3fbbd33d569432ddbc45ee7de8a19b1648de898c01329d5f3a404bde96d"'
-      - ' "f43b33aacb1d9f73ec3d687285c0e22ab6bafd6e5797106b711778aef073a9ca"'
-      - ' "51bfb2f390653647b087d789ef1559c3fdf220c565a909f1eee4d593893420dd"'
-      - ' "f52809d57d816cf9ea7e95de64df46fcc1cf62d3da972c167497935b5eca74d7"'
-      - ' "b29391ba505af508f2110f54f73b203e2710b8b6c8a8717005e5c7a4050630e1"'
-      - ' "da7935affcec91c317acf98b52eca551f2501b29ad502749e4c084492142c6eb"'
-      - ' "43e89a578fcb9e1cea02e64c24829936b9b47ef6f2acb4e033436f8d5d446168"'
-      - ' "33bd75f49eee1a5f86bf7f673573a28c14c45b8f8d1b91694b214a1ec3d6c333"'
-      - ' "a1101793f851eb22dcffb2533be05bfd016e73b35e1ad2e35fc0d71d5099b52b"'
-      - ' "5820e30bc1d4bf9db0b6eca0249754c99b514cfa52b78990487cbf98f7b55569"'
-      - ' "5cab5c362ded4c7795a68b94af56ff9922e15b4d343c7796bdc1c8338ac34887"'
-      - ' "239fa9a692f16c74b8faa90e48099978b0aadeb90fb5b8aae1c4b3161d516190"'
-      - ' "7c8d18cc4785264f3a7d3423ebaeae8bf95d1ed9916dc4e6aab4f1f523747bdc"'
-      - ' "d84d9eb1e140f0f320976cc8219a6fc31136a2a1d5b89a55f8fe6217b170ae74"'
-      - ' "bfe2c25627eec3369b94ec60c1592e9cb38868f83f812a4ec506947d59ac8891"'
-      - ' "55fa2ac196000639174619c5ff366119c874393cc4d3575533639cd409af1758"'
-      - ' "0eaf541c66a2384ff77265a9e3e2bf11300d0c47642b1d953b52843e6365d659"'
-      - ' "24cabe973a480c2a5a489500c2615c2cbe0399cd0087b04ba56d0e725043a6ca"'
-      - ' "6cd26345cc89c28c8ea226eb8ffa96be4f48af5fa369a403cdfb6fc46ff3ebef"'
-      - ' "85287c739d9703b2909c65478ee803897192d43144d27a3ef3eb7c2dd7b3e393"'
-      - ' "3541431ce10c1833122df54cb4478ebc1631c89ca373a5747c322350a60d6385"'
-      - ' "1a1bdfcbeec8791e79f8745a700a42a75dae7afd665a038da2b0d7812a0c0370"'
-      - ' "a3e15e1e942f76b3d30cddd9f6cef8c91206b1a179871ce751613bf6efa2be5c"'
-      - ' "f30ce99a34cfc61168a99aff2ad0463cf0dac2902f86b1e73d060a28499bcf7f"'
-      - ' "f3761ae2ffb508e1df76e974692226ac38b368b213349e2969d72fc49f51ea7a"'
-      - ' "43095747bec46e0b016fe04caa8b447216e47eb788ad40e57f83fd2cd3b1d63a"'
-      - ' "e964b3d18222d68e19230c089fc7599f1d9fd6dc205fca13705c535feebe0627"'
-      - ' "83554baeeb700815f9b6492584a1b1a40c64f752d1ff1a67cde079ad524b008f"'
-      - ' "6d9bd1e24e5f6bbdb0ae30a6a8de25043b658865f2ad2a84da382966689cdbee"'
-      - ' "e3348b965f32e6573b569e05d03a6614c6320d40a31bf5545ac4dbac0f0732b7"'
-      - ' "46fcdef3fc081c8de5f687e5fb1a1e9cc597cef94c996154b5c85912f1506ba4"'
-      - ' "35a13d030bfba6eefd0b668a818987345d9ad4ccf28027f4221ae7ebe30b0c83"'
-      - ' "dcb381b1d82d602bae96815db9cbf80a6b57b25e22b47a794940803594465aed"'
-      - ' "96a44769733da70aaa63e62a88d3cf15c0da78ca1d2f3999ded847b6e6fada00"'
-      - ' "afad6e5091979eeb1163bac16ea4d1973821f0011f168a0a4e5656b9f93438d1"'
-      - ' "713b84ceec4d9d6b35c0851f73b773ad84689e2458b811a8be11449eebaef298"'
-      - ' "bdd8750f6e9fe4ec6528071f52c2fac5c25e622407225450633626e0bcf39b9e"'
-      - ' "09fead34d9a7f79dd16f54beba2d201fb55da5b6f8bb77d29011e937530a201e"'
-      - ' "0a4c8c4de448da39ee10e0990904efc4834f6daceb8ddeab7a8a7d77e4dd9169"'
-      - ' "e41b1a7299789dbaddba2d932192a0439a603823eac2e29f1a38e16a247f78b1"'
-      - ' "77be91fc4ee0154ee4b6d0a48c596de2bffca40f1aebbf888b9ee2f3e09c89e9"'
-      - ' "993030fd181cc67dcaa0948f536539aff5ae10bce1aff5265018aa335365e802"'
-      - ' "e8e9e5a2b793f043ed422e9b3d5906d887919c37218e24cc28eec3e086f5db4e"'
-      - ' "59a80a105dc161e0bf9566d260965111948c3eace7ed6cc073e40a8628e9cbb8"'
   condition: selection
 level: high
 tags:
