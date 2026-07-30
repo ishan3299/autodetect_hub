@@ -7,6 +7,46 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://nigg.tashirpizza.su/z0l1mxjm4mdl4jjfjf7sb2vdmv/MMaaRRiiOisecTanee.arm7*'
+      - '*http://nigg.tashirpizza.su/z0l1mxjm4mdl4jjfjf7sb2vdmv/MMaaRRiiOisecTanee.ppc*'
+      - '*http://nigg.tashirpizza.su/z0l1mxjm4mdl4jjfjf7sb2vdmv/MMaaRRiiOisecTanee.arm6*'
+      - '*http://nigg.tashirpizza.su/z0l1mxjm4mdl4jjfjf7sb2vdmv/MMaaRRiiOisecTanee.arm5*'
+      - '*http://nigg.tashirpizza.su/z0l1mxjm4mdl4jjfjf7sb2vdmv/MMaaRRiiOisecTanee.x86*'
+      - '*http://nigg.tashirpizza.su/z0l1mxjm4mdl4jjfjf7sb2vdmv/MMaaRRiiOisecTanee.arm*'
+      - '*http://nigg.tashirpizza.su/z0l1mxjm4mdl4jjfjf7sb2vdmv/MMaaRRiiOisecTanee.x86_64*'
+      - '*http://nigg.tashirpizza.su/z0l1mxjm4mdl4jjfjf7sb2vdmv/MMaaRRiiOisecTanee.spc*'
+      - '*http://nigg.tashirpizza.su/z0l1mxjm4mdl4jjfjf7sb2vdmv/MMaaRRiiOisecTanee.m68k*'
+      - '*http://nigg.tashirpizza.su/z0l1mxjm4mdl4jjfjf7sb2vdmv/MMaaRRiiOisecTanee.sh4*'
+      - '*http://nigg.tashirpizza.su/z0l1mxjm4mdl4jjfjf7sb2vdmv/MMaaRRiiOisecTanee.mpsl*'
+      - '*http://nigg.tashirpizza.su/z0l1mxjm4mdl4jjfjf7sb2vdmv/MMaaRRiiOisecTanee.mips*'
+      - '*http://frostyislebe.pro/iran.armv4l*'
+      - '*http://frostyislebe.pro/iran.mips*'
+      - '*http://frostyislebe.pro/iran.arc*'
+      - '*http://frostyislebe.pro/iran.armv5l*'
+      - '*http://frostyislebe.pro/iran.armv6l*'
+      - '*http://frostyislebe.pro/iran.armv7l*'
+      - '*http://frostyislebe.pro/iran.powerpc*'
+      - '*http://frostyislebe.pro/iran.x86_64*'
+      - '*http://nobleshadebu.pro/iran.armv4l*'
+      - '*http://nobleshadebu.pro/iran.x86_64*'
+      - '*http://nobleshadebu.pro/iran.arc*'
+      - '*http://frostyislebe.pro/iran.sparc*'
+      - '*http://frostyislebe.pro/iran.aarch64*'
+      - '*http://frostyislebe.pro/iran.i486*'
+      - '*http://frostyislebe.pro/iran.m68k*'
+      - '*http://nobleshadebu.pro/iran.m68k*'
+      - '*http://frostyislebe.pro/iran.sh4*'
+      - '*http://frostyislebe.pro/iran.mipsel*'
+      - '*http://nobleshadebu.pro/iran.mipsel*'
+      - '*http://nobleshadebu.pro/iran.powerpc*'
+      - '*http://nobleshadebu.pro/iran.i486*'
+      - '*http://nobleshadebu.pro/iran.armv6l*'
+      - '*http://nobleshadebu.pro/iran.armv5l*'
+      - '*http://nobleshadebu.pro/iran.sparc*'
+      - '*http://nobleshadebu.pro/iran.armv7l*'
+      - '*http://nobleshadebu.pro/iran.aarch64*'
+      - '*http://nobleshadebu.pro/iran.sh4*'
+      - '*http://nobleshadebu.pro/iran.mips*'
       - '*http://dsgagfsahkfsahfjs.shop/zero.mipsrouter*'
       - '*http://31-56-209-153.cprapid.com/nz/nz.arm6*'
       - '*http://wqok85qtq.net/nz/nz.arc*'
@@ -467,6 +507,21 @@ detection:
       - '*http://zippycanyonez.pro/00101010101001/main.x86*'
       - '*http://zippycanyonez.pro/atomic/komaru.x86_64*'
       - '*http://zippycanyonez.pro/chunky/komaru.x86*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 2
+id: f581b3e9-19d6-5b39-a931-4f2898da0559
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 2).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://zippycanyonez.pro/00101010101001/peler.x86_64*'
       - '*http://zippycanyonez.pro/hiddenbin/unkillable.x86*'
       - '*http://zippycanyonez.pro/bins/iran.x86*'
@@ -507,21 +562,6 @@ detection:
       - '*http://zippycanyonez.pro/unreverseable.x86_64*'
       - '*http://zippycanyonez.pro/GOONGANGONTOP/wife.x86_64*'
       - '*http://zippycanyonez.pro/n2/monero.x86*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 2
-id: f581b3e9-19d6-5b39-a931-4f2898da0559
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 2).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://zippycanyonez.pro/00101010101001/wife.x86*'
       - '*http://zippycanyonez.pro/bin/sora.x86_64*'
       - '*http://zippycanyonez.pro/GOONGANGONTOP/peler.x86_64*'
@@ -817,6 +857,9 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://nigg.tashirpizza.su/c.sh*'
+      - '*http://nigg.tashirpizza.su/w.sh*'
+      - '*http://nigg.tashirpizza.su/wget.sh*'
       - '*http://31-56-209-153.cprapid.com/nz.sh*'
       - '*http://31-56-209-153.cprapid.com/c.sh*'
       - '*http://wqok85qtq.net/nz.sh*'

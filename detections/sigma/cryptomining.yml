@@ -1,20 +1,4 @@
 title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
-id: 5d9e1d92-b2c4-5b25-8e48-0c8b2432093e
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://47.239.127.71/lib/xxx*'
-  condition: selection
-level: high
-tags:
-  - attack.t1583
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
 id: 3316af2f-5b86-5439-89c7-8ee743b4dbdf
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
@@ -23,6 +7,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://106.54.223.106/phpmyadmin/setup/lib/syscon*'
       - '*https://msfconfig.icu/tmp/system.txt*'
       - '*http://158.94.208.44/pb7Ulzhaae3xpSNrEvJH5yqqyMyIbnNF/mKM65Cf6QNqeOVw9.exe*'
       - '*https://davestrap.xyz/installer.exe*'
@@ -46,11 +31,26 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_b82f2dba4422534f.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_9ed873a1d14ec6de.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_a3402a55abdee979.exe*'
-      - '*http://64.89.163.22/d.sh*'
   condition: selection
 level: high
 tags:
   - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
+id: 5d9e1d92-b2c4-5b25-8e48-0c8b2432093e
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://47.239.127.71/lib/xxx*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
@@ -78,6 +78,13 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "0ba4e432149c97026ed7a0eed01d46e86514dd2ad06525a98f9bd16f700177fc"'
+      - ' "803b8565ecdec7a649d08f9ca48cb2a75307a87b36e92f993f5f5e615384ea94"'
+      - ' "e52e8e2ebfc9964e216fbee0d6a48423b59e6b4212b7a6d3a2ec7d5e72e300d9"'
+      - ' "a6fbff58f3f4137fffa2f0d046343f7245c4a69ebd79df25aa2d2c0197af1a94"'
+      - ' "84b41806926f1046b6e23b7b8b1f1665c095b5e68d8b73ce71516a4beebf254a"'
+      - ' "40560c7370ec0e7d3f9eedf55774cd9fc09f13f1a01f822e9d8830b57ea8d9cc"'
+      - ' "30cf8b82a53fff20b564597e56123ddeb16a87441a8b94f621e52c3213aeaa2c"'
       - ' "460210f3fd4047499e12f4e4fcbbf556f2a1957f1ef276238aaa152554a02b37"'
       - ' "679a9028729d7ce6177c78ed0a4607194343c1877abcac6a8552c8085066dc41"'
       - ' "1d9bbba8601db0ad5ef2a66b75a1a0f1c8f4c4cb01378bce031d360c9c543f32"'
@@ -85,16 +92,6 @@ detection:
       - ' "dc907a7b5d67117a35298a23c57df45549b96937f90bf067ac792b32c97edf76"'
       - ' "52f011851639a0c3a5ac55a68314d0b11d6893805f93f0934a4b72f5c3c6d15d"'
       - ' "decafa3d6023701eec07d0d0f1ac5b8070a47bb979a5d18d2e70296e51f1e2c4"'
-      - ' "9cae45ef7526eb2c7db2a7ed5f5b2af93cb55d5cbecf907f9a07afef887b54b0"'
-      - ' "9787788d19b47b0b3a18a71ae37b23a372635d652028601c1d2f99f005070da5"'
-      - ' "382dc078f427e7a2e34bfd03c4d8634f4f2b93cba6e840bfca50dab7f7f7727a"'
-      - ' "a516213a66bbab81d9d90526a7cd9f9179499b1f625c44a4b94cb96058120360"'
-      - ' "e863bd21f4bac8aa4ca9bfa206c2fe24b5d81ada4f09c61d7afee087f67aaf92"'
-      - ' "d5a0377ee9f1732a6f10372750fd638e081edf44a9703eda5d5ef53a2ab82f43"'
-      - ' "cbd57b480505947bde04f95df8639eddfdfde609b23ba4669b7cdee6ffa77d19"'
-      - ' "8aff1e9e988033fcf509e995c64b2e7cd5432922a5502b43aa32bfaa6de08ed9"'
-      - ' "c6a35e65da4be7cc3be1d23f1a8d3de42dc547e06d146c792a698c34aa4f4b39"'
-      - ' "526c040bb853b294f4fb55f8301fa8a03d2bea9dc1877570fc98cc04890af440"'
   condition: selection
 level: high
 tags:
