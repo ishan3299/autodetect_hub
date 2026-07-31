@@ -7,6 +7,14 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_e123b357e127708d.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_0607be65f0526ebe.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_7691c09246236975.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_5b2a99625685db40.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_a9d864181ab71029.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_a8d74bd52287c2ac.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_c166f39d565559f4.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_966dd80e15fd05d1.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_43d8213197042487.exe*'
       - '*http://91.92.242.236/ycl*'
       - '*http://91.92.242.236/service*'
@@ -192,18 +200,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_1b5c78313d9215c2.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_aebf69379f99b182.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_49084d3b125cbd42.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_41020e659f8c1c0c.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_78bc6ad609e5b3ec.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_aa85f097aed60931.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_5e89b03b1eca3e2a.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_c114ce5878bba5f0.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_28393fb395b3db60.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_f7772a0134a3aa58.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_a86f94b0515604f0.ps1*'
-      - '*http://91.92.242.236/files-129312398/files/file_c33ca95ee7858051.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_22876292da8a0d01.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_dfb13a4e691f7750.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_427c1c24c949bd09.exe*'
   condition: selection
 level: high
 tags:
@@ -272,20 +268,3 @@ level: high
 tags:
   - attack.t1204.002
   - source.URLhaus
----
-title: Detect Activity to Known Malicious C2 - MalwareBazaar hashs - Chunk 1
-id: f74c7de3-963b-593e-bd64-3558c23b37ff
-status: experimental
-description: Detects traffic or activity related to known malicious hashs associated with C2 from MalwareBazaar (Chunk 1).
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - ' "d8b6088156477df342a5387bc81aef1e242f12d2f722e5e2030cbc51c203d547"'
-      - ' "624ac3ad002bf57ad104a1153a4196e24d954086091348bcf7a0b57b38998dbc"'
-  condition: selection
-level: high
-tags:
-  - attack.t1071
-  - source.MalwareBazaar
