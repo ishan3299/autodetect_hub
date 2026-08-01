@@ -114,10 +114,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_c4aa02f2dbc4b800.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_1995db56460e1620.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_81f4790593aec5b4.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_21dee3aac891056b.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_c0316791e95a0e3f.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_ac12f1da1bdab1e0.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_6d0c17403af838eb.exe*'
   condition: selection
 level: high
 tags:
@@ -139,7 +135,6 @@ detection:
       - '*http://192.236.217.68/85/seethebestthings.js*'
       - '*http://192.236.217.77/86/uneedbestthingsfrobetterplacescomingforme.js*'
       - '*http://192.227.219.92/35/bestwishesforbetterpeoplescoming.js*'
-      - '*https://jsonkeeper.com/b/DJBPO*'
   condition: selection
 level: high
 tags:
@@ -195,6 +190,7 @@ detection:
       - '*https://aethersyncmatrix5.lol/crypt/obsh/R2.exe*'
       - '*https://aethersyncmatrix5.lol/crypt/obsh/R5.exe*'
       - '*https://aethersyncmatrix5.lol/crypt/obsh/acr.exe*'
+      - '*https://aethersyncmatrix5.lol/crypt/obsh/crazy.exe*'
       - '*https://aethersyncmatrix5.lol/crypt/21-32/kliulij.exe*'
       - '*https://aethersyncmatrix5.lol/crypt/21-32/ARbeb.exe*'
       - '*https://aethersyncmatrix5.lol/crypt/21-32/kJHGFDs.exe*'
@@ -232,8 +228,6 @@ detection:
       - '*http://217.60.195.253/tharsky/Y.exe*'
       - '*https://solar-sanat.net/chrome78.exe*'
       - '*https://partytimedjsohio.com/bbl2/ARAW.exe*'
-      - '*http://162.55.1.86:3005/Decrypt.exe*'
-      - '*http://162.55.1.86:3005/Extractor.exe*'
   condition: selection
 level: high
 tags:
@@ -261,8 +255,6 @@ detection:
       - '*https://exptersed.com/debug/payload.applescript?build=2200432e9275376bedaf93db2cd7feb4*'
       - '*https://nightmare-download.pw/NMInstall.zip*'
       - '*https://nightmare-cheats.buzz/mac/install.sh*'
-      - '*https://hol.villgrow.life/DX.zip*'
-      - '*https://xeno.help/downloads/Xeno-v1.3.55.rar*'
   condition: selection
 level: high
 tags:
@@ -343,6 +335,17 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "e8c96feda6791f0acdee4c084e0d438f7792a1d33aa31de036fdb6408ca7db97"'
+      - ' "7fd5f3ad0b3a152671dabe440ed5a5a05c640da4fe07a9caacb2f3a88d994596"'
+      - ' "fed541de0e768a6132da368ec8e0c66125ed7c144ca7d039bbcfe7b75192ecaa"'
+      - ' "f67a176503343855c88d9aac1217277ee4e2badc5e56fe403e56ca30e144b266"'
+      - ' "4ec1c84a78b4458dfea59c0ecd6d136d5a116aa184e811541941276469ddf2b5"'
+      - ' "ef7c5f38e6509d54282bef5877c88035277c816f727480dffde128d42a94df28"'
+      - ' "fa77709baf5d398b0477271d75bf1f3b43e74f025a33f99e5fce4efc3bdd2dc5"'
+      - ' "d65586d7420449da095e71b8a0951e2c8ee03895721faf5ab4804340841607ea"'
+      - ' "4ffea073add4e28b0f281d59509446a82829965d176f3e93bafc527817502594"'
+      - ' "ed1d3f69fbbd5576c2ed8dba45ba22c4f6884eb311d4f6e389203846d512ec11"'
+      - ' "eaebbaf4e6affb72d0979fb50e61538cfb2f24f61b9c8157862f124f761465d9"'
       - ' "c05581c54fb2e63ab1b6d0c8957d24fbcbc0e094339bc02838b50b3f72dddeff"'
       - ' "49b46e61efe06551f1d58edf4b33d275f32aab64978a826d4620f5340ac6fc2a"'
       - ' "5e58a0e0b4ab711349370567728293cf6e732870aa9ea9def6ae5b59ca7322c3"'
@@ -359,27 +362,6 @@ detection:
       - ' "b3b1b40a09c8b7f32ce5e43675500091e300962130d0a881dca34273ce7ac281"'
       - ' "7be016472fd1c64cd6d6ec831f3fb0452afb38d45f4d3f1b9925963f6e4d38ff"'
       - ' "ed14cfe70eedac6e7a3097baa94b84f21e358bdb2361f7da5b5e8a42cdb8ba7c"'
-      - ' "2ec31f7f0ed881a6f33f44be53ddc89fff6f5f80390504093ddb4edccb46a830"'
-      - ' "5d9ed51e8c68d43b9c2f8f6c9d18eef8f808a6f872115765a4cd2b43660cad8f"'
-      - ' "5459c708a6b6a6bfbbc7e28b668fcbb1a18138abb758244fa15d74d3216dfa3a"'
-      - ' "75c8b4652b33fab81e814a0bec7ae7ec8c13a24665c14481e66e72a7e9112341"'
-      - ' "af9b05c7311f0f4049467a64bb1484b2264955faf61b19e8974757802f197177"'
-      - ' "b1c8c2390f909d83d50dfd9380eb7ae96b3a1cf456ecef96b459c5b053087a51"'
-      - ' "75ec6ba7daa02f22c6a1cb3e9d3a642a2ebeaef99128519919f747211e4e84f7"'
-      - ' "bb24b382d5de5194bbb4cdf6d8127a3e82a205ccad251bcbc19100f876cd64d7"'
-      - ' "dcac68a58f09eec59bce587a86d91ea1570919edc8100715ed83bcb1a0fea364"'
-      - ' "aa1e87294fdee8bb644eefa9d72dfc8751aec4aeb47104edaf83447f397f3802"'
-      - ' "6b278084f9905518c01eee7886de87ebfa888398f4eba2b7e1f0ec57117025cb"'
-      - ' "ec3f7bd79784eb5589f9692952d30b25493aae28d054eaf8fd30e90d399064b3"'
-      - ' "8a8857de50c2170ca7af40786168a6526e8190e297ec55e3d6a71fbfd21c3b17"'
-      - ' "98d3876e0850a8a70afc220e945c24723b5ea973f187eacf23958acfa9df2e68"'
-      - ' "2cc5df961162f8f9cea6273cb82756ea591f1d5ee62ee5cd0f19bc12cda7b7d3"'
-      - ' "fce8ba975afa37727c61a9940c81c8e20da1de724f8a10b44b89d7ed44d7f526"'
-      - ' "586b43c58f513ae9a476bf9d6e1614d616e80edc539279a03975fc68a81a496e"'
-      - ' "06d7286fe48d9ab8724fdd4049e62d9fc525a5ce3898a9df6ca6afe27dbbd2b5"'
-      - ' "6231e3ba7d5643ee173f92ef33d2dafa4bc2986954b16cd53195a3b87e3aa5a5"'
-      - ' "a06ca2f848c977ba268366038cfbe8f696c0e25424001ff9cff2271c5a16a258"'
-      - ' "2fdc032584f04cda6c12f7d6f54cdbceb33484b1eb2cc98a5ee8ace40fb016a3"'
   condition: selection
 level: high
 tags:
