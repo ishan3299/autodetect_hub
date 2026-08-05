@@ -7,6 +7,9 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://pub-ce02802067934e0eb072f69bf6427bf6.r2.dev/img_194702.png*'
+      - '*https://sweet-snowflake-8a7e.uploadesclintesss.workers.dev/dfIFY*'
+      - '*http://62.60.226.232/1.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_4a2298dc2ab315c6.exe*'
       - '*https://pub-5eee967508114192a40c0ca052a3bb9d.r2.dev/package.msi*'
       - '*http://91.92.242.236/files-129312398/files/file_ad7fd402048f3819.exe*'
@@ -111,52 +114,6 @@ tags:
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: e3bcc79d-3256-5a48-838f-eefb6b1a3db2
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://204.44.69.216/93/goodthingswithbestnetworkingskillcomingfromtheheartforme.js*'
-      - '*http://192.236.217.77/87/waitingforadgoodthingstocomeforthis.js*'
-      - '*http://209.54.101.188/145/goodness.js*'
-      - '*http://192.236.217.68/85/seethebestthings.js*'
-      - '*http://192.236.217.77/86/uneedbestthingsfrobetterplacescomingforme.js*'
-      - '*http://192.227.219.92/35/bestwishesforbetterpeoplescoming.js*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.007
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: 673a38ce-cbdb-5ebd-bff9-fea64ffb1ea5
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://204.44.69.216/93/ecce/givenmethebestthignswithbetterplacescomingfromthebest.hta*'
-      - '*http://209.54.101.188/148/oo/mm.hta*'
-      - '*http://204.44.93.85/20/wcz/goodthingsforbestnetworkingskill.hta*'
-      - '*http://192.236.217.77/87/nj/weneedbestsolutionsforme.hta*'
-      - '*http://209.54.101.188/144/cve/goodwayforbestattendingthingsforme.hta*'
-      - '*http://209.54.101.188/145/nc/scc.hta*'
-      - '*http://192.236.217.68/85/ecc/cxx.hta*'
-      - '*http://192.236.217.77/86/ecv/cxc.hta*'
-      - '*http://192.227.219.92/35/cce/goodthingsforme.hta*'
-      - '*http://193.177.220.9/25/mygoodnetworkingskillforgoodpersoncome.hta*'
-  condition: selection
-level: high
-tags:
-  - attack.t1218.005
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
 id: ebe57f60-46c3-5544-84b3-766b112c260a
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
@@ -165,6 +122,9 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://196.251.107.186/svchost.exe*'
+      - '*http://196.251.107.186/4.exe*'
+      - '*http://172.245.95.62/ph/velogs.exe*'
       - '*https://solar-sanat.net/1158-27.exe*'
       - '*https://solar-sanat.net/Rogerz7.exe*'
       - '*https://aethersyncmatrix5.lol/noncrypt/obsh/beb.exe*'
@@ -222,6 +182,52 @@ detection:
 level: high
 tags:
   - attack.t1204.002
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: e3bcc79d-3256-5a48-838f-eefb6b1a3db2
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://204.44.69.216/93/goodthingswithbestnetworkingskillcomingfromtheheartforme.js*'
+      - '*http://192.236.217.77/87/waitingforadgoodthingstocomeforthis.js*'
+      - '*http://209.54.101.188/145/goodness.js*'
+      - '*http://192.236.217.68/85/seethebestthings.js*'
+      - '*http://192.236.217.77/86/uneedbestthingsfrobetterplacescomingforme.js*'
+      - '*http://192.227.219.92/35/bestwishesforbetterpeoplescoming.js*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.007
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: 673a38ce-cbdb-5ebd-bff9-fea64ffb1ea5
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://204.44.69.216/93/ecce/givenmethebestthignswithbetterplacescomingfromthebest.hta*'
+      - '*http://209.54.101.188/148/oo/mm.hta*'
+      - '*http://204.44.93.85/20/wcz/goodthingsforbestnetworkingskill.hta*'
+      - '*http://192.236.217.77/87/nj/weneedbestsolutionsforme.hta*'
+      - '*http://209.54.101.188/144/cve/goodwayforbestattendingthingsforme.hta*'
+      - '*http://209.54.101.188/145/nc/scc.hta*'
+      - '*http://192.236.217.68/85/ecc/cxx.hta*'
+      - '*http://192.236.217.77/86/ecv/cxc.hta*'
+      - '*http://192.227.219.92/35/cce/goodthingsforme.hta*'
+      - '*http://193.177.220.9/25/mygoodnetworkingskillforgoodpersoncome.hta*'
+  condition: selection
+level: high
+tags:
+  - attack.t1218.005
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
@@ -325,6 +331,54 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "0d298a65db890328d0357b2fb39ea7352645a994a601f430c38450769635f957"'
+      - ' "e08c0890b11d91b7ee58de25cc190e1fdf760d76b6d0821aa2d1f442b43e719a"'
+      - ' "45880839303fe491b2676a37faaa1fe6192917b3e64de1d46858563f16518e2f"'
+      - ' "c375cb55dafefcb4ad4fdad99e58159943b9e1c51c7756c2e7880656881fc0f0"'
+      - ' "f68ba32766e087f5a6855fa7da9feea2968280a019aec31d7d173adcd4b848ca"'
+      - ' "0e5159f1b507b56a59adc39564646aa07f83f1fced3dad6872e3752d777ea885"'
+      - ' "e64b70bbc632b834064b4b268405323e0a83c5d63102b49c903792cb79c5a1fa"'
+      - ' "1e306e8345ada5cab196a9045f9f63a33d7914408875e77655ffd57ddd4ac673"'
+      - ' "a4aa0f9613695363fdebef9cee46d959bc98a97e5e7fed466157b3afb01c79a5"'
+      - ' "34ba0747cd912e37af2273f6b2bbfb579a9b806713f344925a39f6da2c0847bb"'
+      - ' "c0654ca707fd45d9563f46dbd51fc03b75f5a05ec0ffc26816bcedcd13520b31"'
+      - ' "671314de625e942d0cf36c90bc41c5d9a134883531426ad62e846490d77b2903"'
+      - ' "10b6a8f017ecb14dfde4e8738415ce5feb3e617715f345c30549cf4f4c3d3fa1"'
+      - ' "694483cdead4d874dd33b0a7c11d6c5cbdd1989352c3f7376a71855ad0147dee"'
+      - ' "bc7d5b9ae130f1b9c5a41517d56d9213950ef7f9b1ed78d9f33a4b2797d009e1"'
+      - ' "0d29741bb7161b12319909ecbbfb6029b08fe80c98fc8a93658ea14fededdfd9"'
+      - ' "125c0a801c9854ea87003f2e7091ac05fd79991f9493c6486964d827256d8f01"'
+      - ' "91d11cc708062cb170b494402585ae7056f2f285bc5b43914705bdf76d6a728f"'
+      - ' "acaceea94128ac2a18cf660c156cb2645ca6fa614bde0cfb893c4173661909dd"'
+      - ' "05467b68d90fe0d6bb46db84576ecb4abff70d700748edc5e5e1f3fd150a85b4"'
+      - ' "af938b992a46781adb7d58889dede566d751d1af9cb79e00476d91edfca89d4a"'
+      - ' "67e91defa449abcbcc0df237c1db78b3f63753ccdca88b4fdb50d3eb27a23dc4"'
+      - ' "2b3a23db5ca7464a5c7f0975790af54097ed127a66ab0b551123831e8f40dfc6"'
+      - ' "62d98f765dc8bd74c921f483d9e5464c9277dd062f5d6114abdc7f030c2ce805"'
+      - ' "4f63222a28376097bb07ac0ddf36281ae94c294d47d00ec7d4b30ea1d31f1479"'
+      - ' "4f3e236f61411c9e65dcabf84ad38b22b71f4b64abf09ccab9fbcf70d038309b"'
+      - ' "ab2cc218f59c675d0e8f0c573243a7bce0dedc314517f2cd2c5e3ad0aec7c97b"'
+      - ' "8ca3e07ee02439ab5d0d2545fe5cf2195ffdefa5fa1959c1d3efb1c790057e23"'
+      - ' "a5a68f60f63a1e0669b2eacec608bb4769c825f43aa9434977863269f6cac0b6"'
+      - ' "f123237f315282bd3fd13a1ebc467d2ba715b3595f92e23665a15881a369ab3e"'
+      - ' "d5ba9d43797aeacb165669810e06a1344e08b6aabda8504e80eb615d7313b6ce"'
+      - ' "8ee6a7fef6152f8c6a26cb7beb8471fcbe2423daa2994f39be07bb212023a80c"'
+      - ' "2988bb5811ea625948d61f441d45bffb97e4dd7cd48321c85daad62e802bce5f"'
+      - ' "089c6fa1bc4e09739b603b68c412885ea7818339364f27a41f1b2e250e7fdb8c"'
+      - ' "2865456cb397aad9936aa001ea6a1d80b65862665c0e8a44dba7edda0c7e7589"'
+      - ' "05bd426b1e63f69d7b66f14f906696d715d6f96df469f5e246648ae4622a7803"'
+      - ' "e98d11f2cb889c12bfb98b281ccbae6f7570e85fc8c44563ebef72156d114f3c"'
+      - ' "7f4206422bf5259a304fd5fe7fe8ea0d09292faf3d9a73cc83a70c87c6d2e3ea"'
+      - ' "33de9369b22112432f68aa7268ca06328aa0ce7425dc9fafc3bb90429058dc2d"'
+      - ' "68b7954b54276825fad252e5fd80448caef7a47a2e283315ee133cab24aab9b4"'
+      - ' "54a8d0df199ee2b8bf8fea306f6a6df3cd4b2e9de579ba2dbf8e20ec9c3518b4"'
+      - ' "5e35657875682dc8e58f803a9cc7142d3d583558d42b5eb3da9e1b87d41be5ec"'
+      - ' "fbfae526a3a6d3daf55140329780e570b3f9705f9ac0095c1e8d356f7105bf7d"'
+      - ' "39bfe085d93390858b9432749a79bac20dd2cae70e3caa2b3aac88edee48151e"'
+      - ' "fce095e4833357bbebd160357a28826a360dbcdf4c5eee2a47503e63549dc2af"'
+      - ' "6cc86846ced71cc6b23d8e009fdcc0c1becfdfabd6ec4b67100bddf617f14cfc"'
+      - ' "d9c40fa366d3262d2a25e992ec54456ba625c409bffce327857e834b6117557a"'
+      - ' "fc8b0805d80d13da728a7cec429ba8ddf44770d2cc42ace9bc332213ca629195"'
       - ' "d00bdb02626137fd008456600d4fd89500f1de1c87a3ea3295b4e78740613b76"'
       - ' "b6bc2fb4af89149d91c946ac7f7898b2831f2466545d2777b32a6edf0cc34b7f"'
       - ' "c4e1726827d84a3d77979d1c01baf16518965d9574409e09c1311b89784766cc"'
@@ -336,19 +390,6 @@ detection:
       - ' "129917ed452c3eb6c19552d38ab4d2b4a741c35d8da76dd9b0313b868ef54c08"'
       - ' "a1a2328ed433e0c7f7ef81919fb3141bf2faadeb4a714a6dfb56bba76cf3b8af"'
       - ' "9af478edec362f2ff147458b9581e94dacc7648f5b736975429dc0f2315b9a2d"'
-      - ' "bb71186aa5e8ce286c5e8698adf22aac802615856dbab846a88e740cb5ce4316"'
-      - ' "c75bee3494a32d7f23675c150f1c4365262cd5444967b92733bacaec7380bb88"'
-      - ' "4b7d75f5c35d8d326af5723fb77c44d769478c90ca2f88e2edfb3e08817fb29c"'
-      - ' "c3bd9003c2a8b57c18442587a4d35f1bf0780b3d069bf5f7042e1351957403f5"'
-      - ' "40130f46a64522de4fd9a339f1b6b6656dce39b709a807cbeac4c9562ce3d9de"'
-      - ' "41dbfcca18129caecd4a958132d0346b6ca0c30bc8b06abf4e776bd2715e7244"'
-      - ' "71f17c5e06548f128eb4f0cfafd247cc79894331f996c383fa5c2bcddfe9c5b8"'
-      - ' "58786663acbf0f9d7572aa61bb95cac9ca918c7732e9833e4b384c9ddc30c986"'
-      - ' "a11463bf176a39f72b5ab9c0e0401dbe0eb4be8d379b2d5fd5da21da0d2286e5"'
-      - ' "7261c4276f44e0ac3b2ef43ba4de223ce1278db20286750608777f41df0d68fd"'
-      - ' "74b3cf6d93a3afdd46589c02250d99d4165b5a025acd60b62e4bc3fc4970a2a1"'
-      - ' "077480d961420c8b53b68059ce2493a1318756c7f9b93e2242020740f98afe20"'
-      - ' "068fa74e4843dd0a7fd1488f262281e9b6b0e19d67eb8d52b20d63fda158fd3e"'
   condition: selection
 level: high
 tags:
