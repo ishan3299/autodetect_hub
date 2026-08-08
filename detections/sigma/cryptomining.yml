@@ -7,6 +7,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://94.154.43.103/check1.sh*'
       - '*http://62.60.226.185/kaze.exe*'
       - '*http://94.154.43.77/cumminer.arm5*'
       - '*http://94.154.43.77/cumminer.arm6*'
@@ -38,7 +39,6 @@ detection:
       - '*http://endpoint.project0.cc/f/m/.X0-lock_x86_64*'
       - '*https://raw.githubusercontent.com/nulltrafficaway/labprojecttest/refs/heads/main/config.json*'
       - '*https://raw.githubusercontent.com/nulltrafficaway/labprojecttest/refs/heads/main/w2.sh*'
-      - '*https://raw.githubusercontent.com/nulltrafficaway/labprojecttest/refs/heads/main/check2.sh*'
   condition: selection
 level: high
 tags:
@@ -86,15 +86,14 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "467ed1f5cfbbb2bbb6f90f75d1b2bcd99dbeb38a65cc4bcc7bd39767a62d5676"'
+      - ' "4050513fd2c0e7872d037adc911283a8362a5173ff1910ff5eb8890b980e7994"'
+      - ' "96000ea06d9c60f12db32c005400fab457443b2ee57a9fa1dad28816cf3fa2ab"'
+      - ' "51498477da8c0c5abf4cca3de0704a83d513c4005c2f4f3bb09fc8121e1189dc"'
+      - ' "72b0ee76e31527fa94e063ef15580037a2148bf59d6f981faab92a82f5403d58"'
+      - ' "fa5863411095c9098a1b29e557e1f0bf5083e6b40a0b9cf6c73851e03c8627f3"'
       - ' "3cf4a9e9af1a3733562dcdd74160fe1001c124878370c7bee555517f38720a6e"'
       - ' "2ed02943cd801954de9d92a66eab12cb718ffe57a3e0f3df95103a72d181f879"'
-      - ' "5bab10c1591c7266cbfc42b0e40ee060ba34ad4cf5cfd0d7a1913516c836953c"'
-      - ' "180c22cd81e8468ba9aac26b316f2b80584db4ef4f800ab3d412700c2152a1f0"'
-      - ' "6b221814fa8c8d800a2ea3dcbb30943c33d8a28e184dbd368e42c5f5e92f90e4"'
-      - ' "7f936ffc40d08c305fb98485fcda7ed3d5dbe601d59b9a1a0e6e8ce36e54ebe9"'
-      - ' "2e129809cc3f8c407dfed6d69cd9df85e0c37398c3eaac04b7e14950502fdc9c"'
-      - ' "a1458a1071048fe2344df2226aaa74cd5e74e681d9b15500fd25b0d9f681b3e2"'
-      - ' "16e0903c601fc36cb81393990e53ea2476b1c74aae72b2b90303f98e5c3e98f9"'
   condition: selection
 level: high
 tags:

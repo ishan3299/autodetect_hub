@@ -1,48 +1,48 @@
 {
-  "generated_at": "2026-08-07T02:14:01.690557",
-  "total_iocs": 15786,
-  "new_iocs_24h": 1515,
+  "generated_at": "2026-08-08T01:02:25.272974",
+  "total_iocs": 15667,
+  "new_iocs_24h": 710,
   "top_types": {
-    "url": 14625,
-    "hash": 1153,
+    "url": 14584,
+    "hash": 1075,
     "ip": 7,
     "domain": 1
   },
   "top_tags": {
-    "elf": 6836,
-    "Mozi": 5425,
-    "mirai": 4182,
-    "32-bit": 4037,
-    "mips": 3234,
-    "ua-wget": 2980,
-    "arm": 1270,
-    "ClearFake": 1151,
-    "opendir": 795,
-    "windows": 706
+    "elf": 6766,
+    "Mozi": 5365,
+    "mirai": 4198,
+    "32-bit": 3938,
+    "mips": 3161,
+    "ua-wget": 3009,
+    "arm": 1247,
+    "ClearFake": 1077,
+    "opendir": 827,
+    "windows": 653
   },
   "top_sources": {
-    "URLhaus": 14625,
-    "MalwareBazaar": 1153,
+    "URLhaus": 14584,
+    "MalwareBazaar": 1075,
     "FeodoTracker": 5,
     "OTX": 2,
     "AbuseIPDB": 1
   },
   "mitre_coverage": {
-    "T1059.004": 11629,
-    "T1583": 9682,
-    "T1071": 3177,
-    "T1596": 795,
-    "T1219": 367,
+    "T1059.004": 11461,
+    "T1583": 9635,
+    "T1071": 3206,
+    "T1596": 827,
+    "T1219": 376,
     "T1587.001": 344,
-    "T1204.002": 301,
+    "T1204.002": 308,
     "T1595": 261,
-    "T1555": 161,
-    "T1059.001": 102,
-    "T1059.005": 78,
+    "T1555": 136,
+    "T1059.001": 114,
+    "T1059.005": 80,
     "T1218.005": 42,
-    "T1496": 34,
+    "T1496": 35,
     "T1027": 26,
-    "T1059": 26,
+    "T1059": 24,
     "T1102": 20,
     "T1566": 18,
     "T1056.001": 15,
@@ -51,17 +51,75 @@
   },
   "recent_iocs": [
     {
-      "indicator": "https://hindustanagency.com/666.exe",
+      "indicator": "http://94.183.233.225/data_mips",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "197b1ec4b9644da7b43669fd4f0ed73f",
-        "dropped-by-remus"
+        "elf",
+        "mips",
+        "ua-wget"
       ],
-      "first_seen": "2026-08-07 01:13:07 U C",
-      "last_seen": "2026-08-07 01:13:07 U C",
+      "first_seen": "2026-08-08 00:50:26 U C",
+      "last_seen": "2026-08-08 00:50:26 U C",
       "sightings": 1,
       "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://94.183.233.225/data_mipsel",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "mips",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-08 00:47:14 U C",
+      "last_seen": "2026-08-08 00:47:14 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://119.186.208.189:49406/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "Mozi"
+      ],
+      "first_seen": "2026-08-08 00:36:07 U C",
+      "last_seen": "2026-08-08 00:36:07 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://125.43.0.49:47371/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "Mozi"
+      ],
+      "first_seen": "2026-08-08 00:22:07 U C",
+      "last_seen": "2026-08-08 00:22:07 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://125.43.107.216:46123/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-08 00:05:15 U C",
+      "last_seen": "2026-08-08 00:05:15 U C",
+      "sightings": 1,
+      "severity": "medium",
       "status": "active"
     },
     {
@@ -71,8 +129,8 @@
       "tags": [
         "Emotet"
       ],
-      "first_seen": "2026-08-07",
-      "last_seen": "2026-08-07",
+      "first_seen": "2026-08-08",
+      "last_seen": "2026-08-08",
       "sightings": 1,
       "severity": "low",
       "status": "active"
@@ -84,8 +142,8 @@
       "tags": [
         "QakBot"
       ],
-      "first_seen": "2026-08-07",
-      "last_seen": "2026-08-07",
+      "first_seen": "2026-08-08",
+      "last_seen": "2026-08-08",
       "sightings": 1,
       "severity": "low",
       "status": "active"
@@ -97,8 +155,8 @@
       "tags": [
         "QakBot"
       ],
-      "first_seen": "2026-08-07",
-      "last_seen": "2026-08-07",
+      "first_seen": "2026-08-08",
+      "last_seen": "2026-08-08",
       "sightings": 1,
       "severity": "low",
       "status": "active"
@@ -110,8 +168,8 @@
       "tags": [
         "QakBot"
       ],
-      "first_seen": "2026-08-07",
-      "last_seen": "2026-08-07",
+      "first_seen": "2026-08-08",
+      "last_seen": "2026-08-08",
       "sightings": 1,
       "severity": "low",
       "status": "active"
@@ -123,691 +181,643 @@
       "tags": [
         "QakBot"
       ],
-      "first_seen": "2026-08-07",
-      "last_seen": "2026-08-07",
+      "first_seen": "2026-08-08",
+      "last_seen": "2026-08-08",
       "sightings": 1,
       "severity": "low",
       "status": "active"
     },
     {
-      "indicator": " \"f26e0468626e39ac1940aba366021ce782221d505888d15bf95519bc0340c1c9\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"Mirai\""
-      ],
-      "first_seen": "2026-08-07",
-      "last_seen": "2026-08-07",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"b28df0a1e9e330e23c3ce483935e9d5f2fd164679806013f10e40e7123aeec4f\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-08-07",
-      "last_seen": "2026-08-07",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"d4cfab5e052df4c049f258e226d11825cb37b0359be454b83241edd59b295f08\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-08-07",
-      "last_seen": "2026-08-07",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"94c78e0d80e3364e1c90d6f5311e6e4104bfa8e831d3351ba8cb875620d0dc64\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"NanoCore\""
-      ],
-      "first_seen": "2026-08-07",
-      "last_seen": "2026-08-07",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://85.137.245.141:9001/1.exe",
+      "indicator": "http://105.186.140.157:48423/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "85-137-245-141-9001"
-      ],
-      "first_seen": "2026-08-06 21:45:24 U C",
-      "last_seen": "2026-08-06 21:45:24 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://85.137.245.141:9001/2.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "85-137-245-141-9001"
-      ],
-      "first_seen": "2026-08-06 21:45:22 U C",
-      "last_seen": "2026-08-06 21:45:22 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://94.154.43.44/bins/bin.armv4eb",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "94-154-43-44",
-        "DEU",
+        "32-bit",
+        "arm",
         "elf",
-        "geofenced",
-        "mirai"
+        "mirai",
+        "Mozi"
       ],
-      "first_seen": "2026-08-06 21:10:35 U C",
-      "last_seen": "2026-08-06 21:10:35 U C",
+      "first_seen": "2026-08-07 23:30:13 U C",
+      "last_seen": "2026-08-07 23:30:13 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://94.154.43.44/bins/bin.armv6l",
+      "indicator": "http://125.43.107.216:46123/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "94-154-43-44",
-        "DEU",
+        "32-bit",
         "elf",
-        "geofenced",
-        "mirai"
+        "mips",
+        "Mozi"
       ],
-      "first_seen": "2026-08-06 21:10:35 U C",
-      "last_seen": "2026-08-06 21:10:35 U C",
+      "first_seen": "2026-08-07 23:13:14 U C",
+      "last_seen": "2026-08-07 23:13:14 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://94.154.43.44/bins/bin.x86_64",
+      "indicator": "http://123.4.234.246:46289/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "94-154-43-44",
-        "DEU",
+        "32-bit",
         "elf",
-        "geofenced",
-        "mirai"
+        "mips",
+        "Mozi"
       ],
-      "first_seen": "2026-08-06 21:10:35 U C",
-      "last_seen": "2026-08-06 21:10:35 U C",
+      "first_seen": "2026-08-07 23:03:14 U C",
+      "last_seen": "2026-08-07 23:03:14 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://94.154.43.44/bins/bin.i586",
+      "indicator": "http://120.28.194.160:36981/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "94-154-43-44",
-        "DEU",
+        "32-bit",
+        "arm",
         "elf",
-        "geofenced",
-        "mirai"
+        "mirai",
+        "Mozi"
       ],
-      "first_seen": "2026-08-06 21:10:35 U C",
-      "last_seen": "2026-08-06 21:10:35 U C",
+      "first_seen": "2026-08-07 23:01:12 U C",
+      "last_seen": "2026-08-07 23:01:12 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://94.154.43.44/bins/bin.armv7l",
+      "indicator": "http://105.186.140.157:48423/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "94-154-43-44",
-        "DEU",
+        "32-bit",
+        "arm",
         "elf",
-        "geofenced",
-        "mirai"
+        "mirai",
+        "Mozi"
       ],
-      "first_seen": "2026-08-06 21:10:35 U C",
-      "last_seen": "2026-08-06 21:10:35 U C",
+      "first_seen": "2026-08-07 22:54:15 U C",
+      "last_seen": "2026-08-07 22:54:15 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://94.154.43.44/bins/bin.i486",
+      "indicator": "http://123.4.234.31:58798/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "94-154-43-44",
-        "DEU",
+        "32-bit",
         "elf",
-        "geofenced",
-        "mirai"
+        "mips",
+        "Mozi"
       ],
-      "first_seen": "2026-08-06 21:10:35 U C",
-      "last_seen": "2026-08-06 21:10:35 U C",
+      "first_seen": "2026-08-07 22:49:16 U C",
+      "last_seen": "2026-08-07 22:49:16 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://94.154.43.44/bins/bin.powerpc",
+      "indicator": "http://124.94.125.230:34268/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "94-154-43-44",
-        "DEU",
+        "32-bit",
         "elf",
-        "geofenced",
-        "mirai"
+        "mips",
+        "Mozi"
       ],
-      "first_seen": "2026-08-06 21:10:35 U C",
-      "last_seen": "2026-08-06 21:10:35 U C",
+      "first_seen": "2026-08-07 22:03:10 U C",
+      "last_seen": "2026-08-07 22:03:10 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://94.154.43.44/bins/bin.mips64",
+      "indicator": "http://222.142.223.175:57022/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "94-154-43-44",
-        "DEU",
+        "32-bit",
         "elf",
-        "geofenced",
-        "mirai"
+        "mips",
+        "Mozi"
       ],
-      "first_seen": "2026-08-06 21:10:35 U C",
-      "last_seen": "2026-08-06 21:10:35 U C",
+      "first_seen": "2026-08-07 21:56:14 U C",
+      "last_seen": "2026-08-07 21:56:14 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://94.154.43.44/bins/bin.mipsel",
+      "indicator": "http://115.63.150.75:33073/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "94-154-43-44",
-        "DEU",
-        "elf",
-        "geofenced",
-        "mirai"
+        "Mozi"
       ],
-      "first_seen": "2026-08-06 21:10:35 U C",
-      "last_seen": "2026-08-06 21:10:35 U C",
+      "first_seen": "2026-08-07 21:47:06 U C",
+      "last_seen": "2026-08-07 21:47:06 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://94.154.43.44/bins/bin.sh4",
+      "indicator": "http://115.63.150.75:33073/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "94-154-43-44",
-        "DEU",
-        "elf",
-        "geofenced",
-        "mirai"
+        "Mozi"
       ],
-      "first_seen": "2026-08-06 21:10:35 U C",
-      "last_seen": "2026-08-06 21:10:35 U C",
+      "first_seen": "2026-08-07 21:26:07 U C",
+      "last_seen": "2026-08-07 21:26:07 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://94.154.43.44/bins/bin.m68k",
+      "indicator": "http://196.189.68.239:60182/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "94-154-43-44",
-        "DEU",
-        "elf",
-        "geofenced",
         "mirai"
       ],
-      "first_seen": "2026-08-06 21:10:35 U C",
-      "last_seen": "2026-08-06 21:10:35 U C",
+      "first_seen": "2026-08-07 21:22:06 U C",
+      "last_seen": "2026-08-07 21:22:06 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://94.154.43.44/bins/bin.armv4tl",
+      "indicator": "http://130.12.182.77/main.sh4musl",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "94-154-43-44",
-        "DEU",
         "elf",
-        "geofenced",
-        "mirai"
+        "opendir",
+        "SuperH",
+        "ua-wget"
       ],
-      "first_seen": "2026-08-06 21:10:35 U C",
-      "last_seen": "2026-08-06 21:10:35 U C",
+      "first_seen": "2026-08-07 21:22:06 U C",
+      "last_seen": "2026-08-07 21:22:06 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.sparc64",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "opendir",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-07 21:21:17 U C",
+      "last_seen": "2026-08-07 21:21:17 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/f",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "mips",
+        "opendir",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.sh4aeb",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "opendir",
+        "SuperH",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.e500mc",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "opendir",
+        "PowerPC",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.x86-i686",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "opendir",
+        "ua-wget",
+        "x86"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.s390x",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "opendir",
+        "s390x",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.x86-64-v2",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "opendir",
+        "ua-wget",
+        "x86"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.mips32r6el",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "mips",
+        "opendir",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.x86-core2",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "opendir",
+        "ua-wget",
+        "x86"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.x86-64",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "opendir",
+        "ua-wget",
+        "x86"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.mips64el-n32",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "mips",
+        "opendir",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.x86-64-v3",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "opendir",
+        "ua-wget",
+        "x86"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.power8le",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "opendir",
+        "PowerPC",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.x86-64-i7",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "opendir",
+        "ua-wget",
+        "x86"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.x86-64-v4",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "opendir",
+        "ua-wget",
+        "x86"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.aarch64be",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "arm",
+        "elf",
+        "opendir",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.mips32r5el",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "mips",
+        "opendir",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.ppc440fp",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "opendir",
+        "PowerPC",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.e6500",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "opendir",
+        "PowerPC",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.power8",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "opendir",
+        "PowerPC",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.sparcv8",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "opendir",
+        "sparc",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://175.151.217.170:55986/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-07 21:21:16 U C",
+      "last_seen": "2026-08-07 21:21:16 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://94.154.43.44/bins/bin.armv4l",
+      "indicator": "http://130.12.182.77/main.mips64-n32",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "94-154-43-44",
-        "DEU",
         "elf",
-        "geofenced",
-        "mirai"
+        "mips",
+        "opendir",
+        "ua-wget"
       ],
-      "first_seen": "2026-08-06 21:10:35 U C",
-      "last_seen": "2026-08-06 21:10:35 U C",
+      "first_seen": "2026-08-07 21:21:07 U C",
+      "last_seen": "2026-08-07 21:21:07 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.m68k-68xxx",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "m68k",
+        "opendir",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-07 21:21:07 U C",
+      "last_seen": "2026-08-07 21:21:07 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.mips64r6el-n32",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "mips",
+        "opendir",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-07 21:21:07 U C",
+      "last_seen": "2026-08-07 21:21:07 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.mips32",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "mips",
+        "opendir",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-07 21:21:07 U C",
+      "last_seen": "2026-08-07 21:21:07 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://130.12.182.77/main.e5500",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "opendir",
+        "PowerPC",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-07 21:21:07 U C",
+      "last_seen": "2026-08-07 21:21:07 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://182.116.88.229:47375/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-07 21:07:13 U C",
+      "last_seen": "2026-08-07 21:07:13 U C",
       "sightings": 1,
       "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://94.154.43.44/bins/bin.i686",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "94-154-43-44",
-        "DEU",
-        "elf",
-        "geofenced",
-        "mirai"
-      ],
-      "first_seen": "2026-08-06 21:10:35 U C",
-      "last_seen": "2026-08-06 21:10:35 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://94.154.43.44/bins/bin.mips",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "94-154-43-44",
-        "DEU",
-        "elf",
-        "geofenced",
-        "mirai"
-      ],
-      "first_seen": "2026-08-06 21:10:35 U C",
-      "last_seen": "2026-08-06 21:10:35 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://94.154.43.44/bins/bin.armv5l",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "94-154-43-44",
-        "DEU",
-        "elf",
-        "geofenced",
-        "mirai"
-      ],
-      "first_seen": "2026-08-06 21:10:35 U C",
-      "last_seen": "2026-08-06 21:10:35 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://94.154.43.44/bins/bin.powerpc-440fp",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "94-154-43-44",
-        "DEU",
-        "elf",
-        "geofenced",
-        "mirai"
-      ],
-      "first_seen": "2026-08-06 21:10:34 U C",
-      "last_seen": "2026-08-06 21:10:34 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "https://104.239.66.130/Bin/ScreenConnect.ClientSetup.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "104-239-66-130",
-        "connectwise",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 21:09:26 U C",
-      "last_seen": "2026-08-06 21:09:26 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://104.239.66.130/bin/support.client.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "104-239-66-130",
-        "connectwise",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 21:09:23 U C",
-      "last_seen": "2026-08-06 21:09:23 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://195.177.94.26/Bin/ScreenConnect.ClientSetup.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "195-177-94-26",
-        "connectwise",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 21:08:23 U C",
-      "last_seen": "2026-08-06 21:08:23 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://195.177.94.26/bin/support.client.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "195-177-94-26",
-        "connectwise",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 21:08:21 U C",
-      "last_seen": "2026-08-06 21:08:21 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://195.177.94.29/Bin/ScreenConnect.ClientSetup.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "195-177-94-29",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 21:07:25 U C",
-      "last_seen": "2026-08-06 21:07:25 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://195.177.94.80/bin/support.client.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "195-177-94-80",
-        "connectwise",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 21:05:30 U C",
-      "last_seen": "2026-08-06 21:05:30 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://195.177.94.80/Bin/ScreenConnect.ClientSetup.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "195-177-94-80",
-        "connectwise",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 21:05:30 U C",
-      "last_seen": "2026-08-06 21:05:30 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://195.177.94.240/Bin/ScreenConnect.ClientSetup.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "195-177-94-240",
-        "connectwise",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 21:04:30 U C",
-      "last_seen": "2026-08-06 21:04:30 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://195.177.94.96/Bin/ScreenConnect.ClientSetup.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "195-177-94-96",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 21:02:32 U C",
-      "last_seen": "2026-08-06 21:02:32 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://217.217.97.204/Bin/ScreenConnect.ClientSetup.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "217-217-97-204",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 21:01:23 U C",
-      "last_seen": "2026-08-06 21:01:23 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://94.154.32.185/Bin/ScreenConnect.ClientSetup.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "94-154-32-185",
-        "connectwise",
-        "DEU",
-        "exe",
-        "geofenced"
-      ],
-      "first_seen": "2026-08-06 20:58:38 U C",
-      "last_seen": "2026-08-06 20:58:38 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://94.154.32.185/bin/support.client.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "94-154-32-185",
-        "connectwise",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 20:58:36 U C",
-      "last_seen": "2026-08-06 20:58:36 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://194.26.192.131/Bin/ScreenConnect.ClientSetup.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "194-26-192-131",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 20:53:07 U C",
-      "last_seen": "2026-08-06 20:53:07 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://192.159.99.153/Bin/ScreenConnect.ClientSetup.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "192-159-99-153",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 20:53:07 U C",
-      "last_seen": "2026-08-06 20:53:07 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://45.88.186.14/Bin/ScreenConnect.ClientSetup.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "45-88-186-14",
-        "connectwise",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 20:53:07 U C",
-      "last_seen": "2026-08-06 20:53:07 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://45.88.186.14/bin/support.client.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "45-88-186-14",
-        "connectwise",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 20:53:03 U C",
-      "last_seen": "2026-08-06 20:53:03 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://194.26.192.131/bin/support.client.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "194-26-192-131",
-        "connectwise",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 20:53:03 U C",
-      "last_seen": "2026-08-06 20:53:03 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://192.159.99.153/bin/support.client.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "192-159-99-153",
-        "connectwise",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 20:53:03 U C",
-      "last_seen": "2026-08-06 20:53:03 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://178.16.55.154/Bin/ScreenConnect.ClientSetup.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "178-16-55-154",
-        "connectwise",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 20:50:22 U C",
-      "last_seen": "2026-08-06 20:50:22 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "https://178.16.55.154/bin/support.client.exe",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "178-16-55-154",
-        "connectwise",
-        "exe"
-      ],
-      "first_seen": "2026-08-06 20:50:18 U C",
-      "last_seen": "2026-08-06 20:50:18 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://195.177.94.33/x",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "195-177-94-33",
-        "DEU",
-        "geofenced",
-        "reverseshell",
-        "sh"
-      ],
-      "first_seen": "2026-08-06 20:45:37 U C",
-      "last_seen": "2026-08-06 20:45:37 U C",
-      "sightings": 1,
-      "severity": "low",
       "status": "active"
     }
   ]

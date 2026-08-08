@@ -178,20 +178,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_1212bb4a7c8e60e3.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_dcef57ffcf0e32bc.exe*'
       - '*https://136.0.213.106:5173/api/build/download/agent-windows-amd64-13949790.exe*'
-      - '*http://37.1.213.59/y8jdGc5jS/Plugins/cred.dll*'
-      - '*http://37.1.213.59/y8jdGc5jS/Plugins/clip64.dll*'
-      - '*http://37.1.213.59/y8jdGc5jS/Plugins/clip.dll*'
-      - '*http://37.1.213.59/y8jdGc5jS/Plugins/cred64.dll*'
-      - '*http://91.92.242.236/files-129312398/files/file_8ae360959a1933a5.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_fcf6a02309e203c4.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_da8de9dae556667a.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_150a4c9b22b37ebe.ps1*'
-      - '*http://91.92.242.236/files-129312398/files/file_6d9d8fc309228ece.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_a3af4669c51aa82d.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_3e7393fd5c99d55c.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_447e39c0c96b3cb5.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_1054d1bff4b2c953.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_93d3d417921c3a69.exe*'
   condition: selection
 level: high
 tags:
@@ -286,6 +272,8 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "664c8ea6640f0e3f8bd5ba3429656635d59f8272e37e0cdf646a1613efda9d8f"'
+      - ' "93fedc7b3f885aa9741fe7bbe171baded81188a5aeee3fecc636f3721587b702"'
       - ' "3260d94ea8b51c306f506eff40997055b9cefd0a79c2b6fda4c8c8aea8e8dbc1"'
   condition: selection
 level: high
