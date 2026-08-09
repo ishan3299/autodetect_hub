@@ -1,49 +1,49 @@
 {
-  "generated_at": "2026-08-08T01:02:25.272974",
-  "total_iocs": 15667,
-  "new_iocs_24h": 710,
+  "generated_at": "2026-08-09T01:06:13.006152",
+  "total_iocs": 16244,
+  "new_iocs_24h": 1709,
   "top_types": {
-    "url": 14584,
-    "hash": 1075,
+    "url": 15467,
+    "hash": 769,
     "ip": 7,
     "domain": 1
   },
   "top_tags": {
-    "elf": 6766,
+    "elf": 7435,
     "Mozi": 5365,
-    "mirai": 4198,
-    "32-bit": 3938,
-    "mips": 3161,
-    "ua-wget": 3009,
-    "arm": 1247,
-    "ClearFake": 1077,
-    "opendir": 827,
-    "windows": 653
+    "mirai": 4901,
+    "ua-wget": 3903,
+    "32-bit": 3897,
+    "mips": 3129,
+    "arm": 1236,
+    "botnetdomain": 1073,
+    "ClearFake": 1008,
+    "opendir": 815
   },
   "top_sources": {
-    "URLhaus": 14584,
-    "MalwareBazaar": 1075,
+    "URLhaus": 15467,
+    "MalwareBazaar": 769,
     "FeodoTracker": 5,
     "OTX": 2,
     "AbuseIPDB": 1
   },
   "mitre_coverage": {
-    "T1059.004": 11461,
-    "T1583": 9635,
-    "T1071": 3206,
-    "T1596": 827,
-    "T1219": 376,
-    "T1587.001": 344,
-    "T1204.002": 308,
-    "T1595": 261,
-    "T1555": 136,
-    "T1059.001": 114,
+    "T1059.004": 12168,
+    "T1583": 10338,
+    "T1071": 4097,
+    "T1596": 815,
+    "T1595": 478,
+    "T1219": 416,
+    "T1587.001": 351,
+    "T1204.002": 315,
+    "T1555": 124,
+    "T1059.001": 111,
     "T1059.005": 80,
-    "T1218.005": 42,
-    "T1496": 35,
+    "T1496": 46,
+    "T1218.005": 43,
     "T1027": 26,
-    "T1059": 24,
-    "T1102": 20,
+    "T1102": 22,
+    "T1059": 22,
     "T1566": 18,
     "T1056.001": 15,
     "T1059.007": 10,
@@ -51,63 +51,52 @@
   },
   "recent_iocs": [
     {
-      "indicator": "http://94.183.233.225/data_mips",
+      "indicator": "http://117.253.29.68:48477/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
+        "32-bit",
+        "arm",
         "elf",
-        "mips",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-08 00:50:26 U C",
-      "last_seen": "2026-08-08 00:50:26 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://94.183.233.225/data_mipsel",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "mips",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-08 00:47:14 U C",
-      "last_seen": "2026-08-08 00:47:14 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://119.186.208.189:49406/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
+        "mirai",
         "Mozi"
       ],
-      "first_seen": "2026-08-08 00:36:07 U C",
-      "last_seen": "2026-08-08 00:36:07 U C",
+      "first_seen": "2026-08-09 00:53:20 U C",
+      "last_seen": "2026-08-09 00:53:20 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://125.43.0.49:47371/i",
+      "indicator": "http://62.60.226.140/files/1781548144/Ql0IJZ0.exe",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "Mozi"
+        "d52f85",
+        "dropped-by-amadey"
       ],
-      "first_seen": "2026-08-08 00:22:07 U C",
-      "last_seen": "2026-08-08 00:22:07 U C",
+      "first_seen": "2026-08-09 00:45:06 U C",
+      "last_seen": "2026-08-09 00:45:06 U C",
       "sightings": 1,
-      "severity": "medium",
+      "severity": "low",
       "status": "active"
     },
     {
-      "indicator": "http://125.43.107.216:46123/i",
+      "indicator": "http://62.60.226.140/files/5223853602/uDSthxb.exe",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "d52f85",
+        "dropped-by-amadey"
+      ],
+      "first_seen": "2026-08-09 00:45:06 U C",
+      "last_seen": "2026-08-09 00:45:06 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://123.129.131.159:42876/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -116,8 +105,89 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-08 00:05:15 U C",
-      "last_seen": "2026-08-08 00:05:15 U C",
+      "first_seen": "2026-08-09 00:33:19 U C",
+      "last_seen": "2026-08-09 00:33:19 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://42.233.107.216:48024/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-09 00:27:24 U C",
+      "last_seen": "2026-08-09 00:27:24 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://103.160.130.178:50403/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-09 00:16:21 U C",
+      "last_seen": "2026-08-09 00:16:21 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://115.59.22.163:43214/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-09 00:15:25 U C",
+      "last_seen": "2026-08-09 00:15:25 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://222.219.74.117:52755/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "arm",
+        "elf",
+        "mirai",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-09 00:14:16 U C",
+      "last_seen": "2026-08-09 00:14:16 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://163.142.95.105:38525/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-09 00:01:20 U C",
+      "last_seen": "2026-08-09 00:01:20 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
@@ -129,8 +199,8 @@
       "tags": [
         "Emotet"
       ],
-      "first_seen": "2026-08-08",
-      "last_seen": "2026-08-08",
+      "first_seen": "2026-08-09",
+      "last_seen": "2026-08-09",
       "sightings": 1,
       "severity": "low",
       "status": "active"
@@ -142,8 +212,8 @@
       "tags": [
         "QakBot"
       ],
-      "first_seen": "2026-08-08",
-      "last_seen": "2026-08-08",
+      "first_seen": "2026-08-09",
+      "last_seen": "2026-08-09",
       "sightings": 1,
       "severity": "low",
       "status": "active"
@@ -155,8 +225,8 @@
       "tags": [
         "QakBot"
       ],
-      "first_seen": "2026-08-08",
-      "last_seen": "2026-08-08",
+      "first_seen": "2026-08-09",
+      "last_seen": "2026-08-09",
       "sightings": 1,
       "severity": "low",
       "status": "active"
@@ -168,8 +238,8 @@
       "tags": [
         "QakBot"
       ],
-      "first_seen": "2026-08-08",
-      "last_seen": "2026-08-08",
+      "first_seen": "2026-08-09",
+      "last_seen": "2026-08-09",
       "sightings": 1,
       "severity": "low",
       "status": "active"
@@ -181,31 +251,14 @@
       "tags": [
         "QakBot"
       ],
-      "first_seen": "2026-08-08",
-      "last_seen": "2026-08-08",
+      "first_seen": "2026-08-09",
+      "last_seen": "2026-08-09",
       "sightings": 1,
       "severity": "low",
       "status": "active"
     },
     {
-      "indicator": "http://105.186.140.157:48423/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-07 23:30:13 U C",
-      "last_seen": "2026-08-07 23:30:13 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://125.43.107.216:46123/bin.sh",
+      "indicator": "http://115.59.22.163:43214/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -214,14 +267,25 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-07 23:13:14 U C",
-      "last_seen": "2026-08-07 23:13:14 U C",
+      "first_seen": "2026-08-08 23:49:22 U C",
+      "last_seen": "2026-08-08 23:49:22 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://123.4.234.246:46289/i",
+      "indicator": "http://115.52.234.218:36909/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [],
+      "first_seen": "2026-08-08 23:46:17 U C",
+      "last_seen": "2026-08-08 23:46:17 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://42.237.60.215:54523/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -230,48 +294,14 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-07 23:03:14 U C",
-      "last_seen": "2026-08-07 23:03:14 U C",
+      "first_seen": "2026-08-08 23:38:26 U C",
+      "last_seen": "2026-08-08 23:38:26 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://120.28.194.160:36981/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-07 23:01:12 U C",
-      "last_seen": "2026-08-07 23:01:12 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://105.186.140.157:48423/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-07 22:54:15 U C",
-      "last_seen": "2026-08-07 22:54:15 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://123.4.234.31:58798/i",
+      "indicator": "http://175.151.82.88:52513/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -280,14 +310,14 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-07 22:49:16 U C",
-      "last_seen": "2026-08-07 22:49:16 U C",
+      "first_seen": "2026-08-08 23:28:33 U C",
+      "last_seen": "2026-08-08 23:28:33 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://124.94.125.230:34268/i",
+      "indicator": "http://42.235.89.134:36799/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -296,14 +326,14 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-07 22:03:10 U C",
-      "last_seen": "2026-08-07 22:03:10 U C",
+      "first_seen": "2026-08-08 23:10:20 U C",
+      "last_seen": "2026-08-08 23:10:20 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://222.142.223.175:57022/i",
+      "indicator": "http://115.55.113.143:47041/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -312,500 +342,160 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-07 21:56:14 U C",
-      "last_seen": "2026-08-07 21:56:14 U C",
+      "first_seen": "2026-08-08 23:08:31 U C",
+      "last_seen": "2026-08-08 23:08:31 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://115.63.150.75:33073/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "Mozi"
-      ],
-      "first_seen": "2026-08-07 21:47:06 U C",
-      "last_seen": "2026-08-07 21:47:06 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://115.63.150.75:33073/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "Mozi"
-      ],
-      "first_seen": "2026-08-07 21:26:07 U C",
-      "last_seen": "2026-08-07 21:26:07 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://196.189.68.239:60182/i",
+      "indicator": "http://105.224.38.199:36695/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
         "mirai"
       ],
-      "first_seen": "2026-08-07 21:22:06 U C",
-      "last_seen": "2026-08-07 21:22:06 U C",
+      "first_seen": "2026-08-08 23:02:09 U C",
+      "last_seen": "2026-08-08 23:02:09 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://130.12.182.77/main.sh4musl",
+      "indicator": "http://42.235.89.134:36799/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "elf",
-        "opendir",
-        "SuperH",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-07 21:22:06 U C",
-      "last_seen": "2026-08-07 21:22:06 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://130.12.182.77/main.sparc64",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "opendir",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-07 21:21:17 U C",
-      "last_seen": "2026-08-07 21:21:17 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://130.12.182.77/f",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
+        "32-bit",
         "elf",
         "mips",
-        "opendir",
-        "ua-wget"
+        "Mozi"
       ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
+      "first_seen": "2026-08-08 22:56:21 U C",
+      "last_seen": "2026-08-08 22:56:21 U C",
       "sightings": 1,
-      "severity": "low",
+      "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://130.12.182.77/main.sh4aeb",
+      "indicator": "http://115.49.209.189:46958/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "elf",
-        "opendir",
-        "SuperH",
-        "ua-wget"
+        "Mozi"
       ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
+      "first_seen": "2026-08-08 22:52:06 U C",
+      "last_seen": "2026-08-08 22:52:06 U C",
       "sightings": 1,
-      "severity": "low",
+      "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://130.12.182.77/main.e500mc",
+      "indicator": "http://123.12.79.182:51273/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "elf",
-        "opendir",
-        "PowerPC",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://130.12.182.77/main.x86-i686",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "opendir",
-        "ua-wget",
-        "x86"
-      ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://130.12.182.77/main.s390x",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "opendir",
-        "s390x",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://130.12.182.77/main.x86-64-v2",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "opendir",
-        "ua-wget",
-        "x86"
-      ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://130.12.182.77/main.mips32r6el",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
+        "32-bit",
         "elf",
         "mips",
-        "opendir",
-        "ua-wget"
+        "Mozi"
       ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
+      "first_seen": "2026-08-08 22:51:24 U C",
+      "last_seen": "2026-08-08 22:51:24 U C",
       "sightings": 1,
-      "severity": "low",
+      "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://130.12.182.77/main.x86-core2",
+      "indicator": "http://120.84.213.5:42072/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "elf",
-        "opendir",
-        "ua-wget",
-        "x86"
-      ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://130.12.182.77/main.x86-64",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "opendir",
-        "ua-wget",
-        "x86"
-      ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://130.12.182.77/main.mips64el-n32",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
+        "32-bit",
         "elf",
         "mips",
-        "opendir",
-        "ua-wget"
+        "Mozi"
       ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
+      "first_seen": "2026-08-08 22:49:20 U C",
+      "last_seen": "2026-08-08 22:49:20 U C",
       "sightings": 1,
-      "severity": "low",
+      "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://130.12.182.77/main.x86-64-v3",
+      "indicator": "http://112.248.82.251:44283/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
+        "32-bit",
         "elf",
-        "opendir",
-        "ua-wget",
-        "x86"
+        "mips",
+        "Mozi"
       ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
+      "first_seen": "2026-08-08 22:46:19 U C",
+      "last_seen": "2026-08-08 22:46:19 U C",
       "sightings": 1,
-      "severity": "low",
+      "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://130.12.182.77/main.power8le",
+      "indicator": "http://219.155.223.157:48528/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "elf",
-        "opendir",
-        "PowerPC",
-        "ua-wget"
+        "Mozi"
       ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
+      "first_seen": "2026-08-08 22:42:07 U C",
+      "last_seen": "2026-08-08 22:42:07 U C",
       "sightings": 1,
-      "severity": "low",
+      "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://130.12.182.77/main.x86-64-i7",
+      "indicator": "http://120.28.139.121:34906/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "elf",
-        "opendir",
-        "ua-wget",
-        "x86"
-      ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://130.12.182.77/main.x86-64-v4",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "opendir",
-        "ua-wget",
-        "x86"
-      ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://130.12.182.77/main.aarch64be",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
+        "32-bit",
         "arm",
         "elf",
-        "opendir",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://130.12.182.77/main.mips32r5el",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "mips",
-        "opendir",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://130.12.182.77/main.ppc440fp",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "opendir",
-        "PowerPC",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://130.12.182.77/main.e6500",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "opendir",
-        "PowerPC",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://130.12.182.77/main.power8",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "opendir",
-        "PowerPC",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://130.12.182.77/main.sparcv8",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "opendir",
-        "sparc",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://175.151.217.170:55986/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
+        "mirai",
         "Mozi"
       ],
-      "first_seen": "2026-08-07 21:21:16 U C",
-      "last_seen": "2026-08-07 21:21:16 U C",
+      "first_seen": "2026-08-08 22:39:19 U C",
+      "last_seen": "2026-08-08 22:39:19 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://130.12.182.77/main.mips64-n32",
+      "indicator": "http://182.116.70.209:50318/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "elf",
-        "mips",
-        "opendir",
-        "ua-wget"
+        "Mozi"
       ],
-      "first_seen": "2026-08-07 21:21:07 U C",
-      "last_seen": "2026-08-07 21:21:07 U C",
+      "first_seen": "2026-08-08 22:32:07 U C",
+      "last_seen": "2026-08-08 22:32:07 U C",
       "sightings": 1,
-      "severity": "low",
+      "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://130.12.182.77/main.m68k-68xxx",
+      "indicator": "http://219.155.223.157:48528/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "elf",
-        "m68k",
-        "opendir",
-        "ua-wget"
+        "Mozi"
       ],
-      "first_seen": "2026-08-07 21:21:07 U C",
-      "last_seen": "2026-08-07 21:21:07 U C",
+      "first_seen": "2026-08-08 22:16:20 U C",
+      "last_seen": "2026-08-08 22:16:20 U C",
       "sightings": 1,
-      "severity": "low",
+      "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://130.12.182.77/main.mips64r6el-n32",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "mips",
-        "opendir",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-07 21:21:07 U C",
-      "last_seen": "2026-08-07 21:21:07 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://130.12.182.77/main.mips32",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "mips",
-        "opendir",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-07 21:21:07 U C",
-      "last_seen": "2026-08-07 21:21:07 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://130.12.182.77/main.e5500",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "opendir",
-        "PowerPC",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-07 21:21:07 U C",
-      "last_seen": "2026-08-07 21:21:07 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://182.116.88.229:47375/i",
+      "indicator": "http://120.84.213.5:42072/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -814,8 +504,312 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-07 21:07:13 U C",
-      "last_seen": "2026-08-07 21:07:13 U C",
+      "first_seen": "2026-08-08 22:11:32 U C",
+      "last_seen": "2026-08-08 22:11:32 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://123.97.94.72:56444/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "arm",
+        "elf",
+        "mirai",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-08 22:09:24 U C",
+      "last_seen": "2026-08-08 22:09:24 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://120.28.139.121:34906/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "arm",
+        "elf",
+        "mirai",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-08 22:09:22 U C",
+      "last_seen": "2026-08-08 22:09:22 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://103.31.103.204:36161/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-08 21:39:28 U C",
+      "last_seen": "2026-08-08 21:39:28 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://115.55.197.125:40668/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-08 21:36:35 U C",
+      "last_seen": "2026-08-08 21:36:35 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://175.175.92.119:49061/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-08 21:04:36 U C",
+      "last_seen": "2026-08-08 21:04:36 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://61.53.237.126:41063/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-08 20:59:27 U C",
+      "last_seen": "2026-08-08 20:59:27 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://123.5.157.40:59329/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-08 20:50:24 U C",
+      "last_seen": "2026-08-08 20:50:24 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://204.44.69.222/73/gooddaycomingforu.hta",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "hta"
+      ],
+      "first_seen": "2026-08-08 20:46:18 U C",
+      "last_seen": "2026-08-08 20:46:18 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "https://github.com/ThreadColonelSouk/release/releases/download/release/release.zip",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "fake-software",
+        "gaming-lure",
+        "github",
+        "Loader"
+      ],
+      "first_seen": "2026-08-08 20:35:49 U C",
+      "last_seen": "2026-08-08 20:35:49 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "https://github.com/Shapecluneedle/jubilant-engine/releases/download/exec/payd.exe",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "fake-software",
+        "gaming-lure",
+        "github",
+        "Loader"
+      ],
+      "first_seen": "2026-08-08 20:35:25 U C",
+      "last_seen": "2026-08-08 20:35:25 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "https://github.com/Shapecluneedle/jubilant-engine/releases/download/exec/payl.exe",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "fake-software",
+        "gaming-lure",
+        "github",
+        "Loader",
+        "SheetRAT"
+      ],
+      "first_seen": "2026-08-08 20:35:23 U C",
+      "last_seen": "2026-08-08 20:35:23 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "https://github.com/BlackSuite999/Fishstrap-Roblox-2026/releases/download/release/Release.v.1.3.8.zip",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "fake-software",
+        "gaming-lure",
+        "github",
+        "Loader"
+      ],
+      "first_seen": "2026-08-08 20:34:48 U C",
+      "last_seen": "2026-08-08 20:34:48 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "https://github.com/CoopeRlOq9/Project-Zomboid-Build-42-Map/releases/download/release/Release.v.1.3.8.zip",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "fake-software",
+        "gaming-lure",
+        "github",
+        "Loader"
+      ],
+      "first_seen": "2026-08-08 20:34:48 U C",
+      "last_seen": "2026-08-08 20:34:48 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "https://github.com/Alomonohom6/stalzone-cheat-2026/releases/download/release/Release.v.3.1.4.zip",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "fake-software",
+        "gaming-lure",
+        "github",
+        "Loader"
+      ],
+      "first_seen": "2026-08-08 20:34:38 U C",
+      "last_seen": "2026-08-08 20:34:38 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "https://github.com/AlinRight93/stalzone-tools-cheat-2026/releases/download/release/Stalzone.v1.6.by.Kernel.Labs.zip",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "fake-software",
+        "gaming-lure",
+        "github",
+        "Loader"
+      ],
+      "first_seen": "2026-08-08 20:34:33 U C",
+      "last_seen": "2026-08-08 20:34:33 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://61.53.237.126:41063/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-08 20:34:31 U C",
+      "last_seen": "2026-08-08 20:34:31 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "https://github.com/BeamChunin42/jennymod-installer/releases/download/latest/JennyMod.zip",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "fake-software",
+        "gaming-lure",
+        "github",
+        "Loader"
+      ],
+      "first_seen": "2026-08-08 20:33:35 U C",
+      "last_seen": "2026-08-08 20:33:35 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://123.5.157.40:59329/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-08 20:27:20 U C",
+      "last_seen": "2026-08-08 20:27:20 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://175.175.92.119:49061/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-08 20:21:24 U C",
+      "last_seen": "2026-08-08 20:21:24 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
