@@ -7,6 +7,8 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_8d4eff19b5763782.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_20993cb64056ec76.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_b51b4703e727923f.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_bec865d8acfd0630.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_38244c706786dad7.exe*'
@@ -173,8 +175,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_8d7b76226391302b.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_86902656709d1658.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_1aaf6b45ead8e1e7.msi*'
-      - '*http://91.92.242.236/files-129312398/files/file_001f160414df7d98.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_bb60b9785e50aefa.exe*'
   condition: selection
 level: high
 tags:
@@ -259,20 +259,3 @@ level: high
 tags:
   - attack.t1204.002
   - source.URLhaus
----
-title: Detect Activity to Known Malicious C2 - MalwareBazaar hashs - Chunk 1
-id: f74c7de3-963b-593e-bd64-3558c23b37ff
-status: experimental
-description: Detects traffic or activity related to known malicious hashs associated with C2 from MalwareBazaar (Chunk 1).
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - ' "664c8ea6640f0e3f8bd5ba3429656635d59f8272e37e0cdf646a1613efda9d8f"'
-      - ' "93fedc7b3f885aa9741fe7bbe171baded81188a5aeee3fecc636f3721587b702"'
-  condition: selection
-level: high
-tags:
-  - attack.t1071
-  - source.MalwareBazaar
