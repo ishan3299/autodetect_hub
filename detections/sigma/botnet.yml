@@ -7,6 +7,69 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://iloveboats.st/disconnectraw.x86_64*'
+      - '*https://quietsurfwi.help/disconnectraw.mipsel*'
+      - '*https://mail.quietsurfwi.help/mipsel*'
+      - '*https://mail.quietsurfwi.help/killbotx.x86_64*'
+      - '*https://iloveboats.st/k.sh*'
+      - '*https://iloveboats.st/x86_64*'
+      - '*https://mail.quietsurfwi.help/disconnectraw.x86_64*'
+      - '*https://mail.quietsurfwi.help/disconnectraw.arm4*'
+      - '*https://iloveboats.st/disconnectraw.mips*'
+      - '*https://quietsurfwi.help/k.sh*'
+      - '*https://iloveboats.st/arm4*'
+      - '*https://iloveboats.st/disconnectraw.x86*'
+      - '*https://mail.quietsurfwi.help/aarch64*'
+      - '*https://mail.quietsurfwi.help/disconnectraw.aarch64*'
+      - '*https://iloveboats.st/disconnectraw.arm4*'
+      - '*https://iloveboats.st/killbotx.x86_64*'
+      - '*https://quietsurfwi.help/mips*'
+      - '*https://mail.quietsurfwi.help/x86_64*'
+      - '*https://mail.quietsurfwi.help/k.sh*'
+      - '*https://quietsurfwi.help/disconnectraw.mips*'
+      - '*https://mail.quietsurfwi.help/disconnectraw.x86*'
+      - '*https://mail.quietsurfwi.help/disconnectraw.mipsel*'
+      - '*https://iloveboats.st/aarch64*'
+      - '*https://iloveboats.st/x86*'
+      - '*https://mail.quietsurfwi.help/arm7*'
+      - '*https://mail.quietsurfwi.help/arm4*'
+      - '*https://mail.quietsurfwi.help/disconnectraw.mips*'
+      - '*https://quietsurfwi.help/arm7*'
+      - '*https://mail.quietsurfwi.help/mips*'
+      - '*https://iloveboats.st/arm7*'
+      - '*https://iloveboats.st/disconnectraw.mipsel*'
+      - '*https://iloveboats.st/disconnectraw.aarch64*'
+      - '*https://iloveboats.st/mips*'
+      - '*https://iloveboats.st/mipsel*'
+      - '*https://mail.quietsurfwi.help/x86*'
+      - '*https://mail.quietsurfwi.help/disconnectraw.arm7*'
+      - '*https://iloveboats.st/disconnectraw.arm7*'
+      - '*https://quietsurfwi.help/disconnectraw.x86*'
+      - '*https://quietsurfwi.help/disconnectraw.aarch64*'
+      - '*https://quietsurfwi.help/killbotx.x86_64*'
+      - '*https://quietsurfwi.help/mipsel*'
+      - '*https://quietsurfwi.help/arm4*'
+      - '*https://quietsurfwi.help/disconnectraw.x86_64*'
+      - '*https://quietsurfwi.help/disconnectraw.arm4*'
+      - '*https://quietsurfwi.help/x86_64*'
+      - '*https://quietsurfwi.help/disconnectraw.arm7*'
+      - '*https://quietsurfwi.help/x86*'
+      - '*https://quietsurfwi.help/aarch64*'
+      - '*http://privrawmirai.privnetwork.tech/LjEZs/arm*'
+      - '*http://privrawmirai.privnetwork.tech/LjEZs/x86_64*'
+      - '*http://privrawmirai.privnetwork.tech/LjEZs/x86*'
+      - '*http://privrawmirai.privnetwork.tech/LjEZs/arm5*'
+      - '*http://privrawmirai.privnetwork.tech/LjEZs/arm6*'
+      - '*http://privrawmirai.privnetwork.tech/bins.sh*'
+      - '*http://privrawmirai.privnetwork.tech/LjEZs/spc*'
+      - '*http://privrawmirai.privnetwork.tech/0x83911d24Fx.sh*'
+      - '*http://privrawmirai.privnetwork.tech/LjEZs/mips*'
+      - '*http://privrawmirai.privnetwork.tech/LjEZs/ppc*'
+      - '*http://privrawmirai.privnetwork.tech/LjEZs/mpsl*'
+      - '*http://privrawmirai.privnetwork.tech/LjEZs/sh4*'
+      - '*http://privrawmirai.privnetwork.tech/LjEZs/m68k*'
+      - '*http://privrawmirai.privnetwork.tech/LjEZs/arm7*'
+      - '*http://privrawmirai.privnetwork.tech/LjEZs/arc*'
       - '*http://jkqhdbbbqwiujkaz.hopto.org/nz/nz.arm*'
       - '*http://jkqhdbbbqwiujkaz.hopto.org/nz/nz.arm7*'
       - '*http://jkqhdbbbqwiujkaz.hopto.org/nz/nz.mips*'
@@ -444,6 +507,21 @@ detection:
       - '*http://silverrockay.pro/bins/client_i586*'
       - '*http://silverrockay.pro/static/js/gpon*'
       - '*http://silverrockay.pro/static/js/sdfjgnjsdf.arm6*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 2
+id: f581b3e9-19d6-5b39-a931-4f2898da0559
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 2).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://silverrockay.pro/static/js/sdfjgnjsdf.arm*'
       - '*http://silverrockay.pro/static/js/sdfjgnjsdf.arm5*'
       - '*http://silverrockay.pro/static/js/sdfjgnjsdf.x86*'
@@ -507,21 +585,6 @@ detection:
       - '*http://nobleshadebu.pro/iran.sh4*'
       - '*http://nobleshadebu.pro/iran.mips*'
       - '*http://dsgagfsahkfsahfjs.shop/zero.mipsrouter*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 2
-id: f581b3e9-19d6-5b39-a931-4f2898da0559
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 2).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://31-56-209-153.cprapid.com/nz/nz.arm6*'
       - '*http://wqok85qtq.net/nz/nz.arc*'
       - '*http://31-56-209-153.cprapid.com/nz/nz.i686*'
@@ -771,71 +834,6 @@ detection:
       - '*http://igmc.duckdns.org/ar-15/ar15.arc*'
       - '*http://igmc.ddns.net/ar-15/ar15.arm*'
       - '*http://igmc.ddns.net/ar-15/ar15.arm6*'
-      - '*http://sc.c1s.su/tftp.sh*'
-      - '*http://sc.c1s.su/ftpget.sh*'
-      - '*http://sc.c1s.su/no_killer/arm5*'
-      - '*http://sc.c1s.su/no_killer/arm7*'
-      - '*http://sc.c1s.su/no_killer/mips*'
-      - '*http://sc.c1s.su/no_killer/x86*'
-      - '*http://sc.c1s.su/no_killer/mpsl*'
-      - '*http://sc.c1s.su/aarch64*'
-      - '*http://eyztestn.cloudns.be/bins/Ares.arm*'
-      - '*http://eyztestn.cloudns.be/bins/Ares.ppc*'
-      - '*http://eyztestn.cloudns.be/bins/Ares.spc*'
-      - '*http://eyztestn.cloudns.be/bins/Ares.sh4*'
-      - '*http://eyztestn.cloudns.be/bins/Ares.m68k*'
-      - '*http://eyztestn.cloudns.be/bins/Ares.arm6*'
-      - '*http://eyztestn.cloudns.be/bins/Ares.mips*'
-      - '*http://eyztestn.cloudns.be/bins/Ares.mpsl*'
-      - '*http://eyztestn.cloudns.be/bins/Ares.x86*'
-      - '*http://eyztestn.cloudns.be/bins/Ares.arm5*'
-      - '*http://eyztestn.cloudns.be/w.sh*'
-      - '*http://eyztestn.cloudns.be/c.sh*'
-      - '*http://moobot.serveftp.com/x86_64*'
-      - '*http://moobot.serveftp.com/arm6*'
-      - '*http://moobot.serveftp.com/mips*'
-      - '*http://moobot.serveftp.com/arm7*'
-      - '*http://moobot.serveftp.com/mipsel*'
-      - '*http://moobot.serveftp.com/arm5*'
-      - '*http://moobot.serveftp.com/arm*'
-      - '*http://moobot.serveftp.com///arm5*'
-      - '*http://sc.c1s.su/arm5*'
-      - '*http://sc.c1s.su/mips*'
-      - '*http://sc.c1s.su/arm*'
-      - '*http://sc.c1s.su/mpsl*'
-      - '*http://sc.c1s.su/arm7*'
-      - '*http://sc.c1s.su/mipsel*'
-      - '*http://sc.c1s.su/x86*'
-      - '*http://oqwlkbwl3wt65gwskl.hopto.org/nz/nz.sh4*'
-      - '*http://s3onfd.bounceme.net/nz/nz.arm7*'
-      - '*http://oqwlkbwl3wt65gwskl.hopto.org/nz/nz.mpsl*'
-      - '*http://oqwlkbwl3wt65gwskl.hopto.org/nz/nz.spc*'
-      - '*http://oqwlkbwl3wt65gwskl.hopto.org/nz/nz.arm7*'
-      - '*http://s3onfd.bounceme.net/nz/nz.x86*'
-      - '*http://s3onfd.bounceme.net/nz/nz.arc*'
-      - '*http://oqwlkbwl3wt65gwskl.hopto.org/nz/debug*'
-      - '*http://oqwlkbwl3wt65gwskl.hopto.org/nz/nz.arm*'
-      - '*http://s3onfd.bounceme.net/nz/nz.arm*'
-      - '*http://s3onfd.bounceme.net/nz/nz.m68k*'
-      - '*http://oqwlkbwl3wt65gwskl.hopto.org/nz/nz.i686*'
-      - '*http://oqwlkbwl3wt65gwskl.hopto.org/nz/nz.arm5*'
-      - '*http://oqwlkbwl3wt65gwskl.hopto.org/nz/nz.m68k*'
-      - '*http://s3onfd.bounceme.net/nz/nz.arm6*'
-      - '*http://oqwlkbwl3wt65gwskl.hopto.org/nz/nz.x86*'
-      - '*http://oqwlkbwl3wt65gwskl.hopto.org/nz/nz.mips*'
-      - '*http://s3onfd.bounceme.net/nz/nz.arm5*'
-      - '*http://s3onfd.bounceme.net/nz/nz.mips*'
-      - '*http://oqwlkbwl3wt65gwskl.hopto.org/nz/nz.ppc*'
-      - '*http://s3onfd.bounceme.net/nz/nz.spc*'
-      - '*http://s3onfd.bounceme.net/nz/debug*'
-      - '*http://s3onfd.bounceme.net/nz/nz.ppc*'
-      - '*http://s3onfd.bounceme.net/nz/nz.i686*'
-      - '*http://oqwlkbwl3wt65gwskl.hopto.org/nz/nz.x86_64*'
-      - '*http://oqwlkbwl3wt65gwskl.hopto.org/nz/nz.arm6*'
-      - '*http://oqwlkbwl3wt65gwskl.hopto.org/nz/nz.arc*'
-      - '*http://s3onfd.bounceme.net/nz/nz.sh4*'
-      - '*http://s3onfd.bounceme.net/nz/nz.mpsl*'
-      - '*http://s3onfd.bounceme.net/nz/nz.x86_64*'
   condition: selection
 level: high
 tags:
@@ -1069,8 +1067,6 @@ detection:
       - '*http://94.154.43.42/skid.x86*'
       - '*http://94.154.43.42/bot*'
       - '*http://94.154.43.42/urlhaus/niggerniggerniggers*'
-      - '*http://sc.c1s.su/tplink.sh*'
-      - '*http://sc.c1s.su/massload*'
   condition: selection
 level: high
 tags:

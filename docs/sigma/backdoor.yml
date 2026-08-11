@@ -1,0 +1,15 @@
+title: Detect Activity to Known Malicious Backdoor - URLhaus urls - Chunk 1
+id: 1f9ad40b-2939-513d-b7d3-3c448790ad5a
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Backdoor from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://xunyyymdfv.oss-cn-hongkong.aliyuncs.com/uuyc.4.1.0.zip*'
+  condition: selection
+level: high
+tags:
+  - attack.t1543
+  - source.URLhaus
