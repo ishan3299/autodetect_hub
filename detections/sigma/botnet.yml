@@ -1,4 +1,103 @@
 title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 1
+id: 6d4fe50f-71e7-5450-9594-b42adc7544f3
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://reavercncv4.duckdns.org/rva_bins/rva.mips*'
+      - '*http://reavercncv4.duckdns.org/rva_bins/rva.ppc*'
+      - '*http://reavercncv4.duckdns.org/dddd.sh*'
+      - '*http://reavercncv4.duckdns.org/rva_bins/rva.x86*'
+      - '*http://reavercncv4.duckdns.org/rva_bins/rva.m68k*'
+      - '*http://reavercncv4.duckdns.org/rva_bins/rva.spc*'
+      - '*http://reavercncv4.duckdns.org/rva_bins/rva.arm5*'
+      - '*http://reavercncv4.duckdns.org/rva_bins/rva.mpsl*'
+      - '*http://reavercncv4.duckdns.org/rva.sh*'
+      - '*http://reavercncv4.duckdns.org/rva_bins/rva.arm6*'
+      - '*http://reavercncv4.duckdns.org/rva_bins/rva.arm7*'
+      - '*http://reavercncv4.duckdns.org/rva_bins/rva.arc*'
+      - '*http://reavercncv4.duckdns.org/rva_bins/rva.arm*'
+      - '*http://reavercncv4.duckdns.org/rva_bins/rva.sh4*'
+      - '*http://voltagec2.tech/release/arm7*'
+      - '*http://api.mineblack.lol/bot.arm7*'
+      - '*http://voltagec2.tech/release/m68k*'
+      - '*http://voltagec2.tech/x86*'
+      - '*http://voltagec2.tech/arm*'
+      - '*http://voltagec2.tech/release/x86_64*'
+      - '*http://api.mineblack.lol/bot.x86*'
+      - '*http://voltagec2.tech/release/aarch64*'
+      - '*http://voltagec2.tech/arm7*'
+      - '*http://voltagec2.tech/aarch64*'
+      - '*http://voltagec2.tech/release/x86*'
+      - '*http://voltagec2.tech/bins.sh*'
+      - '*http://voltagec2.tech/x86_32*'
+      - '*http://voltagec2.tech/release/mpsl*'
+      - '*http://voltagec2.tech/release/mips*'
+      - '*http://manbipll.duckdns.org/bins/m68k*'
+      - '*http://api.mineblack.lol/jaws*'
+      - '*http://manbipll.duckdns.org/bins/debug.dbg*'
+      - '*http://voltagec2.tech/x86_64*'
+      - '*http://manbipll.duckdns.org/bins/x86_64nosl*'
+      - '*http://voltagec2.tech/release/ppc*'
+      - '*http://voltagec2.tech/release/ppc440*'
+      - '*http://voltagec2.tech/release/x86_32*'
+      - '*http://manbipll.duckdns.org/bins/debug_main.exe*'
+      - '*http://voltagec2.tech/release/arm5*'
+      - '*http://voltagec2.tech/release/arm6*'
+      - '*http://voltagec2.tech/release/sh4*'
+      - '*http://manbipll.duckdns.org/bins/main.exe*'
+      - '*http://voltagec2.tech/release/arm*'
+      - '*http://voltagec2.tech/exploit.sh*'
+      - '*http://manbipll.duckdns.org/bins/arc*'
+      - '*http://manbipll.duckdns.org/bins/x86*'
+      - '*http://manbipll.duckdns.org/bins/sh4*'
+      - '*http://manbipll.duckdns.org/bins/ppc*'
+      - '*http://manbipll.duckdns.org/bins/arm7*'
+      - '*http://manbipll.duckdns.org/bins/mips*'
+      - '*http://manbipll.duckdns.org/bins/x86_64*'
+      - '*http://manbipll.duckdns.org/bins/mpsl*'
+      - '*http://manbipll.duckdns.org/bins/arm6*'
+      - '*http://coralwebqe.help/bins/client_mips*'
+      - '*http://coralwebqe.help/bins/client_armv4l*'
+      - '*http://coralwebqe.help/bins/client_sh4*'
+      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.sh4*'
+      - '*http://coralwebqe.help/bins/client_i586*'
+      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.i686*'
+      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.ppc*'
+      - '*http://coralwebqe.help/bins/client_armv5l*'
+      - '*http://coralwebqe.help/bins/client_armv6l*'
+      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.mips*'
+      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.x86*'
+      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.x86_64*'
+      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.m68k*'
+      - '*http://coralwebqe.help/bins/client_armv7l*'
+      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.arm6*'
+      - '*http://coralwebqe.help/bins/client_m68k*'
+      - '*http://coralwebqe.help/bins/client_powerpc*'
+      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.mpsl*'
+      - '*http://coralwebqe.help/static/js/chunk.sh*'
+      - '*http://coralwebqe.help/static/js/gpon*'
+      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.arm7*'
+      - '*http://coralwebqe.help/static/js/micro.sh*'
+      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.arm5*'
+      - '*http://coralwebqe.help/bins/client_x86_64*'
+      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.i486*'
+      - '*http://coralwebqe.help/static/js/android.sh*'
+      - '*http://coralwebqe.help/bins/client_i686*'
+      - '*http://coralwebqe.help/bins/client_mipsel*'
+      - '*http://coralwebqe.help/bins/client*'
+      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.arc*'
+      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.arm*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 1
 id: 56047508-885d-5257-aa4f-9300b7dc4465
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 1).
@@ -806,34 +905,6 @@ detection:
       - '*http://wifihgu.duckdns.org/x86_64*'
       - '*http://wifihgu.duckdns.org/i686*'
       - '*http://wifihgu.duckdns.org/m68k*'
-      - '*http://igmc.ddns.net/ar-15/ar15.arm5*'
-      - '*http://igmc.duckdns.org/ar-15/ar15.ppc*'
-      - '*http://igmc.ddns.net/ar-15/ar15.mpsl*'
-      - '*http://igmc.ddns.net/ar-15/ar15.arm7*'
-      - '*http://igmc.ddns.net/ar-15/ar15.spc*'
-      - '*http://igmc.duckdns.org/ar-15/ar15.arm*'
-      - '*http://igmc.duckdns.org/ar-15/ar15.x86*'
-      - '*http://igmc.duckdns.org/ar-15/ar15.sh4*'
-      - '*http://igmc.ddns.net/ar-15/ar15.ppc*'
-      - '*http://igmc.ddns.net/ar-15/ar15.x86*'
-      - '*http://igmc.ddns.net/ar-15/ar15.m68k*'
-      - '*http://igmc.ddns.net/ar-15/ar15.mips*'
-      - '*http://igmc.ddns.net/ar-15/ar15.sh4*'
-      - '*http://igmc.ddns.net/ar-15/ar15.x86_64*'
-      - '*http://igmc.duckdns.org/ar-15/ar15.mips*'
-      - '*http://igmc.duckdns.org/ar-15/ar15.x86_64*'
-      - '*http://igmc.duckdns.org/ar-15/ar15.spc*'
-      - '*http://igmc.duckdns.org/ar-15/ar15.arm5*'
-      - '*http://igmc.duckdns.org/ar-15/ar15.mpsl*'
-      - '*http://igmc.duckdns.org/ar-15/ar15.arm7*'
-      - '*http://igmc.ddns.net/ar-15/ar15.i686*'
-      - '*http://igmc.duckdns.org/ar-15/ar15.i686*'
-      - '*http://igmc.duckdns.org/ar-15/ar15.m68k*'
-      - '*http://igmc.duckdns.org/ar-15/ar15.arm6*'
-      - '*http://igmc.ddns.net/ar-15/ar15.arc*'
-      - '*http://igmc.duckdns.org/ar-15/ar15.arc*'
-      - '*http://igmc.ddns.net/ar-15/ar15.arm*'
-      - '*http://igmc.ddns.net/ar-15/ar15.arm6*'
   condition: selection
 level: high
 tags:
@@ -1066,57 +1137,10 @@ detection:
       - '*http://94.154.43.42/skid.x86_64*'
       - '*http://94.154.43.42/skid.x86*'
       - '*http://94.154.43.42/bot*'
-      - '*http://94.154.43.42/urlhaus/niggerniggerniggers*'
   condition: selection
 level: high
 tags:
   - attack.t1583
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 1
-id: 6d4fe50f-71e7-5450-9594-b42adc7544f3
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://coralwebqe.help/bins/client_mips*'
-      - '*http://coralwebqe.help/bins/client_armv4l*'
-      - '*http://coralwebqe.help/bins/client_sh4*'
-      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.sh4*'
-      - '*http://coralwebqe.help/bins/client_i586*'
-      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.i686*'
-      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.ppc*'
-      - '*http://coralwebqe.help/bins/client_armv5l*'
-      - '*http://coralwebqe.help/bins/client_armv6l*'
-      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.mips*'
-      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.x86*'
-      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.x86_64*'
-      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.m68k*'
-      - '*http://coralwebqe.help/bins/client_armv7l*'
-      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.arm6*'
-      - '*http://coralwebqe.help/bins/client_m68k*'
-      - '*http://coralwebqe.help/bins/client_powerpc*'
-      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.mpsl*'
-      - '*http://coralwebqe.help/static/js/chunk.sh*'
-      - '*http://coralwebqe.help/static/js/gpon*'
-      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.arm7*'
-      - '*http://coralwebqe.help/static/js/micro.sh*'
-      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.arm5*'
-      - '*http://coralwebqe.help/bins/client_x86_64*'
-      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.i486*'
-      - '*http://coralwebqe.help/static/js/android.sh*'
-      - '*http://coralwebqe.help/bins/client_i686*'
-      - '*http://coralwebqe.help/bins/client_mipsel*'
-      - '*http://coralwebqe.help/bins/client*'
-      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.arc*'
-      - '*http://coralwebqe.help/static/js/sdfjgnjsdf.arm*'
-  condition: selection
-level: high
-tags:
-  - attack.t1595
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 1

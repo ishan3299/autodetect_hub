@@ -1,25 +1,4 @@
 title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
-id: f42dab2b-f6e3-5181-ac2d-d61e4dcc95d4
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://34.70.205.211/plugins-dist/safehtml/lang/font/ksmd*'
-      - '*https://kworker.eth.limo/ksmd*'
-      - '*http://216.98.10.60:55555/ksmd*'
-      - '*https://69.30.251.156/library/Payment/Adapter/PAYEER/ksmd*'
-      - '*https://kworker.eth.link/ksmd*'
-      - '*http://endpoint.project0.cc/f/init.cfg*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
 id: 3316af2f-5b86-5439-89c7-8ee743b4dbdf
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
@@ -28,6 +7,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://176.65.139.195/check1.sh*'
       - '*http://167.179.119.120/install.sh*'
       - '*http://94.154.43.103/check1.sh*'
       - '*http://62.60.226.185/kaze.exe*'
@@ -66,6 +46,45 @@ tags:
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
+id: 5cfa228a-b760-546c-8ab2-86f2712a68e3
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://216.9.226.120/nuts/poop*'
+      - '*http://216.9.226.120/nuts/bolts*'
+      - '*http://176.65.139.211/check1.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1595
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
+id: f42dab2b-f6e3-5181-ac2d-d61e4dcc95d4
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://34.70.205.211/plugins-dist/safehtml/lang/font/ksmd*'
+      - '*https://kworker.eth.limo/ksmd*'
+      - '*http://216.98.10.60:55555/ksmd*'
+      - '*https://69.30.251.156/library/Payment/Adapter/PAYEER/ksmd*'
+      - '*https://kworker.eth.link/ksmd*'
+      - '*http://endpoint.project0.cc/f/init.cfg*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
 id: 5d9e1d92-b2c4-5b25-8e48-0c8b2432093e
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
@@ -90,16 +109,23 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "ea27fa689b84ea7b60036e5fa33b8bd274f4d859f7beed73ac633fc052c8ed16"'
+      - ' "052fc99f8c973cb0fe6d4dba5f92043af639496d6d96d2bba414afecf006173d"'
+      - ' "22630f34330fd5259344e237f3c977f7dd9f23047cf2bb866adff661f9eea5fd"'
+      - ' "1c3512436ae699c6d4ddb61628a030b90c85dae2c0465e879a815b0d3858c07f"'
+      - ' "9e89e810b67b4051d976807c0d22ac7d59fb842d4625bd63e45133dd212fde45"'
+      - ' "bb6c95c5503d639727f3021d199f5cd7289faf06a1ca7bbf0afdbeec6cec9998"'
+      - ' "f61811f9cd70d6fb833b8a2992bb84aafeacc2e81dbc6ec3f846fcaa81bd2e60"'
+      - ' "7761a32cbc96fb28a0c4268376e52819fa8874724ade80b1a20be9ab38d8ca12"'
+      - ' "3fd1b43c2c06c569cebd4865e4c29aac2088df774aaa00fbd96e34503495eab6"'
+      - ' "bc0a6b10a5df602b50404ad50f18c13570f8f799ecd2d852e03fed902b0ba76a"'
+      - ' "cd164a8cba9df2e7ba3be499a5fbe779db668cd54a476990922b99a22f0b1910"'
+      - ' "deaeab9eb43fcf70d184c209e4bc1077ae6e7e2b182c1cbbc202dfdc053dc01c"'
       - ' "866d659393017609c685b1c0187f13a4afdf43a4b8139275f1487a2187303d41"'
       - ' "49e714b951da38e4e74534fdf2f2905ff59b81804936fe6b639343ff5f30cf41"'
       - ' "54fa7e1901aebe02bf8935769ed66f6bbb750f2adfc1a2283eec2372bcef32be"'
       - ' "78e95ee51ec115dd1dae0085284544d08991b43a39a136e38f2d8fa618693ea8"'
       - ' "1a1c8fcea547dfad3108c36f696da9548fb08c2b977d06288d04e1cfbe950b19"'
-      - ' "336b0f9c3a253185c700bf3516dad58725a7e442cf83d07fee9e50911470e5c9"'
-      - ' "f27ace8c2d172d1f0933e684a4c84b853de716fe4916e016448f2ec9a6718ebb"'
-      - ' "b32181caa8383569167918025e985ed2e629cf2f0f001dcfd576044c8f31599f"'
-      - ' "b83976f2fb570268e3b28e33dfcef679dfd641ebd576ff2956cd6eb7ce3fe666"'
-      - ' "89346d1618092834ee2a105cba5a226c01bace09cc202e0a89ead9d97ee278d0"'
   condition: selection
 level: high
 tags:
