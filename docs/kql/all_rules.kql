@@ -1,6 +1,478 @@
 // Malicious URLs - Chunk 1 (Source: URLhaus)
 UrlClickEvents
 | where Url has_any (
+    "http://42.224.197.166:47521/i",
+    "http://42.224.197.166:47521/bin.sh",
+    "http://123.12.154.116:41466/i",
+    "http://124.6.168.74:46806/i",
+    "http://123.12.154.116:41466/bin.sh",
+    "http://105.225.178.134:49781/i",
+    "http://91.92.242.236/files-129312398/files/file_952a4ed2428c675f.exe",
+    "http://61.52.178.37:40893/i",
+    "http://115.48.150.119:50908/bin.sh",
+    "http://124.131.167.151:34514/i",
+    "http://179.108.89.220:33758/i",
+    "http://27.204.195.189:48250/i",
+    "http://219.156.62.179:56519/bin.sh",
+    "http://219.156.62.179:56519/i",
+    "http://27.204.195.189:48250/bin.sh",
+    "http://115.57.84.167:36341/i",
+    "http://115.57.84.167:36341/bin.sh",
+    "http://61.137.195.76:33907/bin.sh",
+    "http://179.108.89.220:33758/bin.sh",
+    "http://115.50.6.146:37581/i",
+    "http://42.235.36.124:52809/bin.sh",
+    "http://42.224.101.5:47999/i",
+    "http://60.18.25.174:34688/i",
+    "http://123.13.83.90:41636/i",
+    "http://115.50.6.146:37581/bin.sh",
+    "http://123.13.83.90:41636/bin.sh",
+    "http://36.36.197.26:60794/bin.sh",
+    "http://154.90.70.23/y",
+    "http://60.18.25.174:34688/bin.sh",
+    "http://182.117.76.70:54885/i",
+    "http://123.189.139.234:49221/i",
+    "http://62.60.226.140/files/8714097194/VicVgdL.exe",
+    "http://125.44.52.238:45439/i",
+    "http://210.208.110.51:48541/i",
+    "http://115.48.150.119:50908/i",
+    "http://42.230.218.53:49708/i",
+    "http://14.188.143.100:53340/i",
+    "http://125.44.52.238:45439/bin.sh",
+    "http://123.189.139.234:49221/bin.sh",
+    "http://210.208.110.51:48541/bin.sh",
+    "http://180.191.122.115:57936/i",
+    "http://180.191.122.115:57936/bin.sh",
+    "http://192.162.199.149/uploads/cl1786993325592.exe",
+    "http://62.60.226.140/files/8722997249/utRRFWX.exe",
+    "http://124.94.194.151:33197/bin.sh",
+    "http://42.53.241.188:49853/i",
+    "http://42.230.30.16:36416/bin.sh",
+    "http://176.65.139.233/a.sh",
+    "http://176.65.139.233/daredevil.i486",
+    "http://176.65.139.233/daredevil.mipsrouter",
+    "http://176.65.139.233/daredevil.arc",
+    "http://176.65.139.233/daredevil.m68k",
+    "http://176.65.139.233/daredevil.mips",
+    "http://176.65.139.233/daredevil.armv4l",
+    "http://176.65.139.233/daredevil.sparc",
+    "http://176.65.139.233/daredevil.armv7l",
+    "http://176.65.139.233/daredevil.mipsel",
+    "http://176.65.139.233/daredevil.x86_64",
+    "http://176.65.139.233/daredevil.sh4",
+    "http://176.65.139.233/daredevil.powerpc",
+    "http://176.65.139.233/daredevil.armv5l",
+    "http://176.65.139.233/daredevil.armv6l",
+    "http://175.148.156.24:55996/i",
+    "http://game.dualuoilocphu.com/onie_mips",
+    "http://game.dualuoilocphu.com/onie_mpsl",
+    "http://103.226.250.88/onie.sh",
+    "http://game.dualuoilocphu.com/onie_x86",
+    "http://game.dualuoilocphu.com/onie_arm5",
+    "http://game.dualuoilocphu.com/onie_arm",
+    "http://game.dualuoilocphu.com/onie_arm7",
+    "http://game.dualuoilocphu.com/onie_arm6",
+    "http://game.dualuoilocphu.com/onie_m68k",
+    "http://game.dualuoilocphu.com/onie_ppc",
+    "http://game.dualuoilocphu.com/onie_x86_64",
+    "http://game.dualuoilocphu.com/onie_sh4",
+    "http://103.226.250.88/onie_sh4",
+    "http://123.14.176.45:53526/i",
+    "http://123.14.176.45:53526/bin.sh",
+    "http://115.50.169.99:44901/i",
+    "http://45.170.224.217:54350/i",
+    "http://45.170.224.217:54350/bin.sh",
+    "http://182.114.196.132:39255/bin.sh",
+    "http://115.59.37.62:48034/i",
+    "http://182.127.110.9:42389/i",
+    "http://113.237.71.75:38677/i",
+    "http://113.237.71.75:38677/bin.sh",
+    "http://182.114.196.132:39255/i",
+    "http://42.59.237.57:55244/bin.sh",
+    "http://94.154.43.74/persist.arm7",
+    "http://94.154.43.74/Services.apk",
+    "http://182.113.219.69:59860/i",
+    "http://182.113.219.69:59860/bin.sh",
+    "https://195.177.94.162/Bin/ScreenConnect.ClientSetup.exe",
+    "https://195.177.94.162/bin/support.client.exe",
+    "https://195.177.94.141/Bin/ScreenConnect.ClientSetup.exe",
+    "https://195.177.94.141/bin/support.client.exe",
+    "https://104.249.10.248/bin/support.client.exe",
+    "https://104.249.10.248/Bin/ScreenConnect.ClientSetup.exe",
+    "http://182.126.80.97:57819/i",
+    "https://195.177.94.25/Bin/ScreenConnect.ClientSetup.exe",
+    "https://195.177.94.25/bin/support.client.exe",
+    "https://195.177.94.98/Bin/ScreenConnect.ClientSetup.exe",
+    "http://104.249.10.175/Bin/ScreenConnect.ClientSetup.exe",
+    "http://104.249.10.175/bin/support.client.exe",
+    "http://36.88.136.194:37137/bin.sh",
+    "http://36.88.136.194:37137/i",
+    "https://195.177.94.107/Bin/ScreenConnect.ClientSetup.exe",
+    "https://195.177.94.107/bin/support.client.exe",
+    "https://193.26.115.28/Bin/ScreenConnect.ClientSetup.exe",
+    "https://193.26.115.28/bin/support.client.exe",
+    "https://94.154.32.8/Bin/ScreenConnect.ClientSetup.exe",
+    "https://94.154.32.8/bin/support.client.exe",
+    "https://purbalinggamandiri.com/144.exe",
+    "https://purbalinggamandiri.com/3.exe",
+    "http://196.251.107.186/zs/zs64.exe",
+    "http://103.77.246.150/get.sh",
+    "http://196.251.107.186/clp.exe",
+    "http://176.65.139.194/bachekuni/ohshit.arm6",
+    "http://176.65.139.194/bachekuni/ohshit.mpsl",
+    "http://176.65.139.194/bachekuni/ohshit.mips",
+    "http://176.65.139.194/bachekuni/ohshit.i686",
+    "http://176.65.139.194/bachekuni/ohshit.m68k",
+    "http://176.65.139.194/bachekuni/ohshit.arm",
+    "http://176.65.139.194/bachekuni/ohshit.arm7",
+    "http://176.65.139.194/bachekuni/ohshit.ppc",
+    "http://176.65.139.194/bachekuni/ohshit.spc",
+    "http://176.65.139.194/bachekuni/ohshit.arm5",
+    "http://176.65.139.194/bachekuni/ohshit.x86_64",
+    "http://176.65.139.194/bachekuni/ohshit.x86",
+    "http://176.65.139.194/bachekuni/ohshit.arc",
+    "http://176.65.139.194/bachekuni/ohshit.sh4",
+    "http://119.189.155.7:34948/i",
+    "http://119.165.91.36:41931/i",
+    "http://175.148.157.219:53297/i",
+    "http://175.148.157.219:53297/bin.sh",
+    "http://27.37.101.72:54475/bin.sh",
+    "http://91.92.242.236/files-129312398/files/file_eead3d0c419daff9.exe",
+    "http://91.92.242.236/files-129312398/files/file_9e042abf89f49e45.exe",
+    "http://91.92.242.236/files-129312398/files/file_d91af7a531637b1f.exe",
+    "http://210.208.111.2:53561/bin.sh",
+    "http://222.141.22.9:38226/i",
+    "http://115.63.8.145:37109/i",
+    "http://125.41.72.148:43605/bin.sh",
+    "http://115.48.37.12:47625/bin.sh",
+    "http://42.53.241.188:49853/bin.sh",
+    "http://115.63.8.145:37109/bin.sh",
+    "http://175.146.54.164:35591/bin.sh",
+    "http://178.16.54.109/etc.exe",
+    "http://91.92.242.236/files-129312398/files/file_ebb368c7ee29bd5e.exe",
+    "http://123.12.17.244:47351/i",
+    "http://112.226.200.149:34560/i",
+    "http://112.226.200.149:34560/bin.sh",
+    "http://212.164.115.235:52521/i",
+    "http://182.119.15.73:52944/i",
+    "http://210.208.111.2:53561/i",
+    "http://39.89.94.52:43636/i",
+    "http://212.164.115.235:52521/bin.sh",
+    "http://39.89.94.52:43636/bin.sh",
+    "http://45.194.25.221:36557/i",
+    "http://163.142.93.187:38525/i",
+    "http://45.194.25.221:36557/bin.sh",
+    "http://182.121.168.51:58015/i",
+    "http://110.36.75.82:45777/i",
+    "http://113.228.208.46:56903/bin.sh",
+    "http://125.41.72.148:43605/i",
+    "http://110.36.75.82:45777/bin.sh",
+    "http://115.48.37.12:47625/i",
+    "http://175.174.110.158:47459/bin.sh",
+    "http://120.84.212.135:36545/i",
+    "http://39.78.26.151:57370/bin.sh",
+    "http://113.239.253.241:39307/i",
+    "http://115.56.66.143:59123/bin.sh",
+    "http://112.113.101.43:53440/i",
+    "http://222.140.159.233:46480/bin.sh",
+    "http://120.84.212.190:40164/i",
+    "http://115.61.242.68:50097/i",
+    "http://182.121.66.162:41960/i",
+    "http://121.231.77.43:2715/i",
+    "http://182.126.113.147:53111/i",
+    "http://115.61.242.68:50097/bin.sh",
+    "http://175.174.110.158:47459/i",
+    "http://222.142.252.116:35588/i",
+    "http://84.53.221.6:61495/bin.sh",
+    "http://175.147.94.37:45880/i",
+    "http://113.239.221.126:36365/bin.sh",
+    "http://113.239.221.126:36365/i",
+    "http://210.208.111.220:46346/bin.sh",
+    "http://125.42.255.46:55570/bin.sh",
+    "http://123.9.41.95:38149/i",
+    "http://115.48.146.252:57987/bin.sh",
+    "http://61.53.110.220:49686/bin.sh",
+    "http://125.44.53.155:43350/i",
+    "http://66.212.173.225:35221/i",
+    "http://182.114.192.77:38320/i",
+    "http://112.198.238.18:53312/i",
+    "http://123.11.204.30:46437/i",
+    "http://222.142.252.116:35588/bin.sh",
+    "http://112.198.238.18:53312/bin.sh",
+    "http://61.52.159.43:42655/i",
+    "http://46.236.65.163:51558/bin.sh",
+    "http://123.13.80.50:56227/bin.sh",
+    "http://60.176.10.219:58446/bin.sh",
+    "http://115.50.0.3:52567/i",
+    "http://182.118.241.162:42966/i",
+    "http://61.53.110.220:49686/i",
+    "http://42.87.163.211:35892/bin.sh",
+    "http://117.26.83.196:34302/i",
+    "http://42.87.163.211:35892/i",
+    "http://118.173.224.60:39084/bin.sh",
+    "http://120.28.144.161:35460/bin.sh",
+    "http://220.177.11.228:55723/i",
+    "http://125.45.66.165:50850/i",
+    "http://125.45.66.165:50850/bin.sh",
+    "http://61.53.74.117:55662/i",
+    "http://219.156.20.248:59087/i",
+    "http://37.157.219.158:39929/i",
+    "http://182.118.246.94:39103/bin.sh",
+    "http://210.208.111.36:53831/i",
+    "http://27.37.101.72:54475/i",
+    "http://123.11.78.154:48079/i",
+    "http://42.239.179.192:41888/bin.sh",
+    "http://42.6.34.92:60244/bin.sh",
+    "http://123.13.80.50:56227/i",
+    "http://115.57.30.45:34814/i",
+    "http://37.157.219.158:39929/bin.sh",
+    "http://115.63.145.245:55982/i",
+    "http://118.173.224.60:39084/i",
+    "http://36.70.226.107:53300/bin.sh",
+    "http://125.41.227.14:47543/i",
+    "http://182.121.244.13:44914/i",
+    "http://219.157.34.223:37461/i",
+    "http://110.38.207.151:52550/i",
+    "http://182.126.113.147:53111/bin.sh",
+    "http://219.155.73.196:42693/bin.sh",
+    "http://61.53.119.47:53986/bin.sh",
+    "http://115.57.30.45:34814/bin.sh",
+    "http://182.116.34.137:57791/i",
+    "http://182.113.45.111:57854/i",
+    "http://112.113.101.43:53440/bin.sh",
+    "http://125.40.86.30:45927/i",
+    "http://146.158.4.238:41633/i",
+    "http://60.23.235.69:41594/i",
+    "http://222.140.216.179:36444/i",
+    "http://222.140.216.179:36444/bin.sh",
+    "http://182.114.192.77:38320/bin.sh",
+    "http://219.157.34.223:37461/bin.sh",
+    "http://105.186.118.24:44651/i",
+    "http://115.50.178.232:56864/i",
+    "http://125.46.131.83:45094/i",
+    "http://180.191.42.15:52214/i",
+    "http://61.52.159.43:42655/bin.sh",
+    "http://222.140.161.119:46353/i",
+    "http://182.119.15.73:52944/bin.sh",
+    "http://72.255.30.244:42024/i",
+    "http://115.50.0.3:52567/bin.sh",
+    "http://182.116.34.137:57791/bin.sh",
+    "http://84.53.221.6:61495/i",
+    "http://180.191.34.236:49441/bin.sh",
+    "http://116.140.186.83:34139/bin.sh",
+    "http://124.161.116.2:53893/bin.sh",
+    "http://115.54.117.199:59554/bin.sh",
+    "http://115.56.66.143:59123/i",
+    "http://125.40.3.106:41323/i",
+    "http://180.191.34.236:49441/i",
+    "http://120.84.212.190:40164/bin.sh",
+    "http://182.114.255.204:47447/i",
+    "http://120.28.144.161:35460/i",
+    "http://61.53.119.47:53986/i",
+    "http://116.53.20.49:42959/bin.sh",
+    "http://125.44.35.47:51278/i",
+    "http://218.59.109.9:54831/i",
+    "http://115.52.21.229:35387/bin.sh",
+    "http://115.50.178.232:56864/bin.sh",
+    "http://156.146.26.225:48881/bin.sh",
+    "http://110.38.210.180:57109/bin.sh",
+    "http://110.36.11.225:54040/i",
+    "http://38.124.152.252/hiddenbin/boatnet.arm",
+    "http://38.124.152.252/hiddenbin/boatnet.arm6",
+    "http://38.124.152.252/hiddenbin/boatnet.sh4",
+    "http://38.124.152.252/hiddenbin/boatnet.x86",
+    "http://38.124.152.252/hiddenbin/boatnet.arm7",
+    "http://38.124.152.252/hiddenbin/boatnet.ppc",
+    "http://38.124.152.252/hiddenbin/boatnet.mpsl",
+    "http://38.124.152.252/hiddenbin/boatnet.arc",
+    "http://27.217.35.11:45721/i",
+    "http://123.173.101.30:46920/i",
+    "http://115.55.196.158:47839/i",
+    "http://203.101.187.5:40888/i",
+    "http://dl.faster-cdn-hk.click/Telegram_v12.8.3.apk",
+    "http://123.173.101.30:46920/bin.sh",
+    "http://117.131.92.150:58096/i",
+    "http://113.237.104.66:52097/i",
+    "http://36.36.197.26:60794/i",
+    "http://113.237.104.66:52097/bin.sh",
+    "http://123.129.132.69:54242/i",
+    "http://203.101.187.5:40888/bin.sh",
+    "http://42.238.236.39:56045/bin.sh",
+    "http://125.42.255.46:55570/i",
+    "http://176.65.139.194/loader",
+    "http://110.38.210.180:57109/Mozi.m",
+    "http://194.26.192.87/rondo.gej.sh",
+    "http://219.156.112.14:60974/i",
+    "http://182.122.251.128:38940/bin.sh",
+    "https://timelevel12.com/big",
+    "https://smsechodata.cc/run.bat",
+    "http://42.233.30.71:57935/i",
+    "https://share.dovgertz.com/api/shares/AAWs5FQ3/files/322f1f5b-e04e-48f7-bf8e-91ad1bfeb2b4",
+    "http://117.131.92.150:58096/bin.sh",
+    "http://219.156.112.14:60974/bin.sh",
+    "http://42.238.236.39:56045/i",
+    "http://42.233.30.71:57935/bin.sh",
+    "http://42.235.52.223:51706/i",
+    "http://210.208.111.100:32836/i",
+    "http://42.235.52.223:51706/bin.sh",
+    "http://120.28.193.143:37216/i",
+    "http://123.8.88.128:56380/i",
+    "http://210.208.111.100:32836/bin.sh",
+    "http://120.28.193.143:37216/bin.sh",
+    "http://182.116.50.112:50970/i",
+    "http://115.58.143.1:46827/i",
+    "http://182.116.50.112:50970/bin.sh",
+    "http://222.141.13.126:32997/i",
+    "http://42.59.235.112:57254/bin.sh",
+    "http://91.92.42.242:7768/flutter.m68k",
+    "http://91.92.42.242:7768/flutter.ppc",
+    "http://91.92.42.242:7768/flutter.x86_64",
+    "http://43.228.157.73/check3.sh",
+    "http://94.154.43.67/bins/David.sparc",
+    "http://94.154.43.67/bins/David.x86_64",
+    "http://94.154.43.67/bins/David.mips64",
+    "http://94.154.43.67/bins/David.i586",
+    "http://94.154.43.67/bins/David.arc",
+    "http://vps.atlas101.us.kg:7768/dl.sh",
+    "http://31.77.227.102/dlink.sh",
+    "http://91.92.42.242:7768/dl.sh",
+    "http://91.92.42.242:7768/flutter.arm7",
+    "http://91.92.42.242:7768/flutter.mipsel",
+    "http://91.92.42.242:7768/flutter.arm8",
+    "http://91.92.42.242:7768/flutter.x86",
+    "http://91.92.42.242:7768/flutter.arm",
+    "http://91.92.42.242:7768/flutter.mips",
+    "http://vps.atlas101.us.kg:7768/flutter.ppc",
+    "http://vps.atlas101.us.kg:7768/flutter.x86",
+    "http://vps.atlas101.us.kg:7768/flutter.m68k",
+    "http://vps.atlas101.us.kg:7768/flutter.arm",
+    "http://vps.atlas101.us.kg:7768/flutter.x86_64",
+    "http://vps.atlas101.us.kg:7768/flutter.mipsel",
+    "http://vps.atlas101.us.kg:7768/flutter.arm7",
+    "http://vps.atlas101.us.kg:7768/flutter.arm8",
+    "http://vps.atlas101.us.kg:7768/flutter.mips",
+    "http://vps.atlas101.us.kg:7768/flutter.sparc",
+    "http://vps.atlas101.us.kg:7768/flutter.sh4",
+    "http://91.92.242.236/files-129312398/files/file_31dd752749e9338c.exe",
+    "http://91.92.242.236/files-129312398/files/file_babe547392332f73.exe",
+    "http://91.92.42.242:7768/flutter.sh4",
+    "http://91.92.242.236/files-129312398/files/file_40500e12ca54e02b.exe",
+    "http://91.92.242.236/files-129312398/files/file_3cca71a2b980b74a.exe",
+    "http://91.92.242.236/files-129312398/files/file_ba5747ef480cf9f7.exe",
+    "http://91.92.42.242:7768/flutter.sparc",
+    "http://157.173.119.111/bins/px86",
+    "http://77.239.124.108/iran.sh4",
+    "http://77.239.124.108/iran.mipsel",
+    "http://77.239.124.108/iran.m68k",
+    "http://77.239.124.108/iran.i486",
+    "http://157.173.119.111/bins/parm6",
+    "http://77.239.124.108/iran.armv4l",
+    "http://77.239.124.108/iran.mips",
+    "http://157.173.119.111/bins/pppc",
+    "http://77.239.124.108/iran.sparc",
+    "http://157.173.119.111/bins/pmips",
+    "http://77.239.124.108/iran.armv7l",
+    "http://157.173.119.111/bins/pmpsl",
+    "http://157.173.119.111/bins/psh4",
+    "http://157.173.119.111/bins/pspc",
+    "http://77.239.124.108/iran.armv5l",
+    "http://157.173.119.111/bins/parm",
+    "http://77.239.124.108/iran.armv6l",
+    "http://77.239.124.108/iran.x86_64",
+    "http://77.239.124.108/iran.powerpc",
+    "http://77.239.124.108/iran.aarch64",
+    "http://157.173.119.111/bins/parm5",
+    "http://157.173.119.111/bins/parm7",
+    "http://157.173.119.111/bins/px86_64",
+    "http://77.239.124.108/iran.arc",
+    "http://157.173.119.111/bins/pm68k",
+    "http://5.182.210.174/8e9f60",
+    "http://5.182.210.174/ef2a92",
+    "http://5.182.210.174/e6af82",
+    "http://5.182.210.174/18c0c9",
+    "http://5.182.210.174/1493f3",
+    "http://5.182.210.174/1b2ad0",
+    "http://5.182.210.174/a74d7e",
+    "http://5.182.210.174/dfbfd1",
+    "http://5.182.210.174/af8816",
+    "http://5.182.210.174/c6503e",
+    "http://5.182.210.174/de3e3b",
+    "http://5.182.210.174/ba982a",
+    "http://5.182.210.174/b7e327",
+    "http://5.182.210.174/fefd81",
+    "http://5.182.210.174/d1d1d3",
+    "http://5.182.210.174/8ec572",
+    "http://5.182.210.174/a1d493",
+    "http://5.182.210.174/f873b2",
+    "http://5.182.210.174/c9023c",
+    "http://5.182.210.174/4b26b9",
+    "http://5.182.210.174/c5ee89",
+    "http://5.182.210.174/e51ddb",
+    "http://5.182.210.174/acdc3b",
+    "http://5.182.210.174/47b560",
+    "http://5.182.210.174/6b8b4d",
+    "http://5.182.210.174/1a029e",
+    "http://5.182.210.174/5969e9",
+    "http://5.182.210.174/a8ac25",
+    "http://5.182.210.174/796fc4",
+    "http://5.182.210.174/8e5a00",
+    "http://5.182.210.174/00df69",
+    "http://5.182.210.174/7836d7",
+    "http://5.182.210.174/9846b5",
+    "http://5.182.210.174/46c7b2",
+    "http://5.182.210.174/694268",
+    "http://5.182.210.174/523965",
+    "http://110.39.248.169:58267/i",
+    "http://60.184.149.85:39731/i",
+    "http://110.36.77.162:44453/i",
+    "http://115.58.143.1:46827/bin.sh",
+    "http://222.141.13.126:32997/bin.sh",
+    "http://115.54.117.199:59554/i",
+    "http://60.184.149.85:39731/bin.sh",
+    "http://210.208.110.172:59900/i",
+    "http://91.92.47.97/bins/bot.x86",
+    "http://91.92.47.97/bins/bot.arm7",
+    "http://91.92.47.97/bins/bot.m68k",
+    "http://91.92.47.97/bins/bot.arm4",
+    "http://91.92.47.97/bins/bot.arm8",
+    "http://91.92.47.97/bins/bot.i586",
+    "http://91.92.47.97/bins/bot.ppc440",
+    "http://91.92.47.97/bins/bot.arm5",
+    "http://91.92.47.97/bins/bot.arc",
+    "http://91.92.47.97/bins/bot.spc",
+    "http://91.92.47.97/bins/bot.mips",
+    "http://91.92.47.97/bins/bot.arm6",
+    "http://91.92.47.97/bins/bot.x86_64",
+    "http://91.92.47.97/bins/bot.mpsl",
+    "http://91.92.47.97/bins/bot.sh4",
+    "http://91.92.47.97/bins/bot.ppc",
+    "http://91.92.47.97/bins/wget.sh",
+    "http://91.92.47.97/bins/bot.i486",
+    "http://115.55.9.97:44103/i",
+    "http://110.36.77.162:44453/bin.sh",
+    "http://42.224.67.38:47591/i",
+    "http://123.9.41.95:38149/bin.sh",
+    "http://42.231.187.33:46290/i",
+    "http://110.38.211.139:46635/i",
+    "http://221.225.253.118:42553/i",
+    "http://113.236.135.234:57543/i",
+    "http://42.224.67.38:47591/bin.sh",
+    "http://119.166.79.188:45758/i",
+    "http://119.166.79.188:45758/bin.sh",
+    "http://221.225.253.118:42553/bin.sh",
+    "http://110.38.210.180:57109/i",
+    "http://182.117.78.184:52484/i",
+    "http://182.117.78.184:52484/bin.sh",
+    "http://113.236.135.234:57543/bin.sh",
+    "http://42.231.187.33:46290/bin.sh",
+    "http://42.224.194.129:53622/i",
+    "http://182.116.113.64:48265/i",
+    "http://123.5.153.69:57210/bin.sh",
+    "http://123.14.127.32:60165/i",
+    "http://42.234.162.6:59734/i",
+    "http://114.227.64.43:42442/bin.sh",
+    "http://91.92.242.236/files-129312398/files/file_4b8d61b5a6f660b5.exe",
+    "http://61.53.153.109:41774/i",
     "http://196.190.133.180:47839/i",
     "http://123.14.127.32:60165/bin.sh",
     "http://196.190.133.180:47839/bin.sh",
@@ -28,7 +500,15 @@ UrlClickEvents
     "http://141.11.100.247/7rxmh7q5xk2g/assets/js/keexr0blbj?token=ckcwX4we4TRhshh4szhmDh3DK40yy9KB",
     "http://141.11.100.247/7rxmh7q5xk2g/assets/js/vuh58w66ti?token=ckcwX4we4TRhshh4szhmDh3DK40yy9KB",
     "http://141.11.100.247/7rxmh7q5xk2g/assets/js/bnah2628wi?token=ckcwX4we4TRhshh4szhmDh3DK40yy9KB",
-    "http://141.11.100.247/7rxmh7q5xk2g/assets/js/f0f46g94yc?token=ckcwX4we4TRhshh4szhmDh3DK40yy9KB",
+    "http://141.11.100.247/7rxmh7q5xk2g/assets/js/f0f46g94yc?token=ckcwX4we4TRhshh4szhmDh3DK40yy9KB"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 2 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://141.11.100.247/7rxmh7q5xk2g/assets/js/xwrwybh158?token=ckcwX4we4TRhshh4szhmDh3DK40yy9KB",
     "http://141.11.100.247/7rxmh7q5xk2g/assets/js/y6lkjsua3s?token=ckcwX4we4TRhshh4szhmDh3DK40yy9KB",
     "http://141.11.100.247/7rxmh7q5xk2g/assets/js/pecxqaf4jh?token=ckcwX4we4TRhshh4szhmDh3DK40yy9KB",
@@ -500,15 +980,7 @@ UrlClickEvents
     "http://115.49.127.19:51010/i",
     "http://59.96.138.90:37638/i",
     "http://42.239.179.192:41888/i",
-    "http://2.26.81.46/pandora.x86_64"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 2 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://2.26.81.46/pandora.x86_64",
     "http://62.60.249.165/main_arm6",
     "http://62.60.249.165/main_arm7",
     "http://62.60.249.165/scanner",
@@ -536,7 +1008,15 @@ UrlClickEvents
     "http://192.162.199.149/uploads/d6a0dbb9ae834113a8401012b1f9aa18.exe",
     "http://103.77.246.150/loader.sh",
     "http://91.92.242.236/files-129312398/files/file_48852a33f51921f1.exe",
-    "http://218.0.112.226:51471/Mozi.a",
+    "http://218.0.112.226:51471/Mozi.a"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 3 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://91.92.242.236/files-129312398/files/file_776621fa56cb2ef8.exe",
     "http://91.92.242.236/files-129312398/files/file_cb2aa48501d6d3b6.exe",
     "http://91.92.242.236/files-129312398/files/file_64858a8342cb3c62.exe",
@@ -1008,15 +1488,7 @@ UrlClickEvents
     "http://176.65.139.130/bins/bin.armv5l",
     "http://176.65.139.130/bins/bin.armv6l",
     "http://176.65.139.132/c1",
-    "http://176.65.139.132/c2"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 3 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://176.65.139.132/c2",
     "http://176.65.139.132/bins/x86_64",
     "http://176.65.139.132/bins/arm7",
     "http://176.65.139.132/bins/i686",
@@ -1044,7 +1516,15 @@ UrlClickEvents
     "http://219.155.11.56:58484/bin.sh",
     "http://182.121.155.69:33600/i",
     "http://182.116.120.105:42593/i",
-    "http://182.116.120.105:42593/bin.sh",
+    "http://182.116.120.105:42593/bin.sh"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 4 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://45.194.25.221:39724/i",
     "http://45.194.25.221:39724/bin.sh",
     "http://119.115.36.34:51030/i",
@@ -1516,15 +1996,7 @@ UrlClickEvents
     "http://123.11.11.28:36844/bin.sh",
     "http://123.129.2.24:55703/bin.sh",
     "http://176.106.241.72:39541/i",
-    "http://115.53.209.13:43098/bin.sh"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 4 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://115.53.209.13:43098/bin.sh",
     "http://110.136.5.189:45058/i",
     "http://115.55.131.216:52075/i",
     "http://219.156.184.4:33396/bin.sh",
@@ -1552,7 +2024,15 @@ UrlClickEvents
     "http://219.156.93.123:50459/i",
     "http://182.117.68.26:55093/i",
     "http://115.55.189.247:57147/i",
-    "http://39.73.44.67:44345/bin.sh",
+    "http://39.73.44.67:44345/bin.sh"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 5 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://196.189.98.77:39424/i",
     "http://113.239.223.235:54830/bin.sh",
     "http://113.239.223.235:54830/i",
@@ -2024,15 +2504,7 @@ UrlClickEvents
     "http://91.92.242.236/files-129312398/files/file_15b107e860013c5e.exe",
     "http://91.92.242.236/files-129312398/files/file_91b0a71f46718f87.exe",
     "http://196.190.224.62:36692/i",
-    "https://www-connect-secure-wellcfargo.sekolahkejarpaket.com/wellsfargo_new_obf_08.07.26.zip"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 5 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://www-connect-secure-wellcfargo.sekolahkejarpaket.com/wellsfargo_new_obf_08.07.26.zip",
     "http://36.69.84.54:40914/bin.sh",
     "http://36.69.84.54:40914/i",
     "http://31.77.227.121/bins/pmpsl",
@@ -2060,7 +2532,15 @@ UrlClickEvents
     "http://46.151.182.200:8080/bins/bot.i486",
     "http://46.151.182.200:8080/bot.i686",
     "http://46.151.182.200:8080/bins/dlr.ppc",
-    "http://46.151.182.200:8080/bins/dlr.sh4",
+    "http://46.151.182.200:8080/bins/dlr.sh4"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 6 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://46.151.182.200:8080/bins/bot.i686",
     "http://46.151.182.200:8080/bins/bot.arm5",
     "http://46.151.182.200:8080/bins/dlr.m68k",
@@ -2532,15 +3012,7 @@ UrlClickEvents
     "http://129.121.110.105/adb.sh",
     "http://123.5.124.6:35918/i",
     "http://123.185.91.8:52353/i",
-    "http://123.5.124.6:35918/bin.sh"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 6 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://123.5.124.6:35918/bin.sh",
     "http://125.42.33.2:54415/i",
     "http://176.65.139.247/armv4l",
     "http://176.65.139.247/armv5l",
@@ -2568,7 +3040,15 @@ UrlClickEvents
     "http://8.219.62.229:60143/linux",
     "http://8.222.179.91:60122/linux",
     "http://8.219.155.47:60149/linux",
-    "http://64.226.68.236:60128/linux",
+    "http://64.226.68.236:60128/linux"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 7 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://47.245.84.42:60116/linux",
     "http://47.236.28.220:60115/linux",
     "http://47.236.146.147:60134/linux",
@@ -3040,15 +3520,7 @@ UrlClickEvents
     "http://manbipll.duckdns.org/bins/ppc",
     "http://manbipll.duckdns.org/bins/arm7",
     "http://manbipll.duckdns.org/bins/mips",
-    "http://manbipll.duckdns.org/bins/x86_64"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 7 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://manbipll.duckdns.org/bins/x86_64",
     "http://manbipll.duckdns.org/bins/mpsl",
     "http://manbipll.duckdns.org/bins/arm6",
     "http://94.154.43.97/bins/spc",
@@ -3076,7 +3548,15 @@ UrlClickEvents
     "http://181.214.136.12/hiddenbin/Mystic.arc",
     "http://36.255.97.21/main_mips",
     "http://181.214.136.12/hiddenbin/Mystic.arm5",
-    "http://181.214.136.12/hiddenbin/Mystic.sh4",
+    "http://181.214.136.12/hiddenbin/Mystic.sh4"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 8 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://181.214.136.12/hiddenbin/Mystic.arm",
     "http://23.251.34.31/i-5.8-6.Sakura",
     "http://23.251.34.31/m-p.s-l.Sakura",
@@ -3548,15 +4028,7 @@ UrlClickEvents
     "https://94.154.43.60/x86",
     "https://94.154.43.60/disconnectraw.mipsel",
     "https://94.154.43.60/mips",
-    "https://94.154.43.60/arm7"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 8 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://94.154.43.60/arm7",
     "https://94.154.43.60/disconnectraw.arm7",
     "https://94.154.43.60/disconnectraw.x86_64",
     "https://94.154.43.60/x86_64",
@@ -3584,7 +4056,15 @@ UrlClickEvents
     "http://110.37.69.240:41361/i",
     "http://175.167.183.194:52110/i",
     "http://5.182.210.174/033fd6",
-    "http://5.182.210.174/18c0e1",
+    "http://5.182.210.174/18c0e1"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 9 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://5.182.210.174/e34be1",
     "http://5.182.210.174/16f2c2",
     "http://5.182.210.174/923a9e",
@@ -4056,15 +4536,7 @@ UrlClickEvents
     "http://117.26.226.42:41542/bin.sh",
     "http://160.191.242.92/activemq",
     "http://112.225.177.252:53050/i",
-    "http://112.225.177.252:53050/bin.sh"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 9 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://112.225.177.252:53050/bin.sh",
     "http://110.36.13.156:47216/i",
     "http://160.191.242.92/dvrk",
     "http://160.191.242.92/jenload",
@@ -4092,7 +4564,15 @@ UrlClickEvents
     "http://160.191.242.92/ar7",
     "http://160.191.242.92/main_mpsl",
     "http://160.191.242.92/skid.ar6",
-    "http://160.191.242.92/pidtest/pid.x86_64",
+    "http://160.191.242.92/pidtest/pid.x86_64"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 10 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://160.191.242.92/pid.ar7",
     "http://160.191.242.92/mipsel",
     "http://160.191.242.92/mips",
@@ -4564,15 +5044,7 @@ UrlClickEvents
     "http://182.127.104.208:40454/i",
     "http://110.138.134.69:46780/bin.sh",
     "http://39.80.60.21:60792/bin.sh",
-    "http://196.190.10.252:39675/i"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 10 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://196.190.10.252:39675/i",
     "http://120.28.139.212:38655/bin.sh",
     "http://222.138.119.216:49346/i",
     "http://105.225.133.213:37257/bin.sh",
@@ -4600,7 +5072,15 @@ UrlClickEvents
     "http://110.39.231.36:48526/i",
     "http://61.136.49.183:57439/i",
     "http://27.217.3.109:54209/i",
-    "http://61.136.49.183:57439/bin.sh",
+    "http://61.136.49.183:57439/bin.sh"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 11 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://110.39.231.36:48526/bin.sh",
     "http://94.183.233.225/data_aarch64",
     "http://112.248.83.6:56719/i",
@@ -5072,15 +5552,7 @@ UrlClickEvents
     "http://94.154.43.100/bins/client_powerpc",
     "http://94.154.43.133/static/js/sdfjgnjsdf.i486",
     "http://94.154.43.129/bins/client_m68k",
-    "http://94.154.43.133/static/js/sdfjgnjsdf.sh4"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 11 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://94.154.43.133/static/js/sdfjgnjsdf.sh4",
     "http://94.154.43.46/bins/client_mipsel",
     "http://ssh.microc2.lol/static/js/gpon",
     "http://94.154.43.100/static/js/sdfjgnjsdf.arm",
@@ -5108,7 +5580,15 @@ UrlClickEvents
     "http://smartsummitlo.pro/static/js/sdfjgnjsdf.i486",
     "http://94.154.43.100/bins/client_i586",
     "http://94.154.43.121/static/js/sdfjgnjsdf.i686",
-    "http://94.154.43.125/static/js/sdfjgnjsdf.i686",
+    "http://94.154.43.125/static/js/sdfjgnjsdf.i686"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 12 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://94.154.43.46/static/js/sdfjgnjsdf.mips",
     "http://94.154.43.129/static/js/sdfjgnjsdf.arm",
     "http://smartsummitlo.pro/bins/client_armv5l",
@@ -5580,15 +6060,7 @@ UrlClickEvents
     "http://silverrockay.pro/bins/client_mips",
     "http://silverrockay.pro/static/js/sdfjgnjsdf.ppc",
     "http://silverrockay.pro/bins/client_mipsel",
-    "http://silverrockay.pro/bins/client_sh4"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 12 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://silverrockay.pro/bins/client_sh4",
     "http://silverrockay.pro/bins/client_powerpc",
     "http://silverrockay.pro/bins/client",
     "http://silverrockay.pro/bins/client_x86_64",
@@ -5616,7 +6088,15 @@ UrlClickEvents
     "http://94.154.43.104/static/js/sdfjgnjsdf.m68k",
     "http://94.154.43.104/bins/client_i586",
     "http://94.154.43.104/bins/client",
-    "http://94.154.43.104/bins/client_i686",
+    "http://94.154.43.104/bins/client_i686"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 13 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://94.154.43.104/static/js/sdfjgnjsdf.ppc",
     "http://94.154.43.104/static/js/sdfjgnjsdf.arc",
     "http://94.154.43.104/static/js/sdfjgnjsdf.arm",
@@ -6088,15 +6568,7 @@ UrlClickEvents
     "https://ryanborn.net/DAD/crypted.ps1",
     "http://172.245.209.133/70/weprovideforbesthingstocomebackgoodthings.hta",
     "http://172.245.209.133/70/img_201031.png",
-    "http://107.175.88.87/22/img_203145.png"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 13 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://107.175.88.87/22/img_203145.png",
     "http://107.175.88.87/22/goodpersonforbestthingsfor.hta",
     "https://cryptomeshforge5.lol/soft/muvaro.exe",
     "https://cryptomeshforge5.lol/noncrypt/21-32/kJHGFDs.exe",
@@ -6124,7 +6596,15 @@ UrlClickEvents
     "https://cryptomeshforge5.lol/crypt/21-32/jhgkuyyg.exe",
     "https://cryptomeshforge5.lol/noncrypt/21-32/hjbk.exe",
     "https://cryptomeshforge5.lol/crypt/obsh/mixres3.exe",
-    "https://cryptomeshforge5.lol/noncrypt/21-32/arFtU.exe",
+    "https://cryptomeshforge5.lol/noncrypt/21-32/arFtU.exe"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 14 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://cryptomeshforge5.lol/noncrypt/21-32/KLLNMF.exe",
     "https://cryptomeshforge5.lol/noncrypt/21-32/hnmh.exe",
     "https://cryptomeshforge5.lol/noncrypt/obsh/crz.exe",
@@ -6596,15 +7076,7 @@ UrlClickEvents
     "http://94.154.43.96/bins/arm7",
     "http://94.154.43.210/a.sh",
     "http://94.154.43.210/miron.armv7l",
-    "http://94.154.43.210/miron.x86_64"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 14 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://94.154.43.210/miron.x86_64",
     "http://110.36.93.217:55220/bin.sh",
     "http://112.248.119.177:37050/i",
     "http://182.126.92.109:50232/i",
@@ -6632,7 +7104,15 @@ UrlClickEvents
     "http://59.96.137.87:43770/i",
     "http://107.172.172.208/72/weneedbestthingsfromthebetterplacesonthis.hta",
     "http://155.103.69.239/50/img_010818.png",
-    "http://155.103.69.239/50/wegivingbestthingsforbetterplacescoming.hta",
+    "http://155.103.69.239/50/wegivingbestthingsforbetterplacescoming.hta"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 15 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://107.173.9.105/70/img_231911.png",
     "http://107.173.9.105/70/goodthingsfromtheheartformebestfeelsgivingforme.hta",
     "http://172.245.209.133/65/img_234612.png",
@@ -7104,15 +7584,7 @@ UrlClickEvents
     "http://125.44.60.121:45542/i",
     "http://123.5.126.137:60939/bin.sh",
     "http://115.49.131.148:60155/bin.sh",
-    "http://105.186.85.41:52445/bin.sh"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 15 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://105.186.85.41:52445/bin.sh",
     "http://115.63.54.54:51962/i",
     "http://91.92.242.236/files-129312398/files/file_5ba49755e4182c02.exe",
     "http://125.44.60.121:45542/bin.sh",
@@ -7140,7 +7612,15 @@ UrlClickEvents
     "http://5.182.210.61/78c426",
     "http://5.182.210.61/fdf7b4",
     "http://5.182.210.61/c18c96",
-    "http://5.182.210.61/7d759c",
+    "http://5.182.210.61/7d759c"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 16 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://5.182.210.61/4a3a1c",
     "http://5.182.210.61/cdbc52",
     "http://210.208.110.147:50936/bin.sh",
@@ -7612,15 +8092,7 @@ UrlClickEvents
     "http://110.37.61.44:56932/bin.sh",
     "http://45.135.194.70.ptr.pfcloud.network/ok",
     "http://42.227.3.196:40408/bin.sh",
-    "http://61.52.60.101:38949/bin.sh"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 16 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://61.52.60.101:38949/bin.sh",
     "http://45.38.249.148/data_arm4",
     "http://45.38.249.148/data_powerpc",
     "http://45.38.249.148/data_arm7",
@@ -7648,7 +8120,15 @@ UrlClickEvents
     "http://115.63.189.195:55987/bin.sh",
     "http://123.14.220.66:42241/i",
     "http://123.14.220.66:42241/bin.sh",
-    "http://115.61.0.203:49824/i",
+    "http://115.61.0.203:49824/i"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 17 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://112.248.105.19:57268/bin.sh",
     "http://222.137.144.217:41848/i",
     "http://119.186.204.22:51908/bin.sh",
@@ -8120,15 +8600,7 @@ UrlClickEvents
     "http://31.56.209.84/riscv64",
     "http://31.56.209.84/arm",
     "http://31.56.209.84/mips64",
-    "http://31.56.209.84/x86_64"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 17 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://31.56.209.84/x86_64",
     "http://31.56.209.84/mips",
     "http://31.56.209.84/ppc64",
     "http://31.56.209.84/arm7",
@@ -8156,7 +8628,15 @@ UrlClickEvents
     "http://176.65.148.217/no_killer/sh4",
     "http://176.65.148.217/bins/x86",
     "http://176.65.148.217/no_killer/mpsl",
-    "http://176.65.148.217/bins/mpsl",
+    "http://176.65.148.217/bins/mpsl"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 18 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://176.65.148.217/no_killer/arm7",
     "http://176.65.148.217/no_killer/arm6",
     "http://176.65.148.217/bins/m68k",
@@ -8628,15 +9108,7 @@ UrlClickEvents
     "https://dn-pdflite.lat/files/a.ste-pdffiller.lat/b556be871d7a36fb/DOC-DVJZ7M.zip",
     "https://dn-pdflite.lat/files/a.ste-pdffiller.lat/2376c74a556f6c2f/DOC-B8P5PF.zip",
     "https://dn-pdflite.lat/files/a3asesor.lat/4224f2fb458e2402/A3asesor-3RZTJ8.zip",
-    "https://dn-pdflite.lat/files/a3asesor.lat/05a2ae1ad0bdaa17/A3asesor-ZEG74F.lnk"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 18 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://dn-pdflite.lat/files/a3asesor.lat/05a2ae1ad0bdaa17/A3asesor-ZEG74F.lnk",
     "https://dn-pdflite.lat/files/a3asesor.lat/91418e59d0136ce5/A3asesor-I6VELQ.lnk",
     "https://dn-pdflite.lat/files/a.ste-pdffiller.lat/c8d18064de526c4c/DOC-94XXEQ.zip",
     "https://dn-pdflite.lat/files/a3asesor.lat/1abe3434b2650a4d/CegidPrimavera-O34XLQ.zip",
@@ -8664,7 +9136,15 @@ UrlClickEvents
     "https://dn-pdflite.lat/files/a.ste-pdffiller.lat/94a3212f66204376/DOC-JCGBT0.zip",
     "https://dn-pdflite.lat/files/a.ste-pdffiller.lat/2b673cedcdd82496/DOC-8FMGHX.zip",
     "https://dn-pdflite.lat/files/a3asesor.lat/2a76a33414cf058f/A3asesor-Y73G2S.zip",
-    "https://dn-pdflite.lat/files/a.ste-pdffiller.lat/af1fb13fad1352c1/DOC-WTUSSL.zip",
+    "https://dn-pdflite.lat/files/a.ste-pdffiller.lat/af1fb13fad1352c1/DOC-WTUSSL.zip"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 19 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://dn-pdflite.lat/files/a.ste-pdffiller.lat/f8ae57262c6c5102/DOC-YXRHQ1.zip",
     "https://dn-pdflite.lat/files/a3asesor.lat/73981155b6f64c78/A3asesor-498CWD.zip",
     "https://dn-pdflite.lat/files/a3asesor.lat/414bd9bc12930697/A3asesor-9H02GE.zip",
@@ -9136,15 +9616,7 @@ UrlClickEvents
     "http://182.119.232.123:58614/i",
     "http://222.137.175.111:33777/bin.sh",
     "http://103.249.199.3:54200/i",
-    "http://8.134.218.77:9875/linux"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 19 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://8.134.218.77:9875/linux",
     "http://109.236.44.113:44431/bin.sh",
     "http://105.184.58.67:41241/bin.sh",
     "http://110.36.93.182:60247/i",
@@ -9172,7 +9644,15 @@ UrlClickEvents
     "http://42.238.170.249:54324/i",
     "http://110.39.226.32:35459/bin.sh",
     "http://115.63.245.110:42749/i",
-    "http://123.129.134.146:44202/i",
+    "http://123.129.134.146:44202/i"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 20 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://42.226.71.40:52557/i",
     "http://122.233.151.133:41093/bin.sh",
     "http://39.81.110.234:45926/bin.sh",
@@ -9644,15 +10124,7 @@ UrlClickEvents
     "http://182.119.185.88:33054/i",
     "http://202.107.5.110:52110/i",
     "http://105.184.102.34:57707/i",
-    "http://123.8.0.146:37646/i"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 20 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://123.8.0.146:37646/i",
     "http://182.121.104.239:51878/i",
     "http://221.14.111.171:33902/i",
     "http://115.51.95.135:41991/i",
@@ -9680,7 +10152,15 @@ UrlClickEvents
     "http://59.96.142.198:43829/bin.sh",
     "http://182.113.24.161:54382/i",
     "http://222.241.210.219:59142/bin.sh",
-    "http://42.235.88.72:40827/bin.sh",
+    "http://42.235.88.72:40827/bin.sh"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 21 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://59.42.91.193:42731/i",
     "http://222.141.83.246:54420/i",
     "http://219.155.194.120:60439/i",
@@ -10152,15 +10632,7 @@ UrlClickEvents
     "http://110.37.39.234:36507/bin.sh",
     "http://182.112.97.110:44347/i",
     "http://221.15.185.32:52527/bin.sh",
-    "http://221.15.187.186:45713/bin.sh"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 21 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://221.15.187.186:45713/bin.sh",
     "http://222.182.122.70:50511/i",
     "http://105.184.121.239:34739/i",
     "http://182.119.181.65:41920/bin.sh",
@@ -10188,7 +10660,15 @@ UrlClickEvents
     "http://192.159.99.131:8080/loader.exe",
     "http://105.224.72.150:33723/i",
     "http://115.50.229.76:46799/bin.sh",
-    "http://182.117.152.80:55723/bin.sh",
+    "http://182.117.152.80:55723/bin.sh"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 22 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://125.160.208.110:57888/i",
     "http://61.53.135.228:56936/bin.sh",
     "http://39.74.61.72:46007/bin.sh",
@@ -10660,15 +11140,7 @@ UrlClickEvents
     "http://182.121.72.50:38226/bin.sh",
     "http://24.95.54.96:52325/i",
     "http://101.23.127.47:39961/bin.sh",
-    "http://222.140.180.134:47266/i"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 22 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://222.140.180.134:47266/i",
     "http://24.95.54.96:52325/bin.sh",
     "http://222.140.180.134:47266/bin.sh",
     "http://105.184.105.72:40719/bin.sh",
@@ -10696,7 +11168,15 @@ UrlClickEvents
     "http://91.199.133.133:8080/bot.arm6",
     "http://91.199.133.133:8080/real_ppc",
     "http://91.199.133.133:8080/bot.x86",
-    "http://91.199.133.133:8080/real_i686",
+    "http://91.199.133.133:8080/real_i686"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 23 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://91.199.133.133:8080/real_arm5",
     "http://91.199.133.133:8080/backup_0729_0324/real_arm",
     "http://91.199.133.133:8080/backup_0729_0324/real_mips",
@@ -11168,15 +11648,7 @@ UrlClickEvents
     "http://78.38.19.88:35262/i",
     "http://124.162.49.231:51581/bin.sh",
     "http://110.38.208.89:56622/bin.sh",
-    "https://download1532.mediafire.com/21oatf109angbYHS_5E13zp2tv1nrhFnvJ0gg1xu8cNiNYmpQsqQwVIBDhtgZbv502QKPRty_f7v0Q1YDIezAPki058YoTyUvQlPPV9imHcjinAmWK9TX8k4_hyBIdy1VXZlUYZsvrAIT9T28Ci2sqpYM_8WaPe4Cldt3koHikpZbNg/efqgjl6i8zrh9vw/x86"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 23 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://download1532.mediafire.com/21oatf109angbYHS_5E13zp2tv1nrhFnvJ0gg1xu8cNiNYmpQsqQwVIBDhtgZbv502QKPRty_f7v0Q1YDIezAPki058YoTyUvQlPPV9imHcjinAmWK9TX8k4_hyBIdy1VXZlUYZsvrAIT9T28Ci2sqpYM_8WaPe4Cldt3koHikpZbNg/efqgjl6i8zrh9vw/x86",
     "http://123.14.208.6:40785/bin.sh",
     "http://43.252.159.101:43938/i",
     "http://89.189.181.54:35016/i",
@@ -11204,7 +11676,15 @@ UrlClickEvents
     "http://123.12.27.213:44894/i",
     "https://github.com/xmrig/xmrig/releases/download/v6.21.0/xmrig-6.21.0-linux-static-x64.tar.gz",
     "http://82.197.93.215/cp",
-    "http://27.202.20.139:40967/i",
+    "http://27.202.20.139:40967/i"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 24 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://60.170.253.77:60105/linux",
     "http://119.179.254.52:57194/bin.sh",
     "http://110.37.118.111:34504/i",
@@ -11676,15 +12156,7 @@ UrlClickEvents
     "http://111.178.125.136:60629/bin.sh",
     "http://31-56-209-153.cprapid.com/nz/nz.arm6",
     "http://222.141.76.13:35648/i",
-    "http://wqok85qtq.net/nz/nz.arc"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 24 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://wqok85qtq.net/nz/nz.arc",
     "http://31-56-209-153.cprapid.com/nz/nz.i686",
     "http://31-56-209-153.cprapid.com/nz/nz.arm5",
     "http://31-56-209-153.cprapid.com/nz/nz.x86_64",
@@ -11712,7 +12184,15 @@ UrlClickEvents
     "http://s3o65awrf56.net/nz/nz.arm",
     "http://s3o65awrf56.net/nz/nz.i686",
     "http://s3o65awrf56.net/nz/nz.arc",
-    "http://s3o65awrf56.net/nz.sh",
+    "http://s3o65awrf56.net/nz.sh"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 25 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://s3o65awrf56.net/w.sh",
     "http://s3o65awrf56.net/wget.sh",
     "http://121.205.208.226:40109/bin.sh",
@@ -12184,15 +12664,7 @@ UrlClickEvents
     "http://osfjkqoiw382r552q.hopto.org/nz/debug",
     "http://osfjkqoiw382r552q.hopto.org/nz/nz.m68k",
     "http://wqok85qtq.net/c.sh",
-    "http://wqok85qtq.net/nz/nz.arm5"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 25 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://wqok85qtq.net/nz/nz.arm5",
     "http://osfjkqoiw382r552q.hopto.org/nz/nz.arm7",
     "http://osfjkqoiw382r552q.hopto.org/nz/nz.x86_64",
     "http://s3o65awrf56.net/nz/nz.arm5",
@@ -12220,7 +12692,15 @@ UrlClickEvents
     "http://s3o65awrf56.net/nz/nz.ppc",
     "http://s3o65awrf56.net/nz/nz.sh",
     "http://osfjkqoiw382r552q.hopto.org/nz/nz.sh",
-    "http://dsgagfsahkfsahfjs.shop/zero.armv6l",
+    "http://dsgagfsahkfsahfjs.shop/zero.armv6l"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 26 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://dsgagfsahkfsahfjs.shop/zero.powerpc",
     "http://dsgagfsahkfsahfjs.shop/zero.sh4",
     "http://dsgagfsahkfsahfjs.shop/zero.sparc",
@@ -12692,15 +13172,7 @@ UrlClickEvents
     "http://125.44.38.211:54876/bin.sh",
     "https://198.211.109.187/Bin/ScreenConnect.ClientSetup.exe",
     "https://198.211.109.187/bin/support.client.exe",
-    "http://42.227.197.44:52761/bin.sh"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 26 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://42.227.197.44:52761/bin.sh",
     "http://59.180.170.37:53154/i",
     "http://mail.rarewingvm.blog/hiddenbin/boatnet.x86",
     "http://60.21.94.139:47752/bin.sh",
@@ -12728,7 +13200,15 @@ UrlClickEvents
     "http://rarewingvm.blog/hiddenbin/boatnet.i686",
     "http://rarewingvm.blog/hiddenbin/boatnet.sh4",
     "http://rarewingvm.blog/hiddenbin/boatnet.i486",
-    "http://rarewingvm.blog/hiddenbin/boatnet.ppc",
+    "http://rarewingvm.blog/hiddenbin/boatnet.ppc"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 27 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://rarewingvm.blog/mips",
     "http://rarewingvm.blog/hiddenbin/boatnet.mips",
     "http://rarewingvm.blog/hiddenbin/boatnet.mpsl",
@@ -13200,15 +13680,7 @@ UrlClickEvents
     "http://185.228.82.213/bins/morte.m68k",
     "http://185.228.82.213/bins/morte.arm4",
     "http://91.92.242.236/files-129312398/files/file_fa17245ac0dcd155.exe",
-    "http://117.253.61.124:54512/bin.sh"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 27 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://117.253.61.124:54512/bin.sh",
     "http://27.207.231.96:35454/bin.sh",
     "http://61.53.147.144:57960/bin.sh",
     "http://110.37.39.146:47539/bin.sh",
@@ -13236,7 +13708,15 @@ UrlClickEvents
     "http://115.55.239.136:53259/bin.sh",
     "http://105.184.215.155:41731/bin.sh",
     "http://61.52.82.234:58492/bin.sh",
-    "http://5.182.210.61/425e20",
+    "http://5.182.210.61/425e20"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 28 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://5.182.210.61/9700c7",
     "http://5.182.210.61/b36640",
     "http://5.182.210.61/5e69cf",
@@ -13708,15 +14188,7 @@ UrlClickEvents
     "https://always-undetected.com/launches/7RLNS5YKVKSYU7O/10d1140834f07257e8d2f476a789e42819b30ab6.exe",
     "https://always-undetected.com/launches/60DR2FENRDJX4S1/865fe58959d3dd47904f3091753667b8486012a0.exe",
     "https://always-undetected.com/launches/6AC64UI1HX30XMD/be9d27849c4c302b4dfe65b2709988e0c352896f.exe",
-    "https://always-undetected.com/launches/03XPBIT61KFB1LM/e389dc966d42c7cf9ae97e00bcd8f94f0777f64d.exe"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 28 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://always-undetected.com/launches/03XPBIT61KFB1LM/e389dc966d42c7cf9ae97e00bcd8f94f0777f64d.exe",
     "https://always-undetected.com/launches/11JO8CO7M5ZMHLQ/164a5ecd2b08a29e453600d9378a941e0ee939a8.exe",
     "https://undetected-always.com/launches/E5L5NSVQKGHENZG/4e21e9c9ba1713a1ef2aee9c2d4df016c7ad7072.exe",
     "https://always-undetected.com/launches/0EMA4JLGOYLOK4W/2c191363ea68140df531832ba123d698b1d56748.exe",
@@ -13744,7 +14216,15 @@ UrlClickEvents
     "http://123.13.141.30:32930/bin.sh",
     "http://122.159.243.224:41653/i",
     "http://123.7.236.222:55776/bin.sh",
-    "http://160.30.142.2:42184/i",
+    "http://160.30.142.2:42184/i"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 29 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://160.30.142.2:42184/bin.sh",
     "http://182.113.219.53:55448/i",
     "http://182.113.219.53:55448/bin.sh",
@@ -14216,15 +14696,7 @@ UrlClickEvents
     "http://pine-bathbear.xyz/avast_update",
     "http://briskpair-rode.xyz/avast_update",
     "http://smug-lend-gray.xyz/avast_update",
-    "http://gridgrimmorn.xyz/avast_update"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 29 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://gridgrimmorn.xyz/avast_update",
     "http://char-avid-verb.xyz/avast_update",
     "http://duck-fondmoan.xyz/avast_update",
     "http://claylikepilot.xyz/avast_update",
@@ -14252,7 +14724,15 @@ UrlClickEvents
     "http://songsunk-view.xyz/avast_update",
     "http://jerkloss-flux.xyz/avast_update",
     "http://festgrape-bog.xyz/avast_update",
-    "http://papa-graze-wart.xyz/avast_update",
+    "http://papa-graze-wart.xyz/avast_update"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 30 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://moandownsave.xyz/avast_update",
     "http://same-theeaft.xyz/avast_update",
     "http://ballweldleer.xyz/avast_update",
@@ -14724,15 +15204,7 @@ UrlClickEvents
     "https://misty-cherry-cea3.uploadsimg.workers.dev/nTAVK",
     "https://afonja.nfy.fyi/img_120651.png",
     "https://misty-cherry-cea3.uploadsimg.workers.dev/zYwUb",
-    "http://160.22.106.17/release/x86_64"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 30 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://160.22.106.17/release/x86_64",
     "http://160.22.106.17/release/x86_32",
     "http://61.53.135.168:33597/i",
     "http://115.58.251.134:37255/i",
@@ -14760,7 +15232,15 @@ UrlClickEvents
     "http://163.142.92.229:35959/bin.sh",
     "http://105.225.189.37:52601/i",
     "http://5.59.107.34:58496/i",
-    "http://110.185.65.207:57774/i",
+    "http://110.185.65.207:57774/i"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 31 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://5.59.107.34:58496/bin.sh",
     "http://129.121.114.124/5YEF",
     "http://129.121.114.124/bB3",
@@ -15232,15 +15712,7 @@ UrlClickEvents
     "https://jb.mywwjj.xyz/D/2/C_1.vbs",
     "https://jb.mywwjj.xyz/D/2/D2_29_2.vbs",
     "https://jb.mywwjj.xyz/D/2/D2_29_1.vbs",
-    "https://jb.mywwjj.xyz/A/1/c2b8_test.zip"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 31 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "https://jb.mywwjj.xyz/A/1/c2b8_test.zip",
     "https://jb.mywwjj.xyz/A/1/c2b8.zip",
     "https://jb.mywwjj.xyz/A/test.exe",
     "http://112.255.198.69:54682/i",
@@ -15268,7 +15740,15 @@ UrlClickEvents
     "https://jb.mywwjj.xyz/G/c2b8.zip",
     "https://jb.mywwjj.xyz/C/1/C-1.vbs",
     "https://jb.mywwjj.xyz/C/1/c2b8.zip",
-    "https://jb.mywwjj.xyz/C/1/dfjieyisa.vbs",
+    "https://jb.mywwjj.xyz/C/1/dfjieyisa.vbs"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 32 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://jb.mywwjj.xyz/C/1/fix_1625.vbs",
     "http://112.255.198.69:54682/bin.sh",
     "http://110.37.49.99:37589/i",
@@ -15740,15 +16220,7 @@ UrlClickEvents
     "http://112.249.186.196:53368/bin.sh",
     "http://41.249.56.178:53635/i",
     "http://123.129.131.24:50662/bin.sh",
-    "http://61.52.39.66:37693/i"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 32 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://61.52.39.66:37693/i",
     "http://105.186.224.110:60709/i",
     "https://llttu.hurtigegevinster.com/3fc67304-49bd-411c-ab54-e8391c49f309",
     "https://rbnz.hairbyniki.com/3592ab2a-0efd-4e5d-840d-1cc981c86e62",
@@ -15776,7 +16248,15 @@ UrlClickEvents
     "http://182.121.154.76:38424/i",
     "https://ksuqx.cnbgladespring.com/896f2de2-93f1-46cd-93e0-fc3641db9ec0",
     "https://dduf.bolesfarms.com/3e8516f9-4d5e-4469-8628-2b0805131055",
-    "http://46.236.65.160:59737/bin.sh",
+    "http://46.236.65.160:59737/bin.sh"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 33 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "https://ldgcg.closedfistllc.com/40e7bcc9-6b01-48f7-8dad-f35e5ea3f352",
     "http://61.53.117.119:56282/bin.sh",
     "http://117.255.4.7:48645/bin.sh",
@@ -16248,15 +16728,7 @@ UrlClickEvents
     "http://60.211.30.133:55771/i",
     "http://123.14.75.146:41541/bin.sh",
     "http://42.224.24.5:40092/i",
-    "http://222.142.252.58:35283/i"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 33 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
+    "http://222.142.252.58:35283/i",
     "https://olotu.cardanaircraft.org/1dd6d0c4-ade7-435a-ac4f-0c9fef7085dc",
     "http://42.239.109.169:54600/i",
     "http://60.211.30.133:55771/bin.sh",
@@ -16284,7 +16756,15 @@ UrlClickEvents
     "http://123.4.23.187:33896/bin.sh",
     "http://123.9.198.8:58379/i",
     "https://6ytetbzh.quickandcleanfetish.com/?ublib=27e9ffa7-2d67-404a-b350-c49a89faf8c2",
-    "http://219.157.245.64:46059/i",
+    "http://219.157.245.64:46059/i"
+  )
+| extend ThreatSource = "URLhaus"
+| extend ThreatIndicator = Url
+
+
+// Malicious URLs - Chunk 34 (Source: URLhaus)
+UrlClickEvents
+| where Url has_any (
     "http://219.156.52.131:33086/i",
     "http://123.9.198.8:58379/bin.sh",
     "http://42.226.90.121:43308/i",
@@ -16322,630 +16802,7 @@ UrlClickEvents
     "http://219.154.180.116:35534/i",
     "http://115.55.53.162:41618/i",
     "http://182.113.25.122:50144/bin.sh",
-    "http://115.55.231.244:46280/i",
-    "https://n5yqon6r.site-takhtenard-sharti-betland.com/?ublib=f84e79a0-8954-486d-bdb3-44ded1adac86",
-    "http://219.154.180.116:35534/bin.sh",
-    "http://115.55.53.162:41618/bin.sh",
-    "https://bzki.jetbet.download/92838afa-d142-4d89-a1ae-0c1cf0db6662",
-    "https://lfumk.winston.bet/c4ac8e20-09e1-4c6a-a631-91eacc6edb7d",
-    "http://110.37.13.55:39778/i",
-    "http://115.49.211.101:57441/i",
-    "http://180.245.46.51:34600/i",
-    "http://110.37.13.55:39778/bin.sh",
-    "http://182.113.45.143:39127/i",
-    "http://182.113.45.143:39127/bin.sh",
-    "http://115.57.248.77:40854/i",
-    "http://115.49.211.101:57441/bin.sh",
-    "http://180.245.46.51:34600/bin.sh",
-    "https://jtab.jbgroup21.com/80b561a9-4cc3-444a-bfa3-4f5f66318625",
-    "https://ynzpk.varzeshlife.ir/ae3531c5-b304-4a34-a61e-1f5857a46c65",
-    "http://175.43.138.10:47103/i",
-    "http://108.168.0.60:47365/i",
-    "http://108.168.0.60:47365/bin.sh",
-    "https://4dc5hwj8.nextbahis.poker/?ublib=b79287fd-1a4c-4395-a5e9-12a719bbbded",
-    "https://g9epkl53.site-asli-bedon-filter-1xbet.com/?ublib=dea575b0-75ed-46c9-8f98-a33531b6d0a9",
-    "http://117.26.110.213:38787/i",
-    "http://182.119.3.190:35288/i",
-    "http://59.96.142.114:46035/i",
-    "http://118.213.38.120:48336/i",
-    "http://117.26.110.213:38787/bin.sh",
-    "http://115.54.174.118:42542/i",
-    "http://59.96.142.114:46035/bin.sh",
-    "https://flyi.jadoou.lat/d5b93ded-0a17-45fc-9966-6503327b5c0d",
-    "http://27.217.211.17:55130/bin.sh",
-    "http://182.119.3.190:35288/bin.sh",
-    "https://caycn.tampabayspin.com/afbc2c89-349f-41a4-9686-e69d92ff1f65",
-    "http://118.213.38.120:48336/bin.sh",
-    "http://209.103.243.96:50476/i",
-    "http://110.36.65.9:33905/i",
-    "http://120.28.192.219:47904/i",
-    "http://180.115.69.190:51906/i",
-    "http://27.213.10.249:50903/bin.sh",
-    "http://182.126.106.230:39438/i",
-    "https://o59dzghe.calculadoracomisiones.com/?ublib=0d295343-dcc5-48c3-af39-c23538444779",
-    "http://123.129.132.137:35336/i",
-    "http://120.28.192.219:47904/bin.sh",
-    "http://110.36.65.9:33905/bin.sh",
-    "http://221.203.121.25:35093/i",
-    "http://46.216.199.241:56837/i",
-    "http://182.126.106.230:39438/bin.sh",
-    "https://fazv.jadoobet.pro/fc1af01c-888e-4ae6-b146-c765ed570eb1",
-    "http://36.70.238.164:33041/i",
-    "http://46.216.199.241:56837/bin.sh",
-    "https://inasa.pdfbama.com/1a9a7ecd-1619-40f5-b710-93ab35b33e72",
-    "http://222.139.74.170:37461/i",
-    "http://222.139.74.170:37461/bin.sh",
-    "http://59.97.254.172:49126/i",
-    "http://42.227.236.65:39345/i",
-    "https://u6ggk611.elizabethspizzadenton.com/?ublib=6ee01c55-7726-4a14-8db7-eb4f98c68f8a",
-    "http://41.249.237.211:53635/i",
-    "https://jfwh.hazzarat.com/8a24b4c9-c882-422c-97f0-2be6703aafb2",
-    "http://41.249.237.211:53635/bin.sh",
-    "https://xhozx.onjabet1.com/e127eaad-917e-4d5b-9385-96ab6b96d8d7",
-    "http://110.36.30.184:53865/i",
-    "http://91.92.242.236/files-129312398/files/file_1b333eb31fd13114.exe",
-    "http://182.117.87.146:55388/i",
-    "http://182.117.87.146:55388/bin.sh",
-    "http://175.174.44.196:60468/i",
-    "http://59.97.254.172:49126/bin.sh",
-    "http://ths.lat/volar.sh4",
-    "http://ths.lat/volar.mips",
-    "http://ths.lat/volar.i686",
-    "http://ths.lat/volar.m68k",
-    "http://ths.lat/volar.armv5l",
-    "http://ths.lat/volar.powerpc-440fp",
-    "http://ths.lat/volar.armv6l",
-    "http://ths.lat/volar.armv7l",
-    "http://ths.lat/volar.x86_64",
-    "http://ths.lat/volar.powerpc",
-    "http://ths.lat/volar.armv4l",
-    "http://ths.lat/loader.sh",
-    "http://ths.lat/volar.mipsel",
-    "http://ths.lat/volar.i586",
-    "http://182.118.245.210:52033/i",
-    "http://31.77.227.10/manji.arm7",
-    "http://182.118.245.210:52033/bin.sh",
-    "https://217.60.195.113/test/clean",
-    "https://217.60.195.113/test/arm7",
-    "https://217.60.195.113/test/riscv",
-    "https://217.60.195.113/test/i686",
-    "https://217.60.195.113/test/aarch64",
-    "https://217.60.195.113/test/x86_64",
-    "http://175.174.44.196:60468/bin.sh",
-    "http://110.36.89.246:55926/i",
-    "https://ncia.hazaratbet.games/3526568b-eed5-446e-8ea9-85225363b6b0",
-    "https://jxrml.luxurygoodscaree.com/c04629d2-2a9b-4a7e-b44a-2791db00d5e2",
-    "http://123.11.75.241:36837/i",
-    "https://tommy-aa.lol/f",
-    "http://129.121.114.124/3AC",
-    "http://62.60.226.140/files/881715592/Ju43FnS.exe",
-    "http://129.121.114.124/rkq",
-    "http://129.121.114.124/guI",
-    "http://129.121.114.124/eiZ",
-    "http://129.121.114.124/RA6Q",
-    "http://129.121.114.124/wKBF",
-    "http://129.121.114.124/kzWP",
-    "http://129.121.114.124/jE6H",
-    "http://129.121.114.124/PLy",
-    "http://129.121.114.124/T71",
-    "http://91.92.242.236/files-129312398/files/file_de33e495882e1b4f.exe",
-    "http://91.92.242.236/files-129312398/files/file_c732ee2417c2a078.exe",
-    "http://41.216.189.236/run.sh",
-    "http://129.121.110.105/LXZk",
-    "http://129.121.110.105/q5S",
-    "http://129.121.110.105/sgAx",
-    "http://129.121.110.105/WJ97",
-    "http://129.121.110.105/gIP",
-    "http://129.121.114.124/NLx",
-    "http://129.121.110.105/Kz59",
-    "http://129.121.114.124/PYj",
-    "http://129.121.114.124/aaYS",
-    "http://129.121.114.124/b8r",
-    "http://129.121.110.105/oNrI",
-    "http://129.121.114.124/n2w0",
-    "http://129.121.114.124/91Gv",
-    "http://129.121.110.105/JwbV",
-    "http://129.121.110.105/i69",
-    "http://129.121.110.105/YlU",
-    "http://129.121.110.105/E3ww",
-    "http://129.121.114.124/rKrg",
-    "http://129.121.110.105/EpD",
-    "http://129.121.114.124/gSE",
-    "http://129.121.110.105/NYDR",
-    "http://129.121.114.124/oyk",
-    "http://129.121.110.105/tDv",
-    "http://129.121.114.124/Aum",
-    "http://129.121.114.124/BnSy",
-    "http://129.121.110.105/m6T",
-    "http://129.121.110.105/W8H",
-    "http://129.121.110.105/xzy",
-    "http://129.121.114.124/X1x",
-    "http://129.121.114.124/FbVS",
-    "http://129.121.110.105/JHkP",
-    "http://129.121.110.105/0KXs",
-    "http://129.121.114.124/pO8",
-    "http://129.121.114.124/ugI",
-    "http://129.121.110.105/evq",
-    "http://129.121.114.124/CA3",
-    "http://129.121.114.124/sBO",
-    "http://129.121.114.124/ZLW",
-    "http://129.121.114.124/WmD",
-    "http://129.121.114.124/qcZ",
-    "http://85.11.167.178/manji.x86_64",
-    "http://85.11.167.178/manji.arm",
-    "http://85.11.167.178/manji.i586",
-    "http://85.11.167.178/manji.sparc",
-    "http://85.11.167.178/manji.arc",
-    "http://85.11.167.178/manji.mips64",
-    "http://91.92.42.50/byroom.armv6",
-    "http://78.165.217.136:49067/i",
-    "http://91.92.42.50/byroom.armv7",
-    "http://91.92.42.50/byroom.armv5",
-    "https://github.com/dm-7926/dz-nvd/raw/refs/heads/main/m1n.zip",
-    "https://github.com/dm-7926/dz-nvd/raw/refs/heads/main/udm-m.bat",
-    "http://105.184.95.53:33851/i",
-    "https://6leriop4.littleitalypizzafortwashington.com/?ublib=87e11ab2-4ab7-4e0a-a2eb-6905af906f9c",
-    "http://115.55.222.169:32872/bin.sh",
-    "https://rtsinternationals.screenconnect.com/Bin/ScreenConnect.ClientSetup.msi?e=Access&y=Guest",
-    "http://110.36.89.246:55926/bin.sh",
-    "http://123.4.170.231:33744/i",
-    "http://eoqwkeowqkeowq.duckdns.org/bins/pppc",
-    "http://eoqwkeowqkeowq.duckdns.org/bins/pm68k",
-    "http://eoqwkeowqkeowq.duckdns.org/bins/px86",
-    "http://eoqwkeowqkeowq.duckdns.org/bins/pmpsl",
-    "http://eoqwkeowqkeowq.duckdns.org/bins/parm5",
-    "http://eoqwkeowqkeowq.duckdns.org/bins/parm6",
-    "http://eoqwkeowqkeowq.duckdns.org/bins/parm7",
-    "http://eoqwkeowqkeowq.duckdns.org/bins/x86_64",
-    "http://eoqwkeowqkeowq.duckdns.org/kla.sh",
-    "http://91.92.242.236/files-129312398/files/file_c9825fd70fbbafd5.exe",
-    "http://91.92.242.236/files-129312398/files/file_2632c43feb8eb146.exe",
-    "http://91.92.242.236/files-129312398/files/file_627b53f664e648fc.exe",
-    "http://91.92.242.236/files-129312398/files/file_66b5283a72dc8021.exe",
-    "http://91.92.242.236/files-129312398/files/file_ee80b721561e7c55.exe",
-    "http://91.92.242.236/files-129312398/files/file_86655a87c1eae0a2.exe",
-    "http://91.92.242.236/files-129312398/files/file_6e69c723a4dec3ff.exe",
-    "http://91.92.242.236/files-129312398/files/file_30f1361c8ca5ca0a.exe",
-    "http://91.92.242.236/files-129312398/files/file_e575214aaaf4a736.exe",
-    "http://91.92.242.236/files-129312398/files/file_217e63bf37ea2d1a.exe",
-    "http://91.92.242.236/files-129312398/files/file_a1544dd42428ed8a.exe",
-    "http://91.92.242.236/files-129312398/files/file_0f7485e065ca09d1.exe",
-    "http://91.92.242.236/files-129312398/files/file_aa2e656808997d70.exe",
-    "http://eoqwkeowqkeowq.duckdns.org/bins/parm",
-    "http://eoqwkeowqkeowq.duckdns.org/bins/pspc",
-    "http://eoqwkeowqkeowq.duckdns.org/bins/psh4",
-    "http://62.60.226.198/uploads/a4cf9d8ac7bf416ebe66db6ab0118a96.exe",
-    "http://91.92.242.236/files-129312398/files/file_0e5aa5d83d9cc0ba.exe",
-    "http://91.92.242.236/files-129312398/files/file_7396040ce1159b77.exe",
-    "http://91.92.242.236/files-129312398/files/file_84adccd5aeb7ec92.exe",
-    "http://91.92.242.236/files-129312398/files/file_86a320d34fc7051d.exe",
-    "http://91.92.242.236/files-129312398/files/file_f9b63098c485efb2.exe",
-    "http://91.92.242.236/files-129312398/files/file_3f194139ac0da050.exe",
-    "http://91.92.242.236/files-129312398/files/file_d92041cc5735df81.exe",
-    "http://91.92.242.236/files-129312398/files/file_51078b4a729bbad5.exe",
-    "https://kqgn.fg777jbg.net/923863d2-d705-4e62-b77e-1ddddd8ed997",
-    "http://27.215.213.228:33210/i",
-    "http://105.184.95.53:33851/bin.sh",
-    "https://nfghq.kmmits.com/4411db00-6248-40a8-8f86-5b2080cc4f85",
-    "http://123.5.173.102:40544/bin.sh",
-    "http://222.182.122.189:50511/bin.sh",
-    "http://78.25.166.66:39654/i",
-    "http://110.37.10.113:54633/i",
-    "http://113.230.195.5:40757/bin.sh",
-    "http://105.225.40.204:43449/i",
-    "http://115.48.151.204:45432/i",
-    "http://27.216.121.201:46287/i",
-    "http://123.7.223.22:50656/i",
-    "http://27.216.121.201:46287/bin.sh",
-    "http://112.25.235.194:46904/i",
-    "https://bkmu.ronarcher.org/2e88cd13-2ef1-4821-9e18-6a8f4df65aa6",
-    "http://123.7.223.22:50656/bin.sh",
-    "http://38.137.17.205:49648/i",
-    "https://rzaxl.switch-vodka.com/09e0c2a8-3957-4a80-937b-4feb05cad4b2",
-    "http://38.137.17.205:49648/bin.sh",
-    "http://105.225.40.204:43449/bin.sh",
-    "https://es2utu9l.samsann.com/?ublib=80b0b16c-f5e6-4a28-aa12-9dfbb4153fad",
-    "http://125.112.61.233:35817/i",
-    "https://ajp3btj8.nextbahis.poker/?ublib=70f50ec5-5265-4cf9-a6b8-c0bbbba02f5e",
-    "https://47sat9ax.corpuschristiairporthotel.com/?ublib=bd61a310-515a-4e4b-85b0-a59586b8c3fd",
-    "http://175.31.207.211:36948/i",
-    "http://113.237.108.171:45619/i",
-    "https://yefu.rftmacncheese.com/3b10b3de-8b96-4cad-bd4a-975e807a6af6",
-    "https://qlzqh.sultankito.net/a0d42674-b115-4180-9d65-ad4c3eaabc4e",
-    "http://175.31.207.211:36948/bin.sh",
-    "http://222.137.144.151:57974/i",
-    "http://42.226.78.204:39920/i",
-    "http://222.137.144.151:57974/bin.sh",
-    "http://123.9.220.91:35314/bin.sh",
-    "https://sjhofpgpz.rahmagrill.com/24852d75-53ec-4403-a8a9-2443c3413b25",
-    "https://gygor.sultankito.com/d35229c9-6f9c-4744-997c-000e9553eb77",
-    "http://58.22.16.244:46561/i",
-    "http://58.22.16.244:46561/bin.sh",
-    "http://115.61.18.174:41677/i",
-    "https://iqr1pfqd.okegass.net/?ublib=2f901ae8-0510-45d9-90f3-a22ff5236206",
-    "http://115.56.66.218:38739/i",
-    "https://aabqjhcdf.quickandcleanfetish.com/38240cae-11c9-4bfe-84bf-d31a6955d83e",
-    "https://mtvhf.socialclub112.com/432de9a7-2921-4539-8716-a5700d2d45e7",
-    "http://46.236.65.106:52182/i",
-    "http://27.215.137.222:45282/i",
-    "http://46.236.65.163:44489/i",
-    "http://105.225.115.127:42331/i",
-    "http://115.56.66.218:38739/bin.sh",
-    "http://182.117.5.9:34214/i",
-    "http://182.117.5.9:34214/bin.sh",
-    "http://108.170.136.155:59012/i",
-    "http://27.215.137.222:45282/bin.sh",
-    "http://46.236.65.163:44489/bin.sh",
-    "http://46.236.65.106:52182/bin.sh",
-    "http://123.5.158.212:49654/i",
-    "http://110.36.86.83:42924/i",
-    "https://pouulacmu.phogoldencow.com/69e19308-c227-4e1e-a439-83e8b86221b4",
-    "http://115.55.230.29:38430/i",
-    "http://182.127.168.154:47418/bin.sh",
-    "http://105.184.79.248:35857/i",
-    "https://ktkxw.shimiaodaoflushing.com/7e1ec835-3fbd-46e1-bf2f-16c135b18a52",
-    "http://110.36.86.83:42924/bin.sh",
-    "http://115.50.26.53:43885/i",
-    "https://8hrhd061.noodlesbymomi.com/?ublib=5c06ebba-5495-4a7e-b9be-659530b8a60b",
-    "http://105.184.213.19:56501/bin.sh",
-    "http://115.55.230.29:38430/bin.sh",
-    "http://115.50.26.53:43885/bin.sh",
-    "https://subterranean-mineral-map.garden/440ca003-deeb-445c-a659-c09c09c88610/google.ct",
-    "https://spamgym.asia/7a28b2c1-d858-4730-a6c5-efb8b85d586d/ton.ch/",
-    "http://125.43.8.8:34827/i",
-    "https://vtneuluzf.pathfindersafrica.com/6d80fda1-7efc-406f-bb5f-3fd34a450e61/gc.key",
-    "https://datastream-hub.christmas/c3c0cbce-a3e6-4612-bbf5-63accda14d8c/tk.dll",
-    "https://uemdkef.webyek.com/641a2ef9-42a0-48ee-9f4a-0c0b22c3b680/gc.key",
-    "https://zzya.bigsertonnet.com/80533ec0-75d2-4ca7-8fdd-153d0ba9d2f2/goog.ct",
-    "http://submerged-continental-shelf.garden/f600ff02-9b3d-437d-9f2d-da6a8bce13f0/google.ct",
-    "http://subdermal-biometric-chip.garden/d1fa4263-ad4d-4996-902e-9b346fa63d07/google.cl",
-    "https://ipsw.jetbet1.pro/11d7702e-18e8-4857-9e35-56cdf1ee063d/pf.ch",
-    "http://correction-pancake-seissy.courses/0085c648-3ab0-4c14-8cdc-ca79cba7700a/google.ct",
-    "https://xvc.motorbook.xyz/f553f21c-c901-47ba-9c99-529b4de5244d/google.cl",
-    "http://meadow-observability-core.garden/d51d997c-ac95-43e6-b436-c2c24e946c31/google.ct",
-    "https://cess.digishart.news/b1ad7276-9078-4de0-9bf4-896dfffa2264/pf.ch",
-    "http://meadowworkflowframework.garden/92649efe-7014-4314-8cb5-1d4b8517f4b2/google.cl",
-    "https://dows.sabad724.bio/95460196-1102-499d-9e6e-cd30b5a0cd4f/pf.ch",
-    "https://e.perspolis.pro/0fce9b5b-bb28-4c42-8d94-b381ed3944b8/pf.ch",
-    "https://asset.tasisathosseini.shop/bf1f72a0-1c71-4660-b1b1-40aa61cce93d/pf.ch",
-    "http://diphtongspecialchess.courses/8ab05d4b-08d8-41d4-925e-37f856bcdc23/google.ct",
-    "https://wgbkut.bet1roulette.com/be2375af-515a-4f60-a122-938bbd3f41c8/goog.ct",
-    "http://analytical-traffic-audit-record-file.wiki/21e19164-f354-4f6d-a26e-ea3c43ac773a/google.ct",
-    "http://stealth-bomber-radar-cross.garden/e0590aee-5a6b-492e-942f-43a332afd22a/google.cl",
-    "https://pfdtgkn.1bonus.bet/515286a1-6ad5-4777-bbf6-4ad3d5b49b5e/gc.key",
-    "http://leniniansexualbeginner.courses/08992efe-1d68-4486-8c19-fca8166fd914/google.cl",
-    "http://hppbtwyk.petal-growth-platform.garden/b08c1ddb-f037-4878-a85f-e2ccd6a769e6/google.ct",
-    "http://irrigationautomationhub.garden/99c57f7c-dcd4-4058-b88c-654819a34ef4/google.cl",
-    "http://agilebee-federate-growth-net.garden/69de6905-f1fc-408e-a612-a49a123cfe40/google.cl",
-    "http://virtual-pipeline-ten-it.courses/c352daa7-9e4e-4364-ad54-895ed35f9349/google.ct",
-    "http://edge-processing-network.wiki/c850bf60-243d-4cbb-b6ab-80f4def598ab/google.ct",
-    "http://seducingdelirium.surf/d2fb5564-3186-4722-98b3-a575e24ae86c/file.name",
-    "http://phase-shift-bridge-driver.garden/77ba6dfa-c0e0-4c28-982d-42f0146fdf04/google.cl",
-    "http://focus-mutovka-transfer-able.courses/a87982c8-b7e5-4323-8793-3b7232b68d90/google.ct",
-    "http://telemetrymesh.christmas/5a76e756-755c-46f4-bd25-fc5fb284423a/g.ch",
-    "http://root-system-irrigation.garden/8e8886f4-b375-4200-b706-eb380ebd0c17/google.cl",
-    "http://linguisticpuzzlesolver.christmas/d2cfd9d2-c83c-49b2-a54b-ae75333809dd/g.ch",
-    "http://infra-blue-high-print.garden/952d956c-4c8b-4d29-88b9-cda2b45adca7/google.cl",
-    "http://formkey.asia/d01af252-520e-49c5-bb8f-dedf96636d23/ton.ch/",
-    "http://hydraulic-actuator-valve.garden/fb3bee94-2817-46e3-b438-f2740a893218/google.ct",
-    "http://boblegvlist.christmas/2f58e8cb-6b6d-439c-97ec-6892fd7e9f07/zone.id",
-    "http://evergreentimberland.garden/aa85d475-72f2-4c64-9cab-57a7c8a4d3be/google.cl",
-    "http://holographic-projection-grid.garden/159a828e-c534-4ba8-b296-a70d4e6d7c01/google.cl",
-    "https://nxbv.sabad724.bio/9957f452-10ee-4604-9013-043730dd6937/pf.ch",
-    "https://greenhousemanagementengine.garden/8e0bfd9b-16bb-49de-ac8e-67fe2343371f/google.cl",
-    "http://meadow-observability-core.garden/aec518d1-92cf-4177-93a0-8228b8eef37a/google.ct",
-    "https://stp12.zabanenglishanari.xyz/f3c25482-2c44-4797-b0ac-c846daebee10/pf.ch",
-    "https://fds.jetbet1.online/4f3fcb88-9fb7-4fe9-8b62-4543a7de211b/pf.ch",
-    "http://fgbojhem.meadowprocessingframework.garden/fc3759bf-7e4e-41f2-a5d8-08a0b0dbd2b9/google.ct",
-    "https://kegeskyvw.sky7bet.casino/eabad912-3146-4f47-8ab9-bc3aaa13245e/gc.key",
-    "http://linguisticpuzzlesolver.christmas/237e77e4-e9dd-4832-ac74-7c08e36f8b19/g.ch",
-    "http://hypervisor-resource-grid.wiki/ecb2c516-4dc5-407e-a9fb-45e197c7aee6/google.ct",
-    "https://hgf.betfootbal1.com/cc26e844-5b30-4509-96dc-b06511806d17/bn.js",
-    "http://magnetic-levitation-train.garden/8790629d-d563-4917-87c0-4eae804e32e6/google.cl",
-    "https://gardenworkflowhub.garden/07065795-2495-45fe-9eb8-118832615332/google.ct",
-    "https://system-analytics-pro-guide.courses/8d542bfc-9171-410e-a43b-da5e9aae9c02/google.cl",
-    "https://ffyd.bahigo90bet.com/9ed36db2-dcb6-4c24-a1a7-2ad7c447709a/gc.key",
-    "https://crypto.betfakade.com/362f7789-461f-4890-9be3-2ac974c574b6/google.cl",
-    "https://esim.riverpoker.xyz/0eb706b2-ffe6-44f6-af5e-6995ac2ad8de/pf.ch",
-    "https://dvunixht.boroo.bet/666f5206-8f18-4374-8072-0c85859efdd4/gc.key",
-    "http://edge-network-on-hub.garden/f3c6c3f5-169c-4097-a716-caab93df632d/google.cl",
-    "http://baking-stone-thermal-mass.garden/74e5c988-4e1e-4b99-a3ad-2738f83a9000/google.ct",
-    "http://automated-sprout-labs.garden/bf6dc6b0-6316-4b67-b154-ca62d7502392/google.cl",
-    "http://botanicalprocessingengine.garden/a378e22b-2a49-4bb9-b54a-b4190c4edaa7/google.ct",
-    "http://mixed-on-storage-layer.garden/034bb288-66b3-4e1e-b8e6-247b202f7a5e/google.cl",
-    "http://floraresourcecontroller.garden/cfd2548e-d215-4117-8ece-17c3ee97e0ec/google.cl",
-    "https://sjc3.sabad724.bio/36580b02-9d9c-4a93-81a8-46f87779e789/pf.ch",
-    "http://tuplediskdkey.christmas/75a0c85c-cd34-4a9f-b671-b0a65c1638c5/zone.id",
-    "http://vintage-vinyl-restoration.garden/3cedeea1-8854-4539-af98-81e1310b6891/google.ct",
-    "https://thbejli.1xbeet.site/b117d7e5-0832-4ed3-af04-6f9e86ad813e/gc.key",
-    "http://containerized-plant-system.garden/35496a56-d84b-4eba-b61c-3e6370ecfc9c/google.ct",
-    "https://zjzffhbgt.efbetfarsi.com/6799cbdc-0585-44a3-91c5-c9f34d9f85ac/gc.key",
-    "https://kft.betball90kade.com/219338ea-00df-42ec-8c40-c3f78cbe68a7/dep.goog",
-    "http://botanicalprocessing.garden/474a6131-4608-4b21-95b8-4f47dd2a8766/google.ct",
-    "https://stg.1xfa.xyz/ddd40028-cc09-4fd5-96ef-36e91b5fad7a/goog.ct",
-    "http://ziti-multicooker-hacks.garden/f30eba81-4c5a-4080-a057-6df524e69f8c/google.ct",
-    "http://docsfan-flora-ability-system.garden/8f9c1eec-d56f-4a79-8274-ad9c72dbc6c4/google.cl",
-    "http://telemetry-grid.christmas/1372c504-375d-467b-9978-c2d199db2a80/g.ch",
-    "http://meadowprocessingcenter.garden/f2670c83-6691-485c-823d-bcc616e1e44a/google.cl",
-    "http://bcypppaq.asynchronous-growth-platform.garden/cc331331-caae-4f0b-a600-0d2f7330553a/google.ct",
-    "http://distributedgardenanalytics.garden/e2f7316c-f595-4f54-a6b3-acf48e330f4c/google.cl",
-    "https://pdf-srv.pdfbamaa.com/6d820228-fe3b-4240-98d7-bc2c5312e288/pf.ch",
-    "http://virtual-routing-gateway.wiki/58ca6267-9c52-473b-a724-01e4ee71f78e/google.ct",
-    "http://codepit-rized-denengine.garden/f09ff42d-b909-4ff1-a435-32f0ac22a206/google.cl",
-    "https://ojpqxkm.one1x.bet/d974017e-43a8-43bf-b31b-804c70fad1a3/tf.ch",
-    "http://chickencutlethacks.fit/7322572c-c26a-4597-9a93-65fdebc11653/zone.id",
-    "http://signal-routing-framework.christmas/b369cfdf-60da-436a-9787-a65c01cdb3d3/g.ch",
-    "http://quantumvelocitylabs.christmas/78875570-5e84-486b-a61d-0005477244e6/g.ch",
-    "http://abandoned-asylum-expedition.garden/34701e8f-b8f0-4cce-b0cd-136c4553dbb8/google.ct",
-    "http://distrib-ost-penal-network.garden/6c92e176-5808-4b4f-9a53-360594bcc9ab/google.cl",
-    "http://backyard-harvest-planner.garden/429e5532-8c10-4da4-9aee-c2eec2d23872/google.cl",
-    "http://dengrep-resource-opencut-engine.garden/04c77659-d8ad-4025-a7bd-72ae821ca6cc/google.cl",
-    "http://meadow-observability-core.garden/99f784de-bd42-4afc-aef6-7881bdf3b17d/google.ct",
-    "http://ice-evergreen.christmas/6d7f4205-3be6-4111-b787-b7f7655dde07/zone.id",
-    "https://tuplediskdkey.christmas/6ecc93e0-b991-4fcd-a283-3e2fa1854582/zone.id",
-    "http://asynchronouswatering-system.garden/75aa3eb1-b155-444d-b5c4-d470f2b0c78e/google.cl",
-    "http://nxbv.sabad724.bio/9957f452-10ee-4604-9013-043730dd6937/pf.ch",
-    "http://pigtweet-kitdiff-it.christmas/1826589a-96d7-41c7-bf01-e6af60b1b115/zone.id",
-    "http://petalprocessingplatform.garden/fb173cbf-a417-4bb3-a8bb-90c095caa7a3/google.cl",
-    "http://hasmysql.christmas/fa603fda-db92-4076-9c6c-a89fa306b822/zone.id",
-    "http://federatedplantmesh.garden/9ff95e8f-34a8-4304-a526-fbdb2e2f349d/google.ct",
-    "http://neural-atlas-code-flat.courses/6c30840a-96be-4de0-ab56-885512b6a791/google.ct",
-    "http://gift-harbor.christmas/9ec27899-ba4e-4ba0-abf9-fa9e99593a25/zone.id",
-    "https://kzqlbit.sargarminovin.ir/0b8802d9-c4de-434f-8ead-7417f801bed0/gc.key",
-    "https://balancer.sabad724.xyz/55916664-4280-4560-b2dc-a390d580a331/pf.ch",
-    "http://leniniansexualbeginner.courses/d272ec44-3cb4-452d-9dd5-3dd48da53788/google.cl",
-    "http://system-analytics-pro-guide.courses/3da71941-fb0e-4331-ab54-9a79c00560e4/google.cl",
-    "http://stack-control-plane.christmas/eb055f0d-3036-411c-96cd-c7c7d05eb8e2/g.ch",
-    "https://rwcxxew.takbetkade.com/aa0c63b8-2358-4e3f-b816-c29bb46aff93/pf.ch",
-    "http://botanicalresourcecontroller.garden/aecf995d-327f-468d-99a3-86a9d06e1c0a/google.cl",
-    "http://expert-trading-academy.courses/65efc533-b83e-453a-b077-40dc11bfc29b/google.cl",
-    "https://nbv.prozhedownload.com/d3dbf8c3-6e72-4c90-ab16-ee266cf1d38f/pf.ch",
-    "https://ylfsby.n1betiran.com/4f422ec6-2f14-4347-9fca-8e917af0dba8/google.cl",
-    "http://stg.1xfa.xyz/ddd40028-cc09-4fd5-96ef-36e91b5fad7a/goog.ct",
-    "http://crispy-chicken-cutlets.garden/84e13c57-44fb-4a10-b48d-e94f63c9fc0a/google.cl",
-    "http://pub-f3382215b.1x1.cash/547c583f-542c-4374-a052-318589ca426d/goog.ct/",
-    "http://virtual-session-broker.wiki/dfc0d53a-d334-485d-8e2a-c27cc2d332e8/google.ct",
-    "http://glow-hub-herboron-sixoauth-work.garden/a4ee093e-4d2c-46b2-bcc4-07200a431043/google.ct",
-    "https://rwszncq.1bonus.bet/f67b2176-9be7-4244-b0f0-b7525c8410f6/gc.key",
-    "https://impur-treacheryperepelitsa.wiki/18924f17-62b7-43ce-b148-cd10bd5b180c/google.ct",
-    "http://federated-storage-cluster-system.wiki/f4b68dac-766d-43f1-85dc-a66eb321db00/google.ct",
-    "http://kft.betball90kade.com/219338ea-00df-42ec-8c40-c3f78cbe68a7/dep.goog",
-    "http://seducingdelirium.surf/c172d30d-a998-4815-a840-508f7cc098aa/file.name",
-    "https://c868.mabanishimi.xyz/6e91d58f-acdf-4ead-9a8b-853efda41a3d/pf.ch",
-    "http://wildfloragrowthsystem.garden/6fe1707e-a98f-4f73-8157-3b6a892fb21c/google.cl",
-    "http://packet-relay-engine.courses/e0d45b33-d679-49cb-bb09-cdb8deb90b47/google.cl",
-    "http://distributed-cache-storage-layer.wiki/807c3881-26e3-42b3-8737-15fdc96d991c/google.ct",
-    "https://lancer.shartboro.xyz/f599839a-06d8-4cd1-a1f9-e53d806052af/pf.ch",
-    "http://irrigation-control-network.garden/659ff5a6-9d6d-4f6c-ba32-75f10cdef407/google.ct",
-    "http://chronicle-archive-keeper.garden/385d21df-cce5-47e2-9dd4-c0bb9ed6bc55/google.ct",
-    "https://vygy.betropol.bet/7739fb0e-6287-48b1-897f-8b51f8ad683a/gc.key",
-    "http://tectonic-fault-seismograph.garden/bf5deffb-d9f1-44ae-9bf6-8a2b0e4c8341/google.cl",
-    "https://tt.falsafekonkour.site/73fe9118-7db1-4755-947a-f286b3b4e7b4/dep.goog",
-    "https://euphemism.1xfa.xyz/2ffc4ddb-7b9c-44cb-b774-bf347ec8c2d2/pf.ch",
-    "https://flwhdzos.1xbetmag.com/b07c151e-b14b-4d22-9f78-352b9ca3c9c1/pf.ch",
-    "http://meta-data-shredding-cleanup-utility.wiki/8f17c972-8dcd-48e2-9699-dd33797c674c/google.ct",
-    "http://brightestprocexchange.wiki/7eb749d9-f1bd-4d75-9e6a-ca1ed72667d7/google.ct",
-    "http://vintage-telemetry-receiver.garden/4f8006b4-9542-4bdc-8297-abe7ef4b020c/google.ct",
-    "https://vxcvebyr.btyek.site/fbf89bd0-87ae-45e1-9c0d-5dace534f4a3/gc.key",
-    "http://graphnewclass.christmas/b2160fdd-7269-4c68-8d6c-d5efad920c71/zone.id",
-    "http://flora-monitoring-core.garden/ca2b3a34-e3eb-4101-9b45-77579341b4df/google.ct",
-    "https://sjnpuvmy.bazisangkaqazgeychidancepoli.com/208fba33-ae9a-455b-ad57-7dd7491e1f73/api.rkey",
-    "http://distributed-cache-storage-layer.wiki/424567a5-eb5c-4b5e-bce3-eacf5b8df971/google.ct",
-    "http://labdjang.asia/ca6dcb4d-a7bd-4116-80f4-992b542c3567/ton.ch/",
-    "https://jkiw.1pishbini.com/710aa585-5487-4d98-952e-476796dc4d2b/goog.ct",
-    "https://ocgziav.test-ranandegi.com/6ab79bdc-73bc-4443-a287-1ed4408d3d34/gc.key",
-    "http://tt.falsafekonkour.site/73fe9118-7db1-4755-947a-f286b3b4e7b4/dep.goog",
-    "http://stackforgeacademy.courses/5c7004ae-5b57-4c34-b69f-b89ea7bedad7/google.cl",
-    "http://stackbridge.christmas/e5a01d55-d272-4e70-97f5-32f8da384549/g.ch",
-    "https://ewwfvy.bet1roulette.com/35bccc8e-e386-41c5-a983-5b74dc359fb6/goog.ct",
-    "https://sftp.maharatmodiran.xyz/e954485b-3042-4a53-bcf6-19bd8559d3ec/pf.ch",
-    "http://meadow-processing-core.garden/64bf73d9-7ab9-4010-bd91-6139f28aabc6/google.ct",
-    "https://nrksxqlgm.101motorsports.net/65f39603-026a-459e-96a1-cf7b2054b061/gc.key",
-    "http://baking-stone-thermal-mass.garden/98c54476-c660-4cde-8092-13f3f903c8a1/google.ct",
-    "https://xlkgryx.penalty.casino/26947f0f-164e-4919-bad3-63fce3edeee3/tf.ch",
-    "http://frost-marketplace.christmas/71e79d24-b3c3-4cf5-ae3c-b2dd7835ef59/zone.id",
-    "https://jjg.abt90shart.com/f83ad892-753c-403f-b0a9-17abbe0b91aa/pf.ch",
-    "http://byte-stream-encryption-standard-base.wiki/c64d4fb9-ead4-41fb-9029-6664aaef4b24/google.ct",
-    "https://github.com/dm-7926/dz-nvd/raw/main/udm-m.bat",
-    "https://github.com/dm-7926/dz-nvd/raw/main/m1n.zip",
-    "https://vtneuluzf.pathfindersafrica.com/6d80fda1-7efc-406f-bb5f-3fd34a450e61",
-    "http://119.114.152.67:56396/i",
-    "http://105.184.79.248:35857/bin.sh",
-    "https://zaflv.senorgyros.com/aafdf4f7-6a58-4791-81c6-3509d0b01cea",
-    "https://ddj8f1ro.ruralrouterust.com/?ublib=e04186f5-ea51-4301-af9d-843cadba491e",
-    "https://nsbnqzdnv.pathfindersafrica.com/96efb0d6-e57f-4c82-bca9-aa42392dbaf5",
-    "https://p43qsij4.nextbahis.one/?ublib=b030b8fc-8b9c-4ad8-9b33-3554b0984efd",
-    "https://jeekd.senorgyros.com/8ead5b91-652a-4381-a42a-f5b038d19333",
-    "http://119.114.152.67:56396/bin.sh"
-  )
-| extend ThreatSource = "URLhaus"
-| extend ThreatIndicator = Url
-
-
-// Malicious URLs - Chunk 34 (Source: URLhaus)
-UrlClickEvents
-| where Url has_any (
-    "http://110.36.93.182:53790/i",
-    "http://138.255.10.120:57405/i",
-    "https://23.27.180.36/icons/108",
-    "https://jsonhosting.com/api/json/e16583b1/raw",
-    "http://110.37.70.50:43380/i",
-    "https://jsonhosting.com/api/json/3ea04c38/raw",
-    "https://filament-zap.vercel.app/service/assets/fetchBinary",
-    "https://jsonhosting.com/api/json/f1a66ab0/raw",
-    "https://svganchordev.net/icons/108",
-    "http://138.255.10.120:57405/bin.sh",
-    "http://182.122.232.148:54079/i",
-    "http://110.36.93.182:53790/bin.sh",
-    "http://110.37.70.50:43380/bin.sh",
-    "http://123.12.234.194:36402/i",
-    "http://36.70.71.191:47231/i",
-    "https://vwpanxmoc.orlandosmuncy.com/9405a702-74fe-4399-a260-180bfc6ad07c",
-    "https://yvzqh.hazaratbet.game/654d4f01-0b10-4a37-9bf7-0f776e4eaf1b",
-    "https://jifyi.gamehazarat.com/7f36ec19-3fac-44af-99b2-c7951863f721",
-    "http://110.37.76.64:39898/bin.sh",
-    "http://182.122.232.148:54079/bin.sh",
-    "https://7uaho90m.myluxurykitchenandbath.com/?ublib=169aad7a-f72d-48b3-b94d-d5acc64eed7a",
-    "http://182.116.116.107:37779/i",
-    "http://123.12.234.194:36402/bin.sh",
-    "http://182.113.45.51:57826/i",
-    "http://42.178.63.166:32836/i",
-    "http://27.213.10.249:50903/i",
-    "http://157.230.50.234/pty3",
-    "http://157.230.50.234/pty4",
-    "http://157.230.50.234/pty10",
-    "http://123.129.132.137:35336/bin.sh",
-    "http://110.181.234.147:34711/i",
-    "http://42.178.63.166:32836/bin.sh",
-    "http://115.54.124.147:57484/bin.sh",
-    "http://123.10.143.34:45383/bin.sh",
-    "http://39.74.37.178:39605/i",
-    "https://kgptwmgqf.taktikkbet.com/ed043999-1b44-4f74-9567-af7f6a924982",
-    "https://lbtzq.funxbet.casino/43549fd6-7800-4c87-8705-fbe79cbd7c94",
-    "http://219.157.234.137:51727/bin.sh",
-    "https://yblfhadfu.mango90bet.com/4c6146f1-11cd-4268-98cf-fe98a519d427",
-    "http://110.181.234.147:34711/bin.sh",
-    "http://39.74.37.178:39605/bin.sh",
-    "http://113.231.16.102:48284/bin.sh",
-    "http://120.28.200.112:52763/i",
-    "http://110.38.207.66:48927/i",
-    "http://110.38.207.66:48927/bin.sh",
-    "http://42.232.101.158:59286/i",
-    "http://115.203.230.54:33823/i",
-    "https://rmxohycah.sky7bet.casino/88cbdf70-e54d-4d15-80c8-6ea2692bdd6e",
-    "http://115.203.230.54:33823/bin.sh",
-    "https://heork.derbi.promo/e7b03feb-46d2-4e40-b088-c64649ad2433",
-    "http://115.57.44.82:33218/i",
-    "http://61.52.172.124:56962/bin.sh",
-    "https://8862moud.mikespizzafairfield.com/?ublib=248d863c-9953-4ba1-8311-357833fc01da",
-    "http://120.28.200.112:52763/bin.sh",
-    "http://222.140.183.120:53912/bin.sh",
-    "http://42.232.101.158:59286/bin.sh",
-    "http://222.137.140.47:50504/i",
-    "http://42.225.204.96:54324/i",
-    "http://103.61.243.11:53677/i",
-    "https://uvxzsajar.lion1bet.com/50e0e0ee-0f02-40e1-a6c3-8e1fc242c721",
-    "https://mpuwd.deepspaceparker.com/83c48f54-3720-427b-a093-b64f5ffcd66d",
-    "http://123.234.188.81:40186/i",
-    "https://atqfb.calirayalake.com/e0b68956-6852-40f7-a9c0-212b646cc5a7",
-    "http://177.223.57.224:55211/bin.sh",
-    "http://115.197.138.73:36085/bin.sh",
-    "http://ths.lat/eclipse.x86_64",
-    "https://jppxuuhae.imagederm.com/ee204b50-ce64-4666-a796-d47c131311b7",
-    "http://123.234.188.81:40186/bin.sh",
-    "https://5ipju606.venus90bet.com/?ublib=6bb30fc5-584e-4d29-9a05-0f20337df1c2",
-    "http://110.37.127.45:52145/i",
-    "https://hdz7omr1.nextbahis.blog/?ublib=00d4f7ea-16b1-41d6-af41-493405c20829",
-    "http://115.56.127.191:53522/i",
-    "https://i0bep9cj.medallionfoodsinctempura.com/?ublib=7c37f001-8260-46b0-bee9-82b217b2ec2e",
-    "http://125.41.8.156:44972/i",
-    "http://61.53.73.7:56092/i",
-    "http://117.26.225.128:40109/i",
-    "http://110.37.69.175:37577/i",
-    "http://182.117.71.250:44370/i",
-    "https://olyqj.luxurygoodscaree.com/72b6a9eb-5d43-42ca-bed2-c68c30e3680d",
-    "http://182.113.198.75:54306/i",
-    "http://113.221.99.137:37914/i",
-    "https://dogfrpygx.hazzarat.com/22b404a4-79fa-424c-b6a7-0305e39e96f9",
-    "http://117.26.225.128:40109/bin.sh",
-    "http://61.53.73.7:56092/bin.sh",
-    "http://125.41.8.156:44972/bin.sh",
-    "http://85.140.44.96:58737/i",
-    "https://acvwd.lunapizzaco.com/c5f9bf04-f5ab-41ba-a2bc-57320785bb3a",
-    "http://85.140.44.96:58737/bin.sh",
-    "https://ubwzdjejr.fun777game.org/d60dfc8d-b516-4111-843c-585ebd2b04cf",
-    "http://115.57.228.194:54697/i",
-    "http://112.237.10.53:36676/i",
-    "https://4j6m037n.mcbelize.com/?ublib=85f2c8d0-1468-4b04-aa1a-5a99b75ea8f6",
-    "http://115.51.97.58:44075/i",
-    "http://123.9.122.84:54775/i",
-    "http://115.57.228.194:54697/bin.sh",
-    "https://tygnu.lokercorp.com/9b90f956-086c-443c-8e77-d45929d961fb",
-    "http://42.226.75.55:48400/i",
-    "http://123.9.122.84:54775/bin.sh",
-    "https://cgocpkfgd.fg777tasya.net/0be63bb9-ee10-4796-86ae-025c2853d718",
-    "http://221.1.227.177:42067/i",
-    "http://220.202.89.211:49820/i",
-    "http://125.43.226.48:37804/i",
-    "http://113.221.99.137:37914/bin.sh",
-    "http://180.252.217.48:36167/i",
-    "http://220.202.89.211:49820/bin.sh",
-    "https://cvyfg.kopicoffeeco.com/eaceebcc-f71a-4197-bc59-c4d7999dda4b",
-    "http://27.215.52.27:55049/i",
-    "http://125.43.226.48:37804/bin.sh",
-    "https://isrjnxfeb.fg777kito.com/bdb0016d-67f8-4a83-884c-939ef66be9c7",
-    "http://182.126.120.34:40375/i",
-    "http://182.127.35.76:41368/i",
-    "https://nle3gi30.makingreview.com/?ublib=21d76ddd-5648-48ba-bf02-893c39cf9bcc",
-    "http://182.127.35.76:41368/bin.sh",
-    "http://162.249.125.141/f",
-    "http://205.237.110.232/dlr.mips",
-    "http://217.60.195.160/magic",
-    "http://162.249.125.141/r",
-    "http://205.237.110.232/m",
-    "http://205.237.110.232/no_killer/arm",
-    "http://217.60.195.214/no_killer/arm",
-    "http://205.237.110.232/no_killer/mpsl",
-    "http://217.60.195.160/g3",
-    "http://217.60.195.214/m",
-    "http://205.237.110.232/no_killer/x86",
-    "http://205.237.110.232/ftpget.sh",
-    "http://204.168.239.181/huhu/titanjr.ppc440",
-    "http://204.168.239.181/huhu/titanjr.i486",
-    "http://205.237.110.232/dlr.mpsl",
-    "http://204.168.239.181/huhu/titanjr.x86_32",
-    "http://217.60.195.160/amips",
-    "http://162.249.125.141/umips",
-    "http://217.60.195.160/rmips",
-    "http://204.168.239.181/huhu/titanjr.arm5",
-    "http://204.168.239.181/huhu/titanjr.i686",
-    "http://204.168.239.181/huhu/titanjr.arm6",
-    "http://204.168.239.181/huhu/titanjr.sh4",
-    "http://196.251.121.142/a6",
-    "http://162.249.125.141/mips",
-    "http://204.168.239.181/huhu/titanjr.ppc",
-    "http://196.251.121.142/mp",
-    "http://204.168.239.181/huhu/titanjr.spc",
-    "http://196.251.121.142/m",
-    "http://196.251.121.142/aa",
-    "http://162.249.125.141/umpsl",
-    "http://162.249.125.141/garm5",
-    "http://162.249.125.141/rmpsl",
-    "http://204.168.239.181/huhu/titanjr.m68k",
-    "http://204.168.239.181/huhu/titanjr.arc",
-    "http://204.168.239.181/huhu/titanjr.mipsl",
-    "http://204.168.239.181/huhu/titanjr.arm",
-    "http://205.237.110.232/no_killer/arm7",
-    "http://205.237.110.232/no_killer/arm5",
-    "http://162.249.125.141/amips",
-    "http://205.237.110.232/dlr.arm5",
-    "http://162.249.125.141/garm",
-    "http://204.168.239.181/huhu/titanjr.mips",
-    "http://45.207.196.86/huhu/titanjr.mipsl",
-    "http://45.207.196.86/huhu/titanjr.i486",
-    "http://45.207.196.86/huhu/titanjr.sh4",
-    "http://45.207.196.86/huhu/titanjr.arc",
-    "http://45.207.196.86/huhu/titanjr.i686",
-    "http://162.249.125.141/rmips",
-    "http://205.237.110.232/no_killer/mips",
-    "http://196.251.121.142/a7",
-    "http://162.249.125.141/mipsel",
-    "http://205.237.110.232/dlr.arm4",
-    "https://nyenf.kmmits.com/4fac5202-4bbb-48f9-8f79-ffe8fe092038",
-    "http://180.252.217.48:36167/bin.sh",
-    "https://cqjeqfltg.fg777jbg.net/af4e09e5-b8fc-4dfe-9044-2c651e35adfa",
-    "http://115.55.222.169:32872/i",
-    "http://125.160.138.71:38389/i",
-    "https://no3htbxq.varzeshlife.ir/?ublib=a57307d3-16f3-4dbc-ad32-6d083137be20",
-    "http://110.39.225.163:40518/i",
-    "https://y4h1lqu6.jadoou.lat/?ublib=b3338826-4dd6-4f36-8542-7964e2e114b0",
-    "http://125.160.138.71:38389/bin.sh",
-    "https://uoxqk.kampongflowers.com/193b0ea0-54ea-412f-abc9-abdef30880bf",
-    "http://110.36.64.245:42645/bin.sh",
-    "https://mcdejwixr.fg777depo5k.com/ecb842c1-5988-48f4-a938-6ac1bbc21e1e",
-    "http://61.53.4.1:58803/i",
-    "http://61.53.4.1:58803/bin.sh",
-    "http://115.54.151.222:41444/i"
+    "http://115.55.231.244:46280/i"
   )
 | extend ThreatSource = "URLhaus"
 | extend ThreatIndicator = Url
@@ -16954,6 +16811,303 @@ UrlClickEvents
 // Malicious Hashes - Chunk 1 (Source: MalwareBazaar)
 DeviceProcessEvents
 | where SHA256 in (
+    " "c1bbf296cafb65c2ec94c313cb043889183bc79316be9f20344fd59c7da92421"",
+    " "c177e67cb8d6aa080cfb1493b15aea4aec8ed809c80054e12adb7b43ff6ba8a2"",
+    " "5fa3e214842722f8dbc56499a74b3794701fd00a7c38396f9bd22c382ad73816"",
+    " "9b1cba255f9494df63871d182cf7644fcd388c54d62a09921ed03452e4b115f9"",
+    " "31876a3a26a0f92a001dcae2b84174bb9f47af9208f7a92b6e160b1931899b01"",
+    " "15658aa912696d8cb7a721db43be332db24fe6b30e93495512fb17c24df55ebe"",
+    " "9758059acd85ad5b500777642f936fc88dbe54ec6d024f3ed802690c61e0e298"",
+    " "5e08c1d1f34fda070f4630e2d3f8cf15778cb5ac22acda0dff494ae09afd3082"",
+    " "5436f494f7a96e5140529e5b628ed70d51b10e932a82c56abb0e8e826ba64c1c"",
+    " "57369d7d7eb1ea95aef9f374dd418af94c2b9e534e46a83257b57ac48ecb11a5"",
+    " "5551851317fe09fb0b15060fe5de15547d013e1d6deaf7c3ee288fc013476d34"",
+    " "9103f68a42ba9227f1d7e601e3c77945a396394492107dc79cfd9adc73db32f6"",
+    " "e680982a6eb093692da658ed131a27541f218ae6287e967e996e261acc9d68d0"",
+    " "018937753ffa1fdc88796297948d82cff81b0b0beb1dae0335417b178eb581f2"",
+    " "4abbb9cb37b34ec498078496f17a7821b8271ae2e01f63e773a1feac994cd0f4"",
+    " "e77c1d3fd059fe8248e81fdfcbdc1f72c99bd208e4951203e43e16f803dabb1d"",
+    " "89dacc86bc936a33d32fc6070e8b0923f247d8dc89f21b331ecba9bb2ae9b01a"",
+    " "dd16a399bfd025a70ab801188be21e98b09eb53b02777478ad144d34f7643282"",
+    " "b407def7668e61b9a917aeecdfc408fa3b91c7a9656551debede768fc2406bf5"",
+    " "bab753aa194389c1877e5d21e6bcd2a1cfe291388363239561ca6f6172473dee"",
+    " "363806adf53215b567099b55da5a05c25b74b7744c18c5c395ccd1fc842d8985"",
+    " "7af7eeec1e562a8145abbf81dc1a58abbb9106276a20609bdb77529978ae1fb3"",
+    " "a1e1b4f32118b4712a0cd3ad27fede2d25c4a835c4b60c55d11ff76acbb9f7e9"",
+    " "892e3dee69fbd32403412137c34b784707f1e7062938501ee34dca9f8695c61a"",
+    " "bffb15ba549446153f35ba84416c339c6c88bd3e5559f9967f083e74ee7811c3"",
+    " "11cc5709971c8135bed1e0f1a1ad80e1e918165ce742c308e9cd8abdef958b81"",
+    " "192b59dc537d73dd45f4c0a84b8dffaa664661b4523ca13fed01b5f40a6d5bc8"",
+    " "36f4c72c0bfa37b52ca053b008e6d1020b8fdd0442cf0d1466a0affc1b521a15"",
+    " "891292d66392d8da0e92cf38abcb108a69e33fb1714f7920448301b1aa5094d5"",
+    " "727c152c2f20469adf1743fb4e5de698615b806c0cce4322fa68112a1b74b1b1"",
+    " "1863c944ff0f5f06cafe0f98d6a6f54084ac266936c0dbc16a9d13ab03dda421"",
+    " "59d277908b548113ad40dd23406fb7ca5b004372602585c43422bd2d2608e783"",
+    " "fad6377eb2c2ccee6bd87097bbe2947d81dca67f54117b09df436720469f67c3"",
+    " "c12fd900f32944623823f5087ef3eb146586a9339c0262333ac9c9bc08c06e84"",
+    " "7b33480aaa55a5113056c9ae1d5d72cd9a2b105f9fd3302c07f095e5f2effee9"",
+    " "7b92e3f3669e11928a5f57e81cd37ebf1feabd31d66f8cc59b41953c9acf2a94"",
+    " "3dc384b44e2e6c37ba4529b86740771f9f942bc0b01a9830110cb4f86739c131"",
+    " "372d9ffd6a52d6503025ee4cc1393b8a3d754513b32e6dafd818b3db907ec2a5"",
+    " "797bcd9813c2c4f11e3abde7b4806e0d81531eaeb68dfa98d3482b7c9174a61d"",
+    " "98268f4b9de6c8c17f83de8504302676c91710c6f801a73c94e2c43ef58b6100"",
+    " "6af6b0c8252dccb24c82b81a75afbaf7ca8697298423bf0506783e69044b0ebd"",
+    " "0ccc999c0f8f96df44bcfb6657392964dca46bcd8208cfe6b919f30e79b3c664"",
+    " "eacf32279b327b9e7c4fe83404b2216abbe89801cf94e4b34828596e09f0f322"",
+    " "69cf31dad20613d82840a5530ab726c009dc00606bb79200172c24c76ccf61ba"",
+    " "ede1ddcbccbad58538aa6b11febc140b6edc87a955deaccf479dfd9d9fd04b85"",
+    " "0afa465224ae07e025b5bea1ba5b29618c3309754a9d471ac85958600ac66b5f"",
+    " "3508dbe7b6b122c61367de28788c6e3871351e3b9eb813162e08601cde83376a"",
+    " "e0d32119d4dbbfdb8dad9ae2f4c51d5d72fced89b0b290c25c810d94174bf604"",
+    " "f8b09ccd406b3614a49fea26c98b93826d1bc4a706e55c7f471f6a5c41975961"",
+    " "7e0267bec46965ce5a9bdb330a84338137d2b4cd56359679d8a5b093def1ec14"",
+    " "49492a93cef8e4e9f707c2f705e1a5855c997f1b0c0177e3162b853d1d99eb1f"",
+    " "9a28bc11748337c0f9be92b0317a7c1b68e853ad46734991aed95de5edea909d"",
+    " "0c5c220ced84c603dff4e1384727502c352b746120f858409169c809fce348d3"",
+    " "0587c29d60ee921d925886f47219773f076226dfc39b437346164bbac1947c51"",
+    " "fc7325f2b827d5eae8c8efbacca7665953b0aa1bee591dd36a3d9068393344b1"",
+    " "85a8930117f71b6b1e51c4190f8f63c3f36945be45a38e769a07446bd0bb3541"",
+    " "4c4ae780489ddf33c9f2c764764619a2a8d0ab60af2e4d31ff1426963e8b48d5"",
+    " "ab4bcf70da80e2998bb90f878fb3e0ac6d174e89404e51d967d2c5d5633d3fbd"",
+    " "7a7e113d53f637fd929ffef4ed3b695bd32bc6db5e0ef023b268dcf8b3146fdf"",
+    " "1aa4a4079aebe66c451b65642080b6d4886d271f25842a0e9b9e4e636363e9fb"",
+    " "35079e5d421f899c82a6d96181fef5206435591ad51041913e8b13b8569d763a"",
+    " "fb1feb800d84d34cb1a3b1bf9980320bb56c175be3d0f347415072c4d3cfefe1"",
+    " "ecc664fca4402b2d727751a471ec0b7fb77b6e4bf9b3bf2ac516faee0b7f7d6d"",
+    " "22d787cc8ee9319b6e1147f55f7204d846efda4a3a0b1b40fc92d2bfd7345ff5"",
+    " "8a2cae89d201a88f1e4a32184967328120d2c1b23e8446fba921401da052fa58"",
+    " "344e9b7000b01a38632b5f23e6606b90e62071af140a70c837e1e03d0542c19f"",
+    " "a35482228a35f6d110a8397ae191ce273ccd70eed2fc9750375a6872b67e0724"",
+    " "e46f514e456c5e27f60854e4156234e6ae8c4dd5892ddb4d2d557de02fc2cd15"",
+    " "a42225c9e473878aa7346a4c585199b895cc9c03b3883dfc09bed00eb09d27ea"",
+    " "7b63414e44da32da42e500c1db0a0c10b356573f447554d884e47d54f8d0bab1"",
+    " "59fd9cd0db55ede4357bc4b3e1cf98303b8cc69fd4876b44eae163b0edefa06c"",
+    " "7ef6ecc3509623c41255c28545e4b965b8a6a1aec5eaffc6da3a71edbe4a244f"",
+    " "837278104e5d4ed94c286bd8ea3845377fd03c2f1fa4b7b43555b9fca3455115"",
+    " "6bbbf8df4cd5d2064779a2237c9ca2d1852ecf69828c16dec5045a246d3c0c80"",
+    " "cb4b87e7b976319a024ec52c772a84920f69fb305ab258a65faf3d87e8508083"",
+    " "698bbed0670f2611b5982bfab196f518011aebcc90fc94ca8f26173d0d2ff990"",
+    " "40dc7440564975985476e30a20135a9de794c920b63e84aa9447af9d06efc678"",
+    " "6aee7a332fde56bd9442f3d307dac29947f514ef8361ae6b5e52b843e905ee09"",
+    " "a4f22cc6acdcae73a96562b2e371d298f44033bf74681f28c8ea39cbef0e3194"",
+    " "ff79c5f9755f672027e442901df90a3ba2da04dce1151b034faf7979019235c3"",
+    " "b6f4e866faa39925863efbd15904a5fc85a5c08b555965211cf95edc26fe42a1"",
+    " "6248c63535b3c2c1233bcfba24e38264b9a1912c9f582dd91065ce22ec817a11"",
+    " "a6c7b4280347d031a950a5f7b619c6e93ee296afb10d5ef628f868377aaeb1db"",
+    " "84068b9f7fdf66aee19c733f956d8f838ea37186c7b292f79aa23aca6103e366"",
+    " "99675dee76e7e6ef051bca3da95870d518b53c757d7cdbed045b1137911884b5"",
+    " "e2b6dbb5b5c44863df8e9e79a6c0d0c4d8fe7bfca346335fbfcd4dc6ca5f9010"",
+    " "9042a88cff4d55a15b8f7faf216baa176e2e4d14141902589d8ce2cab7cd8767"",
+    " "5a07da677d17aa1de19d6450bc1c183305ad85d917e20b2518a0a9d4d2c16ce8"",
+    " "63293659e7617226c9d4420f00ca7ab408507898ec0c98f5a88e99f19c7b7491"",
+    " "3828bb23aa9334de9536a6e5bbd01fb8264d4a48f5c41ba519e1127d632ee8b5"",
+    " "6dd1e6b14c9549c3f247c93c766be44ecc984213eec4a313c0d38e500cd68427"",
+    " "054ef58f518a55839fd787321390f653087406002b05c6b3f509412feea95082"",
+    " "c505ca91496b4673d8dff699c56761cd795749d3516b9fd7e3dd21ea07f89ce3"",
+    " "3bdd783229bde7588021ae00d360ca4338d6b92678e4c3b371bee32ebf73f86a"",
+    " "e890ace347e88b817493580db0a75ad11eecd1c3125638f507596e44d51f40ee"",
+    " "caf5896ded727587b9461b3c3a7e6f3341be69760e5453f782d748f2ebbad4a9"",
+    " "08f1657e69e2dd8df42b21155357078fb6c1212cf6ac4d20903780838c3dfeee"",
+    " "45d5b81f46a54efd5c1e488b4a96a0c64f1589f1c19b920ba39ef207406f84ea"",
+    " "deb1cf717b00ddab4e32f30c29a65616dca2b7251aeb1f7fb837893d3ffe0176"",
+    " "121ed0b57841063122ed3100f0becbe97aeeec5780d7895322829cd16b71f272"",
+    " "1666d5be9d32b681fc10a2cd3e41eecb9d1ab913658248d560ca5bca6f2e036d"",
+    " "c0985d104392defce7994da521e990c4619ba57252083860d71dbaa8b6b13b38"",
+    " "3f1fe640ccc2e6b1e9495eec4df5ae4a1ec86781c87a13a14aa16769b264a76d"",
+    " "3597ff9e459d5c2a239384d919595cbbd4587d10f70a595bbec9182891a665fe"",
+    " "7832317094e8026f060673379f02dc898b655bf805f34e3f28084648cd731a14"",
+    " "e0c82a21ec4504ee22ea9561b570c5c8dcfdb5e7fbc558b29c3c9f82c91f9189"",
+    " "25c8f60d4273fc791ad5cdbb6d2844c21d0d683e22eeda6107baf24aa4388592"",
+    " "e59ca9b29c4693354aed343f6521ddccd70b3a87f8ba5c490e602e6c81b625ff"",
+    " "37063488fbdb6d8693fbbec93f80767d00710203af3437a3ff1861b96f6f336f"",
+    " "fa328ba2d4b0b2efc37bf83a7109f9e8cee67a7c6adb4c4c72316f120922fc05"",
+    " "79990567c7458e6c7274f0d61011f9ce4718c47f76dec51a604182f182e3aac7"",
+    " "547f6ecf5306f31f8fab2cdecb19b61d9539ca0500fc28a89755e2768eb6f91c"",
+    " "8bc4e98019791a40e2424cf6e366e865e876e38dd9833ca0cc4dce00db110e32"",
+    " "053c7ec4d1bd4f9a0fb40a606c730e20a5e601ef4729f932dc2e22dd7cfe52c9"",
+    " "c49c460f4183568952996c9be4dcebdfc18c2d0eed6e457e271c4aeb3586701b"",
+    " "ee822417c5ed0a571fbf33343c2c70365494321b6907b3d37b06f988f03a6faf"",
+    " "a9d9bd143f0e99a8098c2c6cc6cf94fc77fbc9f4f99873149940f0a613d9c0e3"",
+    " "ac619a5cba97b835cf875b44ce8486f147c66aa63fbd4990ad77a3b5017a147f"",
+    " "1d734773c59044a6502d893b3732c1083d18ebf3301a1de8ca3e75ec2d3beeb8"",
+    " "ce97b609df1b5fe98cea4d8763bbd569d98ca7494a59ab0590cc9176e1907eb2"",
+    " "aacabf937a352658fcadc862c85ee93b7884c52c13f15777e7d6b17b11f83c09"",
+    " "d0e5808cea92aa335ba889cb401a51506a13e79f5fe18c21a1e765c8f5c897a3"",
+    " "d2b5a8abdd33271500c062dae49ea54272ea64da77569d413091bf7209bb6bde"",
+    " "baf99548f2c0e47d6234bcc964d387184a59e5d4acdbf8af79a736d817730a2e"",
+    " "8aa91527ef1aade354cf6b330350b09d5a263991213d8122c5488c3d4208dab7"",
+    " "fee9293adc75678d15c372c03604d9622cb65259821a54ef912248c53f9d9192"",
+    " "c6ae5fe77a8731df6cf79e2f309b4269cc5f9a0fcf089b567a12095944e47eba"",
+    " "01f69a3b0b6f70161580d5040d38dd0423a75a921c7a72268380c2cd8ec62758"",
+    " "017c556340931f6dd7fe11b434b5b1bcabde5438ad4990dbe4c060092a7ae5da"",
+    " "4aabd41b7058e0a48c0204f10a04ea2929cec609ea3528ad3aadf4a446b2f60b"",
+    " "f0cc2f4f5fc888962a19f4ee32d31404969749a35d8ec963b5a68db99993a4d0"",
+    " "12c4015bf8f6ccac550a9fad2dba998771ea8019a622f1d013d545313726972f"",
+    " "3fab1d077c4ceca66946ad83f386bce9884afe602aba7736eba8de88fbcc2947"",
+    " "3cebcfa14bd8097539c75fd390d8ad67b792155e4ede474b3aef33988c2cb8c8"",
+    " "47b63f2e99323a4494c3a4ebd8bba9f8a0466356d10ed4df477e046101a21c2b"",
+    " "1be5f69f087a2fdf7dc4748394ff5868edbf8f933348946303071a3cc40a2b3b"",
+    " "f78b677683e0c567846a5a642c0a9ba960fbf6464ee6fc9c2cd8280ecffcddca"",
+    " "9d08b2f19f1f239652d9fc41500348262101a1fb88b2f9dc1dfe93d54b73d88d"",
+    " "f06bf8bc2ff7ce8dc16a0ca3767cfe38a0e7f44a1f52b3a7b9967cd5790dc8ee"",
+    " "4910d0d39e327056a255537dc1bb26093ba431b62ab89160808f3ba5b6837ff0"",
+    " "525f80eb0f76072ea7249be97195ce21982c8aa3297b2fcdc0b74e7380b6f400"",
+    " "0718893786a4aca8c52ba58299afd0bb0ab830229f786a342ea67fb653945149"",
+    " "716bc96035d520f189290e79f458a9114b1cfc534ad39ae9a64bf83707b5e4b8"",
+    " "d5ad75b4ceef2e57ac49703651a22059a60babd885620f609d80d34039a6d888"",
+    " "a7e2092ea6d8891ad0621f091089910aa1acea040ba7960472e1cbb04e57f6fe"",
+    " "cabfc5c1800c51508edc782b491f845228bde3cebab2d65ef3a1bbcc65ac8cc2"",
+    " "c821ba68ef03d42a39eb954a88ffa69659a558191b454b5fb426e7fd7a3202db"",
+    " "f923e4ad2f343d8e4246afd325e0a21cf029274e558b8c44539b5ec90297aab2"",
+    " "d5c2f5793b58bd164b7ea76e71f18808cd554d77bb404c5012eea65276d8dabb"",
+    " "9d94a59e168170c07ef8217d980da3652b0c8b611ebe10e7ea47274017008f89"",
+    " "4249140de433d53152df57ec4557bc0cb406541d2c6b8636538751cf02b22503"",
+    " "53ae8086ec7ca0eeb65e9fb8ecb12f4eed87610eeb849b94e716cdb5ed3452f1"",
+    " "65d134beed4063007e30b18962be3635aa2e3fdba4aa78ad7a57a2e26c217ccd"",
+    " "1d2e08dea7c0cba20a7c3ed611ab3a55d41dc05228f820fd4da6c7a6e2a3b0e5"",
+    " "41a0fee35a8894c4ea476ea17f212ea0b08ec55cfe2e8caab209dd6015fcb3dc"",
+    " "da869770b9b146ca7dec8b84e2db20eb4944f13c0af247c0f2e141b0448b022c"",
+    " "eebd68bd23483f349417b459462b0761272fae9fbd1cc3b8eb11efd3a1470f84"",
+    " "43319a6b09128974629756e4029206d12b9e88f1ead9ca4c24d18c1f5f61411e"",
+    " "b61279bc9d5e869ab4e47d56d463e47af898f5984871d6cc9aa90bdbbadb514e"",
+    " "ae2b32e249008a421c983e702c5c8ef9d9c674deeedf592c76a05ba5b8793c0d"",
+    " "d23fe671970092d435c8bfe13f766140243630adf231e65343a32027e3c1a6c4"",
+    " "94a123f711aecbb931963dcdccd918336a1ed2ce0455a7c3e122c55482fe1399"",
+    " "fa00718953d329e51b9886e25dc97625c777c5795431071fba5bb0bfbeb2e58b"",
+    " "1821942431d07d20a580323fe7322d8a7fc96971d832d95b7efded66aaff06b5"",
+    " "fd7c3d18e60405f94ab0ae1aeccd609b803da3850e9950bc5104a646756db943"",
+    " "0a087a0ab7eb3cfa171eaa960c65e9144e244d83c1b40f3e63faf13e77efee33"",
+    " "857baf317468e83abc045d7e6c0b11ef45626a55147fad36b211a8f73ceb0e83"",
+    " "4c0b8df79c22b4734f2a7f1a484e13639f4d0d0ef67bdfa6c62a76a00cca7bf8"",
+    " "6ca59bf579f576cae1e08b2696d2cd461a9813009ace9ee7d410d0187f318efa"",
+    " "dfdfdde4a0346e8870aadddb03736318b5138c89bbf290e1c0143a7723046701"",
+    " "a77b9a651bd09e64215bdfc65d99fe93bff5dfa8a50748f02bf5d9b699399736"",
+    " "093db91d8a9c42faf74d6531eacab95e1175952a8defd0a86113ab92403e4f22"",
+    " "a817e8e27b29552bbb35fccc35d0fa5cc4076b3590d42412b6e1b43b266b7c41"",
+    " "22c6ec957dc18052256bdaaab0262d3a38c2f4974b129c9e9b3096e34260528d"",
+    " "352f7d9b84371291a62dbce9cb485245b1008bae4ba53c121b762270d5016a5e"",
+    " "71f1bd36c0868d68c1df5baf135ff63ebe71b1d18c4c4c91030695633d507359"",
+    " "2a46a2565d4f50facb1f9bbceb6ea5941324e9316c61e8a125f6f012d0de7e57"",
+    " "4f4193798293dd233ede99843c2b47642ba0253abeeff590cec855ad23d1c191"",
+    " "2978fc4af143e194885eb6df3e92a885fd7f820dacdbffd0478be972e449523f"",
+    " "ebae51e28706132c3cec8c14a3dec69b555998e55cf91930361315d00679ada2"",
+    " "7de772085a6413e69e1fbc18612bebf5dd8d7cdafbedf41b631e495097450830"",
+    " "e8fa2f0d26171bb069a6137993ebf5459d230cf7101533b9fbb9e22754302267"",
+    " "b8b002ca4cd94868e1500ba1730fcb4be4d270672545c28c340decf0e088af89"",
+    " "8e3cc34ef181957d344789e7364f138c4de3e11e5b6bfcf7c3dcf887c4b24b9b"",
+    " "3939545bf75a0c5abb97d5114f10c224f40a125867039e652c1beae85f883a56"",
+    " "859de3cf69bdc175a91c150ecc23c825bb38d999c6ef4e17955a9a78fa139943"",
+    " "bc4bfc479321f0ec2785e1488ed5421ab3f540fe55f4943748e49b1e6030fdeb"",
+    " "a07ab47d6058c270a70d07695f60ead95db92c30dd58298da7eb31d7298f3620"",
+    " "c6bd70d509027214a1dd096148ac01fdcbebd268e36a091e6f646e3a179410f6"",
+    " "a5268bb0447ddd8e13190ce95933ebd3c2a65a726df96a8662fe3d78bd874df8"",
+    " "528455c2cfc9029d72096708bff82354d3efc82e0f7cafca9d5077b5bb15cc79"",
+    " "9ad077463712f019df16b5dfefc2992bc2af1f36fca23cc5b54c4ee2213c20ce"",
+    " "11167bd52115a338895b2f6c9929718bd8ef50b9bfa7b3d01da11a523fdd2a95"",
+    " "f1283863155bea9a28677f82ecbfde5d9f914c34e9ed43c3e69ffd46d49c81f1"",
+    " "f52778c09d048c0d803d27b82d7e3eb873248226b19bea6749ecabc48ef6a80d"",
+    " "cea1df16fd9297b9e98d94a56070fe5058acba02c3dfcfd03b8ad27751dcd152"",
+    " "c65dea67e8859e7e0a34fc788d9688a5b9c785173bfbd3d22b33e8bd7f14f962"",
+    " "a54310f2ccd2c2a17651371d471611e523e61313dfcb77369b37ce7b28fd30a1"",
+    " "b617c30f283f9f0cd43dc08e9080690a42b6b57db5bead13f93d251094986253"",
+    " "0cf3a9661e2c0e06920d85e09f43cd278ef4b48cc6c7d3a243fb5361c7ca70d3"",
+    " "480f2ddeaa596166f6a4a4334f797915f04c99fe233d51cc43b9b79a52464980"",
+    " "d97ea10d1dbfe2a69e0d2387e8985635b20628495918abd54c4b052c0acf05b1"",
+    " "7c97e6710bc6531199ef0cfddb15b339c3138f1b8f7d83ed04b00bc3beb49e76"",
+    " "f820c6be1125b14aa48f65f922b43d64306fe9f81fc1396c52dd4c13bb36b2ad"",
+    " "44563ef70024edf9949a7dd6ac1afff8f4a325841c951a423a026493cf3945c2"",
+    " "fa4d08fe24ef3813989415a88a44a857662a4a6f5a13903ded7bf0b57e12f3af"",
+    " "640a4ac2ac73d0c6ebc8a8746c1eeb249b5bc9b8af550653f7df62e99f47e98f"",
+    " "058f23ac17af088c3822fe7f1d745442f45b2a64458ebe7e04c83b87a73af0ba"",
+    " "a5171994ca761b8d50989048ae142a59863db04696713e3947cfb22524eaf05d"",
+    " "06eca2757ff3c425238888b7090772fd14921416066562f64dca0da47d50b7b8"",
+    " "64eba4a4ea02739cb2198a28f059986b7c3ab7bc610339cbf843e86f492ca892"",
+    " "e374cedf2837c6d8ff1026c600b7aa4acd6847144464979b7b81d77ce34273f5"",
+    " "02853d961ba91a94956bdcd6460cd26cd3cd6128d900641a46504b14a4090429"",
+    " "b818336d9a94717bccaf9a330147c890eb745894fcee199e772908db0da046b0"",
+    " "bb796bb63f6985e75dbb6c1f8eb8640dee859f989f09a4a2fd9102d33918139b"",
+    " "d90a4678efbbe1d7dc1f42a9f6d204c3e72f81db8611f6d12ff91cec52ae9b92"",
+    " "d155921aba517491a5fa1a51b5dbfd6fc2c886c5522392a03f176f471d3ecc1d"",
+    " "2eeb3912efc8beda04984e48d1a1b7d8a9420fa22ac2d59f690ae8905b1bf58e"",
+    " "2febd77a459f7f10ecf3bf36fa42689f765a333990ced7f04ab898e0595edbb2"",
+    " "399f3bb1832ae6bda9c2aecb890e73bc6ab679d9d69f7663c059b79adea43654"",
+    " "3cc7dab11f0f333fad56e428efaa638ccbf7af16eb4dfc8dab2621732fb22d92"",
+    " "a89e8aa2d71afb1141d4d744841fdd37ecc2d61e29e545b9102ffbc234619a61"",
+    " "ad6828b4d3db38aceb33b9f286ec3ca2b503676c7c9b1a50fb6d907c5a53caa9"",
+    " "8ad249fff085b8f12035a8fdc9fac52395ec71bcbfc96ccd1c5338cc9c3b46bf"",
+    " "c091ff8c50ab908e8dc14691dad7f1166cbefa8e9bbb77aadbd0905aad128f2b"",
+    " "26a2f86c931c7ef5e978a34479f7a2f8e153259f03754a892259b7e7ae44fbbe"",
+    " "a12c77bf7660bb9693a422b94d8872948baea21b2583be032535c5786ca8c8c3"",
+    " "89388aa5ec3e134241a8be5f5f2faba08cdc757f5b6effb997b15f385ee69f14"",
+    " "198921ccca7125a2a0626de79f58c44123ea0eb112abca19d7900e5f36a435ae"",
+    " "08aadfcffb61f90b0d3b34758048e0f699f241216d164c82919a6934488a52e9"",
+    " "0d5fb8c27516497ed24815a90534283ff45e543fba8c4f4f0e64821f63391ae2"",
+    " "5537f0345c0d67d98c28609e1f8ea4f4e81460bdf7c96c1e62a81d457518489e"",
+    " "95a23b1bd2f5ebf928a9513ccf6b74c3bd2426638863cde4b302337e8b628009"",
+    " "f098922581f87844cc6e522f797a073b418093198d610b499b78d22e2297012b"",
+    " "562cf6d6cc50b4f1fc7117315ca8c08797c934e11619eb1a30fab168aa90f0ba"",
+    " "9e92b3febc45820609da43d729333a6b7ae23a95dcde6a21c4b71da938796339"",
+    " "b6bd154b1305c7c1deef51b55e30d5fdf4cc9392f9970201946eae5dae7a5264"",
+    " "196a0bc458489424c912c8aef3d8d7b8c661d42bee6732ad300cef5dd59f0f3e"",
+    " "5a3497b0f01e9204f54e6b853acba1c5e5200393101e623c8f05e86a3446232c"",
+    " "55e725a891d9721565ccbfd92fb66410add55e5566e0490f60dcfd63ba0ea26c"",
+    " "536f446fd52f2a6dffcdcd45f1c82150dc8272104fabda2ff0db4b2c106987ed"",
+    " "ab9ba2b635db5e8562ef67052e0d25f4d8b97056030e33a0236db8755ddd8956"",
+    " "eb8ee248b367276079c7c5dfe763dccd01021cd66304ad307311fddf5e3a67c7"",
+    " "a6159e31a631915d8d2a63f8181fa9179201dea02d84d4d12cf31653ea21b5bb"",
+    " "0f5ab5ff6c94f99d50b374ed16123d5cc9769c33a220a066a61b6b5017bf9129"",
+    " "78aa211440dc945fde98a9d035a45c014813331edc9d2d5dc0ebbeb78ecc77ea"",
+    " "2f7fbb661828a3e4b29a509cd7dda3b0709663afc5cc30d3e16c6058326ac0d7"",
+    " "690582b80494b16b84e84e4aabd11884549ad6eef11808e2c47cd39343c200cd"",
+    " "323fb94a0e3bf79b41824385b0b65af48db83ac84c0fc8d041597bd8824cbbf7"",
+    " "f2a19abee0adb079647cdbb742590710a395ec89b47cfde05842bcb9fbf6409b"",
+    " "cf8917e255209f5362b852ad019d53b21b9325df27eb7ef3d7e2d507776d2afe"",
+    " "39cdc5994f3fea1f717ae7e7c16fccae5b89bc6efe98568c29fe87fb4887ed80"",
+    " "24aa10a7b03a9ae4dcfda6eab4a06e634cd7012f77fb05d95a444f7a970aec05"",
+    " "d5a72f54e4cea54ef1bd5ec023e4c62420c8f6a18098495babd4616b65b11718"",
+    " "0597f37deb0fea59db629d8ef49e28920e6febeba933f74c6723c113e5285aac"",
+    " "29334fafcf2d5cb4010f2b8ac47832f234f2e8e4d94f4f9b9ea5768878c4dd01"",
+    " "1ab6c67da6f8afe206b2e096a7485e24695ccc740b5daaae34519b7137948bf9"",
+    " "e62a41b973f2a0c52796adcbc6a444ecd7145a250a12375855a7c3347338ee92"",
+    " "137cf6349c0147537c7b56730f616a253a17292190554156b9deca00803c51c7"",
+    " "797288b5fa6ce902a95247a2ee7a1e6aee58921790c59ca19ebf6ab43e6b4e13"",
+    " "e3d435c372d0429f39927a9f277cdf0be91360f61e6eb3fdfe3abe6869171f40"",
+    " "a9c00f9cba415a2cd86137d9664dd37a319704588aa99d5594273bb564f31839"",
+    " "b62c9b53bac6aeb692dddf05329cd07702d2465d91ff38b9bd405e28bdcbc448"",
+    " "adaf6e51491783d206f60c580020b5ee7c390ca43ac9dbfb9c79eb62c586c811"",
+    " "9bc3b56742c90d4d36f4d550488cb19ac5f4be5c6d78c4e5dfc2ca410e2ae718"",
+    " "a472ccfb0d564b8f24df97dc041beacf9186df3e8ea7a56840ba23793111cd97"",
+    " "514f86fb024fa6f0e5bf4d8aa38041b2d63d8ec5d4832bccd06ec6d4a549bfe8"",
+    " "fe0f3d4950ed27a4eb7d61555c11e5c07766b975ea834a59b2476b69b8ee9a76"",
+    " "0a8c00ab0df2a55885c581555fac52fd89c227a7c0caf1ae6a0f2ef6ba100c27"",
+    " "35124eadf2511b04ee78764834e5cf49aa4c7bc6e22c1a75c0c7fe9b1a77993a"",
+    " "21d1ee491c1674ae6e999c386d011a1a5412b5164ff3d2e7156ccc05dc7cc863"",
+    " "4d63b437cf55d952f15ba3fb4d76a85fb7a7bb993d5065a79adb847c432e743c"",
+    " "ae625bbe13053be96fd4211e36bcde7fc7df07b4adb5be1bcdd69ca2e7633e01"",
+    " "3e314585048a232e0b551529f4c459179430f46d71ea8595d7c41b7c59f47037"",
+    " "9e3076097c99e0fef6b7bc23763e8af3e8f2e605340d760dc48323cbe1b35e54"",
+    " "542ff833aa11374be9b2f2278eb808a4b17d754a72715bf6af0f13c1c68a9d3a"",
+    " "7b7f06cdbaf43dff2dee915ff0bf3b2b65ccbf1472f3cd3ffcdcd576a711b0d3"",
+    " "531ad7e1518d40cfa7641103df40346f9dc2abc48173294fa9ac5e1341c1e55e"",
+    " "8923bdb2fb4f0ab0d855ebd48d8254fe37bed7bfef68c43ab0f66c803cbd0056"",
+    " "3e4204dfc05f7d98d882477e759a27a5f21abbf26bc3e33e90c7279a242bf0d6"",
+    " "5cf9a90c5f69f9127d4e78c64aec9ef76340b1209eb9a4a2c1e4f0b9432c4ded"",
+    " "af12a273133b646805713254ad2012c5708be375c9dd1a3b11b3c2dd5811bc8c"",
+    " "55f0b60af40ee8affb3184145d88b70383837fea57d2de8f52b64665d5314e6e"",
+    " "b59d2e20b78d497d63029ea384ee0c7a0f04da54d025c4d8137fb0d9cba984f5"",
+    " "e9cd7b59e64b258a8d54331ac4326454a2cb7600369d854795bb6e8d5c285a3c"",
+    " "e378bb2d4ddd0e93513ff7c7b25012abb21d3166aaad2557d9b9b72f10563d4e"",
+    " "239f9f7d94b94519c2849c6216b006f79662f6f1c379657ef59862da5bffc1c8"",
+    " "a071064107d8e2b0a47ca498b4b675f8bac5beec08f0e4d8a127c45ae581e09e"",
+    " "c7004fc843cc835a5c72630c78d1a11c052245352906e19214a439f8393a55cc"",
+    " "a78885a0068a8725852fd0b24a8c7ebf74b45e5af4e7335e350d0743528e3242"",
+    " "615edb51bb56138706f4e65f0846ee33c444b95b349ddbb1449201e35b3a7f7b"",
+    " "3f96a6e9f20241b149ebbc91f9e22f69722515e79bcbbc3c002fc2364f5e80b0"",
+    " "d91e69f6cfc7d484a6a67de2e65712e995590af17a419b0b0c1ea22de3d2f81f"",
+    " "57d4d81d179f20dce45e01c06873b803ca8af17ffb3109f471dd54d50e1afb7f"",
+    " "45155d8d55da2f7b1b6d23db7bab4bc54f1e8b49d32bfe5a3c66a0e1fe3fde35"",
+    " "b3b2d61cca83df235b52368ecff6142594fbfa1ff96bcc0ce5c12d4b3e1a50c1"",
+    " "aabd2d5eed42d47bfb6a0170acf4bdf9a21be4c3121b262b86a826e0829b7bca"",
     " "6a052827fff8a85555c61ab47bbb2a03d14ab0415769aa985e56a9c78d94f5d0"",
     " "93c43976238785714abed8e9e7b7afbffe5b021517b85ac7166d37e3ba73b46d"",
     " "95cdaaf1c29013aadd248ad9c6c15922bb420a5558e6efdf6c52c8b16dea67cb"",
@@ -17156,7 +17310,15 @@ DeviceProcessEvents
     " "dbdacdc6e8a16692a3933e743a2b81fad289e06ada415585eaf551f3d228b28b"",
     " "f46e36db293f62f037e5442b11868018c2d82ee028b8c8b63cbf4bcad977fea3"",
     " "2cdb92dd94150a468a5f231cdbc37d1243e43b82fbdfecde8cdbd021f2372170"",
-    " "36354f7f2724edfade129d3e1cd1dcd577b5c7e682ec3c05f3dd1be6890b7979"",
+    " "36354f7f2724edfade129d3e1cd1dcd577b5c7e682ec3c05f3dd1be6890b7979""
+  )
+| extend ThreatSource = "MalwareBazaar"
+| extend ThreatIndicator = SHA256
+
+
+// Malicious Hashes - Chunk 2 (Source: MalwareBazaar)
+DeviceProcessEvents
+| where SHA256 in (
     " "ca50f51d036e9fc256d99272f792dde00c7b5d67bed4012ee0ccb9d92dd60004"",
     " "d62838bc45d01ed751d1b6662de8a60511dbe60431f4aac8155643b77bc81c10"",
     " "32e2817aa7f00288db24e2641e32ef8fb30aa5557c6391c89c64d18629a7f653"",
@@ -17393,209 +17555,7 @@ DeviceProcessEvents
     " "a4e7500f5e360f33223c504da7c953894ff2053fec6f5b6a6ca772bc78a61742"",
     " "2dfe533cdd6c2ea50640338fd3a53ffb5620e82009575bd27aa10be5e7444897"",
     " "5a41a16cd4756275ce194a9495382d3cf340a2cc362de6492ac0ba6879be1d08"",
-    " "7f75bfb1eeecded58b0aca85a25efc6fb95dcf7e0105a2de22d59aacfab9df1b"",
-    " "f9964a8d9d01052d9bebe057deadd7ce9d794e8296e2a72229f8ae4aa62ae224"",
-    " "ac7f1d6c3d435a3961c1fc71307d7a9354ac2b84646abc3834e98272fcff7a9b"",
-    " "74d90413c20a548c1849f9b9e42a947441055589ba06430cade9ab40d38f7539"",
-    " "05a95ecd3164c57248d473c93032981bb6004336c85fe888b42cd6294fcf9ede"",
-    " "8dd8e9290fed01c0f7f9fb7e01264368ec8d53ae57b68ce73ad45facc26712f5"",
-    " "4b00c7ebad267025b84e7b4d1c996eaefec34a065913d73ee0070b119217d1be"",
-    " "9f09fac52d7f1955d1fec98172c99a6f0d2781e9307fa828b4a7175622da5200"",
-    " "a980cf0c37b5c96ceeeab43c2dd8947851efb43985e7b2fb76e9ef855c9b383c"",
-    " "9af4e08d55020b4182a411f547214d2092887a727f7ec5ae2ead8045bdccd579"",
-    " "c9571e626c47a576069be0c893bba4de8dc3762602329ab9c2e36ccc48883570"",
-    " "2b7f489a23c21ae46e1bb87c129a141bc1b7b7e1b9669cd83cedcbd1e9697b28"",
-    " "cc57e487bbddc0c26eccb758c92843e935a329cd706bbaa24537726f45a0de5d"",
-    " "df159312ca87597dedf3d04c035c25716092f27a5fb2534f9ec773a5ddf239ab"",
-    " "9b2a69e414035f34ba3ccddb8f4bf48f0640f65fe356de5fd7d5304933be3cc0"",
-    " "18f35470bd811ed20ed636f7a58b101428ab784ee1eff4ba902a4638b5e55823"",
-    " "be9cb31ff1434c8dd13ab72a3046b2c0383272f0c0a2bdf95c1e35045c8b1206"",
-    " "a3300d78392195891d7498b4bd518dd7631f1108ecef6f290586a18d08410875"",
-    " "1253cb1483d3bb5f1e7e0cd3d53c722e4e2e69483b4070404c3ba75844994b39"",
-    " "b199f70d109357f81c2f147318b424d91fd635449b19c9610f50e428a0c68e8e"",
-    " "fdba2c8f46d4a4617c2580b3bcaf106076c73b4f906756987b63c6492dedfa0c"",
-    " "4252c98558bda800c93925ae8691d1c35d7db57cbc64eddc2451ddf1e780034c"",
-    " "be5770a2afb56481bffd96417857e34d8d96c2b078434645d9aed990ca2c0764"",
-    " "71bcb1ff944476d06565e1b4ebc6aa74712ecfb8ef4dd0e581f440ebb87fff1e"",
-    " "4819d87fe9d0d0485fe85a3843a3e3ecd61ebe50a115dad01ec10275272be82a"",
-    " "01156f0a356a50cc73e012fb88bfdd1a8e06f2db452424d1fe71ed2914b5b641"",
-    " "74e636d09c7a51ad6dd8cb09c8ebc32961a7530cd24e6010947598c566c1f2d2"",
-    " "04ef8195e31b65bf80ab31d7c97806e39bd90ef274a72708b55e8f6675ee72ed"",
-    " "caa892bff7c2645416a867c85a9c3d58c491e4bb130b8894d19fc1233ce91bec"",
-    " "f91b79e3699ef2eb397f65717116da36f978126b78786b260466fc9e1390afef"",
-    " "70c037b40986a30fea6f9f2ae504eee508c4e1ca0bd859e8a78237d130758cae"",
-    " "3aef5773707bcd2ac1d33b4ab18be2341f4f6f40acf784837ebc9222770facf8"",
-    " "1050e7ca3b05cc57187f2ac7bed5ccb2b49150ac0ef4a8f4ee686dab61eaa330"",
-    " "afbd387612dae6d6d817231abb6465ad08ae34dd6c24568e2de89d9a3c5f30e0"",
-    " "94620f612e74609ad155ac854ca42b615e97361f0c6552e20ba902b690514a30"",
-    " "3bccecdca2ce3415df0774388ee45110c85073ea0f5e6b7ea8b00a6a1e334336"",
-    " "d64ad56eca41d47cfb7f534623071dbdff25a49cdceae4dc9de6d7cdfa22e7ea"",
-    " "17922edaad96218b0cb61af51fb70955da7f9396418c4d83330fc80ce4c71a32"",
-    " "e4369695ea1edf4969558c295376c32d042599fb3348c2e5ea2b8563e46db1f3"",
-    " "0e8d4bbbe9ded46090848a1a755e655f7c2771d48426b0bceecc9eb31d53ffa1"",
-    " "92b2df9b3b1add879bb02447bf1a4484f7a3ce8058ae6f13228ec619714ecd4c"",
-    " "6d31b81e8cc94e6598e6bf13781df7bc13901ab3b0fc24fef12d4d71162a37ce"",
-    " "9623c860ea32daf38df770d354165d7c7802d337c8743c4288e3799ebcc8e0cd"",
-    " "1a20a7ec6847d1efc48a930b9c9fde601c9d0f41c0876febedcff913dd80dc7c"",
-    " "7db44e145483e67e5fa9944a0d1e9df51e4cd6a0b50249cd882a38eca2443ec7"",
-    " "45217ea08d8396e3ec70d7e0414f90cf92618adb52fa72261678361658a07bf7"",
-    " "a8ce925aaa553b4d8878d2bacff9047b0837b96597a80a54e038f14b68878ce5"",
-    " "bd8715a77f1dad85e48ba889d3d267a45e8bfdf618a8f7926008b0a4a89d6ee5"",
-    " "0ac17b5ec73932d1d3135ea38b0fc7dc598b3bb7941d32e0fb2160b882fdda8f"",
-    " "79399d2ccde8a358e1f62b9422e4ba4d337d14b293f0d351b5f611549188cf19"",
-    " "c713bb386cb58f4e69960add340c8597fad9989cfb00a6bcfe2f4767dbf1cfc4"",
-    " "7df1ad3f296151ca57f5041f4863d6309ec7c8e99918fd2c9c75be7b9e6cc64f"",
-    " "7824e906e6bc2fe40b62b7fed3990103dd894ac0e27367ac4509eb9e2209dbcf"",
-    " "9430beeddeb4625b87ca3fd1deb45141400c19c826c2140ccd2e264beea179f1"",
-    " "12419d8ededdec0eaf1a62673d5d3a9810902385ae25881326cc3b8b331970da"",
-    " "34fe876495ae17e947e2cfde048d48ab3b88d2b6e0168316c7faea7313363a12"",
-    " "1a92991e472345b682a7001bd4ff4a91415599a8423d27921302c46b581cf044"",
-    " "bb0eacdc7520edbdb04dee384543e2caf6beeee3fbad2731dbc8ebe9f13f0fb5"",
-    " "a79bc3298b6b2de35d8f52b71a6d6545701f42b8cc1cfabfed24f62ed81801de"",
-    " "59688106ddc46d7ec9f7e7b00ccb511b9d249fe12ea98fec358dc838b518fa56"",
-    " "4ad494ac04aa0969ab8deb6ff8bbe936f9471ff38f505e2c2808a0b5e8af848c""
-  )
-| extend ThreatSource = "MalwareBazaar"
-| extend ThreatIndicator = SHA256
-
-
-// Malicious Hashes - Chunk 2 (Source: MalwareBazaar)
-DeviceProcessEvents
-| where SHA256 in (
-    " "59035939cbb1988d8530155c6a6ee108e0296b620fa3a5edbb9cf898d0859d08"",
-    " "e38c6482e4ade50e555803270d5a79e5f32a0f1453de2c6378982bf92668cd69"",
-    " "d0d4547f15a6d6f1b624a1b4ba745d0a167a614802b800542d394d99ce7b72e6"",
-    " "cd4d9ce29b22ccd9bc97d50d32923b84b44a2ce081b13124cda0a33523f86763"",
-    " "7aff13bfb7e02f948cd94a0bd44a4c37b1fe527367523846b0424ccf43f9b760"",
-    " "80723519bcbeeffc85fc15fb009edecc156e70e364043bc31180a8ac5be35636"",
-    " "7bff029596125f14c40c96a05c5192b20dcd74ae7d28db20d8dba4428c58d32c"",
-    " "ab5f94f37e0b786dc893b4ae19f7be52990b8d8328a083560e00879e57d8ca38"",
-    " "4cd28117ec4f24a8494dd584b134d461f0e68325608dc7ddd7a5ff1e70889f33"",
-    " "d6f2ebb2bd9b789389b26fbd26073a56ae68e4ec96c70c70ea0f7761c1971bf3"",
-    " "2ebe8c0e83146de8b0395d17b0c323172b11c236d88c8f6b1df89c8c3461199a"",
-    " "afb214847f6f45aa107e9e43e1a5ffd0ae33596e96afc829f8fde6c301f3805d"",
-    " "5a4a0a529ae8c8ae85f1ea8017de76517b4d83f1c620a97c40b870ece19869f9"",
-    " "a1b7a27ccd4c49a1e0bb6ffd940d2e5eeae02d29739480f837b84152fbee16f6"",
-    " "e15e7f62c32fc341ae5c686c8a4f24e731476ced8bfcd67695edf7af1253e0e8"",
-    " "52dd2fa8b7e7460a5776bbb41c234d66efb7fcb781baac45cd92fc92bea29189"",
-    " "813e1dd6f327354fdf8077fc9482fcfff32c357ed876da3cd197a16f596f0692"",
-    " "6aec564e3390d3ed3414fadf51ff4151cb7d0671ef0833e839f0c914082b9751"",
-    " "574b25e2d65712a885dd877d89d73e446104db074c63ec5d8c8af3583bf83956"",
-    " "2e54785c850529f281f91edd3f90ed866c883dd034bc7053c4068500e5bb0b92"",
-    " "b1dd31636a26d8811f470ccdc32b90ed291dba7cee4ff7d02a9cb01d85146126"",
-    " "f22823bc34ba3592e6f21001f7153e970bff3562ef770786d9beeda451a4b654"",
-    " "7556bcc9047c408e61dd0fc1ffb56b3d96f052064f69d0b84fb17dd365baba79"",
-    " "32c92e3a2f50c0d2e64bfaf78c6221de95cc23d4ca22045c70c8e237c60cf29f"",
-    " "2f7470a242b074d8208318b1d5b743ac7ba730d0462e487763b38be7760543e9"",
-    " "1adc02d8d3ed2f300418b3b7b5edab72962c40f6b237da12b339fa700ce9e9ea"",
-    " "6d772ec8b17c64c8c12fce169044e0304d1fbe0d26503641cd49936af2f26e17"",
-    " "d0c96df9f4124a6f45144c6dc98041660ba6955ba3273de2580ae3b2c2f98e5f"",
-    " "6a64706cfd7e1754f2626bdf2c1f66ec46e63565ec481b4efe7d5d931e8e7a8f"",
-    " "4395c75e4e288387972513b9760f6c868e6b2c2da417c723c24bcf32f11d69fd"",
-    " "6723ec20e628c2fa3927d33eb22fc32ddafcf1f9b47dc905df828c83ea08b1d7"",
-    " "3b8e7ffdd1469728a242a7b86bb168486dc2b7258b03aa15c52df604e1105e86"",
-    " "e4ce0480d600aee2aaad8df75b2e50ffe369b1f015d72f9ea7f7cbd38b3d684d"",
-    " "cfabae2edf939f81d3fea8a50ba20555639cebd70afb58e0b2c18f820b75a9d0"",
-    " "d52cef8cda577da06b02326ea0cb6b6df55b6149018c2e091843c43414eacd71"",
-    " "69b4fff75db8d4ec361471796b26bd2df62f983d7109448ea60e6be9d5b3a759"",
-    " "ecf6696f5ecd642a27033782163e51e890e59151762e37a76897637eb620db3c"",
-    " "32c046428fa2df75cd8b454cfa6831930261f8e6f7c15e1adda189d15ba96d11"",
-    " "45fd80778624181063faabbf60906a117f8842e98e8447f02b0afaa32996e45e"",
-    " "a8900715c5831700ecf8c7a089e0e30511f02f64ec34eba0ab02da4b4f00a37e"",
-    " "ff63bcc54ee84e5abb2b747145578882cff5e730914346425cccdd99f2ab752c"",
-    " "e65d6b1b86a1cca7c2290f1930306c47dded097c547878d1bad9fbf94a58ecc8"",
-    " "1ed50633de7399851287c76c222043a2d281bf6bad8bf73f69348d5f1e5c727b"",
-    " "72a9256d7d4b594e73816471b26d307dd45775143223ed5b95522d763567e692"",
-    " "02be42b245e097efde3773ae8611a48fd2be0a98960642ace80fc1af9da24721"",
-    " "2de6e101884f841fce0c313d685dd37c4c9d470988e33acf683cfde400bdee28"",
-    " "286b9aae20d877b85a9b8ee4156a12e14a4c36cdf9795a625332ec42ae2974f5"",
-    " "908e30ef8eaced1dab3c7f3cc269b24993958af15eadd788c8a56a5ed3668368"",
-    " "79c3a51a94ba9e5013542d8169ffbe24781830d602d5eb18458ff4040dfcf56f"",
-    " "ddf9f33fc318bc91eea94a4046a2f03d36652057b9d0f5b985ce81ce4061c4e6"",
-    " "21400c1dc80863a766225c81ab4d4a94dd761eb8bc4d06163ddd96091f89cbf0"",
-    " "2b7a0a0e09245eb24cfbf404b0dc03a63b666005c952c022624aa00a5f3451b1"",
-    " "05bdeda92ba750c6c9dccb66f717d8725595b5b2c11966bb071d89c7530ed98c"",
-    " "42118bc3daa2d2c439bb54c329f2184be65b9c89ba87aa1a705beb2f79a22e69"",
-    " "da1a0766d321e98aedaf4817e8b461611523d315bcc1a949c4238482b102246f"",
-    " "7ae56b78e7e8affacd5d1651d97a0d4d532f784c747956eb4d68fb3826894c39"",
-    " "8502dd5e803f7583007481e1821f9242a6ba2774974f6757dd0535a688f6e1b1"",
-    " "253a084c595757ca3f22e165b623deb7612be194d64e02515fa8119dfa5edc24"",
-    " "341fa715909d599af626a5e3231dc39518f84288fcd75ff18ba54e185a014c6f"",
-    " "43b3360d9a7c58c8e22635234f3c15e96de77324779bdf2ea32de5e48616e6e4"",
-    " "5f13f1d98672b0616a1d8848fef24e317742cd60cebfe3cb7b52aee83926128d"",
-    " "d61481f2240f692e4d18278daba9d2e2ea08dd15f99c81c9e0162d3655c21856"",
-    " "525c36d65c17ab884e092ddb83562f1d95b0eac6c6415e1bbfc54d25aa7bb2fd"",
-    " "250f9079f4018c6c1fed92b09b91e75222790a5f59379c4b7cb3185a9014f246"",
-    " "e7753dce48e828fe9f62ed37f3198a478736dace2525e91cfff6d0e68bcb34af"",
-    " "580529f353d25341fb93ac3f616a58ad37ca8227866d0799e763191528878930"",
-    " "8ad61e5bde02814ac93c9696894ff21401f855bac388307cc5a981578f310497"",
-    " "af0e3ab0f2333998f0c457e0f4119a1554dc0e834d868b61bc4b7035904a2e8a"",
-    " "719247f055feef3e7e494c6bd60b070ea68f8134e1556b7603bf2b201aed0d15"",
-    " "b2aea974ca63dc88aea853ea4b4353fa54f066f7b034dae7408faa3b9f8fc82b"",
-    " "f2257d01dde12339f8bc370eabc74fa487e116b47f61f2094472885b9e4cb631"",
-    " "e70bc73e19e32256bd65ce689e1e590169eaf80cf1b7591d1629b8f069831395"",
-    " "100d18a17a30117da14edb6922c8f5affc19f8da5029457049d725b01def10a6"",
-    " "bf70fa02c3a8ee82ee2dfc5ee77407aeb41cad33d77b6d61b0a9fa12fd3743bb"",
-    " "7b44413023a95b795cf0541d775293023039c3378582d6e158cc628d21f03f82"",
-    " "af316eda0f5ce6dd7c984c68044540cfead55516f10ea481649e4e3a30dd758f"",
-    " "e163ebf5bb0e96f29c969887f54af7ec33b0dab489a67f2b4ca86f6a235c0833"",
-    " "cbdb3f356ac398b781823870dce8f16d456b17a4a62081459666518924b0aefb"",
-    " "b66415933fbe8512cd5d34a33d3673562b5498c92a0b1b2609bde414f51ccd9f"",
-    " "1d41e055034605ebd18941822d3ae1a4471b286ee92843e3cb7f8b267fbadd7f"",
-    " "b3e20999a77eea4820f4ac41806707ad68489f203a42ca0979519d66147e43da"",
-    " "aa58d1710f5e8249cca65bed5097cce44f8005ec73e1634b8bc74b11d7d4393b"",
-    " "c663971fa155a2f1bbcf94432cbb622743f5bb093f09c6a3c9a85242defe8f8d"",
-    " "dea533163d8a4cbbffa2eabe0b8d963e7564a5f6067b50cedc3c72a0669e1192"",
-    " "5e6582e44fa8f5f671f8ed5c83e9c20f91c8ef1a44cbaef06e9c1f65c890d6ff"",
-    " "161df25bffff4b0d981544486a4de3cf0d08e7a911738644f6be07a7daca2a04"",
-    " "3e22b966c6bb3644f5060041c93c0ddd7d321fa33c9bfc59c5dbc20b6d20c937"",
-    " "02e15079a83aa6d061230a32312fe886303f82730158af3f70f46b4a5a0200fd"",
-    " "43ed61242830c3c0023fff8dc1f29d49786a2148ff5978202baa2f45b023aadc"",
-    " "6ca51deb014b8b313336ff09d44e9b308e55e1c4e8a08d315096250dea0ad853"",
-    " "ba48ece9b2956fa3ae96b49b7ffed13ef42e0a51475aa78813e2a55640203560"",
-    " "460001cd92917d1c8d4e538d0ec367abf02e6533e357083a8382a1e41f7be5ce"",
-    " "4b957314a35c2c055475a95ed0cf76b2ea51c2afd9c59ab14be0015d7fbea6be"",
-    " "3b2cbd1dd7e0e78cab544fa6c5b97fa500f092e3c4fbe62adbbbbf1af79564c9"",
-    " "6aa5054a95d23277df417a5f69cf292e19bc2ef0406bc0c1884935a44e3ce797"",
-    " "d723ccbf086fa299a5513d2f5ebdbb8206cfbd2d034441db1809fdbc7afe3f70"",
-    " "09e484fc3dcd85a4c8b709277d0b17d2c5620a20812fea43f1c78916781cb319"",
-    " "b44c66b3a4476254772ac76a38b2229da289569612ee7723862acfc41e7e219b"",
-    " "8dd70bf61c236b0e0d9130b261d0d74ba740a53f695b30be2555d8429efb9cf6"",
-    " "692e5fff4ad979d55a2f1f65a5991fa6e0be125fc451696c156966ae116f4abf"",
-    " "acc1d1aab8acad7d56dd2a8dc98680e9c19b7c133d24f668a2e40e080badf30f"",
-    " "1f722e98ff0df2ba637db40b8f5077a07a0133a07d4ff6b99dbdcad0f4819b6d"",
-    " "2ba0d4a1d245911c3c1d6de462e6d43748cb855c5e43191ddb44e57f0e556c7b"",
-    " "78b37be35efed5a479b8625279049d30b687ad20f090be8e9ec74b773e04544c"",
-    " "064726f32e709694520801994c297551e07782fb3d4d9e5c8a44cb6792d8dd02"",
-    " "2187038e66f6ebaeec12dd27ef3c423de821294ccd93e070ac13852a68df299f"",
-    " "8edbfc6979fddbb9e65748ad45293732de87d4bb1e6437412f3335258f1045ea"",
-    " "839b184f7816c68f7aaf816f1b329a363ad080670447ed2dbcfa0a85143cabbd"",
-    " "5bd490dbc4b0aa47cfaba73ba2394edecbea4f0d196158512a85c2ed5521d4c5"",
-    " "35491352181d7598270320d15f331f250c848f94b09ce008d78d901b2b5950e0"",
-    " "0775c10d939f7b0e7296492cf754fc34518e6fd66c86d3af81dca7e844f6ceae"",
-    " "87a180e1e975b060f55963476f966f3c9afe8e3794cc66ed1702ea909898d663"",
-    " "4f8b3ce56a567f4d1f5a3e4ef0fedcdfad707bfc1b4234397da600f8e2e32316"",
-    " "57478a0f3dcf4df1c96dbb3cd9aa3b255814bd3a4185bf90ba768eb28b471797"",
-    " "c9698c118c2ba58fb2c7944354687333bd4f0d58ce5b6710920cdfa682bc9944"",
-    " "514fa7786356f49ad0e1164fec6fcfb3c2759db9c069beac2f89baa804f7d5fe"",
-    " "f4a8e4307944c6decec264820f699e4e4adee02fc71da530ad862dee959528cb"",
-    " "80cd87cbf731d14baa0698a22a0ebf8db7b305a740d0015d985e94b6b197a2f3"",
-    " "7e52031a2ef388824fd6e39f25b626b09be13e33a79d291a4790affdb9b93593"",
-    " "6702d4f508ebf248a56bb2d14b1afdc8557398b3b94c25a6d23eb61533647373"",
-    " "ad1f1c29707bba2a41e9d964abb63ff0dc764ea98c3e2a1e38a39dd2c7bcfd6b"",
-    " "b60ad1eee8bc9dcd7c721e381a095973c1aab6eb66f594663548f61e79b5091c"",
-    " "5cc44ec9af3b258dc4cd4fddccfa03550e8f5d3aa57fe78eb9c0805ed0850182"",
-    " "2ceeac4dd38579e87936343e2819492ac88dd27d489aa72ef5c622e772f9bf0c"",
-    " "709716d13a356e2ef12dedd3313eeac002dcab955c50406bd2dfe38fab5a1c1a"",
-    " "df4888a7ef78e32e2819fe5af82369ecc85b681e5648837224fd44d413e267df"",
-    " "5fa395bbe688fbbd6364f3d58fb14a8c1dca63933491e475b8740f77e1401b3d"",
-    " "e3b410b16785aa991ed02206f3108ae3a5c7d888a181e590bdce09baeb5b8a39"",
-    " "c1466a7a1732dfdba03457e094ee8dde9a9ebbaf856a7b66854e7ca8222cf976"",
-    " "376c342dc4261ca7ab791d1830696d3b0401dba1210a4386d8e58f63cbd5aa97"",
-    " "1182e436076f313fb9f22b4cf27918570c50d0ec90fc10d6383a1e86448d68d5"",
-    " "5316c1faefa33328e593d3cf4d54d6e25d7243862d65a67189f76d8b38a682ea"",
-    " "cce7a3a488bbc717325a24528c733b820181feeda1a6c168f297c4a090aa3cb1"",
-    " "59d42ff1cad50cd84342e6ce6beb2896e63d36971b83bc42817bb227db04260f""
+    " "7f75bfb1eeecded58b0aca85a25efc6fb95dcf7e0105a2de22d59aacfab9df1b""
   )
 | extend ThreatSource = "MalwareBazaar"
 | extend ThreatIndicator = SHA256
