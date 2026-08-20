@@ -7,6 +7,10 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_b8afcc5c4d1ea78e.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_ae0cbdb600ff92fa.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_6a286233562894b3.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_00bdcc9da8206c4c.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_5770984c4235c5b0.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_49f73ea936886e59.exe*'
       - '*http://cryptomeshforge10.lol/crypt/21-32/kliulij.exe*'
@@ -180,7 +184,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_77e7bd9e9f958dfb.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_446cda2370eaf9f0.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_76becda19d29fa6b.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_0f62476630ddad88.exe*'
   condition: selection
 level: high
 tags:
@@ -249,20 +252,4 @@ detection:
 level: high
 tags:
   - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
-id: efcd5693-7256-5879-b434-ae84d3029700
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with C2 from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://161.35.162.172/file.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
   - source.URLhaus

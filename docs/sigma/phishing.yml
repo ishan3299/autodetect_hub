@@ -1,3 +1,20 @@
+title: Detect Activity to Known Malicious Phishing - URLhaus urls - Chunk 1
+id: 0b3a8df8-f920-50a9-85a6-4c69b7981e2d
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Phishing from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://daleeby.com/R4JnneaiZebrwCkgG*'
+      - '*http://scuttlepopdownload.monster*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.001
+  - source.URLhaus
+---
 title: Detect Activity to Known Malicious Phishing - OTX domains - Chunk 1
 id: 1620452b-35c3-53b3-a5f6-5d731a53282d
 status: experimental
