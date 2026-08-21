@@ -7,6 +7,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://62.60.226.185/kaze.exe*'
       - '*http://154.90.70.52/xmrig.sh*'
       - '*https://purbalinggamandiri.com/3.exe*'
       - '*http://178.16.54.109/etc.exe*'
@@ -42,8 +43,6 @@ detection:
       - '*http://106.54.223.106/phpmyadmin/setup/lib/syscon*'
       - '*https://msfconfig.icu/tmp/system.txt*'
       - '*http://158.94.208.44/pb7Ulzhaae3xpSNrEvJH5yqqyMyIbnNF/mKM65Cf6QNqeOVw9.exe*'
-      - '*https://davestrap.xyz/installer.exe*'
-      - '*https://lightcord.xyz/downloads/LightCord-Setup-Win.exe*'
   condition: selection
 level: high
 tags:
@@ -113,16 +112,17 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "fe90b0f1eb82ff6918fa8bfdf9b3b9b6150ca27fe910f8899241d07a2e57a309"'
+      - ' "b5361d4980caf3102f3b1bdc1c90e23524a54e17a8c9a58dbb26f6037489fe72"'
+      - ' "c66d2b77b9e85c53391891212413ad9a99eb66f4b11c6a431e78884a5b2651e5"'
+      - ' "642ece59ea6f9a2f8c4ddf7bc5ee2c758ec9809b9b2f27a6085434e2b5eba870"'
+      - ' "6910e0a987ca752e7fcd93bc66f45790fe0e0a04140d7055f7dcb7cd901ca6fb"'
+      - ' "5777d8144c6f65951fa43ba8f1f674cce1d636b738394c8f4162ab35db32083b"'
       - ' "52aba825c78ba1c28abf967c21a92232dd689eae0ad682c124c84c4b2be07bae"'
       - ' "6b887a92cbaf75683ae17a1bcf3200a1fec38ba585b7f99403c7744f13a304f2"'
       - ' "35c226d7a959c858a6c0f91215a949371d60210939154d5e63d782ebb02680fe"'
       - ' "607ebf52bd5ac2cda1e6ae58cf45ae2c73190c40e84efa8df011e0fdb459230d"'
       - ' "9544aea8f1b315d809504fe127868d755e3ea86a244b240b19b70149cf925dc7"'
-      - ' "d1231294e68f3d9ae6c795ea49253997684c68770e4f856cd8d8c734c1ca7cfa"'
-      - ' "9e00b52b02d6e760b7cee84151b4b229e8b8f0b07f014d30f3db41d0b67feb44"'
-      - ' "5a06123c00db023e465e6863b41387bc4dbe3005296790de37d86f14ae38a0e3"'
-      - ' "a2d455bff2d76267dd42f99b5f9ff23f83c60b5092e87d77c2c4bf362c79a73b"'
-      - ' "515d1d1c557be6bf4445f58f89cd638cd4bd21953f952257db4bc80b595fdcb5"'
   condition: selection
 level: high
 tags:

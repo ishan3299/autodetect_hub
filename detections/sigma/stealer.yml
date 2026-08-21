@@ -1,4 +1,75 @@
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: bf9f0c07-fdcf-5e93-b032-b681d29af785
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_ea0fdcdde83b1f61.exe*'
+      - '*https://gaiadeqi.com/clc.zip*'
+      - '*https://172.245.209.194/44/goodcommuncaitionskilldevleipedfromthegood.js*'
+      - '*https://172.245.95.62/ph/velogs.exe*'
+      - '*https://62.60.226.185/r843.exe*'
+      - '*https://baileyemas.com/vlc.zip*'
+      - '*https://quill-flint.com/curl/2h0w4vtm7c/7b4cckfhojxjbrcjon.json*'
+      - '*https://quill-flint.com/zyeMb6slon_3VWVlkSkdiJurcyhY5cFNtchnavRnMgU/jetbrains/update*'
+      - '*http://91.92.242.236/files-129312398/files/file_8f2a9c058325ac38.exe*'
+      - '*https://my-buck01.s3.cubbit.eu/A/silv-rawfileupload%20(2).txt*'
+      - '*http://80.253.249.237:5001/dip.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_d16ae09e5eae4115.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_e8219df7a9a21088.exe*'
+      - '*https://gist.githubusercontent.com/nelsoncordeiro24-droid/26e6f76fb48da38d446497b7ac8323d4/raw/fa81f521ba1948a50721a2fa077a0cc68eb55cc8/gistfile1.txt*'
+      - '*http://91.92.242.236/files-129312398/files/file_457316565c5d19a2.cmd*'
+      - '*http://91.92.242.236/files-129312398/files/file_5939fd79fb073513.exe*'
+      - '*https://www.downloadpirate.com/moho-pro-14-win-x64-full-version-free-download/*'
+      - '*http://95.164.53.193:5001/actami.exe*'
+      - '*https://cryptomeshforge5.lol/noncrypt/21-32/kJHGFDs.exe*'
+      - '*https://cryptomeshforge5.lol/noncrypt/21-32/ARbeb.exe*'
+      - '*https://cryptomeshforge5.lol/crypt/21-32/arFtU.exe*'
+      - '*https://cryptomeshforge5.lol/crypt/21-32/KJHJHKJKJH.exe*'
+      - '*https://cryptomeshforge5.lol/crypt/21-32/ARbeb.exe*'
+      - '*https://cryptomeshforge5.lol/soft/hIEGQ.exe*'
+      - '*https://cryptomeshforge5.lol/crypt/obsh/R6.exe*'
+      - '*https://cryptomeshforge5.lol/crypt/21-32/kJHGFDs.exe*'
+      - '*https://cryptomeshforge5.lol/noncrypt/obsh/R7.exe*'
+      - '*https://cryptomeshforge5.lol/crypt/obsh/mixres3.exe*'
+      - '*https://cryptomeshforge5.lol/crypt/21-32/KLLNMF.exe*'
+      - '*https://cryptomeshforge5.lol/noncrypt/21-32/KLHdfs.exe*'
+      - '*https://cryptomeshforge5.lol/crypt/obsh/R7.exe*'
+      - '*https://cryptomeshforge5.lol/noncrypt/21-32/xqAAE.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_4f77864d0a6bff5e.exe*'
+      - '*https://orienttaxtile.com/thurs/crypted.ps1*'
+      - '*http://91.92.242.236/files-129312398/files/file_3a6c8cecc55c6ccf.exe*'
+      - '*http://216.9.224.48/xz/genera-raw-fileupload.txt*'
+      - '*http://192.255.195.158/img/1.jpg*'
+      - '*http://wp.ameyiando.com:8888/web/updated-phantom.dat*'
+      - '*https://pub-ce02802067934e0eb072f69bf6427bf6.r2.dev/img_194702.png*'
+      - '*https://sweet-snowflake-8a7e.uploadesclintesss.workers.dev/dfIFY*'
+      - '*http://62.60.226.232/1.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_4a2298dc2ab315c6.exe*'
+      - '*https://pub-5eee967508114192a40c0ca052a3bb9d.r2.dev/package.msi*'
+      - '*http://91.92.242.236/files-129312398/files/file_ad7fd402048f3819.exe*'
+      - '*https://raw.githubusercontent.com/developmentteamx/developmenxxx/main/ChromeElevator.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_3e42c5177eedf927.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_0347bac9c2511708.exe*'
+      - '*http://178.16.54.109/desk.exe*'
+      - '*http://158.94.208.235/PW/img_042730.png*'
+      - '*https://misty-cherry-cea3.uploadsimg.workers.dev/rXjIN*'
+      - '*https://pub-705a8e07fa6b46089d8811cabeb44a89.r2.dev/water-night.zip*'
+      - '*https://pub-b066744732514fe6974e5655a609b606.r2.dev/xitoviskiskunitz.zip*'
+      - '*https://res.cloudinary.com/rgvdjkao/image/upload/v1784793516/img_005516_pfiaw8.jpg*'
+      - '*http://91.92.242.236/files-129312398/files/file_36dc2efda5a0a858.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_5148575fd727fe4b.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_6038528412370730.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
 id: ebe57f60-46c3-5544-84b3-766b112c260a
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
@@ -67,83 +138,10 @@ detection:
       - '*https://solar-sanat.net/wearebeack.exe*'
       - '*https://solar-sanat.net/C567-89.exe*'
       - '*https://solar-sanat.net/Thor7.exe*'
-      - '*https://solar-sanat.net/DaiDai.exe*'
-      - '*https://solar-sanat.net/fresh.exe*'
   condition: selection
 level: high
 tags:
   - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: bf9f0c07-fdcf-5e93-b032-b681d29af785
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://baileyemas.com/vlc.zip*'
-      - '*https://quill-flint.com/curl/2h0w4vtm7c/7b4cckfhojxjbrcjon.json*'
-      - '*https://quill-flint.com/zyeMb6slon_3VWVlkSkdiJurcyhY5cFNtchnavRnMgU/jetbrains/update*'
-      - '*http://91.92.242.236/files-129312398/files/file_8f2a9c058325ac38.exe*'
-      - '*https://my-buck01.s3.cubbit.eu/A/silv-rawfileupload%20(2).txt*'
-      - '*http://80.253.249.237:5001/dip.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_d16ae09e5eae4115.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_e8219df7a9a21088.exe*'
-      - '*https://gist.githubusercontent.com/nelsoncordeiro24-droid/26e6f76fb48da38d446497b7ac8323d4/raw/fa81f521ba1948a50721a2fa077a0cc68eb55cc8/gistfile1.txt*'
-      - '*http://91.92.242.236/files-129312398/files/file_457316565c5d19a2.cmd*'
-      - '*http://91.92.242.236/files-129312398/files/file_5939fd79fb073513.exe*'
-      - '*https://www.downloadpirate.com/moho-pro-14-win-x64-full-version-free-download/*'
-      - '*http://95.164.53.193:5001/actami.exe*'
-      - '*https://cryptomeshforge5.lol/noncrypt/21-32/kJHGFDs.exe*'
-      - '*https://cryptomeshforge5.lol/noncrypt/21-32/ARbeb.exe*'
-      - '*https://cryptomeshforge5.lol/crypt/21-32/arFtU.exe*'
-      - '*https://cryptomeshforge5.lol/crypt/21-32/KJHJHKJKJH.exe*'
-      - '*https://cryptomeshforge5.lol/crypt/21-32/ARbeb.exe*'
-      - '*https://cryptomeshforge5.lol/soft/hIEGQ.exe*'
-      - '*https://cryptomeshforge5.lol/crypt/obsh/R6.exe*'
-      - '*https://cryptomeshforge5.lol/crypt/21-32/kJHGFDs.exe*'
-      - '*https://cryptomeshforge5.lol/noncrypt/obsh/R7.exe*'
-      - '*https://cryptomeshforge5.lol/crypt/obsh/mixres3.exe*'
-      - '*https://cryptomeshforge5.lol/crypt/21-32/KLLNMF.exe*'
-      - '*https://cryptomeshforge5.lol/noncrypt/21-32/KLHdfs.exe*'
-      - '*https://cryptomeshforge5.lol/crypt/obsh/R7.exe*'
-      - '*https://cryptomeshforge5.lol/noncrypt/21-32/xqAAE.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_4f77864d0a6bff5e.exe*'
-      - '*https://orienttaxtile.com/thurs/crypted.ps1*'
-      - '*http://91.92.242.236/files-129312398/files/file_3a6c8cecc55c6ccf.exe*'
-      - '*http://216.9.224.48/xz/genera-raw-fileupload.txt*'
-      - '*http://192.255.195.158/img/1.jpg*'
-      - '*http://wp.ameyiando.com:8888/web/updated-phantom.dat*'
-      - '*https://pub-ce02802067934e0eb072f69bf6427bf6.r2.dev/img_194702.png*'
-      - '*https://sweet-snowflake-8a7e.uploadesclintesss.workers.dev/dfIFY*'
-      - '*http://62.60.226.232/1.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_4a2298dc2ab315c6.exe*'
-      - '*https://pub-5eee967508114192a40c0ca052a3bb9d.r2.dev/package.msi*'
-      - '*http://91.92.242.236/files-129312398/files/file_ad7fd402048f3819.exe*'
-      - '*https://raw.githubusercontent.com/developmentteamx/developmenxxx/main/ChromeElevator.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_3e42c5177eedf927.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_0347bac9c2511708.exe*'
-      - '*http://178.16.54.109/desk.exe*'
-      - '*http://158.94.208.235/PW/img_042730.png*'
-      - '*https://misty-cherry-cea3.uploadsimg.workers.dev/rXjIN*'
-      - '*https://pub-705a8e07fa6b46089d8811cabeb44a89.r2.dev/water-night.zip*'
-      - '*https://pub-b066744732514fe6974e5655a609b606.r2.dev/xitoviskiskunitz.zip*'
-      - '*https://res.cloudinary.com/rgvdjkao/image/upload/v1784793516/img_005516_pfiaw8.jpg*'
-      - '*http://91.92.242.236/files-129312398/files/file_36dc2efda5a0a858.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_5148575fd727fe4b.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_6038528412370730.exe*'
-      - '*https://cehamilton.com/when-ill-start-earn-money.exe*'
-      - '*http://192.3.136.217/FcoMgihU44.bin*'
-      - '*http://178.16.54.58/DV/img_033239.png*'
-      - '*https://misty-cherry-cea3.uploadsimg.workers.dev/bhebI*'
-      - '*http://216.9.224.48/ai/aaambros-pwonly-phamupload.txt*'
-  condition: selection
-level: high
-tags:
-  - attack.t1071
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
@@ -252,27 +250,10 @@ detection:
   selection:
     c-uri:
       - '*http://204.44.69.216/93/ecce/givenmethebestthignswithbetterplacescomingfromthebest.hta*'
-      - '*http://209.54.101.188/148/oo/mm.hta*'
   condition: selection
 level: high
 tags:
   - attack.t1218.005
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: d1e86650-13fe-5c5f-8a31-d6f36b39c387
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://209.54.101.188/148/verynicepersonformetogetbackfor.js*'
-  condition: selection
-level: high
-tags:
-  - attack.t1596
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - MalwareBazaar hashs - Chunk 1
@@ -284,8 +265,100 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "e313c09240d94d6f8aed6e6f4c802f1dce4e204cb7020e72d5344a8cd93b3b26"'
+      - ' "27b521e776ee083bfdadc58df6ea8220acb7b0c94340124a00b0c3783ab050af"'
+      - ' "c72c17b0abc3b8c184eafed3e983985016a4b201844425e7009eb00faf96cfbd"'
+      - ' "39f366b6e4850cc9b64ff60e643c7c8b4c7df4e4a8f9a601fa829ae1d9861371"'
+      - ' "2059048a3548f9d326a62af7eb3f7da2453a978d13c4049a318ec8a454900875"'
+      - ' "8f7338402cd66a98c73c3fd3da32d2fbcaac7ed83482f538bff433cf8d63d2a5"'
+      - ' "825fe5ad51d9ecb3f33cf9b1ff7d92ddc47192a3b4dba4cc67150b33f8863832"'
+      - ' "298bf1a9ae67833c011a89e81701979a0f18d040a38b25a47e80931996fec0cb"'
+      - ' "178fd830163f46b127955422415f10d5f5a337212940ecfbb16f715b8ab2a711"'
+      - ' "75b78d8c29a3dbe369c38cff68dcd8a509f88fbdc5af1aac2d3684a3f2c3207e"'
+      - ' "d78a93ccd3006acf9c4a420b44ae3c719e503ad92bdae99b6e7f1c6c6faaacd6"'
+      - ' "36970c685c351337347e7920c527285cb61805a0537af247774e7acf42d5136d"'
+      - ' "9148d2b6261ad24c5d585fabc348dc4df3db5cda6b667e84ee3215d23df3f86d"'
+      - ' "ee7ca82f38b05b8421e7c34c9e5559d3bad4cd791cbb1ac278eb72008ebd8fe6"'
+      - ' "b1de4588777902ac32ed8c81ce2ff58a9291438e6fb5fbd9a078a1e1ff0d56da"'
+      - ' "90d6c9046a654b22e8e6ece8b58bc76bc44bc37a4c7cc66b28f7ecad59859cb6"'
+      - ' "a6c42fda8d0e72a52f92c73a83ff7acfe0688a938dd879471c275309bfd03abe"'
+      - ' "2c3b966481565673789d736238eeb9c976ee081f16020470a082dea341c8a7fe"'
+      - ' "500016ed2d07ce31aab82860b3b82e493c65b3dd1088a81946bab5e96aff8e1d"'
+      - ' "b8a1cc53c4fd74664cbfbafafbfcef7ce4eaf6ea0e3f8c83cb94dfb9a5a86f14"'
+      - ' "f267d06b7b745fdc209ef20d3b4a52419da38f6f6850d90653d68e6c617b1d7d"'
+      - ' "161056d20300a822c8d5ef2db367974946e979737dfd7d3abb6734bd5b744793"'
+      - ' "85af3530d822a15a8f0de4560357e562003254369600ffa17c272425e1d65102"'
+      - ' "93c1efb3c3ea7d9de86bf4b10a2a3ffebfca1f750c506cb3897e05ae0b5663c3"'
+      - ' "d7c23b8de93bdbd1c32a6b6f459643d702a0c446b90e1a84730b09abe5615b4f"'
+      - ' "acfe65150aa93d6ae4c4a94fbaca762c10602d6dbf234d385c9b4d8ecbe1fe52"'
+      - ' "7f4cf01b6aa7607b6d524ef430dc304848128ff4ab5582c7a09a85f28af022fa"'
+      - ' "43040ae6bd84159b300d87a23559252b1eaa6bd6b74ce4dccc8f1121f5f74252"'
+      - ' "ec3a531649e724dc40ba36cd8df9a72dd722e6cda9930ca2847437e0c063d103"'
+      - ' "09635cae23c43182878ed6189386b38dcd43ed2eff407766cfe8bc9335d04343"'
+      - ' "1d29a438a7e1b51421f05d84d813e0bfef938001d3f07aa31f96e33b655f3d65"'
+      - ' "3f4dad68706efcea8ac9c763b607fe5b2343676b0cc7b854ef94e02831498f6f"'
+      - ' "30f595ff3998dc571c878bc6381bfce2c744d981814402b1f1e61ad27388f5cd"'
+      - ' "a6d93a46e14e1c8d399ccd081f70cbf9eb8d76e019126ff7ef5fb42b80407c99"'
+      - ' "7ddbeda50c70097212083946b1da5fbdd53fe56c0dd77098a1e756b695976a99"'
+      - ' "e1f0b2be58f22eac2b64e3ed51ce8393d4fbfbd31c2c21ad126324f4e4f40c64"'
+      - ' "362846048e3d7e5bc4c5ce70118495d393385cf3d090332ebfc75d4da325c6bc"'
+      - ' "164617517ac82302699b2baed7ed9011e19f9d0af53b9c039b2968ae5c41191d"'
+      - ' "9cafaa8868d3aacc3c5d461277e8690ca43167544fec3734ecfafcb8bfe938e5"'
+      - ' "34cc514a5b4d434c0f15b3ccaef0d3aa20ff60fd48b6998d94e57e8f730a4163"'
+      - ' "0c78e37fbaf18503bf589c7f0dc05821dca5638df2e8c849092999aed223d704"'
+      - ' "a2dfe1d2c43d5271f5c22fe81bf13e8972a8b67c3215ddd14c1049d8fa638443"'
+      - ' "68331ffbe79396f872bd31fafcce15c052fcbbde92a0b1ab02555265132da81f"'
+      - ' "1fefa651517b61f99420f805d513649b6d468ad0e400bfe89d341202d446a341"'
+      - ' "47192573a6013907867d296f462592ce40d987a7a62b61181022e9e964b4d4b2"'
+      - ' "a9bf01982168407700434d699816d6f427bf9ece8d54824bdbd01b06b7f36be9"'
+      - ' "629ccd6b7ffe5f2e09ca3d7b1d9c7d5a591875446a349b146eee3c134ffb73dd"'
+      - ' "a04b9ada14c8ba7c7585fd62205b335d6faa362cdffcd2ce55abf240f6e55f88"'
+      - ' "147c7c9ed3e600e0721fa2ec31938cf5c282e1dd2398bfba2ceac3651096ba9b"'
+      - ' "62a1f14a1f9be72f7af5b627c435e5c1c59d3f5aa5bc68d0a71b6a48b54ad086"'
+      - ' "6791f0baea4593ae5be950400e59d3fe9ebbb4aaf82de98cc37967b6e0180883"'
+      - ' "75591399de19a398c0d7bee69fdfbc205fcdd00d3bc96fbcf7ce0685bf8b33e2"'
+      - ' "0f626dc75f9e189c572b16f76d202a8da404fc890200cd844b8a29b93fc20ec4"'
+      - ' "4e75b00a844c1db932687b989f228d31e81238b7f3615ca8269f35f8230ccc75"'
+      - ' "321f5c8cb7cc0f38a547836ed6b82cd19d62de5c237bb665a2ec664850f69e2d"'
+      - ' "e0ffb051ac34de473fb51a01952ad36800942d44960abc0b923f88baf09c86a5"'
+      - ' "d858bf884a9f23210dc750896a974b5e57bd133ddea53aac79d2090df35e7ef4"'
+      - ' "86178936d27cb38a153fe543da255c7eeed37cdd1e12c062a6da8e2eb849bb05"'
+      - ' "3aebefe787bfc3afb2a41090fde8c15c6ed0c99e4e34f78006d6d49bda4451fd"'
+      - ' "8026744df619b67e29f63749c14900d77d5d82c692e07d44ad25f08d00c28d99"'
+      - ' "cdf6203bb97bfbaeef8ff412f99fbd6b3d659b2ead84b6471d4724a7799b3d68"'
+      - ' "35961cc69ddb4034a524b5593c17c7a0a91748077970a23defe76f7a33c2aa27"'
+      - ' "6709f2876e7da751f140782ea0bb44d4966758935388e751bf5f3f00caeba892"'
+      - ' "36555dc8c7a38fa1a91514b2f2eaaa37314f15dccabf3f7f9189607b8375ec45"'
+      - ' "b0a78afd411e8a016d948836e17d9c6d7bfd49e9a38ac15cd669c523a7f93f7a"'
+      - ' "cbddbaf7a1ee2b0861eab80f2c94c8e9cbf9a4ccc50223f8bd4f29f48a3df8df"'
+      - ' "e02419fcc08b0e4b27dbbf16f425d8aa7ff63fe25d0d0eb64f1fa8586b53e36c"'
+      - ' "47287e59802fd25769ed5876631a12aba511705c6cab3ed2b3be42a581cbedef"'
+      - ' "16461ad653955e08152ba5f07027be2ba3ff303710c70f9c796ae76ed0cd8050"'
+      - ' "1898c89cce5a31c73515dcae970d1b9e2551b6268c90a17f4934c4e0efdd853d"'
+      - ' "1aea7259e3d3a22a01bde7ddcfb6458d70a4e8a2a7b4ef5f531381ae72c325e2"'
+      - ' "2cc7b1a6e7a118297f7d11951346be07765771411a8eebd8c6a0b62154da24ae"'
+      - ' "42f4345c0e3a0f3481cff6f0217ee25dd85b5ef061a2c3adcc99f433c1cec676"'
+      - ' "806152be4ee0f4d1aa43db377c67b08ffe6988dca2af4249a8837e455c1535b7"'
+      - ' "551b6bfce577641273642fe6754d20313067ceddb367a2c5cb287e26d67b4c21"'
+      - ' "b6608eef8047b8b84ab54608f11c6ae4dc295fcc61e6527c7cbf9368e6397262"'
+      - ' "1dd8a37cdd4b4e618268ef748cb0fd69b98ddcb604f659aa2d0b2148ded007db"'
+      - ' "716014a0f60c09c83a724d4e3a8e3f6da21c6eb9607cbf3175f5217120f59687"'
+      - ' "9cdc9606c97375e29e4662e03e97d5a58aeb2d45b3c74a9792b7e5fdc0961506"'
+      - ' "ca9f36b1492256c0a30d5a176fcc3f6dfa7b25ea75f009828ceb83d12e9be943"'
+      - ' "23fd13b90d2a7c77ab893b6ca44f43a6778f2851ba8f96509cc8e9bfd0b92ee0"'
+      - ' "d644ac00cbbfd9a62ce6467e439db2691e15554fcd49678f6c97d21a22331207"'
+      - ' "620f47b0b276865d0b3df9d833b97b602e6c82368f0f5fe3aae1dff2e5dea569"'
+      - ' "97f9e987cbd9de6e853c1adcc7614a8d77d4216d63473e7a1f0f6356c5f0e771"'
+      - ' "9bf16b219714dd8690a3fc128259e317497d167b3af78d1fcf41c2ec58f66cec"'
+      - ' "12be59a659a2bdeeee3764b79f913dee879e6a26bbd5ec64e746b9856bb3ccb8"'
+      - ' "9da24a06ac3442e5b0136506ec13280a5cb35c96aaceaafbf657c349ecde0ad8"'
+      - ' "4f46bc06d139a8e8ebda9586cc05a2dcc5300c68480a6657d7cefdb90eb1d9cd"'
+      - ' "9766a293364deda6997986fcadccde2d84ba10cdcb0832cd9c2578473e856093"'
+      - ' "3077ea79c869bf62e589164360c07078965ff101fae5825a16e6f17f47699957"'
+      - ' "aac58e31ad82402582566e039f8d32b7f2b6b9ca12d48b3a215dd4162aafd170"'
       - ' "d684fb1e82d42041802c676440d58e964b19ae74e8e7669e84d15da1a1e9c7ee"'
       - ' "4f92f1b658856b2662100c26dcd5f81525a74482b4fdebb16923ec27234f0a7e"'
+      - ' "5963a9491c91eae44384e239284fdc74dc3db9ee1b13c24eccc516ece350df34"'
       - ' "440cb05dbc1425d4e40e70c260ac1aed00152c2d348ecb7c87aa7a8198cd9eae"'
       - ' "50774a5f75176f9698fc536e82a6106c04ccd1db4f1d788574fdb288952c6d7b"'
       - ' "65af8ffdecfc2394c2a27c6d53880ad5b89de8fd201a69d33a34e31e320a3a5d"'
@@ -372,30 +445,6 @@ detection:
       - ' "2ecf04b3f001039184d841dd067d6e47bf192047ffe6b92c72a9d57bda6c6afe"'
       - ' "64494586d79711a0c12ad714f5f895a5d14200247cc02f0434f2bcd8b3b8002f"'
       - ' "1d65b76219f184a4fc87d597b0ae50e2ef6f98a79558448b0f0868f761c5479f"'
-      - ' "8910f0cb2eb97c3b1ced8b512bb34884a958ba7d81829841b2e60eb487157662"'
-      - ' "6aba832d095cf90906b34335f698bee1debe024ce3422375ee9394aea94dc934"'
-      - ' "58373b38eeae8828e8b9b660942c74e6b1ab0fc62799d1e7e228670f7838be95"'
-      - ' "9536ed4f62eece817fb9fdfce1a6804e04c7f05555880afb13abfc4acdaa44d7"'
-      - ' "ad3b82c6cd7f14e7f88bef0627cf878590154b5ca51d169610492deb108a5e68"'
-      - ' "738e07379a3438a0a267ffe25400db5bb8c219711882f7ba2da563d6ef2eb7e7"'
-      - ' "0ddd5b7a41499087a883025070929d64003362b0784c93fc8bcb51b9e33f7e59"'
-      - ' "e82f3aba0be7c2ef54f08e05b783acf87a042f8a92f5bd410c5981d23e7e62da"'
-      - ' "5cefdb8a9e0120db5da9f51859e4a064efd35ae86080f63bf05c2170cce284b2"'
-      - ' "af83fae1ac6272b265e50ccf256b5347bdbfb331b97ce8ec634d475d9fb7c8ab"'
-      - ' "7122e04e3c5af238697888c3d697b34d9ed26a8ecc44b9398036063ffcab60e1"'
-      - ' "6191fe1547562cf3fc3771e46f9ddc86786e9ac6031ccd2090dd1e350fad92de"'
-      - ' "4d3d0cc1eb70b974c08a7ede449598a03b1ed8eba5cd96e1660e773a9df6b8bf"'
-      - ' "33eca4f19b4ce21ee5e222338b5ee51275a66bd205583cb3c895dbf57d8cabcd"'
-      - ' "86d57ebab870af93c1501db0a6c3404636174d0d5b5bffa493f956d77631c321"'
-      - ' "5fc9119623499165fc6b42d8b4273a381ddd41dfb96cf990500e1db175a06a5a"'
-      - ' "34a5975d055abf9d642a4d50b5295005248a2ad83512346f19e36022e0930820"'
-      - ' "bf037920d39b85572ec7e53b51f09c28198c2c0afbc7c7d6cf639b1f047caebf"'
-      - ' "c36f519a225ba04a6d463bd7f09428f695f0281fd5d8da0f6117a022b6b145aa"'
-      - ' "dadf5336ecd933e2318d4fa52bb94337b711df00cd46b95d4bf088e03d0f9cdb"'
-      - ' "a2797646777e379eb72fdd6f81ed1988216e191d7cee04e5b022d77d796886ea"'
-      - ' "bb03da5388d849432c3fc2c99e61fc61137079dcfb997df7f0482b511d89d17e"'
-      - ' "acf4f15c15cc5f0df253d8c6fe8213b0c2c07d8add245a264a17051c1dad26b0"'
-      - ' "ac37b8347e06593e9c8c06b60782b3560a85dd2a02f694bc43c6b05fa09e67bc"'
   condition: selection
 level: high
 tags:
