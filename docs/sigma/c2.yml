@@ -7,6 +7,11 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_4ba1a9722212abed.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_4ce19bfafe018ff9.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_a34690cc683b0c1a.exe*'
+      - '*https://pawsockenjoyer.site/z7/webhook*'
+      - '*http://91.92.242.236/files-129312398/files/file_43c5f47d5fbe115a.exe*'
       - '*https://mon-blanc-04.cfd/installer.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_9a5c49da1d9d1767.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_1319bd61568f04ed.exe*'
@@ -173,19 +178,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_bc216cc534571605.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_5c1e08ad3df914ae.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_6f8f3c0dc4813276.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_38c8a1eeb2a6a97e.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_dcd6503e21b6e736.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_e8a7336a520decb5.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_f309f8496f916deb.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_c4864984d6828180.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_c9d9a4d389cc4c0e.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_6503c668037248da.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_8b4782335952b88e.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_e6b1db7b045f10dc.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_b7ff42e46e759855.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_99a7b0d5d09a19fb.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_5ecce574f0916abd.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_122046aaaf0d9dd8.msi*'
   condition: selection
 level: high
 tags:
@@ -255,21 +247,3 @@ level: high
 tags:
   - attack.t1059.004
   - source.URLhaus
----
-title: Detect Activity to Known Malicious C2 - MalwareBazaar hashs - Chunk 1
-id: f74c7de3-963b-593e-bd64-3558c23b37ff
-status: experimental
-description: Detects traffic or activity related to known malicious hashs associated with C2 from MalwareBazaar (Chunk 1).
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - ' "066ecd627caec87426bd94db4f0c1ec45b8345e26b0cace2e8193a91155ce5ee"'
-      - ' "32f95d8bd1ceef653e96a49f624efe8b1240f7961a9dd518d786e6892906a170"'
-      - ' "bce303608e089b288355620a68a28be70d127ddcd8720a32699ab891e7bc8430"'
-  condition: selection
-level: high
-tags:
-  - attack.t1071
-  - source.MalwareBazaar
