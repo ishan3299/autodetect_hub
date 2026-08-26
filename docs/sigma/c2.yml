@@ -7,6 +7,10 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_31233e915ca34d9f.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_6bbb893ae4adfb7c.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_79fd211d67412b88.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_9b900d7726fb39b2.ps1*'
       - '*http://91.92.242.236/files-129312398/files/file_7a330d043d2a8b77.ps1*'
       - '*http://91.92.242.236/files-129312398/files/file_ba3c4b02363471d3.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_d27852ce3dbc58e5.ps1*'
@@ -168,13 +172,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_73ed34a7752ecb3a.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_cd9c2f76b688ed8a.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_aa93170430df9ad7.exe*'
-      - '*https://cdn.discordapp.com/attachments/1530962677420130375/1530987549349118182/Win64.exe?ex=6a6792c4&is=6a664144&hm=60400ef2b047a5d4bb77d4fc978d1a69cdfa310ea79ff63d6c5e94452f5e98e2&*'
-      - '*http://91.92.242.236/files-129312398/files/file_42df558b1d16bfd6.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_00d6c04b5fd7e13a.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_eda3b676565b6736.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_e387a350c93377c6.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_b44b403eb8ff1768.exe*'
-      - '*https://lapidorseposoalovbs2.com/cleen_trs1.exe*'
   condition: selection
 level: high
 tags:
@@ -190,6 +187,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_7af4a49e477043ca.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_865d4f3e8fa37c05.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_3fe5ed2d30d53a73.exe*'
       - '*http://192.162.199.246/pb7Ulzhaae3xpSNrEvJH5yqqyMyIbnNF/mKM65Cf6QNqeOVw9.exe*'
@@ -197,51 +195,4 @@ detection:
 level: high
 tags:
   - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
-id: 140d80f9-0470-5f2b-bee9-f9c531605aac
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with C2 from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://69cnc.duckdns.org/bins/callaputa.sh*'
-      - '*http://69cnc.duckdns.org/bins/wget.sh*'
-      - '*http://69cnc.duckdns.org/bins/busywget.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1583
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
-id: bfb94cfe-ff84-53e2-821f-23ba0161a011
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with C2 from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://69cnc.duckdns.org/bins/putita.m68k*'
-      - '*http://69cnc.duckdns.org/bins/busycurl.sh*'
-      - '*http://69cnc.duckdns.org/bins/curl.sh*'
-      - '*http://69cnc.duckdns.org/bins/putita.mipsrouter*'
-      - '*http://69cnc.duckdns.org/bins/putita.ppc*'
-      - '*http://69cnc.duckdns.org/bins/putita.arm5*'
-      - '*http://69cnc.duckdns.org/bins/putita.arm6*'
-      - '*http://69cnc.duckdns.org/bins/putita.sh4*'
-      - '*http://69cnc.duckdns.org/bins/putita.arm7*'
-      - '*http://69cnc.duckdns.org/bins/putita.mpsl*'
-      - '*http://69cnc.duckdns.org/bins/putita.mips*'
-      - '*http://69cnc.duckdns.org/bins/putita.arm*'
-      - '*http://69cnc.duckdns.org/bins/putita.x86_64*'
-      - '*http://69cnc.duckdns.org/bins/putita.x86*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
   - source.URLhaus
