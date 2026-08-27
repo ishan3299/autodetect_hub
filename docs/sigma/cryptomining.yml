@@ -7,6 +7,8 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://cta.edu.pe/wp-content/plugins/linux.bin*'
+      - '*https://cta.edu.pe/wp-content/plugins/linux.bin*'
       - '*https://62.60.226.185/kaze.exe*'
       - '*http://154.90.70.52/xmrig.sh*'
       - '*https://purbalinggamandiri.com/3.exe*'
@@ -85,22 +87,6 @@ tags:
   - attack.t1059.004
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
-id: 5d9e1d92-b2c4-5b25-8e48-0c8b2432093e
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://47.239.127.71/lib/xxx*'
-  condition: selection
-level: high
-tags:
-  - attack.t1583
-  - source.URLhaus
----
 title: Detect Activity to Known Malicious Cryptomining - MalwareBazaar hashs - Chunk 1
 id: a9489914-32b3-565d-900f-897d9a586db4
 status: experimental
@@ -110,13 +96,12 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "233363e6a24fee6d98830e19b146d18cda72b93dae024608878eaa83763f6dd4"'
+      - ' "fccf06172119b4ae6f146e45d8f35fcdb248fab1fe4471fac301d33d5ffd5b37"'
+      - ' "4f01420fb5ba34371a662de1d5e7c9804d09d79791aec3f87c59135ca0c11cbe"'
       - ' "ea4015a2296ff237aa2c88face657791d556fb38939868186881f698c485ad44"'
       - ' "2b93212ee63dbb290d88bc845aafae192552b6de80d93a2f4a6453afb3738676"'
       - ' "4037fc3edbee83ac3544c8bb948b2d237c4bc7ca7f5fc23147d8350fa248e081"'
-      - ' "f0b45ac6bb1d96981900bb46d9129c6c3facf2575529cac1ff0145079ef96cbd"'
-      - ' "2199808b5669b6d4d316ad5f0f2ec8a29c796f178ee43ce2c1166d2d468cecea"'
-      - ' "82a7c6208b7b98fda014dbe12d7afd6101941920b4ea87124e19eb6c9cb9f4b2"'
-      - ' "8049f126065d8f2c0235e0946389d6b0bc88bcd968f17e2d05bc4dd41e566a3c"'
   condition: selection
 level: high
 tags:
