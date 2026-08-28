@@ -1,57 +1,230 @@
 {
-  "generated_at": "2026-08-27T06:27:03.292762",
-  "total_iocs": 16638,
-  "new_iocs_24h": 1059,
+  "generated_at": "2026-08-28T08:18:00.089032",
+  "total_iocs": 16688,
+  "new_iocs_24h": 1062,
   "top_types": {
-    "url": 15756,
-    "hash": 874,
+    "url": 15797,
+    "hash": 883,
     "ip": 7,
     "domain": 1
   },
   "top_tags": {
-    "elf": 7225,
-    "Mozi": 5442,
-    "mirai": 5381,
-    "ua-wget": 5233,
-    "32-bit": 3395,
-    "mips": 2754,
-    "arm": 1049,
-    "censys": 823,
-    "opendir": 807,
-    "botnetdomain": 729
+    "elf": 7076,
+    "Mozi": 5421,
+    "mirai": 5319,
+    "ua-wget": 5163,
+    "32-bit": 3324,
+    "mips": 2699,
+    "arm": 1007,
+    "censys": 781,
+    "opendir": 774,
+    "botnetdomain": 696
   },
   "top_sources": {
-    "URLhaus": 15756,
-    "MalwareBazaar": 874,
+    "URLhaus": 15797,
+    "MalwareBazaar": 883,
     "FeodoTracker": 5,
     "OTX": 2,
     "AbuseIPDB": 1
   },
   "mitre_coverage": {
-    "T1059.004": 11467,
-    "T1583": 10898,
-    "T1071": 5367,
-    "T1595": 824,
-    "T1596": 807,
-    "T1219": 428,
-    "T1204.002": 337,
-    "T1059.001": 193,
-    "T1555": 162,
-    "T1587.001": 66,
-    "T1496": 60,
-    "T1218.005": 35,
-    "T1102": 22,
-    "T1056.001": 18,
-    "T1027.003": 13,
-    "T1059": 13,
+    "T1059.004": 11211,
+    "T1583": 10833,
+    "T1071": 5303,
+    "T1595": 782,
+    "T1596": 774,
+    "T1219": 431,
+    "T1204.002": 341,
+    "T1059.001": 208,
+    "T1555": 174,
+    "T1496": 73,
+    "T1587.001": 54,
+    "T1218.005": 34,
+    "T1027.003": 33,
+    "T1056.001": 23,
+    "T1059": 14,
     "T1027": 12,
+    "T1102": 10,
     "T1059.003": 7,
     "T1566": 7,
     "T1059.005": 5
   },
   "recent_iocs": [
     {
-      "indicator": "http://115.55.147.79:40648/i",
+      "indicator": "http://105.186.250.56:38301/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "arm",
+        "elf",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-28 08:09:16 U C",
+      "last_seen": "2026-08-28 08:09:16 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "https://telemetryloop.net/get_verify?i=76513",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClickFix"
+      ],
+      "first_seen": "2026-08-28 07:52:22 U C",
+      "last_seen": "2026-08-28 07:52:22 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "https://soft-update.dev/get_verify?i=76875",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClickFix"
+      ],
+      "first_seen": "2026-08-28 07:52:08 U C",
+      "last_seen": "2026-08-28 07:52:08 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "https://faceit-cdn.org/install.ps1",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClickFix",
+        "ua-ps"
+      ],
+      "first_seen": "2026-08-28 07:50:07 U C",
+      "last_seen": "2026-08-28 07:50:07 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "https://killurself1337-cdn.doxbin.mom/cdn/odyssey_com_wizardcdn_videopart_a1fe06a10ee6210d.mp4",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "android",
+        "apk "
+      ],
+      "first_seen": "2026-08-28 06:58:18 U C",
+      "last_seen": "2026-08-28 06:58:18 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://125.41.8.103:46677/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "Mozi"
+      ],
+      "first_seen": "2026-08-28 06:22:07 U C",
+      "last_seen": "2026-08-28 06:22:07 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://cryptovectorhub1.lol/crypt/load/QW1.exe",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "3",
+        "dropped-by-Stealc",
+        "RemusStealer"
+      ],
+      "first_seen": "2026-08-28 06:13:10 U C",
+      "last_seen": "2026-08-28 06:13:10 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://123.188.72.146:45830/Mozi.m",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "iot",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-28 06:03:25 U C",
+      "last_seen": "2026-08-28 06:03:25 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "https://goxlrutility.net/goxlr-software.zip",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [],
+      "first_seen": "2026-08-28 06:03:23 U C",
+      "last_seen": "2026-08-28 06:03:23 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "https://goxlr.io/goxlr-software.zip",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [],
+      "first_seen": "2026-08-28 06:03:20 U C",
+      "last_seen": "2026-08-28 06:03:20 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "https://jsma.s3.us-west-2.amazonaws.com/1bJ8TKI/ma.js",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "ClearFake"
+      ],
+      "first_seen": "2026-08-28 06:03:13 U C",
+      "last_seen": "2026-08-28 06:03:13 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://loveher.dpdns.org/juan.apk",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [],
+      "first_seen": "2026-08-28 06:03:08 U C",
+      "last_seen": "2026-08-28 06:03:08 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://91.92.242.236/files-129312398/files/file_30662828008ae112.exe",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "c2-monitor-auto",
+        "dropped-by-amadey"
+      ],
+      "first_seen": "2026-08-28 06:03:06 U C",
+      "last_seen": "2026-08-28 06:03:06 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://115.54.151.32:60584/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -60,14 +233,78 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-27 06:18:09 U C",
-      "last_seen": "2026-08-27 06:18:09 U C",
+      "first_seen": "2026-08-28 05:51:23 U C",
+      "last_seen": "2026-08-28 05:51:23 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://175.161.212.214:38501/i",
+      "indicator": "http://42.228.250.95:52631/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-28 05:39:24 U C",
+      "last_seen": "2026-08-28 05:39:24 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://221.15.226.98:57526/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-28 05:36:15 U C",
+      "last_seen": "2026-08-28 05:36:15 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://221.15.226.98:57526/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-28 05:10:29 U C",
+      "last_seen": "2026-08-28 05:10:29 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://175.146.157.174:45619/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-28 04:57:26 U C",
+      "last_seen": "2026-08-28 04:57:26 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://124.6.169.46:33212/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -77,134 +314,14 @@
         "mirai",
         "Mozi"
       ],
-      "first_seen": "2026-08-27 06:00:16 U C",
-      "last_seen": "2026-08-27 06:00:16 U C",
+      "first_seen": "2026-08-28 03:19:28 U C",
+      "last_seen": "2026-08-28 03:19:28 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://85.11.167.203/a-r.m-7.SNOOPY",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "gafgyt",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-27 05:42:12 U C",
-      "last_seen": "2026-08-27 05:42:12 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://85.11.167.203/m-p.s-l.SNOOPY",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "gafgyt",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-27 05:41:15 U C",
-      "last_seen": "2026-08-27 05:41:15 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://85.11.167.203/p-p.c-.SNOOPY",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "gafgyt",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-27 05:41:15 U C",
-      "last_seen": "2026-08-27 05:41:15 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://85.11.167.203/a-r.m-4.SNOOPY",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "gafgyt",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-27 05:40:17 U C",
-      "last_seen": "2026-08-27 05:40:17 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://85.11.167.203/x-8.6-.SNOOPY",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "gafgyt",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-27 05:40:17 U C",
-      "last_seen": "2026-08-27 05:40:17 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://85.11.167.203/m-i.p-s.SNOOPY",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "gafgyt",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-27 05:40:17 U C",
-      "last_seen": "2026-08-27 05:40:17 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://85.11.167.203/m-6.8-k.SNOOPY",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "gafgyt",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-27 05:40:17 U C",
-      "last_seen": "2026-08-27 05:40:17 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://85.11.167.203/x-3.2-.SNOOPY",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "elf",
-        "gafgyt",
-        "ua-wget"
-      ],
-      "first_seen": "2026-08-27 05:40:17 U C",
-      "last_seen": "2026-08-27 05:40:17 U C",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": "http://222.142.76.157:59519/i",
+      "indicator": "http://122.241.11.11:58223/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -214,14 +331,14 @@
         "mirai",
         "Mozi"
       ],
-      "first_seen": "2026-08-27 05:02:08 U C",
-      "last_seen": "2026-08-27 05:02:08 U C",
+      "first_seen": "2026-08-28 03:01:28 U C",
+      "last_seen": "2026-08-28 03:01:28 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://115.57.165.118:35468/i",
+      "indicator": "http://182.120.166.229:45493/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -230,174 +347,27 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-27 04:59:06 U C",
-      "last_seen": "2026-08-27 04:59:06 U C",
+      "first_seen": "2026-08-28 02:47:23 U C",
+      "last_seen": "2026-08-28 02:47:23 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://222.142.76.157:59519/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 04:58:12 U C",
-      "last_seen": "2026-08-27 04:58:12 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://115.57.165.118:35468/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 04:53:16 U C",
-      "last_seen": "2026-08-27 04:53:16 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://42.237.59.222:33981/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 04:37:15 U C",
-      "last_seen": "2026-08-27 04:37:15 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://219.155.210.204:40173/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 04:18:12 U C",
-      "last_seen": "2026-08-27 04:18:12 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://42.237.59.222:33981/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 04:14:14 U C",
-      "last_seen": "2026-08-27 04:14:14 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://182.124.178.175:42280/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 04:13:13 U C",
-      "last_seen": "2026-08-27 04:13:13 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://36.70.228.154:42955/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 04:01:15 U C",
-      "last_seen": "2026-08-27 04:01:15 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://219.155.210.204:40173/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 03:57:08 U C",
-      "last_seen": "2026-08-27 03:57:08 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://113.221.58.41:33922/i",
+      "indicator": "http://180.106.130.119:52766/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
         "mirai"
       ],
-      "first_seen": "2026-08-27 03:52:08 U C",
-      "last_seen": "2026-08-27 03:52:08 U C",
+      "first_seen": "2026-08-28 02:42:08 U C",
+      "last_seen": "2026-08-28 02:42:08 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://36.70.228.154:42955/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 03:35:28 U C",
-      "last_seen": "2026-08-27 03:35:28 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://42.54.156.10:42338/i",
+      "indicator": "http://42.224.146.79:37600/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -406,27 +376,14 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-27 03:35:14 U C",
-      "last_seen": "2026-08-27 03:35:14 U C",
+      "first_seen": "2026-08-28 02:22:26 U C",
+      "last_seen": "2026-08-28 02:22:26 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://113.221.58.41:33922/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "mirai"
-      ],
-      "first_seen": "2026-08-27 03:26:17 U C",
-      "last_seen": "2026-08-27 03:26:17 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://112.93.139.117:35833/i",
+      "indicator": "http://182.120.166.229:45493/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -435,14 +392,14 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-27 02:39:19 U C",
-      "last_seen": "2026-08-27 02:39:19 U C",
+      "first_seen": "2026-08-28 02:19:10 U C",
+      "last_seen": "2026-08-28 02:19:10 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://219.155.208.13:56708/bin.sh",
+      "indicator": "http://42.224.146.79:37600/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -451,14 +408,14 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-27 02:39:17 U C",
-      "last_seen": "2026-08-27 02:39:17 U C",
+      "first_seen": "2026-08-28 02:17:16 U C",
+      "last_seen": "2026-08-28 02:17:16 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://115.55.85.184:39243/i",
+      "indicator": "http://220.201.29.161:55723/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -467,14 +424,14 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-27 02:36:26 U C",
-      "last_seen": "2026-08-27 02:36:26 U C",
+      "first_seen": "2026-08-28 02:12:22 U C",
+      "last_seen": "2026-08-28 02:12:22 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://60.23.233.250:33613/i",
+      "indicator": "http://182.113.41.227:46418/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -483,14 +440,14 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-27 02:34:21 U C",
-      "last_seen": "2026-08-27 02:34:21 U C",
+      "first_seen": "2026-08-28 01:59:28 U C",
+      "last_seen": "2026-08-28 01:59:28 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://115.55.85.184:39243/bin.sh",
+      "indicator": "http://182.113.41.227:46418/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -499,14 +456,40 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-27 02:32:22 U C",
-      "last_seen": "2026-08-27 02:32:22 U C",
+      "first_seen": "2026-08-28 01:59:23 U C",
+      "last_seen": "2026-08-28 01:59:23 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://112.93.139.117:35833/bin.sh",
+      "indicator": "http://219.155.19.6:48542/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "Mozi"
+      ],
+      "first_seen": "2026-08-28 01:51:14 U C",
+      "last_seen": "2026-08-28 01:51:14 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://219.155.203.92:60427/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "Mozi"
+      ],
+      "first_seen": "2026-08-28 01:41:12 U C",
+      "last_seen": "2026-08-28 01:41:12 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://219.156.1.60:58614/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -515,14 +498,14 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-27 02:30:21 U C",
-      "last_seen": "2026-08-27 02:30:21 U C",
+      "first_seen": "2026-08-28 01:36:21 U C",
+      "last_seen": "2026-08-28 01:36:21 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://42.177.20.8:51965/bin.sh",
+      "indicator": "http://119.179.236.153:35587/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -531,14 +514,14 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-27 02:28:12 U C",
-      "last_seen": "2026-08-27 02:28:12 U C",
+      "first_seen": "2026-08-28 01:31:26 U C",
+      "last_seen": "2026-08-28 01:31:26 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://42.178.98.211:51494/i",
+      "indicator": "http://119.179.236.153:35587/bin.sh",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -547,27 +530,14 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-27 02:28:12 U C",
-      "last_seen": "2026-08-27 02:28:12 U C",
+      "first_seen": "2026-08-28 01:29:13 U C",
+      "last_seen": "2026-08-28 01:29:13 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://59.97.253.39:35400/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 02:22:11 U C",
-      "last_seen": "2026-08-27 02:22:11 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://59.97.248.45:33243/i",
+      "indicator": "http://115.55.9.45:53206/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -576,14 +546,27 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-27 02:19:07 U C",
-      "last_seen": "2026-08-27 02:19:07 U C",
+      "first_seen": "2026-08-28 01:24:34 U C",
+      "last_seen": "2026-08-28 01:24:34 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://219.155.208.13:56708/i",
+      "indicator": "http://219.155.203.92:60427/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "Mozi"
+      ],
+      "first_seen": "2026-08-28 01:16:07 U C",
+      "last_seen": "2026-08-28 01:16:07 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://42.235.90.27:56498/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -592,14 +575,14 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-27 02:11:08 U C",
-      "last_seen": "2026-08-27 02:11:08 U C",
+      "first_seen": "2026-08-28 01:14:16 U C",
+      "last_seen": "2026-08-28 01:14:16 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://42.225.220.94:46265/i",
+      "indicator": "http://42.235.79.35:51894/i",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
@@ -608,225 +591,194 @@
         "mips",
         "Mozi"
       ],
-      "first_seen": "2026-08-27 02:08:13 U C",
-      "last_seen": "2026-08-27 02:08:13 U C",
+      "first_seen": "2026-08-28 01:09:12 U C",
+      "last_seen": "2026-08-28 01:09:12 U C",
       "sightings": 1,
       "severity": "medium",
       "status": "active"
     },
     {
-      "indicator": "http://39.87.216.223:50774/i",
+      "indicator": "http://85.11.167.203/s-h.4-.SNOOPY",
       "indicator_type": "url",
       "source": "URLhaus",
       "tags": [
-        "32-bit",
         "elf",
-        "mips",
-        "Mozi"
+        "gafgyt",
+        "ua-wget"
       ],
-      "first_seen": "2026-08-27 02:06:16 U C",
-      "last_seen": "2026-08-27 02:06:16 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://42.225.220.94:46265/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 02:05:26 U C",
-      "last_seen": "2026-08-27 02:05:26 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://59.97.253.39:35400/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 02:01:07 U C",
-      "last_seen": "2026-08-27 02:01:07 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://115.62.133.38:35752/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 01:53:13 U C",
-      "last_seen": "2026-08-27 01:53:13 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://59.97.248.45:33243/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 01:50:13 U C",
-      "last_seen": "2026-08-27 01:50:13 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://125.41.219.120:41312/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 01:39:10 U C",
-      "last_seen": "2026-08-27 01:39:10 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://125.41.219.120:41312/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 01:15:14 U C",
-      "last_seen": "2026-08-27 01:15:14 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://175.107.12.59:45020/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 00:42:15 U C",
-      "last_seen": "2026-08-27 00:42:15 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://42.230.46.68:41245/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 00:05:14 U C",
-      "last_seen": "2026-08-27 00:05:14 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://180.243.213.31:43447/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 00:04:14 U C",
-      "last_seen": "2026-08-27 00:04:14 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://105.186.93.221:45585/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 00:01:07 U C",
-      "last_seen": "2026-08-27 00:01:07 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://103.160.130.109:59207/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-08-27 00:00:17 U C",
-      "last_seen": "2026-08-27 00:00:17 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": " \"aa52e1cbe3208208156ed785dfd651f758e4ef3fd58992144187500dd1159b2b\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"Gafgyt\""
-      ],
-      "first_seen": "2026-08-27",
-      "last_seen": "2026-08-27",
+      "first_seen": "2026-08-28 01:07:20 U C",
+      "last_seen": "2026-08-28 01:07:20 U C",
       "sightings": 1,
       "severity": "low",
       "status": "active"
     },
     {
-      "indicator": " \"4cb25fdf5b1f336341b5370d0c00cdd0db170b56b21fd1fd2f590d96c04085e6\"",
+      "indicator": "http://85.11.167.203/a-r.m-6.SNOOPY",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "elf",
+        "gafgyt",
+        "ua-wget"
+      ],
+      "first_seen": "2026-08-28 01:07:20 U C",
+      "last_seen": "2026-08-28 01:07:20 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://182.119.176.85:56368/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-28 01:01:22 U C",
+      "last_seen": "2026-08-28 01:01:22 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://221.15.21.220:35804/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-28 00:36:20 U C",
+      "last_seen": "2026-08-28 00:36:20 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://182.119.176.85:56368/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-28 00:35:17 U C",
+      "last_seen": "2026-08-28 00:35:17 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://221.15.88.237:56165/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "Mozi"
+      ],
+      "first_seen": "2026-08-28 00:17:17 U C",
+      "last_seen": "2026-08-28 00:17:17 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://163.142.92.67:54475/i",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [],
+      "first_seen": "2026-08-28 00:17:17 U C",
+      "last_seen": "2026-08-28 00:17:17 U C",
+      "sightings": 1,
+      "severity": "low",
+      "status": "active"
+    },
+    {
+      "indicator": "http://180.106.130.119:52766/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "mirai"
+      ],
+      "first_seen": "2026-08-28 00:17:17 U C",
+      "last_seen": "2026-08-28 00:17:17 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://221.15.21.220:35804/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-28 00:12:29 U C",
+      "last_seen": "2026-08-28 00:12:29 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://115.50.149.84:44853/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "Mozi"
+      ],
+      "first_seen": "2026-08-28 00:12:15 U C",
+      "last_seen": "2026-08-28 00:12:15 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://180.191.42.15:52214/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "mirai"
+      ],
+      "first_seen": "2026-08-28 00:07:14 U C",
+      "last_seen": "2026-08-28 00:07:14 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": "http://123.4.232.69:32795/bin.sh",
+      "indicator_type": "url",
+      "source": "URLhaus",
+      "tags": [
+        "32-bit",
+        "elf",
+        "mips",
+        "Mozi"
+      ],
+      "first_seen": "2026-08-28 00:00:17 U C",
+      "last_seen": "2026-08-28 00:00:17 U C",
+      "sightings": 1,
+      "severity": "medium",
+      "status": "active"
+    },
+    {
+      "indicator": " \"1876ef7a0995a7383f5660bcd0b53de56bb9c21f04395f35a86e8195b99bf180\"",
       "indicator_type": "hash",
       "source": "MalwareBazaar",
       "tags": [
-        " \"Gafgyt\""
+        " \"n/a\""
       ],
-      "first_seen": "2026-08-27",
-      "last_seen": "2026-08-27",
+      "first_seen": "2026-08-28",
+      "last_seen": "2026-08-28",
       "sightings": 1,
       "severity": "low",
       "status": "active"

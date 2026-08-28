@@ -7,6 +7,10 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_30662828008ae112.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_c1651781064790ad.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_e99b2c2df468a74c.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_f3ea087c77b1985f.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_b41995cf38e90365.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_8cbaad0bfeb607d1.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_324103a237439875.exe*'
@@ -175,11 +179,26 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_372e453e8176fe84.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_56a54f3ee74d7c37.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_9da84e402c095df5.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_669902b87da3f16e.exe*'
   condition: selection
 level: high
 tags:
   - attack.t1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
+id: efcd5693-7256-5879-b434-ae84d3029700
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with C2 from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://45.88.186.164:8000/SysMgr.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1204.002
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
@@ -200,3 +219,19 @@ level: high
 tags:
   - attack.t1496
   - source.URLhaus
+---
+title: Detect Activity to Known Malicious C2 - MalwareBazaar hashs - Chunk 1
+id: f74c7de3-963b-593e-bd64-3558c23b37ff
+status: experimental
+description: Detects traffic or activity related to known malicious hashs associated with C2 from MalwareBazaar (Chunk 1).
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - ' "98d957316a3d556bfe145d8a032999e5ad913c3d51d57cdf1333cf3d68182b81"'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.MalwareBazaar

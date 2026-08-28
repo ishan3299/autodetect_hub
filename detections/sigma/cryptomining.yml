@@ -7,6 +7,10 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://cloud.calltop.com.br/apps/web/linux.bin*'
+      - '*https://www.mediocasavolponi.com/wp-content/plugins/linux.bin*'
+      - '*https://casasmediterraneas.com/wp-content/plugins/linux.bin*'
+      - '*http://0x1x2x3.top/*'
       - '*http://cta.edu.pe/wp-content/plugins/linux.bin*'
       - '*https://cta.edu.pe/wp-content/plugins/linux.bin*'
       - '*https://62.60.226.185/kaze.exe*'
@@ -50,6 +54,27 @@ tags:
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
+id: f42dab2b-f6e3-5181-ac2d-d61e4dcc95d4
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://puschl.langhaar-schaeferhunde.com/plugins/linux.bin*'
+      - '*http://34.70.205.211/plugins-dist/safehtml/lang/font/ksmd*'
+      - '*https://kworker.eth.limo/ksmd*'
+      - '*http://216.98.10.60:55555/ksmd*'
+      - '*https://69.30.251.156/library/Payment/Adapter/PAYEER/ksmd*'
+      - '*https://kworker.eth.link/ksmd*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
 id: 5cfa228a-b760-546c-8ab2-86f2712a68e3
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
@@ -67,26 +92,6 @@ tags:
   - attack.t1595
   - source.URLhaus
 ---
-title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
-id: f42dab2b-f6e3-5181-ac2d-d61e4dcc95d4
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://34.70.205.211/plugins-dist/safehtml/lang/font/ksmd*'
-      - '*https://kworker.eth.limo/ksmd*'
-      - '*http://216.98.10.60:55555/ksmd*'
-      - '*https://69.30.251.156/library/Payment/Adapter/PAYEER/ksmd*'
-      - '*https://kworker.eth.link/ksmd*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
 title: Detect Activity to Known Malicious Cryptomining - MalwareBazaar hashs - Chunk 1
 id: a9489914-32b3-565d-900f-897d9a586db4
 status: experimental
@@ -96,12 +101,13 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "245f6e3f6750701d58c06bd96f4623c62942305fb32bcdc5a99bf367becaafd0"'
+      - ' "7c71762aae512f7ec674a1f4aa407380184abf2a01b85de8264375b1ae2bcca4"'
+      - ' "683f921b0695aceab21b5804f95960e1ea29020cc6ee1b5ace68cde40ef59a99"'
+      - ' "88653d63009acbe611d0016aa4ebd843256b26243932d6103d19c2462631a126"'
       - ' "233363e6a24fee6d98830e19b146d18cda72b93dae024608878eaa83763f6dd4"'
       - ' "fccf06172119b4ae6f146e45d8f35fcdb248fab1fe4471fac301d33d5ffd5b37"'
-      - ' "4f01420fb5ba34371a662de1d5e7c9804d09d79791aec3f87c59135ca0c11cbe"'
-      - ' "ea4015a2296ff237aa2c88face657791d556fb38939868186881f698c485ad44"'
-      - ' "2b93212ee63dbb290d88bc845aafae192552b6de80d93a2f4a6453afb3738676"'
-      - ' "4037fc3edbee83ac3544c8bb948b2d237c4bc7ca7f5fc23147d8350fa248e081"'
+      - ' "f89d605cb530103c5093cae126970ed1b72d6421d6605298b5a3d4f1f9703411"'
   condition: selection
 level: high
 tags:
