@@ -46,7 +46,6 @@ detection:
       - '*http://176.124.207.93:9999/x.sh*'
       - '*http://31.56.53.172/dropper.sh*'
       - '*http://193.233.75.215/pb7Ulzhaae3xpSNrEvJH5yqqyMyIbnNF/mKM65Cf6QNqeOVw9.exe*'
-      - '*http://106.54.223.106/phpmyadmin/setup/lib/syscon*'
   condition: selection
 level: high
 tags:
@@ -101,13 +100,14 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "93b630ee10810afba4688c1025b2c33817c2ff4c4474d8e4434881a0b3733d7a"'
+      - ' "8a432578c950d6587a5e2381c94ea2c47a0378d847c4e0ac3afb860b624e5299"'
+      - ' "656b90c4553ec077f0ff60bf35edee765dffa4d63d4e2148221f9ef1171bb437"'
       - ' "245f6e3f6750701d58c06bd96f4623c62942305fb32bcdc5a99bf367becaafd0"'
       - ' "7c71762aae512f7ec674a1f4aa407380184abf2a01b85de8264375b1ae2bcca4"'
       - ' "683f921b0695aceab21b5804f95960e1ea29020cc6ee1b5ace68cde40ef59a99"'
       - ' "88653d63009acbe611d0016aa4ebd843256b26243932d6103d19c2462631a126"'
       - ' "233363e6a24fee6d98830e19b146d18cda72b93dae024608878eaa83763f6dd4"'
-      - ' "fccf06172119b4ae6f146e45d8f35fcdb248fab1fe4471fac301d33d5ffd5b37"'
-      - ' "f89d605cb530103c5093cae126970ed1b72d6421d6605298b5a3d4f1f9703411"'
   condition: selection
 level: high
 tags:

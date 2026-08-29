@@ -1,4 +1,47 @@
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: db046cfb-dea5-57cd-8f98-7b35c56d8500
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://drive.google.com/file/d/1r7M0rgvXklsZK-Xo6NRgM_gaG46QU4Dr/view?usp=sharing*'
+      - '*https://linen-harbor.com/curl/rnulrjfa/init.sh*'
+      - '*http://193.221.200.26:5001/odens.exe*'
+      - '*http://86.54.25.213/d/unix49211821*'
+      - '*https://auth2api.site/API_REFRESH.scpt*'
+      - '*https://www.dropbox.com/scl/fi/7hp56yj650o4slrllg4xj/ChilloutVRMod.exe?rlkey=s69vdpczdpalbo26alwo0u13o&st=f5mgwsxk&dl=1*'
+      - '*https://www.dropbox.com/scl/fi/otfakqkze127a701il1zh/Vrmod_Setup.exe?rlkey=deryztzard7w3n2btuqo7ivvd&st=48dlc6qm&dl=1*'
+      - '*http://192.162.199.249/1edjop4tlj2d*'
+      - '*http://192.162.199.249/8w6vq50fsu*'
+      - '*http://192.162.199.249/ezaenul9*'
+      - '*http://192.162.199.249/tzb10mmujurn*'
+      - '*https://www.dropbox.com/scl/fi/20bypo9tl56golwmhkuzx/WatchGoParty.exe?rlkey=djyz9nidcvc5e7ojr8adaoiaf&st=9ptdt498&dl=1*'
+  condition: selection
+level: high
+tags:
+  - attack.t1555
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: 11222940-a0cf-5f6e-9763-86631cdc6af2
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://gaiadeqi.com/stego_cdyg6hf6tx.png*'
+  condition: selection
+level: high
+tags:
+  - attack.t1027.003
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
 id: bf9f0c07-fdcf-5e93-b032-b681d29af785
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
@@ -7,6 +50,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_274601599365ef96.exe*'
       - '*http://cryptovectorhub1.lol/crypt/load/QW1.exe*'
       - '*https://femade.co.uk/wp-content/uploads/QW1.exe*'
       - '*http://hypercorevector4.lol/crypt/load/QW1.exe*'
@@ -78,8 +122,6 @@ detection:
       - '*http://62.60.226.232/2.7.exe*'
       - '*http://62.60.226.232/1.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_4a2298dc2ab315c6.exe*'
-      - '*https://pub-5eee967508114192a40c0ca052a3bb9d.r2.dev/package.msi*'
-      - '*http://91.92.242.236/files-129312398/files/file_ad7fd402048f3819.exe*'
   condition: selection
 level: high
 tags:
@@ -134,32 +176,6 @@ detection:
 level: high
 tags:
   - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: db046cfb-dea5-57cd-8f98-7b35c56d8500
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://linen-harbor.com/curl/rnulrjfa/init.sh*'
-      - '*http://193.221.200.26:5001/odens.exe*'
-      - '*http://86.54.25.213/d/unix49211821*'
-      - '*https://auth2api.site/API_REFRESH.scpt*'
-      - '*https://www.dropbox.com/scl/fi/7hp56yj650o4slrllg4xj/ChilloutVRMod.exe?rlkey=s69vdpczdpalbo26alwo0u13o&st=f5mgwsxk&dl=1*'
-      - '*https://www.dropbox.com/scl/fi/otfakqkze127a701il1zh/Vrmod_Setup.exe?rlkey=deryztzard7w3n2btuqo7ivvd&st=48dlc6qm&dl=1*'
-      - '*http://192.162.199.249/1edjop4tlj2d*'
-      - '*http://192.162.199.249/8w6vq50fsu*'
-      - '*http://192.162.199.249/ezaenul9*'
-      - '*http://192.162.199.249/tzb10mmujurn*'
-      - '*https://www.dropbox.com/scl/fi/20bypo9tl56golwmhkuzx/WatchGoParty.exe?rlkey=djyz9nidcvc5e7ojr8adaoiaf&st=9ptdt498&dl=1*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
@@ -228,6 +244,16 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "6ae503b3ee113406e80f9ec06b42800843cd655e2307b4b4c934a72efbd72085"'
+      - ' "7b0d74d4ead227828f138f5488964bdc539f9bc2821aa450bca724227872becf"'
+      - ' "70bf0a8c0ffe5d1aa51358aba0ae365a1fab15cc356a02c07a36de6427e3ca7f"'
+      - ' "ee765c4143bbb8dcbb83ca72004a93a16c3c1aecc6b5eccfc44296bea417060f"'
+      - ' "6f159b7cee0ba64367cf1ee2bdb1f4a19d7fd207b019959981a9be289a229c11"'
+      - ' "a39442a2e3c2b59182ffd3e0e729124990f3fb4bfbc13b3e744be3e90ded1859"'
+      - ' "d47a793404c4bb0419c9ae1fda9847aa6a75a029e60ed65f05645dad9ee9573b"'
+      - ' "b6296bad0fdf16df0811053e5c5cee71946d05e06222324e76dc26ec676ff976"'
+      - ' "1876ef7a0995a7383f5660bcd0b53de56bb9c21f04395f35a86e8195b99bf180"'
+      - ' "46ced738ab9a9a37df3e36c6a8603742f26783f0be2fa845bdec10b5ddb50bfb"'
       - ' "b926a44910e4f4d55c53fdc6d9cdbfb043059355d55fb3595a3434bd69b1e7e3"'
       - ' "5cb54c53e2169a23a815d87229b00c63d1d3c8c0d19e0f92b5e83bd231481419"'
       - ' "f19ce246b09aec504d8cb547f9d3344e14a6ca898f8d88f2207ece0d74f0d3f1"'
@@ -262,13 +288,6 @@ detection:
       - ' "36b1f00d0b9c2d66825529d415dc69185fc744cc79e7c67ee214cfaac199e3b5"'
       - ' "c391c8763b10b0a558f274e9553624edf70212b4658527fc7af97e0bed249254"'
       - ' "4bd08eb22f2a2a8c89197fa364846939f06903f2f1a0b4bdcd6fb4242c2af976"'
-      - ' "c5fefde3f122e8d04584bc34b2a357773f4a3ca35ba7988ca0f23a7b5f88cc08"'
-      - ' "75d199a793b8f5ba7d15d2665a9abc0a80489250393af7bc9f9e832c2e495bef"'
-      - ' "0e5424f3c4c5459f3fcb3c8b0cd121c4799f5274af8d01af1cbff78118c3bf7b"'
-      - ' "5ab3ce732f735bc947ec6a4fdb7a9ca9c99c0255276e2b73840872328abb44eb"'
-      - ' "7b7023dc4ed1a1b151a8fcdac6c8857e3b9dd52bf8c821af55d130bbb71122d7"'
-      - ' "45f35d4c5898a814aabc01ff69e81de600e861c0b72d67f7b30808b6b54082ca"'
-      - ' "dbd9bb94368fe9abdb53a16b68e81389c0fc705d17dee8096e3e1aa41821f89f"'
   condition: selection
 level: high
 tags:
