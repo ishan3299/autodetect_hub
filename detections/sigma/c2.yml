@@ -7,6 +7,17 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_5f93378efbf927ff.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_fe068c2e35dc5fe2.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_05fc66617b4cf344.exe*'
+      - '*https://trekworkshop3.com/2kqYRM0DCrnyJgoS4gVLl_FHDRRdTUhGCbjyuYwpZ6c/oo9/update*'
+      - '*https://render-6.com/api/metrics/run?event=pasted*'
+      - '*http://91.92.242.236/files-129312398/files/file_490864d3c4fc90b0.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_11a1c2440860de6c.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_e95eb484307304f7.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_2db73cc8bb6d69ff.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_3ddb7fbc2d6a04f1.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_e3dd7c9b3b092db4.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_21ed8bf10b6ae6f5.exe*'
       - '*http://31.76.100.209/d/y2znxupxwe2j.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_c57f02bbf5bb44ce.exe*'
@@ -167,14 +178,6 @@ detection:
       - '*http://192.162.199.246/pb7Ulzhaae3xpSNrEvJH5yqqyMyIbnNF/gM9anpOuZNKX8zHj.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_78de74be0064d015.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_6f3988250b2377ba.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_e123b357e127708d.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_0607be65f0526ebe.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_7691c09246236975.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_5b2a99625685db40.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_a9d864181ab71029.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_a8d74bd52287c2ac.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_c166f39d565559f4.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_966dd80e15fd05d1.exe*'
   condition: selection
 level: high
 tags:
@@ -215,19 +218,3 @@ level: high
 tags:
   - attack.t1496
   - source.URLhaus
----
-title: Detect Activity to Known Malicious C2 - MalwareBazaar hashs - Chunk 1
-id: f74c7de3-963b-593e-bd64-3558c23b37ff
-status: experimental
-description: Detects traffic or activity related to known malicious hashs associated with C2 from MalwareBazaar (Chunk 1).
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - ' "98d957316a3d556bfe145d8a032999e5ad913c3d51d57cdf1333cf3d68182b81"'
-  condition: selection
-level: high
-tags:
-  - attack.t1071
-  - source.MalwareBazaar

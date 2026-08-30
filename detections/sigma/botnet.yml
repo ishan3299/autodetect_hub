@@ -36,7 +36,6 @@ detection:
       - '*http://rippled.cleverpondky.com/checkmacos.sh*'
       - '*http://rippled.cleverpondky.com/oldboss*'
       - '*http://rippled.cleverpondky.com/auto*'
-      - '*http://salmosnet.duckdns.org:5001/bins.sh*'
   condition: selection
 level: high
 tags:
@@ -608,17 +607,6 @@ detection:
       - '*http://94.154.43.189/ppc64*'
       - '*http://94.154.43.189/m68k*'
       - '*http://94.154.43.189/s390x*'
-      - '*http://salmosnet.duckdns.org:5001/arm*'
-      - '*http://salmosnet.duckdns.org:5001/amd64*'
-      - '*http://salmosnet.duckdns.org:5001/arm5*'
-      - '*http://salmosnet.duckdns.org:5001/mipsle*'
-      - '*http://salmosnet.duckdns.org:5001/android_arm64*'
-      - '*http://salmosnet.duckdns.org:5001/arm64*'
-      - '*http://salmosnet.duckdns.org:5001/mips*'
-      - '*http://salmosnet.duckdns.org:5001/arm6*'
-      - '*http://salmosnet.duckdns.org:5001/i386*'
-      - '*http://salmosnet.duckdns.org:5001/armv7l*'
-      - '*http://salmosnet.duckdns.org:5001/x86*'
   condition: selection
 level: high
 tags:
@@ -738,20 +726,4 @@ detection:
 level: high
 tags:
   - attack.t1496
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 1
-id: 5a66fc91-2b0a-562b-8fa3-0a687f32eb15
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://salmosnet.duckdns.org:5001/bot.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
   - source.URLhaus
