@@ -7,6 +7,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://rabbitfuns.su/main/powershell.exe*'
       - '*https://cloud.calltop.com.br/apps/web/linux.bin*'
       - '*https://www.mediocasavolponi.com/wp-content/plugins/linux.bin*'
       - '*https://casasmediterraneas.com/wp-content/plugins/linux.bin*'
@@ -45,7 +46,6 @@ detection:
       - '*http://94.154.43.77/cumminer.ppc64*'
       - '*http://176.124.207.93:9999/x.sh*'
       - '*http://31.56.53.172/dropper.sh*'
-      - '*http://193.233.75.215/pb7Ulzhaae3xpSNrEvJH5yqqyMyIbnNF/mKM65Cf6QNqeOVw9.exe*'
   condition: selection
 level: high
 tags:
@@ -100,14 +100,16 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "b8fead8fcb3c37ffb8b6ce820867ed72e58385a48a7076682cf0d55cd6a1b141"'
+      - ' "75dcded44aa71d135cf9e3e47017e254391f18885bee15a58fcd0ed1b2064059"'
+      - ' "ae00173d00f74bf65aa244ebf3885ae72c264162b6945af09c1eb7360ba45c44"'
+      - ' "39d8110c08a16e6e51b2fd7d732638e1dbc06d017ab8ac6b604470d7e7ea244e"'
+      - ' "386aece5751535acf2c60a1cec037ec18da94d6a10237117debccbc0cf8ceaa7"'
+      - ' "916cf18c98363cf3419b4d51e9635dd1c610adb3b6d6264aac3f52a02b77541a"'
       - ' "11ae2d71c9ccae0fa60dc80eedf85ebf784267c28ca42e9c14fffa06515e097a"'
       - ' "b434022c41d8380221ddd621eaae69b0f0eb2503ac53069ef7f932f45cdf81d7"'
       - ' "fc4f5ee40e5a5ec5141afeeca51086aa7c355ce07af47b1e9a10a5bc7002f724"'
       - ' "2d6f773bb869a4f18dc09b8e005f5b0a997ea8a3fcf396f3f8a83a52141a321d"'
-      - ' "93b630ee10810afba4688c1025b2c33817c2ff4c4474d8e4434881a0b3733d7a"'
-      - ' "8a432578c950d6587a5e2381c94ea2c47a0378d847c4e0ac3afb860b624e5299"'
-      - ' "656b90c4553ec077f0ff60bf35edee765dffa4d63d4e2148221f9ef1171bb437"'
-      - ' "245f6e3f6750701d58c06bd96f4623c62942305fb32bcdc5a99bf367becaafd0"'
   condition: selection
 level: high
 tags:

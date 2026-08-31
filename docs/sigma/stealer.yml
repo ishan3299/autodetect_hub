@@ -1,4 +1,55 @@
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: ebe57f60-46c3-5544-84b3-766b112c260a
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://85.239.149.196/main.exe*'
+      - '*https://luminouspower.com.pk/zoom.exe*'
+      - '*https://trf.kookapp.pro/GameBarPresenceWriters.exe*'
+      - '*https://google-meet-verification.icu/rt.exe*'
+      - '*https://mon-blanc-03.cfd/dollar.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/jhgkuyyg.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/arFtU.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/dflnglkfdmgs.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/bjbh.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/kJHGFDs.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/hnmh.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/KJHJHKJKJH.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/kliulij.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/obsh/R7.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/obsh/mixnew2.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/ojujn.exe*'
+      - '*https://tattinamecheap.com/QuickFetch.exe*'
+      - '*http://192.162.199.149/uploads/d6a0dbb9ae834113a8401012b1f9aa18.exe*'
+      - '*https://rcf.co.mz/google.exe*'
+      - '*https://rcf.co.mz/Forbes.exe*'
+      - '*https://trueinggrik.com/QuickFetch.exe*'
+      - '*https://rcf.co.mz/Volcano9.exe*'
+      - '*https://pub-90177fa65de34e95abc6e25ef90c545b.r2.dev/ALE123.exe*'
+      - '*https://rcf.co.mz/Godabeg1.exe*'
+      - '*http://95.164.53.193:5001/adas.exe*'
+      - '*http://95.164.53.193:5001/jhgjse.exe*'
+      - '*http://95.164.53.193:5001/single.exe*'
+      - '*https://meridia.rs/filess/Teleg.exe*'
+      - '*https://rcf.co.mz/Chrome01.exe*'
+      - '*http://192.162.199.186/stlr.exe*'
+      - '*https://rcf.co.mz/Phantomx.exe*'
+      - '*https://raw.githubusercontent.com/Reverse0100/XC/refs/heads/main/test.exe*'
+      - '*http://62.60.226.185/r843.exe*'
+      - '*http://196.251.107.186/svchost.exe*'
+      - '*http://196.251.107.186/4.exe*'
+      - '*http://172.245.95.62/ph/velogs.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1204.002
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
 id: bf9f0c07-fdcf-5e93-b032-b681d29af785
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
@@ -130,56 +181,6 @@ tags:
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: ebe57f60-46c3-5544-84b3-766b112c260a
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://luminouspower.com.pk/zoom.exe*'
-      - '*https://trf.kookapp.pro/GameBarPresenceWriters.exe*'
-      - '*https://google-meet-verification.icu/rt.exe*'
-      - '*https://mon-blanc-03.cfd/dollar.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/jhgkuyyg.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/arFtU.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/dflnglkfdmgs.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/bjbh.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/kJHGFDs.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/hnmh.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/KJHJHKJKJH.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/kliulij.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/obsh/R7.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/obsh/mixnew2.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/ojujn.exe*'
-      - '*https://tattinamecheap.com/QuickFetch.exe*'
-      - '*http://192.162.199.149/uploads/d6a0dbb9ae834113a8401012b1f9aa18.exe*'
-      - '*https://rcf.co.mz/google.exe*'
-      - '*https://rcf.co.mz/Forbes.exe*'
-      - '*https://trueinggrik.com/QuickFetch.exe*'
-      - '*https://rcf.co.mz/Volcano9.exe*'
-      - '*https://pub-90177fa65de34e95abc6e25ef90c545b.r2.dev/ALE123.exe*'
-      - '*https://rcf.co.mz/Godabeg1.exe*'
-      - '*http://95.164.53.193:5001/adas.exe*'
-      - '*http://95.164.53.193:5001/jhgjse.exe*'
-      - '*http://95.164.53.193:5001/single.exe*'
-      - '*https://meridia.rs/filess/Teleg.exe*'
-      - '*https://rcf.co.mz/Chrome01.exe*'
-      - '*http://192.162.199.186/stlr.exe*'
-      - '*https://rcf.co.mz/Phantomx.exe*'
-      - '*https://raw.githubusercontent.com/Reverse0100/XC/refs/heads/main/test.exe*'
-      - '*http://62.60.226.185/r843.exe*'
-      - '*http://196.251.107.186/svchost.exe*'
-      - '*http://196.251.107.186/4.exe*'
-      - '*http://172.245.95.62/ph/velogs.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
 id: fce00e4c-4848-5f04-960c-02c30ef68174
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
@@ -245,6 +246,10 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "71cdf126636c50a3a2b71fa730ddc3f3ab03791a35a70aa774de8652ca96a174"'
+      - ' "44fbba738f24e417236317f4efd260be890bcc745d6d9919a91b7015f84c402f"'
+      - ' "c06a85f0ad8b1fca254994fc3a0953f903aa28027f165d79214bbe3363332939"'
+      - ' "7a1ecb216f5fb09d8290fb0a5136c118b82f5e264043f839f0259775b05c0c29"'
       - ' "0970ea5b4f55b1cfee90c06e00ed48dbc861f5eac590b144d4a911b62942abbc"'
       - ' "11142fc49721aed0381514a9fb813cbe1143e05c2a3f5e1180995eda4cc4d005"'
       - ' "82bee273347b6e752d229b8fd3e5fed68cfc49f0f7145a8e457bf3ca0c91b5df"'
@@ -252,20 +257,6 @@ detection:
       - ' "47aa531e3963fddfb99f06da2a007bd3dbaf8f24d6928074048475d91099995d"'
       - ' "30cf47caf9700a74a8ea4a728b8b7c88cb1f8e22261b4ac01575b112c1e224ca"'
       - ' "3834d0dec7d98a02845b4dee85fde459612448951a5ea312f77e17db0f29b479"'
-      - ' "6ae503b3ee113406e80f9ec06b42800843cd655e2307b4b4c934a72efbd72085"'
-      - ' "7b0d74d4ead227828f138f5488964bdc539f9bc2821aa450bca724227872becf"'
-      - ' "70bf0a8c0ffe5d1aa51358aba0ae365a1fab15cc356a02c07a36de6427e3ca7f"'
-      - ' "ee765c4143bbb8dcbb83ca72004a93a16c3c1aecc6b5eccfc44296bea417060f"'
-      - ' "6f159b7cee0ba64367cf1ee2bdb1f4a19d7fd207b019959981a9be289a229c11"'
-      - ' "a39442a2e3c2b59182ffd3e0e729124990f3fb4bfbc13b3e744be3e90ded1859"'
-      - ' "d47a793404c4bb0419c9ae1fda9847aa6a75a029e60ed65f05645dad9ee9573b"'
-      - ' "b6296bad0fdf16df0811053e5c5cee71946d05e06222324e76dc26ec676ff976"'
-      - ' "1876ef7a0995a7383f5660bcd0b53de56bb9c21f04395f35a86e8195b99bf180"'
-      - ' "46ced738ab9a9a37df3e36c6a8603742f26783f0be2fa845bdec10b5ddb50bfb"'
-      - ' "b926a44910e4f4d55c53fdc6d9cdbfb043059355d55fb3595a3434bd69b1e7e3"'
-      - ' "5cb54c53e2169a23a815d87229b00c63d1d3c8c0d19e0f92b5e83bd231481419"'
-      - ' "f19ce246b09aec504d8cb547f9d3344e14a6ca898f8d88f2207ece0d74f0d3f1"'
-      - ' "f7eb82050604926b372ed7df21b9df90aa970eb20daec5d75d492a427a56e0d3"'
   condition: selection
 level: high
 tags:
