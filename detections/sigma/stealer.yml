@@ -1,55 +1,4 @@
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: ebe57f60-46c3-5544-84b3-766b112c260a
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://85.239.149.196/main.exe*'
-      - '*https://luminouspower.com.pk/zoom.exe*'
-      - '*https://trf.kookapp.pro/GameBarPresenceWriters.exe*'
-      - '*https://google-meet-verification.icu/rt.exe*'
-      - '*https://mon-blanc-03.cfd/dollar.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/jhgkuyyg.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/arFtU.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/dflnglkfdmgs.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/bjbh.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/kJHGFDs.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/hnmh.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/KJHJHKJKJH.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/kliulij.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/obsh/R7.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/obsh/mixnew2.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/ojujn.exe*'
-      - '*https://tattinamecheap.com/QuickFetch.exe*'
-      - '*http://192.162.199.149/uploads/d6a0dbb9ae834113a8401012b1f9aa18.exe*'
-      - '*https://rcf.co.mz/google.exe*'
-      - '*https://rcf.co.mz/Forbes.exe*'
-      - '*https://trueinggrik.com/QuickFetch.exe*'
-      - '*https://rcf.co.mz/Volcano9.exe*'
-      - '*https://pub-90177fa65de34e95abc6e25ef90c545b.r2.dev/ALE123.exe*'
-      - '*https://rcf.co.mz/Godabeg1.exe*'
-      - '*http://95.164.53.193:5001/adas.exe*'
-      - '*http://95.164.53.193:5001/jhgjse.exe*'
-      - '*http://95.164.53.193:5001/single.exe*'
-      - '*https://meridia.rs/filess/Teleg.exe*'
-      - '*https://rcf.co.mz/Chrome01.exe*'
-      - '*http://192.162.199.186/stlr.exe*'
-      - '*https://rcf.co.mz/Phantomx.exe*'
-      - '*https://raw.githubusercontent.com/Reverse0100/XC/refs/heads/main/test.exe*'
-      - '*http://62.60.226.185/r843.exe*'
-      - '*http://196.251.107.186/svchost.exe*'
-      - '*http://196.251.107.186/4.exe*'
-      - '*http://172.245.95.62/ph/velogs.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
 id: bf9f0c07-fdcf-5e93-b032-b681d29af785
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
@@ -58,6 +7,8 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://www.dropbox.com/scl/fi/b7zislagvz1s50bgpeiq2/bundle.zip?rlkey=q4dv3sn8vvlnhgl6pwecxyxyk&st=wqptx9k3&dl=1*'
+      - '*https://goododeqvip.com/Zoom-call.zip*'
       - '*https://www.dropbox.com/scl/fi/wdamcj0fkozk9g8nthvlm/vcomp140_9a591430f5.exe?rlkey=0xgg1d5j6z82vqoza68de1h3w&st=ou4pl9cg&dl=0*'
       - '*http://91.92.242.236/files-129312398/files/file_274601599365ef96.exe*'
       - '*http://cryptovectorhub1.lol/crypt/load/QW1.exe*'
@@ -130,11 +81,88 @@ detection:
       - '*https://sweet-snowflake-8a7e.uploadesclintesss.workers.dev/dfIFY*'
       - '*http://62.60.226.232/2.7.exe*'
       - '*http://62.60.226.232/1.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_4a2298dc2ab315c6.exe*'
   condition: selection
 level: high
 tags:
   - attack.t1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: ebe57f60-46c3-5544-84b3-766b112c260a
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://www.agcestksa.com/sarafina.exe*'
+      - '*http://192.162.199.149/uploads/69c7b08d53c448c283d2f9d244d190cc.exe*'
+      - '*http://192.162.199.149/uploads/8323ff95090049d3826616b94eed7cd8.exe*'
+      - '*http://192.162.199.149/uploads/0c83aee7a8ad48ecb075c59c5b4957f3.exe*'
+      - '*http://192.162.199.149/uploads/f1c106553ca64defbddc6d82476e8076.exe*'
+      - '*http://192.162.199.149/uploads/f3eeb7dfc18246f7bc40a5704a81d193.exe*'
+      - '*http://192.162.199.149/uploads/2d7aaa6d163f48458905a62516fc1390.exe*'
+      - '*http://192.162.199.149/uploads/d0d605c01f71464ea16b25c92892dbe0.exe*'
+      - '*http://192.162.199.149/uploads/d33ab8c1371c4e1b9f2fdb7007e21df4.exe*'
+      - '*http://85.239.149.196/main.exe*'
+      - '*https://luminouspower.com.pk/zoom.exe*'
+      - '*https://trf.kookapp.pro/GameBarPresenceWriters.exe*'
+      - '*https://google-meet-verification.icu/rt.exe*'
+      - '*https://mon-blanc-03.cfd/dollar.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/jhgkuyyg.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/arFtU.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/dflnglkfdmgs.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/bjbh.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/kJHGFDs.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/hnmh.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/KJHJHKJKJH.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/kliulij.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/obsh/R7.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/obsh/mixnew2.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/ojujn.exe*'
+      - '*https://tattinamecheap.com/QuickFetch.exe*'
+      - '*http://192.162.199.149/uploads/d6a0dbb9ae834113a8401012b1f9aa18.exe*'
+      - '*https://rcf.co.mz/google.exe*'
+      - '*https://rcf.co.mz/Forbes.exe*'
+      - '*https://trueinggrik.com/QuickFetch.exe*'
+      - '*https://rcf.co.mz/Volcano9.exe*'
+      - '*https://pub-90177fa65de34e95abc6e25ef90c545b.r2.dev/ALE123.exe*'
+      - '*https://rcf.co.mz/Godabeg1.exe*'
+      - '*http://95.164.53.193:5001/adas.exe*'
+      - '*http://95.164.53.193:5001/jhgjse.exe*'
+      - '*http://95.164.53.193:5001/single.exe*'
+      - '*https://meridia.rs/filess/Teleg.exe*'
+      - '*https://rcf.co.mz/Chrome01.exe*'
+      - '*http://192.162.199.186/stlr.exe*'
+      - '*https://rcf.co.mz/Phantomx.exe*'
+      - '*https://raw.githubusercontent.com/Reverse0100/XC/refs/heads/main/test.exe*'
+      - '*http://62.60.226.185/r843.exe*'
+      - '*http://196.251.107.186/svchost.exe*'
+      - '*http://196.251.107.186/4.exe*'
+      - '*http://172.245.95.62/ph/velogs.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1204.002
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: 11222940-a0cf-5f6e-9763-86631cdc6af2
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://res.cloudinary.com/k3uwjzeq/image/upload/v1788142430/img_041223_zqdcuu.jpg*'
+      - '*https://lively-fog-af49.pablosoftwareplus.workers.dev/hMgsg*'
+      - '*https://gaiadeqi.com/stego_cdyg6hf6tx.png*'
+  condition: selection
+level: high
+tags:
+  - attack.t1027.003
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
@@ -162,22 +190,6 @@ detection:
 level: high
 tags:
   - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: 11222940-a0cf-5f6e-9763-86631cdc6af2
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://gaiadeqi.com/stego_cdyg6hf6tx.png*'
-  condition: selection
-level: high
-tags:
-  - attack.t1027.003
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
@@ -246,17 +258,24 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "e2bb18135f11abb5afa22fcd607183ff5cc5d2d499f8924a9a09dbe32ce7ecb9"'
+      - ' "9f8141250fd2b03e16c8f1c8e162db6217436331e38aaec11c0973760b712e0d"'
+      - ' "86169823504bfb77ddf5e199fa2c683db27fcf06bf4f385f114e48e089120986"'
+      - ' "8fd7d40d45c39862d5add74a10831c94988feb6c1452b56009daae88f51c69c6"'
+      - ' "1dc5f3577f8222ea168886dc0323bd6c9f4dec649ad7532396180e7bf24c8560"'
+      - ' "e9c71b1d83e73e32a66b4b37bfedf303b6056249950e084ec3fa102f58dfedab"'
+      - ' "78cf8d71ec2451e820a7260f79e1bad47db041c004690668e11c05b1c7d764d3"'
+      - ' "19a6e12ceab0ba0876c12b273d743407a04ca864671978bd0e21db44b8c6e0f7"'
+      - ' "5c243f813142590467d6481ff737ac4b98a7d9bfa2c0396f9eea8bc4ad1d9e3d"'
+      - ' "6d2ae73f2bfc722707576fda2165a72ca620c26599b3bc63bec5b4e97ebdbc3a"'
+      - ' "6a4aafe78a55da8aac68a0f929ef253b509f2a9ab8b305bcfb5ece1f7e11d970"'
+      - ' "9e4da663f2e5d70273754baf0f6cbefd75dd198b72bfffbcc895914b267845a4"'
+      - ' "d9f8bfbb716f94e359f88cbe21d23f7d48cd7a24cadf71207e5a2eafbb91cf4b"'
+      - ' "10bcd472ebedfb713688a1df6ecce7cf15702123f152871dd5570ac14556a744"'
       - ' "71cdf126636c50a3a2b71fa730ddc3f3ab03791a35a70aa774de8652ca96a174"'
       - ' "44fbba738f24e417236317f4efd260be890bcc745d6d9919a91b7015f84c402f"'
       - ' "c06a85f0ad8b1fca254994fc3a0953f903aa28027f165d79214bbe3363332939"'
       - ' "7a1ecb216f5fb09d8290fb0a5136c118b82f5e264043f839f0259775b05c0c29"'
-      - ' "0970ea5b4f55b1cfee90c06e00ed48dbc861f5eac590b144d4a911b62942abbc"'
-      - ' "11142fc49721aed0381514a9fb813cbe1143e05c2a3f5e1180995eda4cc4d005"'
-      - ' "82bee273347b6e752d229b8fd3e5fed68cfc49f0f7145a8e457bf3ca0c91b5df"'
-      - ' "a598384c401bc65d4bea2dd6a712b1e2339e158de6af783315a2f77ab8f04a1e"'
-      - ' "47aa531e3963fddfb99f06da2a007bd3dbaf8f24d6928074048475d91099995d"'
-      - ' "30cf47caf9700a74a8ea4a728b8b7c88cb1f8e22261b4ac01575b112c1e224ca"'
-      - ' "3834d0dec7d98a02845b4dee85fde459612448951a5ea312f77e17db0f29b479"'
   condition: selection
 level: high
 tags:
