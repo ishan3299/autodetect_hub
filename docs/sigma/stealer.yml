@@ -7,6 +7,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://gaiadeqi.com/fires.png*'
       - '*https://www.dropbox.com/scl/fi/b7zislagvz1s50bgpeiq2/bundle.zip?rlkey=q4dv3sn8vvlnhgl6pwecxyxyk&st=wqptx9k3&dl=1*'
       - '*https://goododeqvip.com/Zoom-call.zip*'
       - '*https://www.dropbox.com/scl/fi/wdamcj0fkozk9g8nthvlm/vcomp140_9a591430f5.exe?rlkey=0xgg1d5j6z82vqoza68de1h3w&st=ou4pl9cg&dl=0*'
@@ -88,6 +89,36 @@ tags:
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: db046cfb-dea5-57cd-8f98-7b35c56d8500
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://satinmaple4.com/curl/tzrq2tzeg/ajl7t96d8lnk002d3uueapv.txt*'
+      - '*https://satinmaple4.com/N_8qoQC3gmx9CFmwN9nMJ4QoUZtKZ1ua1TThNulPR4kU/brew/update*'
+      - '*https://flint-32.com/api/metrics/run?event=pasted*'
+      - '*https://drive.google.com/file/d/1r7M0rgvXklsZK-Xo6NRgM_gaG46QU4Dr/view?usp=sharing*'
+      - '*https://linen-harbor.com/curl/rnulrjfa/init.sh*'
+      - '*http://193.221.200.26:5001/odens.exe*'
+      - '*http://86.54.25.213/d/unix49211821*'
+      - '*https://auth2api.site/API_REFRESH.scpt*'
+      - '*https://www.dropbox.com/scl/fi/7hp56yj650o4slrllg4xj/ChilloutVRMod.exe?rlkey=s69vdpczdpalbo26alwo0u13o&st=f5mgwsxk&dl=1*'
+      - '*https://www.dropbox.com/scl/fi/otfakqkze127a701il1zh/Vrmod_Setup.exe?rlkey=deryztzard7w3n2btuqo7ivvd&st=48dlc6qm&dl=1*'
+      - '*http://192.162.199.249/1edjop4tlj2d*'
+      - '*http://192.162.199.249/8w6vq50fsu*'
+      - '*http://192.162.199.249/ezaenul9*'
+      - '*http://192.162.199.249/tzb10mmujurn*'
+      - '*https://www.dropbox.com/scl/fi/20bypo9tl56golwmhkuzx/WatchGoParty.exe?rlkey=djyz9nidcvc5e7ojr8adaoiaf&st=9ptdt498&dl=1*'
+  condition: selection
+level: high
+tags:
+  - attack.t1555
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
 id: ebe57f60-46c3-5544-84b3-766b112c260a
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
@@ -166,33 +197,6 @@ tags:
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: db046cfb-dea5-57cd-8f98-7b35c56d8500
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://drive.google.com/file/d/1r7M0rgvXklsZK-Xo6NRgM_gaG46QU4Dr/view?usp=sharing*'
-      - '*https://linen-harbor.com/curl/rnulrjfa/init.sh*'
-      - '*http://193.221.200.26:5001/odens.exe*'
-      - '*http://86.54.25.213/d/unix49211821*'
-      - '*https://auth2api.site/API_REFRESH.scpt*'
-      - '*https://www.dropbox.com/scl/fi/7hp56yj650o4slrllg4xj/ChilloutVRMod.exe?rlkey=s69vdpczdpalbo26alwo0u13o&st=f5mgwsxk&dl=1*'
-      - '*https://www.dropbox.com/scl/fi/otfakqkze127a701il1zh/Vrmod_Setup.exe?rlkey=deryztzard7w3n2btuqo7ivvd&st=48dlc6qm&dl=1*'
-      - '*http://192.162.199.249/1edjop4tlj2d*'
-      - '*http://192.162.199.249/8w6vq50fsu*'
-      - '*http://192.162.199.249/ezaenul9*'
-      - '*http://192.162.199.249/tzb10mmujurn*'
-      - '*https://www.dropbox.com/scl/fi/20bypo9tl56golwmhkuzx/WatchGoParty.exe?rlkey=djyz9nidcvc5e7ojr8adaoiaf&st=9ptdt498&dl=1*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
 id: fce00e4c-4848-5f04-960c-02c30ef68174
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
@@ -258,6 +262,12 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "78de3c26964e83c10f83a7ad3e8399b00efe2702dcf4d27d60cd177cdde517e2"'
+      - ' "9ef65179f70432f0a665ac922a6b78c494997128df69ac8da1b72bde28050bb4"'
+      - ' "9bccebc3e8a87a2f36ee478a1ffca49b9f62d99b507ba3979cbcf80edd6b92f8"'
+      - ' "88833ea2bdc1821342fcd237f3bda1ccaa54707b4edf3acbb36a9c652450724e"'
+      - ' "f790288eea5e388872bb98138bd050fbd08a8d371deebb6be12f62cc45585cd8"'
+      - ' "b646d2987f0f0a0c7416eb4f6c5edf2f7faa088bbc57877cc48e8a463d497739"'
       - ' "e2bb18135f11abb5afa22fcd607183ff5cc5d2d499f8924a9a09dbe32ce7ecb9"'
       - ' "9f8141250fd2b03e16c8f1c8e162db6217436331e38aaec11c0973760b712e0d"'
       - ' "86169823504bfb77ddf5e199fa2c683db27fcf06bf4f385f114e48e089120986"'
@@ -272,10 +282,6 @@ detection:
       - ' "9e4da663f2e5d70273754baf0f6cbefd75dd198b72bfffbcc895914b267845a4"'
       - ' "d9f8bfbb716f94e359f88cbe21d23f7d48cd7a24cadf71207e5a2eafbb91cf4b"'
       - ' "10bcd472ebedfb713688a1df6ecce7cf15702123f152871dd5570ac14556a744"'
-      - ' "71cdf126636c50a3a2b71fa730ddc3f3ab03791a35a70aa774de8652ca96a174"'
-      - ' "44fbba738f24e417236317f4efd260be890bcc745d6d9919a91b7015f84c402f"'
-      - ' "c06a85f0ad8b1fca254994fc3a0953f903aa28027f165d79214bbe3363332939"'
-      - ' "7a1ecb216f5fb09d8290fb0a5136c118b82f5e264043f839f0259775b05c0c29"'
   condition: selection
 level: high
 tags:

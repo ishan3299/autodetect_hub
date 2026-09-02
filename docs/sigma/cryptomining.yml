@@ -7,6 +7,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://rabbitfuns.su/encrypted/1.zip*'
       - '*https://rabbitfuns.su/main/powershell.exe*'
       - '*https://cloud.calltop.com.br/apps/web/linux.bin*'
       - '*https://www.mediocasavolponi.com/wp-content/plugins/linux.bin*'
@@ -20,6 +21,7 @@ detection:
       - '*http://178.16.54.109/etc.exe*'
       - '*http://43.228.157.73/check3.sh*'
       - '*http://43.228.157.73/deploy.sh*'
+      - '*http://178.16.54.109/rvn.exe*'
       - '*https://www.dropbox.com/scl/fi/tpt9bauil4qjjmlp7zb67/Miner.exe?rlkey=uoovuvjd5i98iwns8q603dnu8&st=us1vcqua&dl=1*'
       - '*http://joker.aec944b68370194a50.link:6556/k*'
       - '*http://31.77.227.130:6556/k*'
@@ -100,16 +102,15 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "c3291f11a31a8574a725402f364a5ad332836782c6e2b57cca19f670e82eff9d"'
+      - ' "05dfa058809006968aaf4c27425f91a2fa154a8d2a06e5458383849da4be27b2"'
+      - ' "e30cb7c91bfab4c261e8bb3f183a5df5b6957e5ebd22d754c2d13fffdb9d9eee"'
+      - ' "1ea697ba648b51938166e2928f3ff3c9c474b997df65a7c04d2ac4feacbc4a7a"'
       - ' "00c4603f074afb652780bb8b3e703ae093c5644652b81954ec6d0fb983e79203"'
+      - ' "1d64be0ba1bd9924c3e29ae460db9407e4e33afeb864c9e39377ae4a87fa09db"'
       - ' "2bd9ba7932c288d4b2f8a1ef48e4628c04f8ed12c340d775b4765fbaaff61869"'
+      - ' "12bc1633dfbec9529af75d54809bcaf8e830979d281e94d5fc22f1fb09f11ea4"'
       - ' "c8c58693fa23022dea36954ec1a414726cf48425c12e9e2bf1b19353ced8115d"'
-      - ' "f6f310bb98d6718154b3962c89bc779a28d2b7f6afe4170e89229ed4aaff88ca"'
-      - ' "b8fead8fcb3c37ffb8b6ce820867ed72e58385a48a7076682cf0d55cd6a1b141"'
-      - ' "75dcded44aa71d135cf9e3e47017e254391f18885bee15a58fcd0ed1b2064059"'
-      - ' "ae00173d00f74bf65aa244ebf3885ae72c264162b6945af09c1eb7360ba45c44"'
-      - ' "39d8110c08a16e6e51b2fd7d732638e1dbc06d017ab8ac6b604470d7e7ea244e"'
-      - ' "386aece5751535acf2c60a1cec037ec18da94d6a10237117debccbc0cf8ceaa7"'
-      - ' "916cf18c98363cf3419b4d51e9635dd1c610adb3b6d6264aac3f52a02b77541a"'
   condition: selection
 level: high
 tags:

@@ -1,48 +1,4 @@
 title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 1
-id: 86662fa3-3435-5eb8-9691-e69dd46cbcf5
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://213.232.114.14/X86_64*'
-      - '*http://213.232.114.14/ARMV4L*'
-      - '*http://178.132.198.200/payload_v10.sh*'
-      - '*http://31.77.227.115/meower.so*'
-      - '*http://31.77.227.115/Services.apk*'
-      - '*http://31.77.227.115/meower.arm7*'
-      - '*http://31.77.227.119/cat.sh*'
-      - '*http://31.77.227.119/iran.armv7l*'
-      - '*http://tblcxmo.duckdns.org/sysorbit.apk*'
-      - '*http://jkqhdbbbqwiujkaz.hopto.org/nz.sh*'
-      - '*http://load.dstat.top/c.sh*'
-      - '*http://utensil.cleverpondky.com/ohshit.sh*'
-      - '*http://mail.springnetpm.pro/ohshit.sh*'
-      - '*http://rippled.cleverpondky.com/traff*'
-      - '*http://rippled.cleverpondky.com/log*'
-      - '*http://rippled.cleverpondky.com/boss*'
-      - '*http://rippled.cleverpondky.com/nvidia.sh*'
-      - '*http://rippled.cleverpondky.com/syst3md*'
-      - '*http://rippled.cleverpondky.com/wd1337*'
-      - '*http://rippled.cleverpondky.com/Error84*'
-      - '*http://rippled.cleverpondky.com/cli*'
-      - '*http://rippled.cleverpondky.com/auto1*'
-      - '*http://rippled.cleverpondky.com/check.sh*'
-      - '*http://rippled.cleverpondky.com/proot*'
-      - '*http://rippled.cleverpondky.com/cliaarch*'
-      - '*http://rippled.cleverpondky.com/traffaarch*'
-      - '*http://rippled.cleverpondky.com/checkmacos.sh*'
-      - '*http://rippled.cleverpondky.com/oldboss*'
-      - '*http://rippled.cleverpondky.com/auto*'
-  condition: selection
-level: high
-tags:
-  - attack.t1583
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 1
 id: 56047508-885d-5257-aa4f-9300b7dc4465
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 1).
@@ -51,6 +7,94 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://www.93-152-221-234.plesk.page/arm64*'
+      - '*http://www.93-152-221-234.plesk.page/run.sh*'
+      - '*http://www.93-152-221-234.plesk.page/x86*'
+      - '*http://www.93-152-221-234.plesk.page/mips*'
+      - '*http://www.93-152-221-234.plesk.page/mips64le*'
+      - '*http://www.93-152-221-234.plesk.page/aarch64*'
+      - '*http://www.93-152-221-234.plesk.page/ppc64*'
+      - '*http://www.93-152-221-234.plesk.page/armv6l*'
+      - '*http://www.93-152-221-234.plesk.page/i686*'
+      - '*http://www.93-152-221-234.plesk.page/x86_64*'
+      - '*http://www.93-152-221-234.plesk.page/armv7l*'
+      - '*http://www.93-152-221-234.plesk.page/armv5l*'
+      - '*http://www.93-152-221-234.plesk.page/mips64*'
+      - '*http://www.93-152-221-234.plesk.page/mipsel*'
+      - '*http://pingu.ltd/run.sh*'
+      - '*http://www.93-152-221-234.plesk.page/amd64*'
+      - '*http://www.93-152-221-234.plesk.page/ppc64le*'
+      - '*http://pingu.ltd/ppc64*'
+      - '*http://delii.icu/ppc64le*'
+      - '*http://trusting-golick.93-152-221-234.plesk.page/i686*'
+      - '*http://pingu.ltd/armv5l*'
+      - '*http://delii.icu/arm64*'
+      - '*http://trusting-golick.93-152-221-234.plesk.page/arm64*'
+      - '*http://pingu.ltd/ppc64le*'
+      - '*http://delii.icu/armv5l*'
+      - '*http://pingu.ltd/i686*'
+      - '*http://trusting-golick.93-152-221-234.plesk.page/mips*'
+      - '*http://pingu.ltd/amd64*'
+      - '*http://trusting-golick.93-152-221-234.plesk.page/armv7l*'
+      - '*http://delii.icu/x86*'
+      - '*http://pingu.ltd/aarch64*'
+      - '*http://delii.icu/amd64*'
+      - '*http://trusting-golick.93-152-221-234.plesk.page/amd64*'
+      - '*http://delii.icu/mips64*'
+      - '*http://delii.icu/ppc64*'
+      - '*http://trusting-golick.93-152-221-234.plesk.page/ppc64*'
+      - '*http://delii.icu/mips64le*'
+      - '*http://trusting-golick.93-152-221-234.plesk.page/x86*'
+      - '*http://pingu.ltd/mips*'
+      - '*http://pingu.ltd/x86*'
+      - '*http://delii.icu/run.sh*'
+      - '*http://pingu.ltd/mips64*'
+      - '*http://pingu.ltd/armv6l*'
+      - '*http://pingu.ltd/arm64*'
+      - '*http://delii.icu/aarch64*'
+      - '*http://trusting-golick.93-152-221-234.plesk.page/mips64*'
+      - '*http://pingu.ltd/x86_64*'
+      - '*http://delii.icu/x86_64*'
+      - '*http://delii.icu/armv6l*'
+      - '*http://delii.icu/mips*'
+      - '*http://trusting-golick.93-152-221-234.plesk.page/armv5l*'
+      - '*http://trusting-golick.93-152-221-234.plesk.page/x86_64*'
+      - '*http://pingu.ltd/mips64le*'
+      - '*http://pingu.ltd/armv7l*'
+      - '*http://delii.icu/i686*'
+      - '*http://trusting-golick.93-152-221-234.plesk.page/armv6l*'
+      - '*http://trusting-golick.93-152-221-234.plesk.page/aarch64*'
+      - '*http://pingu.ltd/mipsel*'
+      - '*http://trusting-golick.93-152-221-234.plesk.page/mips64le*'
+      - '*http://delii.icu/mipsel*'
+      - '*http://delii.icu/armv7l*'
+      - '*http://trusting-golick.93-152-221-234.plesk.page/ppc64le*'
+      - '*http://trusting-golick.93-152-221-234.plesk.page/mipsel*'
+      - '*http://trusting-golick.93-152-221-234.plesk.page/run.sh*'
+      - '*http://www.pingu.surf/main_mips*'
+      - '*http://www.pingu.surf/main_arm5*'
+      - '*http://www.pingu.surf/main_x86*'
+      - '*http://www.pingu.surf/main_x86_64*'
+      - '*http://www.pingu.surf/main_arm7*'
+      - '*http://www.pingu.surf/main_m68k*'
+      - '*http://www.pingu.surf/main_arm*'
+      - '*http://www.pingu.surf/main_sh4*'
+      - '*http://www.pingu.surf/main_mpsl*'
+      - '*http://www.pingu.surf/main_ppc*'
+      - '*http://www.pingu.surf/main_arm6*'
+      - '*http://www.pingu.surf/run.sh*'
+      - '*http://pingu.business/main_sh4*'
+      - '*http://pingu.business/main_mips*'
+      - '*http://pingu.business/main_mpsl*'
+      - '*http://pingu.business/main_arm7*'
+      - '*http://pingu.business/main_arm*'
+      - '*http://pingu.business/main_x86*'
+      - '*http://pingu.business/main_m68k*'
+      - '*http://pingu.business/main_ppc*'
+      - '*http://pingu.business/run.sh*'
+      - '*http://pingu.business/main_arm6*'
+      - '*http://pingu.business/main_arm5*'
+      - '*http://pingu.business/main_x86_64*'
       - '*http://botnet.botnet.xd.67.flightleaks.xyz/wd1337*'
       - '*http://u87yy3f87b23f8293bfg83bgu94.bombamodzik.xyz/wd1337*'
       - '*http://botnet.botnet.xd.67.flightleaks.xyz/log*'
@@ -463,6 +507,21 @@ detection:
       - '*http://mail.windycreekbc.pro/static/js/sdfjgnjsdf.i486*'
       - '*http://windycreekbc.pro/static/js/sdfjgnjsdf.mips*'
       - '*http://bauble.cleverpondky.com/static/js/sdfjgnjsdf.m68k*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 2
+id: f581b3e9-19d6-5b39-a931-4f2898da0559
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 2).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://mail.windycreekbc.pro/static/js/sdfjgnjsdf.arm*'
       - '*http://mail.zanyyewuh.pro/static/js/sdfjgnjsdf.arm7*'
       - '*http://mail.silverrockay.pro/static/js/sdfjgnjsdf.arm*'
@@ -551,21 +610,6 @@ detection:
       - '*http://zanyyewuh.pro/static/js/sdfjgnjsdf.m68k*'
       - '*http://zanyyewuh.pro/bins/client_armv6l*'
       - '*http://zanyyewuh.pro/static/js/micro.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 2
-id: f581b3e9-19d6-5b39-a931-4f2898da0559
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 2).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://zanyyewuh.pro/static/js/sdfjgnjsdf.x86*'
       - '*http://zanyyewuh.pro/static/js/sdfjgnjsdf.i686*'
       - '*http://zanyyewuh.pro/static/js/android.sh*'
@@ -611,6 +655,50 @@ detection:
 level: high
 tags:
   - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 1
+id: 86662fa3-3435-5eb8-9691-e69dd46cbcf5
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://213.232.114.14/X86_64*'
+      - '*http://213.232.114.14/ARMV4L*'
+      - '*http://178.132.198.200/payload_v10.sh*'
+      - '*http://31.77.227.115/meower.so*'
+      - '*http://31.77.227.115/Services.apk*'
+      - '*http://31.77.227.115/meower.arm7*'
+      - '*http://31.77.227.119/cat.sh*'
+      - '*http://31.77.227.119/iran.armv7l*'
+      - '*http://tblcxmo.duckdns.org/sysorbit.apk*'
+      - '*http://jkqhdbbbqwiujkaz.hopto.org/nz.sh*'
+      - '*http://load.dstat.top/c.sh*'
+      - '*http://utensil.cleverpondky.com/ohshit.sh*'
+      - '*http://mail.springnetpm.pro/ohshit.sh*'
+      - '*http://rippled.cleverpondky.com/traff*'
+      - '*http://rippled.cleverpondky.com/log*'
+      - '*http://rippled.cleverpondky.com/boss*'
+      - '*http://rippled.cleverpondky.com/nvidia.sh*'
+      - '*http://rippled.cleverpondky.com/syst3md*'
+      - '*http://rippled.cleverpondky.com/wd1337*'
+      - '*http://rippled.cleverpondky.com/Error84*'
+      - '*http://rippled.cleverpondky.com/cli*'
+      - '*http://rippled.cleverpondky.com/auto1*'
+      - '*http://rippled.cleverpondky.com/check.sh*'
+      - '*http://rippled.cleverpondky.com/proot*'
+      - '*http://rippled.cleverpondky.com/cliaarch*'
+      - '*http://rippled.cleverpondky.com/traffaarch*'
+      - '*http://rippled.cleverpondky.com/checkmacos.sh*'
+      - '*http://rippled.cleverpondky.com/oldboss*'
+      - '*http://rippled.cleverpondky.com/auto*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 1
