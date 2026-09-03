@@ -7,6 +7,75 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://brightroseax.blog/riscv64*'
+      - '*http://mail.brightroseax.blog/s390x*'
+      - '*http://brightroseax.blog/arm*'
+      - '*http://brightroseax.blog/s390x*'
+      - '*http://brightroseax.blog/arm6*'
+      - '*http://mail.brightroseax.blog/mipsel*'
+      - '*http://mail.brightroseax.blog/x86*'
+      - '*http://mail.brightroseax.blog/ppc64*'
+      - '*http://mail.brightroseax.blog/m68k*'
+      - '*http://mail.brightroseax.blog/x86_64*'
+      - '*http://mail.brightroseax.blog/mips64*'
+      - '*http://mail.brightroseax.blog/ppc*'
+      - '*http://mail.brightroseax.blog/arm7*'
+      - '*http://brightroseax.blog/ppc*'
+      - '*http://brightroseax.blog/mips*'
+      - '*http://mail.brightroseax.blog/arm5*'
+      - '*http://mail.brightroseax.blog/arm*'
+      - '*http://mail.brightroseax.blog/riscv64*'
+      - '*http://brightroseax.blog/ppc64*'
+      - '*http://brightroseax.blog/m68k*'
+      - '*http://brightroseax.blog/x86_64*'
+      - '*http://mail.brightroseax.blog/arm6*'
+      - '*http://brightroseax.blog/mipsel*'
+      - '*http://brightroseax.blog/x86*'
+      - '*http://brightroseax.blog/mips64*'
+      - '*http://mail.brightroseax.blog/mips*'
+      - '*http://brightroseax.blog/dl.sh*'
+      - '*http://mail.brightroseax.blog/dl.sh*'
+      - '*http://brightroseax.blog/arm7*'
+      - '*http://brightroseax.blog/arm5*'
+      - '*http://emeraldstonegc.blog/flutter.m68k*'
+      - '*http://mail.emeraldstonegc.blog/flutter.ppc*'
+      - '*http://emeraldstonegc.blog/flutter.x86_64*'
+      - '*http://emeraldstonegc.blog/flutter.mips*'
+      - '*http://vps.atlas101.us.kg/flutter.arm5*'
+      - '*http://vps.atlas101.us.kg/flutter.arm6*'
+      - '*http://vps.atlas101.us.kg/flutter.arm8*'
+      - '*http://emeraldstonegc.blog/flutter.arm8*'
+      - '*http://vps.atlas101.us.kg/flutter.mips*'
+      - '*http://vps.atlas101.us.kg/flutter.m68k*'
+      - '*http://emeraldstonegc.blog/flutter.ppc64*'
+      - '*http://vps.atlas101.us.kg/flutter.arm7*'
+      - '*http://emeraldstonegc.blog/flutter.mipsel*'
+      - '*http://mail.emeraldstonegc.blog/flutter.arm7*'
+      - '*http://emeraldstonegc.blog/flutter.ppc*'
+      - '*http://vps.atlas101.us.kg/flutter.x86_64*'
+      - '*http://emeraldstonegc.blog/flutter.x86*'
+      - '*http://emeraldstonegc.blog/flutter.arm*'
+      - '*http://mail.emeraldstonegc.blog/flutter.mips*'
+      - '*http://mail.emeraldstonegc.blog/flutter.x86*'
+      - '*http://vps.atlas101.us.kg/flutter.arm*'
+      - '*http://vps.atlas101.us.kg/flutter.x86*'
+      - '*http://emeraldstonegc.blog/flutter.arm6*'
+      - '*http://mail.emeraldstonegc.blog/flutter.ppc64*'
+      - '*http://emeraldstonegc.blog/flutter.arm5*'
+      - '*http://emeraldstonegc.blog/flutter.arm7*'
+      - '*http://emeraldstonegc.blog/dl.sh*'
+      - '*http://vps.atlas101.us.kg/dl.sh*'
+      - '*http://vps.atlas101.us.kg/flutter.mipsel*'
+      - '*http://vps.atlas101.us.kg/flutter.ppc*'
+      - '*http://vps.atlas101.us.kg/flutter.ppc64*'
+      - '*http://mail.emeraldstonegc.blog/flutter.arm*'
+      - '*http://mail.emeraldstonegc.blog/flutter.m68k*'
+      - '*http://mail.emeraldstonegc.blog/flutter.arm5*'
+      - '*http://mail.emeraldstonegc.blog/flutter.mipsel*'
+      - '*http://mail.emeraldstonegc.blog/flutter.x86_64*'
+      - '*http://mail.emeraldstonegc.blog/flutter.arm8*'
+      - '*http://mail.emeraldstonegc.blog/flutter.arm6*'
+      - '*http://mail.emeraldstonegc.blog/dl.sh*'
       - '*http://www.93-152-221-234.plesk.page/arm64*'
       - '*http://www.93-152-221-234.plesk.page/run.sh*'
       - '*http://www.93-152-221-234.plesk.page/x86*'
@@ -438,6 +507,21 @@ detection:
       - '*http://windycreekbc.pro/bins/client_mips*'
       - '*http://mail.silverrockay.pro/bins/client_armv5l*'
       - '*http://windycreekbc.pro/static/js/sdfjgnjsdf.arc*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 2
+id: f581b3e9-19d6-5b39-a931-4f2898da0559
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 2).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
       - '*http://mail.silverrockay.pro/static/js/sdfjgnjsdf.arm5*'
       - '*http://mail.silverrockay.pro/bins/client_armv6l*'
       - '*http://windycreekbc.pro/bins/client_armv4l*'
@@ -507,21 +591,6 @@ detection:
       - '*http://mail.windycreekbc.pro/static/js/sdfjgnjsdf.i486*'
       - '*http://windycreekbc.pro/static/js/sdfjgnjsdf.mips*'
       - '*http://bauble.cleverpondky.com/static/js/sdfjgnjsdf.m68k*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 2
-id: f581b3e9-19d6-5b39-a931-4f2898da0559
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 2).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
       - '*http://mail.windycreekbc.pro/static/js/sdfjgnjsdf.arm*'
       - '*http://mail.zanyyewuh.pro/static/js/sdfjgnjsdf.arm7*'
       - '*http://mail.silverrockay.pro/static/js/sdfjgnjsdf.arm*'
