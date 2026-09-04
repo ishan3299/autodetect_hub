@@ -1,4 +1,101 @@
 title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 1
+id: 86662fa3-3435-5eb8-9691-e69dd46cbcf5
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://b2b.jewmailer.net/arm7*'
+      - '*http://b2b.jewmailer.net/android-arm64*'
+      - '*http://b2b.jewmailer.net/reflect/or1k*'
+      - '*http://b2b.jewmailer.net/working.Services.apk*'
+      - '*http://b2b.jewmailer.net/hiddenbin/reflect.x86_64*'
+      - '*http://b2b.jewmailer.net/persist.arm7*'
+      - '*http://b2b.jewmailer.net/hiddenbin/reflect.sh4*'
+      - '*http://b2b.jewmailer.net/hiddenbin/reflect.arm*'
+      - '*http://b2b.jewmailer.net/reflect/android-arm*'
+      - '*http://b2b.jewmailer.net/reflect/android-arm64*'
+      - '*http://b2b.jewmailer.net/x86_64*'
+      - '*http://b2b.jewmailer.net/android-arm*'
+      - '*http://b2b.jewmailer.net/reflect/mips*'
+      - '*http://b2b.jewmailer.net/x86*'
+      - '*http://b2b.jewmailer.net/hiddenbin/reflect.arm5*'
+      - '*http://b2b.jewmailer.net/riscv64*'
+      - '*http://b2b.jewmailer.net/hiddenbin/reflect.arm7*'
+      - '*http://b2b.jewmailer.net/hiddenbin/reflect.x86*'
+      - '*http://b2b.jewmailer.net/juan.apk*'
+      - '*http://b2b.jewmailer.net/reflect/riscv32*'
+      - '*http://b2b.jewmailer.net/hiddenbin/reflect.mpsl*'
+      - '*http://b2b.jewmailer.net/ppc64*'
+      - '*http://b2b.jewmailer.net/hiddenbin/reflect.m68k*'
+      - '*http://b2b.jewmailer.net/reflect/arm*'
+      - '*http://b2b.jewmailer.net/reflect/arm6*'
+      - '*http://b2b.jewmailer.net/reflect/mips64*'
+      - '*http://b2b.jewmailer.net/arm5*'
+      - '*http://b2b.jewmailer.net/reflect/riscv64*'
+      - '*http://b2b.jewmailer.net/reflect/arm7*'
+      - '*http://b2b.jewmailer.net/hiddenbin/reflect.spc*'
+      - '*http://b2b.jewmailer.net/s390x*'
+      - '*http://b2b.jewmailer.net/hiddenbin/reflect.arc*'
+      - '*http://b2b.jewmailer.net/reflect/x86*'
+      - '*http://b2b.jewmailer.net/reflect/ppc64*'
+      - '*http://b2b.jewmailer.net/ppc*'
+      - '*http://b2b.jewmailer.net/reflect/arm8*'
+      - '*http://b2b.jewmailer.net/reflect/mipsel*'
+      - '*http://b2b.jewmailer.net/reflect/s390x*'
+      - '*http://b2b.jewmailer.net/hiddenbin/reflect.mips*'
+      - '*http://b2b.jewmailer.net/mips*'
+      - '*http://b2b.jewmailer.net/reflect/ppc*'
+      - '*http://b2b.jewmailer.net/mips64*'
+      - '*http://b2b.jewmailer.net/reflect/arm5*'
+      - '*http://b2b.jewmailer.net/arm6*'
+      - '*http://b2b.jewmailer.net/hiddenbin/reflect.i686*'
+      - '*http://b2b.jewmailer.net/mipsel*'
+      - '*http://b2b.jewmailer.net/reflect/m68k*'
+      - '*http://b2b.jewmailer.net/or1k*'
+      - '*http://b2b.jewmailer.net/arm*'
+      - '*http://b2b.jewmailer.net/m68k*'
+      - '*http://b2b.jewmailer.net/hiddenbin/reflect.ppc*'
+      - '*http://b2b.jewmailer.net/reflect/x86_64*'
+      - '*http://b2b.jewmailer.net/Services.apk*'
+      - '*http://213.232.114.14/X86_64*'
+      - '*http://213.232.114.14/ARMV4L*'
+      - '*http://178.132.198.200/payload_v10.sh*'
+      - '*http://31.77.227.115/meower.so*'
+      - '*http://31.77.227.115/Services.apk*'
+      - '*http://31.77.227.115/meower.arm7*'
+      - '*http://31.77.227.119/cat.sh*'
+      - '*http://31.77.227.119/iran.armv7l*'
+      - '*http://tblcxmo.duckdns.org/sysorbit.apk*'
+      - '*http://jkqhdbbbqwiujkaz.hopto.org/nz.sh*'
+      - '*http://load.dstat.top/c.sh*'
+      - '*http://utensil.cleverpondky.com/ohshit.sh*'
+      - '*http://mail.springnetpm.pro/ohshit.sh*'
+      - '*http://rippled.cleverpondky.com/traff*'
+      - '*http://rippled.cleverpondky.com/log*'
+      - '*http://rippled.cleverpondky.com/boss*'
+      - '*http://rippled.cleverpondky.com/nvidia.sh*'
+      - '*http://rippled.cleverpondky.com/syst3md*'
+      - '*http://rippled.cleverpondky.com/wd1337*'
+      - '*http://rippled.cleverpondky.com/Error84*'
+      - '*http://rippled.cleverpondky.com/cli*'
+      - '*http://rippled.cleverpondky.com/auto1*'
+      - '*http://rippled.cleverpondky.com/check.sh*'
+      - '*http://rippled.cleverpondky.com/proot*'
+      - '*http://rippled.cleverpondky.com/cliaarch*'
+      - '*http://rippled.cleverpondky.com/traffaarch*'
+      - '*http://rippled.cleverpondky.com/checkmacos.sh*'
+      - '*http://rippled.cleverpondky.com/oldboss*'
+      - '*http://rippled.cleverpondky.com/auto*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 1
 id: 56047508-885d-5257-aa4f-9300b7dc4465
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 1).
@@ -724,50 +821,6 @@ detection:
 level: high
 tags:
   - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 1
-id: 86662fa3-3435-5eb8-9691-e69dd46cbcf5
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://213.232.114.14/X86_64*'
-      - '*http://213.232.114.14/ARMV4L*'
-      - '*http://178.132.198.200/payload_v10.sh*'
-      - '*http://31.77.227.115/meower.so*'
-      - '*http://31.77.227.115/Services.apk*'
-      - '*http://31.77.227.115/meower.arm7*'
-      - '*http://31.77.227.119/cat.sh*'
-      - '*http://31.77.227.119/iran.armv7l*'
-      - '*http://tblcxmo.duckdns.org/sysorbit.apk*'
-      - '*http://jkqhdbbbqwiujkaz.hopto.org/nz.sh*'
-      - '*http://load.dstat.top/c.sh*'
-      - '*http://utensil.cleverpondky.com/ohshit.sh*'
-      - '*http://mail.springnetpm.pro/ohshit.sh*'
-      - '*http://rippled.cleverpondky.com/traff*'
-      - '*http://rippled.cleverpondky.com/log*'
-      - '*http://rippled.cleverpondky.com/boss*'
-      - '*http://rippled.cleverpondky.com/nvidia.sh*'
-      - '*http://rippled.cleverpondky.com/syst3md*'
-      - '*http://rippled.cleverpondky.com/wd1337*'
-      - '*http://rippled.cleverpondky.com/Error84*'
-      - '*http://rippled.cleverpondky.com/cli*'
-      - '*http://rippled.cleverpondky.com/auto1*'
-      - '*http://rippled.cleverpondky.com/check.sh*'
-      - '*http://rippled.cleverpondky.com/proot*'
-      - '*http://rippled.cleverpondky.com/cliaarch*'
-      - '*http://rippled.cleverpondky.com/traffaarch*'
-      - '*http://rippled.cleverpondky.com/checkmacos.sh*'
-      - '*http://rippled.cleverpondky.com/oldboss*'
-      - '*http://rippled.cleverpondky.com/auto*'
-  condition: selection
-level: high
-tags:
-  - attack.t1583
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 1
