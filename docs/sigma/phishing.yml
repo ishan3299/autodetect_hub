@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious Phishing - OTX domains - Chunk 1
+id: 1620452b-35c3-53b3-a5f6-5d731a53282d
+status: experimental
+description: Detects traffic or activity related to known malicious domains associated with Phishing from OTX (Chunk 1).
+logsource:
+  category: dns
+detection:
+  selection:
+    query:
+      - '*malicious-example.com*'
+  condition: selection
+level: high
+tags:
+  - attack.t1566
+  - source.OTX
+---
 title: Detect Activity to Known Malicious Phishing - URLhaus urls - Chunk 1
 id: 0b3a8df8-f920-50a9-85a6-4c69b7981e2d
 status: experimental
@@ -14,19 +30,3 @@ level: high
 tags:
   - attack.t1059.001
   - source.URLhaus
----
-title: Detect Activity to Known Malicious Phishing - OTX domains - Chunk 1
-id: 1620452b-35c3-53b3-a5f6-5d731a53282d
-status: experimental
-description: Detects traffic or activity related to known malicious domains associated with Phishing from OTX (Chunk 1).
-logsource:
-  category: dns
-detection:
-  selection:
-    query:
-      - '*malicious-example.com*'
-  condition: selection
-level: high
-tags:
-  - attack.t1566
-  - source.OTX

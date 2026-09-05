@@ -1,3 +1,26 @@
+title: Detect Activity to Known Malicious Cryptomining - MalwareBazaar hashs - Chunk 1
+id: a9489914-32b3-565d-900f-897d9a586db4
+status: experimental
+description: Detects traffic or activity related to known malicious hashs associated with Cryptomining from MalwareBazaar (Chunk 1).
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - ' "aeee59e8cbfa37cd0336e595a0e6b3b3cd59323c87a1d603fcde358491001c8a"'
+      - ' "a90bceeb8cd9c5978939ed48fd545cc3ac98b8831a1e7a9438b3795372f4d4a6"'
+      - ' "a6451ad4f82ed52fdb02fd705438fe1dfc0fcc3b27e4ff3943413fa1e4dcd13e"'
+      - ' "cd4fe48bb85f3614623571ffbdc253e6b6d3fec7d90f45fe70febbeff2df3a5b"'
+      - ' "e3fc2840cec07dff9c35f528bbe7b3efbe1d60d9a8de9d1467a47cfa7016c278"'
+      - ' "5479dcd030b2c9fd2d990dbab36ceda46570890afa19da42a8f0c6e57b1b39be"'
+      - ' "f70fe1090f8a5ec4c419c24b8dc5bf4f3395e732e948eedc78e6dfabfd7edc27"'
+      - ' "714b9bf949c12a76d47fadad0f1999bb25535cfd1b8392d7dc971eb9525185a5"'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.MalwareBazaar
+---
 title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
 id: 3316af2f-5b86-5439-89c7-8ee743b4dbdf
 status: experimental
@@ -7,6 +30,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://8.209.229.51:7777/a*'
       - '*http://46.8.228.191/nuts/poop*'
       - '*http://46.8.228.191/nuts/bolts*'
       - '*https://rabbitfuns.su/encrypted/1.zip*'
@@ -79,29 +103,3 @@ level: high
 tags:
   - attack.t1595
   - source.URLhaus
----
-title: Detect Activity to Known Malicious Cryptomining - MalwareBazaar hashs - Chunk 1
-id: a9489914-32b3-565d-900f-897d9a586db4
-status: experimental
-description: Detects traffic or activity related to known malicious hashs associated with Cryptomining from MalwareBazaar (Chunk 1).
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - ' "e3fc2840cec07dff9c35f528bbe7b3efbe1d60d9a8de9d1467a47cfa7016c278"'
-      - ' "5479dcd030b2c9fd2d990dbab36ceda46570890afa19da42a8f0c6e57b1b39be"'
-      - ' "f70fe1090f8a5ec4c419c24b8dc5bf4f3395e732e948eedc78e6dfabfd7edc27"'
-      - ' "714b9bf949c12a76d47fadad0f1999bb25535cfd1b8392d7dc971eb9525185a5"'
-      - ' "b9608f3bdd4fb928a28027ae60f5a974d5eea6f0a3b6867e978884adf945ec98"'
-      - ' "6b290e28bce7de325c98067c618e42432d43ec7708028cec3908982285c00f65"'
-      - ' "a7879fa112b4b5cf2a19b226e37b60df5e65ddf29ad2597b50164d0e292d7753"'
-      - ' "444c8577b447fdb15671f8a8eb5b9f9f925f8b91876d87e4596bf5d297f7c293"'
-      - ' "3cd770e82e9dff6fd02c9c70c615939ded79ccf1a89041c4a21b2663506c2d8a"'
-      - ' "fd34dab743b38c3832586923048e8e23a4b4f84008278b44032ed8bbd9c75035"'
-      - ' "b95be1e0cc70ac1ed3ca87a0c01b7d44d920fc38f0703eb1f820e6c4e411bcea"'
-  condition: selection
-level: high
-tags:
-  - attack.t1071
-  - source.MalwareBazaar
