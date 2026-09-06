@@ -1,20 +1,3 @@
-title: Detect Activity to Known Malicious Backdoor - MalwareBazaar hashs - Chunk 1
-id: 31696bb6-06ef-54b4-82a1-4cedbbcd1e59
-status: experimental
-description: Detects traffic or activity related to known malicious hashs associated with Backdoor from MalwareBazaar (Chunk 1).
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - ' "d7a1cbe50f85236cbcd00fe2aeb64dbe12ec5614b745a437b835fb1b9d7be35d"'
-      - ' "461ec124b1c62766b6216f21dadb8be215a1a261638a93a0340d1b97e0780232"'
-  condition: selection
-level: high
-tags:
-  - attack.t1071
-  - source.MalwareBazaar
----
 title: Detect Activity to Known Malicious Backdoor - URLhaus urls - Chunk 1
 id: 1f9ad40b-2939-513d-b7d3-3c448790ad5a
 status: experimental

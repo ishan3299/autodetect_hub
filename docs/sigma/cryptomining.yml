@@ -7,14 +7,16 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "6f214677935f50a69685970fab32c966e16e3b6dffd216fc897534a158b3f561"'
+      - ' "11c6eb07317cba1a44151b981ba1bd3a7a83a2bd88a6a82166b09e9eb0482c4d"'
+      - ' "24230996a8769954a4ffaf5295762ac7c64f7bf2ada71e0eaeb16f59e7eafeb8"'
+      - ' "afead3929bdfe5ece7063c9977faa6796eff0fc82b6130552123785a59a18e45"'
+      - ' "0047d289274e4bb5158fbc22f96f0137bbcb6185f1ca028558ad60dbc377d14c"'
+      - ' "24f3873639dd30d0ad350f6005dc616b7851af4a1f296f119e1c45b020c5fcd6"'
+      - ' "672a0f0d50c1454cdcbde731cee21fccfe7fb0329030a488bcb947ef5d3526fc"'
       - ' "aeee59e8cbfa37cd0336e595a0e6b3b3cd59323c87a1d603fcde358491001c8a"'
       - ' "a90bceeb8cd9c5978939ed48fd545cc3ac98b8831a1e7a9438b3795372f4d4a6"'
       - ' "a6451ad4f82ed52fdb02fd705438fe1dfc0fcc3b27e4ff3943413fa1e4dcd13e"'
-      - ' "cd4fe48bb85f3614623571ffbdc253e6b6d3fec7d90f45fe70febbeff2df3a5b"'
-      - ' "e3fc2840cec07dff9c35f528bbe7b3efbe1d60d9a8de9d1467a47cfa7016c278"'
-      - ' "5479dcd030b2c9fd2d990dbab36ceda46570890afa19da42a8f0c6e57b1b39be"'
-      - ' "f70fe1090f8a5ec4c419c24b8dc5bf4f3395e732e948eedc78e6dfabfd7edc27"'
-      - ' "714b9bf949c12a76d47fadad0f1999bb25535cfd1b8392d7dc971eb9525185a5"'
   condition: selection
 level: high
 tags:
@@ -30,6 +32,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://85.121.177.134/check3.sh*'
       - '*http://8.209.229.51:7777/a*'
       - '*http://46.8.228.191/nuts/poop*'
       - '*http://46.8.228.191/nuts/bolts*'
@@ -58,7 +61,6 @@ detection:
       - '*http://joker.aec944b68370194a50.link:6556/ok*'
       - '*http://176.65.139.195/check1.sh*'
       - '*http://167.179.119.120/install.sh*'
-      - '*http://94.154.43.103/check1.sh*'
   condition: selection
 level: high
 tags:
