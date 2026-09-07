@@ -73,22 +73,6 @@ detection:
       - '*http://load.dstat.top/c.sh*'
       - '*http://utensil.cleverpondky.com/ohshit.sh*'
       - '*http://mail.springnetpm.pro/ohshit.sh*'
-      - '*http://rippled.cleverpondky.com/traff*'
-      - '*http://rippled.cleverpondky.com/log*'
-      - '*http://rippled.cleverpondky.com/boss*'
-      - '*http://rippled.cleverpondky.com/nvidia.sh*'
-      - '*http://rippled.cleverpondky.com/syst3md*'
-      - '*http://rippled.cleverpondky.com/wd1337*'
-      - '*http://rippled.cleverpondky.com/Error84*'
-      - '*http://rippled.cleverpondky.com/cli*'
-      - '*http://rippled.cleverpondky.com/auto1*'
-      - '*http://rippled.cleverpondky.com/check.sh*'
-      - '*http://rippled.cleverpondky.com/proot*'
-      - '*http://rippled.cleverpondky.com/cliaarch*'
-      - '*http://rippled.cleverpondky.com/traffaarch*'
-      - '*http://rippled.cleverpondky.com/checkmacos.sh*'
-      - '*http://rippled.cleverpondky.com/oldboss*'
-      - '*http://rippled.cleverpondky.com/auto*'
   condition: selection
 level: high
 tags:
@@ -913,20 +897,4 @@ detection:
 level: high
 tags:
   - attack.t1595
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 1
-id: 3635df09-f048-5582-b3ab-d707368049ca
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://rippled.cleverpondky.com/check1.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
   - source.URLhaus
