@@ -7,7 +7,24 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "7e3f5f0322fb332fa81bee64f242ce2eba4d1721464ce9bf599a29b82fc655d9"'
+      - ' "91e05a06b2e8f9b63aef9f38250be6d09c4aa47756daac2ea80b8fee62766161"'
+      - ' "fed49a08920ea05c1d6abf108177305ec528e44f97d393851d3e01ebb13e45a7"'
+      - ' "fa464d3a0f42ff1a85e0d52aa4c63f8cce74768f9a790325a9314d2b7c8dd204"'
+      - ' "dc9860f6f55db1b08001620bddc79bf7495d9f0c36e52a8dd1b35c899b65ed78"'
+      - ' "823088a9553028e30dfbf90e27ef87d4b563f96dfc9f6baafcb29e71addac551"'
+      - ' "2048cab8ec74a38efb0e95073c8bdfc792738dddcde2e49f160d43648c1dce56"'
+      - ' "d2eb41d81c8979eaf049e6b90222eaf5060b4b417f5e7abea12ee1485b7fc916"'
+      - ' "7ad368cdf44168de5696d1d6b825d8d54b49b4799db8bd755693b22a0aa4d231"'
+      - ' "3e9037ffef55f057d814f66f700e550df13371dd109bfcbd729b7d3c76c22405"'
+      - ' "5749707f6261cc7db74ba5fd8c7bdf79129c8c03408d3ef01ef46a7d85ce8425"'
+      - ' "2ea909deb7c78b11e04c9a5eb136090e37a5d01fd4097ca5f882c0952612411c"'
+      - ' "49412a072b30d8b822d6c8bea4d092f78459afd97a211216504db199bf3252cb"'
+      - ' "087d930b6d5f5f7d48703208c885db0e017222d4aa3c78bde34ceb34791eaac9"'
+      - ' "fa26fc81be65cf838b8619888564eab5888e017c017f29308852570f61aa028d"'
+      - ' "3a297d846199ddff323b30eadb510daedbbd08a9e76949c06df09e1592dd0f02"'
       - ' "8211468fff3cd6cf858f652b53db995782d573a092d00dac648b863d1b237efd"'
+      - ' "eb0e2b6424e5ec1eb95d183a0f7022ab8044bf610972105289b8113ece084826"'
       - ' "2070e2483590dd3b6ccbe4339d29c095edbbc4cadd6b57dac3ec006ff76c7bbc"'
       - ' "0210f19ad6b72c8860d9e88b31c546a39a47939ded2bf91c65738b7ffdcf913c"'
       - ' "c764cc7a95459747a569274c4de38802ebc77e9930502aae634d21505c047ee2"'
@@ -36,10 +53,6 @@ detection:
       - ' "241be5977da77e8b8b9a27bdb70e056a5e4b21f5fc72ce2934bba4aeebd3cce4"'
       - ' "db3b61268cd19ac28ef9ec9ea77074a0f2ad04b63bbbd41614bf9cea0f25be60"'
       - ' "edd33db4a56d62fc653f67fc589d3421a2ce6678b4a28f85077f9200d8f2ea8b"'
-      - ' "f02e2fefd74c7268e3aced61017173fff92e2a1d0e7eaf7807189f371fbfcc1f"'
-      - ' "71b749e8344f71346e198d634afde55117c87fa78df18eba184aae3fe260fec3"'
-      - ' "1b9da9e4c6c8e4a3a9f26aac2ddfff7e8c66131da82abb53167a954bfbaeaf9c"'
-      - ' "72d322d552ad6713e80675ea029a4eb762f03ea56dedaad8867e915cc000d48f"'
   condition: selection
 level: high
 tags:
@@ -47,7 +60,7 @@ tags:
   - source.MalwareBazaar
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: db046cfb-dea5-57cd-8f98-7b35c56d8500
+id: 11222940-a0cf-5f6e-9763-86631cdc6af2
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
 logsource:
@@ -55,30 +68,21 @@ logsource:
 detection:
   selection:
     c-uri:
-      - '*http://78.159.131.228/k/jjscotttbpl.dat*'
-      - '*https://multiplay.at/shaders/Shaders.zip*'
-      - '*https://multiplay.at/game-copier/downloads/Game-Copier.zip*'
-      - '*http://45.94.31.205:5050/files/7408d8876d767e4b8dac35ffcedac09926062e7856d4edbb40f7bda8f00c6d37/x.zip*'
-      - '*https://www.dropbox.com/scl/fi/ba93r9ez5c00fap694aa6/bundle.zip?rlkey=mpxhfmkb4g2adcermiywlc115&st=8p4van4p&dl=1*'
-      - '*https://satinmaple4.com/curl/tzrq2tzeg/ajl7t96d8lnk002d3uueapv.txt*'
-      - '*https://satinmaple4.com/N_8qoQC3gmx9CFmwN9nMJ4QoUZtKZ1ua1TThNulPR4kU/brew/update*'
-      - '*https://flint-32.com/api/metrics/run?event=pasted*'
-      - '*https://drive.google.com/file/d/1r7M0rgvXklsZK-Xo6NRgM_gaG46QU4Dr/view?usp=sharing*'
-      - '*https://linen-harbor.com/curl/rnulrjfa/init.sh*'
-      - '*http://193.221.200.26:5001/odens.exe*'
-      - '*http://86.54.25.213/d/unix49211821*'
-      - '*https://auth2api.site/API_REFRESH.scpt*'
-      - '*https://www.dropbox.com/scl/fi/7hp56yj650o4slrllg4xj/ChilloutVRMod.exe?rlkey=s69vdpczdpalbo26alwo0u13o&st=f5mgwsxk&dl=1*'
-      - '*https://www.dropbox.com/scl/fi/otfakqkze127a701il1zh/Vrmod_Setup.exe?rlkey=deryztzard7w3n2btuqo7ivvd&st=48dlc6qm&dl=1*'
-      - '*http://192.162.199.249/1edjop4tlj2d*'
-      - '*http://192.162.199.249/8w6vq50fsu*'
-      - '*http://192.162.199.249/ezaenul9*'
-      - '*http://192.162.199.249/tzb10mmujurn*'
-      - '*https://www.dropbox.com/scl/fi/20bypo9tl56golwmhkuzx/WatchGoParty.exe?rlkey=djyz9nidcvc5e7ojr8adaoiaf&st=9ptdt498&dl=1*'
+      - '*https://dinamikakargo.com/.well-known/new/img_onyix.png*'
+      - '*https://lively-fog-af49.pablosoftwareplus.workers.dev/VXcvQ*'
+      - '*https://res.cloudinary.com/sxajd38y/image/upload/v1788742357/img_024933.jpg*'
+      - '*https://lively-fog-af49.pablosoftwareplus.workers.dev/haOzF*'
+      - '*https://lively-fog-af49.pablosoftwareplus.workers.dev/Lijvd*'
+      - '*https://res.cloudinary.com/a9owl0wo/image/upload/v1788508965/img_100122.jpg*'
+      - '*https://res.cloudinary.com/dqeusemd/image/upload/v1788331463/img_084254.jpg*'
+      - '*https://lively-fog-af49.pablosoftwareplus.workers.dev/odOdv*'
+      - '*https://res.cloudinary.com/k3uwjzeq/image/upload/v1788142430/img_041223_zqdcuu.jpg*'
+      - '*https://lively-fog-af49.pablosoftwareplus.workers.dev/hMgsg*'
+      - '*https://gaiadeqi.com/stego_cdyg6hf6tx.png*'
   condition: selection
 level: high
 tags:
-  - attack.t1555
+  - attack.t1027.003
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
@@ -90,6 +94,8 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://87.120.104.147:8080/d/ibrowser*'
+      - '*https://www.dropbox.com/scl/fi/754hdidtogzkpc8s528x3/OffersThickness.exe?rlkey=dbsp3569wnfvhmt633aep6rgf&st=afaxokov&dl=1*'
       - '*https://www.dropbox.com/scl/fi/754hdidtogzkpc8s528x3/OffersThickness.exe?rlkey=dbsp3569wnfvhmt633aep6rgf&st=097j7cfs&dl=1*'
       - '*https://www.dropbox.com/scl/fi/ba93r9ez5c00fap694aa6/bundle.zip?rlkey=mpxhfmkb4g2adcermiywlc115&st=9twn3jrx&dl=1*'
       - '*https://fern-plume.com/curl/z203ezo8/zbxc4p9j8emx1yoy9x.txt*'
@@ -146,11 +152,45 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_457316565c5d19a2.cmd*'
       - '*http://91.92.242.236/files-129312398/files/file_5939fd79fb073513.exe*'
       - '*https://www.downloadpirate.com/moho-pro-14-win-x64-full-version-free-download/*'
-      - '*http://95.164.53.193:5001/actami.exe*'
   condition: selection
 level: high
 tags:
   - attack.t1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: db046cfb-dea5-57cd-8f98-7b35c56d8500
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://78.159.131.228/k/jjscotttbpl.dat*'
+      - '*https://multiplay.at/shaders/Shaders.zip*'
+      - '*https://multiplay.at/game-copier/downloads/Game-Copier.zip*'
+      - '*http://45.94.31.205:5050/files/7408d8876d767e4b8dac35ffcedac09926062e7856d4edbb40f7bda8f00c6d37/x.zip*'
+      - '*https://www.dropbox.com/scl/fi/ba93r9ez5c00fap694aa6/bundle.zip?rlkey=mpxhfmkb4g2adcermiywlc115&st=8p4van4p&dl=1*'
+      - '*https://satinmaple4.com/curl/tzrq2tzeg/ajl7t96d8lnk002d3uueapv.txt*'
+      - '*https://satinmaple4.com/N_8qoQC3gmx9CFmwN9nMJ4QoUZtKZ1ua1TThNulPR4kU/brew/update*'
+      - '*https://flint-32.com/api/metrics/run?event=pasted*'
+      - '*https://drive.google.com/file/d/1r7M0rgvXklsZK-Xo6NRgM_gaG46QU4Dr/view?usp=sharing*'
+      - '*https://linen-harbor.com/curl/rnulrjfa/init.sh*'
+      - '*http://193.221.200.26:5001/odens.exe*'
+      - '*http://86.54.25.213/d/unix49211821*'
+      - '*https://auth2api.site/API_REFRESH.scpt*'
+      - '*https://www.dropbox.com/scl/fi/7hp56yj650o4slrllg4xj/ChilloutVRMod.exe?rlkey=s69vdpczdpalbo26alwo0u13o&st=f5mgwsxk&dl=1*'
+      - '*https://www.dropbox.com/scl/fi/otfakqkze127a701il1zh/Vrmod_Setup.exe?rlkey=deryztzard7w3n2btuqo7ivvd&st=48dlc6qm&dl=1*'
+      - '*http://192.162.199.249/1edjop4tlj2d*'
+      - '*http://192.162.199.249/8w6vq50fsu*'
+      - '*http://192.162.199.249/ezaenul9*'
+      - '*http://192.162.199.249/tzb10mmujurn*'
+      - '*https://www.dropbox.com/scl/fi/20bypo9tl56golwmhkuzx/WatchGoParty.exe?rlkey=djyz9nidcvc5e7ojr8adaoiaf&st=9ptdt498&dl=1*'
+  condition: selection
+level: high
+tags:
+  - attack.t1555
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
@@ -200,35 +240,10 @@ detection:
       - '*https://rcf.co.mz/Volcano9.exe*'
       - '*https://pub-90177fa65de34e95abc6e25ef90c545b.r2.dev/ALE123.exe*'
       - '*https://rcf.co.mz/Godabeg1.exe*'
-      - '*http://95.164.53.193:5001/adas.exe*'
-      - '*http://95.164.53.193:5001/jhgjse.exe*'
-      - '*http://95.164.53.193:5001/single.exe*'
   condition: selection
 level: high
 tags:
   - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: 11222940-a0cf-5f6e-9763-86631cdc6af2
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://lively-fog-af49.pablosoftwareplus.workers.dev/Lijvd*'
-      - '*https://res.cloudinary.com/a9owl0wo/image/upload/v1788508965/img_100122.jpg*'
-      - '*https://res.cloudinary.com/dqeusemd/image/upload/v1788331463/img_084254.jpg*'
-      - '*https://lively-fog-af49.pablosoftwareplus.workers.dev/odOdv*'
-      - '*https://res.cloudinary.com/k3uwjzeq/image/upload/v1788142430/img_041223_zqdcuu.jpg*'
-      - '*https://lively-fog-af49.pablosoftwareplus.workers.dev/hMgsg*'
-      - '*https://gaiadeqi.com/stego_cdyg6hf6tx.png*'
-  condition: selection
-level: high
-tags:
-  - attack.t1027.003
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
@@ -263,7 +278,6 @@ detection:
   selection:
     c-uri:
       - '*https://cdn.discordapp.com/attachments/1537290261195919382/1537290376740741220/Vozolomis_Setup_1.2.6.exe?*'
-      - '*https://github.com/Shapecluneedle/jubilant-engine/releases/download/exec/payd.exe*'
   condition: selection
 level: high
 tags:
