@@ -1,20 +1,3 @@
-title: Detect Activity to Known Malicious C2 - MalwareBazaar hashs - Chunk 1
-id: f74c7de3-963b-593e-bd64-3558c23b37ff
-status: experimental
-description: Detects traffic or activity related to known malicious hashs associated with C2 from MalwareBazaar (Chunk 1).
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - ' "db6e16279fe4c6c21bfd6141f6f4f0d285242fd66238358aa92ec7bc9debc5e6"'
-      - ' "43c2df8d9d262beec1153288cf47d77a4a0a147f7b24197a9a29bdf662e51d96"'
-  condition: selection
-level: high
-tags:
-  - attack.t1071
-  - source.MalwareBazaar
----
 title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
 id: 104ff386-a1fa-5e67-9690-5c4f14c4b196
 status: experimental
@@ -24,6 +7,11 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_ea7a051a82d4b3b5.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_1951c3c55f06d767.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_f72e5551675befb7.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_c02d1b6f3f7b2bea.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_faaa376d1533d131.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_3c7c16fb45b485e2.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_d428ecd0038c581e.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_1da77a985d70f255.exe*'
@@ -173,17 +161,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_a5c4d0900e07c7c4.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_563d9411d8da8c10.cmd*'
       - '*http://91.92.242.236/files-129312398/files/file_908baa13e195f0df.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_b6eb436102b82c86.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_3481d91a938ab342.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_fa7d2d7d3c7be176.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_4270dd8330a6acbc.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_4d1070b391f2b07d.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_8a1ac3d8be0488af.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_065966cf70492303.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_e1854d916cb8bd04.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_cbc50300e3486e0c.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_a6ea4f6f6031c128.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_57b60302f7986a48.exe*'
   condition: selection
 level: high
 tags:
