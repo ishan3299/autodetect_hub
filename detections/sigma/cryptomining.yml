@@ -7,13 +7,9 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "e5a665da69d6ee08e46566dd1048c25554bdf620f63a152758a11cd1d9e6d634"'
       - ' "deca3cb7361c87f0199a3dc7314e7029cf9965df4cbfb5db52e56709b0504c41"'
       - ' "4c4543b1963b22fb4bdd039558c6f8ea913ada5c61f1b36637318804dec9f322"'
-      - ' "6b98a99832d5a501cdb2b578dbacd255205b781078b24aa7f90240bcddba4bd3"'
-      - ' "44593e8065a0f6c19d3a8fe2c49f13d1d202c2f78cf8a6157e01ca6d15164298"'
-      - ' "5a18581269a2765d6772d1e483bd5abacc1e3112edf53e0be6432981010c33f6"'
-      - ' "c10d0fc195135663bdc10bdf738dfaaa2fc03e56c737dc6806b126ce6639870c"'
-      - ' "ad4e1af8ca493cafc4e4d6b764194af49b9fe8d02c233ce529929627bfac1afd"'
   condition: selection
 level: high
 tags:
@@ -29,6 +25,10 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://193.32.162.73/d/7c4124282c4ad7b6/bins/kworkerd*'
+      - '*http://193.32.162.73/d/7c4124282c4ad7b6/o/os12/init.sh*'
+      - '*http://193.32.162.73/d/7c4124282c4ad7b6/o/hzaso/init.sh*'
+      - '*http://193.32.162.73/d/7c4124282c4ad7b6/o/c4124/init.sh*'
       - '*http://13.71.2.244/.x/x*'
       - '*http://85.121.177.134/check3.sh*'
       - '*http://8.209.229.51:7777/a*'
@@ -57,7 +57,6 @@ detection:
       - '*http://31.56.209.189:6556/ok*'
       - '*http://apt-update.com/dl?%7B%22f%22%3A%22xr%22%2C%22t%22%3A%22b%22%2C%22p%22%3A%22lnx%22%2C%22a%22%3A%2264%22%2C%22e%22%3A%22aes%22%2C%22c%22%3A1%7D*'
       - '*http://joker.aec944b68370194a50.link:6556/ok*'
-      - '*http://176.65.139.195/check1.sh*'
   condition: selection
 level: high
 tags:
@@ -78,22 +77,4 @@ detection:
 level: high
 tags:
   - attack.t1059.004
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
-id: 5cfa228a-b760-546c-8ab2-86f2712a68e3
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://216.9.226.120/nuts/poop*'
-      - '*http://216.9.226.120/nuts/bolts*'
-      - '*http://176.65.139.211/check1.sh*'
-  condition: selection
-level: high
-tags:
-  - attack.t1595
   - source.URLhaus
