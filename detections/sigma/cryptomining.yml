@@ -7,9 +7,11 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "75d65495954107d7eb67a25618bf33c734a6635846a9bf46bd6c2f3f16216b38"'
+      - ' "19bebe9719e4f9c21631f7389c445d6f05550c2867024d54177cb14eea88d89d"'
+      - ' "28c45e21bac8064a9b14c2c8e6d9ab52674d858c8dc8fb684f9ec4d36eba0e47"'
+      - ' "fccbb54155bf5a958392b73712f78dd370f6d19400c34b3e6d6cc9ac1702ad27"'
       - ' "e5a665da69d6ee08e46566dd1048c25554bdf620f63a152758a11cd1d9e6d634"'
-      - ' "deca3cb7361c87f0199a3dc7314e7029cf9965df4cbfb5db52e56709b0504c41"'
-      - ' "4c4543b1963b22fb4bdd039558c6f8ea913ada5c61f1b36637318804dec9f322"'
   condition: selection
 level: high
 tags:
@@ -25,6 +27,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_1effc509c19855e7.exe*'
       - '*http://193.32.162.73/d/7c4124282c4ad7b6/bins/kworkerd*'
       - '*http://193.32.162.73/d/7c4124282c4ad7b6/o/os12/init.sh*'
       - '*http://193.32.162.73/d/7c4124282c4ad7b6/o/hzaso/init.sh*'
@@ -50,13 +53,6 @@ detection:
       - '*http://43.228.157.73/deploy.sh*'
       - '*http://178.16.54.109/rvn.exe*'
       - '*https://www.dropbox.com/scl/fi/tpt9bauil4qjjmlp7zb67/Miner.exe?rlkey=uoovuvjd5i98iwns8q603dnu8&st=us1vcqua&dl=1*'
-      - '*http://joker.aec944b68370194a50.link:6556/k*'
-      - '*http://31.77.227.130:6556/k*'
-      - '*http://31.56.209.189:6556/k*'
-      - '*http://31.77.227.130:6556/ok*'
-      - '*http://31.56.209.189:6556/ok*'
-      - '*http://apt-update.com/dl?%7B%22f%22%3A%22xr%22%2C%22t%22%3A%22b%22%2C%22p%22%3A%22lnx%22%2C%22a%22%3A%2264%22%2C%22e%22%3A%22aes%22%2C%22c%22%3A1%7D*'
-      - '*http://joker.aec944b68370194a50.link:6556/ok*'
   condition: selection
 level: high
 tags:
