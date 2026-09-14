@@ -7,6 +7,11 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "37a3d7f47dfaff63354658895d972008f6f5020c4b0936b49d76afdf1f2ad3c8"'
+      - ' "aeaba0d82035fa8fd834bb88735c6f00d4c46ffbac13b746d1640eb91ce389ee"'
+      - ' "55cd3d36fdcc58016a64398357b2c9724a060da9f0d09266e537a61ec9552e4f"'
+      - ' "ccfcad61a64e77045ff88b253d83467439adcd97a62c7cdbede6cfa5f40b83a6"'
+      - ' "3ff4f41605d3b7d53e62005719c41423921c57ded7a72c2c6679e51e6ab89cc9"'
       - ' "84596497251e3847ce4389cb389a56fe87e08944474ffd4019ec315d306f449e"'
       - ' "3d9a86801bebaf5495e8c024623215ad6984b4b8a0cc1268391d951eeab8c906"'
       - ' "91410536fbaa9a8d9e9e13f3019e70ce93cae0f13ed8ef68f4234fa7a2b09f56"'
@@ -20,21 +25,105 @@ detection:
       - ' "543f976b349dc9539c1a3212f7033d63b4a4155027f5b81860b82b8da6f60353"'
       - ' "8210e833bc443c067eae087d04c33b8264a85c2eaf6516ae915ffc30137c15e8"'
       - ' "33344588b9f29d4ddf4e088bba409f414faab82037751d8e04afb3c3d64d5fae"'
+      - ' "8923aca5091d95b50052efcafe757a243462be44bb17f0c6323db74cdb59ae07"'
       - ' "d723c473068e3a1ab8b326d3f42b62e20d460d01e4ed8b944e42b0dc6effbb37"'
       - ' "3118a029c644a831c1ae3e55047b2598462c70c45053425d985de24c22b04eb1"'
-      - ' "ca3ebe2ce77f73faf246331eff19f8c33966520ff7c3369d83d244dfdbda0a1a"'
-      - ' "865d76d478e2ccd75cec7e80f8b32053ba0a41f98e242e9b3316b74c9a7a9dd4"'
-      - ' "2d3b179077f5a7aea77c70ef7e4219905c2b50680c514e9d3474825fe49f3ce7"'
-      - ' "651666ccc18b31d0d24a6d5d33062d45ed859981f84024bc69d710b468d9870f"'
-      - ' "b3b986478cce14a9ffe972d1e0ca2e0dac130adaf7ac1234d7a3d6f254f1feee"'
-      - ' "edae3ddf216afd22d3b9774ed4f3b2b71b9da9810457791723d4982da87260e2"'
-      - ' "be34cd0fd7803d730e5935cbdd5ced083ae992882464db0bc7726a1eb394c94b"'
-      - ' "7775a816832913eff8e6b3cac3444d955b788abbb94d3bf7a676d4a9d4d8748a"'
   condition: selection
 level: high
 tags:
   - attack.t1071
   - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: ebe57f60-46c3-5544-84b3-766b112c260a
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://startvsgame.com/secondfast.exe*'
+      - '*https://abilityindisabilityindia.org/rock.exe*'
+      - '*https://api.vexxuhq.site/download/*'
+      - '*https://abilityindisabilityindia.org/wewe.exe*'
+      - '*https://gaiadeqi.com/scrapbookpocketfordraf.exe*'
+      - '*https://togethers.tv/Togethers.exe*'
+      - '*https://theservice4u.com/install/sarafina.exe*'
+      - '*http://192.162.199.186/2.exe*'
+      - '*http://192.162.199.186/1.exe*'
+      - '*https://www.agcestksa.com/sarafina.exe*'
+      - '*http://192.162.199.149/uploads/69c7b08d53c448c283d2f9d244d190cc.exe*'
+      - '*http://192.162.199.149/uploads/8323ff95090049d3826616b94eed7cd8.exe*'
+      - '*http://192.162.199.149/uploads/0c83aee7a8ad48ecb075c59c5b4957f3.exe*'
+      - '*http://192.162.199.149/uploads/f1c106553ca64defbddc6d82476e8076.exe*'
+      - '*http://192.162.199.149/uploads/f3eeb7dfc18246f7bc40a5704a81d193.exe*'
+      - '*http://192.162.199.149/uploads/2d7aaa6d163f48458905a62516fc1390.exe*'
+      - '*http://192.162.199.149/uploads/d0d605c01f71464ea16b25c92892dbe0.exe*'
+      - '*http://192.162.199.149/uploads/d33ab8c1371c4e1b9f2fdb7007e21df4.exe*'
+      - '*http://85.239.149.196/main.exe*'
+      - '*https://luminouspower.com.pk/zoom.exe*'
+      - '*https://trf.kookapp.pro/GameBarPresenceWriters.exe*'
+      - '*https://google-meet-verification.icu/rt.exe*'
+      - '*https://mon-blanc-03.cfd/dollar.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/jhgkuyyg.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/arFtU.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/dflnglkfdmgs.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/bjbh.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/kJHGFDs.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/hnmh.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/KJHJHKJKJH.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/kliulij.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/obsh/R7.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/obsh/mixnew2.exe*'
+      - '*https://hypercorevector5.lol/noncrypt/21-32/ojujn.exe*'
+      - '*https://tattinamecheap.com/QuickFetch.exe*'
+      - '*http://192.162.199.149/uploads/d6a0dbb9ae834113a8401012b1f9aa18.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1204.002
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: db046cfb-dea5-57cd-8f98-7b35c56d8500
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://tapped.top/downloads/delta-executor.zip?dl=1789318573398*'
+      - '*https://www.mediafire.com/file/p3mfnlwgzn6rl90/DeltaExecutor.zip/file*'
+      - '*https://executorhub.space/Solara.zip*'
+      - '*https://download2296.mediafire.com/uk2y6ehlocrgk-Wgx1Lfst0OxHSfaF6lXSKb1OxOhWWbBIJbmmgHPaxnSw3bE1mHQfH2jFdl4mV4V0qbFgJQmj2-3T371R26mMrGg4rAkYKNxEI4NXn-8BM2uDWLbJGcIBlostKoPHOo96LFCZy36G1H5Y-rv-KZ2CN7HwTQ7W0/q1pcfiniu93mzb3/FortniteHack.zip*'
+      - '*https://download2292.mediafire.com/sko69h7rx9hgMcteJMpEpK_0WPxPexjc1f8qrRgYcuDNs9MCHaD5EpmIE-zls9qb7ina3Moh-KyDhF0t1mwNpFEuxJRkX8Hc0laPcXWQtJAQsvupnhB0tobS_9uzVava7ocBqGHuoOG_2LVcCXhkibSqkbfhkhGr8yXUuAzu2OM/gl5lvgixp12jloa/MurderMysteryScript.zip*'
+      - '*https://download2360.mediafire.com/p5boz5a1oa1gz8-OL_FPEX2HxF7fMvjvj8EOS1Ii7tQs3FcWq61yO-D00-Td1I-R3bPmDK_RqUBULBzAhbCG9LfXMLyc35dFr3lx14RoPXUCS5YMGdbPPMsfE6BUo7hk643KUu22es-6ulAvM6LmdBn2zTxP1bsJg_-xUujYWUc/gpu44k59uccr9ev/DeltaExecutor.zip*'
+      - '*http://5.253.59.16/k/bplplatatenera.dat*'
+      - '*http://5.253.59.16/k/jjscotttbpl.dat*'
+      - '*http://78.159.131.228/k/jjscotttbpl.dat*'
+      - '*http://89.23.107.5/k/ofelia.dat*'
+      - '*https://opalcraftsmp.com/assets/OpalCraftSMP.exe*'
+      - '*https://opalcraftsmp.com/assets/OpalCraftSMP-CurseForge.zip*'
+      - '*https://opalcraftsmp.com/assets/OpalCraftSMP-Mods.jar*'
+      - '*https://multiplay.at/shaders/Shaders.zip*'
+      - '*https://multiplay.at/game-copier/downloads/Game-Copier.zip*'
+      - '*http://45.94.31.205:5050/files/7408d8876d767e4b8dac35ffcedac09926062e7856d4edbb40f7bda8f00c6d37/x.zip*'
+      - '*https://www.dropbox.com/scl/fi/ba93r9ez5c00fap694aa6/bundle.zip?rlkey=mpxhfmkb4g2adcermiywlc115&st=8p4van4p&dl=1*'
+      - '*https://satinmaple4.com/curl/tzrq2tzeg/ajl7t96d8lnk002d3uueapv.txt*'
+      - '*https://satinmaple4.com/N_8qoQC3gmx9CFmwN9nMJ4QoUZtKZ1ua1TThNulPR4kU/brew/update*'
+      - '*https://flint-32.com/api/metrics/run?event=pasted*'
+      - '*https://drive.google.com/file/d/1r7M0rgvXklsZK-Xo6NRgM_gaG46QU4Dr/view?usp=sharing*'
+      - '*https://linen-harbor.com/curl/rnulrjfa/init.sh*'
+      - '*http://193.221.200.26:5001/odens.exe*'
+      - '*http://86.54.25.213/d/unix49211821*'
+      - '*https://auth2api.site/API_REFRESH.scpt*'
+  condition: selection
+level: high
+tags:
+  - attack.t1555
+  - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
 id: b3b10d76-9fc8-59c2-81cb-735b63c24d5e
@@ -45,6 +134,11 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://raw.githubusercontent.com/34-19-44r/573-45-43cvi/refs/heads/main/AC-BC-FB-E2-30-46*'
+      - '*https://raw.githubusercontent.com/34-19-44r/B8-F6-52-48-95-90203C-B2-29-4A-A9/refs/heads/main/B0-FF-E3-4F-63-6*'
+      - '*https://raw.githubusercontent.com/34-19-44r/B8-F6-52-48-95-90203C-B2-29-4A-A9/refs/heads/main/FC-50-91-D0-A2*'
+      - '*https://raw.githubusercontent.com/34-19-44r/573-45-43cvi/refs/heads/main/F0-5C-43-35-F5-FA*'
+      - '*https://cdn.jsdelivr.net/gh/34-19-44r/B8-F6-52-48-95-90203C-B2-29-4A-A9/B0-FF-E3-4F-63-6*'
       - '*https://cdn.jsdelivr.net/gh/48-689100-172-171440/447477315432/61442229125*'
       - '*https://raw.githubusercontent.com/48-689100-172-171440/708C-BB-236A/refs/heads/main/AC-03E9-C3-91BB*'
       - '*https://raw.githubusercontent.com/48-689100-172-171440/447477315432/refs/heads/main/447264906919*'
@@ -124,7 +218,6 @@ detection:
       - '*http://196.251.107.186/2.7.exe*'
       - '*https://quill-flint.com/curl/2h0w4vtm7c/7b4cckfhojxjbrcjon.json*'
       - '*https://quill-flint.com/zyeMb6slon_3VWVlkSkdiJurcyhY5cFNtchnavRnMgU/jetbrains/update*'
-      - '*http://91.92.242.236/files-129312398/files/file_8f2a9c058325ac38.exe*'
   condition: selection
 level: high
 tags:
@@ -148,92 +241,6 @@ detection:
 level: high
 tags:
   - attack.t1587.001
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: ebe57f60-46c3-5544-84b3-766b112c260a
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://abilityindisabilityindia.org/rock.exe*'
-      - '*https://api.vexxuhq.site/download/*'
-      - '*https://abilityindisabilityindia.org/wewe.exe*'
-      - '*https://gaiadeqi.com/scrapbookpocketfordraf.exe*'
-      - '*https://togethers.tv/Togethers.exe*'
-      - '*https://theservice4u.com/install/sarafina.exe*'
-      - '*http://192.162.199.186/2.exe*'
-      - '*http://192.162.199.186/1.exe*'
-      - '*https://www.agcestksa.com/sarafina.exe*'
-      - '*http://192.162.199.149/uploads/69c7b08d53c448c283d2f9d244d190cc.exe*'
-      - '*http://192.162.199.149/uploads/8323ff95090049d3826616b94eed7cd8.exe*'
-      - '*http://192.162.199.149/uploads/0c83aee7a8ad48ecb075c59c5b4957f3.exe*'
-      - '*http://192.162.199.149/uploads/f1c106553ca64defbddc6d82476e8076.exe*'
-      - '*http://192.162.199.149/uploads/f3eeb7dfc18246f7bc40a5704a81d193.exe*'
-      - '*http://192.162.199.149/uploads/2d7aaa6d163f48458905a62516fc1390.exe*'
-      - '*http://192.162.199.149/uploads/d0d605c01f71464ea16b25c92892dbe0.exe*'
-      - '*http://192.162.199.149/uploads/d33ab8c1371c4e1b9f2fdb7007e21df4.exe*'
-      - '*http://85.239.149.196/main.exe*'
-      - '*https://luminouspower.com.pk/zoom.exe*'
-      - '*https://trf.kookapp.pro/GameBarPresenceWriters.exe*'
-      - '*https://google-meet-verification.icu/rt.exe*'
-      - '*https://mon-blanc-03.cfd/dollar.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/jhgkuyyg.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/arFtU.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/dflnglkfdmgs.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/bjbh.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/kJHGFDs.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/hnmh.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/KJHJHKJKJH.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/kliulij.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/obsh/R7.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/obsh/mixnew2.exe*'
-      - '*https://hypercorevector5.lol/noncrypt/21-32/ojujn.exe*'
-      - '*https://tattinamecheap.com/QuickFetch.exe*'
-      - '*http://192.162.199.149/uploads/d6a0dbb9ae834113a8401012b1f9aa18.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: db046cfb-dea5-57cd-8f98-7b35c56d8500
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://5.253.59.16/k/bplplatatenera.dat*'
-      - '*http://5.253.59.16/k/jjscotttbpl.dat*'
-      - '*http://78.159.131.228/k/jjscotttbpl.dat*'
-      - '*http://89.23.107.5/k/ofelia.dat*'
-      - '*https://opalcraftsmp.com/assets/OpalCraftSMP.exe*'
-      - '*https://opalcraftsmp.com/assets/OpalCraftSMP-CurseForge.zip*'
-      - '*https://opalcraftsmp.com/assets/OpalCraftSMP-Mods.jar*'
-      - '*https://multiplay.at/shaders/Shaders.zip*'
-      - '*https://multiplay.at/game-copier/downloads/Game-Copier.zip*'
-      - '*http://45.94.31.205:5050/files/7408d8876d767e4b8dac35ffcedac09926062e7856d4edbb40f7bda8f00c6d37/x.zip*'
-      - '*https://www.dropbox.com/scl/fi/ba93r9ez5c00fap694aa6/bundle.zip?rlkey=mpxhfmkb4g2adcermiywlc115&st=8p4van4p&dl=1*'
-      - '*https://satinmaple4.com/curl/tzrq2tzeg/ajl7t96d8lnk002d3uueapv.txt*'
-      - '*https://satinmaple4.com/N_8qoQC3gmx9CFmwN9nMJ4QoUZtKZ1ua1TThNulPR4kU/brew/update*'
-      - '*https://flint-32.com/api/metrics/run?event=pasted*'
-      - '*https://drive.google.com/file/d/1r7M0rgvXklsZK-Xo6NRgM_gaG46QU4Dr/view?usp=sharing*'
-      - '*https://linen-harbor.com/curl/rnulrjfa/init.sh*'
-      - '*http://193.221.200.26:5001/odens.exe*'
-      - '*http://86.54.25.213/d/unix49211821*'
-      - '*https://auth2api.site/API_REFRESH.scpt*'
-      - '*https://www.dropbox.com/scl/fi/7hp56yj650o4slrllg4xj/ChilloutVRMod.exe?rlkey=s69vdpczdpalbo26alwo0u13o&st=f5mgwsxk&dl=1*'
-      - '*https://www.dropbox.com/scl/fi/otfakqkze127a701il1zh/Vrmod_Setup.exe?rlkey=deryztzard7w3n2btuqo7ivvd&st=48dlc6qm&dl=1*'
-  condition: selection
-level: high
-tags:
-  - attack.t1555
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
