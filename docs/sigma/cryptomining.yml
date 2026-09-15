@@ -7,31 +7,17 @@ logsource:
 detection:
   selection:
     hashes:
-      - ' "63d87d4569a491553e14757dc267aa29ae8b606b0396dd16acc5c642f629fc7e"'
-      - ' "89ea7049eae2af35ebbd64531a11d50f9364992db0dc8960b8961551289779cd"'
+      - ' "2899b8a2d4d7c47fff7e1c6cf63d8dbfb6c440a037ab399514f508164e2b0894"'
+      - ' "b87a3e0f5fa89f216c26edc4a00f678d7aa80e06c0c9fa497277aa2621449135"'
+      - ' "520356aeba042e45c38895485769d92293ec2072abe8188dee1fb3f995ced3e2"'
+      - ' "a289e1661fee6dd7acc4b0876df7dce1b4dd997c5eecda7eabc537f5f9ada024"'
+      - ' "b5b27e217831c3a329d7570a919db389bdcadf4fcbbcb3c108c6165f29240d93"'
+      - ' "e07681f98e6a0c7b42b2e7d3d343cf3860bca4933d4f5c8c4e52fe81061f9372"'
   condition: selection
 level: high
 tags:
   - attack.t1071
   - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
-id: f42dab2b-f6e3-5181-ac2d-d61e4dcc95d4
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://79.137.203.132/2*'
-      - '*http://79.137.203.132/3*'
-      - '*http://puschl.langhaar-schaeferhunde.com/plugins/linux.bin*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
-  - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
 id: 3316af2f-5b86-5439-89c7-8ee743b4dbdf
@@ -42,6 +28,9 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://192.162.199.246/m3/controller.exe*'
+      - '*http://192.162.199.246/m2/mKM65Cf6QNqeOVw9.exe*'
+      - '*https://45.145.12.239/main.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_1effc509c19855e7.exe*'
       - '*http://193.32.162.73/d/7c4124282c4ad7b6/bins/kworkerd*'
       - '*http://193.32.162.73/d/7c4124282c4ad7b6/o/os12/init.sh*'
@@ -70,4 +59,22 @@ detection:
 level: high
 tags:
   - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
+id: f42dab2b-f6e3-5181-ac2d-d61e4dcc95d4
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://79.137.203.132/2*'
+      - '*http://79.137.203.132/3*'
+      - '*http://puschl.langhaar-schaeferhunde.com/plugins/linux.bin*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
   - source.URLhaus

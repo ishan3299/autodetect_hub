@@ -1,3 +1,33 @@
+title: Detect Activity to Known Malicious C2 - MalwareBazaar hashs - Chunk 1
+id: f74c7de3-963b-593e-bd64-3558c23b37ff
+status: experimental
+description: Detects traffic or activity related to known malicious hashs associated with C2 from MalwareBazaar (Chunk 1).
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - ' "1711e290aa8bb362098744afb4c33db34303ec3aeae6321d0498b64c3f524b0b"'
+      - ' "13a9c5ab177bc81c24cb8181f2de054f918949861b15a0c7be0de7c1091af698"'
+      - ' "826b4d552db727f1fb6d123af31b9962b914b5f8a06be9b7fb0b3e7990603fbf"'
+      - ' "0ba97d306e5cdf75492d1a90463585ba6539fbe5e017f57d375375f9e0e0d434"'
+      - ' "91ef4177f479b5751d5abbf8014b8f058bee9b083fa6244ed369d44d6815927d"'
+      - ' "2ff2d7213cffc2d7a30c50ae687299f51f82f4e558a59106a58aacf1b94b0d17"'
+      - ' "f877a0134e9d6a5f1349a5612832dbfb99add6a9cce52ff4e7d28f0a85ef536a"'
+      - ' "af923e09b622d44e62213964f9919f00e05689451668d31c30b58f0e0cbf4684"'
+      - ' "80ccdcac126a2d8d7f7445496dd537b840f8f7557c8b65b27a65f97e04f45fe2"'
+      - ' "c789624793c744eef30b69b1c30809387885e0233380c3f912634b6e015de354"'
+      - ' "1874adbc4ea9afb059940d9d2fe1e759d8893a779c3b56b145742f8930fc2a53"'
+      - ' "0104d56f6608d319a9e148f6d77926fb41a37b7dd3dede9262f396c6b8e67176"'
+      - ' "b928bbab41b557aada3cc35539fef1f219e32afefdca9178e24c204b120b122e"'
+      - ' "030a3a7894bfd533354a56510c0c946234a1fcb319f963a2db5658feef7cb2f0"'
+      - ' "25de3f5c46ad24bf594fc6c259252f17fa429362cb8c28d64943aa37cbda1f4f"'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.MalwareBazaar
+---
 title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
 id: 104ff386-a1fa-5e67-9690-5c4f14c4b196
 status: experimental
@@ -141,13 +171,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_4144dfb259ed3b1b.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_ff630ced898745f7.exe*'
       - '*https://thu-iphone-07.cfd/JutrvoService.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_14cf0ee8101600e7.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_76fd7c41ddb193a5.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_f5ae52914bf7056f.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_48852a33f51921f1.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_776621fa56cb2ef8.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_cb2aa48501d6d3b6.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_64858a8342cb3c62.exe*'
   condition: selection
 level: high
 tags:
