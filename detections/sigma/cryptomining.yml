@@ -7,19 +7,21 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "d45f4103caae9f2cf203a6cfbb1b0c075ab64208ff7c6af0b3e5b3232b02f91a"'
+      - ' "149741a014c14da7cc4eaf0f6ee9879044697af0132662fb49ba812b8b50386f"'
+      - ' "00858b3f74b5b8b22edd2dc06cf9b895bad356d1b459fd15b1e909e79e764ad9"'
+      - ' "84b896f2d6f255b3e0130be2b4a3892e16b8970dd47e8da0cf8ad5271fd86c95"'
+      - ' "3760f1bedbc56f39cbfd4306f9b5b23cba1de34296cc2957bedd65127faedc12"'
+      - ' "4ce63b31adb5a5537c989d06002a6bf0fe94db98320430c1262db0e09b38a99b"'
+      - ' "ce2aacb6e29749d1ca29ac3fb1adcbeb42ffe833e51fe948d3e511d5d1364bc9"'
+      - ' "b11b1a11295318f53a2f4f39150897c996a098088469135f5400bc8d44f12994"'
       - ' "6659054e7fdce5a34a040bd0c730db06ceda0a72b3c6d75dc4a17de3fdc19d2c"'
       - ' "ddda27525522dba74f3b356b6a3d29b8baac2c00ed826c2b505ffa2bc16347be"'
+      - ' "9cce6c826ab4346b7697db6aab3c9ad82ff8f9ecd30bb4b199a606ba389b1d9a"'
+      - ' "29571cfcc73559cdeae1592ce93bf91c38e2eba2960a7b556c442978c54ff5b3"'
       - ' "061de99e4a504d331e11d4ee27d246790290d9e44e6a261c0f5bb756255db640"'
       - ' "86e575d1d692a38a5f8712901e5ca96b04d43d9981cb971284acbf2a676d3c1a"'
       - ' "912b95083237514092192e42707678f79b68e2ff8a95c6fc456eaba3f44774c5"'
-      - ' "2899b8a2d4d7c47fff7e1c6cf63d8dbfb6c440a037ab399514f508164e2b0894"'
-      - ' "cfe82205e82d53f0959f1dc4094ee8af7b6ecbd86a92ee9a65b865814b343aa5"'
-      - ' "253653f645b9c89e7e7e7e967926b0cf0f9adda98ac9d6ba4aa1eb354d80ab9d"'
-      - ' "b87a3e0f5fa89f216c26edc4a00f678d7aa80e06c0c9fa497277aa2621449135"'
-      - ' "520356aeba042e45c38895485769d92293ec2072abe8188dee1fb3f995ced3e2"'
-      - ' "a289e1661fee6dd7acc4b0876df7dce1b4dd997c5eecda7eabc537f5f9ada024"'
-      - ' "b5b27e217831c3a329d7570a919db389bdcadf4fcbbcb3c108c6165f29240d93"'
-      - ' "e07681f98e6a0c7b42b2e7d3d343cf3860bca4933d4f5c8c4e52fe81061f9372"'
   condition: selection
 level: high
 tags:
@@ -35,6 +37,8 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://windowsdiagnostics.st/api/static/Office365*'
+      - '*http://91.92.242.236/files-129312398/files/file_0ad97829e0695995.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_33a7525a0a683940.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_f16d80909f64b6ff.exe*'
       - '*http://192.162.199.246/m3/controller.exe*'
@@ -60,9 +64,6 @@ detection:
       - '*https://cta.edu.pe/wp-content/plugins/linux.bin*'
       - '*https://62.60.226.185/kaze.exe*'
       - '*http://154.90.70.52/xmrig.sh*'
-      - '*https://purbalinggamandiri.com/3.exe*'
-      - '*http://178.16.54.109/etc.exe*'
-      - '*http://43.228.157.73/check3.sh*'
   condition: selection
 level: high
 tags:

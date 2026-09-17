@@ -8,27 +8,30 @@ detection:
   selection:
     hashes:
       - ' "a745bc8df4527520aa5949548d116c222e595e8c22c4b1dd7bccec0c380b2e76"'
-      - ' "1711e290aa8bb362098744afb4c33db34303ec3aeae6321d0498b64c3f524b0b"'
-      - ' "826b4d552db727f1fb6d123af31b9962b914b5f8a06be9b7fb0b3e7990603fbf"'
-      - ' "13a9c5ab177bc81c24cb8181f2de054f918949861b15a0c7be0de7c1091af698"'
-      - ' "0ba97d306e5cdf75492d1a90463585ba6539fbe5e017f57d375375f9e0e0d434"'
-      - ' "91ef4177f479b5751d5abbf8014b8f058bee9b083fa6244ed369d44d6815927d"'
-      - ' "2ff2d7213cffc2d7a30c50ae687299f51f82f4e558a59106a58aacf1b94b0d17"'
-      - ' "6bc266e36d6521eb5e6872794c9259d2b4f534d66e66c698b992e39f7f751649"'
-      - ' "f877a0134e9d6a5f1349a5612832dbfb99add6a9cce52ff4e7d28f0a85ef536a"'
-      - ' "af923e09b622d44e62213964f9919f00e05689451668d31c30b58f0e0cbf4684"'
-      - ' "80ccdcac126a2d8d7f7445496dd537b840f8f7557c8b65b27a65f97e04f45fe2"'
-      - ' "c789624793c744eef30b69b1c30809387885e0233380c3f912634b6e015de354"'
-      - ' "1874adbc4ea9afb059940d9d2fe1e759d8893a779c3b56b145742f8930fc2a53"'
-      - ' "0104d56f6608d319a9e148f6d77926fb41a37b7dd3dede9262f396c6b8e67176"'
-      - ' "b928bbab41b557aada3cc35539fef1f219e32afefdca9178e24c204b120b122e"'
-      - ' "030a3a7894bfd533354a56510c0c946234a1fcb319f963a2db5658feef7cb2f0"'
-      - ' "25de3f5c46ad24bf594fc6c259252f17fa429362cb8c28d64943aa37cbda1f4f"'
   condition: selection
 level: high
 tags:
   - attack.t1071
   - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
+id: f14eb7f3-9c29-5eed-a133-748d1a8387e9
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with C2 from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_d3ed19af96c997bd.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_2e3410806cced002.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_7af4a49e477043ca.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_865d4f3e8fa37c05.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
+  - source.URLhaus
 ---
 title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
 id: 104ff386-a1fa-5e67-9690-5c4f14c4b196
@@ -39,6 +42,14 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_2d2d07c900d61a1f.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_41040e24d59b2c6f.msi*'
+      - '*http://91.92.242.236/files-129312398/files/file_765cc3c172f33aca.exe*'
+      - '*https://cold5.gofile.io/download/direct/32c5d36f-84ae-4b1f-8209-58b5baccb060/crypt_dropper_8a3513f654a94876.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_b7f2a3d3dff58949.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_9889dceb663c963e.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_969692206502d224.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_d52322573ab40371.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_b4456f15b424d604.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_78ade3c9abb0bfbb.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_02d328715076f2b1.exe*'
@@ -163,14 +174,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_1d2e34021664fd28.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_27fd3a19e4e1e1b6.exe*'
       - '*https://thu-iphone-07.cfd/TispciphraLoader.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_eead3d0c419daff9.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_9e042abf89f49e45.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_d91af7a531637b1f.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_31dd752749e9338c.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_babe547392332f73.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_40500e12ca54e02b.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_3cca71a2b980b74a.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_ba5747ef480cf9f7.exe*'
   condition: selection
 level: high
 tags:
@@ -192,21 +195,4 @@ detection:
 level: high
 tags:
   - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
-id: f14eb7f3-9c29-5eed-a133-748d1a8387e9
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with C2 from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://91.92.242.236/files-129312398/files/file_7af4a49e477043ca.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_865d4f3e8fa37c05.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
   - source.URLhaus
