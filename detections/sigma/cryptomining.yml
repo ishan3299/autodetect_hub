@@ -7,26 +7,37 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "6e87682bbd1ec48d6ab7ae3da926d5b178fd90de1a3d02d684dd2a2c681f7bdb"'
       - ' "d45f4103caae9f2cf203a6cfbb1b0c075ab64208ff7c6af0b3e5b3232b02f91a"'
       - ' "149741a014c14da7cc4eaf0f6ee9879044697af0132662fb49ba812b8b50386f"'
+      - ' "69361c79704ef47a6ca07a953bc81e4f92b39c77445f2e1d4596917cc401e938"'
       - ' "00858b3f74b5b8b22edd2dc06cf9b895bad356d1b459fd15b1e909e79e764ad9"'
       - ' "84b896f2d6f255b3e0130be2b4a3892e16b8970dd47e8da0cf8ad5271fd86c95"'
       - ' "3760f1bedbc56f39cbfd4306f9b5b23cba1de34296cc2957bedd65127faedc12"'
       - ' "4ce63b31adb5a5537c989d06002a6bf0fe94db98320430c1262db0e09b38a99b"'
       - ' "ce2aacb6e29749d1ca29ac3fb1adcbeb42ffe833e51fe948d3e511d5d1364bc9"'
       - ' "b11b1a11295318f53a2f4f39150897c996a098088469135f5400bc8d44f12994"'
-      - ' "6659054e7fdce5a34a040bd0c730db06ceda0a72b3c6d75dc4a17de3fdc19d2c"'
-      - ' "ddda27525522dba74f3b356b6a3d29b8baac2c00ed826c2b505ffa2bc16347be"'
-      - ' "9cce6c826ab4346b7697db6aab3c9ad82ff8f9ecd30bb4b199a606ba389b1d9a"'
-      - ' "29571cfcc73559cdeae1592ce93bf91c38e2eba2960a7b556c442978c54ff5b3"'
-      - ' "061de99e4a504d331e11d4ee27d246790290d9e44e6a261c0f5bb756255db640"'
-      - ' "86e575d1d692a38a5f8712901e5ca96b04d43d9981cb971284acbf2a676d3c1a"'
-      - ' "912b95083237514092192e42707678f79b68e2ff8a95c6fc456eaba3f44774c5"'
   condition: selection
 level: high
 tags:
   - attack.t1071
   - source.MalwareBazaar
+---
+title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
+id: 5d9e1d92-b2c4-5b25-8e48-0c8b2432093e
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://144.31.148.40:8000/minerd*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
+  - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
 id: 3316af2f-5b86-5439-89c7-8ee743b4dbdf
@@ -37,6 +48,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://gpsmarocpro.com/3.exe*'
       - '*https://windowsdiagnostics.st/api/static/Office365*'
       - '*http://91.92.242.236/files-129312398/files/file_0ad97829e0695995.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_33a7525a0a683940.exe*'
