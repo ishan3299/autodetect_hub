@@ -7,37 +7,16 @@ logsource:
 detection:
   selection:
     hashes:
-      - ' "6e87682bbd1ec48d6ab7ae3da926d5b178fd90de1a3d02d684dd2a2c681f7bdb"'
-      - ' "d45f4103caae9f2cf203a6cfbb1b0c075ab64208ff7c6af0b3e5b3232b02f91a"'
-      - ' "149741a014c14da7cc4eaf0f6ee9879044697af0132662fb49ba812b8b50386f"'
-      - ' "69361c79704ef47a6ca07a953bc81e4f92b39c77445f2e1d4596917cc401e938"'
-      - ' "00858b3f74b5b8b22edd2dc06cf9b895bad356d1b459fd15b1e909e79e764ad9"'
-      - ' "84b896f2d6f255b3e0130be2b4a3892e16b8970dd47e8da0cf8ad5271fd86c95"'
-      - ' "3760f1bedbc56f39cbfd4306f9b5b23cba1de34296cc2957bedd65127faedc12"'
-      - ' "4ce63b31adb5a5537c989d06002a6bf0fe94db98320430c1262db0e09b38a99b"'
-      - ' "ce2aacb6e29749d1ca29ac3fb1adcbeb42ffe833e51fe948d3e511d5d1364bc9"'
-      - ' "b11b1a11295318f53a2f4f39150897c996a098088469135f5400bc8d44f12994"'
+      - ' "0d9f012e079915b57adf0d987ca90497e196a64bf1360be4480ff1c95b5d0112"'
+      - ' "e80d37143b54b81a5d54a251cc7a317497e92a399c5f18ca506d01683b04903f"'
+      - ' "1d1b6225c43e9bc88c00729632fbfd852ea06f598e8977123bdf121e9a214d31"'
+      - ' "50a6bc7170cb47da6bb1206ad4d0997ccbeac2980e2e95552866981551db91e9"'
+      - ' "6fa80698d7268f6e88aa88c06fb27ee99e1bcee747c2e76911e6206a5b1aeeb3"'
   condition: selection
 level: high
 tags:
   - attack.t1071
   - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
-id: 5d9e1d92-b2c4-5b25-8e48-0c8b2432093e
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://144.31.148.40:8000/minerd*'
-  condition: selection
-level: high
-tags:
-  - attack.t1583
-  - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
 id: 3316af2f-5b86-5439-89c7-8ee743b4dbdf
@@ -48,6 +27,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://62.60.226.140/files/logkni/rop.exe*'
       - '*https://gpsmarocpro.com/3.exe*'
       - '*https://windowsdiagnostics.st/api/static/Office365*'
       - '*http://91.92.242.236/files-129312398/files/file_0ad97829e0695995.exe*'
@@ -75,11 +55,26 @@ detection:
       - '*http://cta.edu.pe/wp-content/plugins/linux.bin*'
       - '*https://cta.edu.pe/wp-content/plugins/linux.bin*'
       - '*https://62.60.226.185/kaze.exe*'
-      - '*http://154.90.70.52/xmrig.sh*'
   condition: selection
 level: high
 tags:
   - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
+id: 5d9e1d92-b2c4-5b25-8e48-0c8b2432093e
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://144.31.148.40:8000/minerd*'
+  condition: selection
+level: high
+tags:
+  - attack.t1583
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
