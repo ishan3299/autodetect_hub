@@ -7,6 +7,19 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "def4ed166b78f608e57283ca29ceefa132d049606afbfb8ea32b6c5c27866087"'
+      - ' "19fcf0739788f7f96ebcbe9d2800363e581215595e82b5c85776a042a408b704"'
+      - ' "e7ce03a0eba5eb65d685d7ea2fe33235e08f5aeb2b99b2518f1bb5dfaa6e250d"'
+      - ' "b96c98325b61ef08ee846b1f825c16fcf93541a3de4130bdc9d701e5265bc4f6"'
+      - ' "aba7778d25f569377be922392bc03b3b8faacabeb7e2844acd9f7d0c2d4bc433"'
+      - ' "6cb5a0ab36d498d077f1acb41cfcf1c5f065bb995122e87889aa27ddc3735e4d"'
+      - ' "cd1a31628c7872c86f7ec22d5729d2c47e8b3a0cdcfbcd2d719cb8e2728b56f9"'
+      - ' "795f9caf051b0d3e6199e78fd5af4f92b13ea5bbdeba9d7e9aa58dddf1e8433e"'
+      - ' "fbf6a9b7ce2712c676d5fb19822e85b36c89a1f66bad899342b7408918f31e12"'
+      - ' "ae5a7b4d6ac001e41a49833ea03abba64f33d49ea46d3e4875d18331c52eb6a8"'
+      - ' "89f89142897887fe78274e8884b9fbd8395f3737494c7613a7b54534b1c23ebc"'
+      - ' "2db2be8826006de75eaf915636bd9c699d028849478558c49cb840dba75880ad"'
+      - ' "3057fa7d5414cd79f6551bd975ba143d15fefdfc75606f09ac49fe5193ec1cd0"'
       - ' "74829186a1bcfbec74aa34f8e7569aca38b6845ac3f805ef6e3adf9249c70082"'
       - ' "76f644f96daae842cd54f0e3d048ed94f963332f95af533a8a0d859042674650"'
       - ' "219dd89a979512378ded291349fe51d1864a489514177876382e5a12a26bbc96"'
@@ -15,91 +28,11 @@ detection:
       - ' "1ad42cab7899671275d79ff38317ae4df61d58de9d2e4f23facf297b5b33654b"'
       - ' "1ae9433efe8a190b2dc0b842050b67255d3c54b17097314f189d608c7a40d678"'
       - ' "592627c6d8f01519d9a88923db6fab9d65314ac0a9c43b2d75da8882995042b3"'
-      - ' "a855e0b2c37792f08d340794d874a23be9029745b73e79812b03803d84eaf307"'
-      - ' "61ad2f39c74536dc5668b4977c0557c192eef5ec0c7e1302178e10a254a71d64"'
-      - ' "656d35b0723d07e19d035ab8920c25b00e1d06cc91e93a384e97706faee5abed"'
-      - ' "f429442bc6d003cefcc1231d612e5990b76367ebd0f72c1f4568a9ace1c81771"'
-      - ' "e3e511856550c7504f7bc56ba56b46f18f9b41efe8d9be3a9abb957ea3b9d7a9"'
-      - ' "c302d091a1d13d1599df882ca1fbd86c6d2dc6bb284075439310c89c444e90de"'
-      - ' "88aa8f801f7d3d108b371a131ded3e3d0375b2d87e5c428746f578d58b3f3456"'
-      - ' "9d3efb3569107cea4c02a08862e8966018b672d3fa592ad0f89a534a038743d8"'
-      - ' "095fc0f8c8a38fdfc74a77fe5455fad2fee2eed57f245df09d19621c5bad1e5c"'
-      - ' "d8257431cf986ce95a5a6d225c7e995992c102c2a54eae9a15a13f06acc62dc2"'
-      - ' "8b17b9973deff8917b8d020b7d807712de3752848d95468daa8ebca73dc1ecbc"'
-      - ' "11cd6ea8bc99ebcf41362bc98405ca3458d91c64f398bcea3388aadeb49a00a5"'
-      - ' "5efae5c8427e341ef3b11c0474e618dd359daf9d55fba462e9039de4ed6d34fb"'
   condition: selection
 level: high
 tags:
   - attack.t1071
   - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: bf9f0c07-fdcf-5e93-b032-b681d29af785
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://91.92.242.236/files-129312398/files/file_59dbbbed05710d63.exe*'
-      - '*https://www.dropbox.com/scl/fi/qqt7rovwn3ruglev5ea79/bundle.zip?rlkey=hq47jctwzehpmnm8lrw7gjvjm&st=g6t8sc7q&dl=1*'
-      - '*https://cloud-sharing.com/service.png*'
-      - '*http://193.178.158.107/2.8.exe*'
-      - '*http://193.178.158.107/2.exe*'
-      - '*https://loop-lumen.com/zxc/appex.zip*'
-      - '*https://loop-lumen.com/zxc/app.zip*'
-      - '*https://loop-lumen.com/zxc/apptwo.zip*'
-      - '*https://4eclient.com/assets/download/Client4E.jar*'
-      - '*http://107.189.27.223:3000/arm64*'
-      - '*http://107.189.27.223:3000/amd64*'
-      - '*http://87.120.104.147:8080/d/ibrowser*'
-      - '*https://www.dropbox.com/scl/fi/754hdidtogzkpc8s528x3/OffersThickness.exe?rlkey=dbsp3569wnfvhmt633aep6rgf&st=afaxokov&dl=1*'
-      - '*http://62.60.226.140/files/com/kliulij.exe*'
-      - '*https://www.dropbox.com/scl/fi/754hdidtogzkpc8s528x3/OffersThickness.exe?rlkey=dbsp3569wnfvhmt633aep6rgf&st=097j7cfs&dl=1*'
-      - '*https://www.dropbox.com/scl/fi/ba93r9ez5c00fap694aa6/bundle.zip?rlkey=mpxhfmkb4g2adcermiywlc115&st=9twn3jrx&dl=1*'
-      - '*https://fern-plume.com/curl/z203ezo8/zbxc4p9j8emx1yoy9x.txt*'
-      - '*https://node-slate.com/api/metrics/run?event=pasted*'
-      - '*https://fern-plume.com/zyeMb6slon_3VWVlkSkdiJurcyhY5cFNtchnavRnMgU/hiddenfix/update*'
-      - '*https://gaiadeqi.com/fires.png*'
-      - '*https://www.dropbox.com/scl/fi/b7zislagvz1s50bgpeiq2/bundle.zip?rlkey=q4dv3sn8vvlnhgl6pwecxyxyk&st=wqptx9k3&dl=1*'
-      - '*https://goododeqvip.com/Zoom-call.zip*'
-      - '*https://www.dropbox.com/scl/fi/wdamcj0fkozk9g8nthvlm/vcomp140_9a591430f5.exe?rlkey=0xgg1d5j6z82vqoza68de1h3w&st=ou4pl9cg&dl=0*'
-      - '*http://91.92.242.236/files-129312398/files/file_274601599365ef96.exe*'
-      - '*http://cryptovectorhub1.lol/crypt/load/QW1.exe*'
-      - '*https://femade.co.uk/wp-content/uploads/QW1.exe*'
-      - '*http://hypercorevector4.lol/crypt/load/QW1.exe*'
-      - '*https://asdsocial.pt/WINWORD.zip*'
-      - '*https://pancar.lol/d/049e625ea690455ba545c97cf546fd8d*'
-      - '*https://pancar.lol/d/3c547dbeb28c4b8d937a771d0debff39*'
-      - '*https://pancar.lol/d/9077ca9a63a44186add67faed923847e*'
-      - '*https://pancar.lol/d/fb2232aa883b4a33ac3877a402c0126c*'
-      - '*http://91.92.242.236/files-129312398/files/file_e93516a8d03749ce.exe*'
-      - '*http://45.13.186.37/crypt/21-32/QW1.exe*'
-      - '*https://asdsocial.pt/vlc.zip*'
-      - '*https://gaiadeqi.com/stego_6qm9r3qt6m.png*'
-      - '*https://gaiadeqi.com/stego_175vvr0ken.png*'
-      - '*https://manita.lol/d/3c547dbeb28c4b8d937a771d0debff39*'
-      - '*https://manita.lol/d/fb2232aa883b4a33ac3877a402c0126c*'
-      - '*https://manita.lol/d/049e625ea690455ba545c97cf546fd8d*'
-      - '*https://manita.lol/d/9077ca9a63a44186add67faed923847e*'
-      - '*http://91.92.242.236/files-129312398/files/file_2dedd67a4922be21.exe*'
-      - '*https://kolpa.lol/d/fb2232aa883b4a33ac3877a402c0126c*'
-      - '*https://kolpa.lol/d/3c547dbeb28c4b8d937a771d0debff39*'
-      - '*https://kolpa.lol/d/9077ca9a63a44186add67faed923847e*'
-      - '*https://kolpa.lol/d/049e625ea690455ba545c97cf546fd8d*'
-      - '*https://plutotvshow.biz/exe/backup_svc-release.exe*'
-      - '*https://kee126.com/vlcc.zip*'
-      - '*https://practisingcertificateprotection.com/Installer_91473f.msi*'
-      - '*https://gaiadeqi.com/vlc3.zip*'
-      - '*https://kee126.com/vlc.zip*'
-      - '*https://gaiadeqi.com/vlc.zip*'
-  condition: selection
-level: high
-tags:
-  - attack.t1071
-  - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
 id: db046cfb-dea5-57cd-8f98-7b35c56d8500
@@ -110,6 +43,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://genovaw.com/dynamic?txd=001e07c934e19b9d10f621c6b7546b43b2fb1c7b8fce2625fc7b767dfb626336*'
       - '*https://thisisafalsepositive.st/cdn/e/*'
       - '*https://thisisafalsepositive.st/app.pyd*'
       - '*https://thisisafalsepositive.st/shard/*'
@@ -215,6 +149,71 @@ detection:
 level: high
 tags:
   - attack.t1555
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: bf9f0c07-fdcf-5e93-b032-b681d29af785
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_59dbbbed05710d63.exe*'
+      - '*https://www.dropbox.com/scl/fi/qqt7rovwn3ruglev5ea79/bundle.zip?rlkey=hq47jctwzehpmnm8lrw7gjvjm&st=g6t8sc7q&dl=1*'
+      - '*https://cloud-sharing.com/service.png*'
+      - '*http://193.178.158.107/2.8.exe*'
+      - '*http://193.178.158.107/2.exe*'
+      - '*https://loop-lumen.com/zxc/appex.zip*'
+      - '*https://loop-lumen.com/zxc/app.zip*'
+      - '*https://loop-lumen.com/zxc/apptwo.zip*'
+      - '*https://4eclient.com/assets/download/Client4E.jar*'
+      - '*http://107.189.27.223:3000/arm64*'
+      - '*http://107.189.27.223:3000/amd64*'
+      - '*http://87.120.104.147:8080/d/ibrowser*'
+      - '*https://www.dropbox.com/scl/fi/754hdidtogzkpc8s528x3/OffersThickness.exe?rlkey=dbsp3569wnfvhmt633aep6rgf&st=afaxokov&dl=1*'
+      - '*http://62.60.226.140/files/com/kliulij.exe*'
+      - '*https://www.dropbox.com/scl/fi/754hdidtogzkpc8s528x3/OffersThickness.exe?rlkey=dbsp3569wnfvhmt633aep6rgf&st=097j7cfs&dl=1*'
+      - '*https://www.dropbox.com/scl/fi/ba93r9ez5c00fap694aa6/bundle.zip?rlkey=mpxhfmkb4g2adcermiywlc115&st=9twn3jrx&dl=1*'
+      - '*https://fern-plume.com/curl/z203ezo8/zbxc4p9j8emx1yoy9x.txt*'
+      - '*https://node-slate.com/api/metrics/run?event=pasted*'
+      - '*https://fern-plume.com/zyeMb6slon_3VWVlkSkdiJurcyhY5cFNtchnavRnMgU/hiddenfix/update*'
+      - '*https://gaiadeqi.com/fires.png*'
+      - '*https://www.dropbox.com/scl/fi/b7zislagvz1s50bgpeiq2/bundle.zip?rlkey=q4dv3sn8vvlnhgl6pwecxyxyk&st=wqptx9k3&dl=1*'
+      - '*https://goododeqvip.com/Zoom-call.zip*'
+      - '*https://www.dropbox.com/scl/fi/wdamcj0fkozk9g8nthvlm/vcomp140_9a591430f5.exe?rlkey=0xgg1d5j6z82vqoza68de1h3w&st=ou4pl9cg&dl=0*'
+      - '*http://91.92.242.236/files-129312398/files/file_274601599365ef96.exe*'
+      - '*http://cryptovectorhub1.lol/crypt/load/QW1.exe*'
+      - '*https://femade.co.uk/wp-content/uploads/QW1.exe*'
+      - '*http://hypercorevector4.lol/crypt/load/QW1.exe*'
+      - '*https://asdsocial.pt/WINWORD.zip*'
+      - '*https://pancar.lol/d/049e625ea690455ba545c97cf546fd8d*'
+      - '*https://pancar.lol/d/3c547dbeb28c4b8d937a771d0debff39*'
+      - '*https://pancar.lol/d/9077ca9a63a44186add67faed923847e*'
+      - '*https://pancar.lol/d/fb2232aa883b4a33ac3877a402c0126c*'
+      - '*http://91.92.242.236/files-129312398/files/file_e93516a8d03749ce.exe*'
+      - '*http://45.13.186.37/crypt/21-32/QW1.exe*'
+      - '*https://asdsocial.pt/vlc.zip*'
+      - '*https://gaiadeqi.com/stego_6qm9r3qt6m.png*'
+      - '*https://gaiadeqi.com/stego_175vvr0ken.png*'
+      - '*https://manita.lol/d/3c547dbeb28c4b8d937a771d0debff39*'
+      - '*https://manita.lol/d/fb2232aa883b4a33ac3877a402c0126c*'
+      - '*https://manita.lol/d/049e625ea690455ba545c97cf546fd8d*'
+      - '*https://manita.lol/d/9077ca9a63a44186add67faed923847e*'
+      - '*http://91.92.242.236/files-129312398/files/file_2dedd67a4922be21.exe*'
+      - '*https://kolpa.lol/d/fb2232aa883b4a33ac3877a402c0126c*'
+      - '*https://kolpa.lol/d/3c547dbeb28c4b8d937a771d0debff39*'
+      - '*https://kolpa.lol/d/9077ca9a63a44186add67faed923847e*'
+      - '*https://kolpa.lol/d/049e625ea690455ba545c97cf546fd8d*'
+      - '*https://plutotvshow.biz/exe/backup_svc-release.exe*'
+      - '*https://kee126.com/vlcc.zip*'
+      - '*https://practisingcertificateprotection.com/Installer_91473f.msi*'
+      - '*https://gaiadeqi.com/vlc3.zip*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
