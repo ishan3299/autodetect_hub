@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious C2 - MalwareBazaar hashs - Chunk 1
+id: f74c7de3-963b-593e-bd64-3558c23b37ff
+status: experimental
+description: Detects traffic or activity related to known malicious hashs associated with C2 from MalwareBazaar (Chunk 1).
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - ' "27831a5b95bbc1fab82732019109d94feefcb31fa4c4815eeb7500ba702c174d"'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.MalwareBazaar
+---
 title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
 id: 104ff386-a1fa-5e67-9690-5c4f14c4b196
 status: experimental
@@ -7,6 +23,17 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_a5e8e5e66efca412.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_c82c6810cbdf3c97.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_2982ad6bdf52e489.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_3fc9ba533a47cf75.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_090cd82dad00b7da.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_5ebe78e0a7c9b38b.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_c5b0b8f9b84a1473.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_bd3665474a1d2a58.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_401ecb4eeac06f0a.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_4baa0479bd4beffe.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_d36e8415356c3199.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_4b1a3121a1c2313a.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_910c239586ba4cd8.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_7fbcdf1dd0742ab7.exe*'
@@ -120,17 +147,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_def37db2c5087baa.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_83a2a92978b8b2a2.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_44ef7cc8421220d0.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_a91ac6d4a7389993.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_dccbce95dc080534.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_aa509ab4dee7634e.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_273b8dff51cd4015.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_adad2e4ddbc81c70.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_5513ab74e8b43371.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_4ba1a9722212abed.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_4ce19bfafe018ff9.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_a34690cc683b0c1a.exe*'
-      - '*https://pawsockenjoyer.site/z7/webhook*'
-      - '*http://91.92.242.236/files-129312398/files/file_43c5f47d5fbe115a.exe*'
   condition: selection
 level: high
 tags:
