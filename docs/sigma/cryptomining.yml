@@ -7,15 +7,15 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "aa95b77b9d8e3181c6f3d6e378d3efb997860cc224694aee009a3e852060c753"'
+      - ' "171f60c9f73ab592d41bd157753577dcf2b417f5491bb0a994d9c914b75c6aaa"'
+      - ' "0b4b099960d2ba8813e3e3a628c896761ed50473bf334ce668238083f2846a30"'
+      - ' "69c01673a3591fb9355957d4f2212866e0e4859f2e0d4db890c7a9286b7a720d"'
+      - ' "b9f239f6670f52d74ed55d1fbe7ca02feca1387e7aacd329abbcd1cf114e2b7d"'
+      - ' "5d95b8284f79d3869ccf3ec5e3dd337cd7dda19d4eab8683b9bfe07a2187ca52"'
+      - ' "266c0b665fc36af7ea2683103e97e73c22cbeea08e632a1ac3f7091e6c758a52"'
       - ' "bb132deefafa15ba6af8e02b3a41dae6481d2e13a7ac97eea440a98ec211689d"'
       - ' "43b0976c0a5180ce722005b4ced952cc77988ed134675634621204767d017ae0"'
-      - ' "46fa26be6717553ade163809f26eb6f21357b64ebab3e92f53228fd38fe17b15"'
-      - ' "78326a703178e881d36881aef491401c041793aeb42e3eeb5d2560f8e04e8f21"'
-      - ' "4deb4bb9d51f4f2b5877e0317c5c53366b76d73f30b629029586403ffce071c6"'
-      - ' "b9fb7c4d7b12e27879677890d06c6fa3c3a406fe3b135636037682f92354b960"'
-      - ' "8015140e122ae353ca1866be74e36b67146c8ad80f9834b051b4eb293e3f1e1b"'
-      - ' "7cf2024df87ba1cb23e2db17b154ecd693318dd167a935467c86f57e57c88897"'
-      - ' "7618324f0ee19ea02ac6dd84246501c3de6a4e10d529c63a3a2ce224efd11f24"'
   condition: selection
 level: high
 tags:
@@ -31,6 +31,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://bratarfood.com/new/agents.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_4c013f24a00486f7.exe*'
       - '*https://royalcuts.co.uk/Chrome.exe*'
       - '*https://royalcuts.co.uk/3.exe*'
