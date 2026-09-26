@@ -8,7 +8,6 @@ detection:
   selection:
     hashes:
       - ' "f6e71c379e3c0b25b7be83b78f19e2950c8ee1dcc3829ca44b42099e4c9e194b"'
-      - ' "119a0c6959f126a8e6e2ff82ba597c95a00a2275858e03b62b110d60965bb3f3"'
   condition: selection
 level: high
 tags:
@@ -24,6 +23,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_86b5178fc3b9ab2f.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_370ffa2745f69715.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_9400e304c91d7dcd.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_0826276299131376.exe*'
@@ -135,13 +135,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_c1651781064790ad.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_e99b2c2df468a74c.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_f3ea087c77b1985f.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_b41995cf38e90365.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_8cbaad0bfeb607d1.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_324103a237439875.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_78e3bf48f47b45f3.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_1bb45bd969bb0ee8.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_22a97a4bdb05ca2e.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_ffb9af1a7b7b8747.exe*'
   condition: selection
 level: high
 tags:

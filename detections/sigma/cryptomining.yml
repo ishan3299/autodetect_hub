@@ -7,16 +7,18 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "dd37e789ab8c3788ed0b5899eff5fdcb7caf6265190d4ee643fbe0ec59eae7c2"'
+      - ' "655af29c787ad6a0fe47de5ec4d80900a52206ee710e18722a2780e874244cf1"'
+      - ' "f684c35a999317a0bcedfa8ff17f5ec653b00b97a5ae7befe50578c679c3dd82"'
+      - ' "b4fcedc6b983d17293163e7f39c5ee07493dac1317a1933b8b52290da691d541"'
+      - ' "715b07757808181b3b2046fe4c2f373049688ee41342c701aa99577241b252e5"'
+      - ' "97a76527d77d1d8e1f8a64ebdbccf60abc10220d1a8425ff48fd10a8f658b181"'
+      - ' "e15fb2adb1e7ce84b79ec511725abd2565274811d8d9c9bf6a689f90b9b7dce1"'
+      - ' "040cfbf765c7fa78ae099c6cbb5e6d03e6c65270d5dee136ee251310a402692d"'
+      - ' "d467a57c672c551c935d83efe195db10eaa476990cf9703c1daf446b5322f187"'
       - ' "2113df6dcbc5b7ec63ea4e50609dd5d210ffcaafe7d0f76ae99fe63ea970fbe6"'
       - ' "a3948d4628c764bd1408883bfc2990bb4432ce014455ff31ed5d47eecb8ef57e"'
       - ' "a151d3f4f2422531f30a843ffb35479596c86722bb103bdf8591105687f9b125"'
-      - ' "aa95b77b9d8e3181c6f3d6e378d3efb997860cc224694aee009a3e852060c753"'
-      - ' "171f60c9f73ab592d41bd157753577dcf2b417f5491bb0a994d9c914b75c6aaa"'
-      - ' "0b4b099960d2ba8813e3e3a628c896761ed50473bf334ce668238083f2846a30"'
-      - ' "69c01673a3591fb9355957d4f2212866e0e4859f2e0d4db890c7a9286b7a720d"'
-      - ' "b9f239f6670f52d74ed55d1fbe7ca02feca1387e7aacd329abbcd1cf114e2b7d"'
-      - ' "5d95b8284f79d3869ccf3ec5e3dd337cd7dda19d4eab8683b9bfe07a2187ca52"'
-      - ' "266c0b665fc36af7ea2683103e97e73c22cbeea08e632a1ac3f7091e6c758a52"'
   condition: selection
 level: high
 tags:
@@ -32,7 +34,9 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://fastsrunners.com/SecondRunner.exe*'
       - '*http://5.189.149.171/f/brute/m/.16_x86_64*'
+      - '*https://fastsrunners.com/Firstrunner.exe*'
       - '*https://bratarfood.com/new/agents.exe*'
       - '*https://bratarfood.com/new/microsoft.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_4c013f24a00486f7.exe*'
@@ -63,8 +67,6 @@ detection:
       - '*https://www.mediocasavolponi.com/wp-content/plugins/linux.bin*'
       - '*https://casasmediterraneas.com/wp-content/plugins/linux.bin*'
       - '*http://0x1x2x3.top/*'
-      - '*http://cta.edu.pe/wp-content/plugins/linux.bin*'
-      - '*https://cta.edu.pe/wp-content/plugins/linux.bin*'
   condition: selection
 level: high
 tags:
