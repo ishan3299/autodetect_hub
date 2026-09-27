@@ -7,18 +7,18 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "a83232c48043ec9954ac4349ddb6b89f926335545ba708e5e48095b9fa2af085"'
+      - ' "79be2d8fb508c158666f749dadecfd126eefa661f30fd34469ca4729d1307c48"'
+      - ' "4c6da38f097af893a122a7f24e2788a31a91c0d97b4ea24dab0aded0b97725a0"'
       - ' "dd37e789ab8c3788ed0b5899eff5fdcb7caf6265190d4ee643fbe0ec59eae7c2"'
       - ' "655af29c787ad6a0fe47de5ec4d80900a52206ee710e18722a2780e874244cf1"'
       - ' "f684c35a999317a0bcedfa8ff17f5ec653b00b97a5ae7befe50578c679c3dd82"'
       - ' "b4fcedc6b983d17293163e7f39c5ee07493dac1317a1933b8b52290da691d541"'
+      - ' "d5c33f17716a15178ec2bbe0e30271ed4b6652391a8ed085677ef2ad79864728"'
+      - ' "e482bb05fd3f02da69dc2df98077358c96bca532c77a53b87dd7b00732606cb0"'
       - ' "715b07757808181b3b2046fe4c2f373049688ee41342c701aa99577241b252e5"'
+      - ' "952b367479ae3ec09faffe692f597ed4c7a8de340742fddff000d0b79b586cfd"'
       - ' "97a76527d77d1d8e1f8a64ebdbccf60abc10220d1a8425ff48fd10a8f658b181"'
-      - ' "e15fb2adb1e7ce84b79ec511725abd2565274811d8d9c9bf6a689f90b9b7dce1"'
-      - ' "040cfbf765c7fa78ae099c6cbb5e6d03e6c65270d5dee136ee251310a402692d"'
-      - ' "d467a57c672c551c935d83efe195db10eaa476990cf9703c1daf446b5322f187"'
-      - ' "2113df6dcbc5b7ec63ea4e50609dd5d210ffcaafe7d0f76ae99fe63ea970fbe6"'
-      - ' "a3948d4628c764bd1408883bfc2990bb4432ce014455ff31ed5d47eecb8ef57e"'
-      - ' "a151d3f4f2422531f30a843ffb35479596c86722bb103bdf8591105687f9b125"'
   condition: selection
 level: high
 tags:
@@ -34,6 +34,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://5.189.149.171/f/b/m/.16_x86_64*'
       - '*https://fastsrunners.com/SecondRunner.exe*'
       - '*http://5.189.149.171/f/brute/m/.16_x86_64*'
       - '*https://fastsrunners.com/Firstrunner.exe*'
@@ -63,10 +64,6 @@ detection:
       - '*http://46.8.228.191/nuts/bolts*'
       - '*https://rabbitfuns.su/encrypted/1.zip*'
       - '*https://rabbitfuns.su/main/powershell.exe*'
-      - '*https://cloud.calltop.com.br/apps/web/linux.bin*'
-      - '*https://www.mediocasavolponi.com/wp-content/plugins/linux.bin*'
-      - '*https://casasmediterraneas.com/wp-content/plugins/linux.bin*'
-      - '*http://0x1x2x3.top/*'
   condition: selection
 level: high
 tags:
@@ -100,7 +97,6 @@ detection:
     c-uri:
       - '*http://79.137.203.132/2*'
       - '*http://79.137.203.132/3*'
-      - '*http://puschl.langhaar-schaeferhunde.com/plugins/linux.bin*'
   condition: selection
 level: high
 tags:
