@@ -1,3 +1,19 @@
+title: Detect Activity to Known Malicious C2 - MalwareBazaar hashs - Chunk 1
+id: f74c7de3-963b-593e-bd64-3558c23b37ff
+status: experimental
+description: Detects traffic or activity related to known malicious hashs associated with C2 from MalwareBazaar (Chunk 1).
+logsource:
+  category: process_creation
+detection:
+  selection:
+    hashes:
+      - ' "238640490dd15b89693845aefd1bb9d8871b076888c8548d5e7a339384a771d2"'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
+  - source.MalwareBazaar
+---
 title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
 id: 104ff386-a1fa-5e67-9690-5c4f14c4b196
 status: experimental
@@ -7,6 +23,12 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_54b07063281d1e70.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_b11db1d33826a6ce.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_99e847e18b97b555.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_6d2a0c8ebb57bccf.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_7ccd3cb78022267d.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_3bd14e86e2f31680.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_16077168462e2e06.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_35e02d7e656e490b.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_988540e8dd750c89.exe*'
@@ -109,21 +131,26 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_7bce60f501d04523.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_4c685dc091836067.msi*'
       - '*http://91.92.242.236/files-129312398/files/file_6f0c556e64bed100.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_5f93378efbf927ff.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_fe068c2e35dc5fe2.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_05fc66617b4cf344.exe*'
-      - '*https://trekworkshop3.com/2kqYRM0DCrnyJgoS4gVLl_FHDRRdTUhGCbjyuYwpZ6c/oo9/update*'
-      - '*https://render-6.com/api/metrics/run?event=pasted*'
-      - '*http://91.92.242.236/files-129312398/files/file_490864d3c4fc90b0.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_11a1c2440860de6c.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_e95eb484307304f7.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_2db73cc8bb6d69ff.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_3ddb7fbc2d6a04f1.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_e3dd7c9b3b092db4.exe*'
   condition: selection
 level: high
 tags:
   - attack.t1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
+id: bfb94cfe-ff84-53e2-821f-23ba0161a011
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with C2 from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://178.16.52.239:8080/agent.bin*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1

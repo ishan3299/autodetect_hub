@@ -7,32 +7,30 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "580900e5f4412f9f870fd05bb4a04a670958ba7773125a050be3619a64fb4a9f"'
+      - ' "64cda43078cffa6fdb57aa81bc0ca7283b131256067d8c0ccf1a45d7ba1fed64"'
+      - ' "b312ef44bca34f2186177d9a6c8da06834d2748586ed5aa757d300c36d37acf2"'
+      - ' "14eb0014c4b6af1026338b727713a510ed1f27eedef54af226cc70bec400bc3a"'
+      - ' "6d4b00de11cb8d5676b923163a7ed1a62b6065356d5cd66df2ba000fb6c9841e"'
+      - ' "72e540c3f9aaf67b471b3024ea4df294bcff28bea7fc8fc17395ad04ca39b285"'
+      - ' "aa5c03921d458df42599e6b2e10c5b147ae923612ace28327779fe3d6d0fcc88"'
+      - ' "1e0ac51efe155666db9b97df05b25d2d0d01acaa16d13e2ca476069d1bb96c78"'
+      - ' "9b0a0e395124d4a68c37fe1b7b749c07eb324bba183435ce67e1e6faef2bd685"'
       - ' "e1c289d5b8dcab62f8dad6179bf64ef621b6931de3aafb451a68a8a6cb7c2a7f"'
       - ' "55c057f52baa94b22c7d8c41b664f7bcf9217739e3fe0fc005f621755de5aa67"'
       - ' "52a63c6f9984abd5b875202df2f39751cbd7f0d4d55ee69b39bd8765148b48db"'
       - ' "35e802df50b732303c61aabee07689ef07f41751b9ea3800eb4dfc1aea8a12ad"'
+      - ' "15ffd51e38471d043bb3de196d8d2d73e1b195a6e1429a7a9f0f2fc0a9fc6512"'
+      - ' "225d488ce7121f43568e50d039fefa3cbbafd79a59fe99e4dfdd2b14433731eb"'
+      - ' "0209099939ef87a673e8a072e925acdfdbcb09eba15f03a78749a73c4db88f2a"'
+      - ' "610857af952e182cfc25c9cf9dc563008821a4a6713023d0b8dea08645922846"'
+      - ' "6e72c96a2c55be01bf76c75bfb743770fc3897d5301e72bd42e0074a9bf5cca0"'
       - ' "787c391b92b8de0a2c042ba80b15afb343762db51af5f984f9cfd2f6ec3d3686"'
       - ' "73527375771c4209cae8f792e388df03c5c579b1711623226c27e89ca3dc1371"'
       - ' "542e717bccd20782b2d33641ba41777bebc59916baac5f0587bdbb13640257d0"'
       - ' "a8e9be14f25f61b1eea9ca9b4ed56df0420ada7fde57f6ea0f1bdad5c0362e94"'
       - ' "f8e3b4b81fe1eb109ff7c7e1f295f6472e355a1a05d487516d14e275ccb5b3e0"'
       - ' "876d5ae53f8573bfa330afbd182879bc1b4d7c66d067b1bb49a5216ee7e2dec6"'
-      - ' "d12968c99af8b54320593d5574e160856112c442ec7a39fb55672f3849bddb87"'
-      - ' "1b0e6747fa9cc5e0a6befc9fb66e66f8d935e46f6942bc723d3d0b780b546303"'
-      - ' "adba87668dd2d3be5c87672d8ce97105e0363a2d70f1c529a7a47b9701a2443b"'
-      - ' "29b6b2c34c162766ffee91d9ed69e0425ac905c1d3083e1ba5216a43f0a068ec"'
-      - ' "5d623da3f87ddfd80e485ff2c0af68cc66e63b454024101d5287e0af610fa0dd"'
-      - ' "167aad075173bd158d6a249d6f7f0f2037e78c3423aa3cd5286bcf6b87727b37"'
-      - ' "317e165bf4375693266bd960af36be0cd921c904b5801bbe77a574891ca577bc"'
-      - ' "a0ae1d6adf7d46298c5b18e888accc4d9edbf31aa85b5a01330e2593aadab51f"'
-      - ' "e3a5b8e3adb395bca58d008c96319acc9834dceded5db722bfb32fd816fc3872"'
-      - ' "3972463dd46be677e12f76b58a8c00fd5c00856522442360a1c91a6ee7a52c7d"'
-      - ' "146d14867b448876ca823c0902ee4a3689282d0a4b5b9df15633d85c9f4c782f"'
-      - ' "2e770af3d707c8c1b3bf157ab6d540c1d7e1044ddb0175bde03c35d1b955558b"'
-      - ' "5526c38e200565565c8cdb97611f8b1bdbdc18b1dbe3d148c981248c530e50f8"'
-      - ' "b083df8c6bc1f8129547a16b1d0636d81761ab9829fe523add12486196c9c4bd"'
-      - ' "f6f9259f4f0a13d736a9a250590b9ed1b6fcd0835be3814636ed9dda624e2e6a"'
-      - ' "b24cb5bd4cc125fd92d9fa8301d23012fcbbb9b7962ebb7cbcd3f932854b7ca7"'
   condition: selection
 level: high
 tags:
@@ -48,6 +46,9 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://astraluxclient.com/downloads/Astralux-1.21-26.2.jar*'
+      - '*https://ahsniper.org/AH-Sniper-26.2.jar*'
+      - '*https://xenonclient.com/downloads/Client-Xenon-1.21-26.2.jar*'
       - '*https://cdn.discordapp.com/attachments/1553780125030424750/1553780214054785096/meteor-reject-addon-1.21.11.jar?ex=6aba7e16&is=6ab92c96&hm=cb5ef3ea8d991549e1effee5c702c5c2961a5bb56b93173f720b68bbd0049d85&*'
       - '*http://192.162.199.249/ujnyyodzjazt2491*'
       - '*https://capricecapitalpartners.com/curl/b54cc90c9143f757e0ac59356414f14447d5f9cbbae0b0e61cf6b4e8ced28f42*'
@@ -201,6 +202,13 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://193.178.158.107/bin/ecc62121644fcfdc_binder_8uKp3zht.exe*'
+      - '*https://www.dropbox.com/scl/fi/r242bi41u0eg3d24imp2n/Wizard-Witch.zip?rlkey=b0u3hnaut4pk81vas0iqxcq6r&st=jmggy90z&dl=1*'
+      - '*https://rabbids.cc/encrypted/7za.exe*'
+      - '*https://rabbids.cc/start.php*'
+      - '*https://rabbids.cc/end.php*'
+      - '*https://rabbids.cc/screen.php*'
+      - '*https://rabbids.cc/encrypted/1.zip*'
       - '*https://gitlab.com/code-academy-group2/deneme/-/raw/main/nyxpublic-portable.exe*'
       - '*https://www.dropbox.com/scl/fi/tfv8n83rdc0n8rgzp5fsc/setup.exe?rlkey=qvb9d324uhm8pn4kc8n9xvqpu&st=lefu3ere&dl=1*'
       - '*https://31.shaderzone.org/shaderzone%20latest.zip*'
@@ -251,11 +259,40 @@ detection:
       - '*https://gaiadeqi.com/fires.png*'
       - '*https://www.dropbox.com/scl/fi/b7zislagvz1s50bgpeiq2/bundle.zip?rlkey=q4dv3sn8vvlnhgl6pwecxyxyk&st=wqptx9k3&dl=1*'
       - '*https://goododeqvip.com/Zoom-call.zip*'
-      - '*https://www.dropbox.com/scl/fi/wdamcj0fkozk9g8nthvlm/vcomp140_9a591430f5.exe?rlkey=0xgg1d5j6z82vqoza68de1h3w&st=ou4pl9cg&dl=0*'
   condition: selection
 level: high
 tags:
   - attack.t1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: b3b10d76-9fc8-59c2-81cb-735b63c24d5e
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://trust-soft.cc/encrypted/update.ps1*'
+      - '*https://raw.githubusercontent.com/19875567137/FCCC8F-62-3C-61D48-4E/refs/heads/main/80-7314*'
+      - '*https://raw.githubusercontent.com/19875567137/FCCC8F-62-3C-61D48-4E/refs/heads/main/C0-6E-FB-C5ECE972-77-7BF2*'
+      - '*https://cdn.jsdelivr.net/gh/19875567137/FCCC8F-62-3C-61D48-4E/80-7314*'
+      - '*https://raw.githubusercontent.com/34-19-44r/573-45-43cvi/refs/heads/main/AC-BC-FB-E2-30-46*'
+      - '*https://raw.githubusercontent.com/34-19-44r/B8-F6-52-48-95-90203C-B2-29-4A-A9/refs/heads/main/B0-FF-E3-4F-63-6*'
+      - '*https://raw.githubusercontent.com/34-19-44r/B8-F6-52-48-95-90203C-B2-29-4A-A9/refs/heads/main/FC-50-91-D0-A2*'
+      - '*https://raw.githubusercontent.com/34-19-44r/573-45-43cvi/refs/heads/main/F0-5C-43-35-F5-FA*'
+      - '*https://cdn.jsdelivr.net/gh/34-19-44r/B8-F6-52-48-95-90203C-B2-29-4A-A9/B0-FF-E3-4F-63-6*'
+      - '*https://cdn.jsdelivr.net/gh/48-689100-172-171440/447477315432/61442229125*'
+      - '*https://raw.githubusercontent.com/48-689100-172-171440/708C-BB-236A/refs/heads/main/AC-03E9-C3-91BB*'
+      - '*https://raw.githubusercontent.com/48-689100-172-171440/447477315432/refs/heads/main/447264906919*'
+      - '*https://raw.githubusercontent.com/48-689100-172-171440/447477315432/refs/heads/main/61442229125*'
+      - '*https://raw.githubusercontent.com/48-689100-172-171440/708C-BB-236A/refs/heads/main/78-2106B1-D6C1*'
+      - '*https://wwalucircle.com/wp-admin/crypted.ps1*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.001
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
@@ -295,35 +332,6 @@ detection:
 level: high
 tags:
   - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: b3b10d76-9fc8-59c2-81cb-735b63c24d5e
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://raw.githubusercontent.com/19875567137/FCCC8F-62-3C-61D48-4E/refs/heads/main/80-7314*'
-      - '*https://raw.githubusercontent.com/19875567137/FCCC8F-62-3C-61D48-4E/refs/heads/main/C0-6E-FB-C5ECE972-77-7BF2*'
-      - '*https://cdn.jsdelivr.net/gh/19875567137/FCCC8F-62-3C-61D48-4E/80-7314*'
-      - '*https://raw.githubusercontent.com/34-19-44r/573-45-43cvi/refs/heads/main/AC-BC-FB-E2-30-46*'
-      - '*https://raw.githubusercontent.com/34-19-44r/B8-F6-52-48-95-90203C-B2-29-4A-A9/refs/heads/main/B0-FF-E3-4F-63-6*'
-      - '*https://raw.githubusercontent.com/34-19-44r/B8-F6-52-48-95-90203C-B2-29-4A-A9/refs/heads/main/FC-50-91-D0-A2*'
-      - '*https://raw.githubusercontent.com/34-19-44r/573-45-43cvi/refs/heads/main/F0-5C-43-35-F5-FA*'
-      - '*https://cdn.jsdelivr.net/gh/34-19-44r/B8-F6-52-48-95-90203C-B2-29-4A-A9/B0-FF-E3-4F-63-6*'
-      - '*https://cdn.jsdelivr.net/gh/48-689100-172-171440/447477315432/61442229125*'
-      - '*https://raw.githubusercontent.com/48-689100-172-171440/708C-BB-236A/refs/heads/main/AC-03E9-C3-91BB*'
-      - '*https://raw.githubusercontent.com/48-689100-172-171440/447477315432/refs/heads/main/447264906919*'
-      - '*https://raw.githubusercontent.com/48-689100-172-171440/447477315432/refs/heads/main/61442229125*'
-      - '*https://raw.githubusercontent.com/48-689100-172-171440/708C-BB-236A/refs/heads/main/78-2106B1-D6C1*'
-      - '*https://wwalucircle.com/wp-admin/crypted.ps1*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.001
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
