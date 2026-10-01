@@ -1,19 +1,3 @@
-title: Detect Activity to Known Malicious C2 - MalwareBazaar hashs - Chunk 1
-id: f74c7de3-963b-593e-bd64-3558c23b37ff
-status: experimental
-description: Detects traffic or activity related to known malicious hashs associated with C2 from MalwareBazaar (Chunk 1).
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - ' "238640490dd15b89693845aefd1bb9d8871b076888c8548d5e7a339384a771d2"'
-  condition: selection
-level: high
-tags:
-  - attack.t1071
-  - source.MalwareBazaar
----
 title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
 id: 104ff386-a1fa-5e67-9690-5c4f14c4b196
 status: experimental
@@ -23,6 +7,9 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_d259ea289eb720b7.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_d704a83d08416a2d.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_53f26aa255487411.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_8dd2a784afa6276e.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_ad6ea8ff7c86f0ad.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_7c23b7b64f4c1870.exe*'
@@ -124,11 +111,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_30391bd0ced7aa24.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_99ca2fbc6ab75394.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_c6efa638173b6442.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_37d17c54c9f9f26a.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_01625d1c89de2be0.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_09b356d3e83b6e17.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_6c797bbd62211662.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_7f00be6bc9c7ba59.exe*'
   condition: selection
 level: high
 tags:
