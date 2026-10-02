@@ -7,12 +7,12 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "24ebacb015c19d6f4b40cda0a72eebdc4a7ef2390d81c3f7e2684230208e2c6d"'
+      - ' "02e475facaba8ced8cd00115c9bfef5888a42e6582414280f4e3a42ed5c2bdfb"'
+      - ' "a9d7b4dee8384b84b8ee0924837d746990853b3b7b26c3d261a3f1c30964a947"'
+      - ' "1e3bc11e2a8404619ca6b092555233fb41b889a88900ff50e440e9b9d6782666"'
+      - ' "0105b8528e478ccf1bee1d5bcb5c2cd814efa95664b6f4b12dd8a6df37f63475"'
       - ' "38545e8c5d9f98af07de3dc037e2a50ada7a57d3ef43281f946e3087ffd357b2"'
-      - ' "30c8e1a601a73a6ad520431797be88e65483983eda23af10d8210ce0c77216e2"'
-      - ' "3a98d48c9346e330c7eaccdd25d231e735958f5029e7756b2f9deec75b8125f2"'
-      - ' "c7c541e012ff4ded471bf15b45a20836bf6eb3693f2c656760912e4a2856e5aa"'
-      - ' "d506d5569974f911f97170eb6182ae849214bdff51f6ed59d885e4d0a0e276a8"'
-      - ' "268ae71bdcefaaa418cb42efcf0f6a3b828e233eca3cb55faa666058d9e6651b"'
   condition: selection
 level: high
 tags:
@@ -28,6 +28,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://176.65.139.160/pid.mipsel*'
       - '*https://github.com/clearretent/valley9/releases/download/latest/google.exe*'
       - '*https://fussionmd.com/google.exe*'
       - '*https://grupocaprem.com/google.exe*'
@@ -64,7 +65,6 @@ detection:
       - '*http://8.209.229.51:7777/a*'
       - '*http://46.8.228.191/nuts/poop*'
       - '*http://46.8.228.191/nuts/bolts*'
-      - '*https://rabbitfuns.su/encrypted/1.zip*'
   condition: selection
 level: high
 tags:

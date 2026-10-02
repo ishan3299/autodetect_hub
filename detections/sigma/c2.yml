@@ -1,4 +1,31 @@
 title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
+id: bfb94cfe-ff84-53e2-821f-23ba0161a011
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with C2 from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://c2.teamzeroday.net/bin/manta.ppc*'
+      - '*http://c2.teamzeroday.net/bin/manta.armv7l*'
+      - '*http://c2.teamzeroday.net/bin/manta.arc*'
+      - '*http://c2.teamzeroday.net/bin/manta.sh4*'
+      - '*http://c2.teamzeroday.net/bin/manta.m68k*'
+      - '*http://c2.teamzeroday.net/bin/manta.mipsel*'
+      - '*http://c2.teamzeroday.net/bin/manta.aarch64*'
+      - '*http://c2.teamzeroday.net/bin/manta.mips*'
+      - '*http://c2.teamzeroday.net/bin/manta.i686*'
+      - '*http://c2.teamzeroday.net/bin/manta.x86_64*'
+      - '*http://c2.teamzeroday.net/bin/manta.armv6l*'
+      - '*http://178.16.52.239:8080/agent.bin*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
 id: 104ff386-a1fa-5e67-9690-5c4f14c4b196
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with C2 from URLhaus (Chunk 1).
@@ -7,6 +34,10 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_243e9ba790e9d781.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_6911193341ae26d7.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_f374c4d0079d076f.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_24ed2cf4c7e68a80.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_d259ea289eb720b7.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_d704a83d08416a2d.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_53f26aa255487411.exe*'
@@ -115,22 +146,6 @@ detection:
 level: high
 tags:
   - attack.t1071
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
-id: bfb94cfe-ff84-53e2-821f-23ba0161a011
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with C2 from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://178.16.52.239:8080/agent.bin*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
