@@ -7,12 +7,24 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "8d209aee6191f695790fe2a6d6fdd468b34c6076851e5c02d042d38b031fd2e5"'
+      - ' "39a0531b67b59324fc98081cdc37472b6623a3f21c3f4913417e44b9afc1c9f9"'
+      - ' "1c127286e65a26a8a62486337e92cc8b424beb091ec0c528de451a69abae12d0"'
+      - ' "b7b3a64ce47ca07a42d85a47c5b449596c60681ea9b5670d62d2727993cb13db"'
+      - ' "69783eb318e400d57b9e5eeed561f62ef711e15aa7afa3fd925a3d663c291633"'
+      - ' "f9260682a0ea1fa1d477e28a2580c93f5537bdc5d263e4801b1f7d4221af6377"'
+      - ' "1321d57d681afe77a1c3c68fd698123f9a6fdb08fb27507df1d4a7c011164bba"'
+      - ' "3ea15dafb800d3181d230e227623055a863c03ec8045ab96565a95f9ac057156"'
+      - ' "8fd5f4249f5cc9d7d33ed7679c0b78a5b269d82d2bc7bf3014f19fbff8d4d660"'
       - ' "24ebacb015c19d6f4b40cda0a72eebdc4a7ef2390d81c3f7e2684230208e2c6d"'
+      - ' "9dbeb21f4052803456605326333dd5512f604fdb88a6eb85d0a1e675d094df58"'
+      - ' "341a2560f421a0727296cc6749d28be34f1c9c4a5f08d50b58a5c68a7e617581"'
+      - ' "fc6f8ae5f64e4f17481f7e3be29a1c56949f216a998414188003eae1db20c9e5"'
+      - ' "60722200233e01971fb36a1737929fa6c6a36e4bb9cc8378d8071c484d579813"'
+      - ' "e0f6f3de0f1122c31b2e443bb6e855ffeda844dec04d4dcfc6aa9922b74a185d"'
       - ' "02e475facaba8ced8cd00115c9bfef5888a42e6582414280f4e3a42ed5c2bdfb"'
       - ' "a9d7b4dee8384b84b8ee0924837d746990853b3b7b26c3d261a3f1c30964a947"'
       - ' "1e3bc11e2a8404619ca6b092555233fb41b889a88900ff50e440e9b9d6782666"'
-      - ' "0105b8528e478ccf1bee1d5bcb5c2cd814efa95664b6f4b12dd8a6df37f63475"'
-      - ' "38545e8c5d9f98af07de3dc037e2a50ada7a57d3ef43281f946e3087ffd357b2"'
   condition: selection
 level: high
 tags:
@@ -28,6 +40,10 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://176.65.139.160/xmrig-x86*'
+      - '*http://176.65.139.160/xmrig-aarch64*'
+      - '*http://176.65.139.160/xmrig-x64*'
+      - '*http://176.65.139.160/xmrig-arm*'
       - '*http://176.65.139.160/pid.mipsel*'
       - '*https://github.com/clearretent/valley9/releases/download/latest/google.exe*'
       - '*https://fussionmd.com/google.exe*'
@@ -63,8 +79,6 @@ detection:
       - '*http://13.71.2.244/.x/x*'
       - '*http://85.121.177.134/check3.sh*'
       - '*http://8.209.229.51:7777/a*'
-      - '*http://46.8.228.191/nuts/poop*'
-      - '*http://46.8.228.191/nuts/bolts*'
   condition: selection
 level: high
 tags:

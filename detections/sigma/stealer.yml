@@ -7,11 +7,21 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "4d8efc4528dd2088d72c68fa693ea22a2fc5946820aab9745ed77f85fa9265d4"'
+      - ' "049b268f6fe7dee81651ff0d3ddc72b205f465c9aba3e57e9222fe9c5eadff88"'
+      - ' "ab4e43a86948ffd778d81c5fc8d8d0b620d7d4cab09f659140715279a3be0da3"'
+      - ' "8ffc11c33ccb65ae85034ac9987a0e036acd0d05905f1a4383d525eead2bb65f"'
+      - ' "46481545f1141b6fa5b5a52081e09c9c8307c7b44df8ce15dacbbda1d0ac623d"'
+      - ' "a8986d143b465f2c556c69288d118c46255ee45002f8e73fa9d133e121b6425c"'
+      - ' "04121f81feba7762419689606f3af143e42ac86ea04b246168ac0420bfc5f797"'
+      - ' "496e9cba913e2bf5a44e973588ed07fa7be643c25b9d648f8ad11cf313389fd5"'
+      - ' "1dfa0aa6156e456259d0dc960b76f7c20549da845a6b3452d9cd93a53684065b"'
+      - ' "f08967cdbdb0e00f35378885142dc5a33f305791496ab4977384050fcf8e3571"'
+      - ' "2f8b6743a72bc342f8fea9b2e04937357879c43142c4a641fa70bccb358b401d"'
       - ' "029b9627303993756e3a7006c0ef7420a18fac1f43b11cf1e5b293a3197e94ae"'
       - ' "c7b9cb808566af4dffaee645076ff5d9250d8977181398b7a95fbffb007b7529"'
       - ' "5cdae59b266a4b2c3366a249470005a1f44ab6fc6ffd3a9be3530a82a409a0f1"'
       - ' "0a0bb00159b1e32ee075cc3bf08e9176a5f2c83dec1f0ce151662e2b2f0c478d"'
-      - ' "9dbeb21f4052803456605326333dd5512f604fdb88a6eb85d0a1e675d094df58"'
       - ' "cb64af23245fa7b9d9b9718ab456887d636b5fdfcf56a900a0e256f9faef5097"'
       - ' "cdba0c78aaf8293ceb8455b146b2df98a8fd9d1f478d28cea36e9907072528f8"'
       - ' "e35e513c61e3035adf744076de76ebd2be1c43617f73ef18abbf6079b9277a3c"'
@@ -34,59 +44,11 @@ detection:
       - ' "08f817d399bbad41fac3eee9a4df7c83b9eb30208b2aa55b69b05b0413c92ecc"'
       - ' "c045bf047c6be4c65eb82057b74dba95b76b68c6ea049c1ca882857b12d0b5b6"'
       - ' "80bd71812ea7c35634f5f590d80ebdba1ea9f882e8691e9854b9b62916ee4f25"'
-      - ' "a8ed949b21b7319d39204965112d61b9f695d9cf1f9fb17e1394e54a08dfdd16"'
-      - ' "9a7c336c943bc92bf20bc698417653eb12a039f2a5b56bd1a12396ca99209b5b"'
-      - ' "7249645e4a67c27fdfc0bafc578738317a32f77dde58db036bf74188b51a4623"'
-      - ' "34f86ec0a8db25c19512624b84257010ba0544eaada6b1b73eab4d742b94003b"'
-      - ' "b96f8cd6149f95feb16c5e62e267405876536ab531ce815879c54f082d8a992b"'
-      - ' "ef5a032ba5b84575f800c9836e13d3a8f0ed39e3363408709ebb0c5455720d24"'
-      - ' "1539a493742b5f0038bb7823805edb64515ce6305197e268fbb75ca0ec340424"'
-      - ' "2eed7668091e52ef42e4df7e4c4847861426b7896fc36ddda43c20bdea107ede"'
-      - ' "ee610b0c78983cf0c67f8fc1bf52185d78af3e201ec06f9d070c81c005fbd1a1"'
-      - ' "bc25fad622b654cbdf2306624ce754873fb12607aca89a08960bb5ebcbaaecb7"'
-      - ' "874754f39eb9adbcfeabe8bd8ed2f0e65dd44c61c3a0232a327b5cbaeb36671a"'
-      - ' "655c055da119031d5095408258589fb2a4d9e5c3f92d605e11a2b7f2458a1ad8"'
-      - ' "51a371c23d6bb298259d5cd10f8bd86b16e992a9d80c107a69eaa60e2bc793a3"'
-      - ' "7b2a40d5a916e5c0948bdb02774000ee9fec4e5bf345872ced0ad847de6fca25"'
-      - ' "3fe727bd44765a017bc9ed5032d139ea3073d5886ab2e48bf3e8a1b9a3be8753"'
-      - ' "b3217ca3543005ea9d318cda4abdc79af8079d9e1cd60c38e9c042bd8c0b6469"'
-      - ' "4e56f25f85c6c72ef03efe82a789895feb19990710ca2f7b39b1afa0f6b7e42f"'
-      - ' "0ed5f89495d323094e05eb354a5822dd0c37a17488fccacff5c0280b3b461c62"'
-      - ' "3c2d602ddfa3fb7fdc5aedc735a07cab7ee70a77e739070538d03dca17cd579d"'
-      - ' "5e1e89aa6a72d7aeb2f6c710e0a7f0c673377f088cb187e8623b8a60d5be8792"'
   condition: selection
 level: high
 tags:
   - attack.t1071
   - source.MalwareBazaar
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: 11222940-a0cf-5f6e-9763-86631cdc6af2
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://204.44.69.243/95/img_051422.png*'
-      - '*http://198.23.177.220/img/1.jpg*'
-      - '*http://107.172.209.126/img/3.jpg2*'
-      - '*https://6ab746fb57212ca6e1e7b121.imgix.net/img_142142.png*'
-      - '*https://res.cloudinary.com/tll9jvom/image/upload/v1789365255/img_075247.jpg*'
-      - '*https://dinamikakargo.com/.well-known/new/img_onyix.png*'
-      - '*https://lively-fog-af49.pablosoftwareplus.workers.dev/VXcvQ*'
-      - '*https://res.cloudinary.com/sxajd38y/image/upload/v1788742357/img_024933.jpg*'
-      - '*https://lively-fog-af49.pablosoftwareplus.workers.dev/haOzF*'
-      - '*https://lively-fog-af49.pablosoftwareplus.workers.dev/Lijvd*'
-      - '*https://res.cloudinary.com/a9owl0wo/image/upload/v1788508965/img_100122.jpg*'
-      - '*https://res.cloudinary.com/dqeusemd/image/upload/v1788331463/img_084254.jpg*'
-      - '*https://lively-fog-af49.pablosoftwareplus.workers.dev/odOdv*'
-  condition: selection
-level: high
-tags:
-  - attack.t1027.003
-  - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
 id: bf9f0c07-fdcf-5e93-b032-b681d29af785
@@ -97,6 +59,8 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_838a0bfd231e7a20.exe*'
+      - '*https://prestige-client.live/downloads/PrestigeSetup_pw1337.zip*'
       - '*https://rough-truth-e072.publicftpresend.workers.dev/jbkotwo*'
       - '*https://tutpaste.com/raw/CPviFs*'
       - '*https://www.dropbox.com/scl/fi/x9gnmtm9tfxtgeo35p8pc/input.jar?rlkey=6mu0iic48blnbtwsp757xucq0&st=ei9tukhs&dl=1*'
@@ -163,37 +127,6 @@ tags:
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: ebe57f60-46c3-5544-84b3-766b112c260a
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://localfiles.live/download_raw/zggkJd3KnVdogmmO/java.exe*'
-      - '*http://185.166.155.141:5001/one.exe*'
-      - '*http://185.166.155.141:5001/optimal.exe*'
-      - '*http://185.166.155.141:5001/ufrop.exe*'
-      - '*http://94.154.43.253/bot_x86.exe*'
-      - '*http://193.178.158.107/bin/b672b8beeed12e81_build_x64.exe*'
-      - '*http://45.86.62.54/Setup.exe*'
-      - '*http://172.86.84.161/update.exe*'
-      - '*https://uno-play.xyz/download/uno-setup-1.0.0.exe*'
-      - '*https://startvsgame.com/secondfast.exe*'
-      - '*https://abilityindisabilityindia.org/rock.exe*'
-      - '*https://api.vexxuhq.site/download/*'
-      - '*https://abilityindisabilityindia.org/wewe.exe*'
-      - '*https://gaiadeqi.com/scrapbookpocketfordraf.exe*'
-      - '*https://togethers.tv/Togethers.exe*'
-      - '*https://theservice4u.com/install/sarafina.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
 id: db046cfb-dea5-57cd-8f98-7b35c56d8500
 status: experimental
 description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
@@ -202,6 +135,24 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://raw.githubusercontent.com/niehgns/clients/main/goobaclient-1.21.11.jar*'
+      - '*https://raw.githubusercontent.com/niehgns/clients1/main/zyronclient-1.21.11.jar*'
+      - '*https://downloader.exeexe.workers.dev/a1b2c3*'
+      - '*https://downloader.exeexe.workers.dev/u4i7o1*'
+      - '*https://downloader.exeexe.workers.dev/n7m3q6*'
+      - '*https://downloader.exeexe.workers.dev/r2t5y8*'
+      - '*https://raw.githubusercontent.com/niehgns/clients2/main/67client-1.21.11.jar*'
+      - '*https://downloader.exeexe.workers.dev/l8z2x5*'
+      - '*https://downloader.exeexe.workers.dev/q7w8e9*'
+      - '*https://downloader.exeexe.workers.dev/z8y7w6*'
+      - '*https://raw.githubusercontent.com/niehgns/clients2/main/kryptonclient-1.21.11.jar*'
+      - '*https://downloader.exeexe.workers.dev/h1j4k7*'
+      - '*https://raw.githubusercontent.com/niehgns/clients2/main/4eclient-1.21.11.jar*'
+      - '*https://raw.githubusercontent.com/niehgns/clients2/main/radiumclient-1.21.11.jar*'
+      - '*https://raw.githubusercontent.com/niehgns/clients2/main/xenonclient-1.21.11.jar*'
+      - '*https://raw.githubusercontent.com/niehgns/clients2/main/frostclient-1.21.11.jar*'
+      - '*https://raw.githubusercontent.com/niehgns/clients1/main/dqrkisclient-1.21.11.jar*'
+      - '*https://raw.githubusercontent.com/niehgns/clients/main/fakepayclient-1.21.11.jar*'
       - '*https://pokegard.com/PokeLauncher.zip*'
       - '*https://pokegard.com/PokegardModpack.zip*'
       - '*https://xaerosminimap.com/xaerosminimap-fabric-1.21.4.jar*'
@@ -382,6 +333,62 @@ detection:
 level: high
 tags:
   - attack.t1555
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: 11222940-a0cf-5f6e-9763-86631cdc6af2
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://204.44.69.243/95/img_051422.png*'
+      - '*http://198.23.177.220/img/1.jpg*'
+      - '*http://107.172.209.126/img/3.jpg2*'
+      - '*https://6ab746fb57212ca6e1e7b121.imgix.net/img_142142.png*'
+      - '*https://res.cloudinary.com/tll9jvom/image/upload/v1789365255/img_075247.jpg*'
+      - '*https://dinamikakargo.com/.well-known/new/img_onyix.png*'
+      - '*https://lively-fog-af49.pablosoftwareplus.workers.dev/VXcvQ*'
+      - '*https://res.cloudinary.com/sxajd38y/image/upload/v1788742357/img_024933.jpg*'
+      - '*https://lively-fog-af49.pablosoftwareplus.workers.dev/haOzF*'
+      - '*https://lively-fog-af49.pablosoftwareplus.workers.dev/Lijvd*'
+      - '*https://res.cloudinary.com/a9owl0wo/image/upload/v1788508965/img_100122.jpg*'
+  condition: selection
+level: high
+tags:
+  - attack.t1027.003
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: ebe57f60-46c3-5544-84b3-766b112c260a
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://localfiles.live/download_raw/zggkJd3KnVdogmmO/java.exe*'
+      - '*http://185.166.155.141:5001/one.exe*'
+      - '*http://185.166.155.141:5001/optimal.exe*'
+      - '*http://185.166.155.141:5001/ufrop.exe*'
+      - '*http://94.154.43.253/bot_x86.exe*'
+      - '*http://193.178.158.107/bin/b672b8beeed12e81_build_x64.exe*'
+      - '*http://45.86.62.54/Setup.exe*'
+      - '*http://172.86.84.161/update.exe*'
+      - '*https://uno-play.xyz/download/uno-setup-1.0.0.exe*'
+      - '*https://startvsgame.com/secondfast.exe*'
+      - '*https://abilityindisabilityindia.org/rock.exe*'
+      - '*https://api.vexxuhq.site/download/*'
+      - '*https://abilityindisabilityindia.org/wewe.exe*'
+      - '*https://gaiadeqi.com/scrapbookpocketfordraf.exe*'
+      - '*https://togethers.tv/Togethers.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1204.002
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
