@@ -7,6 +7,14 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "ff1a30cebc507977f916aa47cd3cfbcb134867361737f0f79f56349475af8c1a"'
+      - ' "0c39264337a1186b2e765e24073399cbdcba118306614eb411e315887af578bd"'
+      - ' "ec1af4dfc37ad1507e33541298690043813cadba90f2cc0bd771d2871e5bfc72"'
+      - ' "5f421002bcbcf17b1eeb0a2c82e95aa3969a088bdca1777697c691148e716f67"'
+      - ' "8d5d913136a711beb8d1053c63615027925a7726dc030c16eff8e9056ca0f00f"'
+      - ' "59754b318d60186718cb0cbc187f6c334c54b3b0ef6bd64f312ec8379904a182"'
+      - ' "bdd1ac8428211967ac5fd230590c46beb3659d3204bee38a8ef1659d886176fb"'
+      - ' "0b654057aac66c49e8eb909a106df4415a61d8c03cc85e28d261205ff2e212ca"'
       - ' "4d8efc4528dd2088d72c68fa693ea22a2fc5946820aab9745ed77f85fa9265d4"'
       - ' "049b268f6fe7dee81651ff0d3ddc72b205f465c9aba3e57e9222fe9c5eadff88"'
       - ' "ab4e43a86948ffd778d81c5fc8d8d0b620d7d4cab09f659140715279a3be0da3"'
@@ -18,32 +26,6 @@ detection:
       - ' "1dfa0aa6156e456259d0dc960b76f7c20549da845a6b3452d9cd93a53684065b"'
       - ' "f08967cdbdb0e00f35378885142dc5a33f305791496ab4977384050fcf8e3571"'
       - ' "2f8b6743a72bc342f8fea9b2e04937357879c43142c4a641fa70bccb358b401d"'
-      - ' "029b9627303993756e3a7006c0ef7420a18fac1f43b11cf1e5b293a3197e94ae"'
-      - ' "c7b9cb808566af4dffaee645076ff5d9250d8977181398b7a95fbffb007b7529"'
-      - ' "5cdae59b266a4b2c3366a249470005a1f44ab6fc6ffd3a9be3530a82a409a0f1"'
-      - ' "0a0bb00159b1e32ee075cc3bf08e9176a5f2c83dec1f0ce151662e2b2f0c478d"'
-      - ' "cb64af23245fa7b9d9b9718ab456887d636b5fdfcf56a900a0e256f9faef5097"'
-      - ' "cdba0c78aaf8293ceb8455b146b2df98a8fd9d1f478d28cea36e9907072528f8"'
-      - ' "e35e513c61e3035adf744076de76ebd2be1c43617f73ef18abbf6079b9277a3c"'
-      - ' "c3ef7f7f7ce806d744562555292cb7b84a9da7db22b9fed962650f82b35a6814"'
-      - ' "bb232b41ed862f03708c61ce55ab28da86ba548447ec9c1514f514707bf02ddc"'
-      - ' "790a55c929ccdce6d34b811301121fe7ebf2a35b2fddbe8736bc582b23b91a15"'
-      - ' "4665bc5349f0f362aa1a4d15103d4def8c01ffca876dce52dfdebb1f2cb82aac"'
-      - ' "01f0aad698f8845915e7286478613077587d14e3f68a8be38e7dd8a44d6cf0f8"'
-      - ' "f22412734b5c014f06e89af4439551fa7cf5fa89e7f1d469a633e822696ae429"'
-      - ' "762cf7cad94270b22892352f4474f8b2c91ccf441cef3df8df0d4df0f17bca27"'
-      - ' "49cc7fd35a16329bde9aa2446e0e014c08f246730402a1ee14981a641d634848"'
-      - ' "ac7b04fda8d8945d71da4f9171ae6854f7c78abbe4103ac77089fd31efd8e79a"'
-      - ' "d07a95a98360787177eed8914a54ae7f9ad32a8374fe8767ad889352f6fe2655"'
-      - ' "3916322d717c9c761f3234b7f059f1e8f5d720acdb228e817ab0b1bcf83ee3f4"'
-      - ' "f33bea6b180e66a4e55201107966aeb686b4046ae023bc3e4337d577496ab174"'
-      - ' "ab083b900539a539ac4a826c42795c464faa72b12cf7970ec5ad1b99ba8d79f7"'
-      - ' "b4e22e21e205559a595d1e3b47516079d19bf9c226d41023494ed07f41648e65"'
-      - ' "903a309eedb926e4bbd1227748096814c612dbb7dfcee379f7360a8c9ed21542"'
-      - ' "c4daf6dabd85df9b295b0dca5f4eeabb0a771d20a38914e4661e3e644c619b08"'
-      - ' "08f817d399bbad41fac3eee9a4df7c83b9eb30208b2aa55b69b05b0413c92ecc"'
-      - ' "c045bf047c6be4c65eb82057b74dba95b76b68c6ea049c1ca882857b12d0b5b6"'
-      - ' "80bd71812ea7c35634f5f590d80ebdba1ea9f882e8691e9854b9b62916ee4f25"'
   condition: selection
 level: high
 tags:
@@ -59,6 +41,8 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://185.99.97.21:5001/one.exe*'
+      - '*http://185.99.97.21:5001/second.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_838a0bfd231e7a20.exe*'
       - '*https://prestige-client.live/downloads/PrestigeSetup_pw1337.zip*'
       - '*https://rough-truth-e072.publicftpresend.workers.dev/jbkotwo*'
@@ -116,10 +100,6 @@ detection:
       - '*https://www.dropbox.com/scl/fi/754hdidtogzkpc8s528x3/OffersThickness.exe?rlkey=dbsp3569wnfvhmt633aep6rgf&st=afaxokov&dl=1*'
       - '*http://62.60.226.140/files/com/kliulij.exe*'
       - '*https://www.dropbox.com/scl/fi/754hdidtogzkpc8s528x3/OffersThickness.exe?rlkey=dbsp3569wnfvhmt633aep6rgf&st=097j7cfs&dl=1*'
-      - '*https://www.dropbox.com/scl/fi/ba93r9ez5c00fap694aa6/bundle.zip?rlkey=mpxhfmkb4g2adcermiywlc115&st=9twn3jrx&dl=1*'
-      - '*https://fern-plume.com/curl/z203ezo8/zbxc4p9j8emx1yoy9x.txt*'
-      - '*https://node-slate.com/api/metrics/run?event=pasted*'
-      - '*https://fern-plume.com/zyeMb6slon_3VWVlkSkdiJurcyhY5cFNtchnavRnMgU/hiddenfix/update*'
   condition: selection
 level: high
 tags:
@@ -328,7 +308,6 @@ detection:
       - '*https://multiplay.at/shaders/Shaders.zip*'
       - '*https://multiplay.at/game-copier/downloads/Game-Copier.zip*'
       - '*http://45.94.31.205:5050/files/7408d8876d767e4b8dac35ffcedac09926062e7856d4edbb40f7bda8f00c6d37/x.zip*'
-      - '*https://www.dropbox.com/scl/fi/ba93r9ez5c00fap694aa6/bundle.zip?rlkey=mpxhfmkb4g2adcermiywlc115&st=8p4van4p&dl=1*'
   condition: selection
 level: high
 tags:
@@ -384,7 +363,6 @@ detection:
       - '*https://api.vexxuhq.site/download/*'
       - '*https://abilityindisabilityindia.org/wewe.exe*'
       - '*https://gaiadeqi.com/scrapbookpocketfordraf.exe*'
-      - '*https://togethers.tv/Togethers.exe*'
   condition: selection
 level: high
 tags:

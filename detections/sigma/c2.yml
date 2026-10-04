@@ -1,20 +1,3 @@
-title: Detect Activity to Known Malicious C2 - MalwareBazaar hashs - Chunk 1
-id: f74c7de3-963b-593e-bd64-3558c23b37ff
-status: experimental
-description: Detects traffic or activity related to known malicious hashs associated with C2 from MalwareBazaar (Chunk 1).
-logsource:
-  category: process_creation
-detection:
-  selection:
-    hashes:
-      - ' "587df9e15e14a2deda6b2e718c49ca227edbf779b26d563ae0800b7c1c1803b2"'
-      - ' "fc2022e5db9334c8419a75f2ee6d77fe57c823688ff266aeaa712cfe0dfe3a15"'
-  condition: selection
-level: high
-tags:
-  - attack.t1071
-  - source.MalwareBazaar
----
 title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
 id: 104ff386-a1fa-5e67-9690-5c4f14c4b196
 status: experimental
@@ -24,6 +7,9 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_87b6b45e37f32bcb.exe*'
+      - '*https://onlyfiles.com/dl/1791036710.c66fbf974014a589/wswKwN6UcfRn/svchost-32bit.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_9872326df8da56c9.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_d3e9763172c39cfb.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_18b51ad133197bb3.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_90d99a8ae6973888.exe*'
@@ -119,15 +105,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_414724c46e96b0eb.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_021779a853812046.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_5bf6d3abfd2b62a4.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_f560a93d91a75b5c.exe*'
-      - '*https://captainx-download.captainleontian.workers.dev/*'
-      - '*https://claude-exporter-license.nikogdanekupluslona.workers.dev/*'
-      - '*http://91.92.242.236/files-129312398/files/file_4c3e2c2458e5e43b.exe*'
-      - '*https://round-breeze-3e9d.jay-e45.workers.dev/*'
-      - '*https://counterscale.jean-r-mi-larcelet-prost.workers.dev/*'
-      - '*https://fancy-rain-e484.0xwilliamortiz.workers.dev/*'
-      - '*http://91.92.242.236/files-129312398/files/file_54a0ab1b1cd5298b.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_37b3ca809d232f85.exe*'
   condition: selection
 level: high
 tags:
