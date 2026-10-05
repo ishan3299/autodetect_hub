@@ -144,7 +144,6 @@ detection:
       - '*http://wemqmewkqewq.work.gd/mipsel*'
       - '*http://wemqmewkqewq.work.gd/armv7l*'
       - '*http://wemqmewkqewq.work.gd/powerpc*'
-      - '*http://wemqmewkqewq.work.gd/i486*'
       - '*http://wemqmewkqewq.work.gd/kla.sh*'
       - '*http://wemqmewkqewq.work.gd/armv4l*'
       - '*http://wemqmewkqewq.work.gd/sh4*'
@@ -370,4 +369,20 @@ detection:
 level: high
 tags:
   - attack.t1596
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Botnet - URLhaus urls - Chunk 1
+id: 3635df09-f048-5582-b3ab-d707368049ca
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Botnet from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://wemqmewkqewq.work.gd/i486*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
   - source.URLhaus
