@@ -7,8 +7,31 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "4cecb0e41d53ccc73078d80dcac576b7b0905f37193693f9b41cf4eb6651fa85"'
+      - ' "406627d034ccf27232851600b6d2f4f93e93fce673b6c3b801e2f1140dc76736"'
+      - ' "314a605bc42b47f044a1b297e4db33e66460952a23840767ee40c0f4acfdcf92"'
+      - ' "5381889f657250a50a62c8a629ee825ad3249a1ecac97454bbf9f0f0f30e7d6f"'
+      - ' "374c1bcedd9eb8d9e537dd47759685e5d9db21c0aa9b943592cd95aadbd18248"'
+      - ' "f103df0af6684dd4e14e698172bc510552053197b2aa2daa075679682ddaaf6d"'
+      - ' "d5752f7a97721282da65b8cc9fa3522aa39b0d90df1b95b40468f1c13a0accad"'
+      - ' "1dc94adfd12ec56b7553691722125ff59886abfd232441b1ce6698eba7a343ca"'
+      - ' "6e3cd90bd300c392902c9848e4d317b964cc5941b9302e06096b23a9536180db"'
+      - ' "3ba631eb3059a6af65b913151f530e481c35e14b8ff68cc56a35523051628499"'
+      - ' "8a7763fb8494ab3cc18d70db2802a0281ebe77ebbf7ea04f7ef2da01332b8bc0"'
+      - ' "fa9693ab0228147ee3d8107d46fca3129a5f2470b5cedf3956301d046f5a713a"'
+      - ' "81491259304b17abea0d7f2632c0ba5dcc809a3dfb4d3d4a694c109c107fed51"'
+      - ' "c45d6a65b9a0c4299199ff0767bc586657af2408a75a6eb2135682945c7d226d"'
+      - ' "42918e64a23e822406f4148f7f183f6e545692f6133d16b88b8c5d8c23abed72"'
+      - ' "fa1ca66a8f16efdf98e87c60d5760235bde36568ff036292ef51e24f17c637c9"'
+      - ' "8995859db6a51656cb461338eaaf2de8ccd675b2f769b23638cdd23ae13400ce"'
+      - ' "321412c9e3b62d010fa039be0c56f2440910082abcf36597de697240ffba4011"'
+      - ' "d72e0f84e5528481db5dea90a8dcaf4e5f0489de9d623228e7853eee29fe8895"'
+      - ' "3a5ddc82c5ad3647fee3b4a11bc67d05ccd8a28777abd8ee708920393c55e44a"'
+      - ' "ed07f823263ca2ffc386aec71230faea469ce8638b329176a02fe73952c78745"'
       - ' "d9d6f4d04fb0f2e2d16bf729035b2eb3dc7d7a160eddf9b43b6d5c794e77e4d1"'
+      - ' "c34ebc389e99c4bfbddf726fc6f357aa625efb8afdf2abceef9454ab4026d687"'
       - ' "0b8e3baabf8c4d764431e3927e2cd549efcb5d2cd05ae7c62c145fb8fdfb144f"'
+      - ' "f1b2732e9514446bd024c8ba5f9d3ec2d259ab001177614ac6e52b36ae586bae"'
       - ' "4f5cba1ed4e27d2fc1104465c5a20b35d773779cd85e5b19e9cb5b8e9d89b4a1"'
       - ' "6cbfe036e8d8bea4b900739ae628ba64150ccea2b6acb8980dbb9af7e8792184"'
       - ' "77040e91b88fbd56c168fd5624d56e506d071caf06420ccc006adb4df444b9fb"'
@@ -24,12 +47,6 @@ detection:
       - ' "f10af0c42a22451276da002c581c9e38cddbbc7dc91d8319dce9a5b394e34020"'
       - ' "37df7136ea350adee09219edab16c2e2ee2bfa4d5145295a32294c4e2b3e67b2"'
       - ' "ed69b232a3ac92a5e5f43757119af730f5d814305122a456132dad36a1d6a5fd"'
-      - ' "dae56eed89e6af9c4e18ed8ccdce08256646bffa58989ef1def040d10c9ffff4"'
-      - ' "ff1a30cebc507977f916aa47cd3cfbcb134867361737f0f79f56349475af8c1a"'
-      - ' "ec1af4dfc37ad1507e33541298690043813cadba90f2cc0bd771d2871e5bfc72"'
-      - ' "5f421002bcbcf17b1eeb0a2c82e95aa3969a088bdca1777697c691148e716f67"'
-      - ' "8d5d913136a711beb8d1053c63615027925a7726dc030c16eff8e9056ca0f00f"'
-      - ' "59754b318d60186718cb0cbc187f6c334c54b3b0ef6bd64f312ec8379904a182"'
   condition: selection
 level: high
 tags:
@@ -45,6 +62,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://raw.githubusercontent.com/ktn1703/Vanish-Tool-Discord/refs/heads/main/obf-vanish.py*'
       - '*http://193.178.158.57/bin/f83ecc00a27c5716_hwbp_syst_B2nASg1e.exe*'
       - '*http://185.99.97.21:5001/one.exe*'
       - '*http://185.99.97.21:5001/second.exe*'
@@ -109,6 +127,35 @@ detection:
 level: high
 tags:
   - attack.t1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
+id: ebe57f60-46c3-5544-84b3-766b112c260a
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://193.148.56.155/111.exe*'
+      - '*https://localfiles.live/download_raw/zggkJd3KnVdogmmO/java.exe*'
+      - '*http://185.166.155.141:5001/one.exe*'
+      - '*http://185.166.155.141:5001/optimal.exe*'
+      - '*http://185.166.155.141:5001/ufrop.exe*'
+      - '*http://94.154.43.253/bot_x86.exe*'
+      - '*http://193.178.158.107/bin/b672b8beeed12e81_build_x64.exe*'
+      - '*http://45.86.62.54/Setup.exe*'
+      - '*http://172.86.84.161/update.exe*'
+      - '*https://uno-play.xyz/download/uno-setup-1.0.0.exe*'
+      - '*https://startvsgame.com/secondfast.exe*'
+      - '*https://abilityindisabilityindia.org/rock.exe*'
+      - '*https://api.vexxuhq.site/download/*'
+      - '*https://abilityindisabilityindia.org/wewe.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1204.002
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
@@ -340,34 +387,6 @@ detection:
 level: high
 tags:
   - attack.t1027.003
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
-id: ebe57f60-46c3-5544-84b3-766b112c260a
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Stealer from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://localfiles.live/download_raw/zggkJd3KnVdogmmO/java.exe*'
-      - '*http://185.166.155.141:5001/one.exe*'
-      - '*http://185.166.155.141:5001/optimal.exe*'
-      - '*http://185.166.155.141:5001/ufrop.exe*'
-      - '*http://94.154.43.253/bot_x86.exe*'
-      - '*http://193.178.158.107/bin/b672b8beeed12e81_build_x64.exe*'
-      - '*http://45.86.62.54/Setup.exe*'
-      - '*http://172.86.84.161/update.exe*'
-      - '*https://uno-play.xyz/download/uno-setup-1.0.0.exe*'
-      - '*https://startvsgame.com/secondfast.exe*'
-      - '*https://abilityindisabilityindia.org/rock.exe*'
-      - '*https://api.vexxuhq.site/download/*'
-      - '*https://abilityindisabilityindia.org/wewe.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1204.002
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Stealer - URLhaus urls - Chunk 1
