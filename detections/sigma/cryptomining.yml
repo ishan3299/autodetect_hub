@@ -7,13 +7,13 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "fba55fd42a6cb14c417c3922d09fbcd105bdce13aff48ef908e6a201174a535d"'
+      - ' "f8176877cc9f083324e0d69c2d932a98129eb4ad3f6f24ecf7d002cbaafcc8b8"'
+      - ' "5a15602695f7ad57725792d8714fa2305748b49f2b7a460849842d122b926249"'
+      - ' "b449341fb97c5dd248f2091d92ad27d4dc32861ba5bc86deb0ccbbc627d4843e"'
       - ' "ed554c51f7f69c2ca0e80c18d4b0e1240a33d74ba999ec9006cf5440b1f7bdb4"'
       - ' "4741fe9894bbe49d6014cec8d30993f7ff77326938315c5515f6923be9f75375"'
       - ' "e740b087ea540c1fabcb0623399c7142aa6dd68fd9b4a4cadd7521170c332935"'
-      - ' "b4359324e3cffb3dc521a808dfa0b5d7bd92dc6e08eb7527da41e1e1312d3265"'
-      - ' "abda1607910d3b8653aed50d74bf7e8d7189db192d553086a3c1b85a78bb7235"'
-      - ' "1c8fd52d6fa54459b837faf44b8addfdaf01793406a827ae93abcdd0dc497f64"'
-      - ' "fb7460f1febcc0f1e96f2df6c4b940f3beac750ce8cd1f30f98086400fbbe20e"'
   condition: selection
 level: high
 tags:
@@ -29,6 +29,9 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://130.12.182.19/f/m/.b0s_x86_64*'
+      - '*https://ikovrsps.com/Mina.jar*'
+      - '*https://ikovrsps.com/Ikov.jar*'
       - '*http://132.243.166.140/ce.sh*'
       - '*http://project0.cc/f/m/.X0-lock_x86_64*'
       - '*http://maxxlavalink.cyou/mipsel*'
