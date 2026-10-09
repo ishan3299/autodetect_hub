@@ -7,6 +7,7 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "1b95c2783b667ad5ffbd5b66afc367a92c314f507ba43789ec0bcda5a623a877"'
       - ' "e163174c8acd0ddd4be15d1d208cecca3df7e805d5ded812023a427f8c72ce67"'
       - ' "b18d170c8044d8db1c1453f62c093eb0a25fb611803bea6dcaab445f1f361257"'
   condition: selection
@@ -24,6 +25,14 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://23.254.195.48:8099/beacon_windows_amd64.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_127db278893126d7.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_d7bf7d92c202104a.exe*'
+      - '*http://91.240.118.10/ycl*'
+      - '*http://91.240.118.10/service*'
+      - '*http://91.240.118.10/update*'
+      - '*http://91.92.242.236/files-129312398/files/file_4e463941a19f86ca.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_ae2d99ac73163300.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_6090c1ecb2a975aa.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_6ca450ddf497eb0f.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_0d808c6ece797f4b.exe*'
@@ -120,11 +129,29 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_f72e5551675befb7.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_c02d1b6f3f7b2bea.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_faaa376d1533d131.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_3c7c16fb45b485e2.exe*'
   condition: selection
 level: high
 tags:
   - attack.t1071
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
+id: f14eb7f3-9c29-5eed-a133-748d1a8387e9
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with C2 from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_9fc392f279df529c.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_f44df060f8ce40c6.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_d3ed19af96c997bd.exe*'
+      - '*http://91.92.242.236/files-129312398/files/file_2e3410806cced002.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1496
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
@@ -185,22 +212,4 @@ detection:
 level: high
 tags:
   - attack.t1204.002
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious C2 - URLhaus urls - Chunk 1
-id: f14eb7f3-9c29-5eed-a133-748d1a8387e9
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with C2 from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://91.92.242.236/files-129312398/files/file_f44df060f8ce40c6.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_d3ed19af96c997bd.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_2e3410806cced002.exe*'
-  condition: selection
-level: high
-tags:
-  - attack.t1496
   - source.URLhaus
