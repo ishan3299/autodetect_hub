@@ -7,10 +7,11 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "385c518f5251712671b029d3e862a4d4ce25dea3c4d578c6512f1d4d911cf14d"'
+      - ' "528458c9d7ac88959d2d83aecd0544bf75727d34795deaf658ff3b82000a9e44"'
+      - ' "cf03c5920933f4c0f79c71e52edb28d238bb8396e71558ecc9b33a595fc0a9ae"'
       - ' "448b653511a12b85616230b744e0c270a28593b2eff222ab432f0a077ad3e328"'
       - ' "3f790d1fc0bae05463f75c5c2fda33b7616230a361630da56e87f7cf26e5fd89"'
-      - ' "fba55fd42a6cb14c417c3922d09fbcd105bdce13aff48ef908e6a201174a535d"'
-      - ' "f8176877cc9f083324e0d69c2d932a98129eb4ad3f6f24ecf7d002cbaafcc8b8"'
   condition: selection
 level: high
 tags:
@@ -26,6 +27,8 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://www.osmb.net/OSMB.jar*'
+      - '*https://osbot.net/OSBot.jar*'
       - '*https://gitlab.com/graymid/tinnylieh/-/raw/main/U7Q7R23U7669.exe*'
       - '*http://130.12.182.19/f/m/.b0s_x86_64*'
       - '*https://ikovrsps.com/Mina.jar*'
