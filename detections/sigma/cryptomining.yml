@@ -7,11 +7,11 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "87d8778250a4515ed73221ba47fb861ac9fb0303c49045dd9f5cc6954021477a"'
+      - ' "5c24c3ccf5aa8fb28d57d43271657e690a1f505113a73d9dc8e1b16be5dc02d3"'
       - ' "385c518f5251712671b029d3e862a4d4ce25dea3c4d578c6512f1d4d911cf14d"'
       - ' "528458c9d7ac88959d2d83aecd0544bf75727d34795deaf658ff3b82000a9e44"'
       - ' "cf03c5920933f4c0f79c71e52edb28d238bb8396e71558ecc9b33a595fc0a9ae"'
-      - ' "448b653511a12b85616230b744e0c270a28593b2eff222ab432f0a077ad3e328"'
-      - ' "3f790d1fc0bae05463f75c5c2fda33b7616230a361630da56e87f7cf26e5fd89"'
   condition: selection
 level: high
 tags:
@@ -27,6 +27,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://OSMB.net/OSMB.jar*'
       - '*https://www.osmb.net/OSMB.jar*'
       - '*https://osbot.net/OSBot.jar*'
       - '*https://gitlab.com/graymid/tinnylieh/-/raw/main/U7Q7R23U7669.exe*'
@@ -69,10 +70,6 @@ detection:
       - '*http://192.162.199.246/m2/mKM65Cf6QNqeOVw9.exe*'
       - '*https://45.145.12.239/main.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_1effc509c19855e7.exe*'
-      - '*http://193.32.162.73/d/7c4124282c4ad7b6/bins/kworkerd*'
-      - '*http://193.32.162.73/d/7c4124282c4ad7b6/o/os12/init.sh*'
-      - '*http://193.32.162.73/d/7c4124282c4ad7b6/o/hzaso/init.sh*'
-      - '*http://193.32.162.73/d/7c4124282c4ad7b6/o/c4124/init.sh*'
   condition: selection
 level: high
 tags:

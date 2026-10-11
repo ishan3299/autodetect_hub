@@ -8,7 +8,6 @@ detection:
   selection:
     hashes:
       - ' "b4cc5ac328afd0e7eaf16216879046367e083279bfdb831da3a53c8a31df3d1b"'
-      - ' "1b95c2783b667ad5ffbd5b66afc367a92c314f507ba43789ec0bcda5a623a877"'
   condition: selection
 level: high
 tags:
@@ -24,6 +23,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://91.92.242.236/files-129312398/files/file_d44be89d905978ed.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_b3cc296623105902.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_8dece6c27473f5d2.exe*'
       - '*http://23.254.195.48:8099/beacon_windows_amd64.exe*'
@@ -124,7 +124,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_ce780b0c67e8b937.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_1f5c6b32fedd3c2a.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_8ac875068d3697e5.exe*'
-      - '*http://91.92.242.236/files-129312398/files/file_ae5f4da3f556dbfa.exe*'
   condition: selection
 level: high
 tags:
