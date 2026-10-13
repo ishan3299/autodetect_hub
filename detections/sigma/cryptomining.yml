@@ -7,14 +7,12 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "8ad7f56f8701807d0b089d520d2f2625b20aaf06777ac0c4c79edb3ae1395aea"'
       - ' "58a7ce70ecf1ca520babfd4213c6758e494b929a411ad8b4d4e802cb7690d911"'
       - ' "66020bbfa6744e606b312416f65e1c69b44f98ad9fee49c63e100bf32ffee4b7"'
       - ' "3060f865fd3b9af33fd778b52600d0fdd4ff5920329747f881afda256ed10219"'
       - ' "a24b6b1e9cbe266e5c0b55f1f9e601bb54d6232a3833befc9e7fa41a345ddb15"'
       - ' "e9ba70f1edc3f1f31406ecc5e2d02efc2a7a7fa1088b518dacff89d9e10a7933"'
-      - ' "2dccab5b3b7a88abf6a2e2c7e592fbf54a017ce6e465ce6a722c2f5fc656b553"'
-      - ' "87d8778250a4515ed73221ba47fb861ac9fb0303c49045dd9f5cc6954021477a"'
-      - ' "5c24c3ccf5aa8fb28d57d43271657e690a1f505113a73d9dc8e1b16be5dc02d3"'
   condition: selection
 level: high
 tags:
@@ -92,21 +90,4 @@ detection:
 level: high
 tags:
   - attack.t1583
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
-id: f42dab2b-f6e3-5181-ac2d-d61e4dcc95d4
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*http://79.137.203.132/2*'
-      - '*http://79.137.203.132/3*'
-  condition: selection
-level: high
-tags:
-  - attack.t1059.004
   - source.URLhaus
