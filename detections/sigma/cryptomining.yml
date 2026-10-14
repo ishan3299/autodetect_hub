@@ -7,12 +7,15 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "ac04d6f242b026ee7be404dd99a0d09564b1c74eb7e453401dc2c15b680bad05"'
+      - ' "bcb226ad5cf776ae7d3f6c572c9dc7f7d074d0d801adbf54153cc87f41d06db5"'
+      - ' "c1dd42c5d06153184430f7b1843200d21308e78ce9403c99f7b18c8682acabca"'
+      - ' "644d71c5da2522e7250869d5d03213d28ad50337c98464e49010c39eb234b4c1"'
+      - ' "7847bf6d597f0a7a606d5e991039bf8f78e9c54ce9c3698197f1fc7a228b38ae"'
+      - ' "cb6b346c740f7b6938177c87f7a35a884983b374d7b98cb276dc0fd8ba43fa3c"'
+      - ' "7c6a07f8d2dbd5b6076087cd7583ce5746401aa1776bf24b8118118bb1876e47"'
+      - ' "0b3c09f4cc67e07536c9c77900edf5905e81d1747931c5983e84ce233f35c164"'
       - ' "8ad7f56f8701807d0b089d520d2f2625b20aaf06777ac0c4c79edb3ae1395aea"'
-      - ' "58a7ce70ecf1ca520babfd4213c6758e494b929a411ad8b4d4e802cb7690d911"'
-      - ' "66020bbfa6744e606b312416f65e1c69b44f98ad9fee49c63e100bf32ffee4b7"'
-      - ' "3060f865fd3b9af33fd778b52600d0fdd4ff5920329747f881afda256ed10219"'
-      - ' "a24b6b1e9cbe266e5c0b55f1f9e601bb54d6232a3833befc9e7fa41a345ddb15"'
-      - ' "e9ba70f1edc3f1f31406ecc5e2d02efc2a7a7fa1088b518dacff89d9e10a7933"'
   condition: selection
 level: high
 tags:
@@ -28,6 +31,11 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://disk.360.yandex.ru/d/Wxz_b2YRJYSXJg*'
+      - '*https://fex.net/ru/s/zm1clkr*'
+      - '*https://limewire.com/d/Xcyvz#v1V9HK417p*'
+      - '*https://linktr.ee/susanbrownu640*'
+      - '*http://www.tribot.co.uk/Tribot.jar*'
       - '*https://OSMB.net/OSMB.jar*'
       - '*https://www.osmb.net/OSMB.jar*'
       - '*https://osbot.net/OSBot.jar*'
@@ -74,6 +82,55 @@ detection:
 level: high
 tags:
   - attack.t1496
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
+id: b30b939b-a35d-575f-9e47-08fe2ad9feec
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*https://cheminees-philippe45.com*'
+      - '*https://filezilla.cc/py23.exe*'
+  condition: selection
+level: high
+tags:
+  - attack.t1587.001
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
+id: f42dab2b-f6e3-5181-ac2d-d61e4dcc95d4
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://195.178.110.29/d/432936b3a0439572/init.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1059.004
+  - source.URLhaus
+---
+title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
+id: 8a1e0d4f-2576-56ee-91e8-253688df9b66
+status: experimental
+description: Detects traffic or activity related to known malicious urls associated with Cryptomining from URLhaus (Chunk 1).
+logsource:
+  category: proxy
+detection:
+  selection:
+    c-uri:
+      - '*http://195.178.110.29/d/432936b3a0439572/o/geeef/init.sh*'
+  condition: selection
+level: high
+tags:
+  - attack.t1071
   - source.URLhaus
 ---
 title: Detect Activity to Known Malicious Cryptomining - URLhaus urls - Chunk 1
