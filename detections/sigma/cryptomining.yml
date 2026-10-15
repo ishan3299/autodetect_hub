@@ -7,7 +7,17 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "3f02b386e3e5048ba3ea0ca195362bddbac7cee3c466292df256a917b83062d0"'
+      - ' "750bfe4f7e55736d9c0489d0462db13375c034f7cdb8e33f1cea6363a014e3df"'
+      - ' "d82620df6807e1d65461d7a6b3a2e58aafda51b3c50c41ed1c84e8de9111c29e"'
+      - ' "71058edd6a2d93d0992a4ce10736a99070e28345dc14c66d7383ea9b5da9923b"'
+      - ' "38173492fece33a703a67140785e02cbd0749329b7cd9433bb7e122fbb9f803a"'
+      - ' "0714af49edc930cea4e4d0345090d71f04ce97093bd487a9ce36e1b18d27f8d2"'
+      - ' "e3ea99de825861505ea0fe5b63edb9a8d4f56f3d2f6652db638b1442698c84da"'
+      - ' "8124f4ac27a1afb25d2479da9bf5f06c52e3e9cf25d4d514ec386f05e264dd14"'
+      - ' "4c17a852a2bb168010b270fcf5cbb9e78f17d910d259fa720d2a7f2dfd18a2dd"'
       - ' "ac04d6f242b026ee7be404dd99a0d09564b1c74eb7e453401dc2c15b680bad05"'
+      - ' "3dc3cef7a32294cfce498884f5ca741fc2535a92bca9d0fc620f44c22d24fdd0"'
       - ' "bcb226ad5cf776ae7d3f6c572c9dc7f7d074d0d801adbf54153cc87f41d06db5"'
       - ' "c1dd42c5d06153184430f7b1843200d21308e78ce9403c99f7b18c8682acabca"'
       - ' "644d71c5da2522e7250869d5d03213d28ad50337c98464e49010c39eb234b4c1"'
@@ -15,7 +25,6 @@ detection:
       - ' "cb6b346c740f7b6938177c87f7a35a884983b374d7b98cb276dc0fd8ba43fa3c"'
       - ' "7c6a07f8d2dbd5b6076087cd7583ce5746401aa1776bf24b8118118bb1876e47"'
       - ' "0b3c09f4cc67e07536c9c77900edf5905e81d1747931c5983e84ce233f35c164"'
-      - ' "8ad7f56f8701807d0b089d520d2f2625b20aaf06777ac0c4c79edb3ae1395aea"'
   condition: selection
 level: high
 tags:
@@ -31,6 +40,8 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://15.204.85.94:9999/xmrig*'
+      - '*http://15.204.85.94:9999/xmrig-patched*'
       - '*https://disk.360.yandex.ru/d/Wxz_b2YRJYSXJg*'
       - '*https://fex.net/ru/s/zm1clkr*'
       - '*https://limewire.com/d/Xcyvz#v1V9HK417p*'
@@ -75,9 +86,6 @@ detection:
       - '*http://91.92.242.236/files-129312398/files/file_0ad97829e0695995.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_33a7525a0a683940.exe*'
       - '*http://91.92.242.236/files-129312398/files/file_f16d80909f64b6ff.exe*'
-      - '*http://192.162.199.246/m3/controller.exe*'
-      - '*http://192.162.199.246/m2/mKM65Cf6QNqeOVw9.exe*'
-      - '*https://45.145.12.239/main.exe*'
   condition: selection
 level: high
 tags:
