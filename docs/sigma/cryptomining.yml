@@ -7,13 +7,11 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "830e5d53bfe56811b82621c6fe873e404e810ed8e2d409e786377ea211b12a1c"'
+      - ' "5392c321ee22ffdd454802ab8620e11bcc33d5921217a03d057ba41b27d53ee2"'
+      - ' "bea41ca1327ec0015306cdc058e7c3806803e5447266c84d347aca3732f59982"'
       - ' "a2b27dee9494b5978815784900f167ed093028f1eba443a7d02b11b66def9483"'
       - ' "b4a2106375c183c4c88d831e5e836096958458c0a2c8831ed5f6d61ffb9b3790"'
-      - ' "38173492fece33a703a67140785e02cbd0749329b7cd9433bb7e122fbb9f803a"'
-      - ' "0714af49edc930cea4e4d0345090d71f04ce97093bd487a9ce36e1b18d27f8d2"'
-      - ' "e3ea99de825861505ea0fe5b63edb9a8d4f56f3d2f6652db638b1442698c84da"'
-      - ' "8124f4ac27a1afb25d2479da9bf5f06c52e3e9cf25d4d514ec386f05e264dd14"'
-      - ' "4c17a852a2bb168010b270fcf5cbb9e78f17d910d259fa720d2a7f2dfd18a2dd"'
   condition: selection
 level: high
 tags:
@@ -29,6 +27,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://tribot.co.uk/Mina.jar*'
       - '*http://15.204.85.94:9999/xmrig*'
       - '*http://15.204.85.94:9999/xmrig-patched*'
       - '*https://disk.360.yandex.ru/d/Wxz_b2YRJYSXJg*'
@@ -70,9 +69,6 @@ detection:
       - '*https://royalcuts.co.uk/Chrome.exe*'
       - '*https://royalcuts.co.uk/3.exe*'
       - '*http://62.60.226.140/files/logkni/rop.exe*'
-      - '*https://gpsmarocpro.com/3.exe*'
-      - '*https://windowsdiagnostics.st/api/static/Office365*'
-      - '*http://91.92.242.236/files-129312398/files/file_0ad97829e0695995.exe*'
   condition: selection
 level: high
 tags:
