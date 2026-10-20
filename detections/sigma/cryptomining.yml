@@ -7,13 +7,14 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "c4d1b790902c8d3ea0923498af35fc6b99c3633c7353bbb8429651a1cee0f854"'
+      - ' "49cae951cc10bc4c1fce008c7eb1c4850e1c65e55832b318ba9dbf9cd069da52"'
+      - ' "d799e80f67a696bdb6a16ffec35a14f16cd30fd70fb7f53c1329f467c5f5db08"'
+      - ' "1b80d4a3fd38288bf03bf6ddcb800d552d5fd5b9d8e3f1ddf64a1a5af0134517"'
+      - ' "9901f324c70bf24e27ca2279b7ffa369e22ec76d2fa80e31c0ba9e316a80636f"'
+      - ' "3bc0681c243e8d68365d246aea4ebb351dba1d7d753b134d98d48d8a0018e42d"'
       - ' "82085eb1c4b7849873d2a186fda979823f1a69acded0e92391ea421be9f880ec"'
       - ' "d85508e7e10f702bd83e1baf01ff85820015666cd5da72add0802fbd30ccaff4"'
-      - ' "865e10835bd95c79fa64c91b420a29eb19ffc21ce761c7150666579829ea56d1"'
-      - ' "1fd4b7ca731ba501395eb9f93cfdea81a1d1b96c3b3850e654d34ac8a981c446"'
-      - ' "eac9effad47b9fdb65ff2bc500d68a97ebfd90b68423faa674fe5e4114bac6f3"'
-      - ' "8b7175d62b90b5573d822aa27b280bb2c986d70b1e2d59fcf9e77f67fd90b71d"'
-      - ' "ef0dc6fc49909dead6ea3f21fee659bc00aada2151b309e5c6611b5a83cf0005"'
   condition: selection
 level: high
 tags:
@@ -29,6 +30,12 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*http://31.77.144.86:49104/rigel.exe*'
+      - '*http://31.77.144.86:49104/nvrtc-builtins64_112.dll*'
+      - '*http://31.77.144.86:49104/nvrtc64_112_0.dll*'
+      - '*http://31.77.144.86:49104/xmrig.exe*'
+      - '*http://31.77.144.86:49104/xmrig-cuda.dll*'
+      - '*http://31.77.144.86:49104/ddb64.dll*'
       - '*http://31.56.52.6/xmrig-aarch64*'
       - '*http://31.56.52.6/xmrig-arm*'
       - '*http://31.56.52.6/xmrig-x86*'
