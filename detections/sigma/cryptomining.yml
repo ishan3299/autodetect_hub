@@ -7,14 +7,15 @@ logsource:
 detection:
   selection:
     hashes:
+      - ' "f33d741507b7debf0faa5610f1e7637b6ca9594be82444bc3e065c1c6b13d8b0"'
+      - ' "198659cc46b0cccf45c63324d3f25192095757a7df2ab6bb2e28e74f1d8d2dd4"'
+      - ' "4bd12f2c7174222168115884101bf55770a6e7bcb2e5a2b55a7b98c8b8a5ebe1"'
+      - ' "97f7d3821f8a675ff00836d36903142a47179297aabaecc2433e9db81d25bbe5"'
       - ' "c4d1b790902c8d3ea0923498af35fc6b99c3633c7353bbb8429651a1cee0f854"'
       - ' "49cae951cc10bc4c1fce008c7eb1c4850e1c65e55832b318ba9dbf9cd069da52"'
       - ' "d799e80f67a696bdb6a16ffec35a14f16cd30fd70fb7f53c1329f467c5f5db08"'
       - ' "1b80d4a3fd38288bf03bf6ddcb800d552d5fd5b9d8e3f1ddf64a1a5af0134517"'
       - ' "9901f324c70bf24e27ca2279b7ffa369e22ec76d2fa80e31c0ba9e316a80636f"'
-      - ' "3bc0681c243e8d68365d246aea4ebb351dba1d7d753b134d98d48d8a0018e42d"'
-      - ' "82085eb1c4b7849873d2a186fda979823f1a69acded0e92391ea421be9f880ec"'
-      - ' "d85508e7e10f702bd83e1baf01ff85820015666cd5da72add0802fbd30ccaff4"'
   condition: selection
 level: high
 tags:
@@ -30,6 +31,7 @@ logsource:
 detection:
   selection:
     c-uri:
+      - '*https://github.com/ozqmc60-arch/mcsniper/raw/refs/heads/main/Artemis%20v2.exe*'
       - '*http://31.77.144.86:49104/rigel.exe*'
       - '*http://31.77.144.86:49104/nvrtc-builtins64_112.dll*'
       - '*http://31.77.144.86:49104/nvrtc64_112_0.dll*'
