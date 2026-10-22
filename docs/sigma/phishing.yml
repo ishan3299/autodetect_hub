@@ -1,38 +1,3 @@
-title: Detect Activity to Known Malicious Phishing - URLhaus urls - Chunk 1
-id: 1d8cfc52-ac47-5431-9c12-b008c9e008e2
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Phishing from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://user-iota-lake.vercel.app/wafaction1.msi*'
-      - '*https://user-iota-lake.vercel.app/adobe_updaters.zip*'
-      - '*https://user-iota-lake.vercel.app/payment_receipt.pdf*'
-  condition: selection
-level: high
-tags:
-  - attack.t1219
-  - source.URLhaus
----
-title: Detect Activity to Known Malicious Phishing - URLhaus urls - Chunk 1
-id: 59ef458b-d719-54a7-aa92-f1d5fdc32f0b
-status: experimental
-description: Detects traffic or activity related to known malicious urls associated with Phishing from URLhaus (Chunk 1).
-logsource:
-  category: proxy
-detection:
-  selection:
-    c-uri:
-      - '*https://downloads.go-xlr.com/GoXLR.zip*'
-      - '*http://playuno.me/download.php*'
-  condition: selection
-level: high
-tags:
-  - attack.t1566
-  - source.URLhaus
----
 title: Detect Activity to Known Malicious Phishing - OTX domains - Chunk 1
 id: 1620452b-35c3-53b3-a5f6-5d731a53282d
 status: experimental

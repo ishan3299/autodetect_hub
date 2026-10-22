@@ -1,750 +1,92 @@
 {
-  "generated_at": "2026-10-21T02:45:02.017756",
-  "total_iocs": 35235,
-  "new_iocs_24h": 1456,
+  "generated_at": "2026-10-22T02:43:24.475092",
+  "total_iocs": 8,
+  "new_iocs_24h": 5,
   "top_types": {
-    "url": 33675,
-    "hash": 1552,
     "ip": 7,
     "domain": 1
   },
   "top_tags": {
-    "zip": 15060,
-    "github": 14868,
-    "SmartLoader": 14405,
-    "LuaJIT-loader": 13762,
-    "mirai": 5698,
-    "Mozi": 5694,
-    "elf": 4821,
-    "ua-wget": 2581,
-    "32-bit": 1949,
-    "CheatSheet": 1408
+    "QakBot": 4,
+    "mock": 3,
+    "phishing": 1,
+    "scanner": 1,
+    "bruteforce": 1,
+    "Emotet": 1
   },
   "top_sources": {
-    "URLhaus": 33675,
-    "MalwareBazaar": 1552,
     "FeodoTracker": 5,
     "OTX": 2,
     "AbuseIPDB": 1
   },
   "mitre_coverage": {
-    "T1102": 15548,
-    "T1583": 11529,
-    "T1059.004": 7167,
-    "T1071": 2867,
-    "T1204.002": 1206,
-    "T1555": 464,
-    "T1059.001": 383,
-    "T1219": 307,
-    "T1587.001": 180,
-    "T1595": 146,
-    "T1596": 142,
-    "T1098.004": 112,
-    "T1027.003": 95,
-    "T1496": 73,
-    "T1027": 43,
-    "T1056.001": 35,
-    "T1059.007": 34,
-    "T1218.005": 25,
-    "T1218.011": 20,
-    "T1059": 19
+    "T1566": 6,
+    "T1036": 3,
+    "T1595": 1,
+    "T1110": 1
   },
   "recent_iocs": [
     {
-      "indicator": "http://36.88.136.194:50193/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
+      "indicator": "162.243.103.246",
+      "indicator_type": "ip",
+      "source": "FeodoTracker",
       "tags": [
-        "arm",
-        "cowrie",
-        "elf",
-        "honeypot",
-        "mirai",
-        "Mozi"
+        "Emotet"
       ],
-      "first_seen": "2026-10-21 02:32:15 U C",
-      "last_seen": "2026-10-21 02:32:15 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://123.10.68.217:36801/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-10-21 01:49:17 U C",
-      "last_seen": "2026-10-21 01:49:17 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://61.54.48.114:36919/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-10-21 01:25:08 U C",
-      "last_seen": "2026-10-21 01:25:08 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://123.10.68.217:36801/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-10-21 01:16:12 U C",
-      "last_seen": "2026-10-21 01:16:12 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://14.20.199.208:52987/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-10-21 01:07:19 U C",
-      "last_seen": "2026-10-21 01:07:19 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://182.117.71.8:42909/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-10-21 01:05:19 U C",
-      "last_seen": "2026-10-21 01:05:19 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://110.136.98.201:50912/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-10-21 01:04:18 U C",
-      "last_seen": "2026-10-21 01:04:18 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://61.54.48.114:36919/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-10-21 00:56:08 U C",
-      "last_seen": "2026-10-21 00:56:08 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://170.233.57.178:51858/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "mirai",
-        "Mozi"
-      ],
-      "first_seen": "2026-10-21 00:28:16 U C",
-      "last_seen": "2026-10-21 00:28:16 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://123.9.26.39:34590/i",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-10-21 00:26:08 U C",
-      "last_seen": "2026-10-21 00:26:08 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "https://policysync.pro/1kzpao/WOF4lkeeirPc",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "ClickFix",
-        "ErrTraffic"
-      ],
-      "first_seen": "2026-10-21 00:12:04 U C",
-      "last_seen": "2026-10-21 00:12:04 U C",
+      "first_seen": "2026-10-22",
+      "last_seen": "2026-10-22",
       "sightings": 1,
       "severity": "low",
       "status": "active"
     },
     {
-      "indicator": "http://123.9.26.39:34590/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
+      "indicator": "50.16.16.211",
+      "indicator_type": "ip",
+      "source": "FeodoTracker",
       "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
+        "QakBot"
       ],
-      "first_seen": "2026-10-21 00:10:25 U C",
-      "last_seen": "2026-10-21 00:10:25 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://92.248.175.43:57566/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "elf",
-        "mips",
-        "Mozi"
-      ],
-      "first_seen": "2026-10-21 00:05:16 U C",
-      "last_seen": "2026-10-21 00:05:16 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": "http://115.197.33.158:47845/bin.sh",
-      "indicator_type": "url",
-      "source": "URLhaus",
-      "tags": [
-        "32-bit",
-        "arm",
-        "elf",
-        "Mozi"
-      ],
-      "first_seen": "2026-10-21 00:02:33 U C",
-      "last_seen": "2026-10-21 00:02:33 U C",
-      "sightings": 1,
-      "severity": "medium",
-      "status": "active"
-    },
-    {
-      "indicator": " \"77cae3b3b8adf5a347467aafb632c11bd75a92ed51e5c685830a90c96d34d0b5\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
+      "first_seen": "2026-10-22",
+      "last_seen": "2026-10-22",
       "sightings": 1,
       "severity": "low",
       "status": "active"
     },
     {
-      "indicator": " \"c25ba8da48a8c17a82cac22815b051e8a8f7ba18d371627860db312fe29a072d\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
+      "indicator": "34.204.119.63",
+      "indicator_type": "ip",
+      "source": "FeodoTracker",
       "tags": [
-        " \"n/a\""
+        "QakBot"
       ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
+      "first_seen": "2026-10-22",
+      "last_seen": "2026-10-22",
       "sightings": 1,
       "severity": "low",
       "status": "active"
     },
     {
-      "indicator": " \"c67de4eb32078180b5a2f4c0300d8e3b62e878aa29cad61ce1bf82fba195c77f\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
+      "indicator": "178.62.3.223",
+      "indicator_type": "ip",
+      "source": "FeodoTracker",
       "tags": [
-        " \"n/a\""
+        "QakBot"
       ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
+      "first_seen": "2026-10-22",
+      "last_seen": "2026-10-22",
       "sightings": 1,
       "severity": "low",
       "status": "active"
     },
     {
-      "indicator": " \"3ef66ac288f3ce19cc275a97807b280a27dbfa4c58880cf0f0cdd29f7ede90bc\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
+      "indicator": "27.133.154.218",
+      "indicator_type": "ip",
+      "source": "FeodoTracker",
       "tags": [
-        " \"n/a\""
+        "QakBot"
       ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"48acd3002cf73bc12b19d4817940c02f1a199938cb36232436adfb71943343de\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"dfe72b31f8c6967775b780c511eb34487114a67fe648734ec0680e57b1bc9bb3\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"bb2392612337722f99190face902dd1bb1f2baf49fe8be31ca03b1aaae33cbba\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"Mirai\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"5bb2e1daab028de260386ee63aa4563b1dec1bcb1c6ef7071f88e2432b4c5d65\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"Mirai\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"2503abab3dc5fc16d761433fe335b9a62d0e2d46ec495c2389c79c5b3df851c3\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"d5c26a18ded03bc956c1d74fc13c9a93835ec9f000624b63a944a250b84f73f2\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"7eb698e51a67a471d97855560f5c681296935234b810bb701b389709d3f87519\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"5ae300101bef874b2d8e9dc927571074d7cd6c706903f4a23d91bf0c2943e256\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"AsyncRAT\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"cd67b4eb9e6f68173b84f3bc2614c5c6d29ecfd3638e769df82baeec3f88437f\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"5be9b1ef81e13461933433b21e4c8c9db51479deec4f2849368e7c64c25e2a46\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"3647ec19b07429343d1d692ee9cd0b387ba5227185153372d2318befabfad8df\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"8ced610bc3578649de03665b177714feac308d058060b2dfd10e156660537b07\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"807cf9689b2c14c55003a4d579d556771503e6d7cffe3f16eccb669548ccdfe8\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"b1455349a9b138625ffe14c92172b41dc35f5610b831423cc7d90d690a80857b\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"606c51971fb2857e5aa19c9a9a2744317a2d90e8983d1376bffb1297d984f9bb\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"VShell\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"0969c907f79b10bd31c425124f4ac114b821fa39a65bbc8d03df80a08c26e373\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"26baac7c422680fde9b9f63617d7ccbae2839b7ac44c0686ee80c1f1929dd388\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"81cdacdaef05025016cdc28bc7101459a568e52f291344016ec2f2a96ca21565\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"d65e2eb84444c69bc58ea794056f7d2b00f517a484efbf62f6e10e4bfc15c585\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"njrat\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"2449f4f0f4620abc5bd97161cbbc38f249a3de083cfeab0e1e1b36d07946a785\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"7a9b4fe4b6e5fab2bd5bc6cab2cb9991df216b99393412b99ec5f02adeca333a\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"fbf50e6f12a121ab5e649653b4575e6f9f660b16b650a0ef421e99bc999fb97f\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"9aa93532dce87b5e013f273dc26398f056170bcc52b1da59541739c06fdefed3\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"fa4f03796daed83ab09ba2bad3cc5fac70ccd4def1a11de57d142f4ff84c6a68\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"27f9b27e23ae17b8cbf6446e3b786852e53fe8259a7ce97542330ff5af883606\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"6e7dcc1716e5a94f937f66f0796d10280abe40a11f13d2a258784468de71c478\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"a03f8377766b2270237f980deb8a446779ab6fad5d017319b46641df7aee7290\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"8a2daf154b45503f88abb0f9f77ba79ad4044f235f03c2a1ff5604bc9ef1c227\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"a86e2a807f3349d8cbe33554c6c0261ef0e3af8235a5af997c935cdc916ae310\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"4892ea6ae970b1c57b505e511ace698878b29666e0da59867b712ea83db1563b\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"0b92a22e38a185c1b63caa3a85e903b71d528adbe5101bc5b24e745a1920a411\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "sightings": 1,
-      "severity": "low",
-      "status": "active"
-    },
-    {
-      "indicator": " \"2e30f20d362bc7a66944ea139f5ada594e9ef6b6680b24d637a803f2503c7936\"",
-      "indicator_type": "hash",
-      "source": "MalwareBazaar",
-      "tags": [
-        " \"n/a\""
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
+      "first_seen": "2026-10-22",
+      "last_seen": "2026-10-22",
       "sightings": 1,
       "severity": "low",
       "status": "active"
